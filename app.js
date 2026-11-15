@@ -5579,42 +5579,21 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
         <p class="report-main-subtitle">${escapeHtml(t.subtitle)}</p>
       </header>
 
-      <!-- Official Event Metadata Box -->
-      <section class="report-meta-box">
-        <div class="report-meta-box-header">
-          <h4>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-            ${escapeHtml(t.metaTitle)}
-          </h4>
-          <span class="badge badge-blue">Official FCAJ Record</span>
+      <!-- Event 3 Cover Image (Auto-displays upon upload, gracefully hidden with zero broken icon if pending) -->
+      <div id="event-3-cover-wrap" class="event-uploaded-photo-box" style="display: none; margin: 20px 0 28px 0;">
+        <div class="event-uploaded-img-wrap" onclick="openBlogImageModal('assets/images/events/event-3.jpg', '${isVi ? 'Sự kiện 3 – Enterprise AI on AWS Cloud' : 'Event 3 – Enterprise AI on AWS Cloud'}')" title="${isVi ? 'Nhấp để xem ảnh độ nét cao (HD)' : 'Click to view high-definition image'}">
+          <img id="event-3-cover-img"
+               src="assets/images/events/event-3.jpg"
+               alt="${isVi ? 'Hình ảnh sự kiện Event 3 – Enterprise AI on AWS Cloud' : 'Event 3 – Enterprise AI on AWS Cloud event photograph'}"
+               class="event-uploaded-img"
+               onload="const w = document.getElementById('event-3-cover-wrap'); if (w) w.style.display='block';"
+               onerror="const w = document.getElementById('event-3-cover-wrap'); if (w) w.style.display='none';"
+               loading="eager" />
         </div>
-        <div class="report-meta-grid">
-          <div class="report-meta-item"><strong>${escapeHtml(t.lblEventName)}:</strong> ${escapeHtml(t.eventName)}</div>
-          <div class="report-meta-item"><strong>${escapeHtml(t.lblDateTime)}:</strong> ${escapeHtml(t.dateTime)}</div>
-          <div class="report-meta-item"><strong>${escapeHtml(t.lblLocation)}:</strong> ${escapeHtml(t.location)}</div>
-          <div class="report-meta-item"><strong>${escapeHtml(t.lblRole)}:</strong> ${escapeHtml(t.role)}</div>
-          <div class="report-meta-item"><strong>${escapeHtml(t.lblSpeakers)}:</strong> ${escapeHtml(t.speakers)}</div>
-          <div class="report-meta-item"><strong>${escapeHtml(t.lblTopic)}:</strong> ${escapeHtml(t.topic)}</div>
+        <div style="font-size: 13px; color: #555555; margin-top: 12px; font-style: italic;">
+          ${isVi ? 'Hình ảnh sự kiện: From AI Prototype to Production – Enterprise AI on AWS Cloud' : 'Event Photograph: From AI Prototype to Production – Enterprise AI on AWS Cloud'}
         </div>
-        <div class="report-meta-notice">${escapeHtml(t.metaNotice)}</div>
-      </section>
-
-      <!-- Company 7 Reporting Criteria Verification Framework -->
-      <section class="report-compliance-card">
-        <div class="report-compliance-title">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <span>${escapeHtml(t.complianceTitle)}</span>
-        </div>
-        <div class="compliance-pills">
-          <span class="compliance-pill pill-pass">✓ 1. ${escapeHtml(t.crit1)}</span>
-          <span class="compliance-pill pill-pass">✓ 2. ${escapeHtml(t.crit2)}</span>
-          <span class="compliance-pill pill-pass">✓ 3. ${escapeHtml(t.crit3)}</span>
-          <span class="compliance-pill pill-pass">✓ 4. ${escapeHtml(t.crit4)}</span>
-          <span class="compliance-pill pill-pass">✓ 5. ${escapeHtml(t.crit5)}</span>
-          <span class="compliance-pill ${hasAuthenticPhoto ? 'pill-pass' : 'pill-pending'}">${hasAuthenticPhoto ? '✓' : '⏳'} 6. ${escapeHtml(t.crit6)}</span>
-          <span class="compliance-pill pill-pass">✓ 7. ${escapeHtml(t.crit7)}</span>
-        </div>
-      </section>
+      </div>
 
       <!-- SECTION I – EVENT OVERVIEW -->
       <section class="report-section-block">
@@ -6284,15 +6263,6 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
             #AWS #AWSStudyGroup #EnterpriseAI #ArtificialIntelligence #CloudArchitecture #MultiAgent #LLM #Scalability #FirstCloudAIJourney
           </div>
         </div>
-      </section>
-
-      <!-- SECTION VII – EVENT CHECK-IN & EVIDENCE -->
-      <section class="report-section-block">
-        <div class="report-section-header">
-          <span class="report-section-num">07</span>
-          <h2 class="report-section-title">${isVi ? 'VII. Hình ảnh Check-in & Minh chứng tham dự' : 'VII. Event Check-in & Evidence'}</h2>
-        </div>
-        ${photoSectionHtml}
       </section>
 
       <!-- Bottom Navigation Actions -->
