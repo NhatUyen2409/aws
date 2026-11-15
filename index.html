@@ -105,7 +105,7 @@
           <!-- 8. Settings & Backup -->
           <li class="nav-item" style="margin-top: 12px; border-top: 1px dashed var(--border-light); padding-top: 8px;">
             <a href="#/cai-dat" class="nav-link" data-page="cai-dat">
-              <span class="nav-label" data-i18n="navSettings">Cài đặt & Sao lưu</span>
+              <span class="nav-label" data-i18n="navSettings">Xuất & In báo cáo</span>
             </a>
           </li>
         </ul>
@@ -194,7 +194,7 @@
                 <!-- Cột Ảnh Chân Dung / Ảnh Thẻ Cá Nhân -->
                 <div class="student-photo-col">
                   <div class="student-photo-card">
-                    <div class="student-photo-frame" id="student-photo-frame" title="Bấm để tải ảnh cá nhân">
+                    <div class="student-photo-frame" id="student-photo-frame">
                       <img id="student-photo-img" src="" alt="Ảnh sinh viên" class="student-photo-img" style="display: none;">
                       <div id="student-photo-placeholder" class="student-photo-placeholder">
                         <svg class="placeholder-icon" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -202,14 +202,6 @@
                           <circle cx="12" cy="7" r="4"/>
                         </svg>
                         <span class="placeholder-label" data-i18n="photoBoxTitle">Ảnh thẻ / Cá nhân</span>
-                        <span class="placeholder-hint" data-i18n="photoBoxHint">Bấm để tải ảnh</span>
-                      </div>
-                      <div class="photo-overlay" id="photo-overlay">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2">
-                          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
-                          <circle cx="12" cy="13" r="4"/>
-                        </svg>
-                        <span data-i18n="photoChangeText">Thay đổi ảnh</span>
                       </div>
                     </div>
                     
@@ -232,26 +224,6 @@
                         <span data-i18n="photoViewHd">Xem HD</span>
                       </button>
                     </div>
-
-                    <div class="student-photo-controls">
-                      <label for="student-photo-input" class="btn btn-outline btn-sm" id="btn-choose-photo" style="cursor: pointer; width: 100%; justify-content: center;">
-                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                          <polyline points="17 8 12 3 7 8"/>
-                          <line x1="12" y1="3" x2="12" y2="15"/>
-                        </svg>
-                        <span data-i18n="btnUploadPhoto">Tải ảnh lên</span>
-                      </label>
-                      <input type="file" id="student-photo-input" accept="image/*" style="display: none;">
-                      <button type="button" class="btn btn-outline-danger btn-sm" id="btn-remove-photo" style="display: none; width: 100%; margin-top: 6px; justify-content: center;">
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <polyline points="3 6 5 6 21 6"/>
-                          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
-                        </svg>
-                        <span data-i18n="btnRemovePhoto">Gỡ ảnh</span>
-                      </button>
-                    </div>
-                    <p class="photo-format-note" data-i18n="photoFormatNote">PNG, JPG, WEBP (&lt; 5MB)</p>
                   </div>
                 </div>
 
@@ -311,7 +283,7 @@
           <!-- REPORT OVERVIEW TABLE OF CONTENTS (7 SECTIONS) -->
           <div class="card" style="margin-top: 1.5rem;">
             <h3 class="card-title" data-i18n="tocTitle">Cấu trúc các mục báo cáo</h3>
-            <p class="text-muted" style="margin-bottom: 1.5rem;" data-i18n="tocSubtitle">Nhấp vào từng phần để chuyển đến soạn thảo và xem chi tiết:</p>
+            <p class="text-muted" style="margin-bottom: 1.5rem;" data-i18n="tocSubtitle">Nhấp vào từng mục để xem báo cáo chi tiết:</p>
             
             <div class="report-toc-grid">
               <div class="toc-card" onclick="navigateTo('worklog')">
@@ -396,10 +368,6 @@
                 <h3 class="card-title" id="current-week-heading">Nhật ký Tuần 1</h3>
                 <span class="text-muted" id="current-week-subtitle" data-i18n="bootcampSubtitle">Chương trình đào tạo First Cloud AI Journey</span>
               </div>
-              <div style="display: flex; gap: 8px;">
-                <button class="btn btn-outline btn-sm" id="btn-edit-week-meta" data-i18n="btnEditWeekMeta">Sửa mục tiêu & thành tích</button>
-                <button class="btn btn-primary btn-sm" id="btn-add-week-task-card" data-i18n="btnAddTaskThisWeek">+ Thêm công việc</button>
-              </div>
             </div>
 
             <!-- Objectives & Achievements -->
@@ -429,20 +397,12 @@
                     <th style="width: 120px;" data-i18n="thStartDate">Ngày bắt đầu</th>
                     <th style="width: 120px;" data-i18n="thEndDate">Ngày hoàn thành</th>
                     <th data-i18n="thRef">Tài liệu tham khảo</th>
-                    <th style="width: 140px; text-align:right;" data-i18n="thActions">Thao tác</th>
                   </tr>
                 </thead>
                 <tbody id="week-tasks-tbody">
                   <!-- Populated by JS -->
                 </tbody>
               </table>
-            </div>
-
-            <div style="margin-top: 16px; display: flex; justify-content: flex-start;">
-              <button type="button" class="btn btn-outline btn-sm" id="btn-add-task-bottom" data-i18n="btnAddTaskThisWeek">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                <span data-i18n="btnAddTaskThisWeek">+ Thêm công việc vào tuần này</span>
-              </button>
             </div>
           </div>
         </section>
@@ -471,17 +431,17 @@
             <!-- 1. Executive Summary -->
             <div class="proposal-block">
               <h3 class="proposal-h3" data-i18n="prop1Heading">1. Tóm tắt điều hành</h3>
-              <textarea id="prop-summary" class="form-control report-textarea" rows="4"></textarea>
+              <div id="prop-summary" class="report-readonly-box"></div>
             </div>
 
             <!-- 2. Problem Statement -->
             <div class="proposal-block">
               <h3 class="proposal-h3" data-i18n="prop2Heading">2. Đặt vấn đề & Giải pháp</h3>
               <label class="form-label" data-i18n="propProblemLabel">Thách thức hiện tại</label>
-              <textarea id="prop-problem" class="form-control report-textarea" rows="3"></textarea>
+              <div id="prop-problem" class="report-readonly-box"></div>
 
               <label class="form-label" style="margin-top:12px;" data-i18n="propSolutionLabel">Giải pháp & Lợi ích mang lại</label>
-              <textarea id="prop-solution" class="form-control report-textarea" rows="4"></textarea>
+              <div id="prop-solution" class="report-readonly-box"></div>
             </div>
 
             <!-- 3. Solution Architecture -->
@@ -497,13 +457,13 @@
                 <span class="badge badge-gray">Amazon Cognito</span>
                 <span class="badge badge-gray">Amazon CloudWatch</span>
               </div>
-              <textarea id="prop-arch" class="form-control report-textarea" rows="4" style="margin-top:12px;"></textarea>
+              <div id="prop-arch" class="report-readonly-box" style="margin-top:12px;"></div>
             </div>
 
             <!-- 4. Budget Estimation -->
             <div class="proposal-block">
               <h3 class="proposal-h3" data-i18n="prop4Heading">4. Dự toán chi phí hạ tầng AWS hàng tháng</h3>
-              <textarea id="prop-budget" class="form-control report-textarea" rows="4"></textarea>
+              <div id="prop-budget" class="report-readonly-box"></div>
             </div>
           </div>
         </section>
@@ -712,7 +672,7 @@ aws s3 cp test-file.bin s3://&lt;your-bucket-name&gt;/ --endpoint-url https://bu
           <div class="card" style="margin-top: 1.5rem;">
             <div class="form-group">
               <label class="form-label" data-i18n="assessNarrativeLabel">Tóm tắt quá trình rèn luyện & công tác</label>
-              <textarea id="assess-narrative" class="form-control report-textarea" rows="4"></textarea>
+              <div id="assess-narrative" class="report-readonly-box"></div>
             </div>
 
             <!-- 12 Criteria Table Matching Official Standard -->
@@ -740,7 +700,7 @@ aws s3 cp test-file.bin s3://&lt;your-bucket-name&gt;/ --endpoint-url https://bu
 
             <div class="form-group" style="margin-top: 24px;">
               <label class="form-label" data-i18n="needsImprovementLabel">Các điểm cần tiếp tục hoàn thiện</label>
-              <textarea id="assess-improvement" class="form-control report-textarea" rows="3"></textarea>
+              <div id="assess-improvement" class="report-readonly-box"></div>
             </div>
           </div>
         </section>
@@ -762,37 +722,37 @@ aws s3 cp test-file.bin s3://&lt;your-bucket-name&gt;/ --endpoint-url https://bu
               
               <div class="feedback-item">
                 <label class="form-label" data-i18n="fb1Label">1. Môi trường làm việc</label>
-                <textarea id="fb-env" class="form-control report-textarea" rows="3"></textarea>
+                <div id="fb-env" class="report-readonly-box"></div>
               </div>
 
               <div class="feedback-item">
                 <label class="form-label" data-i18n="fb2Label">2. Sự hỗ trợ từ Mentor & Ban tổ chức</label>
-                <textarea id="fb-mentor" class="form-control report-textarea" rows="3"></textarea>
+                <div id="fb-mentor" class="report-readonly-box"></div>
               </div>
 
               <div class="feedback-item">
                 <label class="form-label" data-i18n="fb3Label">3. Mức độ phù hợp với ngành học</label>
-                <textarea id="fb-relevance" class="form-control report-textarea" rows="3"></textarea>
+                <div id="fb-relevance" class="report-readonly-box"></div>
               </div>
 
               <div class="feedback-item">
                 <label class="form-label" data-i18n="fb4Label">4. Cơ hội học tập & Phát triển kỹ năng</label>
-                <textarea id="fb-learning" class="form-control report-textarea" rows="3"></textarea>
+                <div id="fb-learning" class="report-readonly-box"></div>
               </div>
 
               <div class="feedback-item">
                 <label class="form-label" data-i18n="fb5Label">5. Văn hóa công ty & Tinh thần đồng đội</label>
-                <textarea id="fb-culture" class="form-control report-textarea" rows="3"></textarea>
+                <div id="fb-culture" class="report-readonly-box"></div>
               </div>
 
               <div class="feedback-item">
                 <label class="form-label" data-i18n="fb6Label">6. Chính sách & Chế độ đãi ngộ</label>
-                <textarea id="fb-policies" class="form-control report-textarea" rows="3"></textarea>
+                <div id="fb-policies" class="report-readonly-box"></div>
               </div>
 
               <div class="feedback-item full-span">
                 <label class="form-label" data-i18n="fbSuggestionsLabel">Đề xuất & Kỳ vọng phát triển tương lai</label>
-                <textarea id="fb-suggestions" class="form-control report-textarea" rows="3"></textarea>
+                <div id="fb-suggestions" class="report-readonly-box"></div>
               </div>
             </div>
           </div>
@@ -818,14 +778,9 @@ aws s3 cp test-file.bin s3://&lt;your-bucket-name&gt;/ --endpoint-url https://bu
               <button class="btn btn-primary" id="btn-export-json" data-i18n="btnExportJson">
                 Tải file sao lưu (worklog-fcaj-backup.json)
               </button>
-
-              <label class="btn btn-outline" style="cursor:pointer; margin-bottom:0;" data-i18n="btnImportJson">
-                Khôi phục từ file JSON
-                <input type="file" id="file-import-json" accept=".json" style="display:none;">
-              </label>
-
-              <button class="btn btn-outline-danger" id="btn-reset-data" data-i18n="btnResetData">
-                Đặt lại mẫu báo cáo chuẩn FCAJ
+              <button type="button" class="btn btn-outline" id="btn-quick-print" onclick="window.print()">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+                <span data-i18n="btnPrintReport">In báo cáo (Print / PDF)</span>
               </button>
             </div>
           </div>
@@ -835,100 +790,6 @@ aws s3 cp test-file.bin s3://&lt;your-bucket-name&gt;/ --endpoint-url https://bu
     </main>
   </div>
 
-
-  <!-- ============================================== -->
-  <!-- MODAL: SỬA MỤC TIÊU & THÀNH TÍCH WORKLOG        -->
-  <!-- ============================================== -->
-  <div class="modal-backdrop" id="worklog-meta-modal">
-    <div class="modal-dialog" style="max-width: 650px;">
-      <div class="modal-header">
-        <h3 class="modal-title" id="worklog-meta-modal-title" data-i18n="modalMetaTitle">Chỉnh sửa Mục tiêu & Thành tích</h3>
-        <button type="button" class="btn-close-modal" id="btn-close-meta-modal">&times;</button>
-      </div>
-      <form id="worklog-meta-form">
-        <div class="modal-body">
-          <div class="notice-callout notice-info" style="margin-bottom: 16px; padding: 10px 14px; font-size: 13px;">
-            <div class="notice-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></div>
-            <div class="notice-content">
-              Bạn có thể tự do gõ nội dung chi tiết. Đối với <strong>Thành tích đạt được</strong>, hãy xuống dòng và gạch đầu dòng (<code>- </code>) cho mỗi ý để báo cáo hiển thị đẹp mắt.
-            </div>
-          </div>
-          
-          <div class="form-group" style="margin-bottom: 16px;">
-            <label class="form-label">
-              <span data-i18n="modalMetaObjectivesLabel">Mục tiêu trọng tâm tuần</span> <span class="required-star">*</span>
-            </label>
-            <textarea id="modal-meta-objectives" class="form-control" rows="3" data-i18n-placeholder="modalMetaObjectivesPlaceholder" placeholder="Nhập mục tiêu tuần..." required></textarea>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label">
-              <span data-i18n="modalMetaAchievementsLabel">Thành tích đạt được (mỗi ý một dòng, gạch đầu dòng -)</span> <span class="required-star">*</span>
-            </label>
-            <textarea id="modal-meta-achievements" class="form-control" rows="6" data-i18n-placeholder="modalMetaAchievementsPlaceholder" placeholder="- Hoàn thành nhiệm vụ...&#10;- Nắm vững kiến thức..." required></textarea>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline" id="btn-cancel-meta-modal" data-i18n="btnModalCancel">Hủy bỏ</button>
-          <button type="submit" class="btn btn-primary" id="btn-save-meta-modal" data-i18n="btnModalSaveMeta">Lưu mục tiêu & thành tích</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <!-- ============================================== -->
-  <!-- MODAL: THÊM / SỬA TASK WORKLOG                 -->
-  <!-- ============================================== -->
-  <div class="modal-backdrop" id="worklog-task-modal">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <h3 class="modal-title" id="worklog-task-modal-title" data-i18n="modalTitle">+ Thêm nhiệm vụ vào Worklog</h3>
-        <button type="button" class="btn-close-modal" id="btn-close-task-modal">&times;</button>
-      </div>
-      <form id="worklog-task-form">
-        <input type="hidden" id="modal-task-edit-index" value="-1">
-        <div class="modal-body">
-          <div class="form-row">
-            <div class="form-group col-half">
-              <label class="form-label"><span data-i18n="modalWeekSelectLabel">Chọn tuần áp dụng</span> <span class="required-star">*</span></label>
-              <select id="modal-task-week-select" class="form-control form-select">
-                <!-- Populated dynamically Week 1 -> Week 12 -->
-              </select>
-            </div>
-            <div class="form-group col-half">
-              <label class="form-label"><span data-i18n="modalDayLabel">Thứ trong tuần</span> <span class="required-star">*</span></label>
-              <input type="text" id="modal-task-day" class="form-control" data-i18n-placeholder="modalDayPlaceholder" placeholder="VD: Thứ Hai" required>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label"><span data-i18n="modalTaskDescLabel">Nội dung nhiệm vụ</span> <span class="required-star">*</span></label>
-            <textarea id="modal-task-desc" class="form-control" rows="3" data-i18n-placeholder="modalDescPlaceholder" placeholder="Nhập chi tiết nhiệm vụ..." required></textarea>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group col-half">
-              <label class="form-label" data-i18n="modalStartLabel">Ngày bắt đầu</label>
-              <input type="date" id="modal-task-start" class="form-control">
-            </div>
-            <div class="form-group col-half">
-              <label class="form-label" data-i18n="modalEndLabel">Ngày hoàn thành</label>
-              <input type="date" id="modal-task-end" class="form-control">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" data-i18n="modalRefLabel">Tài liệu tham khảo (URL hoặc ghi chú)</label>
-            <input type="text" id="modal-task-ref" class="form-control" data-i18n-placeholder="modalRefPlaceholder" placeholder="https://docs.aws.amazon.com/...">
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline" id="btn-cancel-task-modal" data-i18n="btnModalCancel">Hủy bỏ</button>
-          <button type="submit" class="btn btn-primary" id="btn-submit-task-modal" data-i18n="btnModalSave">Lưu công việc</button>
-        </div>
-      </form>
-    </div>
-  </div>
 
   <!-- ============================================== -->
   <!-- MODAL: XEM MÃ DỮ LIỆU WORKLOG (JSON)           -->

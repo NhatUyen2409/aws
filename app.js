@@ -25,7 +25,7 @@ const I18N_DICTIONARY = {
     navWorkshop: "Bài thực hành Workshop",
     navSelfAssessment: "Tự đánh giá",
     navFeedback: "Chia sẻ & Góp ý",
-    navSettings: "Cài đặt & Sao lưu",
+    navSettings: "Xuất & In báo cáo",
     
     // Sidebar profile
     sidebarCompany: "Công ty TNHH Amazon Web Services (AWS) Việt Nam",
@@ -94,7 +94,7 @@ const I18N_DICTIONARY = {
     
     // TOC
     tocTitle: "Cấu trúc các mục báo cáo",
-    tocSubtitle: "Nhấp vào từng phần để chuyển đến soạn thảo và xem chi tiết:",
+    tocSubtitle: "Nhấp vào từng mục để xem báo cáo chi tiết:",
     toc1Title: "1. Nhật ký công việc",
     toc1Desc: "Nhật ký chi tiết 12 tuần thực tập (Mục tiêu, Bảng phân công công việc, Kết quả đạt được).",
     toc2Title: "2. Đề xuất đồ án",
@@ -260,11 +260,12 @@ const I18N_DICTIONARY = {
     fbSuggestionsLabel: "Đề xuất & Kỳ vọng phát triển tương lai",
     
     // Settings
-    settingsSectionTitle: "Cài đặt & Quản lý dữ liệu báo cáo",
-    settingsSectionSubtitle: "Sao lưu toàn bộ nội dung của bạn thành file JSON hoặc in báo cáo ra PDF",
-    settingsCardTitle: "Sao lưu & Xuất file an toàn",
-    settingsCardDesc: "Tất cả nội dung viết của bạn (12 tuần worklog, proposal, bài blog, sự kiện, workshop, đánh giá) đều được lưu trữ trực tiếp trên trình duyệt. Bạn có thể xuất ra file JSON để lưu giữ dự phòng:",
+    settingsSectionTitle: "Xuất dữ liệu & In báo cáo",
+    settingsSectionSubtitle: "Xuất toàn bộ báo cáo thực tập thành file JSON hoặc in sang định dạng PDF",
+    settingsCardTitle: "Xuất dữ liệu & In báo cáo",
+    settingsCardDesc: "Toàn bộ dữ liệu báo cáo thực tập (12 tuần worklog, proposal, bài viết kỹ thuật, sự kiện, workshop, đánh giá) đã được hoàn thiện. Bạn có thể tải file dữ liệu JSON hoặc in báo cáo:",
     btnExportJson: "Tải file sao lưu (worklog-fcaj-backup.json)",
+    btnPrintReport: "In báo cáo (Print / PDF)",
     btnImportJson: "Khôi phục từ file JSON",
     btnResetData: "Đặt lại mẫu báo cáo chuẩn FCAJ",
     
@@ -318,7 +319,7 @@ const I18N_DICTIONARY = {
     navWorkshop: "Workshop",
     navSelfAssessment: "Self-Assessment",
     navFeedback: "Sharing and Feedback",
-    navSettings: "Settings & Backup",
+    navSettings: "Export & Print",
     
     // Sidebar profile
     sidebarCompany: "Amazon Web Services (AWS) Vietnam Company Limited",
@@ -387,7 +388,7 @@ const I18N_DICTIONARY = {
     
     // TOC
     tocTitle: "Report Content Structure",
-    tocSubtitle: "Click each section below to navigate and edit details:",
+    tocSubtitle: "Click each section below to view detailed report:",
     toc1Title: "1. Worklog",
     toc1Desc: "Detailed 12-week worklog (Objectives, Task assignments table, Achievements).",
     toc2Title: "2. Proposal",
@@ -547,11 +548,12 @@ const I18N_DICTIONARY = {
     fbSuggestionsLabel: "Suggestions & Future Expectations",
     
     // Settings
-    settingsSectionTitle: "Settings & Report Data Management",
-    settingsSectionSubtitle: "Backup your report data as JSON file or export as PDF",
-    settingsCardTitle: "Backup & Safe Export",
-    settingsCardDesc: "All your written report content (12 weeks worklog, proposal, blogs, events, workshop, self-assessment) is stored directly in your browser. You can export a JSON file for backup:",
+    settingsSectionTitle: "Export Data & Print Report",
+    settingsSectionSubtitle: "Export entire internship report to JSON file or print to PDF",
+    settingsCardTitle: "Export Data & Print Report",
+    settingsCardDesc: "All internship report records (12 weeks worklog, proposal, technical blogs, events, workshop, evaluations) are finalized. You can download the JSON backup or print the report:",
     btnExportJson: "Download Backup File (worklog-fcaj-backup.json)",
+    btnPrintReport: "Print Report (PDF)",
     btnImportJson: "Restore from JSON File",
     btnResetData: "Reset to Standard FCAJ Report",
     
@@ -1860,7 +1862,6 @@ const DEFAULT_BILINGUAL_DATA = {
 // 3. PERSISTENCE & STATE MANAGEMENT
 // ==========================================
 const STORAGE_KEY = 'fcaj_report_bilingual_v20';
-const PREV_STORAGE_KEY = 'fcaj_report_bilingual_v19';
 const LANG_KEY = 'fcaj_report_lang';
 
 class AppLanguageManager {
@@ -1872,25 +1873,26 @@ class AppLanguageManager {
 
   cleanupLegacyStorage() {
     const legacyKeys = [
-      'fcaj_report_bilingual_v1',
-      'fcaj_report_bilingual_v2',
-      'fcaj_report_bilingual_v3',
-      'fcaj_report_bilingual_v4',
-      'fcaj_report_bilingual_v5',
-      'fcaj_report_bilingual_v6',
-      'fcaj_report_bilingual_v7',
+      'fcaj_report_bilingual_v20',
+      'fcaj_report_bilingual_v19',
+      'fcaj_report_bilingual_v18',
+      'fcaj_report_bilingual_v17',
+      'fcaj_report_bilingual_v16',
+      'fcaj_report_bilingual_v15',
+      'fcaj_report_bilingual_v14',
+      'fcaj_report_bilingual_v13',
+      'fcaj_report_bilingual_v12',
+      'fcaj_report_bilingual_v11',
       'fcaj_report_bilingual_v10',
       'fcaj_report_bilingual_v9',
       'fcaj_report_bilingual_v8',
-      'fcaj_report_bilingual_v11',
-      'fcaj_report_bilingual_v12',
-      'fcaj_report_bilingual_v13',
-      'fcaj_report_bilingual_v14',
-      'fcaj_report_bilingual_v15',
-      'fcaj_report_bilingual_v16',
-      'fcaj_report_bilingual_v17',
-      'fcaj_report_bilingual_v18',
-      'fcaj_report_bilingual_v19',
+      'fcaj_report_bilingual_v7',
+      'fcaj_report_bilingual_v6',
+      'fcaj_report_bilingual_v5',
+      'fcaj_report_bilingual_v4',
+      'fcaj_report_bilingual_v3',
+      'fcaj_report_bilingual_v2',
+      'fcaj_report_bilingual_v1',
       'fcaj_internship_report_v2',
       'fcaj_internship_report_v1'
     ];
@@ -1900,180 +1902,24 @@ class AppLanguageManager {
   }
 
   loadData() {
-    try {
-      const stored = localStorage.getItem(STORAGE_KEY);
-      if (stored) {
-        const parsed = JSON.parse(stored);
-        if (parsed && parsed.worklogs && parsed.worklogs.length > 0) {
-          // Thông tin sinh viên chỉ có thể sửa từ code, luôn đồng bộ từ DEFAULT_BILINGUAL_DATA
-          parsed.studentInfo = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.studentInfo));
-          // Luôn đồng bộ nội dung chuẩn của Tuần 1 đến 12 từ code
-          Array.from({ length: 12 }, (_, i) => i + 1).forEach(wNum => {
-            const defWeek = DEFAULT_BILINGUAL_DATA.worklogs.find(w => w.weekNum === wNum);
-            const pIdx = parsed.worklogs.findIndex(w => w.weekNum === wNum);
-            if (defWeek && pIdx !== -1) {
-              parsed.worklogs[pIdx] = JSON.parse(JSON.stringify(defWeek));
-            } else if (defWeek && pIdx === -1) {
-              parsed.worklogs.push(JSON.parse(JSON.stringify(defWeek)));
-            }
-          });
-          // Luôn đồng bộ các bài blog chuẩn (Blog 1-3) từ DEFAULT_BILINGUAL_DATA
-          if (!parsed.blogs) {
-            parsed.blogs = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.blogs));
-          } else {
-            ['vi', 'en'].forEach(l => {
-              const canonical = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.blogs[l]));
-              const userCustom = (parsed.blogs[l] || []).filter(b => 
-                b.id && b.id.startsWith('blog-') && Number(b.id.replace('blog-', '')) > 100000 &&
-                !['blog-1', 'blog-2', 'blog-3', 'blog-4', 'blog-5'].includes(b.id)
-              );
-              parsed.blogs[l] = [...canonical, ...userCustom];
-            });
-          }
-          // Sync default events (Event 1 Modernization & Event 2 Session 1 Voice AI) for both languages
-          if (!parsed.events) {
-            parsed.events = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.events));
-          } else {
-            ['vi', 'en'].forEach(l => {
-              if (!parsed.events[l]) {
-                parsed.events[l] = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.events[l]));
-              } else {
-                // Remove obsolete/duplicate test events (such as event-3, event-4)
-                parsed.events[l] = parsed.events[l].filter(e => {
-                  if (e.id === 'event-3' && (e.name.includes('Meetup AI') || e.name.includes('Voice') || (e.speakers && e.speakers.includes('Phan Nhat Uyen')))) return false;
-                  if (e.id === 'event-4' && e.name.includes('First Cloud AI')) return false;
-                  return true;
-                });
-
-                DEFAULT_BILINGUAL_DATA.events[l].forEach(defEvent => {
-                  const eIdx = parsed.events[l].findIndex(e => e.id === defEvent.id || e.slug === defEvent.slug);
-                  if (eIdx === -1) {
-                    parsed.events[l].push(JSON.parse(JSON.stringify(defEvent)));
-                  } else {
-                    parsed.events[l][eIdx] = Object.assign({}, parsed.events[l][eIdx], JSON.parse(JSON.stringify(defEvent)));
-                  }
-                });
-              }
-            });
-          }
-          return parsed;
-        }
-      }
-      // Migrate student personal details while using fresh 2026 calendar & report content
-      const prev = localStorage.getItem(PREV_STORAGE_KEY) || localStorage.getItem('fcaj_report_bilingual_v17');
-      const fresh = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA));
-      if (prev) {
-        const prevParsed = JSON.parse(prev);
-        if (prevParsed.worklogs && prevParsed.worklogs.length > 0) {
-          fresh.worklogs = prevParsed.worklogs;
-          Array.from({ length: 12 }, (_, i) => i + 1).forEach(wNum => {
-            const defWeek = DEFAULT_BILINGUAL_DATA.worklogs.find(w => w.weekNum === wNum);
-            const pIdx = fresh.worklogs.findIndex(w => w.weekNum === wNum);
-            if (defWeek && pIdx !== -1) {
-              fresh.worklogs[pIdx] = JSON.parse(JSON.stringify(defWeek));
-            } else if (defWeek && pIdx === -1) {
-              fresh.worklogs.push(JSON.parse(JSON.stringify(defWeek)));
-            }
-          });
-        }
-        if (prevParsed.currentWeek) fresh.currentWeek = prevParsed.currentWeek;
-        else fresh.currentWeek = 9;
-        if (prevParsed.studentInfo) {
-          if (prevParsed.studentInfo.fullName) fresh.studentInfo.fullName = prevParsed.studentInfo.fullName;
-          if (prevParsed.studentInfo.phone && prevParsed.studentInfo.phone !== '0989888999') {
-            fresh.studentInfo.phone = prevParsed.studentInfo.phone;
-          }
-          if (prevParsed.studentInfo.email) fresh.studentInfo.email = prevParsed.studentInfo.email;
-        }
-        if (prevParsed.proposal) fresh.proposal = prevParsed.proposal;
-        if (prevParsed.selfNarrative) fresh.selfNarrative = prevParsed.selfNarrative;
-        if (prevParsed.needsImprovement) fresh.needsImprovement = prevParsed.needsImprovement;
-        if (prevParsed.feedback) fresh.feedback = prevParsed.feedback;
-        if (prevParsed.criteria) fresh.criteria = prevParsed.criteria;
-        // Preserve user custom events
-        if (prevParsed.events) {
-          ['vi', 'en'].forEach(l => {
-            if (Array.isArray(prevParsed.events[l])) {
-              prevParsed.events[l].forEach(pe => {
-                if (!fresh.events[l].some(fe => fe.id === pe.id || fe.slug === pe.slug)) {
-                  fresh.events[l].push(pe);
-                }
-              });
-            }
-          });
-        }
-        try { localStorage.removeItem(PREV_STORAGE_KEY); } catch (e) {}
-      }
-      return fresh;
-    } catch (e) {
-      console.warn('Could not read stored bilingual data, using defaults', e);
-    }
+    // Single Source of Truth in Read-Only Mode: always load pure DEFAULT_BILINGUAL_DATA from source code
     return JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA));
   }
 
   saveData() {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(this.data));
-    } catch (e) {
-      console.error('Could not save bilingual data', e);
-    }
+    // Read-only mode: no-op to prevent UI modification
   }
 
   saveCurrentInputs() {
-    const lang = this.currentLang;
-    const getVal = (id) => {
-      const el = document.getElementById(id);
-      return el ? el.value.trim() : null;
-    };
-
-    // Lưu ý: Thông tin sinh viên cố định, chỉ chỉnh sửa từ code trong DEFAULT_BILINGUAL_DATA.studentInfo
-
-    // Proposal
-    if (!this.data.proposal[lang]) this.data.proposal[lang] = {};
-    const pSum = getVal('prop-summary');
-    if (pSum !== null) this.data.proposal[lang].summary = pSum;
-    const pProb = getVal('prop-problem');
-    if (pProb !== null) this.data.proposal[lang].problem = pProb;
-    const pSol = getVal('prop-solution');
-    if (pSol !== null) this.data.proposal[lang].solution = pSol;
-    const pArch = getVal('prop-arch');
-    if (pArch !== null) this.data.proposal[lang].arch = pArch;
-    const pBud = getVal('prop-budget');
-    if (pBud !== null) this.data.proposal[lang].budget = pBud;
-
-    // Self Assessment
-    if (!this.data.selfNarrative) this.data.selfNarrative = {};
-    const narr = getVal('assess-narrative');
-    if (narr !== null) this.data.selfNarrative[lang] = narr;
-    if (!this.data.needsImprovement) this.data.needsImprovement = {};
-    const imp = getVal('assess-improvement');
-    if (imp !== null) this.data.needsImprovement[lang] = imp;
-
-    // Feedback
-    if (!this.data.feedback[lang]) this.data.feedback[lang] = {};
-    const fEnv = getVal('fb-env');
-    if (fEnv !== null) this.data.feedback[lang].env = fEnv;
-    const fMen = getVal('fb-mentor');
-    if (fMen !== null) this.data.feedback[lang].mentor = fMen;
-    const fRel = getVal('fb-relevance');
-    if (fRel !== null) this.data.feedback[lang].relevance = fRel;
-    const fLea = getVal('fb-learning');
-    if (fLea !== null) this.data.feedback[lang].learning = fLea;
-    const fCul = getVal('fb-culture');
-    if (fCul !== null) this.data.feedback[lang].culture = fCul;
-    const fPol = getVal('fb-policies');
-    if (fPol !== null) this.data.feedback[lang].policies = fPol;
-    const fSug = getVal('fb-suggestions');
-    if (fSug !== null) this.data.feedback[lang].suggestions = fSug;
-
-    this.saveData();
+    // Read-only mode: no-op
   }
 
   setLang(newLang) {
     if (newLang !== 'vi' && newLang !== 'en') return;
-    this.saveCurrentInputs();
     this.currentLang = newLang;
-    localStorage.setItem(LANG_KEY, newLang);
+    try {
+      localStorage.setItem(LANG_KEY, newLang);
+    } catch (e) {}
     this.applyLanguage();
   }
 
@@ -2319,92 +2165,16 @@ function handleHashChange() {
 }
 
 // ==========================================
-// 6. STUDENT INFO & HIGH-FIDELITY PHOTO STORAGE
+// 6. STUDENT INFO (READ-ONLY)
 // ==========================================
-const AVATAR_STORAGE_KEY = 'fcaj_student_avatar';
-const AVATAR_ORIGINAL_IDB_KEY = 'fcaj_student_avatar_original';
 const AVATAR_FIT_KEY = 'fcaj_student_avatar_fit';
-const IDB_NAME = 'fcaj_media_db';
-const IDB_STORE = 'photos';
-
-function openPhotoDB() {
-  return new Promise((resolve) => {
-    if (!window.indexedDB) {
-      resolve(null);
-      return;
-    }
-    try {
-      const req = indexedDB.open(IDB_NAME, 1);
-      req.onupgradeneeded = (e) => {
-        const db = e.target.result;
-        if (!db.objectStoreNames.contains(IDB_STORE)) {
-          db.createObjectStore(IDB_STORE);
-        }
-      };
-      req.onsuccess = (e) => resolve(e.target.result);
-      req.onerror = () => resolve(null);
-    } catch (e) {
-      resolve(null);
-    }
-  });
-}
-
-async function saveOriginalPhotoToIDB(key, dataUrl) {
-  try {
-    const db = await openPhotoDB();
-    if (!db) return false;
-    return new Promise((resolve) => {
-      const tx = db.transaction(IDB_STORE, 'readwrite');
-      const store = tx.objectStore(IDB_STORE);
-      store.put(dataUrl, key);
-      tx.oncomplete = () => resolve(true);
-      tx.onerror = () => resolve(false);
-    });
-  } catch (err) {
-    console.warn('IDB put error', err);
-    return false;
-  }
-}
-
-async function getOriginalPhotoFromIDB(key) {
-  try {
-    const db = await openPhotoDB();
-    if (!db) return null;
-    return new Promise((resolve) => {
-      const tx = db.transaction(IDB_STORE, 'readonly');
-      const store = tx.objectStore(IDB_STORE);
-      const req = store.get(key);
-      req.onsuccess = () => resolve(req.result || null);
-      req.onerror = () => resolve(null);
-    });
-  } catch (err) {
-    console.warn('IDB get error', err);
-    return null;
-  }
-}
-
-async function deleteOriginalPhotoFromIDB(key) {
-  try {
-    const db = await openPhotoDB();
-    if (!db) return;
-    return new Promise((resolve) => {
-      const tx = db.transaction(IDB_STORE, 'readwrite');
-      const store = tx.objectStore(IDB_STORE);
-      store.delete(key);
-      tx.oncomplete = () => resolve(true);
-      tx.onerror = () => resolve(false);
-    });
-  } catch (err) {
-    console.warn('IDB delete error', err);
-  }
-}
 
 function getAvatarFitMode() {
   return localStorage.getItem(AVATAR_FIT_KEY) || 'cover';
 }
 
 function setAvatarFitMode(mode) {
-  localStorage.setItem(AVATAR_FIT_KEY, mode);
+  try { localStorage.setItem(AVATAR_FIT_KEY, mode); } catch (e) {}
   applyAvatarFitMode();
 }
 
@@ -2433,103 +2203,12 @@ function applyAvatarFitMode() {
   }
 }
 
-function handleStudentPhotoUpload(file) {
-  if (!file) return;
-  if (!file.type.startsWith('image/')) {
-    showToast(t('toastPhotoInvalidType'), 'error');
-    return;
-  }
-  // Allow high-res camera originals up to 15MB
-  if (file.size > 15 * 1024 * 1024) {
-    showToast(t('toastPhotoSizeLimit'), 'error');
-    return;
-  }
-
-  const reader = new FileReader();
-  reader.onload = async (e) => {
-    const rawDataUrl = e.target.result;
-
-    // 1. ALWAYS preserve 100% original uncompressed bytes in IndexedDB
-    await saveOriginalPhotoToIDB(AVATAR_ORIGINAL_IDB_KEY, rawDataUrl);
-
-    // 2. Determine display fallback for localStorage
-    // If under 1.2MB, store rawDataUrl directly (ZERO compression loss)
-    if (file.size <= 1.2 * 1024 * 1024) {
-      try {
-        localStorage.setItem(AVATAR_STORAGE_KEY, rawDataUrl);
-      } catch (err) {
-        console.warn('LocalStorage quota reached, using IndexedDB primary', err);
-      }
-      updateStudentAvatarDisplay();
-      showToast(t('toastPhotoUpdated'));
-      return;
-    }
-
-    // 3. For large camera/DSLR files (> 1.2MB), create a crisp high-DPI display copy
-    // (up to 1600px - razor sharp on 4K/Retina) for localStorage fallback
-    const img = new Image();
-    img.onload = () => {
-      const origW = img.naturalWidth || img.width;
-      const origH = img.naturalHeight || img.height;
-      const MAX_DIM = 1600;
-      let targetW = origW;
-      let targetH = origH;
-
-      if (targetW > MAX_DIM || targetH > MAX_DIM) {
-        const ratio = Math.min(MAX_DIM / targetW, MAX_DIM / targetH);
-        targetW = Math.round(targetW * ratio);
-        targetH = Math.round(targetH * ratio);
-      }
-
-      const canvas = document.createElement('canvas');
-      canvas.width = targetW;
-      canvas.height = targetH;
-      const ctx = canvas.getContext('2d');
-      ctx.imageSmoothingEnabled = true;
-      ctx.imageSmoothingQuality = 'high';
-      ctx.drawImage(img, 0, 0, targetW, targetH);
-
-      const mimeType = file.type === 'image/png' ? 'image/png' : 'image/jpeg';
-      const displayDataUrl = canvas.toDataURL(mimeType, 0.95);
-
-      try {
-        localStorage.setItem(AVATAR_STORAGE_KEY, displayDataUrl);
-      } catch (err) {
-        console.warn('LocalStorage quota full, using IndexedDB', err);
-      }
-      updateStudentAvatarDisplay();
-      showToast(t('toastPhotoUpdated'));
-    };
-    img.onerror = () => {
-      try {
-        localStorage.setItem(AVATAR_STORAGE_KEY, rawDataUrl);
-      } catch (err) {}
-      updateStudentAvatarDisplay();
-      showToast(t('toastPhotoUpdated'));
-    };
-    img.src = rawDataUrl;
-  };
-  reader.onerror = () => {
-    showToast(t('toastPhotoError'), 'error');
-  };
-  reader.readAsDataURL(file);
-}
-
-async function updateStudentAvatarDisplay() {
-  // Synchronous read from localStorage for immediate flicker-free display
-  let avatar = localStorage.getItem(AVATAR_STORAGE_KEY);
-
-  // Check if original uncompressed image exists in IndexedDB
-  const idbOriginal = await getOriginalPhotoFromIDB(AVATAR_ORIGINAL_IDB_KEY);
-  if (idbOriginal) {
-    avatar = idbOriginal;
-  }
+function updateStudentAvatarDisplay() {
+  const info = app.data.studentInfo || {};
+  const avatar = info.avatar || null;
 
   const imgEl = document.getElementById('student-photo-img');
   const placeholderEl = document.getElementById('student-photo-placeholder');
-  const overlayEl = document.getElementById('photo-overlay');
-  const btnRemove = document.getElementById('btn-remove-photo');
-  const btnChooseLabel = document.querySelector('#btn-choose-photo span');
   const toolbarEl = document.getElementById('photo-action-toolbar');
 
   if (avatar) {
@@ -2538,9 +2217,6 @@ async function updateStudentAvatarDisplay() {
       imgEl.style.display = 'block';
     }
     if (placeholderEl) placeholderEl.style.display = 'none';
-    if (overlayEl) overlayEl.classList.add('active');
-    if (btnRemove) btnRemove.style.display = 'inline-flex';
-    if (btnChooseLabel) btnChooseLabel.textContent = t('photoChangeText') || 'Thay đổi ảnh';
     if (toolbarEl) toolbarEl.style.display = 'flex';
     applyAvatarFitMode();
   } else {
@@ -2549,26 +2225,18 @@ async function updateStudentAvatarDisplay() {
       imgEl.style.display = 'none';
     }
     if (placeholderEl) placeholderEl.style.display = 'flex';
-    if (overlayEl) overlayEl.classList.remove('active');
-    if (btnRemove) btnRemove.style.display = 'none';
-    if (btnChooseLabel) btnChooseLabel.textContent = t('btnUploadPhoto') || 'Tải ảnh lên';
     if (toolbarEl) toolbarEl.style.display = 'none';
   }
 
   // Update sidebar and top header greeting avatar
   const sidebarAvatar = document.getElementById('sidebar-avatar');
   const headerAvatar = document.querySelector('.user-greeting-pill .avatar-sm');
-  const info = app.data.studentInfo || {};
   const parts = (info.fullName || 'Phan Nhật Uyên').trim().split(' ');
   const initial = (parts[parts.length - 1] || 'U')[0].toUpperCase();
 
   if (avatar) {
-    if (sidebarAvatar) {
-      sidebarAvatar.innerHTML = `<img src="${avatar}" alt="Avatar">`;
-    }
-    if (headerAvatar) {
-      headerAvatar.innerHTML = `<img src="${avatar}" alt="Avatar">`;
-    }
+    if (sidebarAvatar) sidebarAvatar.innerHTML = `<img src="${avatar}" alt="Avatar">`;
+    if (headerAvatar) headerAvatar.innerHTML = `<img src="${avatar}" alt="Avatar">`;
   } else {
     if (sidebarAvatar) {
       sidebarAvatar.innerHTML = '';
@@ -2620,58 +2288,12 @@ function setupStudentInfo() {
     });
   }
 
-  const fileInput = document.getElementById('student-photo-input');
-  const photoFrame = document.getElementById('student-photo-frame');
-  const btnRemove = document.getElementById('btn-remove-photo');
   const btnToggleFit = document.getElementById('btn-toggle-fit');
   const btnViewHd = document.getElementById('btn-view-hd');
   const hdModal = document.getElementById('photo-hd-modal');
   const hdPreview = document.getElementById('photo-hd-preview');
   const btnCloseHd = document.getElementById('btn-close-hd-modal');
   const btnCloseHdBtn = document.getElementById('btn-close-hd-btn');
-
-  if (fileInput) {
-    fileInput.addEventListener('change', (e) => {
-      if (e.target.files && e.target.files[0]) {
-        handleStudentPhotoUpload(e.target.files[0]);
-      }
-    });
-  }
-
-  if (photoFrame) {
-    photoFrame.addEventListener('click', () => {
-      if (fileInput) fileInput.click();
-    });
-
-    photoFrame.addEventListener('dragover', (e) => {
-      e.preventDefault();
-      photoFrame.classList.add('drag-over');
-    });
-
-    photoFrame.addEventListener('dragleave', (e) => {
-      e.preventDefault();
-      photoFrame.classList.remove('drag-over');
-    });
-
-    photoFrame.addEventListener('drop', (e) => {
-      e.preventDefault();
-      photoFrame.classList.remove('drag-over');
-      if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]) {
-        handleStudentPhotoUpload(e.dataTransfer.files[0]);
-      }
-    });
-  }
-
-  if (btnRemove) {
-    btnRemove.addEventListener('click', async (e) => {
-      e.stopPropagation();
-      await deleteOriginalPhotoFromIDB(AVATAR_ORIGINAL_IDB_KEY);
-      localStorage.removeItem(AVATAR_STORAGE_KEY);
-      if (fileInput) fileInput.value = '';
-      updateStudentAvatarDisplay();
-      showToast(t('toastPhotoRemoved'));
-    });
-  }
 
   if (btnToggleFit) {
     btnToggleFit.addEventListener('click', (e) => {
@@ -2684,11 +2306,10 @@ function setupStudentInfo() {
   }
 
   if (btnViewHd && hdModal && hdPreview) {
-    btnViewHd.addEventListener('click', async (e) => {
+    btnViewHd.addEventListener('click', (e) => {
       e.stopPropagation();
-      // Prioritize the bit-for-bit uncompressed original from IndexedDB
-      const idbOriginal = await getOriginalPhotoFromIDB(AVATAR_ORIGINAL_IDB_KEY);
-      const avatarSrc = idbOriginal || localStorage.getItem(AVATAR_STORAGE_KEY);
+      const info = app.data.studentInfo || {};
+      const avatarSrc = info.avatar || null;
       if (avatarSrc) {
         hdPreview.onload = () => {
           const resBadge = document.getElementById('hd-modal-resolution');
@@ -2850,19 +2471,15 @@ function renderWorklogView() {
     if (!content.tasks || content.tasks.length === 0) {
       tbody.innerHTML = `
         <tr>
-          <td colspan="6" style="text-align:center; padding: 32px 16px; color: #64748B;">
-            <div style="font-size: 14px; margin-bottom: 10px;">${t('emptyTasksMsg')}</div>
-            <button type="button" class="btn btn-outline btn-sm" onclick="openAddTaskModal()">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-              ${t('btnAddTaskThisWeek')}
-            </button>
+          <td colspan="5" style="text-align:center; padding: 32px 16px; color: #64748B;">
+            <div style="font-size: 14px;">${t('emptyTasksMsg')}</div>
           </td>
         </tr>
       `;
       return;
     }
 
-    tbody.innerHTML = content.tasks.map((task, idx) => `
+    tbody.innerHTML = content.tasks.map((task) => `
       <tr>
         <td style="font-weight:700; text-align:center; vertical-align:top; font-size:14px; padding-top:14px;">${escapeHtml(task.day)}</td>
         <td style="white-space:pre-wrap; line-height: 1.6; font-size:13.5px; vertical-align:top; padding-top:14px;">${escapeHtml(task.desc)}</td>
@@ -2871,127 +2488,8 @@ function renderWorklogView() {
         <td style="vertical-align:top; padding-top:14px;">
           ${renderRefLinks(task.ref)}
         </td>
-        <td style="text-align:right; white-space:nowrap; vertical-align:top; padding-top:14px;">
-          <button type="button" class="btn-table-action btn-table-edit" title="${t('btnEdit')}" onclick="openEditTaskModal(${idx})">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-            <span>${t('btnEdit')}</span>
-          </button>
-          <button type="button" class="btn-table-action btn-table-delete" title="${t('btnDelete')}" onclick="deleteWeekTask(${idx})">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
-            <span>${t('btnDelete')}</span>
-          </button>
-        </td>
       </tr>
     `).join('');
-  }
-}
-
-function deleteWeekTask(idx) {
-  const week = getCurrentWeekWorklog();
-  const lang = app.currentLang;
-  if (confirm(t('confirmDeleteTask'))) {
-    week[lang].tasks.splice(idx, 1);
-    app.saveData();
-    renderWorklogView();
-    showToast(t('toastDeleteTask'));
-  }
-}
-
-function openEditTaskModal(idx) {
-  const week = getCurrentWeekWorklog();
-  const lang = app.currentLang;
-  const content = week[lang] || week.vi;
-  const task = content.tasks[idx];
-  if (!task) return;
-
-  const modal = document.getElementById('worklog-task-modal');
-  const title = document.getElementById('worklog-task-modal-title');
-  const submitBtn = document.getElementById('btn-submit-task-modal');
-  const select = document.getElementById('modal-task-week-select');
-  const editIndexInput = document.getElementById('modal-task-edit-index');
-
-  if (select) {
-    const prefix = t('weekPrefix');
-    select.innerHTML = Array.from({ length: 12 }, (_, i) => `<option value="${i + 1}">${prefix} ${i + 1}</option>`).join('');
-    select.value = app.data.currentWeek || 1;
-    select.disabled = true;
-  }
-
-  if (editIndexInput) editIndexInput.value = idx;
-  if (title) title.textContent = t('modalEditTaskTitle');
-  if (submitBtn) submitBtn.textContent = t('btnUpdateTask');
-
-  const dayInput = document.getElementById('modal-task-day');
-  const descInput = document.getElementById('modal-task-desc');
-  const startInput = document.getElementById('modal-task-start');
-  const endInput = document.getElementById('modal-task-end');
-  const refInput = document.getElementById('modal-task-ref');
-
-  if (dayInput) dayInput.value = task.day || '';
-  if (descInput) descInput.value = task.desc || '';
-  if (startInput) startInput.value = task.start || '';
-  if (endInput) endInput.value = task.end || '';
-  if (refInput) refInput.value = task.ref || '';
-
-  modal?.classList.add('show');
-}
-
-function openAddTaskModal() {
-  const modal = document.getElementById('worklog-task-modal');
-  const title = document.getElementById('worklog-task-modal-title');
-  const submitBtn = document.getElementById('btn-submit-task-modal');
-  const select = document.getElementById('modal-task-week-select');
-  const editIndexInput = document.getElementById('modal-task-edit-index');
-  const form = document.getElementById('worklog-task-form');
-
-  form?.reset();
-  if (editIndexInput) editIndexInput.value = -1;
-  if (select) {
-    const prefix = t('weekPrefix');
-    select.innerHTML = Array.from({ length: 12 }, (_, i) => `<option value="${i + 1}">${prefix} ${i + 1}</option>`).join('');
-    select.value = app.data.currentWeek || 1;
-    select.disabled = false;
-  }
-  if (title) title.textContent = t('modalTitle');
-  if (submitBtn) submitBtn.textContent = t('btnModalSave');
-
-  modal?.classList.add('show');
-}
-
-function openMetaModal() {
-  const week = getCurrentWeekWorklog();
-  const lang = app.currentLang;
-  const content = week[lang] || week.vi;
-
-  const modal = document.getElementById('worklog-meta-modal');
-  const title = document.getElementById('worklog-meta-modal-title');
-  const objInput = document.getElementById('modal-meta-objectives');
-  const achInput = document.getElementById('modal-meta-achievements');
-
-  if (title) title.textContent = `${t('modalMetaTitle')} - ${t('weekPrefix')} ${week.weekNum}`;
-  if (objInput) objInput.value = content.objectives || '';
-  if (achInput) achInput.value = content.achievements || '';
-
-  modal?.classList.add('show');
-}
-
-function closeMetaModal() {
-  const modal = document.getElementById('worklog-meta-modal');
-  modal?.classList.remove('show');
-}
-
-function clearCurrentWeek() {
-  if (confirm(t('confirmResetWeek'))) {
-    const week = getCurrentWeekWorklog();
-    const lang = app.currentLang;
-    if (week[lang]) {
-      week[lang].objectives = '';
-      week[lang].achievements = '';
-      week[lang].tasks = [];
-    }
-    app.saveData();
-    renderWorklogView();
-    showToast(t('toastResetWeekSuccess'));
   }
 }
 
@@ -3033,84 +2531,9 @@ function closeExportCodeModal() {
   modal?.classList.remove('show');
 }
 
-function importWorklogJson(file) {
-  if (!file) return;
-  const reader = new FileReader();
-  reader.onload = (e) => {
-    try {
-      const parsed = JSON.parse(e.target.result);
-      let worklogs = null;
-      if (Array.isArray(parsed)) {
-        worklogs = parsed;
-      } else if (parsed && Array.isArray(parsed.worklogs)) {
-        worklogs = parsed.worklogs;
-      }
-      if (!worklogs || worklogs.length === 0) {
-        throw new Error("File JSON không chứa dữ liệu worklogs hợp lệ.");
-      }
-      app.data.worklogs = worklogs;
-      app.saveData();
-      renderWeekTabs();
-      renderWorklogView();
-      showToast(t('toastImportSuccess'));
-    } catch (err) {
-      alert("Lỗi khi nhập file JSON: " + err.message);
-    }
-  };
-  reader.readAsText(file);
-}
-
 function setupWorklog() {
-  // Meta editing listeners
-  const btnEditMeta = document.getElementById('btn-edit-week-meta');
-  const btnEditMetaBar = document.getElementById('btn-edit-week-meta-bar');
-  btnEditMeta?.addEventListener('click', openMetaModal);
-  btnEditMetaBar?.addEventListener('click', openMetaModal);
-
-  const btnCloseMeta = document.getElementById('btn-close-meta-modal');
-  const btnCancelMeta = document.getElementById('btn-cancel-meta-modal');
-  btnCloseMeta?.addEventListener('click', closeMetaModal);
-  btnCancelMeta?.addEventListener('click', closeMetaModal);
-
-  const metaForm = document.getElementById('worklog-meta-form');
-  if (metaForm) {
-    metaForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const week = getCurrentWeekWorklog();
-      const lang = app.currentLang;
-      if (!week[lang]) week[lang] = { objectives: '', achievements: '', tasks: [] };
-
-      week[lang].objectives = document.getElementById('modal-meta-objectives')?.value.trim() || '';
-      week[lang].achievements = document.getElementById('modal-meta-achievements')?.value.trim() || '';
-
-      app.saveData();
-      renderWorklogView();
-      closeMetaModal();
-      showToast(t('toastSaveMetaSuccess'));
-    });
-  }
-
-  // Worklog task modal listeners
-  setupWorklogModal();
-
-  // Reset week listener
-  document.getElementById('btn-clear-week')?.addEventListener('click', clearCurrentWeek);
-
-  // Export / Import listeners
+  // Export / Code modal listeners
   document.getElementById('btn-export-worklog-json')?.addEventListener('click', exportWorklogJson);
-
-  const fileInput = document.getElementById('worklog-import-input');
-  document.getElementById('btn-import-worklog-btn')?.addEventListener('click', () => {
-    fileInput?.click();
-  });
-  fileInput?.addEventListener('change', (e) => {
-    if (e.target.files && e.target.files[0]) {
-      importWorklogJson(e.target.files[0]);
-      fileInput.value = '';
-    }
-  });
-
-  // Code modal listeners
   document.getElementById('btn-view-worklog-code')?.addEventListener('click', showExportCodeModal);
   document.getElementById('btn-close-export-modal')?.addEventListener('click', closeExportCodeModal);
   document.getElementById('btn-close-export-btn')?.addEventListener('click', closeExportCodeModal);
@@ -3128,111 +2551,29 @@ function setupWorklog() {
   });
 }
 
-function setupWorklogModal() {
-  const modal = document.getElementById('worklog-task-modal');
-  const btnOpen = document.getElementById('btn-add-week-task');
-  const btnOpenBar = document.getElementById('btn-add-week-task-bar');
-  const btnOpenCard = document.getElementById('btn-add-week-task-card');
-  const btnOpenBottom = document.getElementById('btn-add-task-bottom');
-  const btnOpenHeader = document.getElementById('btn-open-log-modal');
-  const btnClose = document.getElementById('btn-close-task-modal');
-  const btnCancel = document.getElementById('btn-cancel-task-modal');
-  const form = document.getElementById('worklog-task-form');
-
-  const closeModal = () => {
-    modal?.classList.remove('show');
-    form?.reset();
-    const select = document.getElementById('modal-task-week-select');
-    if (select) select.disabled = false;
-  };
-
-  btnOpen?.addEventListener('click', openAddTaskModal);
-  btnOpenBar?.addEventListener('click', openAddTaskModal);
-  btnOpenCard?.addEventListener('click', openAddTaskModal);
-  btnOpenBottom?.addEventListener('click', openAddTaskModal);
-  btnOpenHeader?.addEventListener('click', openAddTaskModal);
-  btnClose?.addEventListener('click', closeModal);
-  btnCancel?.addEventListener('click', closeModal);
-
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const select = document.getElementById('modal-task-week-select');
-      const weekNum = parseInt(select.value, 10);
-      const day = document.getElementById('modal-task-day').value.trim();
-      const desc = document.getElementById('modal-task-desc').value.trim();
-      const start = document.getElementById('modal-task-start').value;
-      const end = document.getElementById('modal-task-end').value;
-      const ref = document.getElementById('modal-task-ref').value.trim();
-      const editIndex = parseInt(document.getElementById('modal-task-edit-index')?.value ?? '-1', 10);
-
-      let week = app.data.worklogs.find(w => w.weekNum === weekNum);
-      if (!week) {
-        week = {
-          weekNum: weekNum,
-          vi: { objectives: '', achievements: '', tasks: [] },
-          en: { objectives: '', achievements: '', tasks: [] }
-        };
-        app.data.worklogs.push(week);
-      }
-
-      const lang = app.currentLang;
-      if (!week[lang]) week[lang] = { objectives: '', achievements: '', tasks: [] };
-      if (!Array.isArray(week[lang].tasks)) week[lang].tasks = [];
-
-      if (editIndex >= 0 && editIndex < week[lang].tasks.length) {
-        week[lang].tasks[editIndex] = { day, desc, start, end, ref };
-        showToast(t('toastUpdateTaskSuccess'));
-      } else {
-        week[lang].tasks.push({ day, desc, start, end, ref });
-        showToast(`${t('toastAddTaskSuccess')} ${weekNum}!`);
-      }
-
-      app.data.currentWeek = weekNum;
-      app.saveData();
-
-      closeModal();
-      navigateTo('worklog');
-      renderWeekTabs();
-      renderWorklogView();
-    });
+// ==========================================
+// 8. 2. PROPOSAL MODULE (READ-ONLY)
+// ==========================================
+function setContent(id, val) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  if ('value' in el && el.tagName !== 'DIV') {
+    el.value = val || '';
+  } else {
+    el.textContent = val || '';
   }
 }
 
-// ==========================================
-// 8. 2. PROPOSAL MODULE
-// ==========================================
 function renderProposalInputs() {
   const p = app.data.proposal[app.currentLang] || app.data.proposal.vi;
-  const setVal = (id, val) => {
-    const el = document.getElementById(id);
-    if (el) el.value = val || '';
-  };
-
-  setVal('prop-summary', p.summary);
-  setVal('prop-problem', p.problem);
-  setVal('prop-solution', p.solution);
-  setVal('prop-arch', p.arch);
-  setVal('prop-budget', p.budget);
+  setContent('prop-summary', p.summary);
+  setContent('prop-problem', p.problem);
+  setContent('prop-solution', p.solution);
+  setContent('prop-arch', p.arch);
+  setContent('prop-budget', p.budget);
 }
 
-function setupProposal() {
-  const btnSave = document.getElementById('btn-save-proposal');
-  if (btnSave) {
-    btnSave.addEventListener('click', () => {
-      const lang = app.currentLang;
-      app.data.proposal[lang] = {
-        summary: document.getElementById('prop-summary').value.trim(),
-        problem: document.getElementById('prop-problem').value.trim(),
-        solution: document.getElementById('prop-solution').value.trim(),
-        arch: document.getElementById('prop-arch').value.trim(),
-        budget: document.getElementById('prop-budget').value.trim()
-      };
-      app.saveData();
-      showToast(t('toastSaveProposal'));
-    });
-  }
-}
+function setupProposal() {}
 
 // ==========================================
 // 9. 3. BLOGS POSTED MODULE
@@ -3283,7 +2624,6 @@ function renderBlogsList() {
             <button type="button" class="btn-minimal-read" onclick="navigateTo('blogs/s3-express-one-zone')">
               <span>${lang === 'vi' ? 'Đọc bài viết →' : 'Read Article →'}</span>
             </button>
-            <button type="button" class="btn-text-subtle" style="color:#737373; font-size:12px;" onclick="deleteBlog('${b.id}')">${t('btnDelete')}</button>
           </div>
         </div>
       `;
@@ -3327,7 +2667,6 @@ function renderBlogsList() {
             <button type="button" class="btn-minimal-read" onclick="navigateTo('blogs/aws-event-driven-architecture')">
               <span>${lang === 'vi' ? 'Đọc bài viết →' : 'Read Article →'}</span>
             </button>
-            <button type="button" class="btn-text-subtle" style="color:#737373; font-size:12px;" onclick="deleteBlog('${b.id}')">${t('btnDelete')}</button>
           </div>
         </div>
       `;
@@ -3371,7 +2710,6 @@ function renderBlogsList() {
             <button type="button" class="btn-minimal-read" onclick="navigateTo('blogs/aws-ec2-identity-containment')">
               <span>${lang === 'vi' ? 'Đọc bài viết →' : 'Read Article →'}</span>
             </button>
-            <button type="button" class="btn-text-subtle" style="color:#737373; font-size:12px;" onclick="deleteBlog('${b.id}')">${t('btnDelete')}</button>
           </div>
         </div>
       `;
@@ -3412,7 +2750,6 @@ function renderBlogsList() {
           <a href="${escapeHtml(b.url)}" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:12px; padding:6px 14px; font-weight:600; display:inline-flex; align-items:center; gap:6px;">
             <span>${t('readArticleLink')}</span>
           </a>
-          <button type="button" class="btn-text-subtle" style="color:#EF4444; font-size:12px;" onclick="deleteBlog('${b.id}')">${t('btnDelete')}</button>
         </div>
       </div>
     `;
@@ -3456,46 +2793,7 @@ function closeBlogImageModal() {
   if (modal) modal.classList.remove('active');
 }
 
-function deleteBlog(id) {
-  if (confirm(t('confirmDeleteBlog'))) {
-    const lang = app.currentLang;
-    app.data.blogs[lang] = (app.data.blogs[lang] || []).filter(b => b.id !== id);
-    app.saveData();
-    renderBlogsList();
-    showToast(t('toastDeleteBlog'));
-  }
-}
-
 function setupBlogs() {
-  const btnAdd = document.getElementById('btn-add-blog');
-  if (btnAdd) {
-    btnAdd.addEventListener('click', () => {
-      const promptTitle = app.currentLang === 'vi' ? 'Tiêu đề bài viết:' : 'Blog Title:';
-      const promptSnippet = app.currentLang === 'vi' ? 'Tóm tắt nội dung:' : 'Article Summary:';
-      const promptUrl = app.currentLang === 'vi' ? 'Đường dẫn bài viết (URL):' : 'Article URL:';
-
-      const title = prompt(promptTitle, 'Blog - ');
-      if (!title) return;
-      const snippet = prompt(promptSnippet, '');
-      if (!snippet) return;
-      const url = prompt(promptUrl, 'https://www.facebook.com/groups/awsstudygroupfcj');
-
-      const lang = app.currentLang;
-      if (!app.data.blogs[lang]) app.data.blogs[lang] = [];
-      app.data.blogs[lang].push({
-        id: 'blog-' + Date.now(),
-        title,
-        snippet,
-        url: url || 'https://www.facebook.com/groups/awsstudygroupfcj',
-        date: new Date().toLocaleDateString(lang === 'vi' ? 'vi-VN' : 'en-US')
-      });
-
-      app.saveData();
-      renderBlogsList();
-      showToast(t('toastAddBlog'));
-    });
-  }
-
   // Blog image modal event listeners
   const btnCloseModal = document.getElementById('btn-close-blog-img-modal');
   const btnCloseBtn = document.getElementById('btn-close-blog-img-btn');
@@ -5600,9 +4898,6 @@ function renderEventsList() {
           ` : `
             <div></div>
           `}
-          <button type="button" class="btn-text-subtle" style="color:#EF4444; font-size:12px;" onclick="event.stopPropagation(); deleteEvent('${ev.id}')">
-            ${t('btnDeleteEvent')}
-          </button>
         </div>
       </div>
     `;
@@ -5835,15 +5130,6 @@ function renderEventDetail(slug = 'first-cloud-ai-journey-24-10-2026') {
       <div class="event-uploaded-img-wrap" onclick="window.open('${savedPhoto}', '_blank')">
         <img src="${savedPhoto}" alt="${escapeHtml(r.title)}" class="event-uploaded-img" />
       </div>
-      <div class="event-photo-actions">
-        <label class="btn-upload-checkin">
-          <span>📷 ${lang === 'vi' ? 'Thay đổi ảnh check-in' : 'Change check-in photo'}</span>
-          <input type="file" accept="image/*" style="display:none;" onchange="uploadEventCheckinPhoto('${targetSlug}', this)" />
-        </label>
-        <button type="button" class="btn btn-outline btn-sm" style="color:#EF4444; border-color:#FCA5A5;" onclick="deleteEventCheckinPhoto('${targetSlug}')">
-          <span>🗑️ ${lang === 'vi' ? 'Xóa ảnh' : 'Remove photo'}</span>
-        </button>
-      </div>
     </div>
   ` : `
     <div class="photo-pending-box">
@@ -5856,13 +5142,7 @@ function renderEventDetail(slug = 'first-cloud-ai-journey-24-10-2026') {
       <span class="photo-pending-badge">${escapeHtml(r.photoPendingBadge)}</span>
       <h3 class="photo-pending-title" style="margin-top:12px;">${escapeHtml(r.photoPendingTitle)}</h3>
       <p class="photo-pending-desc">${escapeHtml(r.photoPendingDesc)}</p>
-      <p style="font-size:12px; color:#92400E; margin:0 0 16px 0; font-style:italic;">${escapeHtml(r.photoPendingNote)}</p>
-      <div style="display:flex; justify-content:center; gap:10px;">
-        <label class="btn btn-primary btn-sm btn-upload-checkin">
-          <span>📷 ${lang === 'vi' ? 'Tải ảnh check-in thực tế của bạn lên' : 'Upload Authentic Check-in Photo'}</span>
-          <input type="file" accept="image/*" style="display:none;" onchange="uploadEventCheckinPhoto('${targetSlug}', this)" />
-        </label>
-      </div>
+      <p style="font-size:12px; color:#92400E; margin:0; font-style:italic;">${escapeHtml(r.photoPendingNote)}</p>
     </div>
   `;
 
@@ -6138,105 +5418,7 @@ function renderEventDetail(slug = 'first-cloud-ai-journey-24-10-2026') {
   `;
 }
 
-function uploadEventCheckinPhoto(slug, input) {
-  if (!input.files || !input.files[0]) return;
-  const file = input.files[0];
-  if (!file.type.startsWith('image/')) {
-    alert(app.currentLang === 'vi' ? 'Vui lòng chọn tệp hình ảnh hợp lệ (PNG, JPG, WebP).' : 'Please select a valid image file (PNG, JPG, WebP).');
-    return;
-  }
-  
-  const reader = new FileReader();
-  reader.onload = function(e) {
-    const rawDataUrl = e.target.result;
-    const img = new Image();
-    img.onload = function() {
-      const maxDim = 1400;
-      let width = img.width;
-      let height = img.height;
-      if (width > maxDim || height > maxDim) {
-        if (width > height) {
-          height = Math.round((height * maxDim) / width);
-          width = maxDim;
-        } else {
-          width = Math.round((width * maxDim) / height);
-          height = maxDim;
-        }
-      }
-      const canvas = document.createElement('canvas');
-      canvas.width = width;
-      canvas.height = height;
-      const ctx = canvas.getContext('2d');
-      ctx.drawImage(img, 0, 0, width, height);
-      const optimizedDataUrl = canvas.toDataURL('image/jpeg', 0.88);
-      try {
-        localStorage.setItem('fcaj_event_checkin_photo_' + slug, optimizedDataUrl);
-        showToast(app.currentLang === 'vi' ? 'Đã lưu ảnh check-in thực tế thành công!' : 'Authentic check-in photo saved successfully!');
-        renderEventDetail(slug);
-        renderEventsList();
-      } catch (err) {
-        console.error('Storage error', err);
-        showToast(app.currentLang === 'vi' ? 'Dung lượng ảnh quá lớn cho bộ nhớ trình duyệt.' : 'Image file is too large for storage.', 'error');
-      }
-    };
-    img.src = rawDataUrl;
-  };
-  reader.readAsDataURL(file);
-}
-
-function deleteEventCheckinPhoto(slug) {
-  const confirmMsg = app.currentLang === 'vi' ? 'Bạn có chắc chắn muốn xóa ảnh check-in này không?' : 'Are you sure you want to remove this check-in photo?';
-  if (confirm(confirmMsg)) {
-    localStorage.removeItem('fcaj_event_checkin_photo_' + slug);
-    showToast(app.currentLang === 'vi' ? 'Đã xóa ảnh check-in' : 'Check-in photo removed');
-    renderEventDetail(slug);
-    renderEventsList();
-  }
-}
-
-function deleteEvent(id) {
-  if (confirm(t('confirmDeleteEvent'))) {
-    const lang = app.currentLang;
-    app.data.events[lang] = (app.data.events[lang] || []).filter(e => e.id !== id);
-    app.saveData();
-    renderEventsList();
-    showToast(t('toastDeleteEvent'));
-  }
-}
-
-function setupEvents() {
-  const btnAdd = document.getElementById('btn-add-event');
-  if (btnAdd) {
-    btnAdd.addEventListener('click', () => {
-      const promptName = app.currentLang === 'vi' ? 'Tên sự kiện:' : 'Event Name:';
-      const promptTime = app.currentLang === 'vi' ? 'Thời gian:' : 'Date & Time:';
-      const promptLoc = app.currentLang === 'vi' ? 'Địa điểm:' : 'Location:';
-      const promptHighlights = app.currentLang === 'vi' ? 'Nội dung & Bài học rút ra:' : 'Highlights & Takeaways:';
-
-      const name = prompt(promptName, 'Event - ');
-      if (!name) return;
-      const dateTime = prompt(promptTime, '');
-      const location = prompt(promptLoc, '');
-      const highlights = prompt(promptHighlights, '');
-
-      const lang = app.currentLang;
-      if (!app.data.events[lang]) app.data.events[lang] = [];
-      app.data.events[lang].push({
-        id: 'event-' + Date.now(),
-        name,
-        dateTime: dateTime || '-',
-        location: location || '-',
-        role: lang === 'vi' ? 'Khách mời tham dự' : 'Attendee',
-        speakers: lang === 'vi' ? 'Chuyên gia AWS' : 'AWS Experts',
-        highlights: highlights || ''
-      });
-
-      app.saveData();
-      renderEventsList();
-      showToast(t('toastAddEvent'));
-    });
-  }
-}
+function setupEvents() {}
 
 // ==========================================
 // 11. 5. WORKSHOP STEPS
@@ -6271,97 +5453,50 @@ function renderCriteriaTable() {
       <td style="text-align:center; font-weight:700;">${c.id}</td>
       <td><strong>${escapeHtml(isVi ? c.title_vi : c.title_en)}</strong></td>
       <td>${escapeHtml(isVi ? c.desc_vi : c.desc_en)}</td>
-      <td style="text-align:center;">
-        <input type="radio" name="criteria-${c.id}" value="good" ${c.rating === 'good' ? 'checked' : ''} onchange="setCriteriaRating(${c.id}, 'good')">
+      <td style="text-align:center; font-weight:700; color:${c.rating === 'good' ? '#16A34A' : '#94A3B8'}; font-size:15px;">
+        ${c.rating === 'good' ? '✓' : '—'}
       </td>
-      <td style="text-align:center;">
-        <input type="radio" name="criteria-${c.id}" value="fair" ${c.rating === 'fair' ? 'checked' : ''} onchange="setCriteriaRating(${c.id}, 'fair')">
+      <td style="text-align:center; font-weight:700; color:${c.rating === 'fair' ? '#2563EB' : '#94A3B8'}; font-size:15px;">
+        ${c.rating === 'fair' ? '✓' : '—'}
       </td>
-      <td style="text-align:center;">
-        <input type="radio" name="criteria-${c.id}" value="avg" ${c.rating === 'avg' ? 'checked' : ''} onchange="setCriteriaRating(${c.id}, 'avg')">
+      <td style="text-align:center; font-weight:700; color:${c.rating === 'avg' ? '#D97706' : '#94A3B8'}; font-size:15px;">
+        ${c.rating === 'avg' ? '✓' : '—'}
       </td>
     </tr>
   `).join('');
 }
 
-function setCriteriaRating(id, rating) {
-  const item = app.data.criteria.find(c => c.id === id);
-  if (item) {
-    item.rating = rating;
-    app.saveData();
-  }
-}
-
 function renderSelfAssessmentInputs() {
   const lang = app.currentLang;
-  const narrative = document.getElementById('assess-narrative');
-  const improvement = document.getElementById('assess-improvement');
-
-  if (narrative) narrative.value = app.data.selfNarrative[lang] || '';
-  if (improvement) improvement.value = app.data.needsImprovement[lang] || '';
+  setContent('assess-narrative', app.data.selfNarrative[lang] || '');
+  setContent('assess-improvement', app.data.needsImprovement[lang] || '');
 }
 
-function setupSelfAssessment() {
-  const btnSave = document.getElementById('btn-save-assessment');
-  if (btnSave) {
-    btnSave.addEventListener('click', () => {
-      const lang = app.currentLang;
-      app.data.selfNarrative[lang] = document.getElementById('assess-narrative').value.trim();
-      app.data.needsImprovement[lang] = document.getElementById('assess-improvement').value.trim();
-      app.saveData();
-      showToast(t('toastSaveAssessment'));
-    });
-  }
-}
+function setupSelfAssessment() {}
 
 // ==========================================
-// 13. 7. SHARING AND FEEDBACK
+// 13. 7. SHARING AND FEEDBACK (READ-ONLY)
 // ==========================================
 function renderFeedbackInputs() {
   const lang = app.currentLang;
   const fb = app.data.feedback[lang] || app.data.feedback.vi;
 
-  const setVal = (id, val) => {
-    const el = document.getElementById(id);
-    if (el) el.value = val || '';
-  };
-
-  setVal('fb-env', fb.env);
-  setVal('fb-mentor', fb.mentor);
-  setVal('fb-relevance', fb.relevance);
-  setVal('fb-learning', fb.learning);
-  setVal('fb-culture', fb.culture);
-  setVal('fb-policies', fb.policies);
-  setVal('fb-suggestions', fb.suggestions);
+  setContent('fb-env', fb.env);
+  setContent('fb-mentor', fb.mentor);
+  setContent('fb-relevance', fb.relevance);
+  setContent('fb-learning', fb.learning);
+  setContent('fb-culture', fb.culture);
+  setContent('fb-policies', fb.policies);
+  setContent('fb-suggestions', fb.suggestions);
 }
 
-function setupFeedback() {
-  const btnSave = document.getElementById('btn-save-feedback');
-  if (btnSave) {
-    btnSave.addEventListener('click', () => {
-      const lang = app.currentLang;
-      app.data.feedback[lang] = {
-        env: document.getElementById('fb-env').value.trim(),
-        mentor: document.getElementById('fb-mentor').value.trim(),
-        relevance: document.getElementById('fb-relevance').value.trim(),
-        learning: document.getElementById('fb-learning').value.trim(),
-        culture: document.getElementById('fb-culture').value.trim(),
-        policies: document.getElementById('fb-policies').value.trim(),
-        suggestions: document.getElementById('fb-suggestions').value.trim()
-      };
-      app.saveData();
-      showToast(t('toastSaveFeedback'));
-    });
-  }
-}
+function setupFeedback() {}
 
 // ==========================================
 // 14. SETTINGS & PRINT
 // ==========================================
 function setupSettingsAndPrint() {
   const btnExport = document.getElementById('btn-export-json');
-  const fileImport = document.getElementById('file-import-json');
-  const btnReset = document.getElementById('btn-reset-data');
   const btnPrint = document.getElementById('btn-quick-print');
 
   if (btnExport) {
@@ -6374,40 +5509,6 @@ function setupSettingsAndPrint() {
       a.click();
       a.remove();
       showToast(t('toastExportJson'));
-    });
-  }
-
-  if (fileImport) {
-    fileImport.addEventListener('change', (e) => {
-      const file = e.target.files[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = (evt) => {
-        try {
-          const parsed = JSON.parse(evt.target.result);
-          if (parsed && (parsed.worklogs || parsed.studentInfo)) {
-            parsed.studentInfo = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.studentInfo));
-            app.data = parsed;
-            app.saveData();
-            app.applyLanguage();
-            showToast(t('toastImportSuccess'));
-          }
-        } catch (err) {
-          showToast(t('toastImportError'), 'error');
-        }
-      };
-      reader.readAsText(file);
-    });
-  }
-
-  if (btnReset) {
-    btnReset.addEventListener('click', () => {
-      if (confirm(t('confirmReset'))) {
-        app.data = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA));
-        app.saveData();
-        app.applyLanguage();
-        showToast(t('toastResetSuccess'));
-      }
     });
   }
 
@@ -6518,20 +5619,14 @@ window.app = app;
 window.navigateTo = navigateTo;
 window.renderEventsList = renderEventsList;
 window.renderEventDetail = renderEventDetail;
-window.uploadEventCheckinPhoto = uploadEventCheckinPhoto;
-window.deleteEventCheckinPhoto = deleteEventCheckinPhoto;
 window.selectWeek = selectWeek;
-window.deleteWeekTask = deleteWeekTask;
-window.openEditTaskModal = openEditTaskModal;
-window.openAddTaskModal = openAddTaskModal;
-window.openMetaModal = openMetaModal;
-window.clearCurrentWeek = clearCurrentWeek;
 window.exportWorklogJson = exportWorklogJson;
 window.showExportCodeModal = showExportCodeModal;
-window.deleteBlog = deleteBlog;
+window.closeExportCodeModal = closeExportCodeModal;
 window.renderBlogDetail = renderBlogDetail;
 window.renderEventDrivenBlogDetail = renderEventDrivenBlogDetail;
 window.renderIdentityContainmentBlogDetail = renderIdentityContainmentBlogDetail;
 window.renderBlogsList = renderBlogsList;
-window.deleteEvent = deleteEvent;
-window.setCriteriaRating = setCriteriaRating;
+window.openBlogImageModal = openBlogImageModal;
+window.closeBlogImageModal = closeBlogImageModal;
+window.toggleBlogSnippet = toggleBlogSnippet;
