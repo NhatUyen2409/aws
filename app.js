@@ -5588,22 +5588,18 @@ function renderModernizationEventDetail(container, lang = 'vi') {
         </div>
         <div class="report-prose">
           <p>${isVi
-            ? 'Vào ngày <strong>29/09/2026</strong>, tôi đã tham dự sự kiện <strong>First Cloud AI Journey</strong>, được tổ chức từ <strong>08:00 đến 17:00</strong> tại <strong>tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam</strong>.'
-            : 'On <strong>September 29, 2026</strong>, I attended the <strong>First Cloud AI Journey</strong> event, held from <strong>08:00 AM to 05:00 PM</strong> on the <strong>26th Floor of Bitexco Financial Tower, Ho Chi Minh City, Vietnam</strong>.'}</p>
+            ? 'Hội thảo <strong>First Cloud AI Journey</strong> tập trung vào chiến lược hiện đại hóa ứng dụng và cơ sở dữ liệu doanh nghiệp trên nền tảng AWS Cloud, chuyển dịch từ kiến trúc nguyên khối (Monolith) sang kiến trúc dịch vụ vi mô (Microservices) và ứng dụng Trí tuệ nhân tạo tạo sinh (GenAI) để tự động hóa nâng cấp mã nguồn.'
+            : 'The <strong>First Cloud AI Journey</strong> workshop focused on enterprise application and database modernization strategies on AWS Cloud, transitioning from monolithic architectures to cloud-native microservices, and leveraging Generative AI (GenAI) for automated code transformation.'}</p>
           
           <div class="report-quote-box" style="border-left-color: #171717;">
             ${isVi
-              ? '“Hội thảo quy tụ các chuyên gia cấp cao từ AWS, các kiến trúc sư giải pháp giải pháp, kỹ sư doanh nghiệp và sinh viên cùng trao đổi về lộ trình chuyển đổi ứng dụng nguyên khối (Monolith) sang kiến trúc Microservices hiện đại, kết hợp tự động hóa mã nguồn bằng GenAI.”'
-              : '“The workshop brought together senior AWS leaders, solution architects, enterprise engineers, and students to discuss modernizing legacy monolithic architectures into cloud-native microservices, combined with GenAI-assisted code transformation.”'}
+              ? '“Nội dung hội thảo bao gồm các bài thuyết trình chuyên sâu về nút thắt của kiến trúc nguyên khối, phương pháp luận Domain-Driven Design (DDD), các mẫu giao tiếp hướng sự kiện (Event-Driven Architecture) và giải pháp tự động hóa mã nguồn với Amazon Q Developer.”'
+              : '“The workshop featured deep technical sessions covering monolithic architecture bottlenecks, Domain-Driven Design (DDD) methodologies, Event-Driven Architecture (EDA) patterns, and automated code migration with Amazon Q Developer.”'}
           </div>
 
           <p>${isVi
-            ? 'Sự kiện có sự tham gia chia sẻ của các chuyên gia hàng đầu từ AWS: <strong>Jignesh Shah</strong> (Giám đốc CSDL Mã nguồn mở), <strong>Erica Liu</strong> (Chuyên gia Cao cấp Hiện đại hóa Ứng dụng - AppMod), và <strong>Fabrianne Effendi</strong> (Kiến trúc sư giải pháp Serverless).'
-            : 'The event featured in-depth presentations by senior AWS specialists: <strong>Jignesh Shah</strong> (Director, Open Source Databases), <strong>Erica Liu</strong> (Senior GTM Specialist, AppMod), and <strong>Fabrianne Effendi</strong> (Associate Specialist Solutions Architect).'}</p>
-
-          <p>${isVi
-            ? 'Thông qua các bài thuyết trình chuyên sâu, các phiên demo thực hành và thảo luận mở, tôi đã tiếp thu những góc nhìn thực tiễn và sâu sắc về cách thức chuyển dịch các hệ thống lớn lên đám mây một cách an toàn, có phương pháp và tối ưu hóa vận hành.'
-            : 'Through deep technical presentations, practical demonstrations, and open discussions, I gained comprehensive insights into securely and systematically migrating enterprise workloads to the cloud.'}</p>
+            ? 'Chương trình được dẫn dắt bởi các chuyên gia kỹ thuật từ AWS: <strong>Jignesh Shah</strong> (Giám đốc CSDL Mã nguồn mở), <strong>Erica Liu</strong> (Chuyên gia Cao cấp Hiện đại hóa Ứng dụng - AppMod), và <strong>Fabrianne Effendi</strong> (Kiến trúc sư giải pháp Serverless), mang đến các kiến thức chuyên môn, kịch bản thực hành và thảo luận mở về chuyển dịch hạ tầng đám mây.'
+            : 'The program was delivered by senior technical leaders from AWS: <strong>Jignesh Shah</strong> (Director, Open Source Databases), <strong>Erica Liu</strong> (Senior GTM Specialist, AppMod), and <strong>Fabrianne Effendi</strong> (Associate Specialist Solutions Architect), providing comprehensive architectural insights and technical demonstrations.'}</p>
         </div>
       </section>
 
@@ -5615,14 +5611,14 @@ function renderModernizationEventDetail(container, lang = 'vi') {
         </div>
         <div class="report-prose">
           <p>${isVi
-            ? 'Các mục tiêu kỹ thuật và định hướng kiến trúc trọng tâm của hội thảo bao gồm:'
+            ? 'Các mục tiêu kỹ thuật và nội dung kiến trúc trọng tâm được trình bày tại hội thảo bao gồm:'
             : 'Core technical and architectural objectives established during the workshop:'}</p>
           <ul>
-            <li>${isVi ? '<strong>Nhận diện nút thắt của kiến trúc nguyên khối:</strong> Phân tích nguyên nhân khiến hệ thống Monolith khó mở rộng, chu kỳ phát hành kéo dài và rủi ro gián đoạn dịch vụ cao.' : '<strong>Identify monolithic bottlenecks:</strong> Analyze why legacy monoliths face tight coupling, protracted release cycles, and high blast radius.'}</li>
-            <li>${isVi ? '<strong>Làm chủ 3 trụ cột phân tách Microservices:</strong> Nắm vững Quản lý hàng đợi (Queue Management), Chiến lược bộ nhớ đệm (Caching Strategies) và Xử lý thông điệp linh hoạt (Flexible Messaging).' : '<strong>Master the 3 pillars of Microservices decoupling:</strong> Understand Queue Management, Caching Strategies, and Flexible Message Handling on AWS.'}</li>
-            <li>${isVi ? '<strong>Phương pháp thiết kế hướng tên miền (DDD):</strong> Áp dụng quy trình 4 bước có cấu trúc để phân định ranh giới Bounded Contexts chuẩn xác.' : '<strong>Domain-Driven Design (DDD) methodology:</strong> Apply the 4-step framework to delineate precise Bounded Contexts.'}</li>
-            <li>${isVi ? '<strong>Tiếp cận kiến trúc hướng sự kiện (EDA):</strong> Khám phá các mẫu Publish/Subscribe, Point-to-Point Queue và Data Streaming nhằm phi tập trung hóa giao tiếp giữa các dịch vụ.' : '<strong>Adopt Event-Driven Architecture (EDA):</strong> Explore Pub/Sub, Point-to-Point, and Streaming patterns for decentralized service communication.'}</li>
-            <li>${isVi ? '<strong>Ứng dụng GenAI tăng tốc hiện đại hóa:</strong> Khám phá cách Amazon Q Developer hỗ trợ tự động hóa chuyển đổi mã nguồn Java cũ và di chuyển CSDL lên đám mây.' : '<strong>Leverage GenAI for automated modernization:</strong> Learn how Amazon Q Developer accelerates legacy Java upgrades and database migrations.'}</li>
+            <li>${isVi ? '<strong>Phân tích hạn chế của kiến trúc nguyên khối:</strong> Nhận diện các điểm nghẽn về khớp nối mã nguồn (tight coupling), chu kỳ phát hành kéo dài và rủi ro gián đoạn dịch vụ diện rộng.' : '<strong>Analyze monolithic bottlenecks:</strong> Identify challenges related to tight coupling, protracted release cycles, and excessive failure blast radius in legacy systems.'}</li>
+            <li>${isVi ? '<strong>3 trụ cột chuyển đổi Microservices hiện đại:</strong> Tiếp cận nguyên lý phân tách hệ thống dựa trên Quản lý hàng đợi (Queue Management), Chiến lược bộ nhớ đệm (Caching Strategies) và Xử lý thông điệp linh hoạt (Flexible Messaging).' : '<strong>3 pillars of modern Microservices decoupling:</strong> Introduce foundational decoupling mechanisms using Queue Management, Caching Strategies, and Flexible Messaging.'}</li>
+            <li>${isVi ? '<strong>Phương pháp thiết kế hướng tên miền (DDD):</strong> Trình bày quy trình 4 bước phân định ranh giới ngữ cảnh (Bounded Contexts) để phân chia microservices chuẩn xác.' : '<strong>Domain-Driven Design (DDD) framework:</strong> Apply the 4-step domain modeling framework to establish precise Bounded Contexts.'}</li>
+            <li>${isVi ? '<strong>Kiến trúc hướng sự kiện (EDA):</strong> Khảo sát các mẫu giao tiếp bất đồng bộ Pub/Sub, Point-to-Point Queue và Data Streaming nhằm phi tập trung hóa các dịch vụ.' : '<strong>Event-Driven Architecture (EDA):</strong> Explore asynchronous Pub/Sub, Point-to-Point Queue, and Data Streaming patterns for decentralized communication.'}</li>
+            <li>${isVi ? '<strong>Ứng dụng GenAI trong hiện đại hóa phần mềm:</strong> Giới thiệu năng lực của Amazon Q Developer trong tự động quét mã nguồn Java cũ, refactor cú pháp và chuyển đổi cơ sở dữ liệu thương mại sang Aurora PostgreSQL.' : '<strong>GenAI for automated modernization:</strong> Demonstrate Amazon Q Developer capabilities in legacy Java upgrades, automated refactoring, and commercial database conversions.'}</li>
           </ul>
         </div>
       </section>
@@ -5631,19 +5627,19 @@ function renderModernizationEventDetail(container, lang = 'vi') {
       <section class="report-section-block">
         <div class="report-section-header">
           <span class="report-section-num">03</span>
-          <h2 class="report-section-title">${isVi ? 'III. Nội dung trọng tâm và Kiến thức tiếp thu (Key Topics and Knowledge Acquired)' : 'III. Key Topics and Knowledge Acquired'}</h2>
+          <h2 class="report-section-title">${isVi ? 'III. Nội dung trọng tâm tại sự kiện (Key Topics & Technical Content)' : 'III. Key Topics & Technical Content'}</h2>
         </div>
         <div class="report-prose">
 
           <!-- 1. Limitations of Legacy Monoliths -->
           <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">1. Hạn chế của Kiến trúc Nguyên khối truyền thống (Limitations of Legacy Monolithic Architectures)</h3>
           <p>${isVi
-            ? 'Trong phần đầu của hội thảo, các diễn giả đã phân tích sâu các nút thắt cổ chai mà các doanh nghiệp sở hữu kiến trúc Monolith đang phải đối mặt. Do tất cả các module nghiệp vụ được đóng gói chung vào một khối mã nguồn duy nhất, sự phụ thuộc chặt chẽ (tight coupling) tạo ra những rủi ro vận hành nghiêm trọng:'
-            : 'AWS experts outlined the core operational bottlenecks of legacy monoliths where tightly coupled business modules packaged in a single codebase create high operational risks:'}</p>
+            ? 'Phần đầu hội thảo phân tích chi tiết các nguyên nhân khiến kiến trúc Monolith gặp khó khăn trong môi trường doanh nghiệp hiện đại. Việc toàn bộ các module nghiệp vụ được đóng gói chung trong một khối mã nguồn duy nhất tạo ra các điểm nghẽn cố hữu:'
+            : 'The opening session examined the fundamental challenges of legacy monolithic systems in modern enterprise environments. Bundling all business domains into a single monolithic codebase creates critical bottlenecks:'}</p>
           <ul>
-            <li>${isVi ? '<strong>Chu kỳ phát hành kéo dài:</strong> Việc triển khai một thay đổi nhỏ đòi hỏi kiểm thử và phát hành lại toàn bộ ứng dụng, kéo dài thời gian ra mắt tính năng mới từ vài tuần đến nhiều tháng.' : '<strong>Protracted release cycles:</strong> Deploying minor updates requires rebuilding and releasing the entire application, slowing time-to-market.'}</li>
-            <li>${isVi ? '<strong>Khó khăn khi mở rộng theo chiều ngang:</strong> Toàn bộ ứng dụng phải được nhân bản khi chỉ có một module cụ thể cần thêm tài nguyên, dẫn đến lãng phí chi phí hạ tầng nghiêm trọng.' : '<strong>Horizontal scalability bottlenecks:</strong> The entire application must be duplicated when only a specific component experiences traffic surges.'}</li>
-            <li>${isVi ? '<strong>Phạm vi ảnh hưởng sự cố lớn (Blast Radius):</strong> Lỗi phát sinh trong một module không trọng yếu có thể làm sụp đổ toàn bộ hệ thống đang phục vụ khách hàng.' : '<strong>Excessive blast radius:</strong> A memory leak or failure in a non-critical module can bring down the entire enterprise system.'}</li>
+            <li>${isVi ? '<strong>Chu kỳ phát hành kéo dài:</strong> Triển khai một thay đổi nhỏ đòi hỏi kiểm thử và phát hành lại toàn bộ ứng dụng, kéo dài thời gian release từ nhiều tuần đến nhiều tháng.' : '<strong>Protracted release cycles:</strong> Deploying minor updates requires rebuilding and releasing the entire application, slowing deployment cadences.'}</li>
+            <li>${isVi ? '<strong>Khó khăn khi mở rộng theo chiều ngang:</strong> Hệ thống buộc phải nhân bản toàn bộ ứng dụng khi chỉ một module cục bộ cần thêm tài nguyên, gây lãng phí hạ tầng nghiêm trọng.' : '<strong>Horizontal scalability bottlenecks:</strong> The entire application must be cloned when only a specific sub-component experiences high load.'}</li>
+            <li>${isVi ? '<strong>Phạm vi ảnh hưởng sự cố lớn (Blast Radius):</strong> Lỗi phát sinh trong một module đơn lẻ có thể làm tê liệt toàn bộ ứng dụng đang phục vụ người dùng.' : '<strong>Excessive blast radius:</strong> Failures or resource leaks in a single module can compromise the availability of the entire platform.'}</li>
           </ul>
 
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
@@ -5651,8 +5647,8 @@ function renderModernizationEventDetail(container, lang = 'vi') {
           <!-- 2. 3 Pillars of Modern Microservices Transition -->
           <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">2. Ba trụ cột chuyển đổi Microservices hiện đại (3 Pillars of Modern Microservices Transition)</h3>
           <p>${isVi
-            ? 'Để phân tách hệ thống nguyên khối thành các dịch vụ độc lập mà không làm gián đoạn luồng vận hành kinh doanh, chuyên gia AWS đã trình bày 3 trụ cột kỹ thuật cốt lõi:'
-            : 'To decouple monolithic dependencies without disrupting continuous business operations, AWS specialists presented three foundational technical pillars:'}</p>
+            ? 'Để phân rã kiến trúc Monolith sang Microservices mà không làm gián đoạn luồng vận hành kinh doanh, chuyên gia AWS đã trình bày 3 trụ cột kỹ thuật trọng tâm:'
+            : 'To decouple monolithic dependencies without disrupting continuous operations, AWS specialists presented three technical pillars:'}</p>
 
           <div class="minimal-table-wrap">
             <table class="minimal-table">
@@ -5667,7 +5663,7 @@ function renderModernizationEventDetail(container, lang = 'vi') {
                 <tr>
                   <td><strong>Quản lý hàng đợi (Queue Management)</strong></td>
                   <td>Amazon SQS (Simple Queue Service)</td>
-                  <td>${isVi ? 'Đệm dữ liệu và tách rời các tiến trình xử lý, đảm bảo khả năng chịu lỗi và không làm mất thông điệp khi lưu lượng truy cập tăng vọt.' : 'Buffers requests and decouples processing stages, ensuring resilience and preventing message loss during peak bursts.'}</td>
+                  <td>${isVi ? 'Đệm dữ liệu và tách rời các tiến trình xử lý, đảm bảo khả năng chịu lỗi và không làm mất thông điệp khi lưu lượng truy cập tăng vọt.' : 'Buffers requests and decouples processing stages, ensuring resilience and zero message loss during peak traffic bursts.'}</td>
                 </tr>
                 <tr>
                   <td><strong>Chiến lược bộ nhớ đệm (Caching Strategies)</strong></td>
@@ -5688,29 +5684,23 @@ function renderModernizationEventDetail(container, lang = 'vi') {
           <!-- 3. Domain-Driven Design (DDD) 4-Step Methodology -->
           <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">3. Phương pháp Thiết kế Hướng tên miền (Domain-Driven Design 4-Step Methodology)</h3>
           <p>${isVi
-            ? 'Phân chia Microservices không đơn thuần là chia nhỏ mã nguồn kỹ thuật, mà phải bắt đầu từ phân tích logic nghiệp vụ. Chuyên gia Erica Liu đã chia sẻ quy trình 4 bước chuẩn mực theo Domain-Driven Design (DDD):'
-            : 'Microservices decomposition must begin with business domain modeling. Specialist Erica Liu outlined the structured 4-step Domain-Driven Design framework:'}</p>
+            ? 'Quy trình phân chia microservices được tiếp cận từ góc độ mô hình hóa nghiệp vụ thông qua phương pháp luận Domain-Driven Design (DDD) gồm 4 bước có cấu trúc:'
+            : 'Decomposing microservices was structured around domain-driven modeling principles via a 4-step framework:'}</p>
 
           <ul>
-            <li>${isVi ? '<strong>Bước 1 - Xác định sự kiện nghiệp vụ (Identify Domain Events):</strong> Liệt kê tất cả các sự kiện trọng yếu diễn ra trong quy trình kinh doanh (ví dụ: Đơn hàng đã tạo, Thanh toán hoàn tất, Hàng đã xuất kho).' : '<strong>Step 1 - Identify Domain Events:</strong> Inventory all core events that occur within the business lifecycle (e.g. Order Placed, Payment Authorized, Shipment Dispatched).'}</li>
-            <li>${isVi ? '<strong>Bước 2 - Sắp xếp dòng thời gian (Arrange Timeline):</strong> Phác thảo chuỗi sự kiện theo trục thời gian tuyến tính để nhận diện rõ ràng các quan hệ phụ thuộc, kích hoạt và hệ quả.' : '<strong>Step 2 - Arrange Timeline:</strong> Map events sequentially on a chronological timeline to clarify triggers, dependencies, and cause-and-effect flows.'}</li>
-            <li>${isVi ? '<strong>Bước 3 - Xác định các tác nhân (Identify Actors):</strong> Xác định các đối tượng kích hoạt hoặc tiếp nhận kết quả của sự kiện (người dùng, hệ thống tích hợp bên ngoài, tiến trình tự động).' : '<strong>Step 3 - Identify Actors:</strong> Determine the initiators and consumers of each event (end users, external third parties, automated background jobs).'}</li>
-            <li>${isVi ? '<strong>Bước 4 - Xác định ngữ cảnh bị giới hạn (Define Bounded Contexts):</strong> Gom nhóm các sự kiện và mô hình dữ liệu có tính gắn kết chặt chẽ vào từng Bounded Context riêng biệt để ánh xạ trực tiếp thành các Microservices độc lập.' : '<strong>Step 4 - Define Bounded Contexts:</strong> Cluster related domain events and data models into discrete Bounded Contexts, directly forming microservice boundaries.'}</li>
+            <li>${isVi ? '<strong>Bước 1 - Xác định sự kiện nghiệp vụ (Identify Domain Events):</strong> Liệt kê tất cả các sự kiện cốt lõi diễn ra trong quy trình kinh doanh (ví dụ: Đơn hàng đã tạo, Thanh toán hoàn tất, Hàng đã xuất kho).' : '<strong>Step 1 - Identify Domain Events:</strong> Inventory all core events that occur within the business lifecycle (e.g. Order Placed, Payment Authorized, Shipment Dispatched).'}</li>
+            <li>${isVi ? '<strong>Bước 2 - Sắp xếp dòng thời gian (Arrange Timeline):</strong> Phác thảo chuỗi sự kiện theo trục thời gian tuyến tính để nhận diện rõ các quan hệ phụ thuộc và nguyên nhân - kết quả.' : '<strong>Step 2 - Arrange Timeline:</strong> Map events sequentially on a chronological timeline to clarify triggers, dependencies, and cause-and-effect flows.'}</li>
+            <li>${isVi ? '<strong>Bước 3 - Xác định các tác nhân (Identify Actors):</strong> Xác định các đối tượng kích hoạt hoặc tiếp nhận kết quả của sự kiện (người dùng, hệ thống tích hợp, tiến trình tự động).' : '<strong>Step 3 - Identify Actors:</strong> Determine the initiators and consumers of each event (end users, external systems, automated background jobs).'}</li>
+            <li>${isVi ? '<strong>Bước 4 - Xác định ngữ cảnh bị giới hạn (Define Bounded Contexts):</strong> Gom nhóm các sự kiện và mô hình dữ liệu có tính gắn kết cao vào từng Bounded Context riêng biệt, tạo tiền đề để ánh xạ trực tiếp thành các Microservices độc lập.' : '<strong>Step 4 - Define Bounded Contexts:</strong> Cluster related domain events and data models into discrete Bounded Contexts, mapping directly to microservice boundaries.'}</li>
           </ul>
-
-          <p style="font-style: italic; color: #555555; margin-top: 8px;">
-            ${isVi
-              ? 'Nhận định phương pháp luận: Thiết kế chuẩn xác ranh giới Bounded Context ngay từ giai đoạn đầu là chìa khóa then chốt để tránh tạo ra "Distributed Monolith" (nguyên khối phân tán) — cạm bẫy nguy hiểm và phổ biến nhất khi chuyển dịch lên đám mây.'
-              : 'Methodological Insight: Defining accurate Bounded Contexts is paramount to avoiding a "Distributed Monolith" — the most frequent architectural antipattern in cloud migrations.'}
-          </p>
 
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
           <!-- 4. Event-Driven Architecture Patterns -->
           <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">4. Các mẫu Kiến trúc Hướng sự kiện (Event-Driven Architecture Patterns)</h3>
           <p>${isVi
-            ? 'Hội thảo đi sâu phân tích 3 mô hình giao tiếp bất đồng bộ chính giúp các dịch vụ trao đổi thông điệp mà không bị gắn kết trực tiếp (loose coupling):'
-            : 'The workshop examined three core asynchronous messaging patterns that decouple microservice interactions:'}</p>
+            ? 'Hội thảo đi sâu phân tích 3 mô hình giao tiếp bất đồng bộ chính giúp các dịch vụ trao đổi thông điệp phi tập trung:'
+            : 'The workshop examined three asynchronous messaging patterns that enable decoupled service communications:'}</p>
 
           <div class="minimal-formula-box" style="text-align: center; font-weight: 600; overflow-x: auto;">
             ${isVi 
@@ -5719,9 +5709,9 @@ function renderModernizationEventDetail(container, lang = 'vi') {
           </div>
 
           <ul>
-            <li>${isVi ? '<strong>Publish/Subscribe (Phát tán sự kiện):</strong> Cho phép một nhà phát hành (producer) gửi thông điệp tới nhiều bên đăng ký (consumers) đồng thời thông qua Amazon SNS và EventBridge.' : '<strong>Publish/Subscribe:</strong> Enables a single event producer to broadcast messages simultaneously to multiple decoupled consumers.'}</li>
-            <li>${isVi ? '<strong>Point-to-Point Queue (Hàng đợi điểm - điểm):</strong> Đảm bảo mỗi thông điệp chỉ được tiêu thụ bởi duy nhất một consumer tại một thời điểm thông qua Amazon SQS, hỗ trợ cơ chế Dead-Letter Queue (DLQ) để cách ly thông điệp lỗi.' : '<strong>Point-to-Point Queue:</strong> Ensures exactly-once consumption per message by a dedicated worker, backed by Dead-Letter Queues for error containment.'}</li>
-            <li>${isVi ? '<strong>Data Streaming (Luồng dữ liệu liên tục):</strong> Thu nhận và xử lý hàng triệu bản ghi mỗi giây theo thứ tự thời gian thực phục vụ phân tích dữ liệu lớn với Amazon Kinesis Data Streams.' : '<strong>Data Streaming:</strong> Ingests and processes millions of ordered records per second in real time for live analytics using Amazon Kinesis.'}</li>
+            <li>${isVi ? '<strong>Publish/Subscribe:</strong> Cho phép một producer phát tán thông điệp đồng thời tới nhiều consumers độc lập thông qua Amazon SNS và EventBridge.' : '<strong>Publish/Subscribe:</strong> Enables an event producer to broadcast messages simultaneously to multiple decoupled consumers via SNS and EventBridge.'}</li>
+            <li>${isVi ? '<strong>Point-to-Point Queue:</strong> Đảm bảo mỗi thông điệp được tiêu thụ bởi duy nhất một consumer tại một thời điểm qua Amazon SQS, hỗ trợ cơ chế Dead-Letter Queue (DLQ) để cô lập thông điệp lỗi.' : '<strong>Point-to-Point Queue:</strong> Ensures single-worker message processing backed by Dead-Letter Queues (DLQ) for error containment.'}</li>
+            <li>${isVi ? '<strong>Data Streaming:</strong> Thu nhận và xử lý hàng triệu bản ghi mỗi giây theo thứ tự thời gian thực phục vụ phân tích dữ liệu lớn với Amazon Kinesis Data Streams.' : '<strong>Data Streaming:</strong> Ingests and processes millions of ordered records per second in real time for live analytics using Amazon Kinesis.'}</li>
           </ul>
 
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
@@ -5729,13 +5719,13 @@ function renderModernizationEventDetail(container, lang = 'vi') {
           <!-- 5. Amazon Q Developer -->
           <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">5. Ứng dụng Trợ lý AI Amazon Q Developer trong Hiện đại hóa phần mềm (AI-Assisted Modernization with Amazon Q Developer)</h3>
           <p>${isVi
-            ? 'Phiên chia sẻ của chuyên gia Erica Liu và Fabrianne Effendi đã mở ra góc nhìn thực tế về việc áp dụng Trí tuệ nhân tạo tạo sinh (GenAI) để tự động hóa các công việc nặng nhọc trong quá trình chuyển dịch mã nguồn:'
-            : 'Specialists Erica Liu and Fabrianne Effendi demonstrated how Generative AI tools accelerate the most labor-intensive modernization stages:'}</p>
+            ? 'Phiên chia sẻ của chuyên gia Erica Liu và Fabrianne Effendi giới thiệu giải pháp ứng dụng Trí tuệ nhân tạo tạo sinh (GenAI) nhằm tự động hóa các tác vụ chuyển đổi mã nguồn:'
+            : 'Presentations by specialists Erica Liu and Fabrianne Effendi demonstrated how Generative AI tools accelerate labor-intensive modernization stages:'}</p>
 
           <ul>
-            <li>${isVi ? '<strong>Tự động hóa nâng cấp runtime ứng dụng (AppMod):</strong> Amazon Q Developer tự động phân tích toàn bộ repository mã nguồn Java cũ (Java 8/11), phát hiện các thư viện lỗi thời, tự động refactor mã nguồn và nâng cấp lên phiên bản hiện đại (Java 17/21).' : '<strong>Application transformation (AppMod):</strong> Amazon Q Developer analyzes legacy Java repositories, identifies outdated dependencies, refactors deprecated APIs, and automates upgrades to Java 17/21.'}</li>
-            <li>${isVi ? '<strong>Chuyển đổi cơ sở dữ liệu:</strong> Hỗ trợ dịch chuyển schema và mã nguồn stored procedures từ các cơ sở dữ liệu thương mại độc quyền (Oracle, Microsoft SQL Server) sang các hệ quản trị CSDL mã nguồn mở tương thích trên AWS (Amazon Aurora PostgreSQL/MySQL).' : '<strong>Database conversion:</strong> Assists in converting schemas and stored procedures from proprietary commercial databases (Oracle, MS SQL) to open-source Aurora PostgreSQL/MySQL.'}</li>
-            <li>${isVi ? '<strong>Rà soát an ninh mã nguồn tự động:</strong> Tích hợp trực tiếp trong IDE của kỹ sư (VS Code, IntelliJ) để phát hiện tức thì các lỗ hổng OWASP, hardcoded credentials và đưa ra đề xuất vá lỗi bằng một cú nhấp chuột.' : '<strong>Security code review:</strong> Runs within IDE environments to pinpoint OWASP vulnerabilities and hardcoded secrets, generating instant remediation diffs.'}</li>
+            <li>${isVi ? '<strong>Tự động hóa nâng cấp runtime ứng dụng (AppMod):</strong> Amazon Q Developer tự động phân tích toàn bộ repository mã nguồn Java cũ (Java 8/11), phát hiện các thư viện lỗi thời, tự động refactor mã nguồn và nâng cấp lên Java 17/21.' : '<strong>Application transformation (AppMod):</strong> Amazon Q Developer analyzes legacy Java repositories, identifies outdated dependencies, refactors deprecated syntax, and automates upgrades to Java 17/21.'}</li>
+            <li>${isVi ? '<strong>Chuyển đổi cơ sở dữ liệu:</strong> Hỗ trợ dịch chuyển schema và mã nguồn stored procedures từ các cơ sở dữ liệu thương mại độc quyền (Oracle, Microsoft SQL Server) sang các hệ quản trị CSDL mã nguồn mở trên AWS (Amazon Aurora PostgreSQL/MySQL).' : '<strong>Database conversion:</strong> Assists in converting schemas and stored procedures from commercial proprietary engines (Oracle, MS SQL) to open-source Amazon Aurora PostgreSQL/MySQL.'}</li>
+            <li>${isVi ? '<strong>Rà soát an ninh mã nguồn tự động:</strong> Tích hợp trực tiếp trong IDE (VS Code, IntelliJ) để phát hiện tức thì các lỗ hổng OWASP, hardcoded secrets và đề xuất giải pháp vá lỗi.' : '<strong>Security code review:</strong> Operates directly inside developer IDEs to pinpoint OWASP vulnerabilities and hardcoded credentials, generating remediation diffs.'}</li>
           </ul>
 
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
@@ -5743,13 +5733,13 @@ function renderModernizationEventDetail(container, lang = 'vi') {
           <!-- 6. Technical Demos & Q&A -->
           <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">6. Trực quan Hướng dẫn Demo &amp; Phiên giải đáp Chuyên gia (Technical Demonstrations &amp; Expert Q&amp;A)</h3>
           <p>${isVi
-            ? 'Buổi hội thảo đã mang đến các phần trình diễn kỹ thuật trực quan sinh động tại tầng 26, Bitexco Financial Tower:'
-            : 'The workshop featured live technical demonstrations conducted directly on stage at Bitexco Financial Tower:'}</p>
+            ? 'Chương trình bao gồm các phần trình diễn kỹ thuật trực tiếp trên hệ thống AWS:'
+            : 'The workshop included live technical demonstrations executed directly on AWS environments:'}</p>
           <ul>
-            <li>${isVi ? '<strong>Demo quét mã nguồn tự động:</strong> Minh họa quá trình Amazon Q Developer phân tích một dự án Java nguyên khối, tự động sinh unit test và hoàn thành việc nâng cấp framework trong chưa đầy 15 phút.' : '<strong>Automated code scanning demo:</strong> Demonstrated Amazon Q Developer scanning a monolithic Java project, generating test suites, and completing framework upgrades in minutes.'}</li>
+            <li>${isVi ? '<strong>Demo quét mã nguồn tự động:</strong> Minh họa quá trình Amazon Q Developer quét một dự án Java nguyên khối, tự động sinh test cases và hoàn tất nâng cấp framework.' : '<strong>Automated code scanning demo:</strong> Demonstrated Amazon Q Developer scanning a monolithic Java project, generating test suites, and completing framework upgrades.'}</li>
             <li>${isVi ? '<strong>Demo chuyển đổi CSDL:</strong> Trực quan hóa quy trình chuyển đổi cơ sở dữ liệu sử dụng AWS Schema Conversion Tool (SCT) và AWS Database Migration Service (DMS) sang Amazon Aurora.' : '<strong>Database migration demo:</strong> Visualized database schema conversions using AWS SCT and AWS DMS targeting Amazon Aurora.'}</li>
-            <li>${isVi ? '<strong>Demo cô lập lỗi với SQS và DLQ:</strong> Mô phỏng sự cố một microservice thanh toán bị sập và cách hàng đợi SQS bảo toàn 100% giao dịch khách hàng mà không bị thất thoát.' : '<strong>Resilience demo with SQS and DLQ:</strong> Simulated a downstream payment service outage, verifying how SQS preserved 100% of customer orders without data loss.'}</li>
-            <li>${isVi ? '<strong>Phiên Q&amp;A cùng Giám đốc CSDL Jignesh Shah:</strong> Thảo luận sâu về bài toán đảm bảo tính nhất quán dữ liệu (eventual consistency) và chiến lược tối ưu hóa chi phí khi chuyển dịch cơ sở dữ liệu doanh nghiệp lên đám mây.' : '<strong>Expert Q&amp;A with Director Jignesh Shah:</strong> Deep dive into eventual consistency across distributed domains and cost governance strategies for enterprise cloud database migrations.'}</li>
+            <li>${isVi ? '<strong>Demo cô lập lỗi với SQS và DLQ:</strong> Mô phỏng sự cố microservice thanh toán gặp lỗi và cách hàng đợi SQS bảo toàn dữ liệu giao dịch không bị thất thoát.' : '<strong>Resilience demo with SQS and DLQ:</strong> Simulated a downstream payment service outage, verifying how SQS preserved incoming customer transactions without data loss.'}</li>
+            <li>${isVi ? '<strong>Phiên Q&amp;A chuyên sâu:</strong> Thảo luận cùng Giám đốc CSDL Jignesh Shah về tính nhất quán dữ liệu (eventual consistency) và chiến lược tối ưu hóa chi phí khi dịch chuyển CSDL doanh nghiệp.' : '<strong>Expert Q&amp;A with Director Jignesh Shah:</strong> Technical discussion on eventual consistency across distributed domains and cost governance strategies for cloud database migrations.'}</li>
           </ul>
         </div>
       </section>
@@ -5762,21 +5752,21 @@ function renderModernizationEventDetail(container, lang = 'vi') {
         </div>
         <div class="report-prose">
           <p>${isVi
-            ? 'Hội thảo đã mang lại bức tranh toàn diện và sâu sắc về lộ trình chuyển đổi ứng dụng sang đám mây:'
-            : 'The workshop provided comprehensive insights across core disciplines of modern cloud software engineering:'}</p>
+            ? 'Nội dung hội thảo đúc kết các bài học kiến trúc trọng tâm trong việc xây dựng hệ thống phân tán:'
+            : 'The workshop synthesized foundational architectural lessons in distributed software engineering:'}</p>
 
           <div class="minimal-table-wrap">
             <table class="minimal-table">
               <thead>
                 <tr>
                   <th style="width: 30%;">${isVi ? 'Lĩnh vực kỹ thuật (Technical Area)' : 'Technical Area'}</th>
-                  <th style="width: 70%;">${isVi ? 'Kiến thức cốt lõi tiếp thu (Key Knowledge Acquired)' : 'Key Knowledge Acquired'}</th>
+                  <th style="width: 70%;">${isVi ? 'Kiến thức cốt lõi (Key Architectural Concepts)' : 'Key Architectural Concepts'}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td><strong>Monolith Limitations</strong></td>
-                  <td>${isVi ? 'Hiểu rõ các điểm nghẽn về khớp nối chặt (tight coupling), chu kỳ phát hành và rủi ro gián đoạn toàn bộ hệ thống.' : 'Understanding tight coupling bottlenecks, long release cycles, and excessive failure blast radius.'}</td>
+                  <td>${isVi ? 'Nhận diện các điểm nghẽn về khớp nối chặt (tight coupling), chu kỳ phát hành và rủi ro gián đoạn toàn bộ hệ thống.' : 'Understanding tight coupling bottlenecks, protracted release cycles, and excessive failure blast radius.'}</td>
                 </tr>
                 <tr>
                   <td><strong>Queue Management</strong></td>
@@ -5807,46 +5797,59 @@ function renderModernizationEventDetail(container, lang = 'vi') {
           </div>
 
           <p style="font-weight:700; color:#171717; margin-top:20px;">
-            ${isVi ? 'Những nguyên tắc kiến trúc cốt lõi đúc kết từ hội thảo:' : 'Core architectural principles established during the workshop:'}
+            ${isVi ? 'Các nguyên tắc kiến trúc cốt lõi:' : 'Core architectural principles established:'}
           </p>
           <ul>
-            <li>${isVi ? 'Hiện đại hóa là một hành trình tái cấu trúc có phương pháp (Architecture-led), không đơn thuần chỉ là thao tác di chuyển mã nguồn nguyên trạng lên đám mây (Lift and Shift).' : 'Modernization is an architecture-driven evolution, not a mere lift-and-shift code relocation.'}</li>
+            <li>${isVi ? 'Hiện đại hóa là một hành trình tái cấu trúc có phương pháp (Architecture-led), không đơn thuần là di chuyển mã nguồn nguyên trạng lên đám mây (Lift and Shift).' : 'Modernization is an architecture-driven evolution, not a mere lift-and-shift code relocation.'}</li>
             <li>${isVi ? 'Phân tách bất đồng bộ (Asynchronous Decoupling) là chìa khóa bảo vệ hệ thống trước sự cố lan chuyền và giúp từng thành phần co giãn độc lập.' : 'Asynchronous decoupling is essential to preventing cascading failures and ensuring independent scalability.'}</li>
             <li>${isVi ? 'Thiết kế ranh giới nghiệp vụ chuẩn xác theo Domain-Driven Design là điều kiện tiên quyết để xây dựng Microservices bền vững.' : 'Accurate domain boundaries defined through DDD are the foundation of successful, sustainable microservices.'}</li>
             <li>${isVi ? 'Cơ sở dữ liệu đám mây mã nguồn mở mang lại sự tự do công nghệ và tối ưu hóa chi phí vượt bậc so với các giải pháp độc quyền.' : 'Cloud-native open-source databases deliver technological independence and substantial cost savings over proprietary engines.'}</li>
-            <li>${isVi ? 'Trợ lý AI đang định hình lại phương thức kỹ thuật phần mềm, giải phóng kỹ sư khỏi các tác vụ lặp lại để tập trung vào tư duy kiến trúc.' : 'AI assistants are redefining software engineering, empowering engineers to focus on high-value architectural reasoning.'}</li>
+            <li>${isVi ? 'Trợ lý AI đang định hình lại phương thức kỹ thuật phần mềm, tự động hóa các tác vụ lặp lại để kỹ sư tập trung vào tư duy kiến trúc.' : 'AI assistants are redefining software engineering, empowering engineers to focus on high-value architectural reasoning.'}</li>
           </ul>
         </div>
       </section>
 
-      <!-- SECTION V – LESSONS LEARNED AND PERSONAL CONTRIBUTIONS -->
+      <!-- SECTION V – LESSONS LEARNED & PERSONAL CONTRIBUTIONS -->
       <section class="report-section-block">
         <div class="report-section-header">
           <span class="report-section-num">05</span>
-          <h2 class="report-section-title">${isVi ? 'V. Bài học rút ra & Đóng góp cá nhân (Lessons Learned & Personal Contributions)' : 'V. Lessons Learned and Personal Contributions'}</h2>
+          <h2 class="report-section-title">${isVi ? 'V. Bài học rút ra & Đóng góp cá nhân (Lessons Learned & Personal Contributions)' : 'V. Lessons Learned & Personal Contributions'}</h2>
         </div>
         <div class="report-prose">
           
+          <!-- 1. Lessons Learned -->
           <h3 style="font-size:15px; font-weight:700; color:#0F172A; margin:16px 0 8px 0;">
             ${isVi ? '1. Bài học rút ra (Lessons Learned)' : '1. Lessons Learned'}
           </h3>
           <ul>
-            <li>${isVi ? '<strong>Tư duy chuyển đổi hệ thống lớn:</strong> Nắm vững lộ trình chuyển đổi kiến trúc hệ thống từ nguyên khối (Monolith) sang dịch vụ vi mô (Microservices), thấu hiểu rằng hiện đại hóa đòi hỏi tư duy phân rã nghiệp vụ bài bản thay vì chỉ di chuyển hạ tầng.' : '<strong>Enterprise modernization mindset:</strong> Mastered the methodology of decoupling legacy monolithic systems into cloud-native microservices through domain-driven architecture rather than simple infrastructure lift-and-shift.'}</li>
-            <li>${isVi ? '<strong>Tầm quan trọng của phân tách bất đồng bộ:</strong> Hiểu sâu sắc cách thức Amazon SQS, SNS và EventBridge giúp loại bỏ điểm lỗi đơn lẻ (Single Point of Failure), bảo vệ hệ thống trước lỗi lan chuyền và đảm bảo tính khả dụng cao.' : '<strong>Importance of asynchronous decoupling:</strong> Recognized how message buffering and event routing with Amazon SQS, SNS, and EventBridge eliminate single points of failure and prevent cascading outages.'}</li>
-            <li>${isVi ? '<strong>Định hình ranh giới nghiệp vụ chuẩn xác:</strong> Nắm vững quy trình 4 bước của Domain-Driven Design để định nghĩa các Bounded Contexts, phòng ngừa rủi ro tạo ra kiến trúc "Distributed Monolith".' : '<strong>Domain boundary precision:</strong> Learned the 4-step DDD methodology to establish clear bounded contexts, preventing the emergence of distributed monolith antipatterns.'}</li>
-            <li>${isVi ? '<strong>Tối ưu hóa cơ sở dữ liệu trên đám mây:</strong> Nhận thức rõ ràng lợi ích kinh tế và tính linh hoạt khi dịch chuyển từ CSDL thương mại độc quyền sang Amazon Aurora PostgreSQL.' : '<strong>Cloud database optimization:</strong> Understood the strategic economic and operational advantages of migrating proprietary commercial databases to Amazon Aurora PostgreSQL.'}</li>
-            <li>${isVi ? '<strong>Tác động của GenAI trong kỹ thuật phần mềm:</strong> Trải nghiệm thực tế cách Amazon Q Developer hỗ trợ tự động hóa chuyển đổi mã nguồn và kiểm toán an ninh, mở ra phương thức làm việc mới hiệu quả và chính xác hơn.' : '<strong>Impact of GenAI in engineering:</strong> Witnessed how Amazon Q Developer automates runtime modernization and security auditing, redefining developer productivity.'}</li>
+            <li>${isVi ? '<strong>Tư duy chuyển đổi hệ thống lớn:</strong> Thấu hiểu rằng hiện đại hóa ứng dụng là một lộ trình tái cấu trúc có phương pháp (Architecture-led), phân rã nghiệp vụ theo miền thay vì chỉ di chuyển hạ tầng nguyên trạng (Lift-and-Shift).' : '<strong>Enterprise modernization mindset:</strong> Understood that application modernization is an architecture-driven evolution requiring domain-based decoupling rather than a simple infrastructure lift-and-shift.'}</li>
+            <li>${isVi ? '<strong>Vai trò của phân tách bất đồng bộ:</strong> Nhận thức rõ ràng cách thức hàng đợi (Amazon SQS) và cơ chế Pub/Sub (Amazon SNS, EventBridge) giúp loại bỏ điểm lỗi đơn lẻ (SPOF) và bảo vệ hệ thống trước sự cố lan chuyền.' : '<strong>Role of asynchronous decoupling:</strong> Recognized how message buffering with Amazon SQS and event routing via SNS/EventBridge eliminate single points of failure and prevent cascading outages.'}</li>
+            <li>${isVi ? '<strong>Phân định ranh giới nghiệp vụ chuẩn xác:</strong> Nắm vững quy trình 4 bước của Domain-Driven Design (DDD) để xác định các Bounded Contexts, phòng ngừa rủi ro tạo ra kiến trúc "Distributed Monolith".' : '<strong>Domain boundary precision:</strong> Mastered the 4-step Domain-Driven Design (DDD) methodology to establish clean bounded contexts and avoid distributed monolith antipatterns.'}</li>
+            <li>${isVi ? '<strong>Tối ưu hóa cơ sở dữ liệu trên đám mây:</strong> Nhận thức lợi ích kinh tế và tính linh hoạt khi dịch chuyển từ CSDL thương mại độc quyền sang Amazon Aurora PostgreSQL.' : '<strong>Cloud database optimization:</strong> Acknowledged the strategic economic and operational advantages of migrating proprietary commercial databases to Amazon Aurora PostgreSQL.'}</li>
+            <li>${isVi ? '<strong>Đòn bẩy tự động hóa từ GenAI:</strong> Nhận thấy tiềm năng của các trợ lý AI như Amazon Q Developer trong việc tự động hóa nâng cấp runtime, refactor mã nguồn cũ và rà soát an ninh.' : '<strong>GenAI automation leverage:</strong> Realized the transformative capability of GenAI engineering assistants like Amazon Q Developer to automate routine migration and refactoring tasks.'}</li>
           </ul>
 
+          <!-- 2. Practical Applications -->
           <h3 style="font-size:15px; font-weight:700; color:#0F172A; margin:24px 0 8px 0;">
-            ${isVi ? '2. Đóng góp cá nhân (Personal Contributions)' : '2. Personal Contributions'}
+            ${isVi ? '2. Khả năng vận dụng (Practical Applications)' : '2. Practical Applications'}
           </h3>
           <ul>
-            <li>${isVi ? 'Tham dự đầy đủ và nghiêm túc toàn bộ thời lượng hội thảo với tư cách Người tham dự (Attendee) từ 08:00 đến 17:00 ngày 29/09/2026 tại tầng 26, Bitexco Financial Tower.' : 'Participated fully in the workshop as an attendee from 08:00 AM to 05:00 PM on September 29, 2026, at the 26th Floor of Bitexco Financial Tower.'}</li>
-            <li>${isVi ? 'Chăm chú theo dõi các bài trình bày kỹ thuật chuyên sâu, ghi chép chi tiết phương pháp luận phân tách kiến trúc và tham gia thảo luận tại phiên Q&amp;A cùng các chuyên gia AWS.' : 'Attentively followed technical presentations, took comprehensive architectural notes, and actively participated in technical Q&amp;A discussions with AWS specialists.'}</li>
-            <li>${isVi ? 'Hệ thống hóa, phân tích và tài liệu hóa 4 bước thiết kế DDD, 3 trụ cột chuyển đổi Microservices và các mẫu luồng Event-Driven vào bài báo cáo thu hoạch cá nhân.' : 'Consolidated, analyzed, and documented the 4-step DDD framework, 3 microservices pillars, and event-driven patterns into an individual technical report.'}</li>
-            <li>${isVi ? 'Tổng hợp toàn bộ kiến thức tiếp thu vào báo cáo thu hoạch kỹ thuật trong chương trình thực tập First Cloud AI Journey, phục vụ trực tiếp cho quá trình nghiên cứu và định hướng nghề nghiệp Cloud Solutions Architect.' : 'Synthesized acquired knowledge into a structured harvest report for the First Cloud AI Journey program to support cloud solutions architecture learning.'}</li>
-            <li>${isVi ? 'Xác định các cơ hội và phương án ứng dụng kiến trúc Microservices và Event-Driven vào các bài toán kỹ thuật thực tế trong quá trình học tập và đồ án tốt nghiệp.' : 'Identified practical opportunities to implement microservices, asynchronous decoupling, and event-driven patterns in academic coursework and final capstone projects.'}</li>
+            <li>${isVi ? '<strong>Áp dụng Domain-Driven Design vào đồ án:</strong> Vận dụng phương pháp phân tích 4 bước DDD để phân rã các miền nghiệp vụ và thiết kế kiến trúc vi dịch vụ cho đồ án tốt nghiệp và các dự án phần mềm cá nhân.' : '<strong>Apply Domain-Driven Design to coursework:</strong> Leverage the 4-step DDD methodology to analyze business requirements and define modular service boundaries in academic capstone projects.'}</li>
+            <li>${isVi ? '<strong>Thiết kế luồng bất đồng bộ trên AWS:</strong> Sử dụng Amazon SQS và EventBridge để xây dựng các kênh giao tiếp hướng sự kiện có khả năng chịu lỗi và hấp thụ lưu lượng tải đột biến trong các bài thực hành đám mây.' : '<strong>Design asynchronous AWS workflows:</strong> Implement Amazon SQS and EventBridge to build fault-tolerant, event-driven architectures capable of handling bursty workloads in cloud labs.'}</li>
+            <li>${isVi ? '<strong>Nghiên cứu quy trình chuyển dịch CSDL:</strong> Thử nghiệm quy trình chuyển dịch schema và dữ liệu sang Amazon Aurora PostgreSQL nhằm rèn luyện kỹ năng quản trị và tối ưu hóa chi phí CSDL.' : '<strong>Explore database migration workflows:</strong> Experiment with schema conversion and data migration workflows targeting Amazon Aurora PostgreSQL for cost governance and query optimization.'}</li>
+            <li>${isVi ? '<strong>Tích hợp trợ lý AI vào IDE cá nhân:</strong> Sử dụng Amazon Q Developer trong môi trường phát triển (VS Code/IntelliJ) phục vụ việc rà soát an ninh mã nguồn và chuẩn hóa chất lượng phần mềm theo chuẩn AWS Well-Architected.' : '<strong>Integrate AI assistants into IDE:</strong> Utilize Amazon Q Developer in daily developer environments to audit security vulnerabilities and standardize code quality against AWS Well-Architected practices.'}</li>
+          </ul>
+
+          <!-- 3. Personal Contributions -->
+          <h3 style="font-size:15px; font-weight:700; color:#0F172A; margin:24px 0 8px 0;">
+            ${isVi ? '3. Đóng góp cá nhân (Personal Contributions)' : '3. Personal Contributions'}
+          </h3>
+          <ul>
+            <li>${isVi ? 'Tham gia đầy đủ chương trình hội thảo với vai trò người tham dự (Attendee) từ 08:00 đến 17:00 ngày 29/09/2026 tại tầng 26, Bitexco Financial Tower.' : 'Participated fully in the workshop as an Attendee from 08:00 AM to 05:00 PM on September 29, 2026, on the 26th Floor of Bitexco Financial Tower.'}</li>
+            <li>${isVi ? 'Tiếp thu, ghi chép và tổng hợp các kiến thức chuyên môn về Microservices, DDD, Event-Driven Architecture và Amazon Q Developer từ các chuyên gia AWS.' : 'Listened attentively, took detailed technical notes, and consolidated domain knowledge on Microservices, DDD, Event-Driven Architecture, and Amazon Q Developer from AWS specialists.'}</li>
+            <li>${isVi ? 'Hệ thống hóa các nội dung kỹ thuật, xây dựng bảng so sánh và sơ đồ quy trình để phục vụ việc lưu trữ tri thức bài bản.' : 'Systematized technical concepts, comparison matrices, and workflow blueprints for structured knowledge retention.'}</li>
+            <li>${isVi ? 'Xây dựng bài báo cáo sự kiện chi tiết trên website cá nhân (Personal Worklog) trong khuôn khổ chương trình First Cloud AI Journey.' : 'Authored and published a detailed technical event report on the Personal Worklog website within the First Cloud AI Journey program.'}</li>
+            <li>${isVi ? 'Lưu trữ, duy trì và chia sẻ các tài liệu kỹ thuật thu hoạch được thông qua mã nguồn mở trên GitHub Pages.' : 'Maintained and published the acquired technical documentation openly via GitHub Pages.'}</li>
           </ul>
         </div>
       </section>
@@ -5859,12 +5862,16 @@ function renderModernizationEventDetail(container, lang = 'vi') {
         </div>
         <div class="report-prose">
           <p>${isVi
-            ? 'Sự kiện First Cloud AI Journey ngày 29/09/2026 đã mang lại những góc nhìn kiến trúc sâu rộng và thực tiễn về lộ trình chuyển đổi ứng dụng sang đám mây.'
-            : 'The First Cloud AI Journey event on September 29, 2026, provided profound architectural insights into enterprise cloud application modernization.'}</p>
+            ? 'Hội thảo First Cloud AI Journey ngày 29/09/2026 mang lại giá trị kiến thức thực tiễn to lớn về lộ trình hiện đại hóa phần mềm cấp doanh nghiệp.'
+            : 'The First Cloud AI Journey workshop on September 29, 2026, delivered substantial practical value regarding enterprise cloud software modernization.'}</p>
 
           <p>${isVi
-            ? 'Sự kết hợp giữa phương pháp thiết kế phân rã nghiệp vụ Domain-Driven Design, kiến trúc giao tiếp bất đồng bộ Event-Driven và năng lực tự động hóa của các trợ lý GenAI như Amazon Q Developer chính là chìa khóa giúp doanh nghiệp xây dựng những hệ thống có tính sẵn sàng cao, co giãn linh hoạt và tối ưu chi phí vận hành.'
-            : 'The convergence of Domain-Driven Design decomposition, asynchronous Event-Driven messaging, and GenAI-powered automation with Amazon Q Developer represents the modern paradigm for architecting resilient, scalable, and cost-effective enterprise systems.'}</p>
+            ? 'Qua sự kiện, tư duy kỹ thuật của bản thân đã có bước chuyển biến rõ nét: từ cách nhìn nhận việc phát triển ứng dụng đơn lẻ sang tư duy kiến trúc phân tán toàn diện, nơi tính module hóa, khả năng chịu lỗi và tính độc lập của từng miền nghiệp vụ đóng vai trò quyết định. Đồng thời, nhận thức về vai trò hỗ trợ của GenAI trong kỹ thuật phần mềm cũng được định hình cụ thể — AI đóng vai trò đòn bẩy tự động hóa mạnh mẽ giúp kỹ sư tập trung vào tư duy kiến trúc cốt lõi.'
+            : 'The event fostered significant growth in my technical mindset: transitioning from isolated application development to holistic distributed system architecture, where modularity, fault tolerance, and domain independence are essential. It also provided a grounded perspective on GenAI in software engineering — AI serves as an automated accelerator empowering engineers to focus on core architectural reasoning.'}</p>
+
+          <p>${isVi
+            ? 'Đây là nền tảng tri thức quan trọng định hình quá trình học tập chuyên sâu về Cloud Solutions Architecture và hướng đi nghề nghiệp lâu dài trên nền tảng AWS.'
+            : 'These insights establish a strong foundational knowledge base guiding my deep-dive studies in Cloud Solutions Architecture and long-term career growth on AWS.'}</p>
 
           <div class="report-quote-box" style="border-left-color: #171717; font-weight:700; color:#171717; font-size:15px; margin:22px 0;">
             ${isVi
@@ -5985,22 +5992,18 @@ function renderMeetupEventDetail(container, lang = 'vi') {
         </div>
         <div class="report-prose">
           <p>${isVi
-            ? 'Vào ngày <strong>24/10/2026</strong>, tôi đã tham dự sự kiện <strong>First Cloud AI Journey Meetup</strong>, được tổ chức từ <strong>08:00 đến 12:00</strong> tại <strong>tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam</strong>.'
-            : 'On <strong>October 24, 2026</strong>, I attended the <strong>First Cloud AI Journey Meetup</strong>, held from <strong>08:00 AM to 12:00 PM</strong> on the <strong>26th floor of Bitexco Financial Tower, Ho Chi Minh City, Vietnam</strong>.'}</p>
+            ? '<strong>First Cloud AI Journey Meetup</strong> tập trung vào năm chủ đề chính: <strong>Voice AI</strong>, <strong>AWS Resource Access Manager (RAM)</strong>, <strong>AI-assisted Penetration Testing</strong>, <strong>Amazon Bedrock AgentCore</strong> và <strong>Kiro Crew</strong>.'
+            : 'The <strong>First Cloud AI Journey Meetup</strong> focused on five core technical domains: <strong>Voice AI</strong>, <strong>AWS Resource Access Manager (RAM)</strong>, <strong>AI-assisted Penetration Testing</strong>, <strong>Amazon Bedrock AgentCore</strong>, and <strong>Kiro Crew</strong>.'}</p>
           
           <div class="report-quote-box" style="border-left-color: #171717;">
             ${isVi
-              ? '“Sự kiện quy tụ các chuyên gia công nghệ, kỹ sư giải pháp, thành viên cộng đồng AWS và sinh viên cùng nhau khám phá các ứng dụng thực tiễn của Điện toán đám mây (Cloud Computing) và Trí tuệ nhân tạo (Artificial Intelligence).”'
-              : '“The event brought together technology professionals, engineers, AWS community members, and students to explore practical applications of Cloud Computing and Artificial Intelligence.”'}
+              ? '“Sự kiện quy tụ các chuyên gia công nghệ, kỹ sư giải pháp và cộng đồng AWS tại Việt Nam, mang đến chuỗi bài trình bày kỹ thuật chuyên sâu, phiên live demo kiến trúc và thảo luận mở về ứng dụng thực tiễn của Cloud Computing và Trí tuệ nhân tạo trong doanh nghiệp.”'
+              : '“The meetup gathered technology leaders, solutions engineers, and the AWS community in Vietnam, presenting technical lectures, live architecture demonstrations, and discussions on practical cloud and artificial intelligence applications in enterprise environments.”'}
           </div>
 
           <p>${isVi
-            ? 'Buổi meetup bao gồm <strong>năm phiên kỹ thuật chuyên sâu</strong> xoay quanh các chủ đề: <strong>Voice AI</strong>, <strong>cơ chế chia sẻ tài nguyên AWS RAM</strong>, <strong>kiểm thử bảo mật tự động</strong>, <strong>Amazon Bedrock AgentCore</strong> và <strong>quy trình phát triển phần mềm được hỗ trợ bởi AI</strong>.'
-            : 'The meetup featured <strong>five technical sessions</strong> covering <strong>Voice AI</strong>, <strong>AWS resource sharing</strong>, <strong>automated security testing</strong>, <strong>Amazon Bedrock AgentCore</strong>, and <strong>AI-powered software development</strong>.'}</p>
-
-          <p>${isVi
-            ? 'Thông qua các bài thuyết trình chuyên môn, phiên trình diễn trực tiếp (live demo) và thảo luận kỹ thuật cởi mở, tôi đã tiếp thu những góc nhìn thực tiễn và sâu sắc hơn về cách thức các công nghệ đám mây và AI hiện đại đang được kiến trúc và vận hành trong môi trường doanh nghiệp thực tế.'
-            : 'Through technical presentations, live demonstrations, and discussions, I gained a better understanding of how cloud and AI technologies are applied in real-world enterprise environments.'}</p>
+            ? 'Nội dung kỹ thuật xuyên suốt sự kiện bao quát từ các giải pháp xử lý giọng nói thời gian thực với độ trễ thấp, cơ chế chia sẻ tài nguyên đám mây đa tài khoản, kiểm thử an ninh tự động dịch chuyển trái (Shift-Left Security), đến môi trường thực thi và quản lý ngữ cảnh cho các AI Agent cấp sản xuất.'
+            : 'The technical scope spanned real-time low-latency voice AI systems, secure cross-account cloud resource sharing, Shift-Left automated penetration testing, and production runtime environments and memory management for AI Agents.'}</p>
         </div>
       </section>
 
@@ -6012,14 +6015,14 @@ function renderMeetupEventDetail(container, lang = 'vi') {
         </div>
         <div class="report-prose">
           <p>${isVi
-            ? 'Các mục tiêu nghiên cứu và phát triển năng lực chuyên môn xuyên suốt sự kiện bao gồm:'
+            ? 'Các mục tiêu kỹ thuật và nội dung chuyên môn trọng tâm được giới thiệu tại buổi meetup bao gồm:'
             : 'Core technical and architectural objectives established during the meetup:'}</p>
           <ul>
-            <li>${isVi ? '<strong>Khám phá các ứng dụng thực tiễn của AWS Cloud và Trí tuệ nhân tạo:</strong> Tiếp cận các giải pháp công nghệ tiên tiến đang được áp dụng trực tiếp vào sản phẩm.' : '<strong>Explore practical applications of AWS Cloud and Artificial Intelligence:</strong> Discover how cutting-edge cloud and AI services are applied to enterprise products.'}</li>
-            <li>${isVi ? '<strong>Nắm vững cơ chế chia sẻ tài nguyên đám mây và quản trị an ninh tập trung:</strong> Tìm hiểu cách thức tối ưu hóa hạ tầng đa tài khoản với AWS RAM, AWS Organizations và SCPs.' : '<strong>Understand cloud resource sharing and security management:</strong> Learn how multi-account governance is structured using AWS RAM, AWS Organizations, and SCPs.'}</li>
-            <li>${isVi ? '<strong>Tìm hiểu kiến trúc Voice AI và hệ thống AI Agents:</strong> Khám phá mô hình đàm thoại hai chiều thời gian thực và kiến trúc thực thi tác tử thông minh.' : '<strong>Learn about Voice AI and AI Agent architectures:</strong> Explore real-time bidirectional conversational workflows and agentic execution engines.'}</li>
-            <li>${isVi ? '<strong>Khám phá kiểm thử an ninh tự động và phát triển phần mềm được tối ưu bởi AI:</strong> Tiếp cận tư duy Shift-Left Security và các tác tử AI hỗ trợ chu trình kỹ thuật phần mềm.' : '<strong>Explore automated security testing and AI-powered development:</strong> Discover Shift-Left Security methodologies and AI agents accelerating software engineering lifecycles.'}</li>
-            <li>${isVi ? '<strong>Kết nối với chuyên gia công nghệ và cộng đồng AWS:</strong> Giao lưu, học hỏi kinh nghiệm thực chiến từ các kiến trúc sư, kỹ sư đầu ngành và cộng đồng AWS.' : '<strong>Connect with technology professionals and AWS community members:</strong> Network and exchange practical insights with seasoned engineers and the AWS builder community.'}</li>
+            <li>${isVi ? '<strong>Khám phá các ứng dụng thực tiễn của AWS Cloud và Trí tuệ nhân tạo:</strong> Giới thiệu các giải pháp công nghệ tiên tiến đang được áp dụng trực tiếp vào sản phẩm thực tế.' : '<strong>Explore practical applications of AWS Cloud and Artificial Intelligence:</strong> Present cutting-edge cloud and AI services deployed directly into production systems.'}</li>
+            <li>${isVi ? '<strong>Nắm vững cơ chế chia sẻ tài nguyên đám mây và quản trị an ninh tập trung:</strong> Phân tích cơ chế tối ưu hóa hạ tầng đa tài khoản với AWS RAM, AWS Organizations và SCPs.' : '<strong>Understand cloud resource sharing and security management:</strong> Analyze multi-account governance structured via AWS RAM, AWS Organizations, and SCPs.'}</li>
+            <li>${isVi ? '<strong>Tìm hiểu kiến trúc Voice AI và hệ thống AI Agents:</strong> Khảo sát mô hình đàm thoại hai chiều thời gian thực và kiến trúc thực thi tác tử thông minh.' : '<strong>Learn about Voice AI and AI Agent architectures:</strong> Examine real-time bidirectional conversational workflows and agentic execution engines.'}</li>
+            <li>${isVi ? '<strong>Khám phá kiểm thử an ninh tự động và phát triển phần mềm bằng AI:</strong> Tiếp cận tư duy Shift-Left Security và các tác tử AI hỗ trợ chu trình kỹ thuật phần mềm liên tục.' : '<strong>Explore automated security testing and AI-powered development:</strong> Review Shift-Left Security methodologies and AI agents accelerating software engineering lifecycles.'}</li>
+            <li>${isVi ? '<strong>Kết nối cộng đồng kỹ sư AWS:</strong> Tạo không gian trao đổi kỹ thuật thực chiến giữa các kiến trúc sư, kỹ sư đầu ngành và cộng đồng sinh viên.' : '<strong>Connect with the AWS engineering community:</strong> Provide an open technical exchange among architects, industry engineers, and builders.'}</li>
           </ul>
         </div>
       </section>
@@ -6028,7 +6031,7 @@ function renderMeetupEventDetail(container, lang = 'vi') {
       <section class="report-section-block">
         <div class="report-section-header">
           <span class="report-section-num">03</span>
-          <h2 class="report-section-title">${isVi ? 'III. Nội dung trọng tâm và Kiến thức tiếp thu (Key Topics and Knowledge Acquired)' : 'III. Key Topics and Knowledge Acquired'}</h2>
+          <h2 class="report-section-title">${isVi ? 'III. Nội dung chuyên môn tại sự kiện (Event Content & Technical Sessions)' : 'III. Event Content & Technical Sessions'}</h2>
         </div>
         <div class="report-prose">
 
@@ -6038,14 +6041,11 @@ function renderMeetupEventDetail(container, lang = 'vi') {
             <strong>${isVi ? 'Diễn giả:' : 'Speaker:'}</strong> Kiệt Trần – Revve AI
           </p>
           <p>${isVi
-            ? 'Phiên chia sẻ đầu tiên giới thiệu kiến trúc toàn diện của một trung tâm liên lạc (Contact Center) tích hợp Voice AI tiếng Việt được xây dựng trên hạ tầng đám mây AWS.'
-            : 'The first session introduced the architecture of a Vietnamese Voice AI contact center built on AWS.'}</p>
+            ? 'Phiên chia sẻ tập trung vào ba yếu tố chính trong quá trình xây dựng hệ thống Voice AI: <strong>Response Accuracy</strong>, <strong>Low Latency</strong> và <strong>Natural Conversational Experience</strong>.'
+            : 'The session focused on three primary criteria in engineering production Voice AI systems: <strong>Response Accuracy</strong>, <strong>Low Latency</strong>, and <strong>Natural Conversational Experience</strong>.'}</p>
           <p>${isVi
-            ? 'Một trong những rào cản kỹ thuật then chốt được diễn giả phân tích sâu sắc là việc tối ưu hóa độ trễ phản hồi toàn trình (End-to-End Latency) xuống xấp xỉ <strong>1.8 giây</strong>. Ngưỡng độ trễ này có tính quyết định để mang lại trải nghiệm đàm thoại mượt mà, tự nhiên và duy trì trơn tru nhịp giao tiếp hai chiều giữa người và máy.'
-            : 'One of the main challenges discussed was reducing response latency to approximately 1.8 seconds to provide a smoother and more natural conversational experience.'}</p>
-          <p>${isVi
-            ? 'Phiên demo trực tiếp đã minh họa kịch bản cuộc gọi phỏng vấn tự động qua điện thoại bằng AI nhằm sơ loại ứng viên cho vị trí Cloud Engineer hoàn toàn bằng tiếng Việt.'
-            : 'The live demonstration showcased an AI-powered telephone interview designed to conduct preliminary screening for Cloud Engineer candidates in Vietnamese.'}</p>
+            ? 'Nội dung trình diễn trực tiếp bao gồm hệ thống AI thực hiện cuộc gọi phỏng vấn sơ tuyển ứng viên Cloud Engineer bằng tiếng Việt, với mục tiêu tối ưu độ trễ phản hồi toàn trình xuống khoảng <strong>1,8 giây</strong> nhằm duy trì nhịp đối thoại tự nhiên giữa người và máy.'
+            : 'The live demonstration showcased an AI-powered voice interview screening Cloud Engineer candidates in Vietnamese, engineered to reduce end-to-end response latency to approximately <strong>1.8 seconds</strong> for smooth conversational turn-taking.'}</p>
 
           <h4 style="font-size:14.5px; font-weight:700; color:#171717; margin:18px 0 8px 0;">${isVi ? 'Quy trình xử lý Voice AI (Voice AI Processing Workflow)' : 'Voice AI Processing Workflow'}</h4>
           <div class="minimal-formula-box" style="text-align: center; font-weight: 600; overflow-x: auto;">
@@ -6059,31 +6059,25 @@ function renderMeetupEventDetail(container, lang = 'vi') {
               <thead>
                 <tr>
                   <th style="width: 25%;">${isVi ? 'Thành phần (Component)' : 'Component'}</th>
-                  <th style="width: 75%;">${isVi ? 'Chức năng (Function)' : 'Function'}</th>
+                  <th style="width: 75%;">${isVi ? 'Chức năng kỹ thuật (Technical Function)' : 'Technical Function'}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td><strong>Hear</strong></td>
-                  <td>${isVi ? 'Tiếp nhận và xử lý tín hiệu âm thanh giọng nói của người dùng thời gian thực.' : 'Receive and process the user\'s speech.'}</td>
+                  <td>${isVi ? 'Tiếp nhận và xử lý tín hiệu âm thanh giọng nói của người dùng thời gian thực.' : 'Receive and process incoming user speech streams in real time.'}</td>
                 </tr>
                 <tr>
                   <td><strong>Think</strong></td>
-                  <td>${isVi ? 'Phân tích ngữ nghĩa yêu cầu, tra cứu tri thức và sinh phản hồi phù hợp với ngữ cảnh hội thoại.' : 'Interpret the request and generate an appropriate response.'}</td>
+                  <td>${isVi ? 'Phân tích ngữ nghĩa yêu cầu, tra cứu tri thức và sinh phản hồi phù hợp với ngữ cảnh hội thoại.' : 'Interpret requests, query contextual knowledge, and generate appropriate responses.'}</td>
                 </tr>
                 <tr>
                   <td><strong>Speak</strong></td>
-                  <td>${isVi ? 'Chuyển đổi câu trả lời dạng văn bản thành giọng nói tự nhiên để phát hồi tiếp cho người dùng.' : 'Convert the generated response into spoken language.'}</td>
+                  <td>${isVi ? 'Chuyển đổi câu trả lời dạng văn bản thành giọng nói tự nhiên để phát hồi tiếp cho người dùng.' : 'Synthesize generated text responses into natural spoken language for playback.'}</td>
                 </tr>
               </tbody>
             </table>
           </div>
-
-          <p style="font-style: italic; color: #555555; margin-top: 8px;">
-            ${isVi
-              ? 'Phiên chia sẻ đã chứng minh rõ ràng rằng một hệ thống Voice AI hiệu quả không chỉ đơn thuần cần câu trả lời chuẩn xác, mà phụ thuộc mật thiết vào độ trễ cực thấp và trải nghiệm đối thoại tự nhiên.'
-              : 'The session demonstrated that an effective Voice AI system requires not only accurate responses but also low latency and a natural conversational experience.'}
-          </p>
 
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
@@ -6093,14 +6087,11 @@ function renderMeetupEventDetail(container, lang = 'vi') {
             <strong>${isVi ? 'Diễn giả:' : 'Speaker:'}</strong> Long Huỳnh – Styl Solution
           </p>
           <p>${isVi
-            ? 'Phiên chia sẻ thứ hai tập trung vào bài toán chia sẻ tài nguyên an toàn giữa nhiều tài khoản AWS khác nhau trong cùng một tổ chức doanh nghiệp (Cross-Account Sharing).'
-            : 'The second session focused on securely sharing AWS resources across multiple accounts within an organization.'}</p>
+            ? 'Phiên chia sẻ thứ hai tập trung vào giải pháp chia sẻ tài nguyên an toàn giữa nhiều tài khoản AWS khác nhau trong cùng một tổ chức (Cross-Account Resource Sharing).'
+            : 'The second session addressed secure cross-account resource sharing across multiple AWS accounts within an enterprise organization.'}</p>
           <p>${isVi
-            ? 'AWS Resource Access Manager (AWS RAM) cho phép chia sẻ các tài nguyên được hỗ trợ (như Subnet VPC, Transit Gateway, Route 53 Resolver Rules...) mà không đòi hỏi mỗi tài khoản AWS con phải khởi tạo hạ tầng trùng lặp.'
-            : 'AWS Resource Access Manager allows supported resources to be shared without requiring every AWS account to create separate infrastructure.'}</p>
-          <p>${isVi
-            ? 'Phương pháp tiếp cận kiến trúc này giúp doanh nghiệp giảm thiểu đáng kể chi phí hạ tầng dư thừa, đơn giản hóa cấu hình mạng đa tài khoản và nâng cao khả năng quản trị tập trung.'
-            : 'This approach can reduce infrastructure duplication, simplify network management, and improve centralized governance.'}</p>
+            ? 'AWS Resource Access Manager (AWS RAM) cho phép chia sẻ các tài nguyên được hỗ trợ (Subnet VPC, Transit Gateway, Route 53 Resolver Rules...) mà không yêu cầu mỗi tài khoản AWS con phải khởi tạo hạ tầng trùng lặp, giúp giảm thiểu chi phí dư thừa, đơn giản hóa cấu hình mạng và nâng cao hiệu quả quản trị tập trung.'
+            : 'AWS Resource Access Manager allows supported resources (VPC Subnets, Transit Gateways, Route 53 Resolver Rules) to be shared without requiring duplicated infrastructure across sub-accounts, reducing overhead and streamlining centralized management.'}</p>
 
           <h4 style="font-size:14.5px; font-weight:700; color:#171717; margin:18px 0 8px 0;">${isVi ? 'Các thành phần chính (Key Components)' : 'Key Components'}</h4>
           <div class="minimal-table-wrap">
@@ -6114,29 +6105,23 @@ function renderMeetupEventDetail(container, lang = 'vi') {
               <tbody>
                 <tr>
                   <td><strong>AWS RAM</strong></td>
-                  <td>${isVi ? 'Cho phép chia sẻ tài nguyên đám mây an toàn giữa các tài khoản AWS trong tổ chức.' : 'Enables cross-account resource sharing.'}</td>
+                  <td>${isVi ? 'Cho phép chia sẻ tài nguyên đám mây an toàn giữa các tài khoản AWS trong tổ chức.' : 'Enables secure cross-account resource sharing across organizational accounts.'}</td>
                 </tr>
                 <tr>
                   <td><strong>AWS Organizations</strong></td>
-                  <td>${isVi ? 'Hỗ trợ quản trị, cấu trúc phân cấp và kiểm soát tập trung môi trường đa tài khoản.' : 'Supports centralized multi-account management.'}</td>
+                  <td>${isVi ? 'Hỗ trợ quản trị, cấu trúc phân cấp và kiểm soát tập trung môi trường đa tài khoản.' : 'Supports centralized hierarchy, multi-account governance, and consolidated billing.'}</td>
                 </tr>
                 <tr>
                   <td><strong>IAM Policies</strong></td>
-                  <td>${isVi ? 'Quy định chi tiết quyền hạn truy cập của người dùng và tài nguyên điện toán.' : 'Define access permissions.'}</td>
+                  <td>${isVi ? 'Quy định chi tiết quyền hạn truy cập của người dùng và tài nguyên điện toán.' : 'Defines fine-grained access permissions for users and compute resources.'}</td>
                 </tr>
                 <tr>
                   <td><strong>Service Control Policies (SCPs)</strong></td>
-                  <td>${isVi ? 'Thiết lập ranh giới an toàn (guardrails) và giới hạn quyền tối đa trên quy mô toàn tổ chức.' : 'Establish organization-level permission guardrails.'}</td>
+                  <td>${isVi ? 'Thiết lập ranh giới an toàn (guardrails) và giới hạn quyền tối đa trên quy mô toàn tổ chức.' : 'Establishes organization-level permission guardrails and maximum permission boundaries.'}</td>
                 </tr>
               </tbody>
             </table>
           </div>
-
-          <p style="font-style: italic; color: #555555; margin-top: 8px;">
-            ${isVi
-              ? 'Nội dung chia sẻ đã giúp tôi hiểu sâu sắc cách thức cơ chế chia sẻ tài nguyên và kiểm soát truy cập phối hợp nhịp nhàng để hỗ trợ các kiến trúc AWS đa tài khoản bảo mật và vận hành tối ưu.'
-              : 'The session helped me understand how resource sharing and access control can work together to support secure and efficient multi-account AWS architectures.'}
-          </p>
 
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
@@ -6146,21 +6131,18 @@ function renderMeetupEventDetail(container, lang = 'vi') {
             <strong>${isVi ? 'Diễn giả:' : 'Speaker:'}</strong> Thịnh Nguyễn – Styl Solution
           </p>
           <p>${isVi
-            ? 'Phiên chia sẻ thứ ba giới thiệu phương pháp đánh giá an ninh hạ tầng tự động và kiểm thử thâm nhập (penetration testing) với sự hỗ trợ của các AI Security Agent.'
-            : 'The third session introduced automated infrastructure security assessment and AI-assisted penetration testing.'}</p>
-          <p>${isVi
-            ? 'Bài thuyết trình nhấn mạnh nguyên lý phát hiện sớm các lỗ hổng bảo mật ngay từ giai đoạn đầu của vòng đời phát triển phần mềm (SDLC), thay vì đợi đến khi hệ thống đã được triển khai lên Production.'
-            : 'The presentation emphasized identifying vulnerabilities early in the software development lifecycle rather than waiting until applications are deployed into production.'}</p>
+            ? 'Phiên chia sẻ thứ ba giới thiệu phương pháp đánh giá an ninh hạ tầng tự động và kiểm thử thâm nhập (penetration testing) với sự hỗ trợ của các AI Security Agent, nhấn mạnh việc phát hiện sớm lỗ hổng ngay từ giai đoạn đầu của vòng đời phát triển phần mềm (SDLC).'
+            : 'The third session introduced automated infrastructure security assessment and penetration testing assisted by AI Security Agents, emphasizing early vulnerability identification during the software development lifecycle (SDLC).'}</p>
 
           <h4 style="font-size:14.5px; font-weight:700; color:#171717; margin:18px 0 8px 0;">${isVi ? 'Bảo mật dịch chuyển trái (Shift-Left Security)' : 'Shift-Left Security'}</h4>
           <p>${isVi
-            ? 'Shift-Left Security là phương pháp tích hợp việc kiểm tra và đánh giá an ninh vào các giai đoạn sớm nhất của quy trình phát triển phần mềm. Các tiếp cận tiêu biểu được giới thiệu tại sự kiện gồm có:'
-            : 'Shift-Left Security involves integrating security assessments into earlier stages of software development. The approaches introduced during the session included:'}</p>
+            ? 'Phương pháp tiếp cận Shift-Left Security được phân tích qua bốn bước kiểm soát an ninh:'
+            : 'The Shift-Left Security methodology was outlined through four progressive validation checkpoints:'}</p>
           <ul>
-            <li>${isVi ? 'Rà soát và đánh giá an ninh trực tiếp trên mã nguồn hạ tầng Terraform (IaC Review).' : 'Reviewing Terraform infrastructure code.'}</li>
-            <li>${isVi ? 'Tích hợp các bước kiểm tra an ninh tự động vào Pull Request trên GitHub và GitLab.' : 'Integrating security checks into GitHub and GitLab pull requests.'}</li>
-            <li>${isVi ? 'Phát hiện sớm các cấu hình sai lệch và lỗ hổng tiềm ẩn trước khi tiến hành triển khai.' : 'Identifying potential vulnerabilities before deployment.'}</li>
-            <li>${isVi ? 'Sử dụng AI Security Agent để thực hiện kiểm thử thâm nhập tự động trong các môi trường SIT và UAT được cấp phép.' : 'Using AI Security Agents to perform automated penetration testing in authorized SIT and UAT environments.'}</li>
+            <li>${isVi ? 'Rà soát và đánh giá an ninh trực tiếp trên mã nguồn hạ tầng Terraform (IaC Review).' : 'Reviewing Terraform infrastructure-as-code (IaC) definitions.'}</li>
+            <li>${isVi ? 'Tích hợp các bước kiểm tra an ninh tự động vào Pull Request trên GitHub và GitLab.' : 'Integrating automated security checks into GitHub and GitLab pull requests.'}</li>
+            <li>${isVi ? 'Phát hiện sớm các cấu hình sai lệch và lỗ hổng tiềm ẩn trước khi tiến hành triển khai.' : 'Pinpointing misconfigurations and security exposures prior to deployment.'}</li>
+            <li>${isVi ? 'Sử dụng AI Security Agent để thực hiện kiểm thử thâm nhập tự động trong các môi trường SIT và UAT được cấp phép.' : 'Deploying AI Security Agents to execute automated penetration tests in authorized SIT and UAT environments.'}</li>
           </ul>
 
           <h4 style="font-size:14.5px; font-weight:700; color:#171717; margin:18px 0 8px 0;">${isVi ? 'Quy trình đánh giá an ninh (Security Assessment Workflow)' : 'Security Assessment Workflow'}</h4>
@@ -6170,12 +6152,6 @@ function renderMeetupEventDetail(container, lang = 'vi') {
               : 'Source Code → Security Review → Testing Environment → Security Validation → Production Deployment'}
           </div>
 
-          <p style="font-style: italic; color: #555555; margin-top: 8px;">
-            ${isVi
-              ? 'Phiên hội thảo giúp tôi hiểu rõ cách các công cụ bảo mật hỗ trợ bởi AI đóng vai trò trợ lực vững chắc cho thực hành DevSecOps, giúp phát hiện lỗ hổng sớm hơn và triệt tiêu rủi ro an ninh trước khi đưa lên môi trường thực tế.'
-              : 'This session helped me understand how AI-assisted security tools can support DevSecOps practices, identify vulnerabilities earlier, and reduce security risks before production deployment.'}
-          </p>
-
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
           <!-- 4. Amazon Bedrock AgentCore -->
@@ -6184,27 +6160,27 @@ function renderMeetupEventDetail(container, lang = 'vi') {
             <strong>${isVi ? 'Diễn giả:' : 'Speaker:'}</strong> Xuân An – Leader AWS Student Builder Group HCMUTE
           </p>
           <p>${isVi
-            ? 'Phiên chia sẻ thứ tư giới thiệu Amazon Bedrock AgentCore và vai trò thiết yếu của nó trong việc triển khai và vận hành các AI Agent trong môi trường sản xuất của doanh nghiệp.'
-            : 'The fourth session introduced Amazon Bedrock AgentCore and its role in deploying and operating AI Agents in production environments.'}</p>
+            ? 'Nội dung phiên chia sẻ tập trung vào hai thành phần cốt lõi của Amazon Bedrock AgentCore: <strong>AgentCore Runtime</strong> và <strong>AgentCore Memory</strong>.'
+            : 'The session focused on two primary architectural components of Amazon Bedrock AgentCore: <strong>AgentCore Runtime</strong> and <strong>AgentCore Memory</strong>.'}</p>
           <p>${isVi
-            ? 'Nội dung thuyết trình tập trung mổ xẻ hai năng lực kiến trúc trọng tâm: <strong>AgentCore Runtime</strong> và <strong>AgentCore Memory</strong>.'
-            : 'The presentation focused on two important capabilities: AgentCore Runtime and AgentCore Memory.'}</p>
+            ? 'Các nội dung kỹ thuật liên quan bao gồm môi trường thực thi, quản lý ngữ cảnh, khả năng mở rộng và vận hành AI Agent trong môi trường Production.'
+            : 'Associated technical topics addressed execution environments, context management, scalability, and operating AI Agents within production workloads.'}</p>
 
           <h4 style="font-size:14.5px; font-weight:700; color:#171717; margin:18px 0 8px 0;">4.1. AgentCore Runtime</h4>
           <p>${isVi
             ? 'AgentCore Runtime cung cấp môi trường thực thi được quản trị (managed runtime) chuyên biệt cho việc triển khai và vận hành các AI Agent. Các yếu tố kiến trúc quan trọng bao gồm:'
-            : 'AgentCore Runtime provides a managed execution environment for deploying and operating AI Agents. Important architectural considerations include:'}</p>
+            : 'AgentCore Runtime provides a managed execution environment for deploying and operating AI Agents. Key architectural factors include:'}</p>
           <ul>
             <li>${isVi ? 'Khả năng cô lập phiên thực thi và phân tách khối lượng công việc của từng Agent (Agent execution & workload isolation).' : 'Agent execution and workload isolation.'}</li>
-            <li>${isVi ? 'Khả năng mở rộng hạ tầng tính toán tự động và linh hoạt (Infrastructure scalability).' : 'Infrastructure scalability.'}</li>
-            <li>${isVi ? 'Tối ưu hóa hiệu suất sử dụng tài nguyên điện toán (Resource utilization).' : 'Resource utilization.'}</li>
-            <li>${isVi ? 'Đáp ứng các yêu cầu khắt khe khi đưa tác tử AI vào vận hành sản xuất thực tế (Production deployment requirements).' : 'Production deployment requirements.'}</li>
+            <li>${isVi ? 'Khả năng mở rộng hạ tầng tính toán tự động và linh hoạt (Infrastructure scalability).' : 'Elastic infrastructure scalability matching demand.'}</li>
+            <li>${isVi ? 'Tối ưu hóa hiệu suất sử dụng tài nguyên điện toán (Resource utilization).' : 'Optimized compute resource utilization.'}</li>
+            <li>${isVi ? 'Đáp ứng các yêu cầu khắt khe khi đưa tác tử AI vào vận hành sản xuất thực tế (Production deployment requirements).' : 'Enterprise production deployment requirements.'}</li>
           </ul>
 
           <h4 style="font-size:14.5px; font-weight:700; color:#171717; margin:18px 0 8px 0;">4.2. AgentCore Memory</h4>
           <p>${isVi
             ? 'AgentCore Memory đảm bảo việc lưu trữ, quản trị ngữ cảnh hội thoại và thông tin liên quan xuyên suốt chuỗi tương tác nhiều lượt của AI Agent.'
-            : 'AgentCore Memory supports the management of conversational context and relevant information across AI Agent interactions.'}</p>
+            : 'AgentCore Memory manages conversational context and persistent interaction states across multi-turn AI Agent workflows.'}</p>
 
           <div class="minimal-table-wrap">
             <table class="minimal-table">
@@ -6217,21 +6193,15 @@ function renderMeetupEventDetail(container, lang = 'vi') {
               <tbody>
                 <tr>
                   <td><strong>Short-term Memory</strong></td>
-                  <td>${isVi ? 'Duy trì ngữ cảnh trao đổi gần nhất và lịch sử tương tác ngắn hạn giữa người dùng và Agent.' : 'Maintains recent conversational context and interaction history.'}</td>
+                  <td>${isVi ? 'Duy trì ngữ cảnh trao đổi gần nhất và lịch sử tương tác ngắn hạn giữa người dùng và Agent.' : 'Maintains recent conversational context and immediate interaction history.'}</td>
                 </tr>
                 <tr>
                   <td><strong>Long-term Memory</strong></td>
-                  <td>${isVi ? 'Lưu trữ bền vững các thông tin quan trọng để tái sử dụng và tham chiếu cho các phiên tương tác trong tương lai.' : 'Retains relevant information for future interactions.'}</td>
+                  <td>${isVi ? 'Lưu trữ bền vững các thông tin quan trọng để tái sử dụng và tham chiếu cho các phiên tương tác trong tương lai.' : 'Retains persistent knowledge and preferences for cross-session retrieval.'}</td>
                 </tr>
               </tbody>
             </table>
           </div>
-
-          <p style="font-style: italic; color: #555555; margin-top: 8px;">
-            ${isVi
-              ? 'Cơ chế quản lý bộ nhớ hiệu quả giúp AI Agent duy trì mạch lạc ngữ cảnh và sinh phản hồi chính xác, cá nhân hóa hơn. Phiên chia sẻ chứng minh rằng AI Agent trong môi trường doanh nghiệp đòi hỏi nhiều hơn một Mô hình ngôn ngữ lớn (LLM) — hệ thống bắt buộc phải sở hữu môi trường thực thi tin cậy, khả năng co giãn và cơ chế quản trị bộ nhớ bài bản.'
-              : 'Effective memory management enables AI Agents to maintain context and provide more relevant responses across multiple interactions. This session demonstrated that production AI Agents require more than a Large Language Model. They also depend on reliable execution environments, scalability, and effective memory management.'}
-          </p>
 
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
@@ -6241,50 +6211,33 @@ function renderMeetupEventDetail(container, lang = 'vi') {
             <strong>${isVi ? 'Diễn giả:' : 'Speakers:'}</strong> Khoa Kiều – Tech Lead, ACB &amp; Nghi Danh – AWS Community Builder
           </p>
           <p>${isVi
-            ? 'Phiên chia sẻ cuối cùng khám phá cách các nhóm AI Agent (AI Agent Crew) có thể phối hợp hỗ trợ chu trình phát triển phần mềm liên tục, rà soát mã nguồn tự động và kiểm tra trạng thái vận hành hệ thống.'
-            : 'The final session explored how AI Agents can support continuous software development, code reviews, and system inspection.'}</p>
-          <p>${isVi
-            ? 'Đây là phiên chia sẻ tạo ấn tượng sâu sắc nhất đối với tôi vì đã chứng minh trực quan cách AI Agent có thể thực thi các tác vụ kỹ thuật chuyên sâu và hữu ích, vượt xa khỏi các tương tác chatbot đơn thuần.'
-            : 'This was the most interesting session for me because it demonstrated how AI Agents could perform practical technical tasks beyond traditional chatbot interactions.'}</p>
+            ? 'Phiên chia sẻ cuối cùng khám phá cách các nhóm AI Agent (AI Agent Crew) phối hợp hỗ trợ chu trình phát triển phần mềm liên tục, rà soát mã nguồn tự động và kiểm tra trạng thái vận hành hệ thống.'
+            : 'The final session explored how autonomous AI Agent groups support continuous software development, automated code inspection, and system status monitoring.'}</p>
 
           <h4 style="font-size:14.5px; font-weight:700; color:#171717; margin:18px 0 8px 0;">5.1. Khởi tạo Artifact trực quan (Artifact Generation)</h4>
           <p>${isVi
-            ? 'Phiên demo thực tế đã minh họa sống động cách AI Agent tự động thu thập thông tin thị trường việc làm thực tế, xử lý dữ liệu thu thập được và trực tiếp sinh các báo cáo trực quan, biểu đồ thống kê tương tác ngay trong giao diện làm việc.'
-            : 'The live demonstration illustrated how AI Agents could collect real-world job market information, process the collected data, and generate visual reports and statistical charts directly within an interactive environment.'}</p>
-          <p>${isVi
-            ? 'Điều này khẳng định tiềm năng to lớn của tự động hóa hỗ trợ bởi AI trong quy trình thu thập thông tin, phân tích dữ liệu chuyên sâu và trực quan hóa nghiệp vụ.'
-            : 'This demonstrated the potential of AI-assisted automation in information collection, data analysis, and visualization.'}</p>
+            ? 'Phiên demo thực tế minh họa cách AI Agent tự động thu thập thông tin tuyển dụng việc làm, xử lý dữ liệu và trực tiếp sinh các báo cáo trực quan, biểu đồ thống kê tương tác ngay trong giao diện làm việc.'
+            : 'The live demonstration showed AI Agents collecting real-world job postings, parsing data streams, and generating interactive visual reports and analytical charts directly within the workspace.'}</p>
 
           <h4 style="font-size:14.5px; font-weight:700; color:#171717; margin:18px 0 8px 0;">5.2. Quản trị cửa sổ ngữ cảnh (Context Window Management)</h4>
           <p>${isVi
-            ? 'Các diễn giả đã phân tích các kỹ thuật tối ưu hóa khối lượng thông tin mà AI Agent phải xử lý trong các luồng tương tác kéo dài. Hai khái niệm cốt lõi được giới thiệu bao gồm:'
-            : 'The speakers discussed techniques for managing the amount of information processed by AI Agents during long-running interactions. Two important concepts were introduced:'}</p>
+            ? 'Các diễn giả phân tích các kỹ thuật tối ưu hóa khối lượng thông tin xử lý trong các luồng tương tác dài hạn qua hai khái niệm then chốt:'
+            : 'The speakers analyzed context window optimization techniques for long-running workflows via two core mechanisms:'}</p>
           <ul>
-            <li>${isVi ? '<strong>Auto Compact:</strong> Tự động nén và cô đọng ngữ cảnh cuộc trò chuyện khi dung lượng chạm ngưỡng giới hạn của Context Window.' : '<strong>Auto Compact:</strong> Condenses conversation context when it approaches the available context limit.'}</li>
-            <li>${isVi ? '<strong>Context Breakdown:</strong> Phân tích chi tiết mức độ đóng góp của từng thành phần vào lượng token tiêu thụ, giúp định vị chính xác nguyên nhân phình to ngữ cảnh.' : '<strong>Context Breakdown:</strong> Helps identify how different components contribute to token consumption.'}</li>
+            <li>${isVi ? '<strong>Auto Compact:</strong> Tự động nén và cô đọng ngữ cảnh cuộc trò chuyện khi dung lượng chạm ngưỡng giới hạn của Context Window.' : '<strong>Auto Compact:</strong> Automatically condenses conversation context as token usage approaches context limits.'}</li>
+            <li>${isVi ? '<strong>Context Breakdown:</strong> Phân tích chi tiết mức độ đóng góp của từng thành phần vào lượng token tiêu thụ, giúp định vị chính xác nguyên nhân phình to ngữ cảnh.' : '<strong>Context Breakdown:</strong> Analyzes token distribution across components to isolate context expansion factors.'}</li>
           </ul>
-          <p>${isVi
-            ? 'Quản lý ngữ cảnh hiệu quả là yếu tố sống còn để duy trì hiệu năng suy luận và kiểm soát chặt chẽ chi phí vận hành cho các quy trình AI chạy dài hạn.'
-            : 'Efficient context management is important for maintaining performance and controlling the operational costs of long-running AI workflows.'}</p>
 
           <h4 style="font-size:14.5px; font-weight:700; color:#171717; margin:18px 0 8px 0;">5.3. Quản lý bộ nhớ và Ranh giới an ninh (Memory Management &amp; Security Guardrails)</h4>
           <p>${isVi
-            ? 'Các AI Agent hoạt động kéo dài có thể tích lũy các thông tin không cần thiết theo thời gian, gây lãng phí tài nguyên tính toán và làm tăng chi phí vận hành. Phiên chia sẻ nhấn mạnh tầm quan trọng của việc thanh lọc bộ nhớ và thiết lập các ranh giới bảo mật (Security Guardrails) phù hợp.'
-            : 'Long-running AI Agents may accumulate unnecessary information over time, increasing resource consumption and operational costs. The session highlighted the importance of maintaining relevant memory and establishing appropriate security guardrails.'}</p>
-          <p>${isVi
-            ? 'Các biện pháp phòng vệ an ninh thực tế bao gồm việc ngăn chặn AI Agent:'
-            : 'Examples included preventing AI Agents from:'}</p>
+            ? 'Phiên chia sẻ nhấn mạnh tầm quan trọng của việc duy trì bộ nhớ chọn lọc và thiết lập các ranh giới bảo mật (Security Guardrails) nhằm ngăn chặn AI Agent:'
+            : 'The presentation emphasized selective memory retention and establishing strict security guardrails preventing AI Agents from:'}</p>
           <ul>
-            <li>${isVi ? 'Tự ý xóa bỏ tài nguyên hoặc phá hủy hạ tầng đám mây khi chưa có ủy quyền rõ ràng.' : 'Deleting cloud infrastructure without authorization.'}</li>
-            <li>${isVi ? 'Làm lộ lọt các khóa bí mật, API credentials và thông tin định danh nhạy cảm.' : 'Exposing sensitive credentials and secrets.'}</li>
-            <li>${isVi ? 'Thực hiện các thao tác sửa đổi cấu hình hệ thống ngoài phạm vi cho phép.' : 'Performing unauthorized system modifications.'}</li>
-            <li>${isVi ? 'Thực thi các hoạt động có tính chất phá hoại hoặc nguy hiểm mà thiếu cơ chế kiểm soát của con người.' : 'Executing destructive operations without appropriate controls.'}</li>
+            <li>${isVi ? 'Tự ý xóa bỏ tài nguyên hoặc phá hủy hạ tầng đám mây khi chưa có ủy quyền rõ ràng.' : 'Deleting cloud infrastructure without explicit authorization.'}</li>
+            <li>${isVi ? 'Làm lộ lọt các khóa bí mật, API credentials và thông tin định danh nhạy cảm.' : 'Exposing sensitive secrets, access keys, or API credentials.'}</li>
+            <li>${isVi ? 'Thực hiện các thao tác sửa đổi cấu hình hệ thống ngoài phạm vi cho phép.' : 'Performing unauthorized system or configuration modifications.'}</li>
+            <li>${isVi ? 'Thực thi các hoạt động có tính chất phá hoại hoặc nguy hiểm mà thiếu cơ chế kiểm soát của con người.' : 'Executing destructive or high-risk operations without human oversight.'}</li>
           </ul>
-          <p style="font-style: italic; color: #555555; margin-top: 8px;">
-            ${isVi
-              ? 'Phiên chia sẻ mang lại những hiểu biết quý giá về cách thiết lập thế cân bằng hài hòa giữa tự động hóa AI, năng suất kỹ thuật, an ninh hệ thống và sự giám sát chủ động của con người.'
-              : 'This session provided valuable insights into balancing AI automation, productivity, security, and human oversight.'}
-          </p>
 
         </div>
       </section>
@@ -6297,98 +6250,112 @@ function renderMeetupEventDetail(container, lang = 'vi') {
         </div>
         <div class="report-prose">
           <p>${isVi
-            ? 'Năm phiên chia sẻ kỹ thuật tại sự kiện đã cung cấp khối lượng kiến thức thực tiễn phong phú trải rộng trên các lĩnh vực then chốt của Điện toán đám mây, Trí tuệ nhân tạo và An ninh đám mây:'
-            : 'The five technical sessions provided practical knowledge across several important areas of Cloud Computing, Artificial Intelligence, and Cloud Security.'}</p>
+            ? 'Năm phiên chia sẻ kỹ thuật tại sự kiện đã tổng kết khối lượng kiến thức thực tiễn trải rộng trên các lĩnh vực then chốt của Cloud Computing, AI và An ninh đám mây:'
+            : 'The five technical sessions consolidated practical knowledge across foundational areas of Cloud Computing, AI, and Cloud Security:'}</p>
 
           <div class="minimal-table-wrap">
             <table class="minimal-table">
               <thead>
                 <tr>
                   <th style="width: 30%;">${isVi ? 'Lĩnh vực kỹ thuật (Technical Area)' : 'Technical Area'}</th>
-                  <th style="width: 70%;">${isVi ? 'Kiến thức cốt lõi tiếp thu (Key Knowledge Acquired)' : 'Key Knowledge Acquired'}</th>
+                  <th style="width: 70%;">${isVi ? 'Kiến thức cốt lõi (Key Architectural Concepts)' : 'Key Architectural Concepts'}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td><strong>Voice AI</strong></td>
-                  <td>${isVi ? 'Xử lý giọng nói thời gian thực và kỹ thuật tối ưu hóa độ trễ phản hồi (< 2s).' : 'Real-time voice processing and latency optimization'}</td>
+                  <td>${isVi ? 'Xử lý giọng nói thời gian thực và kỹ thuật tối ưu hóa độ trễ phản hồi (< 2s).' : 'Real-time voice processing and latency optimization (< 2s).'}</td>
                 </tr>
                 <tr>
                   <td><strong>AWS RAM</strong></td>
-                  <td>${isVi ? 'Cơ chế chia sẻ tài nguyên an toàn giữa các tài khoản AWS trong tổ chức.' : 'Secure cross-account resource sharing'}</td>
+                  <td>${isVi ? 'Cơ chế chia sẻ tài nguyên an toàn giữa các tài khoản AWS trong tổ chức.' : 'Secure cross-account resource sharing across organizational accounts.'}</td>
                 </tr>
                 <tr>
                   <td><strong>AWS Organizations</strong></td>
-                  <td>${isVi ? 'Quản trị và phân cấp tập trung kiến trúc đa tài khoản đám mây.' : 'Centralized cloud governance'}</td>
+                  <td>${isVi ? 'Quản trị và phân cấp tập trung kiến trúc đa tài khoản đám mây.' : 'Centralized multi-account governance and organizational guardrails.'}</td>
                 </tr>
                 <tr>
                   <td><strong>Cloud Security</strong></td>
-                  <td>${isVi ? 'Bảo mật dịch chuyển trái (Shift-Left Security) và kiểm thử thâm nhập tự động.' : 'Shift-Left Security and automated penetration testing'}</td>
+                  <td>${isVi ? 'Bảo mật dịch chuyển trái (Shift-Left Security) và kiểm thử thâm nhập tự động.' : 'Shift-Left Security and automated penetration testing.'}</td>
                 </tr>
                 <tr>
                   <td><strong>AgentCore Runtime</strong></td>
-                  <td>${isVi ? 'Môi trường thực thi độc lập, ổn định và co giãn cho AI Agents trên Production.' : 'Production execution environments for AI Agents'}</td>
+                  <td>${isVi ? 'Môi trường thực thi độc lập, ổn định và co giãn cho AI Agents trên Production.' : 'Production execution environments and workload isolation for AI Agents.'}</td>
                 </tr>
                 <tr>
                   <td><strong>AgentCore Memory</strong></td>
-                  <td>${isVi ? 'Cơ chế quản trị bộ nhớ ngắn hạn và dài hạn cho tương tác tác tử nhiều lượt.' : 'Short-term and long-term memory management'}</td>
+                  <td>${isVi ? 'Cơ chế quản trị bộ nhớ ngắn hạn và dài hạn cho tương tác tác tử nhiều lượt.' : 'Short-term and long-term memory governance for multi-turn agent interactions.'}</td>
                 </tr>
                 <tr>
                   <td><strong>Kiro Crew</strong></td>
-                  <td>${isVi ? 'Tự động hóa phát triển phần mềm và rà soát hệ thống liên tục bằng AI Agents.' : 'AI-powered development and continuous automation'}</td>
+                  <td>${isVi ? 'Tự động hóa phát triển phần mềm và rà soát hệ thống liên tục bằng AI Agents.' : 'AI-powered continuous development, code reviews, and system inspection.'}</td>
                 </tr>
                 <tr>
                   <td><strong>Context Management</strong></td>
-                  <td>${isVi ? 'Kiểm soát mức tiêu thụ token và tối ưu hóa cửa sổ ngữ cảnh (Auto Compact, Context Breakdown).' : 'Token consumption and context optimization'}</td>
+                  <td>${isVi ? 'Kiểm soát mức tiêu thụ token và tối ưu hóa cửa sổ ngữ cảnh (Auto Compact, Context Breakdown).' : 'Token consumption governance and context optimization (Auto Compact, Context Breakdown).'}</td>
                 </tr>
                 <tr>
                   <td><strong>Security Guardrails</strong></td>
-                  <td>${isVi ? 'Thiết lập rào chắn an ninh ngăn chặn các hành vi phá hoại hoặc sửa đổi trái phép của AI.' : 'Preventing unauthorized and destructive AI actions'}</td>
+                  <td>${isVi ? 'Thiết lập rào chắn an ninh ngăn chặn các hành vi phá hoại hoặc sửa đổi trái phép của AI.' : 'Enforcing security guardrails preventing unauthorized or destructive AI actions.'}</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <p style="font-weight:700; color:#171717; margin-top:20px;">
-            ${isVi ? 'Những bài học đúc kết quan trọng nhất từ sự kiện:' : 'The event highlighted several important lessons:'}
+            ${isVi ? 'Các nguyên tắc kiến trúc cốt lõi:' : 'Core architectural principles established:'}
           </p>
           <ul>
             <li>${isVi ? 'Kiến trúc Cloud và AI bắt buộc phải dung hòa giữa hiệu năng cao, an ninh nghiêm ngặt và hiệu quả vận hành kinh tế.' : 'Cloud and AI architectures must balance performance, security, and operational efficiency.'}</li>
-            <li>${isVi ? 'Cơ chế chia sẻ tài nguyên tập trung giúp loại bỏ hạ tầng dư thừa và tinh gọn hóa công tác quản trị.' : 'Centralized resource sharing can simplify infrastructure management.'}</li>
-            <li>${isVi ? 'Kiểm định an ninh cần được dịch chuyển về phía trước (Shift-Left), tích hợp ngay vào chu trình phát triển phần mềm.' : 'Security assessments should be integrated into the software development lifecycle.'}</li>
-            <li>${isVi ? 'AI Agent trong sản xuất đòi hỏi nền tảng thực thi ổn định và cơ chế quản trị bộ nhớ đáng tin cậy.' : 'Production AI Agents require reliable runtime infrastructure and effective memory management.'}</li>
-            <li>${isVi ? 'Tự động hóa bằng AI phải luôn vận hành trong ranh giới an ninh kiểm soát được và có sự giám sát của con người.' : 'AI automation must operate within appropriate security boundaries.'}</li>
+            <li>${isVi ? 'Cơ chế chia sẻ tài nguyên tập trung giúp loại bỏ hạ tầng dư thừa và tinh gọn hóa công tác quản trị.' : 'Centralized resource sharing simplifies multi-account infrastructure management.'}</li>
+            <li>${isVi ? 'Kiểm định an ninh cần được dịch chuyển về phía trước (Shift-Left), tích hợp ngay vào chu trình phát triển phần mềm.' : 'Security assessments should be integrated directly into the software development lifecycle.'}</li>
+            <li>${isVi ? 'AI Agent trong sản xuất đòi hỏi nền tảng thực thi ổn định và cơ chế quản trị bộ nhớ đáng tin cậy.' : 'Production AI Agents depend on reliable runtime environments and structured memory management.'}</li>
+            <li>${isVi ? 'Tự động hóa bằng AI phải luôn vận hành trong ranh giới an ninh kiểm soát được và có sự giám sát của con người.' : 'AI automation must operate strictly within verified security guardrails.'}</li>
           </ul>
         </div>
       </section>
 
-      <!-- SECTION V – LESSONS LEARNED AND PERSONAL CONTRIBUTIONS -->
+      <!-- SECTION V – LESSONS LEARNED & PERSONAL CONTRIBUTIONS -->
       <section class="report-section-block">
         <div class="report-section-header">
           <span class="report-section-num">05</span>
-          <h2 class="report-section-title">${isVi ? 'V. Bài học rút ra & Đóng góp cá nhân (Lessons Learned & Personal Contributions)' : 'V. Lessons Learned and Personal Contributions'}</h2>
+          <h2 class="report-section-title">${isVi ? 'V. Bài học rút ra & Đóng góp cá nhân (Lessons Learned & Personal Contributions)' : 'V. Lessons Learned & Personal Contributions'}</h2>
         </div>
         <div class="report-prose">
           
+          <!-- 1. Lessons Learned -->
           <h3 style="font-size:15px; font-weight:700; color:#0F172A; margin:16px 0 8px 0;">
             ${isVi ? '1. Bài học rút ra (Lessons Learned)' : '1. Lessons Learned'}
           </h3>
           <ul>
-            <li>${isVi ? '<strong>Tối ưu hóa độ trễ trong Voice AI:</strong> Thấu hiểu tầm quan trọng sống còn của việc tối ưu hóa độ trễ phản hồi trong các hệ thống Voice AI để duy trì nhịp giao tiếp tự nhiên và trải nghiệm mượt mà.' : '<strong>Latency optimization in Voice AI:</strong> Understand the importance of latency optimization in Voice AI systems to maintain natural conversation turn-taking.'}</li>
-            <li>${isVi ? '<strong>Lợi ích của chia sẻ tài nguyên và quản trị tập trung:</strong> Nhận thức rõ ràng các lợi ích của cơ chế chia sẻ tài nguyên tập trung qua AWS RAM và quản trị đa tài khoản với AWS Organizations, SCPs.' : '<strong>Centralized resource sharing & governance:</strong> Recognize the benefits of centralized resource sharing and cloud governance across multi-account environments.'}</li>
-            <li>${isVi ? '<strong>Tích hợp bảo mật vào quy trình phát triển phần mềm:</strong> Hiểu sâu sắc tầm quan trọng của việc đưa các bước kiểm tra an ninh vào giai đoạn sớm nhất của chu trình SDLC (Shift-Left Security).' : '<strong>Integrating security into SDLC:</strong> Understand the importance of integrating security into the software development lifecycle rather than waiting for production.'}</li>
-            <li>${isVi ? '<strong>Vai trò của Runtime và Memory trong AI Agent:</strong> Nhận biết vai trò quyết định của môi trường thực thi (Runtime) và năng lực quản lý bộ nhớ ngắn/dài hạn đối với các AI Agent trong sản xuất.' : '<strong>Role of Runtime and Memory in AI Agents:</strong> Recognize the role of Runtime and Memory in production AI Agents.'}</li>
-            <li>${isVi ? '<strong>Ranh giới bảo mật trong tự động hóa AI:</strong> Thấu hiểu sự cần thiết của các ranh giới an toàn (Security Guardrails) nhằm ngăn chặn AI Agent tự ý thực hiện các hành vi nguy hiểm hoặc phá hoại.' : '<strong>Security guardrails in AI automation:</strong> Understand the importance of security guardrails in AI automation to prevent unauthorized or destructive operations.'}</li>
+            <li>${isVi ? 'Thấu hiểu tầm quan trọng của việc tối ưu hóa độ trễ phản hồi trong các hệ thống Voice AI để mang lại trải nghiệm đàm thoại tự nhiên.' : 'Understand the importance of latency optimization in Voice AI systems.'}</li>
+            <li>${isVi ? 'Nhận thức rõ lợi ích của cơ chế chia sẻ tài nguyên tập trung và quản trị đám mây đa tài khoản (AWS RAM, AWS Organizations, SCPs).' : 'Recognize the benefits of centralized resource sharing and cloud governance.'}</li>
+            <li>${isVi ? 'Hiểu sâu sắc tầm quan trọng của việc tích hợp bảo mật sớm vào từng giai đoạn của vòng đời phát triển phần mềm (Shift-Left Security).' : 'Understand the importance of integrating security into the software development lifecycle.'}</li>
+            <li>${isVi ? 'Nhận biết vai trò sống còn của môi trường thực thi (Runtime) và cơ chế quản trị bộ nhớ (Memory) đối với các AI Agent trong môi trường sản xuất.' : 'Recognize the role of Runtime and Memory in production AI Agents.'}</li>
+            <li>${isVi ? 'Thấu hiểu sự cần thiết của các ranh giới bảo vệ an ninh (Security Guardrails) trong tự động hóa bằng AI để ngăn ngừa các tác vụ phá hoại hoặc trái phép.' : 'Understand the importance of security guardrails in AI automation.'}</li>
           </ul>
 
+          <!-- 2. Practical Applications -->
           <h3 style="font-size:15px; font-weight:700; color:#0F172A; margin:24px 0 8px 0;">
-            ${isVi ? '2. Đóng góp cá nhân (Personal Contributions)' : '2. Personal Contributions'}
+            ${isVi ? '2. Khả năng vận dụng (Practical Applications)' : '2. Practical Applications'}
           </h3>
           <ul>
-            <li>${isVi ? 'Tham gia sự kiện meetup với tư cách người tham dự (Attendee) đầy đủ và nghiêm túc.' : 'Participated in the meetup as an attendee.'}</li>
-            <li>${isVi ? 'Tích cực theo dõi các bài thuyết trình chuyên sâu và các phiên demo kỹ thuật trực tiếp.' : 'Followed technical presentations and live demonstrations.'}</li>
+            <li>${isVi ? '<strong>Tối ưu hóa pipeline xử lý giọng nói:</strong> Nghiên cứu và ứng dụng mô hình cascade (STT → LLM → TTS) kết hợp bộ đệm thời gian thực và WebRTC vào các bài toán xây dựng trợ lý ảo tương tác hai chiều.' : '<strong>Voice processing pipeline optimization:</strong> Research and apply cascade architectures (STT → LLM → TTS) with real-time buffering and WebRTC protocols in interactive conversational applications.'}</li>
+            <li>${isVi ? '<strong>Áp dụng chia sẻ tài nguyên an toàn:</strong> Vận dụng AWS RAM và Service Control Policies (SCPs) để thiết kế mô hình phân quyền và chia sẻ VPC Subnets trong các bài thực hành kiến trúc đa tài khoản.' : '<strong>Implement secure resource sharing:</strong> Apply AWS RAM and SCP guardrails to design secure multi-account VPC sharing topologies in cloud architecture coursework.'}</li>
+            <li>${isVi ? '<strong>Tích hợp rà soát an ninh vào CI/CD:</strong> Áp dụng công cụ kiểm tra bảo mật mã nguồn IaC Terraform vào quy trình GitHub Actions cá nhân để phát hiện lỗ hổng cấu hình trước khi triển khai.' : '<strong>Embed security linting in CI/CD:</strong> Incorporate automated Terraform IaC security checks into personal GitHub Actions workflows to identify misconfigurations before deployment.'}</li>
+            <li>${isVi ? '<strong>Quản trị ngữ cảnh và guardrails cho AI Agent:</strong> Ứng dụng các kỹ thuật Auto Compact, phân tích token và Bedrock Guardrails khi phát triển các tác tử AI phục vụ hỗ trợ kỹ thuật và học tập.' : '<strong>Govern context and guardrails for AI Agents:</strong> Implement Auto Compact, token breakdown metrics, and security guardrails when building AI agents on Amazon Bedrock.'}</li>
+          </ul>
+
+          <!-- 3. Personal Contributions -->
+          <h3 style="font-size:15px; font-weight:700; color:#0F172A; margin:24px 0 8px 0;">
+            ${isVi ? '3. Đóng góp cá nhân (Personal Contributions)' : '3. Personal Contributions'}
+          </h3>
+          <ul>
+            <li>${isVi ? 'Tham gia sự kiện meetup với tư cách người tham dự (Attendee) đầy đủ và nghiêm túc từ 08:00 đến 12:00 ngày 24/10/2026 tại Bitexco Financial Tower.' : 'Participated in the meetup as an Attendee from 08:00 AM to 12:00 PM on October 24, 2026, at Bitexco Financial Tower.'}</li>
+            <li>${isVi ? 'Tích cực theo dõi các bài thuyết trình chuyên sâu và các phiên demo kỹ thuật trực tiếp.' : 'Followed technical presentations and live demonstrations across all technical sessions.'}</li>
             <li>${isVi ? 'Hệ thống hóa và đúc kết toàn bộ kiến thức chuyên môn tiếp thu được vào báo cáo sự kiện cá nhân.' : 'Consolidated technical knowledge into a personal event report.'}</li>
             <li>${isVi ? 'Xác định các cơ hội ứng dụng kiến thức về an ninh đám mây và tự động hóa AI vào các hoạt động học tập và dự án tương lai.' : 'Identified opportunities to apply cloud security and AI automation concepts in future learning activities.'}</li>
+            <li>${isVi ? 'Xây dựng bài báo cáo sự kiện chi tiết và lưu trữ, chia sẻ kiến thức thông qua website cá nhân và kho lưu trữ mã nguồn mở trên GitHub.' : 'Built a detailed event report and published, shared technical knowledge transparently via the personal website and GitHub repository.'}</li>
           </ul>
         </div>
       </section>
@@ -6401,16 +6368,16 @@ function renderMeetupEventDetail(container, lang = 'vi') {
         </div>
         <div class="report-prose">
           <p>${isVi
-            ? 'Buổi First Cloud AI Journey Meetup đã mang lại những góc nhìn chuyên sâu và giá trị về các công nghệ AWS hiện đại, an ninh đám mây và các kiến trúc tác tử AI tiên tiến.'
-            : 'The First Cloud AI Journey Meetup provided valuable insights into modern AWS technologies, Cloud Security, and AI Agent architectures.'}</p>
+            ? 'First Cloud AI Journey Meetup ngày 24/10/2026 mang lại giá trị kiến thức thực tiễn phong phú về sự giao thoa giữa Cloud Computing, Cloud Security và Trí tuệ nhân tạo.'
+            : 'The First Cloud AI Journey Meetup on October 24, 2026, delivered substantial practical value regarding the convergence of Cloud Computing, Cloud Security, and Artificial Intelligence.'}</p>
 
           <p>${isVi
-            ? 'Xuyên suốt năm phiên kỹ thuật, tôi đã mở rộng tầm nhìn về sự kết hợp hài hòa giữa hạ tầng đám mây, trí tuệ nhân tạo, tự động hóa an ninh và quy trình phát triển phần mềm trong môi trường doanh nghiệp thực tế.'
-            : 'Through the five technical sessions, I developed a broader understanding of how cloud infrastructure, artificial intelligence, security automation, and software development can work together in enterprise environments.'}</p>
+            ? 'Qua sự kiện, tư duy kỹ thuật của bản thân được mở rộng rõ rệt: nhận thức rõ việc triển khai AI trong thực tế không chỉ dừng lại ở các tương tác hỏi đáp đơn giản, mà đòi hỏi hạ tầng thực thi tin cậy, khả năng quản trị ngữ cảnh và ranh giới an toàn nghiêm ngặt. Đồng thời, tư duy DevSecOps và phương pháp kiểm thử thâm nhập tự động Shift-Left củng cố thêm ý thức về an ninh đám mây ngay từ những dòng mã đầu tiên.'
+            : 'The meetup substantially broadened my technical mindset: recognizing that real-world AI deployment extends beyond simple conversational prompts to require reliable runtimes, structured context governance, and rigorous security boundaries. Furthermore, Shift-Left security practices and automated penetration testing reinforced the discipline of embedding cloud security directly into code from the start.'}</p>
 
           <p>${isVi
-            ? 'Vượt lên trên các kiến thức kỹ thuật đơn thuần, sự kiện đã khắc sâu tầm quan trọng của việc học tập không ngừng nghỉ, xây dựng mạng lưới quan hệ chuyên môn và tích cực đóng góp cho cộng đồng công nghệ AWS.'
-            : 'Beyond technical knowledge, the event reinforced the importance of continuous learning, professional networking, and active participation in the AWS community.'}</p>
+            ? 'Đây là những định hướng kiến thức quan trọng để tiếp tục đào sâu nghiên cứu về AI Agents và an ninh hạ tầng AWS trong các giai đoạn học tập tiếp theo.'
+            : 'These insights establish vital guidance for advancing my specialized studies in AI Agents and AWS cloud infrastructure security in future learning milestones.'}</p>
 
           <div class="report-quote-box" style="border-left-color: #171717; font-weight:700; color:#171717; font-size:15px; margin:22px 0;">
             ${isVi
@@ -6531,22 +6498,18 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
         </div>
         <div class="report-prose">
           <p>${isVi
-            ? 'Vào ngày <strong>14/11/2026</strong>, tôi đã tham dự sự kiện <strong>Enterprise AI on AWS Cloud</strong>, được tổ chức từ <strong>09:00 đến 12:00</strong> tại <strong>tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam</strong>.'
-            : 'On <strong>November 14, 2026</strong>, I attended the <strong>Enterprise AI on AWS Cloud</strong> event, held from <strong>09:00 AM to 12:00 PM</strong> on the <strong>26th Floor of Bitexco Financial Tower, Ho Chi Minh City, Vietnam</strong>.'}</p>
+            ? 'Hội thảo <strong>Enterprise AI on AWS Cloud</strong> tập trung vào các thách thức kỹ thuật cốt lõi khi chuyển đổi một giải pháp Trí tuệ nhân tạo (AI) từ phiên bản thử nghiệm (prototype) sang hệ thống sản xuất cấp doanh nghiệp (production-ready enterprise system).'
+            : 'The <strong>Enterprise AI on AWS Cloud</strong> workshop addressed the paramount engineering challenges of transitioning artificial intelligence from an experimental prototype into a production-grade enterprise system.'}</p>
           
           <div class="report-quote-box" style="border-left-color: #171717;">
             ${isVi
-              ? '“Sự kiện tập trung giải quyết bài toán cốt lõi và thách thức hàng đầu của doanh nghiệp: làm thế nào để chuyển dịch thành công một giải pháp Trí tuệ nhân tạo (AI) từ phiên bản thử nghiệm sơ khai (prototype) sang hệ thống sản xuất cấp doanh nghiệp (production-ready enterprise system).”'
-              : '“Event 3 focused on the paramount challenges of transitioning artificial intelligence from an experimental prototype into a production-ready enterprise system.”'}
+              ? '“Nội dung sự kiện đi sâu phân tích 4 trụ cột vận hành sản xuất: An ninh (Security), Độ tin cậy (Reliability), Khả năng mở rộng (Scalability) và Tối ưu chi phí (Cost Optimization). Đồng thời, hội thảo làm sáng tỏ vai trò của nền tảng AWS Cloud trong việc cung cấp hạ tầng tính toán co giãn linh hoạt và điều phối các quy trình nghiệp vụ phức tạp thông qua các mô hình kiến trúc Multi-Agent.”'
+              : '“The session analyzed the four core operational pillars of production AI: Security, Reliability, Scalability, and Cost Optimization. In addition, the presentations highlighted the strategic role of AWS Cloud infrastructure in delivering elastic compute scalability and coordinating complex enterprise workflows through Multi-Agent architecture patterns.”'}
           </div>
 
           <p>${isVi
-            ? 'Một mô hình AI hoạt động xuất sắc trong môi trường thử nghiệm có kiểm soát chưa chắc đã vận hành hiệu quả, ổn định và bền vững khi phục vụ hàng nghìn hoặc hàng triệu người dùng thực tế.'
-            : 'An AI model that performs well in a controlled experimental environment may not necessarily operate effectively when serving thousands or millions of users.'}</p>
-
-          <p>${isVi
-            ? 'Phiên chia sẻ nhấn mạnh tầm quan trọng đặc biệt của 6 yếu tố nền tảng bao quanh mô hình: <strong>Bảo mật (Security)</strong>, <strong>Độ tin cậy (Reliability)</strong>, <strong>Khả năng mở rộng (Scalability)</strong>, <strong>Tối ưu chi phí (Cost Optimization)</strong>, <strong>Đường ống dữ liệu (Data Pipelines)</strong> và <strong>Giám sát vận hành (Monitoring)</strong>. Đồng thời, sự kiện làm sáng tỏ vai trò chiến lược của nền tảng <strong>AWS Cloud</strong> trong việc cung cấp hạ tầng tính toán, dịch vụ serverless và công cụ quản trị giúp doanh nghiệp hiện thực hóa các giải pháp AI ở quy mô lớn.'
-            : 'The session highlighted the critical importance of security, reliability, scalability, cost optimization, data pipelines, and monitoring. It also introduced the pivotal role of AWS Cloud in supporting the robust deployment and continuous operation of enterprise AI systems.'}</p>
+            ? 'Các phiên chia sẻ làm rõ sự khác biệt giữa mô hình AI hoạt động trong môi trường nghiên cứu có kiểm soát với một hệ thống sản xuất liên tục phục vụ hàng triệu người dùng, nơi các yếu tố về đường ống dữ liệu (Data Pipelines), an ninh bảo mật và giám sát vận hành (Monitoring) giữ vai trò quyết định tính bền vững của giải pháp.'
+            : 'The presentations clearly differentiated AI models running in controlled academic environments from production systems serving millions of real-world users, where continuous data pipelines, robust security frameworks, and proactive operational monitoring dictate project success.'}</p>
         </div>
       </section>
 
@@ -6558,14 +6521,14 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
         </div>
         <div class="report-prose">
           <p>${isVi
-            ? 'Các mục tiêu học tập và nghiên cứu chuyên môn trọng tâm được thiết lập xuyên suốt phiên hội thảo bao gồm:'
+            ? 'Các mục tiêu học thuật và nội dung kiến trúc trọng tâm được thiết lập xuyên suốt phiên hội thảo bao gồm:'
             : 'Core technical and architectural objectives established during the session:'}</p>
           <ul>
-            <li>${isVi ? '<strong>Khác biệt giữa Academic AI và Enterprise AI:</strong> Hiểu rõ sự chuyển dịch từ mục tiêu tối ưu độ chính xác mô hình sang giá trị kinh doanh và khả năng vận hành sản xuất liên tục.' : '<strong>Understand Academic AI vs Enterprise AI:</strong> Differentiate experimental model accuracy from production business value and continuous operations.'}</li>
-            <li>${isVi ? '<strong>Thành phần nền tảng của hệ thống AI:</strong> Nắm vững chuỗi mắt xích liên kết giữa Data, Model, Feature và User.' : '<strong>Fundamental Components of an AI System:</strong> Master the value chain linking Data, Model, Feature, and User.'}</li>
+            <li>${isVi ? '<strong>Khác biệt giữa Academic AI và Enterprise AI:</strong> Phân tích sự chuyển dịch từ mục tiêu tối ưu độ chính xác mô hình sang giá trị kinh doanh và khả năng vận hành sản xuất liên tục.' : '<strong>Understand Academic AI vs Enterprise AI:</strong> Differentiate experimental model accuracy from production business value and continuous operations.'}</li>
+            <li>${isVi ? '<strong>Thành phần nền tảng của hệ thống AI:</strong> Giới thiệu chuỗi mắt xích liên kết giữa Data, Model, Feature và User.' : '<strong>Fundamental Components of an AI System:</strong> Analyze the value chain linking Data, Model, Feature, and User.'}</li>
             <li>${isVi ? '<strong>Phân định Training, Inference, LLMs và Tokens:</strong> Nắm vững cơ chế vận hành, sự khác biệt tài nguyên và tác động kinh tế của tokens.' : '<strong>Training, Inference, LLMs, and Tokens:</strong> Understand operational differences, computing requirements, and token economics.'}</li>
-            <li>${isVi ? '<strong>Yêu cầu vận hành của Production AI:</strong> Thấu hiểu 4 trụ cột an ninh, độ tin cậy, khả năng mở rộng và tối ưu chi phí.' : '<strong>Operational Requirements of Production AI:</strong> Explore the operational principles across security, reliability, scalability, and cost optimization.'}</li>
-            <li>${isVi ? '<strong>Co giãn linh hoạt trên AWS:</strong> Khám phá cách các dịch vụ AWS Lambda, Auto Scaling và Elastic Load Balancing hỗ trợ co giãn theo tải thực tế.' : '<strong>Elastic Scalability on AWS:</strong> Learn how AWS services support dynamic and automated workload scaling.'}</li>
+            <li>${isVi ? '<strong>Yêu cầu vận hành của Production AI:</strong> Phân tích 4 trụ cột an ninh, độ tin cậy, khả năng mở rộng và tối ưu chi phí.' : '<strong>Operational Requirements of Production AI:</strong> Explore the operational principles across security, reliability, scalability, and cost optimization.'}</li>
+            <li>${isVi ? '<strong>Co giãn linh hoạt trên AWS:</strong> Khảo sát cách các dịch vụ AWS Lambda, Auto Scaling và Elastic Load Balancing hỗ trợ co giãn theo tải thực tế.' : '<strong>Elastic Scalability on AWS:</strong> Learn how AWS services support dynamic and automated workload scaling.'}</li>
             <li>${isVi ? '<strong>Mô hình kiến trúc Multi-Agent phổ biến:</strong> Tiếp cận 4 mô hình điều phối: Routing/Supervisor, Sequential, Parallel và Evaluator–Optimizer.' : '<strong>Multi-Agent Architecture Patterns:</strong> Understand common multi-agent coordination patterns and their practical application.'}</li>
           </ul>
         </div>
@@ -6575,14 +6538,14 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
       <section class="report-section-block">
         <div class="report-section-header">
           <span class="report-section-num">03</span>
-          <h2 class="report-section-title">${isVi ? 'III. Các chủ đề trọng tâm & Kiến thức tiếp thu (Key Topics and Knowledge Acquired)' : 'III. Key Topics and Knowledge Acquired'}</h2>
+          <h2 class="report-section-title">${isVi ? 'III. Nội dung chuyên môn tại sự kiện (Event Content & Technical Sessions)' : 'III. Event Content & Technical Sessions'}</h2>
         </div>
         <div class="report-prose">
           
           <!-- III.1 -->
           <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">1. Từ Academic AI đến Enterprise AI (From Academic AI to Enterprise AI)</h3>
           <p>${isVi
-            ? 'Để phân định rõ nét sự khác biệt giữa AI thử nghiệm và AI quy mô doanh nghiệp, diễn giả đã sử dụng phép ẩn dụ trực quan và sâu sắc giữa <strong>Bếp ăn gia đình (Home Kitchen)</strong> và <strong>Chuỗi nhà hàng tiêu chuẩn (Restaurant Chain)</strong>:'
+            ? 'Để phân định rõ nét sự khác biệt giữa AI thử nghiệm và AI quy mô doanh nghiệp, diễn giả đã sử dụng phép ẩn dụ trực quan giữa <strong>Bếp ăn gia đình (Home Kitchen)</strong> và <strong>Chuỗi nhà hàng tiêu chuẩn (Restaurant Chain)</strong>:'
             : 'The speaker used the vivid analogy of a home kitchen and a restaurant chain to explain the fundamental differences between experimental AI and enterprise AI:'}</p>
 
           <div class="minimal-table-wrap">
@@ -6635,9 +6598,9 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
           </div>
 
           <ul>
-            <li>${isVi ? '<strong>Dữ liệu (Data):</strong> Nguồn nguyên liệu thô đầu vào quyết định trực tiếp chất lượng đầu ra của mọi thuật toán học máy. Dữ liệu cần được thu thập, làm sạch và gán nhãn bài bản.' : '<strong>Data:</strong> The foundational fuel determining algorithm quality. Requires structured ingestion, curation, and governance.'}</li>
+            <li>${isVi ? '<strong>Dữ liệu (Data):</strong> Nguồn nguyên liệu thô đầu vào quyết định trực tiếp chất lượng đầu ra của mọi thuật toán học máy, đòi hỏi thu thập, làm sạch và gán nhãn bài bản.' : '<strong>Data:</strong> The foundational fuel determining algorithm quality. Requires structured ingestion, curation, and governance.'}</li>
             <li>${isVi ? '<strong>Mô hình (Model):</strong> Thuật toán máy học đã được huấn luyện hoặc tinh chỉnh (Fine-tuned/Pre-trained LLM) để chuyển hóa dữ liệu đầu vào thành tri thức và dự đoán.' : '<strong>Model:</strong> Machine learning algorithms or foundation LLMs transforming data inputs into predictions and reasoning.'}</li>
-            <li>${isVi ? '<strong>Tính năng (Feature):</strong> Lớp giao diện nghiệp vụ đóng gói mô hình thành chức năng hữu ích (như gợi ý sản phẩm, tóm tắt hợp đồng, phát hiện gian lận).' : '<strong>Feature:</strong> The business application layer encapsulating models into actionable services (e.g. recommendation, document summarization).'}</li>
+            <li>${isVi ? '<strong>Tính năng (Feature):</strong> Lớp giao diện nghiệp vụ đóng gói mô hình thành chức năng hữu ích (như gợi ý sản phẩm, tóm tắt tài liệu, phát hiện gian lận).' : '<strong>Feature:</strong> The business application layer encapsulating models into actionable services (e.g. recommendation, document summarization).'}</li>
             <li>${isVi ? '<strong>Người dùng (User):</strong> Đối tượng trực tiếp thụ hưởng giá trị, đồng thời liên tục cung cấp dữ liệu phản hồi (Feedback Loop) để tinh chỉnh hệ thống ngày càng hoàn thiện.' : '<strong>User:</strong> The end beneficiary whose continuous interactions provide essential feedback loops to iteratively improve the entire system.'}</li>
           </ul>
 
@@ -6776,7 +6739,7 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
         </div>
         <div class="report-prose">
           <p>${isVi
-            ? 'Hội thảo đã đúc kết các bài học kiến trúc mang tính sống còn đối với bất kỳ kỹ sư nào khi đưa AI vào môi trường sản xuất:'
+            ? 'Nội dung hội thảo đã đúc kết các bài học kiến trúc mang tính sống còn đối với việc đưa AI vào môi trường sản xuất:'
             : 'The session crystallized vital architectural lessons for bringing AI systems into real-world production:'}</p>
 
           <div class="minimal-table-wrap">
@@ -6784,7 +6747,7 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
               <thead>
                 <tr>
                   <th style="width: 30%;">${isVi ? 'Lĩnh vực kiến trúc' : 'Architectural Area'}</th>
-                  <th style="width: 70%;">${isVi ? 'Kiến thức cốt lõi tiếp thu (Key Knowledge Acquired)' : 'Key Knowledge Acquired'}</th>
+                  <th style="width: 70%;">${isVi ? 'Kiến thức cốt lõi (Key Architectural Concepts)' : 'Key Architectural Concepts'}</th>
                 </tr>
               </thead>
               <tbody>
@@ -6837,33 +6800,47 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
         </div>
       </section>
 
-      <!-- SECTION V – LESSONS LEARNED AND PERSONAL CONTRIBUTIONS -->
+      <!-- SECTION V – LESSONS LEARNED & PERSONAL CONTRIBUTIONS -->
       <section class="report-section-block">
         <div class="report-section-header">
           <span class="report-section-num">05</span>
-          <h2 class="report-section-title">${isVi ? 'V. Bài học rút ra & Đóng góp cá nhân (Lessons Learned & Personal Contributions)' : 'V. Lessons Learned and Personal Contributions'}</h2>
+          <h2 class="report-section-title">${isVi ? 'V. Bài học rút ra & Đóng góp cá nhân (Lessons Learned & Personal Contributions)' : 'V. Lessons Learned & Personal Contributions'}</h2>
         </div>
         <div class="report-prose">
           
+          <!-- 1. Lessons Learned -->
           <h3 style="font-size:15px; font-weight:700; color:#0F172A; margin:16px 0 8px 0;">
             ${isVi ? '1. Bài học rút ra (Lessons Learned)' : '1. Lessons Learned'}
           </h3>
           <ul>
-            <li>${isVi ? '<strong>Độ chính xác mô hình là chưa đủ:</strong> Độ chính xác của mô hình đơn thuần là chưa đủ cho các hệ thống AI cấp sản xuất; giá trị kinh doanh và tính ổn định vận hành mới là thước đo quyết định.' : '<strong>Model accuracy alone is insufficient:</strong> Model accuracy alone is insufficient for production AI systems; continuous business value and operational reliability are paramount.'}</li>
-            <li>${isVi ? '<strong>Kiến trúc sản xuất toàn diện:</strong> Enterprise AI đòi hỏi một kiến trúc đám mây toàn diện đảm bảo tính tin cậy, an toàn, có khả năng mở rộng cao và tối ưu chi phí.' : '<strong>Comprehensive production architecture:</strong> Enterprise AI requires reliable, secure, scalable, and cost-effective architecture.'}</li>
-            <li>${isVi ? '<strong>Kinh tế học suy luận và token:</strong> Hiệu năng suy luận (Inference) và mức tiêu thụ token ảnh hưởng trực tiếp đến chi phí vận hành và độ trễ trải nghiệm người dùng.' : '<strong>Inference and token economics:</strong> Inference performance and token consumption influence operational costs.'}</li>
-            <li>${isVi ? '<strong>Giải quyết bài toán phức tạp bằng Multi-Agent:</strong> Các mô hình kiến trúc Multi-Agent hỗ trợ giải quyết hiệu quả các luồng quy trình nghiệp vụ phức tạp thông qua phân tách tác vụ chuyên biệt.' : '<strong>Multi-Agent workflow coordination:</strong> Multi-Agent architecture supports complex AI workflows.'}</li>
-            <li>${isVi ? '<strong>Nền tảng hạ tầng đám mây:</strong> Hạ tầng điện toán đám mây đóng vai trò nền tảng không thể thiếu trong việc triển khai và duy trì các hệ thống AI doanh nghiệp.' : '<strong>Cloud infrastructure foundation:</strong> Cloud infrastructure plays an important role in enterprise AI operations.'}</li>
+            <li>${isVi ? 'Độ chính xác của mô hình đơn thuần là chưa đủ cho các hệ thống AI cấp sản xuất.' : 'Model accuracy alone is insufficient for production AI systems.'}</li>
+            <li>${isVi ? 'Enterprise AI đòi hỏi một kiến trúc đám mây toàn diện đảm bảo tính tin cậy, an toàn, có khả năng mở rộng cao và tối ưu chi phí.' : 'Enterprise AI requires reliable, secure, scalable, and cost-effective architecture.'}</li>
+            <li>${isVi ? 'Hiệu năng suy luận và mức tiêu thụ token ảnh hưởng trực tiếp đến chi phí vận hành.' : 'Inference performance and token consumption influence operational costs.'}</li>
+            <li>${isVi ? 'Kiến trúc Multi-Agent hỗ trợ giải quyết hiệu quả các luồng quy trình nghiệp vụ phức tạp.' : 'Multi-Agent architecture supports complex AI workflows.'}</li>
+            <li>${isVi ? 'Hạ tầng điện toán đám mây đóng vai trò quan trọng trong việc vận hành các hệ thống AI doanh nghiệp.' : 'Cloud infrastructure plays an important role in enterprise AI operations.'}</li>
           </ul>
 
+          <!-- 2. Practical Applications -->
           <h3 style="font-size:15px; font-weight:700; color:#0F172A; margin:24px 0 8px 0;">
-            ${isVi ? '2. Đóng góp cá nhân (Personal Contributions)' : '2. Personal Contributions'}
+            ${isVi ? '2. Khả năng vận dụng (Practical Applications)' : '2. Practical Applications'}
           </h3>
           <ul>
-            <li>${isVi ? 'Tham gia sự kiện với vai trò người tham dự (Attendee) tích cực từ 09:00 đến 12:00 ngày 14/11/2026 tại tầng 26, Bitexco Financial Tower.' : 'Participated in the event as an attendee from 09:00 AM to 12:00 PM on November 14, 2026, at the 26th Floor of Bitexco Financial Tower.'}</li>
-            <li>${isVi ? 'Nghiên cứu và tiếp thu các khái niệm kỹ thuật chuyên sâu được giới thiệu trong các bài chia sẻ.' : 'Studied the technical concepts introduced during the presentations.'}</li>
-            <li>${isVi ? 'Tổng hợp và hệ thống hóa kiến thức về Enterprise AI và AWS Cloud vào bài báo cáo kỹ thuật cá nhân chi tiết.' : 'Consolidated knowledge of enterprise AI and AWS Cloud into a personal technical report.'}</li>
-            <li>${isVi ? 'Xác định các cơ hội ứng dụng tiềm năng của kiến trúc Multi-Agent và hạ tầng đám mây vào các dự án nghiên cứu và phát triển sắp tới.' : 'Identified potential applications of Multi-Agent architectures and cloud infrastructure in future projects.'}</li>
+            <li>${isVi ? '<strong>Đánh giá hệ thống theo 4 trụ cột vận hành:</strong> Vận dụng khung 4 trụ cột (Security, Reliability, Scalability, Cost) vào việc phân tích và thiết kế các ứng dụng AI trong quá trình thực tập và đồ án.' : '<strong>Apply 4-pillar production framework:</strong> Apply the 4 operational pillars (Security, Reliability, Scalability, Cost) to evaluate and architect production AI applications in internship projects.'}</li>
+            <li>${isVi ? '<strong>Kiểm soát chi phí suy luận và token:</strong> Áp dụng các kỹ thuật nén ngữ cảnh, tối ưu prompt và prompt caching nhằm kiểm soát hóa đơn tài nguyên và cải thiện độ trễ khi gọi mô hình trên Amazon Bedrock.' : '<strong>Govern token and inference economics:</strong> Implement context window compression, prompt optimization, and caching strategies to control resource costs and reduce latency on Amazon Bedrock.'}</li>
+            <li>${isVi ? '<strong>Thiết kế điều phối Multi-Agent:</strong> Ứng dụng các mô hình phối hợp Supervisor và Evaluator-Optimizer để phân tách các bài toán tự động hóa dữ liệu và kiểm thử phần mềm đa bước.' : '<strong>Design Multi-Agent workflows:</strong> Leverage Supervisor and Evaluator-Optimizer coordination patterns to automate multi-stage data processing and software testing tasks.'}</li>
+            <li>${isVi ? '<strong>Tận dụng co giãn linh hoạt trên AWS:</strong> Khai thác các dịch vụ Serverless (AWS Lambda) và Auto Scaling Groups để xây dựng hạ tầng suy luận tự động thích ứng với biến động lưu lượng.' : '<strong>Leverage elastic AWS scaling:</strong> Utilize serverless services (AWS Lambda) and Auto Scaling Groups to host inference pipelines that dynamically scale with traffic.'}</li>
+          </ul>
+
+          <!-- 3. Personal Contributions -->
+          <h3 style="font-size:15px; font-weight:700; color:#0F172A; margin:24px 0 8px 0;">
+            ${isVi ? '3. Đóng góp cá nhân (Personal Contributions)' : '3. Personal Contributions'}
+          </h3>
+          <ul>
+            <li>${isVi ? 'Tham gia sự kiện với vai trò người tham dự (Attendee) nghiêm túc từ 09:00 đến 12:00 ngày 14/11/2026 tại tầng 26, Bitexco Financial Tower.' : 'Participated in the event as an attendee.'}</li>
+            <li>${isVi ? 'Nghiên cứu và tiếp thu các khái niệm kỹ thuật chuyên môn được giới thiệu trong các bài chia sẻ.' : 'Studied the technical concepts introduced during the presentations.'}</li>
+            <li>${isVi ? 'Hệ thống hóa và tổng hợp kiến thức về Enterprise AI và AWS Cloud vào bài báo cáo kỹ thuật cá nhân.' : 'Consolidated knowledge of enterprise AI and AWS Cloud into a personal technical report.'}</li>
+            <li>${isVi ? 'Xác định các cơ hội ứng dụng tiềm năng của kiến trúc Multi-Agent và hạ tầng đám mây vào các dự án trong tương lai.' : 'Identified potential applications of Multi-Agent architectures and cloud infrastructure in future projects.'}</li>
+            <li>${isVi ? 'Lưu trữ và chia sẻ kiến thức thu hoạch được thông qua website cá nhân và kho lưu trữ mã nguồn mở trên GitHub.' : 'Stored and shared the acquired technical knowledge via the personal website and open GitHub repository.'}</li>
           </ul>
         </div>
       </section>
@@ -6876,12 +6853,16 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
         </div>
         <div class="report-prose">
           <p>${isVi
-            ? 'Enterprise AI không đơn thuần chỉ là việc xây dựng một mô hình máy học mạnh mẽ. Nó đòi hỏi một hệ sinh thái kiến trúc toàn diện có khả năng cung cấp dịch vụ tin cậy, an toàn, có khả năng mở rộng cao và hiệu quả về chi phí.'
-            : 'Enterprise AI is not simply about building a powerful model. It requires a complete system capable of delivering reliable, secure, scalable, and cost-effective services.'}</p>
+            ? 'Hội thảo Enterprise AI on AWS Cloud ngày 14/11/2026 mang lại bước ngoặt quan trọng trong nhận thức về Trí tuệ nhân tạo cấp doanh nghiệp.'
+            : 'The Enterprise AI on AWS Cloud workshop on November 14, 2026, marked a significant milestone in my understanding of production-grade artificial intelligence.'}</p>
 
           <p>${isVi
-            ? 'AWS Cloud cung cấp cơ sở hạ tầng tính toán, nền tảng dịch vụ và các công nghệ vận hành hiện đại giúp thu hẹp hoàn hảo khoảng cách giữa các nghiên cứu AI thử nghiệm và các ứng dụng quy mô doanh nghiệp.'
-            : 'AWS Cloud provides infrastructure and operational technologies that bridge the gap between experimental AI prototypes and enterprise-level production applications.'}</p>
+            ? 'Sự kiện đã dịch chuyển hoàn toàn tư duy của bản thân từ việc chỉ quan tâm đến độ chính xác thuần túy của mô hình (Model Accuracy) sang tư duy kỹ sư giải pháp đám mây toàn diện — nơi kiến trúc hạ tầng, tính bảo mật dữ liệu, độ ổn định và chi phí vận hành mới là nền tảng quyết định sự thành bại của dự án. Các mô hình kiến trúc Multi-Agent mở ra hướng tiếp cận thực tiễn trong việc tự động hóa các bài toán nghiệp vụ phức tạp.'
+            : 'The event fundamentally evolved my engineering perspective: moving beyond isolated model benchmark accuracy to a comprehensive cloud solutions architecture mindset — where infrastructure reliability, data privacy, scalability, and cost optimization dictate real-world success. The Multi-Agent architecture patterns provided a practical and robust paradigm for decomposing complex enterprise workflows.'}</p>
+
+          <p>${isVi
+            ? 'Những kiến thức thu hoạch được từ sự kiện sẽ là kim chỉ nam quan trọng cho các hoạt động nghiên cứu, thực hành và định hướng phát triển sự nghiệp chuyên sâu về Cloud Architecture và Enterprise AI trên nền tảng AWS.'
+            : 'These insights establish vital guidance for advancing my specialized studies in Cloud Architecture and Enterprise AI on AWS in upcoming learning milestones.'}</p>
 
           <div class="report-quote-box" style="border-left-color: #171717; font-weight:700; color:#171717; font-size:15px; margin:22px 0;">
             ${isVi
