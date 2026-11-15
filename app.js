@@ -48,6 +48,8 @@ const I18N_DICTIONARY = {
     title_proposal: "2. Đề xuất đồ án thực tập",
     title_blogs_posted: "3. Bài viết kỹ thuật đã đăng",
     title_blogs_s3_express_one_zone: "3. Bài viết kỹ thuật – Amazon S3 Express One Zone",
+    title_blogs_aws_event_driven_architecture: "3. Bài viết kỹ thuật – AWS Event-Driven Architecture",
+    title_blogs_aws_ec2_identity_containment: "3. Bài viết kỹ thuật – EC2 Identity Containment",
     title_events: "4. Sự kiện đã tham gia",
     title_workshop: "5. Bài thực hành kỹ thuật",
     title_self_evaluation: "6. Tự đánh giá kết quả thực tập",
@@ -98,7 +100,7 @@ const I18N_DICTIONARY = {
     toc2Title: "2. Đề xuất đồ án",
     toc2Desc: "Đề xuất đồ án: IoT Weather Platform - Giải pháp AWS Serverless Real-Time Monitoring.",
     toc3Title: "3. Bài viết kỹ thuật",
-    toc3Desc: "Các bài viết kỹ thuật đã đăng tải trên AWS Study Group (EKS Pod Identity, S3 Express One Zone,...).",
+    toc3Desc: "Các bài viết kỹ thuật đã đăng tải trên AWS Study Group (S3 Express One Zone, Event-Driven Architecture, EC2 Identity Containment).",
     zoomDiagramTooltip: "Nhấp để xem ảnh kiến trúc độ nét cao (HD)",
     btnExpandSnippet: "Đọc tiếp nội dung đầy đủ ▼",
     btnCollapseSnippet: "Thu gọn bài viết ▲",
@@ -339,6 +341,8 @@ const I18N_DICTIONARY = {
     title_proposal: "2. Internship Proposal",
     title_blogs_posted: "3. Blogs Posted",
     title_blogs_s3_express_one_zone: "3. Technical Blog – Amazon S3 Express One Zone",
+    title_blogs_aws_event_driven_architecture: "3. Technical Blog – AWS Event-Driven Architecture",
+    title_blogs_aws_ec2_identity_containment: "3. Technical Blog – EC2 Identity Containment",
     title_events: "4. Events Participated",
     title_workshop: "5. Technical Workshop",
     title_self_evaluation: "6. Internship Self-Assessment",
@@ -389,7 +393,7 @@ const I18N_DICTIONARY = {
     toc2Title: "2. Proposal",
     toc2Desc: "Project Proposal: IoT Weather Platform - Real-Time AWS Serverless Monitoring Solution.",
     toc3Title: "3. Blogs Posted",
-    toc3Desc: "Technical blog articles published on AWS Study Group (EKS Pod Identity Session Policies,...).",
+    toc3Desc: "Technical blog articles published on AWS Study Group (S3 Express One Zone, Event-Driven Architecture, EC2 Identity Containment).",
     toc4Title: "4. Events Participated",
     toc4Desc: "Field event attendance report: GenAI-powered App-DB Modernization Workshop at Bitexco.",
     toc5Title: "5. Workshop",
@@ -1688,29 +1692,8 @@ const DEFAULT_BILINGUAL_DATA = {
     vi: [
       {
         id: "blog-1",
-        title: "Blog 1 - CHÍNH SÁCH SESSION POLICIES TRONG AMAZON EKS POD IDENTITY",
-        url: "https://awsstudygroup.com",
-        date: "15/09/2026",
-        snippet: "Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép thu hẹp quyền hạn IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo nhiều IAM role riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc đặc quyền tối thiểu hiệu quả hơn trong môi trường Kubernetes quy mô lớn.\n\nCác điểm cốt lõi cần nắm:\n• Session policy là chính sách IAM nội tuyến được chỉ định khi tạo hoặc cập nhật liên kết Pod Identity.\n• Quyền hạn thực tế = giao thoa giữa quyền của IAM role và session policy.\n• Giúp tái sử dụng an toàn cùng một IAM role cho nhiều workload có nhu cầu quyền khác nhau."
-      },
-      {
-        id: "blog-2",
-        title: "Blog 2 - BẢO MẬT TRUY CẬP S3 HYBRID THÔNG QUA AWS PRIVATELINK",
-        url: "https://awsstudygroup.com",
-        date: "28/09/2026",
-        snippet: "Bài viết hướng dẫn chi tiết cách định tuyến lưu lượng giữa trung tâm dữ liệu On-premises và Amazon S3 một cách bảo mật tuyệt đối, không đi qua Internet công cộng bằng cách sử dụng Interface Endpoints, AWS Transit Gateway và Route 53 Resolver."
-      },
-      {
-        id: "blog-3",
-        title: "Blog 3 - TỐI ƯU HÓA COLD START CHO AWS LAMBDA VỚI SNAPSTART",
-        url: "https://awsstudygroup.com",
-        date: "10/10/2026",
-        snippet: "Phân tích chuyên sâu về cơ chế chụp nhanh trạng thái bộ nhớ AWS Lambda SnapStart, tối ưu hóa thời gian khởi động nguội cho các microservices Serverless xuống mức dưới 100ms."
-      },
-      {
-        id: "blog-4",
         slug: "s3-express-one-zone",
-        category: "AWS / Cloud Computing",
+        category: "AWS / Storage / Performance",
         title: "AMAZON S3 EXPRESS ONE ZONE – NHANH HƠN TỚI 10 LẦN, NHƯNG HỆ THỐNG CÓ THỰC SỰ HIỆU QUẢ HƠN?",
         url: "#/blogs/s3-express-one-zone",
         date: "18/10/2026",
@@ -1718,7 +1701,7 @@ const DEFAULT_BILINGUAL_DATA = {
         snippet: "Trong các hệ thống AI/ML, việc xử lý hàng triệu hình ảnh hoặc tệp dữ liệu đòi hỏi ứng dụng liên tục truy xuất dữ liệu từ Amazon S3. Khi tốc độ đọc không theo kịp CPU/GPU, hệ thống gặp I/O Bottleneck làm lãng phí compute. Amazon S3 Express One Zone cung cấp độ trễ sub-10ms với Directory Bucket trong cùng 1 AZ. Tuy nhiên, theo định luật Amdahl, tối ưu 10x I/O chỉ giúp tổng thời gian hoàn thành tác vụ giảm 18% nếu tác vụ bị nghẽn ở compute."
       },
       {
-        id: "blog-5",
+        id: "blog-2",
         slug: "aws-event-driven-architecture",
         category: "AWS Cloud / Distributed Systems / Architecture",
         title: "AWS EVENT-DRIVEN ARCHITECTURE – KHI MỌI DỊCH VỤ ĐỀU HOẠT ĐỘNG ĐÚNG, TẠI SAO DỮ LIỆU VẪN CÓ THỂ SAI?",
@@ -1726,34 +1709,24 @@ const DEFAULT_BILINGUAL_DATA = {
         date: "04/11/2026",
         image: "assets/images/aws-event-driven-architecture.png",
         snippet: "Trong quá trình nghiên cứu kiến trúc Event-Driven trên AWS kết hợp Amazon S3, EventBridge, SQS, Lambda và DynamoDB: Một hệ thống có thể xử lý tất cả sự kiện thành công 100% nhưng vẫn tạo ra kết quả sai do Race Condition. Phân tích nguyên nhân tại sao Idempotency và SQS FIFO chưa đủ, và đề xuất mô hình giải pháp kết hợp S3 Versioning, S3 Sequencer, Immutable Output, DynamoDB Conditional Write và Reconciliation worker."
+      },
+      {
+        id: "blog-3",
+        slug: "aws-ec2-identity-containment",
+        category: "AWS Study Group",
+        title: "CÔ LẬP EC2 KHÔNG CÓ NGHĨA LÀ ĐÃ CÔ LẬP KẺ TẤN CÔNG",
+        subtitle: "Beyond Network Isolation: Rethinking Identity Containment on AWS",
+        url: "#/blogs/aws-ec2-identity-containment",
+        date: "15/11/2026",
+        image: "assets/images/aws-ec2-identity-containment-architecture.png",
+        snippet: "Điều gì sẽ xảy ra nếu một EC2 instance đã bị cô lập khỏi hệ thống mạng, nhưng kẻ tấn công vẫn có thể truy cập các tài nguyên AWS? Phân tích sự khác biệt cốt lõi giữa Network Containment và Identity Containment: Security Group không thu hồi IAM Session, IMDSv2 không bảo vệ credentials khi máy chủ bị thực thi mã từ xa. Đề xuất quy trình Automated Incident Response kết hợp GuardDuty, EventBridge, Lambda runbook và điều kiện aws:EC2InstanceSourceVPC."
       }
     ],
     en: [
       {
         id: "blog-1",
-        title: "Blog 1 - SESSION POLICIES IN AMAZON EKS POD IDENTITY",
-        url: "https://awsstudygroup.com",
-        date: "15/09/2026",
-        snippet: "Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.\n\nKey points to know:\n• A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.\n• Effective permissions = intersection between IAM role permissions and session policy.\n• Helps avoid over-permissioning when reusing a single IAM role for multiple workloads."
-      },
-      {
-        id: "blog-2",
-        title: "Blog 2 - SECURING S3 HYBRID WORKLOADS VIA AWS PRIVATELINK",
-        url: "https://awsstudygroup.com",
-        date: "28/09/2026",
-        snippet: "This blog details how to route traffic securely between on-premises datacenters and Amazon S3 without exposing endpoints to the public internet using Interface Endpoints, AWS Transit Gateway, and Route 53 Resolver Rules."
-      },
-      {
-        id: "blog-3",
-        title: "Blog 3 - REDUCING COLD STARTS IN JAVA & NODE.JS ON AWS LAMBDA",
-        url: "https://awsstudygroup.com",
-        date: "10/10/2026",
-        snippet: "An in-depth exploration of AWS Lambda SnapStart, tiered compilation, and memory provisioning best practices to optimize serverless API response times down to sub-100ms."
-      },
-      {
-        id: "blog-4",
         slug: "s3-express-one-zone",
-        category: "AWS / Cloud Computing",
+        category: "AWS / Storage / Performance",
         title: "AMAZON S3 EXPRESS ONE ZONE – UP TO 10X FASTER, BUT IS THE SYSTEM TRULY MORE EFFICIENT?",
         url: "#/blogs/s3-express-one-zone",
         date: "18/10/2026",
@@ -1761,7 +1734,7 @@ const DEFAULT_BILINGUAL_DATA = {
         snippet: "In modern AI/ML systems, continuously fetching millions of images from S3 often creates I/O bottlenecks where compute sits idle. Amazon S3 Express One Zone delivers single-digit millisecond latency with Directory Buckets in a single AZ. However, according to Amdahl's Law, a 10x I/O speedup only reduces total execution time by 18% if the workload is compute-heavy."
       },
       {
-        id: "blog-5",
+        id: "blog-2",
         slug: "aws-event-driven-architecture",
         category: "AWS Cloud / Distributed Systems / Architecture",
         title: "AWS EVENT-DRIVEN ARCHITECTURE – WHEN ALL SERVICES SUCCEED, WHY CAN DATA STILL BE WRONG?",
@@ -1769,6 +1742,17 @@ const DEFAULT_BILINGUAL_DATA = {
         date: "04/11/2026",
         image: "assets/images/aws-event-driven-architecture.png",
         snippet: "In AWS Event-Driven Architectures combining Amazon S3, EventBridge, SQS, Lambda, and DynamoDB: a system can process all events with 100% success yet produce incorrect business state due to Race Conditions. An investigation into why Idempotency and SQS FIFO are not enough, proposing S3 Versioning, S3 Sequencer, Immutable Output, DynamoDB Conditional Writes, and Reconciliation."
+      },
+      {
+        id: "blog-3",
+        slug: "aws-ec2-identity-containment",
+        category: "AWS Study Group",
+        title: "EC2 ISOLATION DOES NOT MEAN THE ATTACKER IS ISOLATED",
+        subtitle: "Beyond Network Isolation: Rethinking Identity Containment on AWS",
+        url: "#/blogs/aws-ec2-identity-containment",
+        date: "15/11/2026",
+        image: "assets/images/aws-ec2-identity-containment-architecture.png",
+        snippet: "What happens if an EC2 instance is completely isolated from the network, yet an attacker can still access your AWS resources? An in-depth analysis of Network Containment vs Identity Containment: why Security Groups do not terminate active IAM sessions, and how IMDSv2 falls short after remote code execution. Architecting automated incident response combining GuardDuty, EventBridge, Lambda runbooks, and aws:EC2InstanceSourceVPC condition keys."
       }
     ]
   },
@@ -1875,8 +1859,8 @@ const DEFAULT_BILINGUAL_DATA = {
 // ==========================================
 // 3. PERSISTENCE & STATE MANAGEMENT
 // ==========================================
-const STORAGE_KEY = 'fcaj_report_bilingual_v19';
-const PREV_STORAGE_KEY = 'fcaj_report_bilingual_v18';
+const STORAGE_KEY = 'fcaj_report_bilingual_v20';
+const PREV_STORAGE_KEY = 'fcaj_report_bilingual_v19';
 const LANG_KEY = 'fcaj_report_lang';
 
 class AppLanguageManager {
@@ -1905,6 +1889,8 @@ class AppLanguageManager {
       'fcaj_report_bilingual_v15',
       'fcaj_report_bilingual_v16',
       'fcaj_report_bilingual_v17',
+      'fcaj_report_bilingual_v18',
+      'fcaj_report_bilingual_v19',
       'fcaj_internship_report_v2',
       'fcaj_internship_report_v1'
     ];
@@ -1931,23 +1917,17 @@ class AppLanguageManager {
               parsed.worklogs.push(JSON.parse(JSON.stringify(defWeek)));
             }
           });
-          // Luôn đồng bộ các bài blog chuẩn (Blog 1-4) từ DEFAULT_BILINGUAL_DATA
+          // Luôn đồng bộ các bài blog chuẩn (Blog 1-3) từ DEFAULT_BILINGUAL_DATA
           if (!parsed.blogs) {
             parsed.blogs = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.blogs));
           } else {
             ['vi', 'en'].forEach(l => {
-              if (!parsed.blogs[l]) {
-                parsed.blogs[l] = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.blogs[l]));
-              } else {
-                DEFAULT_BILINGUAL_DATA.blogs[l].forEach(defBlog => {
-                  const bIdx = parsed.blogs[l].findIndex(b => b.id === defBlog.id);
-                  if (bIdx === -1) {
-                    parsed.blogs[l].push(JSON.parse(JSON.stringify(defBlog)));
-                  } else {
-                    parsed.blogs[l][bIdx] = JSON.parse(JSON.stringify(defBlog));
-                  }
-                });
-              }
+              const canonical = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.blogs[l]));
+              const userCustom = (parsed.blogs[l] || []).filter(b => 
+                b.id && b.id.startsWith('blog-') && Number(b.id.replace('blog-', '')) > 100000 &&
+                !['blog-1', 'blog-2', 'blog-3', 'blog-4', 'blog-5'].includes(b.id)
+              );
+              parsed.blogs[l] = [...canonical, ...userCustom];
             });
           }
           // Sync default events (Event 1 Modernization & Event 2 Session 1 Voice AI) for both languages
@@ -2222,7 +2202,11 @@ function updateHeaderPageTitle() {
   }
   if (currentHash.startsWith('blogs/')) {
     const slug = currentHash.replace('blogs/', '');
-    if (slug === 'aws-event-driven-architecture') {
+    if (slug === 'aws-ec2-identity-containment') {
+      titleEl.textContent = app.currentLang === 'vi'
+        ? '3. Bài viết kỹ thuật — EC2 Identity Containment'
+        : '3. Technical Blog — EC2 Identity Containment';
+    } else if (slug === 'aws-event-driven-architecture') {
       titleEl.textContent = app.currentLang === 'vi'
         ? '3. Bài viết kỹ thuật — AWS Event-Driven Architecture'
         : '3. Technical Blog — AWS Event-Driven Architecture';
@@ -3261,7 +3245,7 @@ function renderBlogsList() {
   const blogs = app.data.blogs[lang] || app.data.blogs.vi;
 
   container.innerHTML = blogs.map(b => {
-    const isS3Express = b.id === 'blog-4' || b.slug === 's3-express-one-zone';
+    const isS3Express = b.id === 'blog-1' || b.id === 'blog-4' || b.slug === 's3-express-one-zone';
 
     if (isS3Express) {
       const excerpt = lang === 'vi'
@@ -3305,7 +3289,7 @@ function renderBlogsList() {
       `;
     }
 
-    const isEventDriven = b.id === 'blog-5' || b.slug === 'aws-event-driven-architecture';
+    const isEventDriven = b.id === 'blog-2' || b.id === 'blog-5' || b.slug === 'aws-event-driven-architecture';
 
     if (isEventDriven) {
       const excerpt = lang === 'vi'
@@ -3341,6 +3325,50 @@ function renderBlogsList() {
 
           <div class="blog-featured-actions">
             <button type="button" class="btn-minimal-read" onclick="navigateTo('blogs/aws-event-driven-architecture')">
+              <span>${lang === 'vi' ? 'Đọc bài viết →' : 'Read Article →'}</span>
+            </button>
+            <button type="button" class="btn-text-subtle" style="color:#737373; font-size:12px;" onclick="deleteBlog('${b.id}')">${t('btnDelete')}</button>
+          </div>
+        </div>
+      `;
+    }
+
+    const isIdentityContainment = b.id === 'blog-3' || b.slug === 'aws-ec2-identity-containment';
+
+    if (isIdentityContainment) {
+      const excerpt = lang === 'vi'
+        ? "Điều gì sẽ xảy ra nếu một EC2 instance đã bị cô lập khỏi hệ thống mạng, nhưng kẻ tấn công vẫn có thể truy cập các tài nguyên AWS? Phân tích sự khác biệt cốt lõi giữa Network Containment và Identity Containment: Security Group không thu hồi IAM Session, IMDSv2 không bảo vệ credentials khi máy chủ bị thực thi mã từ xa. Đề xuất quy trình Automated Incident Response kết hợp GuardDuty, EventBridge, Lambda runbook và điều kiện aws:EC2InstanceSourceVPC."
+        : "What happens if an EC2 instance is completely isolated from the network, yet an attacker can still access your AWS resources? An in-depth analysis of Network Containment vs Identity Containment: why Security Groups do not terminate active IAM sessions, and how IMDSv2 falls short after remote code execution. Architecting automated incident response combining GuardDuty, EventBridge, Lambda runbooks, and aws:EC2InstanceSourceVPC condition keys.";
+
+      return `
+        <div class="blog-card-featured" id="${escapeHtml(b.id)}">
+          <div class="blog-card-featured-meta">
+            <span>AWS Study Group</span>
+            <span>•</span>
+            <span>${escapeHtml(b.date || '15/11/2026')}</span>
+          </div>
+
+          <h3 class="blog-featured-title" onclick="navigateTo('blogs/aws-ec2-identity-containment')">
+            ${escapeHtml(b.title)}
+          </h3>
+
+          <div class="blog-featured-grid-preview">
+            <div class="blog-featured-img-preview" onclick="openBlogImageModal('${escapeHtml(b.image || 'assets/images/aws-ec2-identity-containment-architecture.png')}', '${escapeHtml(b.title)}')" title="${t('zoomDiagramTooltip')}">
+              <img src="${escapeHtml(b.image || 'assets/images/aws-ec2-identity-containment-architecture.png')}" alt="${escapeHtml(b.title)}" loading="lazy">
+            </div>
+
+            <div>
+              <p class="blog-featured-excerpt">${escapeHtml(excerpt)}</p>
+              <ul class="blog-featured-bullets">
+                <li>${lang === 'vi' ? '<strong>Network Containment ≠ Identity Containment:</strong> Cô lập mạng qua Security Group không thu hồi session IAM đang hoạt động.' : '<strong>Network Containment ≠ Identity Containment:</strong> Network isolation via Security Groups does not revoke active IAM sessions.'}</li>
+                <li>${lang === 'vi' ? '<strong>Ràng buộc ngữ cảnh Credentials:</strong> Sử dụng VPC Condition Keys (aws:EC2InstanceSourceVPC) để vô hiệu hóa credentials bị lộ ngoài VPC.' : '<strong>Credential Context Enforcement:</strong> Restricting access with VPC Condition Keys (aws:EC2InstanceSourceVPC) renders stolen tokens useless out-of-context.'}</li>
+                <li>${lang === 'vi' ? '<strong>Quy trình phản ứng 3 lớp:</strong> Tự động hóa kết hợp Quarantine Security Group, thay thế Instance Profile và thu hồi Active IAM Sessions.' : '<strong>Three-Tier Containment Workflow:</strong> Automating Network Quarantine, Instance Profile swap, and IAM Session Revocation.'}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="blog-featured-actions">
+            <button type="button" class="btn-minimal-read" onclick="navigateTo('blogs/aws-ec2-identity-containment')">
               <span>${lang === 'vi' ? 'Đọc bài viết →' : 'Read Article →'}</span>
             </button>
             <button type="button" class="btn-text-subtle" style="color:#737373; font-size:12px;" onclick="deleteBlog('${b.id}')">${t('btnDelete')}</button>
@@ -3988,6 +4016,260 @@ const BLOG_ARTICLES = {
       btnBackToBlogs: "← Back to Articles",
       btnScrollTop: "Scroll to Top ↑"
     }
+  },
+  'aws-ec2-identity-containment': {
+    vi: {
+      category: "AWS STUDY GROUP / CLOUD SECURITY",
+      date: "15/11/2026",
+      title: "CÔ LẬP EC2 KHÔNG CÓ NGHĨA LÀ ĐÃ CÔ LẬP KẺ TẤN CÔNG",
+      subtitle: "Beyond Network Isolation: Rethinking Identity Containment on AWS",
+      leadSummary: "Điều gì sẽ xảy ra nếu một EC2 instance đã bị cô lập khỏi hệ thống mạng, nhưng kẻ tấn công vẫn có thể truy cập các tài nguyên AWS? Phân tích chuyên sâu về sự khác biệt giữa Network Containment và Identity Containment: Vì sao Security Group không thể thu hồi IAM Sessions, giới hạn của IMDSv2 trước Remote Code Execution, và mô hình phản ứng sự cố tự động (Automated Incident Response) kết hợp GuardDuty, EventBridge, Lambda runbook và điều kiện aws:EC2InstanceSourceVPC.",
+      coverImage: "assets/images/aws-ec2-identity-containment-architecture.png",
+      coverCaption: "Hình 1: Mô hình Automated Incident Response trên AWS – Kết hợp Network Containment, Credential Issuance Containment và Identity Containment.",
+      sections: [
+        {
+          id: "sec-1",
+          num: "1",
+          title: "1. Khi thứ bị đánh cắp không chỉ là dữ liệu, mà còn là danh tính",
+          paragraphs: [
+            "Giả sử một doanh nghiệp triển khai backend trên Amazon EC2, sử dụng Amazon S3 để lưu trữ dữ liệu và Amazon DynamoDB để quản lý thông tin giao dịch.",
+            "Thay vì lưu Access Key trực tiếp trong mã nguồn, EC2 được gắn IAM Role thông qua Instance Profile và sử dụng Temporary Security Credentials được cung cấp bởi Instance Metadata Service (IMDS).",
+            "Đây là một phương pháp bảo mật được AWS khuyến nghị. Tuy nhiên, hãy xét một kịch bản giả định:"
+          ],
+          timeline: [
+            { time: "09:00", event: "EC2 bị xâm nhập", desc: "Kẻ tấn công khai thác lỗ hổng ứng dụng để thực thi mã từ xa (RCE) trên instance." },
+            { time: "09:05", event: "Temporary Credentials bị đánh cắp", desc: "Kẻ tấn công trích xuất token xác thực tạm thời từ Instance Metadata Service (IMDS)." },
+            { time: "09:10", event: "Đội ngũ Security phát hiện sự cố", desc: "Hệ thống giám sát ghi nhận hoạt động bất thường và phát tín hiệu cảnh báo." },
+            { time: "09:15", event: "Quarantine Security Group được áp dụng để cô lập EC2", desc: "Cô lập EC2 ở tầng mạng bằng cách gỡ bỏ toàn bộ inbound/outbound rules thông thường." },
+            { time: "09:20", event: "Kẻ tấn công vẫn có thể gửi yêu cầu truy cập Amazon S3 từ một môi trường khác", desc: "Từ một máy chủ ngoài Internet, kẻ tấn công dùng credentials vừa lấy cắp để gửi request trực tiếp đến S3 API." }
+          ],
+          whyTitle: "Tại sao điều này lại xảy ra?",
+          whyParagraph: "Bởi vì Temporary Credentials không mặc định bị ràng buộc với môi trường mạng của EC2 đã nhận chúng. Nếu credentials chưa hết hạn và quyền truy cập chưa bị từ chối bởi các chính sách bảo mật, kẻ tấn công vẫn có thể lợi dụng danh tính của workload để tương tác với AWS API mà không cần kết nối lại với EC2 ban đầu."
+        },
+        {
+          id: "sec-2",
+          num: "2",
+          title: "2. Network Containment ≠ Identity Containment",
+          paragraphs: [
+            "Một trong những vấn đề khi xử lý sự cố trên Cloud là sự khác biệt giữa hai lớp kiểm soát: Network Containment (Cô lập tài nguyên ở cấp độ mạng) và Identity Containment (Kiểm soát và vô hiệu hóa quyền truy cập của danh tính đã bị xâm phạm).",
+            "Security Group kiểm soát lưu lượng mạng nhưng không có chức năng thu hồi IAM Sessions. Hơn nữa, việc thay đổi Security Group không nhất thiết chấm dứt ngay những kết nối đang được theo dõi trước đó (stateful connection tracking).",
+            "Private Subnet hạn chế khả năng truy cập trực tiếp từ Internet, nhưng không đảm bảo rằng danh tính của workload không thể bị lợi dụng từ bên ngoài.",
+            "Ngay cả IMDSv2, mặc dù giúp giảm thiểu một số hình thức khai thác SSRF, cũng không bảo vệ tuyệt đối credentials khi kẻ tấn công đã có khả năng thực thi mã trên instance.",
+            "Mỗi cơ chế bảo mật giải quyết một vấn đề khác nhau. Vì vậy, việc triển khai nhiều công cụ bảo mật chưa chắc đã tạo ra một kiến trúc an toàn nếu chúng ta không hiểu rõ giới hạn của từng công cụ."
+          ],
+          comparison: [
+            { layer: "Network Containment", scope: "Tầng mạng (Network Layer)", mechanism: "Quarantine Security Group, NACL, Private Subnet", capability: "Chặn ingress/egress lưu lượng mạng vào/ra EC2", limitation: "Không vô hiệu hóa IAM token; không cắt đứt kết nối stateful đang theo dõi." },
+            { layer: "Identity Containment", scope: "Tầng định danh (Identity Layer)", mechanism: "Revoke Active Sessions, Policy Deny, Gỡ Instance Profile", capability: "Hủy bỏ hiệu lực của token bảo mật tạm thời (STS temporary credentials)", limitation: "Nếu không gỡ Instance Profile, instance vẫn có thể xin token mới từ IMDS." }
+          ]
+        },
+        {
+          id: "sec-3",
+          num: "3",
+          title: "3. Nếu credentials bị đánh cắp, liệu có thể khiến chúng trở nên vô dụng khi được sử dụng sai ngữ cảnh?",
+          paragraphs: [
+            "AWS cung cấp các Global Condition Keys cho phép kiểm soát ngữ cảnh sử dụng credentials:",
+            "Trong kiến trúc minh họa, EC2 nằm trong Private Subnet và truy cập Amazon S3, DynamoDB thông qua hai Gateway Endpoint tương ứng.",
+            "Bằng cách xây dựng IAM Policy đối chiếu ngữ cảnh cấp credentials với ngữ cảnh thực tế của request, chúng ta có thể từ chối những yêu cầu xuất phát từ môi trường không được phép, ngay cả khi thông tin xác thực vẫn còn hiệu lực."
+          ],
+          conditionKeys: [
+            { key: "aws:EC2InstanceSourceVPC", desc: "Ràng buộc yêu cầu phải xuất phát từ đúng VPC nơi EC2 instance được cấp credentials." },
+            { key: "aws:EC2InstanceSourcePrivateIPv4", desc: "Ràng buộc yêu cầu phải xuất phát từ đúng địa chỉ IP riêng của instance trong VPC." },
+            { key: "aws:SourceVpc", desc: "Kiểm tra request có đi qua VPC Endpoint cụ thể hay không khi truy cập tài nguyên AWS." },
+            { key: "aws:VpcSourceIp", desc: "Xác thực địa chỉ IP nguồn bên trong không gian mạng VPC nội bộ." }
+          ],
+          policySnippet: `{\n  "Version": "2012-10-17",\n  "Statement": [\n    {\n      "Sid": "EnforceVpcSourceContext",\n      "Effect": "Deny",\n      "Action": ["s3:*", "dynamodb:*"],\n      "Resource": "*",\n      "Condition": {\n        "StringNotEquals": {\n          "aws:EC2InstanceSourceVPC": "vpc-0123456789abcdef0"\n        }\n      }\n    }\n  ]\n}`,
+          warningParagraphs: [
+            "Tuy nhiên, cần lưu ý rằng không phải mọi AWS API đều sử dụng VPC Endpoint. Chính sách quá nghiêm ngặt có thể ảnh hưởng đến workload hợp lệ.",
+            "Phương pháp này cũng không ngăn được mọi hành vi độc hại diễn ra ngay trên EC2 đã bị xâm nhập.",
+            "Đó là lý do cần kết hợp nhiều lớp phòng thủ — Defense in Depth."
+          ]
+        },
+        {
+          id: "sec-4",
+          num: "4",
+          title: "4. Khi giải pháp bảo mật có thể trở thành nguyên nhân gây gián đoạn hệ thống",
+          paragraphs: [
+            "AWS IAM cung cấp cơ chế Revoke Active Sessions, sử dụng chính sách AWSRevokeOlderSessions và điều kiện aws:TokenIssueTime để từ chối quyền của các phiên xác thực được cấp trước một thời điểm xác định.",
+            "Nhưng hãy tưởng tượng có 10 EC2 instance cùng sử dụng một IAM Role, trong đó chỉ một instance bị xâm nhập.",
+            "Việc thu hồi toàn bộ session cũ của IAM Role có thể ảnh hưởng đến cả những instance đang hoạt động bình thường, gây gián đoạn dịch vụ diện rộng.",
+            "Bên cạnh đó, Revoke Active Sessions không tự động ngăn EC2 nhận credentials mới. Vì vậy, cần kết hợp việc gỡ hoặc thay thế Instance Profile bằng một cấu hình hạn chế quyền phù hợp.",
+            "Lúc này, chúng ta phải đối mặt với sự đánh đổi giữa Security và Availability.",
+            "Điều đó cho thấy thiết kế IAM không chỉ là câu chuyện cấp quyền tối thiểu (Least Privilege), mà còn là bài toán giới hạn phạm vi ảnh hưởng (Blast Radius) khi sự cố xảy ra."
+          ]
+        },
+        {
+          id: "sec-5",
+          num: "5",
+          title: "5. Hướng tiếp cận kiến trúc trên AWS",
+          introText: "Dựa trên sơ đồ Architecture đính kèm, chúng ta có thể xây dựng một quy trình Automated Incident Response như sau:",
+          components: [
+            { name: "AWS CloudTrail", role: "Hỗ trợ ghi nhận và điều tra các hoạt động AWS API. Đối với những thao tác ở cấp dữ liệu trên S3 và DynamoDB, cần cấu hình Data Events phù hợp." },
+            { name: "Amazon GuardDuty", role: "Phân tích các nguồn dữ liệu bảo mật để phát hiện dấu hiệu sử dụng credentials bất thường (ví dụ: finding InstanceCredentialExfiltration.OutsideAWS)." },
+            { name: "Amazon EventBridge", role: "Tiếp nhận GuardDuty Findings theo mẫu sự kiện bảo mật và kích hoạt AWS Lambda." },
+            { name: "AWS Lambda", role: "Khởi chạy runbook được cấu hình trong AWS Systems Manager Automation để thực thi các bước cô lập." }
+          ],
+          actionsIntro: "Quy trình ứng phó thực hiện ba nhóm hành động chính:",
+          actions: [
+            { title: "Network Containment", desc: "Áp dụng Quarantine Security Group và kiểm tra các kết nối mạng hiện có." },
+            { title: "Credential Issuance Containment", desc: "Gỡ hoặc thay thế Instance Profile để hạn chế việc tiếp tục nhận credentials có quyền truy cập." },
+            { title: "Identity Containment", desc: "Thu hồi quyền của các IAM Role Sessions đã được cấp và kiểm tra hiệu quả sau khi chính sách có hiệu lực." }
+          ],
+          conclusionText: "Đối với môi trường production, những hành động có khả năng gây gián đoạn hệ thống nên được kiểm soát bằng cơ chế phê duyệt phù hợp. Mục tiêu không phải là triển khai càng nhiều dịch vụ càng tốt, mà là đảm bảo mỗi lớp bảo mật có thể giới hạn thiệt hại khi một lớp khác thất bại."
+        }
+      ],
+      keyTakeaway: {
+        title: "Key Takeaway",
+        p1: "Một quy trình Incident Response trên AWS cần kiểm soát đồng thời cả Network Containment và Identity Containment. Việc cô lập EC2 chỉ giải quyết một phần sự cố nếu quyền truy cập của danh tính đã bị xâm phạm vẫn chưa được vô hiệu hóa.",
+        p2: "Bởi trong môi trường Cloud, một cuộc tấn công có thể bắt đầu từ máy chủ nhưng tiếp tục dưới hình thức lạm dụng danh tính."
+      },
+      hashtags: "#AWS #AWSStudyGroup #CloudSecurity #CyberSecurity #IAM #AmazonEC2 #GuardDuty #IncidentResponse #DefenseInDepth #CloudArchitecture",
+      references: [
+        {
+          title: "AWS Security Incident Response Guide – Containment and Remediation Strategies",
+          url: "https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/containment.html"
+        },
+        {
+          title: "AWS IAM Documentation – Revoking IAM Role Temporary Security Credentials",
+          url: "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_revoke-sessions.html"
+        },
+        {
+          title: "Amazon GuardDuty Finding Types – InstanceCredentialExfiltration.OutsideAWS",
+          url: "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.html"
+        },
+        {
+          title: "AWS Security Blog – Limiting Scope of Compromised Credentials with VPC Condition Keys",
+          url: "https://aws.amazon.com/blogs/security/how-to-use-aws-condition-keys-to-limit-access-from-specific-vpcs/"
+        }
+      ],
+      btnBackToBlogs: "← Quay lại danh sách bài viết",
+      btnScrollTop: "Về đầu trang ↑"
+    },
+    en: {
+      category: "AWS STUDY GROUP / CLOUD SECURITY",
+      date: "15/11/2026",
+      title: "EC2 ISOLATION DOES NOT MEAN THE ATTACKER IS ISOLATED",
+      subtitle: "Beyond Network Isolation: Rethinking Identity Containment on AWS",
+      leadSummary: "What happens if an EC2 instance is completely isolated from the network, yet an attacker can still access your AWS resources? An in-depth architectural analysis of Network Containment versus Identity Containment: why Security Groups cannot terminate active IAM sessions, the limitations of IMDSv2 against remote code execution, and designing an automated incident response workflow combining GuardDuty, EventBridge, Lambda runbooks, and aws:EC2InstanceSourceVPC condition keys.",
+      coverImage: "assets/images/aws-ec2-identity-containment-architecture.png",
+      coverCaption: "Figure 1: Automated Incident Response architecture on AWS – Combining Network Containment, Credential Issuance Containment, and Identity Containment.",
+      sections: [
+        {
+          id: "sec-1",
+          num: "1",
+          title: "1. When What Is Stolen Is Not Just Data, But Identity",
+          paragraphs: [
+            "Consider an enterprise deploying its backend workload on Amazon EC2, using Amazon S3 for durable object storage and Amazon DynamoDB for transactional state.",
+            "Rather than embedding long-lived Access Keys into source code, EC2 is attached to an IAM Role via an Instance Profile, consuming Temporary Security Credentials issued dynamically by the Instance Metadata Service (IMDS).",
+            "While this aligns with AWS security best practices, examine this realistic incident timeline:"
+          ],
+          timeline: [
+            { time: "09:00", event: "EC2 Host Compromise", desc: "Attacker exploits an application vulnerability to achieve arbitrary remote code execution (RCE) on the host." },
+            { time: "09:05", event: "Credentials Exfiltration", desc: "Attacker queries IMDS and extracts temporary security tokens (AccessKey, SecretKey, SessionToken)." },
+            { time: "09:10", event: "Security Team Detects Anomaly", desc: "Security operations center (SOC) detects suspicious host behavior or unexpected API calls." },
+            { time: "09:15", event: "Quarantine Security Group Applied", desc: "EC2 is isolated at the network layer by stripping standard inbound and outbound traffic rules." },
+            { time: "09:20", event: "Attacker Accesses S3 from Outside", desc: "From an external Internet environment, the attacker successfully dispatches requests to Amazon S3 using the stolen credentials." }
+          ],
+          whyTitle: "Why does this happen?",
+          whyParagraph: "Because Temporary Credentials are not inherently bound to the network origin of the EC2 instance that received them. As long as the credentials have not expired and access has not been denied by security policies, an attacker can exploit the workload identity directly against AWS APIs without needing any ongoing network connection to the original EC2 instance."
+        },
+        {
+          id: "sec-2",
+          num: "2",
+          title: "2. Network Containment ≠ Identity Containment",
+          paragraphs: [
+            "A critical pitfall in cloud incident response is failing to distinguish between two distinct control planes: Network Containment (isolating resources at the network perimeter) and Identity Containment (governing and revoking the operational permissions of compromised identities).",
+            "Security Groups filter network ingress and egress traffic, but possess zero awareness or authority over IAM sessions. Furthermore, modifying a Security Group does not automatically terminate existing tracked stateful TCP connections.",
+            "Private Subnets prevent direct inbound connections from the public Internet, but do not protect against an attacker utilizing exfiltrated credentials from an external machine.",
+            "Even IMDSv2, while highly effective against Server-Side Request Forgery (SSRF) exploits, offers no protection once an attacker has established arbitrary code execution on the instance.",
+            "Each security mechanism addresses a different failure domain. Stacking security tools without understanding their architectural boundaries does not produce a secure architecture."
+          ],
+          comparison: [
+            { layer: "Network Containment", scope: "Network Layer", mechanism: "Quarantine Security Group, NACLs, Private Subnets", capability: "Blocks network ingress/egress to and from the EC2 instance", limitation: "Cannot invalidate active IAM credentials; does not drop tracked stateful connections immediately." },
+            { layer: "Identity Containment", scope: "Identity Layer (IAM)", mechanism: "Revoke Active Sessions, Policy Denials, Detach Instance Profile", capability: "Revokes operational validity of temporary STS credentials", limitation: "Without detaching the Instance Profile, the instance can immediately request new credentials from IMDS." }
+          ]
+        },
+        {
+          id: "sec-3",
+          num: "3",
+          title: "3. If Credentials Are Stolen, Can We Render Them Useless Out of Context?",
+          paragraphs: [
+            "AWS provides Global Condition Keys that enable organizations to restrict credential usage based on operational context, verifying that request attributes match the issuance environment:",
+            "In the illustrated architecture, EC2 resides within a Private Subnet and connects to Amazon S3 and DynamoDB via dedicated Gateway Endpoints.",
+            "By authoring IAM Policies that compare credential issuance context with runtime request context, we can deny unauthorized requests originating outside the legitimate network boundary, even when the security token is valid."
+          ],
+          conditionKeys: [
+            { key: "aws:EC2InstanceSourceVPC", desc: "Enforces that requests must originate from the exact VPC where the EC2 instance was granted credentials." },
+            { key: "aws:EC2InstanceSourcePrivateIPv4", desc: "Verifies the private IPv4 address assigned to the instance when the credentials were issued." },
+            { key: "aws:SourceVpc", desc: "Checks whether the request passed through a specific VPC Endpoint when accessing AWS service APIs." },
+            { key: "aws:VpcSourceIp", desc: "Validates the source IP address within the private VPC network space." }
+          ],
+          policySnippet: `{\n  "Version": "2012-10-17",\n  "Statement": [\n    {\n      "Sid": "EnforceVpcSourceContext",\n      "Effect": "Deny",\n      "Action": ["s3:*", "dynamodb:*"],\n      "Resource": "*",\n      "Condition": {\n        "StringNotEquals": {\n          "aws:EC2InstanceSourceVPC": "vpc-0123456789abcdef0"\n        }\n      }\n    }\n  ]\n}`,
+          warningParagraphs: [
+            "However, architects must keep in mind that not all AWS APIs utilize VPC Endpoints. Overly restrictive policies can break legitimate operational workloads.",
+            "This mechanism also does not prevent malicious actions carried out directly on the compromised EC2 instance itself.",
+            "This is why a robust cloud security strategy demands layered Defense in Depth."
+          ]
+        },
+        {
+          id: "sec-4",
+          num: "4",
+          title: "4. When Security Remediation Causes Operational Outages",
+          paragraphs: [
+            "AWS IAM provides an Active Session Revocation mechanism using the managed AWSRevokeOlderSessions policy and the aws:TokenIssueTime condition to deny requests from credentials issued prior to a specific cutoff timestamp.",
+            "However, imagine a production fleet where 10 EC2 instances share a single IAM Role, but only one instance has been compromised.",
+            "Executing a blanket session revocation on that IAM Role immediately disrupts all 9 healthy instances, inducing a widespread cascading outage.",
+            "Furthermore, Revoke Active Sessions does not stop the compromised EC2 from immediately querying IMDS for fresh credentials. Therefore, security teams must detach or swap the Instance Profile with a restricted quarantine profile.",
+            "At this point, engineering teams confront the delicate trade-off between Security and Availability.",
+            "This demonstrates that IAM architecture is not just about granting Least Privilege, but equally about strictly limiting the Blast Radius when an incident occurs."
+          ]
+        },
+        {
+          id: "sec-5",
+          num: "5",
+          title: "5. Architectural Approach on AWS",
+          introText: "Synthesizing the architecture diagram, we can construct an Automated Incident Response workflow as follows:",
+          components: [
+            { name: "AWS CloudTrail", role: "Captures and records AWS API activity. Data Events must be enabled on S3 and DynamoDB for granular data-tier visibility." },
+            { name: "Amazon GuardDuty", role: "Continuously monitors security data sources to detect anomalous credential usage (e.g. InstanceCredentialExfiltration.OutsideAWS finding)." },
+            { name: "Amazon EventBridge", role: "Matches GuardDuty finding event patterns and triggers automated incident response handlers." },
+            { name: "AWS Lambda", role: "Executes an AWS Systems Manager Automation runbook to carry out multi-tiered containment actions." }
+          ],
+          actionsIntro: "The containment workflow executes across three synchronized action tiers:",
+          actions: [
+            { title: "Network Containment", desc: "Attaches a Quarantine Security Group and inspects existing stateful connections." },
+            { title: "Credential Issuance Containment", desc: "Detaches or swaps the Instance Profile to prevent the instance from receiving fresh privileged credentials." },
+            { title: "Identity Containment", desc: "Revokes active IAM Role sessions and verifies policy propagation across AWS endpoints." }
+          ],
+          conclusionText: "In production environments, actions that carry high operational disruption risks should be governed by appropriate approval workflows. The ultimate goal is not simply deploying more tools, but ensuring that each defensive layer successfully contains damage when another layer fails."
+        }
+      ],
+      keyTakeaway: {
+        title: "Key Takeaway",
+        p1: "An AWS Incident Response workflow must govern both Network Containment and Identity Containment simultaneously. Isolating EC2 only solves part of the problem if the operational permissions of the compromised identity have not been revoked.",
+        p2: "Because in cloud environments, an attack may begin on a host but propagates through identity abuse."
+      },
+      hashtags: "#AWS #AWSStudyGroup #CloudSecurity #CyberSecurity #IAM #AmazonEC2 #GuardDuty #IncidentResponse #DefenseInDepth #CloudArchitecture",
+      references: [
+        {
+          title: "AWS Security Incident Response Guide – Containment and Remediation Strategies",
+          url: "https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/containment.html"
+        },
+        {
+          title: "AWS IAM Documentation – Revoking IAM Role Temporary Security Credentials",
+          url: "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_revoke-sessions.html"
+        },
+        {
+          title: "Amazon GuardDuty Finding Types – InstanceCredentialExfiltration.OutsideAWS",
+          url: "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.html"
+        },
+        {
+          title: "AWS Security Blog – Limiting Scope of Compromised Credentials with VPC Condition Keys",
+          url: "https://aws.amazon.com/blogs/security/how-to-use-aws-condition-keys-to-limit-access-from-specific-vpcs/"
+        }
+      ],
+      btnBackToBlogs: "← Back to Articles",
+      btnScrollTop: "Scroll to Top ↑"
+    }
   }
 };
 
@@ -4017,6 +4299,11 @@ function renderBlogDetail(slug = 's3-express-one-zone') {
 
   if (targetSlug === 'aws-event-driven-architecture') {
     renderEventDrivenBlogDetail(container, article, lang);
+    return;
+  }
+
+  if (targetSlug === 'aws-ec2-identity-containment') {
+    renderIdentityContainmentBlogDetail(container, article, lang);
     return;
   }
 
@@ -4468,6 +4755,237 @@ function renderEventDrivenBlogDetail(container, a, lang) {
       </section>
 
       <!-- Bottom Navigation Footer -->
+      <footer class="minimal-footer-nav">
+        <button type="button" class="btn-minimal-outline" onclick="navigateTo('blogs-posted')">
+          <span>${escapeHtml(a.btnBackToBlogs)}</span>
+        </button>
+        <button type="button" class="btn-minimal-outline" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+          <span>${escapeHtml(a.btnScrollTop)}</span>
+        </button>
+      </footer>
+    </article>
+  `;
+}
+
+function renderIdentityContainmentBlogDetail(container, a, lang) {
+  container.innerHTML = `
+    <article class="minimal-article-container">
+      <!-- Top Back Navigation -->
+      <nav class="minimal-article-nav">
+        <a href="#/blogs-posted" onclick="event.preventDefault(); navigateTo('blogs-posted');" class="minimal-back-link">
+          <span>${escapeHtml(a.btnBackToBlogs)}</span>
+        </a>
+      </nav>
+
+      <!-- Minimalist Article Header -->
+      <header class="minimal-article-header">
+        <div class="minimal-category-tag">${escapeHtml(a.category)}</div>
+        <h1 class="minimal-article-title">${escapeHtml(a.title)}</h1>
+        <div style="font-size:16px; font-weight:600; color:#555555; margin:-4px 0 14px 0; font-style:italic;">
+          ${escapeHtml(a.subtitle)}
+        </div>
+        <div class="minimal-article-date">${escapeHtml(a.date)}</div>
+
+        <!-- Architecture Cover Image -->
+        <div class="minimal-cover-box">
+          <img src="${escapeHtml(a.coverImage)}" alt="${escapeHtml(a.title)}" 
+               onclick="openBlogImageModal('${escapeHtml(a.coverImage)}', '${escapeHtml(a.title)}')" 
+               title="${lang === 'vi' ? 'Nhấn để xem sơ đồ phóng to' : 'Click to enlarge diagram'}" loading="lazy">
+          <div class="minimal-cover-caption">
+            ${escapeHtml(a.coverCaption)}
+          </div>
+        </div>
+
+        <!-- Introductory Summary Lead -->
+        <p class="minimal-article-lead">${escapeHtml(a.leadSummary)}</p>
+      </header>
+
+      <hr class="minimal-divider">
+
+      <!-- Section 1 -->
+      <section class="minimal-section" id="ic-sec-1">
+        <h2 class="minimal-section-title">${escapeHtml(a.sections[0].title)}</h2>
+        ${a.sections[0].paragraphs.map(p => `<p class="minimal-p">${escapeHtml(p)}</p>`).join('')}
+
+        <!-- Incident Timeline Table -->
+        <div class="minimal-table-wrap">
+          <table class="minimal-table">
+            <thead>
+              <tr>
+                <th style="width:16%;">${lang === 'vi' ? 'Thời điểm' : 'Time'}</th>
+                <th style="width:32%;">${lang === 'vi' ? 'Sự kiện / Hành động' : 'Event / Action'}</th>
+                <th style="width:52%;">${lang === 'vi' ? 'Ý nghĩa kỹ thuật & Trạng thái' : 'Technical Implication & State'}</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${a.sections[0].timeline.map(row => `
+                <tr>
+                  <td><strong>${escapeHtml(row.time)}</strong></td>
+                  <td>${escapeHtml(row.event)}</td>
+                  <td>${escapeHtml(row.desc)}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+
+        <div class="minimal-callout">
+          <div style="font-weight:700; color:#171717; margin-bottom:6px;">
+            ${escapeHtml(a.sections[0].whyTitle)}
+          </div>
+          <p style="margin:0; font-size:15px; line-height:1.7;">
+            ${escapeHtml(a.sections[0].whyParagraph)}
+          </p>
+        </div>
+      </section>
+
+      <hr class="minimal-divider">
+
+      <!-- Section 2 -->
+      <section class="minimal-section" id="ic-sec-2">
+        <h2 class="minimal-section-title">${escapeHtml(a.sections[1].title)}</h2>
+        <p class="minimal-p">${escapeHtml(a.sections[1].paragraphs[0])}</p>
+
+        <!-- Comparison Table: Network vs Identity Containment -->
+        <div class="minimal-table-wrap">
+          <table class="minimal-table">
+            <thead>
+              <tr>
+                <th style="width:24%;">${lang === 'vi' ? 'Lớp kiểm soát' : 'Control Layer'}</th>
+                <th style="width:22%;">${lang === 'vi' ? 'Cơ chế triển khai' : 'Mechanism'}</th>
+                <th style="width:27%;">${lang === 'vi' ? 'Khả năng bảo vệ' : 'Capability'}</th>
+                <th style="width:27%;">${lang === 'vi' ? 'Giới hạn cốt lõi' : 'Core Limitation'}</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${a.sections[1].comparison.map(c => `
+                <tr>
+                  <td><strong>${escapeHtml(c.layer)}</strong><br><small style="color:#666;">${escapeHtml(c.scope)}</small></td>
+                  <td>${escapeHtml(c.mechanism)}</td>
+                  <td>${escapeHtml(c.capability)}</td>
+                  <td>${escapeHtml(c.limitation)}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+
+        ${a.sections[1].paragraphs.slice(1).map(p => `<p class="minimal-p">${escapeHtml(p)}</p>`).join('')}
+      </section>
+
+      <hr class="minimal-divider">
+
+      <!-- Section 3 -->
+      <section class="minimal-section" id="ic-sec-3">
+        <h2 class="minimal-section-title">${escapeHtml(a.sections[2].title)}</h2>
+        <p class="minimal-p">${escapeHtml(a.sections[2].paragraphs[0])}</p>
+
+        <ul class="minimal-list">
+          ${a.sections[2].conditionKeys.map(k => `
+            <li><code>${escapeHtml(k.key)}</code>: ${escapeHtml(k.desc)}</li>
+          `).join('')}
+        </ul>
+
+        <p class="minimal-p">${escapeHtml(a.sections[2].paragraphs[1])}</p>
+        <p class="minimal-p">${escapeHtml(a.sections[2].paragraphs[2])}</p>
+
+        <!-- Monospace IAM Condition Code Block -->
+        <div class="minimal-formula-box">
+          <div style="font-size:12px; color:#666; margin-bottom:8px; font-family:sans-serif; font-weight:600;">
+            ${lang === 'vi' ? 'Ví dụ: IAM Policy Deny truy cập ngoài VPC nguồn (Context-Aware Enforcement)' : 'Example: IAM Policy Deny access outside source VPC (Context-Aware Enforcement)'}
+          </div>
+          <pre style="margin:0; font-family:inherit; white-space:pre-wrap;">${escapeHtml(a.sections[2].policySnippet)}</pre>
+        </div>
+
+        ${a.sections[2].warningParagraphs.map(p => `<p class="minimal-p">${escapeHtml(p)}</p>`).join('')}
+      </section>
+
+      <hr class="minimal-divider">
+
+      <!-- Section 4 -->
+      <section class="minimal-section" id="ic-sec-4">
+        <h2 class="minimal-section-title">${escapeHtml(a.sections[3].title)}</h2>
+        ${a.sections[3].paragraphs.map(p => `<p class="minimal-p">${escapeHtml(p)}</p>`).join('')}
+      </section>
+
+      <hr class="minimal-divider">
+
+      <!-- Section 5 -->
+      <section class="minimal-section" id="ic-sec-5">
+        <h2 class="minimal-section-title">${escapeHtml(a.sections[4].title)}</h2>
+        <p class="minimal-p">${escapeHtml(a.sections[4].introText)}</p>
+
+        <!-- Components Breakdown Table -->
+        <div class="minimal-table-wrap">
+          <table class="minimal-table">
+            <thead>
+              <tr>
+                <th style="width:28%;">${lang === 'vi' ? 'Dịch vụ AWS' : 'AWS Service'}</th>
+                <th style="width:72%;">${lang === 'vi' ? 'Vai trò trong quy trình Incident Response' : 'Role in Incident Response'}</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${a.sections[4].components.map(comp => `
+                <tr>
+                  <td><strong>${escapeHtml(comp.name)}</strong></td>
+                  <td>${escapeHtml(comp.role)}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+
+        <p class="minimal-p"><strong>${escapeHtml(a.sections[4].actionsIntro)}</strong></p>
+
+        <div class="minimal-callout">
+          <ul class="minimal-list" style="margin:0; padding-left:18px;">
+            ${a.sections[4].actions.map(act => `
+              <li><strong>${escapeHtml(act.title)}:</strong> ${escapeHtml(act.desc)}</li>
+            `).join('')}
+          </ul>
+        </div>
+
+        <p class="minimal-p">${escapeHtml(a.sections[4].conclusionText)}</p>
+      </section>
+
+      <!-- Key Takeaway Callout -->
+      <div class="minimal-callout" style="border-left: 3px solid #171717; background:#F8FAFC; margin:32px 0;">
+        <div style="font-size:16px; font-weight:700; color:#171717; margin-bottom:8px;">
+          ${escapeHtml(a.keyTakeaway.title)}
+        </div>
+        <p style="margin:0 0 10px 0; font-size:15px; line-height:1.7;">
+          ${escapeHtml(a.keyTakeaway.p1)}
+        </p>
+        <p style="margin:0; font-size:15.5px; font-weight:700; color:#171717; line-height:1.7;">
+          ${escapeHtml(a.keyTakeaway.p2)}
+        </p>
+      </div>
+
+      <!-- Hashtags -->
+      <div style="margin:24px 0; font-size:13.5px; color:#555555; line-height:1.8; word-spacing:4px;">
+        ${escapeHtml(a.hashtags)}
+      </div>
+
+      <hr class="minimal-divider">
+
+      <!-- References Section -->
+      <section class="minimal-section" id="ic-sec-refs">
+        <h2 class="minimal-section-title" style="font-size:18px;">
+          ${lang === 'vi' ? 'Tài liệu tham khảo chính thức' : 'Official Documentation & References'}
+        </h2>
+        <ul class="minimal-ref-list">
+          ${a.references.map(ref => `
+            <li>
+              <span>${escapeHtml(ref.title)}:</span>
+              <a href="${escapeHtml(ref.url)}" target="_blank" rel="noopener" class="minimal-ref-link">
+                ${escapeHtml(ref.url)}
+              </a>
+            </li>
+          `).join('')}
+        </ul>
+      </section>
+
+      <!-- Minimal Footer Navigation -->
       <footer class="minimal-footer-nav">
         <button type="button" class="btn-minimal-outline" onclick="navigateTo('blogs-posted')">
           <span>${escapeHtml(a.btnBackToBlogs)}</span>
@@ -5936,7 +6454,9 @@ function setupSearchAndMobile() {
       if (q.includes('worklog') || q.includes('tuần') || q.includes('week') || q.includes('nhật ký')) navigateTo('worklog');
       else if (q.includes('proposal') || q.includes('đồ án') || q.includes('weather') || q.includes('đề xuất')) navigateTo('proposal');
       else if (q.includes('s3 express') || q.includes('one zone') || q.includes('amdahl') || q.includes('storage')) navigateTo('blogs/s3-express-one-zone');
-      else if (q.includes('blog') || q.includes('eks') || q.includes('bài viết')) navigateTo('blogs-posted');
+      else if (q.includes('event-driven') || q.includes('race condition') || q.includes('dynamodb cas')) navigateTo('blogs/aws-event-driven-architecture');
+      else if (q.includes('cô lập ec2') || q.includes('identity') || q.includes('containment') || q.includes('quarantine') || q.includes('imds')) navigateTo('blogs/aws-ec2-identity-containment');
+      else if (q.includes('blog') || q.includes('bài viết')) navigateTo('blogs-posted');
       else if (q.includes('voice ai') || q.includes('contact center') || q.includes('kiệt trần') || q.includes('meet up') || q.includes('cascade') || q.includes('vpbank')) navigateTo('events/first-cloud-ai-journey-24-10-2026');
       else if (q.includes('event') || q.includes('sự kiện') || q.includes('bitexco')) navigateTo('events');
       else if (q.includes('workshop') || q.includes('s3') || q.includes('endpoint') || q.includes('thực hành')) navigateTo('workshop');
@@ -6011,6 +6531,7 @@ window.showExportCodeModal = showExportCodeModal;
 window.deleteBlog = deleteBlog;
 window.renderBlogDetail = renderBlogDetail;
 window.renderEventDrivenBlogDetail = renderEventDrivenBlogDetail;
+window.renderIdentityContainmentBlogDetail = renderIdentityContainmentBlogDetail;
 window.renderBlogsList = renderBlogsList;
 window.deleteEvent = deleteEvent;
 window.setCriteriaRating = setCriteriaRating;
