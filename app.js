@@ -600,6 +600,7 @@ const DEFAULT_BILINGUAL_DATA = {
   studentInfo: {
     fullName: "Phan Nhật Uyên",
     studentId: "SE196682",
+    avatar: "assets/images/profile.jpg",
     phone: "0394728982",
     email: "nhatuien218@gmail.com",
     vi: {
@@ -2205,20 +2206,46 @@ function applyAvatarFitMode() {
 
 function updateStudentAvatarDisplay() {
   const info = app.data.studentInfo || {};
-  const avatar = info.avatar || null;
+  const avatar = info.avatar || 'assets/images/profile.jpg';
 
   const imgEl = document.getElementById('student-photo-img');
   const placeholderEl = document.getElementById('student-photo-placeholder');
   const toolbarEl = document.getElementById('photo-action-toolbar');
 
+  const sidebarAvatar = document.getElementById('sidebar-avatar');
+  const headerAvatar = document.querySelector('.user-greeting-pill .avatar-sm');
+  const parts = (info.fullName || 'Phan Nhật Uyên').trim().split(' ');
+  const initial = (parts[parts.length - 1] || 'U')[0].toUpperCase();
+
   if (avatar) {
     if (imgEl) {
+      imgEl.onerror = () => {
+        imgEl.style.display = 'none';
+        if (placeholderEl) placeholderEl.style.display = 'flex';
+        if (toolbarEl) toolbarEl.style.display = 'none';
+        if (sidebarAvatar) {
+          sidebarAvatar.innerHTML = '';
+          sidebarAvatar.textContent = initial;
+        }
+        if (headerAvatar) {
+          headerAvatar.innerHTML = '';
+          headerAvatar.textContent = initial;
+        }
+      };
+      imgEl.onload = () => {
+        imgEl.style.display = 'block';
+        if (placeholderEl) placeholderEl.style.display = 'none';
+        if (toolbarEl) toolbarEl.style.display = 'flex';
+      };
       imgEl.src = avatar;
       imgEl.style.display = 'block';
     }
     if (placeholderEl) placeholderEl.style.display = 'none';
     if (toolbarEl) toolbarEl.style.display = 'flex';
     applyAvatarFitMode();
+
+    if (sidebarAvatar) sidebarAvatar.innerHTML = `<img src="${avatar}" alt="Avatar">`;
+    if (headerAvatar) headerAvatar.innerHTML = `<img src="${avatar}" alt="Avatar">`;
   } else {
     if (imgEl) {
       imgEl.src = '';
@@ -2226,18 +2253,7 @@ function updateStudentAvatarDisplay() {
     }
     if (placeholderEl) placeholderEl.style.display = 'flex';
     if (toolbarEl) toolbarEl.style.display = 'none';
-  }
 
-  // Update sidebar and top header greeting avatar
-  const sidebarAvatar = document.getElementById('sidebar-avatar');
-  const headerAvatar = document.querySelector('.user-greeting-pill .avatar-sm');
-  const parts = (info.fullName || 'Phan Nhật Uyên').trim().split(' ');
-  const initial = (parts[parts.length - 1] || 'U')[0].toUpperCase();
-
-  if (avatar) {
-    if (sidebarAvatar) sidebarAvatar.innerHTML = `<img src="${avatar}" alt="Avatar">`;
-    if (headerAvatar) headerAvatar.innerHTML = `<img src="${avatar}" alt="Avatar">`;
-  } else {
     if (sidebarAvatar) {
       sidebarAvatar.innerHTML = '';
       sidebarAvatar.textContent = initial;
@@ -2288,6 +2304,7 @@ function setupStudentInfo() {
     });
   }
 
+  const photoFrame = document.getElementById('student-photo-frame');
   const btnToggleFit = document.getElementById('btn-toggle-fit');
   const btnViewHd = document.getElementById('btn-view-hd');
   const hdModal = document.getElementById('photo-hd-modal');
@@ -2305,23 +2322,28 @@ function setupStudentInfo() {
     });
   }
 
-  if (btnViewHd && hdModal && hdPreview) {
-    btnViewHd.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const info = app.data.studentInfo || {};
-      const avatarSrc = info.avatar || null;
-      if (avatarSrc) {
-        hdPreview.onload = () => {
-          const resBadge = document.getElementById('hd-modal-resolution');
-          if (resBadge && hdPreview.naturalWidth && hdPreview.naturalHeight) {
-            resBadge.textContent = `${hdPreview.naturalWidth} × ${hdPreview.naturalHeight} px`;
-            resBadge.style.display = 'inline-block';
-          }
-        };
-        hdPreview.src = avatarSrc;
-        hdModal.classList.add('active');
-      }
-    });
+  const openHdModal = (e) => {
+    if (e) e.stopPropagation();
+    const info = app.data.studentInfo || {};
+    const avatarSrc = info.avatar || 'assets/images/profile.jpg';
+    if (avatarSrc && hdModal && hdPreview) {
+      hdPreview.onload = () => {
+        const resBadge = document.getElementById('hd-modal-resolution');
+        if (resBadge && hdPreview.naturalWidth && hdPreview.naturalHeight) {
+          resBadge.textContent = `${hdPreview.naturalWidth} × ${hdPreview.naturalHeight} px`;
+          resBadge.style.display = 'inline-block';
+        }
+      };
+      hdPreview.src = avatarSrc;
+      hdModal.classList.add('active');
+    }
+  };
+
+  if (btnViewHd) {
+    btnViewHd.addEventListener('click', openHdModal);
+  }
+  if (photoFrame) {
+    photoFrame.addEventListener('click', openHdModal);
   }
 
   const closeHdModal = () => {
