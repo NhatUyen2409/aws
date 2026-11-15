@@ -2105,6 +2105,48 @@ html, body {
   margin: 0;
 }
 
+/* Standardized Compact Event Metadata Strip (Directly below event title) */
+.report-meta-compact-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px 18px;
+  background: #FAFAFA;
+  border: 1px solid #E5E5E5;
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin: 18px 0 20px 0;
+  font-size: 13.5px;
+  color: #171717;
+}
+
+.meta-strip-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.meta-strip-label {
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #555555;
+}
+
+.meta-strip-val {
+  font-size: 13.5px;
+  color: #171717;
+  line-height: 1.45;
+}
+
+@media (max-width: 640px) {
+  .report-meta-compact-strip {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 12px 14px;
+  }
+}
+
 /* Official Metadata Box */
 .report-meta-box {
   background: #FFFFFF;

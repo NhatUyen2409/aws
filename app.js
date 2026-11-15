@@ -1764,10 +1764,10 @@ const DEFAULT_BILINGUAL_DATA = {
       {
         id: "event-1",
         slug: "hoi-thao-hien-dai-hoa-ung-dung-csdl-genai",
-        name: "Sự kiện 1 - Hội thảo Hiện đại hóa Ứng dụng & CSDL với GenAI",
-        dateTime: "09:00, 12/08/2026",
-        location: "Tầng 26, Bitexco Financial Tower, Số 02 Hải Triều, Q.1, TP.HCM",
-        role: "Khách mời tham dự",
+        name: "Sự kiện 1 - First Cloud AI Journey: Hiện đại hóa Ứng dụng & CSDL với GenAI (29/09/2026)",
+        dateTime: "08:00 – 17:00, 29/09/2026",
+        location: "Tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam",
+        role: "Người tham dự (Attendee)",
         speakers: "Jignesh Shah (Giám đốc CSDL Mã nguồn mở), Erica Liu (Chuyên gia AppMod), Fabrianne Effendi (Kiến trúc sư giải pháp Serverless)",
         shortDesc: "Chuyển đổi kiến trúc nguyên khối sang Microservices hiện đại (Queue, Cache, Messaging), phương pháp Domain-Driven Design (DDD) và ứng dụng trợ lý Amazon Q Developer.",
         highlights: "• Những hạn chế của kiến trúc nguyên khối truyền thống (chu kỳ phát hành kéo dài, chi phí vận hành cao).\n• Chuyển đổi sang kiến trúc Microservices hiện đại dựa trên 3 trụ cột: Quản lý hàng đợi, Chiến lược bộ nhớ đệm và Xử lý thông điệp linh hoạt.\n• Phương pháp thiết kế hướng tên miền Domain-Driven Design (DDD) gồm 4 bước.\n• Kiến trúc hướng sự kiện Event-Driven Architecture (Pub/Sub, Point-to-Point, Streaming).\n• Ứng dụng trợ lý AI Amazon Q Developer tự động hóa chu trình nâng cấp mã nguồn.",
@@ -1776,9 +1776,9 @@ const DEFAULT_BILINGUAL_DATA = {
       {
         id: "event-2",
         slug: "first-cloud-ai-journey-24-10-2026",
-        name: "Sự kiện 2 - First Cloud AI Journey Meetup: Khám phá AWS Cloud, Cloud Security & AI Agents",
-        dateTime: "09:00 – 12:00, 24/10/2026",
-        location: "Tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh",
+        name: "Sự kiện 2 - First Cloud AI Journey Meetup: Khám phá AWS Cloud, Cloud Security & AI Agents (24/10/2026)",
+        dateTime: "08:00 – 12:00, 24/10/2026",
+        location: "Tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam",
         role: "Người tham dự (Attendee)",
         speakers: "Kiệt Trần (Revve AI), Long Huỳnh & Thịnh Nguyễn (Styl Solution), Xuân An (HCMUTE), Khoa Kiều (ACB), Nghi Danh (AWS Community Builder)",
         topic: "Khám phá AWS Cloud, Cloud Security và Tương lai của AI Agents",
@@ -1790,9 +1790,9 @@ const DEFAULT_BILINGUAL_DATA = {
       {
         id: "event-3",
         slug: "enterprise-ai-on-aws-cloud",
-        name: "Sự kiện 3 - Enterprise AI trên AWS Cloud: Từ Prototype đến Production",
-        dateTime: "Thông tin đang cập nhật",
-        location: "AWS Cloud Event / Trực tuyến",
+        name: "Sự kiện 3 - Enterprise AI on AWS Cloud: Từ Prototype đến Production (14/11/2026)",
+        dateTime: "09:00 – 12:00, 14/11/2026",
+        location: "Tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam",
         role: "Người tham dự (Attendee)",
         speakers: "Chuyên gia AWS & Khách mời",
         topic: "From AI Prototype to Production: Deploying and Operating Enterprise AI on AWS Cloud",
@@ -1806,9 +1806,9 @@ const DEFAULT_BILINGUAL_DATA = {
       {
         id: "event-1",
         slug: "hoi-thao-hien-dai-hoa-ung-dung-csdl-genai",
-        name: "Event 1 - GenAI-powered App-DB Modernization Workshop",
-        dateTime: "09:00, August 12, 2026",
-        location: "26th Floor, Bitexco Tower, 02 Hai Trieu Street, District 1, Ho Chi Minh City",
+        name: "Event 1 - First Cloud AI Journey: App & DB Modernization with GenAI (September 29, 2026)",
+        dateTime: "08:00 AM – 05:00 PM, September 29, 2026",
+        location: "26th Floor, Bitexco Financial Tower, Ho Chi Minh City, Vietnam",
         role: "Attendee",
         speakers: "Jignesh Shah (Director, Open Source DBs), Erica Liu (Sr. GTM Specialist), Fabrianne Effendi (Assc. Specialist SA)",
         shortDesc: "Modernizing legacy monoliths into Microservices via Queue Management, Caching Strategies, Domain-Driven Design (DDD), and Amazon Q Developer transformation agents.",
@@ -1818,9 +1818,9 @@ const DEFAULT_BILINGUAL_DATA = {
       {
         id: "event-2",
         slug: "first-cloud-ai-journey-24-10-2026",
-        name: "Event 2 - First Cloud AI Journey Meetup: AWS Cloud, Cloud Security & AI Agents",
-        dateTime: "09:00 AM – 12:00 PM, October 24, 2026",
-        location: "26th Floor, Bitexco Financial Tower, Ho Chi Minh City",
+        name: "Event 2 - First Cloud AI Journey Meetup: AWS Cloud, Cloud Security & AI Agents (October 24, 2026)",
+        dateTime: "08:00 AM – 12:00 PM, October 24, 2026",
+        location: "26th Floor, Bitexco Financial Tower, Ho Chi Minh City, Vietnam",
         role: "Attendee",
         speakers: "Kiệt Trần (Revve AI), Long Huỳnh & Thịnh Nguyễn (Styl Solution), Xuân An (HCMUTE), Khoa Kiều (ACB), Nghi Danh (AWS Community Builder)",
         topic: "Exploring AWS Cloud, Cloud Security, and the Future of AI Agents",
@@ -1832,15 +1832,15 @@ const DEFAULT_BILINGUAL_DATA = {
       {
         id: "event-3",
         slug: "enterprise-ai-on-aws-cloud",
-        name: "Event 3 - Enterprise AI on AWS Cloud: From Prototype to Production",
-        dateTime: "To be updated",
-        location: "AWS Cloud Event / Online",
+        name: "Event 3 - Enterprise AI on AWS Cloud: From Prototype to Production (November 14, 2026)",
+        dateTime: "09:00 AM – 12:00 PM, November 14, 2026",
+        location: "26th Floor, Bitexco Financial Tower, Ho Chi Minh City, Vietnam",
         role: "Attendee",
         speakers: "AWS Specialists & Guest Speakers",
         topic: "From AI Prototype to Production: Deploying and Operating Enterprise AI on AWS Cloud",
         category: "Artificial Intelligence & Cloud Computing",
-        shortDesc: "Challenges of transitioning AI prototypes into production enterprise systems: The four operational pillars (Security, Reliability, Scalability, Cost), elastic AWS scaling, and Multi-Agent patterns.",
-        highlights: "• Core differences between Academic AI (Accuracy) and Enterprise AI (Business value & continuous operations).\n• 4 fundamental components of an AI system: Data → Model → Feature → User.\n• Distinction between Training and Inference, and the impact of LLM Tokens on latency and operating costs.\n• Four operational pillars of Production AI: Security, Reliability, Scalability, Cost Optimization.\n• Elastic scalability using AWS Lambda, Auto Scaling, and Elastic Load Balancing.\n• 4 common Multi-Agent architecture patterns: Routing/Supervisor, Sequential, Parallel, Evaluator-Optimizer.",
+        shortDesc: "Challenges of transitioning AI from prototype to enterprise production: 4 operational pillars (Security, Reliability, Scalability, Cost), elastic AWS scaling, and 4 common Multi-Agent architectures.",
+        highlights: "• Fundamental differences between Academic AI (Model Accuracy) and Enterprise AI (Business Value & Continuous Operations).\n• 4 Core Components of Enterprise AI Systems: Data → Model → Feature → User.\n• Distinguishing Training vs. Inference, token economics, and operational latency impacts.\n• 4 Pillars of Production AI: Security, Reliability, Scalability, and Cost Optimization.\n• Elastic Scalability using AWS Lambda, Auto Scaling, and Elastic Load Balancing.\n• 4 Common Multi-Agent Architecture Patterns: Routing/Supervisor, Sequential, Parallel, and Evaluator-Optimizer.",
         hasFullReport: true
       }
     ]
@@ -4897,14 +4897,21 @@ function renderEventsList() {
       }
     }
 
-    const isMeetupEvent = ev.slug === 'first-cloud-ai-journey-24-10-2026' || ev.id === 'event-2';
-    const badgeText = isMeetupEvent 
-      ? (lang === 'vi' ? 'Báo cáo Meetup FCAJ' : 'FCAJ Meetup Report')
-      : (ev.id === 'event-3' || ev.slug === 'enterprise-ai-on-aws-cloud'
-        ? (lang === 'vi' ? 'Báo cáo Enterprise AI' : 'Enterprise AI Report')
-        : (ev.hasFullReport ? (lang === 'vi' ? 'Báo cáo chuyên sâu' : 'Full Report Available') : t('eventBadge')));
-
-    const badgeClass = isMeetupEvent ? 'badge-purple' : (ev.id === 'event-3' || ev.slug === 'enterprise-ai-on-aws-cloud' ? 'badge-blue' : (ev.hasFullReport ? 'badge-blue' : 'badge-gray'));
+    let badgeText = '';
+    let badgeClass = 'badge-blue';
+    if (ev.id === 'event-1' || ev.slug === 'hoi-thao-hien-dai-hoa-ung-dung-csdl-genai') {
+      badgeText = lang === 'vi' ? 'Sự kiện 1 • 29/09/2026' : 'Event 1 • 29/09/2026';
+      badgeClass = 'badge-blue';
+    } else if (ev.id === 'event-2' || ev.slug === 'first-cloud-ai-journey-24-10-2026') {
+      badgeText = lang === 'vi' ? 'Sự kiện 2 • 24/10/2026' : 'Event 2 • 24/10/2026';
+      badgeClass = 'badge-purple';
+    } else if (ev.id === 'event-3' || ev.slug === 'enterprise-ai-on-aws-cloud') {
+      badgeText = lang === 'vi' ? 'Sự kiện 3 • 14/11/2026' : 'Event 3 • 14/11/2026';
+      badgeClass = 'badge-blue';
+    } else {
+      badgeText = ev.hasFullReport ? (lang === 'vi' ? 'Báo cáo chuyên sâu' : 'Full Report Available') : t('eventBadge');
+      badgeClass = 'badge-gray';
+    }
 
     return `
       <div class="event-card ${isVoiceAI ? 'event-card-featured' : ''}" 
@@ -4937,11 +4944,9 @@ function renderEventsList() {
           </div>
         </div>
 
-        ${savedPhoto ? `
-          <div style="margin: 10px 0; border-radius: var(--radius-sm); overflow: hidden; max-height: 140px; border: 1px solid var(--border-card);">
-            <img src="${savedPhoto}" alt="${escapeHtml(ev.name)}" style="width: 100%; height: 140px; object-fit: cover;" />
-          </div>
-        ` : ''}
+        <div style="margin: 10px 0; border-radius: var(--radius-sm); overflow: hidden; max-height: 160px; border: 1px solid var(--border-card); background: #FAFAFA; text-align: center;">
+          <img src="assets/images/events/${ev.id}.jpg" alt="${escapeHtml(ev.name)}" style="width: 100%; height: 160px; object-fit: cover; object-position: center top;" onerror="this.parentElement.style.display='none';" />
+        </div>
 
         <div class="event-short-desc">
           <p>${escapeHtml(descText)}</p>
@@ -4979,6 +4984,10 @@ function renderEventDetail(slug = 'first-cloud-ai-journey-24-10-2026') {
   }
   if (targetSlug === 'first-cloud-ai-journey-24-10-2026') {
     renderMeetupEventDetail(container, lang);
+    return;
+  }
+  if (targetSlug === 'hoi-thao-hien-dai-hoa-ung-dung-csdl-genai') {
+    renderModernizationEventDetail(container, lang);
     return;
   }
   const reportData = (EVENT_REPORTS[targetSlug] && EVENT_REPORTS[targetSlug][lang]) 
@@ -5487,20 +5496,24 @@ function renderEventDetail(slug = 'first-cloud-ai-journey-24-10-2026') {
 }
 
 
-function renderMeetupEventDetail(container, lang = 'vi') {
+function renderModernizationEventDetail(container, lang = 'vi') {
   const isVi = lang === 'vi';
 
   const t = {
     breadcrumbEvents: isVi ? "Sự kiện tham gia" : "Events Participated",
-    breadcrumbCurrent: isVi ? "Sự kiện 2 - First Cloud AI Journey Meetup" : "Event 2 - First Cloud AI Journey Meetup",
+    breadcrumbCurrent: isVi ? "Sự kiện 1 - First Cloud AI Journey (29/09/2026)" : "Event 1 - First Cloud AI Journey (29/09/2026)",
     btnBack: isVi ? "← Quay lại sự kiện" : "← Back to Events",
     badgeReport: isVi ? "BÁO CÁO THU HOẠCH SỰ KIỆN" : "EVENT HARVEST REPORT",
-    badgeCategory: "Cloud Computing, Cloud Security & AI Agents",
+    badgeCategory: "Application & Database Modernization",
     badgeOfficial: isVi ? "Chính thức • AWS FCAJ" : "Official • AWS FCAJ",
-    title: "FIRST CLOUD AI JOURNEY MEETUP",
+    title: "FIRST CLOUD AI JOURNEY – 29/09/2026",
     subtitle: isVi 
-      ? "Khám phá AWS Cloud, Cloud Security và Tương lai của AI Agents"
-      : "Exploring AWS Cloud, Cloud Security, and the Future of AI Agents",
+      ? "Hội thảo chuyên sâu về Hiện đại hóa Ứng dụng, Cơ sở dữ liệu và Tự động hóa mã nguồn với GenAI trên AWS"
+      : "In-depth Workshop on Application & Database Modernization and GenAI-powered Code Transformation on AWS",
+    eventName: "First Cloud AI Journey – 29/09/2026",
+    dateTime: isVi ? "08:00 – 17:00, 29/09/2026" : "08:00 AM – 05:00 PM, September 29, 2026",
+    location: isVi ? "Tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam" : "26th Floor, Bitexco Financial Tower, Ho Chi Minh City, Vietnam",
+    role: isVi ? "Người tham dự (Attendee)" : "Attendee",
   };
 
   container.innerHTML = `
@@ -5529,21 +5542,41 @@ function renderMeetupEventDetail(container, lang = 'vi') {
         </div>
         <h1 class="report-main-title">${escapeHtml(t.title)}</h1>
         <p class="report-main-subtitle">${escapeHtml(t.subtitle)}</p>
+
+        <!-- Standardized Compact Event Metadata Strip -->
+        <div class="report-meta-compact-strip">
+          <div class="meta-strip-item">
+            <span class="meta-strip-label">${isVi ? 'Tên sự kiện:' : 'Event Name:'}</span>
+            <span class="meta-strip-val"><strong>${escapeHtml(t.eventName)}</strong></span>
+          </div>
+          <div class="meta-strip-item">
+            <span class="meta-strip-label">${isVi ? 'Thời gian:' : 'Date & Time:'}</span>
+            <span class="meta-strip-val">${escapeHtml(t.dateTime)}</span>
+          </div>
+          <div class="meta-strip-item">
+            <span class="meta-strip-label">${isVi ? 'Địa điểm:' : 'Location:'}</span>
+            <span class="meta-strip-val">${escapeHtml(t.location)}</span>
+          </div>
+          <div class="meta-strip-item">
+            <span class="meta-strip-label">${isVi ? 'Vai trò:' : 'Role:'}</span>
+            <span class="meta-strip-val"><strong>${escapeHtml(t.role)}</strong></span>
+          </div>
+        </div>
       </header>
 
-      <!-- Event 2 Cover Image (Auto-displays upon upload, gracefully hidden with zero broken icon if pending) -->
-      <div id="event-2-cover-wrap" class="event-uploaded-photo-box" style="display: none; margin: 20px 0 28px 0;">
-        <div class="event-uploaded-img-wrap" onclick="openBlogImageModal('assets/images/events/event-2.jpg', '${isVi ? 'Sự kiện 2 – First Cloud AI Journey Meetup' : 'Event 2 – First Cloud AI Journey Meetup'}')" title="${isVi ? 'Nhấp để xem ảnh độ nét cao (HD)' : 'Click to view high-definition image'}">
-          <img id="event-2-cover-img"
-               src="assets/images/events/event-2.jpg"
-               alt="${isVi ? 'Hình ảnh sự kiện Event 2 – First Cloud AI Journey Meetup' : 'Event 2 – First Cloud AI Journey Meetup photograph'}"
+      <!-- Event 1 Check-in Photo -->
+      <div id="event-1-cover-wrap" class="event-uploaded-photo-box" style="margin: 20px 0 28px 0;">
+        <div class="event-uploaded-img-wrap" onclick="openBlogImageModal('assets/images/events/event-1.jpg', '${escapeHtml(t.eventName)}')" title="${isVi ? 'Nhấp để xem ảnh độ nét cao (HD)' : 'Click to view high-definition image'}">
+          <img id="event-1-cover-img"
+               src="assets/images/events/event-1.jpg"
+               alt="${escapeHtml(t.eventName)}"
                class="event-uploaded-img"
-               onload="const w = document.getElementById('event-2-cover-wrap'); if (w) w.style.display='block';"
-               onerror="const w = document.getElementById('event-2-cover-wrap'); if (w) w.style.display='none';"
+               onload="const w = document.getElementById('event-1-cover-wrap'); if (w) w.style.display='block';"
+               onerror="const w = document.getElementById('event-1-cover-wrap'); if (w) w.style.display='none';"
                loading="eager" />
         </div>
-        <div style="font-size: 13px; color: #555555; margin-top: 12px; font-style: italic;">
-          ${isVi ? 'Hình ảnh sự kiện: First Cloud AI Journey Meetup – Tầng 26 Bitexco Financial Tower' : 'Event Photograph: First Cloud AI Journey Meetup – 26th Floor Bitexco Financial Tower'}
+        <div style="font-size: 13px; color: #555555; margin-top: 10px; font-style: italic;">
+          ${isVi ? 'Ảnh check-in thực tế của sinh viên tại sự kiện First Cloud AI Journey (29/09/2026) – Tầng 26, Bitexco Financial Tower' : 'Authentic attendee check-in photograph at First Cloud AI Journey (September 29, 2026) – 26th Floor, Bitexco Financial Tower'}
         </div>
       </div>
 
@@ -5555,8 +5588,405 @@ function renderMeetupEventDetail(container, lang = 'vi') {
         </div>
         <div class="report-prose">
           <p>${isVi
-            ? 'Vào ngày <strong>24/10/2026</strong>, tôi đã tham dự sự kiện <strong>First Cloud AI Journey Meetup</strong>, được tổ chức từ <strong>09:00 đến 12:00</strong> tại <strong>tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh</strong>.'
-            : 'On <strong>October 24, 2026</strong>, I attended the <strong>First Cloud AI Journey Meetup</strong>, held from <strong>9:00 AM to 12:00 PM</strong> on the <strong>26th floor of Bitexco Financial Tower, Ho Chi Minh City</strong>.'}</p>
+            ? 'Vào ngày <strong>29/09/2026</strong>, tôi đã tham dự sự kiện <strong>First Cloud AI Journey</strong>, được tổ chức từ <strong>08:00 đến 17:00</strong> tại <strong>tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam</strong>.'
+            : 'On <strong>September 29, 2026</strong>, I attended the <strong>First Cloud AI Journey</strong> event, held from <strong>08:00 AM to 05:00 PM</strong> on the <strong>26th Floor of Bitexco Financial Tower, Ho Chi Minh City, Vietnam</strong>.'}</p>
+          
+          <div class="report-quote-box" style="border-left-color: #171717;">
+            ${isVi
+              ? '“Hội thảo quy tụ các chuyên gia cấp cao từ AWS, các kiến trúc sư giải pháp giải pháp, kỹ sư doanh nghiệp và sinh viên cùng trao đổi về lộ trình chuyển đổi ứng dụng nguyên khối (Monolith) sang kiến trúc Microservices hiện đại, kết hợp tự động hóa mã nguồn bằng GenAI.”'
+              : '“The workshop brought together senior AWS leaders, solution architects, enterprise engineers, and students to discuss modernizing legacy monolithic architectures into cloud-native microservices, combined with GenAI-assisted code transformation.”'}
+          </div>
+
+          <p>${isVi
+            ? 'Sự kiện có sự tham gia chia sẻ của các chuyên gia hàng đầu từ AWS: <strong>Jignesh Shah</strong> (Giám đốc CSDL Mã nguồn mở), <strong>Erica Liu</strong> (Chuyên gia Cao cấp Hiện đại hóa Ứng dụng - AppMod), và <strong>Fabrianne Effendi</strong> (Kiến trúc sư giải pháp Serverless).'
+            : 'The event featured in-depth presentations by senior AWS specialists: <strong>Jignesh Shah</strong> (Director, Open Source Databases), <strong>Erica Liu</strong> (Senior GTM Specialist, AppMod), and <strong>Fabrianne Effendi</strong> (Associate Specialist Solutions Architect).'}</p>
+
+          <p>${isVi
+            ? 'Thông qua các bài thuyết trình chuyên sâu, các phiên demo thực hành và thảo luận mở, tôi đã tiếp thu những góc nhìn thực tiễn và sâu sắc về cách thức chuyển dịch các hệ thống lớn lên đám mây một cách an toàn, có phương pháp và tối ưu hóa vận hành.'
+            : 'Through deep technical presentations, practical demonstrations, and open discussions, I gained comprehensive insights into securely and systematically migrating enterprise workloads to the cloud.'}</p>
+        </div>
+      </section>
+
+      <!-- SECTION II – EVENT OBJECTIVES -->
+      <section class="report-section-block">
+        <div class="report-section-header">
+          <span class="report-section-num">02</span>
+          <h2 class="report-section-title">${isVi ? 'II. Mục tiêu sự kiện (Event Objectives)' : 'II. Event Objectives'}</h2>
+        </div>
+        <div class="report-prose">
+          <p>${isVi
+            ? 'Các mục tiêu kỹ thuật và định hướng kiến trúc trọng tâm của hội thảo bao gồm:'
+            : 'Core technical and architectural objectives established during the workshop:'}</p>
+          <ul>
+            <li>${isVi ? '<strong>Nhận diện nút thắt của kiến trúc nguyên khối:</strong> Phân tích nguyên nhân khiến hệ thống Monolith khó mở rộng, chu kỳ phát hành kéo dài và rủi ro gián đoạn dịch vụ cao.' : '<strong>Identify monolithic bottlenecks:</strong> Analyze why legacy monoliths face tight coupling, protracted release cycles, and high blast radius.'}</li>
+            <li>${isVi ? '<strong>Làm chủ 3 trụ cột phân tách Microservices:</strong> Nắm vững Quản lý hàng đợi (Queue Management), Chiến lược bộ nhớ đệm (Caching Strategies) và Xử lý thông điệp linh hoạt (Flexible Messaging).' : '<strong>Master the 3 pillars of Microservices decoupling:</strong> Understand Queue Management, Caching Strategies, and Flexible Message Handling on AWS.'}</li>
+            <li>${isVi ? '<strong>Phương pháp thiết kế hướng tên miền (DDD):</strong> Áp dụng quy trình 4 bước có cấu trúc để phân định ranh giới Bounded Contexts chuẩn xác.' : '<strong>Domain-Driven Design (DDD) methodology:</strong> Apply the 4-step framework to delineate precise Bounded Contexts.'}</li>
+            <li>${isVi ? '<strong>Tiếp cận kiến trúc hướng sự kiện (EDA):</strong> Khám phá các mẫu Publish/Subscribe, Point-to-Point Queue và Data Streaming nhằm phi tập trung hóa giao tiếp giữa các dịch vụ.' : '<strong>Adopt Event-Driven Architecture (EDA):</strong> Explore Pub/Sub, Point-to-Point, and Streaming patterns for decentralized service communication.'}</li>
+            <li>${isVi ? '<strong>Ứng dụng GenAI tăng tốc hiện đại hóa:</strong> Khám phá cách Amazon Q Developer hỗ trợ tự động hóa chuyển đổi mã nguồn Java cũ và di chuyển CSDL lên đám mây.' : '<strong>Leverage GenAI for automated modernization:</strong> Learn how Amazon Q Developer accelerates legacy Java upgrades and database migrations.'}</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION III – KEY TOPICS AND KNOWLEDGE ACQUIRED -->
+      <section class="report-section-block">
+        <div class="report-section-header">
+          <span class="report-section-num">03</span>
+          <h2 class="report-section-title">${isVi ? 'III. Nội dung trọng tâm và Kiến thức tiếp thu (Key Topics and Knowledge Acquired)' : 'III. Key Topics and Knowledge Acquired'}</h2>
+        </div>
+        <div class="report-prose">
+
+          <!-- 1. Limitations of Legacy Monoliths -->
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">1. Hạn chế của Kiến trúc Nguyên khối truyền thống (Limitations of Legacy Monolithic Architectures)</h3>
+          <p>${isVi
+            ? 'Trong phần đầu của hội thảo, các diễn giả đã phân tích sâu các nút thắt cổ chai mà các doanh nghiệp sở hữu kiến trúc Monolith đang phải đối mặt. Do tất cả các module nghiệp vụ được đóng gói chung vào một khối mã nguồn duy nhất, sự phụ thuộc chặt chẽ (tight coupling) tạo ra những rủi ro vận hành nghiêm trọng:'
+            : 'AWS experts outlined the core operational bottlenecks of legacy monoliths where tightly coupled business modules packaged in a single codebase create high operational risks:'}</p>
+          <ul>
+            <li>${isVi ? '<strong>Chu kỳ phát hành kéo dài:</strong> Việc triển khai một thay đổi nhỏ đòi hỏi kiểm thử và phát hành lại toàn bộ ứng dụng, kéo dài thời gian ra mắt tính năng mới từ vài tuần đến nhiều tháng.' : '<strong>Protracted release cycles:</strong> Deploying minor updates requires rebuilding and releasing the entire application, slowing time-to-market.'}</li>
+            <li>${isVi ? '<strong>Khó khăn khi mở rộng theo chiều ngang:</strong> Toàn bộ ứng dụng phải được nhân bản khi chỉ có một module cụ thể cần thêm tài nguyên, dẫn đến lãng phí chi phí hạ tầng nghiêm trọng.' : '<strong>Horizontal scalability bottlenecks:</strong> The entire application must be duplicated when only a specific component experiences traffic surges.'}</li>
+            <li>${isVi ? '<strong>Phạm vi ảnh hưởng sự cố lớn (Blast Radius):</strong> Lỗi phát sinh trong một module không trọng yếu có thể làm sụp đổ toàn bộ hệ thống đang phục vụ khách hàng.' : '<strong>Excessive blast radius:</strong> A memory leak or failure in a non-critical module can bring down the entire enterprise system.'}</li>
+          </ul>
+
+          <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
+
+          <!-- 2. 3 Pillars of Modern Microservices Transition -->
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">2. Ba trụ cột chuyển đổi Microservices hiện đại (3 Pillars of Modern Microservices Transition)</h3>
+          <p>${isVi
+            ? 'Để phân tách hệ thống nguyên khối thành các dịch vụ độc lập mà không làm gián đoạn luồng vận hành kinh doanh, chuyên gia AWS đã trình bày 3 trụ cột kỹ thuật cốt lõi:'
+            : 'To decouple monolithic dependencies without disrupting continuous business operations, AWS specialists presented three foundational technical pillars:'}</p>
+
+          <div class="minimal-table-wrap">
+            <table class="minimal-table">
+              <thead>
+                <tr>
+                  <th style="width: 25%;">${isVi ? 'Trụ cột kỹ thuật' : 'Technical Pillar'}</th>
+                  <th style="width: 25%;">${isVi ? 'Dịch vụ AWS tương ứng' : 'AWS Service'}</th>
+                  <th style="width: 50%;">${isVi ? 'Vai trò &amp; Chức năng kiến trúc' : 'Architectural Role &amp; Function'}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Quản lý hàng đợi (Queue Management)</strong></td>
+                  <td>Amazon SQS (Simple Queue Service)</td>
+                  <td>${isVi ? 'Đệm dữ liệu và tách rời các tiến trình xử lý, đảm bảo khả năng chịu lỗi và không làm mất thông điệp khi lưu lượng truy cập tăng vọt.' : 'Buffers requests and decouples processing stages, ensuring resilience and preventing message loss during peak bursts.'}</td>
+                </tr>
+                <tr>
+                  <td><strong>Chiến lược bộ nhớ đệm (Caching Strategies)</strong></td>
+                  <td>Amazon ElastiCache (Redis/Memcached)</td>
+                  <td>${isVi ? 'Lưu trữ tạm thời dữ liệu thường xuyên truy cập vào bộ nhớ RAM, giảm áp lực đọc trực tiếp lên CSDL quan hệ và đưa độ trễ phản hồi xuống dưới một mili-giây.' : 'Caches frequent queries in in-memory storage, drastically relieving database load and achieving sub-millisecond latencies.'}</td>
+                </tr>
+                <tr>
+                  <td><strong>Xử lý thông điệp linh hoạt (Flexible Messaging)</strong></td>
+                  <td>Amazon SNS &amp; Amazon EventBridge</td>
+                  <td>${isVi ? 'Định tuyến sự kiện và phân tán dữ liệu không đồng bộ (Publish/Subscribe) giữa các microservices độc lập, đảm bảo khả năng mở rộng phi tập trung.' : 'Routes events asynchronously via pub/sub fanout across independent microservices, facilitating loosely coupled integrations.'}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
+
+          <!-- 3. Domain-Driven Design (DDD) 4-Step Methodology -->
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">3. Phương pháp Thiết kế Hướng tên miền (Domain-Driven Design 4-Step Methodology)</h3>
+          <p>${isVi
+            ? 'Phân chia Microservices không đơn thuần là chia nhỏ mã nguồn kỹ thuật, mà phải bắt đầu từ phân tích logic nghiệp vụ. Chuyên gia Erica Liu đã chia sẻ quy trình 4 bước chuẩn mực theo Domain-Driven Design (DDD):'
+            : 'Microservices decomposition must begin with business domain modeling. Specialist Erica Liu outlined the structured 4-step Domain-Driven Design framework:'}</p>
+
+          <ul>
+            <li>${isVi ? '<strong>Bước 1 - Xác định sự kiện nghiệp vụ (Identify Domain Events):</strong> Liệt kê tất cả các sự kiện trọng yếu diễn ra trong quy trình kinh doanh (ví dụ: Đơn hàng đã tạo, Thanh toán hoàn tất, Hàng đã xuất kho).' : '<strong>Step 1 - Identify Domain Events:</strong> Inventory all core events that occur within the business lifecycle (e.g. Order Placed, Payment Authorized, Shipment Dispatched).'}</li>
+            <li>${isVi ? '<strong>Bước 2 - Sắp xếp dòng thời gian (Arrange Timeline):</strong> Phác thảo chuỗi sự kiện theo trục thời gian tuyến tính để nhận diện rõ ràng các quan hệ phụ thuộc, kích hoạt và hệ quả.' : '<strong>Step 2 - Arrange Timeline:</strong> Map events sequentially on a chronological timeline to clarify triggers, dependencies, and cause-and-effect flows.'}</li>
+            <li>${isVi ? '<strong>Bước 3 - Xác định các tác nhân (Identify Actors):</strong> Xác định các đối tượng kích hoạt hoặc tiếp nhận kết quả của sự kiện (người dùng, hệ thống tích hợp bên ngoài, tiến trình tự động).' : '<strong>Step 3 - Identify Actors:</strong> Determine the initiators and consumers of each event (end users, external third parties, automated background jobs).'}</li>
+            <li>${isVi ? '<strong>Bước 4 - Xác định ngữ cảnh bị giới hạn (Define Bounded Contexts):</strong> Gom nhóm các sự kiện và mô hình dữ liệu có tính gắn kết chặt chẽ vào từng Bounded Context riêng biệt để ánh xạ trực tiếp thành các Microservices độc lập.' : '<strong>Step 4 - Define Bounded Contexts:</strong> Cluster related domain events and data models into discrete Bounded Contexts, directly forming microservice boundaries.'}</li>
+          </ul>
+
+          <p style="font-style: italic; color: #555555; margin-top: 8px;">
+            ${isVi
+              ? 'Nhận định phương pháp luận: Thiết kế chuẩn xác ranh giới Bounded Context ngay từ giai đoạn đầu là chìa khóa then chốt để tránh tạo ra "Distributed Monolith" (nguyên khối phân tán) — cạm bẫy nguy hiểm và phổ biến nhất khi chuyển dịch lên đám mây.'
+              : 'Methodological Insight: Defining accurate Bounded Contexts is paramount to avoiding a "Distributed Monolith" — the most frequent architectural antipattern in cloud migrations.'}
+          </p>
+
+          <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
+
+          <!-- 4. Event-Driven Architecture Patterns -->
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">4. Các mẫu Kiến trúc Hướng sự kiện (Event-Driven Architecture Patterns)</h3>
+          <p>${isVi
+            ? 'Hội thảo đi sâu phân tích 3 mô hình giao tiếp bất đồng bộ chính giúp các dịch vụ trao đổi thông điệp mà không bị gắn kết trực tiếp (loose coupling):'
+            : 'The workshop examined three core asynchronous messaging patterns that decouple microservice interactions:'}</p>
+
+          <div class="minimal-formula-box" style="text-align: center; font-weight: 600; overflow-x: auto;">
+            ${isVi 
+              ? 'Publish/Subscribe (Amazon SNS & EventBridge) | Point-to-Point Queue (Amazon SQS) | High-Throughput Streaming (Amazon Kinesis)'
+              : 'Publish/Subscribe (Amazon SNS & EventBridge) | Point-to-Point Queue (Amazon SQS) | High-Throughput Streaming (Amazon Kinesis)'}
+          </div>
+
+          <ul>
+            <li>${isVi ? '<strong>Publish/Subscribe (Phát tán sự kiện):</strong> Cho phép một nhà phát hành (producer) gửi thông điệp tới nhiều bên đăng ký (consumers) đồng thời thông qua Amazon SNS và EventBridge.' : '<strong>Publish/Subscribe:</strong> Enables a single event producer to broadcast messages simultaneously to multiple decoupled consumers.'}</li>
+            <li>${isVi ? '<strong>Point-to-Point Queue (Hàng đợi điểm - điểm):</strong> Đảm bảo mỗi thông điệp chỉ được tiêu thụ bởi duy nhất một consumer tại một thời điểm thông qua Amazon SQS, hỗ trợ cơ chế Dead-Letter Queue (DLQ) để cách ly thông điệp lỗi.' : '<strong>Point-to-Point Queue:</strong> Ensures exactly-once consumption per message by a dedicated worker, backed by Dead-Letter Queues for error containment.'}</li>
+            <li>${isVi ? '<strong>Data Streaming (Luồng dữ liệu liên tục):</strong> Thu nhận và xử lý hàng triệu bản ghi mỗi giây theo thứ tự thời gian thực phục vụ phân tích dữ liệu lớn với Amazon Kinesis Data Streams.' : '<strong>Data Streaming:</strong> Ingests and processes millions of ordered records per second in real time for live analytics using Amazon Kinesis.'}</li>
+          </ul>
+
+          <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
+
+          <!-- 5. Amazon Q Developer -->
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">5. Ứng dụng Trợ lý AI Amazon Q Developer trong Hiện đại hóa phần mềm (AI-Assisted Modernization with Amazon Q Developer)</h3>
+          <p>${isVi
+            ? 'Phiên chia sẻ của chuyên gia Erica Liu và Fabrianne Effendi đã mở ra góc nhìn thực tế về việc áp dụng Trí tuệ nhân tạo tạo sinh (GenAI) để tự động hóa các công việc nặng nhọc trong quá trình chuyển dịch mã nguồn:'
+            : 'Specialists Erica Liu and Fabrianne Effendi demonstrated how Generative AI tools accelerate the most labor-intensive modernization stages:'}</p>
+
+          <ul>
+            <li>${isVi ? '<strong>Tự động hóa nâng cấp runtime ứng dụng (AppMod):</strong> Amazon Q Developer tự động phân tích toàn bộ repository mã nguồn Java cũ (Java 8/11), phát hiện các thư viện lỗi thời, tự động refactor mã nguồn và nâng cấp lên phiên bản hiện đại (Java 17/21).' : '<strong>Application transformation (AppMod):</strong> Amazon Q Developer analyzes legacy Java repositories, identifies outdated dependencies, refactors deprecated APIs, and automates upgrades to Java 17/21.'}</li>
+            <li>${isVi ? '<strong>Chuyển đổi cơ sở dữ liệu:</strong> Hỗ trợ dịch chuyển schema và mã nguồn stored procedures từ các cơ sở dữ liệu thương mại độc quyền (Oracle, Microsoft SQL Server) sang các hệ quản trị CSDL mã nguồn mở tương thích trên AWS (Amazon Aurora PostgreSQL/MySQL).' : '<strong>Database conversion:</strong> Assists in converting schemas and stored procedures from proprietary commercial databases (Oracle, MS SQL) to open-source Aurora PostgreSQL/MySQL.'}</li>
+            <li>${isVi ? '<strong>Rà soát an ninh mã nguồn tự động:</strong> Tích hợp trực tiếp trong IDE của kỹ sư (VS Code, IntelliJ) để phát hiện tức thì các lỗ hổng OWASP, hardcoded credentials và đưa ra đề xuất vá lỗi bằng một cú nhấp chuột.' : '<strong>Security code review:</strong> Runs within IDE environments to pinpoint OWASP vulnerabilities and hardcoded secrets, generating instant remediation diffs.'}</li>
+          </ul>
+
+          <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
+
+          <!-- 6. Technical Demos & Q&A -->
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">6. Trực quan Hướng dẫn Demo &amp; Phiên giải đáp Chuyên gia (Technical Demonstrations &amp; Expert Q&amp;A)</h3>
+          <p>${isVi
+            ? 'Buổi hội thảo đã mang đến các phần trình diễn kỹ thuật trực quan sinh động tại tầng 26, Bitexco Financial Tower:'
+            : 'The workshop featured live technical demonstrations conducted directly on stage at Bitexco Financial Tower:'}</p>
+          <ul>
+            <li>${isVi ? '<strong>Demo quét mã nguồn tự động:</strong> Minh họa quá trình Amazon Q Developer phân tích một dự án Java nguyên khối, tự động sinh unit test và hoàn thành việc nâng cấp framework trong chưa đầy 15 phút.' : '<strong>Automated code scanning demo:</strong> Demonstrated Amazon Q Developer scanning a monolithic Java project, generating test suites, and completing framework upgrades in minutes.'}</li>
+            <li>${isVi ? '<strong>Demo chuyển đổi CSDL:</strong> Trực quan hóa quy trình chuyển đổi cơ sở dữ liệu sử dụng AWS Schema Conversion Tool (SCT) và AWS Database Migration Service (DMS) sang Amazon Aurora.' : '<strong>Database migration demo:</strong> Visualized database schema conversions using AWS SCT and AWS DMS targeting Amazon Aurora.'}</li>
+            <li>${isVi ? '<strong>Demo cô lập lỗi với SQS và DLQ:</strong> Mô phỏng sự cố một microservice thanh toán bị sập và cách hàng đợi SQS bảo toàn 100% giao dịch khách hàng mà không bị thất thoát.' : '<strong>Resilience demo with SQS and DLQ:</strong> Simulated a downstream payment service outage, verifying how SQS preserved 100% of customer orders without data loss.'}</li>
+            <li>${isVi ? '<strong>Phiên Q&amp;A cùng Giám đốc CSDL Jignesh Shah:</strong> Thảo luận sâu về bài toán đảm bảo tính nhất quán dữ liệu (eventual consistency) và chiến lược tối ưu hóa chi phí khi chuyển dịch cơ sở dữ liệu doanh nghiệp lên đám mây.' : '<strong>Expert Q&amp;A with Director Jignesh Shah:</strong> Deep dive into eventual consistency across distributed domains and cost governance strategies for enterprise cloud database migrations.'}</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION IV – KEY TAKEAWAYS -->
+      <section class="report-section-block">
+        <div class="report-section-header">
+          <span class="report-section-num">04</span>
+          <h2 class="report-section-title">${isVi ? 'IV. Bài học cốt lõi (Key Takeaways)' : 'IV. Key Takeaways'}</h2>
+        </div>
+        <div class="report-prose">
+          <p>${isVi
+            ? 'Hội thảo đã mang lại bức tranh toàn diện và sâu sắc về lộ trình chuyển đổi ứng dụng sang đám mây:'
+            : 'The workshop provided comprehensive insights across core disciplines of modern cloud software engineering:'}</p>
+
+          <div class="minimal-table-wrap">
+            <table class="minimal-table">
+              <thead>
+                <tr>
+                  <th style="width: 30%;">${isVi ? 'Lĩnh vực kỹ thuật (Technical Area)' : 'Technical Area'}</th>
+                  <th style="width: 70%;">${isVi ? 'Kiến thức cốt lõi tiếp thu (Key Knowledge Acquired)' : 'Key Knowledge Acquired'}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Monolith Limitations</strong></td>
+                  <td>${isVi ? 'Hiểu rõ các điểm nghẽn về khớp nối chặt (tight coupling), chu kỳ phát hành và rủi ro gián đoạn toàn bộ hệ thống.' : 'Understanding tight coupling bottlenecks, long release cycles, and excessive failure blast radius.'}</td>
+                </tr>
+                <tr>
+                  <td><strong>Queue Management</strong></td>
+                  <td>${isVi ? 'Sử dụng Amazon SQS để đệm dữ liệu, phân tách tiến trình xử lý và hấp thụ lưu lượng tải đột biến.' : 'Leveraging Amazon SQS to buffer requests, decouple processing stages, and absorb traffic spikes.'}</td>
+                </tr>
+                <tr>
+                  <td><strong>Caching Strategy</strong></td>
+                  <td>${isVi ? 'Tận dụng Amazon ElastiCache để lưu trữ tạm thời trong RAM, giảm tải CSDL và đạt độ trễ phản hồi dưới 1 mili-giây.' : 'Utilizing Amazon ElastiCache to alleviate database read pressure and achieve sub-millisecond latencies.'}</td>
+                </tr>
+                <tr>
+                  <td><strong>Event-Driven Messaging</strong></td>
+                  <td>${isVi ? 'Áp dụng các mẫu Pub/Sub và Streaming với Amazon SNS, EventBridge, Kinesis để phi tập trung hóa giao tiếp.' : 'Applying Pub/Sub and Streaming patterns with Amazon SNS, EventBridge, and Kinesis for loose coupling.'}</td>
+                </tr>
+                <tr>
+                  <td><strong>Domain-Driven Design</strong></td>
+                  <td>${isVi ? 'Làm chủ quy trình 4 bước DDD để phân định Bounded Contexts chuẩn xác, tránh tạo ra Distributed Monolith.' : 'Mastering the 4-step DDD methodology to delineate clean bounded contexts and avoid distributed monoliths.'}</td>
+                </tr>
+                <tr>
+                  <td><strong>Database Modernization</strong></td>
+                  <td>${isVi ? 'Chuyển dịch cơ sở dữ liệu thương mại sang Amazon Aurora PostgreSQL để giải phóng chi phí bản quyền và tăng khả năng co giãn.' : 'Migrating commercial proprietary databases to Amazon Aurora PostgreSQL for cost freedom and high scalability.'}</td>
+                </tr>
+                <tr>
+                  <td><strong>AI-Assisted Modernization</strong></td>
+                  <td>${isVi ? 'Ứng dụng Amazon Q Developer để tự động hóa quét mã nguồn, refactor runtime cũ và kiểm toán an ninh trong IDE.' : 'Employing Amazon Q Developer to automate repository analysis, legacy runtime refactoring, and code reviews.'}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p style="font-weight:700; color:#171717; margin-top:20px;">
+            ${isVi ? 'Những nguyên tắc kiến trúc cốt lõi đúc kết từ hội thảo:' : 'Core architectural principles established during the workshop:'}
+          </p>
+          <ul>
+            <li>${isVi ? 'Hiện đại hóa là một hành trình tái cấu trúc có phương pháp (Architecture-led), không đơn thuần chỉ là thao tác di chuyển mã nguồn nguyên trạng lên đám mây (Lift and Shift).' : 'Modernization is an architecture-driven evolution, not a mere lift-and-shift code relocation.'}</li>
+            <li>${isVi ? 'Phân tách bất đồng bộ (Asynchronous Decoupling) là chìa khóa bảo vệ hệ thống trước sự cố lan chuyền và giúp từng thành phần co giãn độc lập.' : 'Asynchronous decoupling is essential to preventing cascading failures and ensuring independent scalability.'}</li>
+            <li>${isVi ? 'Thiết kế ranh giới nghiệp vụ chuẩn xác theo Domain-Driven Design là điều kiện tiên quyết để xây dựng Microservices bền vững.' : 'Accurate domain boundaries defined through DDD are the foundation of successful, sustainable microservices.'}</li>
+            <li>${isVi ? 'Cơ sở dữ liệu đám mây mã nguồn mở mang lại sự tự do công nghệ và tối ưu hóa chi phí vượt bậc so với các giải pháp độc quyền.' : 'Cloud-native open-source databases deliver technological independence and substantial cost savings over proprietary engines.'}</li>
+            <li>${isVi ? 'Trợ lý AI đang định hình lại phương thức kỹ thuật phần mềm, giải phóng kỹ sư khỏi các tác vụ lặp lại để tập trung vào tư duy kiến trúc.' : 'AI assistants are redefining software engineering, empowering engineers to focus on high-value architectural reasoning.'}</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION V – LESSONS LEARNED AND PERSONAL CONTRIBUTIONS -->
+      <section class="report-section-block">
+        <div class="report-section-header">
+          <span class="report-section-num">05</span>
+          <h2 class="report-section-title">${isVi ? 'V. Bài học rút ra & Đóng góp cá nhân (Lessons Learned & Personal Contributions)' : 'V. Lessons Learned and Personal Contributions'}</h2>
+        </div>
+        <div class="report-prose">
+          
+          <h3 style="font-size:15px; font-weight:700; color:#0F172A; margin:16px 0 8px 0;">
+            ${isVi ? '1. Bài học rút ra (Lessons Learned)' : '1. Lessons Learned'}
+          </h3>
+          <ul>
+            <li>${isVi ? '<strong>Tư duy chuyển đổi hệ thống lớn:</strong> Nắm vững lộ trình chuyển đổi kiến trúc hệ thống từ nguyên khối (Monolith) sang dịch vụ vi mô (Microservices), thấu hiểu rằng hiện đại hóa đòi hỏi tư duy phân rã nghiệp vụ bài bản thay vì chỉ di chuyển hạ tầng.' : '<strong>Enterprise modernization mindset:</strong> Mastered the methodology of decoupling legacy monolithic systems into cloud-native microservices through domain-driven architecture rather than simple infrastructure lift-and-shift.'}</li>
+            <li>${isVi ? '<strong>Tầm quan trọng của phân tách bất đồng bộ:</strong> Hiểu sâu sắc cách thức Amazon SQS, SNS và EventBridge giúp loại bỏ điểm lỗi đơn lẻ (Single Point of Failure), bảo vệ hệ thống trước lỗi lan chuyền và đảm bảo tính khả dụng cao.' : '<strong>Importance of asynchronous decoupling:</strong> Recognized how message buffering and event routing with Amazon SQS, SNS, and EventBridge eliminate single points of failure and prevent cascading outages.'}</li>
+            <li>${isVi ? '<strong>Định hình ranh giới nghiệp vụ chuẩn xác:</strong> Nắm vững quy trình 4 bước của Domain-Driven Design để định nghĩa các Bounded Contexts, phòng ngừa rủi ro tạo ra kiến trúc "Distributed Monolith".' : '<strong>Domain boundary precision:</strong> Learned the 4-step DDD methodology to establish clear bounded contexts, preventing the emergence of distributed monolith antipatterns.'}</li>
+            <li>${isVi ? '<strong>Tối ưu hóa cơ sở dữ liệu trên đám mây:</strong> Nhận thức rõ ràng lợi ích kinh tế và tính linh hoạt khi dịch chuyển từ CSDL thương mại độc quyền sang Amazon Aurora PostgreSQL.' : '<strong>Cloud database optimization:</strong> Understood the strategic economic and operational advantages of migrating proprietary commercial databases to Amazon Aurora PostgreSQL.'}</li>
+            <li>${isVi ? '<strong>Tác động của GenAI trong kỹ thuật phần mềm:</strong> Trải nghiệm thực tế cách Amazon Q Developer hỗ trợ tự động hóa chuyển đổi mã nguồn và kiểm toán an ninh, mở ra phương thức làm việc mới hiệu quả và chính xác hơn.' : '<strong>Impact of GenAI in engineering:</strong> Witnessed how Amazon Q Developer automates runtime modernization and security auditing, redefining developer productivity.'}</li>
+          </ul>
+
+          <h3 style="font-size:15px; font-weight:700; color:#0F172A; margin:24px 0 8px 0;">
+            ${isVi ? '2. Đóng góp cá nhân (Personal Contributions)' : '2. Personal Contributions'}
+          </h3>
+          <ul>
+            <li>${isVi ? 'Tham dự đầy đủ và nghiêm túc toàn bộ thời lượng hội thảo với tư cách Người tham dự (Attendee) từ 08:00 đến 17:00 ngày 29/09/2026 tại tầng 26, Bitexco Financial Tower.' : 'Participated fully in the workshop as an attendee from 08:00 AM to 05:00 PM on September 29, 2026, at the 26th Floor of Bitexco Financial Tower.'}</li>
+            <li>${isVi ? 'Chăm chú theo dõi các bài trình bày kỹ thuật chuyên sâu, ghi chép chi tiết phương pháp luận phân tách kiến trúc và tham gia thảo luận tại phiên Q&amp;A cùng các chuyên gia AWS.' : 'Attentively followed technical presentations, took comprehensive architectural notes, and actively participated in technical Q&amp;A discussions with AWS specialists.'}</li>
+            <li>${isVi ? 'Hệ thống hóa, phân tích và tài liệu hóa 4 bước thiết kế DDD, 3 trụ cột chuyển đổi Microservices và các mẫu luồng Event-Driven vào bài báo cáo thu hoạch cá nhân.' : 'Consolidated, analyzed, and documented the 4-step DDD framework, 3 microservices pillars, and event-driven patterns into an individual technical report.'}</li>
+            <li>${isVi ? 'Tổng hợp toàn bộ kiến thức tiếp thu vào báo cáo thu hoạch kỹ thuật trong chương trình thực tập First Cloud AI Journey, phục vụ trực tiếp cho quá trình nghiên cứu và định hướng nghề nghiệp Cloud Solutions Architect.' : 'Synthesized acquired knowledge into a structured harvest report for the First Cloud AI Journey program to support cloud solutions architecture learning.'}</li>
+            <li>${isVi ? 'Xác định các cơ hội và phương án ứng dụng kiến trúc Microservices và Event-Driven vào các bài toán kỹ thuật thực tế trong quá trình học tập và đồ án tốt nghiệp.' : 'Identified practical opportunities to implement microservices, asynchronous decoupling, and event-driven patterns in academic coursework and final capstone projects.'}</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION VI – CONCLUSION -->
+      <section class="report-section-block">
+        <div class="report-section-header">
+          <span class="report-section-num">06</span>
+          <h2 class="report-section-title">${isVi ? 'VI. Kết luận (Conclusion)' : 'VI. Conclusion'}</h2>
+        </div>
+        <div class="report-prose">
+          <p>${isVi
+            ? 'Sự kiện First Cloud AI Journey ngày 29/09/2026 đã mang lại những góc nhìn kiến trúc sâu rộng và thực tiễn về lộ trình chuyển đổi ứng dụng sang đám mây.'
+            : 'The First Cloud AI Journey event on September 29, 2026, provided profound architectural insights into enterprise cloud application modernization.'}</p>
+
+          <p>${isVi
+            ? 'Sự kết hợp giữa phương pháp thiết kế phân rã nghiệp vụ Domain-Driven Design, kiến trúc giao tiếp bất đồng bộ Event-Driven và năng lực tự động hóa của các trợ lý GenAI như Amazon Q Developer chính là chìa khóa giúp doanh nghiệp xây dựng những hệ thống có tính sẵn sàng cao, co giãn linh hoạt và tối ưu chi phí vận hành.'
+            : 'The convergence of Domain-Driven Design decomposition, asynchronous Event-Driven messaging, and GenAI-powered automation with Amazon Q Developer represents the modern paradigm for architecting resilient, scalable, and cost-effective enterprise systems.'}</p>
+
+          <div class="report-quote-box" style="border-left-color: #171717; font-weight:700; color:#171717; font-size:15px; margin:22px 0;">
+            ${isVi
+              ? '“Hiện đại hóa không chỉ là việc chuyển mã nguồn lên đám mây, mà là cuộc cách mạng về tư duy kiến trúc — nơi tính module hóa, kiến trúc hướng sự kiện và tự động hóa AI hội tụ để kiến tạo các hệ thống bền vững.”'
+              : '“Modernization is not merely lifting code to the cloud, but an architectural paradigm shift — where modularity, event-driven decoupling, and AI automation converge to build resilient enterprise systems.”'}
+          </div>
+
+          <!-- Tags -->
+          <div style="margin:24px 0 10px 0; font-size:13px; color:#555555; line-height:1.8; word-spacing:4px; border-top:1px solid #E5E5E5; padding-top:16px;">
+            #AWS #FirstCloudAIJourney #AppMod #Microservices #DDD #EventDriven #AmazonQ #DatabaseModernization #Serverless
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom Navigation Actions -->
+      <div class="report-bottom-actions">
+        <button type="button" class="btn btn-outline" onclick="navigateTo('events')">
+          <span>${escapeHtml(t.btnBack)}</span>
+        </button>
+        <button type="button" class="btn btn-primary" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+          <span>↑ ${isVi ? 'Lên đầu trang' : 'Back to top'}</span>
+        </button>
+      </div>
+    </article>
+  `;
+}
+
+
+function renderMeetupEventDetail(container, lang = 'vi') {
+  const isVi = lang === 'vi';
+
+  const t = {
+    breadcrumbEvents: isVi ? "Sự kiện tham gia" : "Events Participated",
+    breadcrumbCurrent: isVi ? "Sự kiện 2 - First Cloud AI Journey Meetup (24/10/2026)" : "Event 2 - First Cloud AI Journey Meetup (October 24, 2026)",
+    btnBack: isVi ? "← Quay lại sự kiện" : "← Back to Events",
+    badgeReport: isVi ? "BÁO CÁO THU HOẠCH SỰ KIỆN" : "EVENT HARVEST REPORT",
+    badgeCategory: "Cloud Computing, Cloud Security & AI Agents",
+    badgeOfficial: isVi ? "Chính thức • AWS FCAJ" : "Official • AWS FCAJ",
+    title: "FIRST CLOUD AI JOURNEY MEETUP",
+    subtitle: isVi 
+      ? "Khám phá AWS Cloud, Cloud Security và Tương lai của AI Agents"
+      : "Exploring AWS Cloud, Cloud Security, and the Future of AI Agents",
+    eventName: "First Cloud AI Journey Meetup – 24/10/2026",
+    dateTime: isVi ? "08:00 – 12:00, 24/10/2026" : "08:00 AM – 12:00 PM, October 24, 2026",
+    location: isVi ? "Tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam" : "26th Floor, Bitexco Financial Tower, Ho Chi Minh City, Vietnam",
+    role: isVi ? "Người tham dự (Attendee)" : "Attendee",
+  };
+
+  container.innerHTML = `
+    <article class="event-report-article">
+      <!-- Breadcrumb & Back Navigation Bar -->
+      <nav class="report-nav-bar" aria-label="Breadcrumb">
+        <div class="report-breadcrumbs">
+          <a href="#/events" onclick="event.preventDefault(); navigateTo('events');">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            <span>${escapeHtml(t.breadcrumbEvents)}</span>
+          </a>
+          <span class="sep">/</span>
+          <span class="current">${escapeHtml(t.breadcrumbCurrent)}</span>
+        </div>
+        <button type="button" class="btn btn-outline btn-sm" onclick="navigateTo('events')">
+          <span>${escapeHtml(t.btnBack)}</span>
+        </button>
+      </nav>
+
+      <!-- Hero Header -->
+      <header class="report-hero">
+        <div class="report-hero-badge-row">
+          <span class="badge badge-purple">${escapeHtml(t.badgeReport)}</span>
+          <span class="badge badge-blue">${escapeHtml(t.badgeCategory)}</span>
+          <span class="badge badge-gray">${escapeHtml(t.badgeOfficial)}</span>
+        </div>
+        <h1 class="report-main-title">${escapeHtml(t.title)}</h1>
+        <p class="report-main-subtitle">${escapeHtml(t.subtitle)}</p>
+
+        <!-- Standardized Compact Event Metadata Strip -->
+        <div class="report-meta-compact-strip">
+          <div class="meta-strip-item">
+            <span class="meta-strip-label">${isVi ? 'Tên sự kiện:' : 'Event Name:'}</span>
+            <span class="meta-strip-val"><strong>${escapeHtml(t.eventName)}</strong></span>
+          </div>
+          <div class="meta-strip-item">
+            <span class="meta-strip-label">${isVi ? 'Thời gian:' : 'Date & Time:'}</span>
+            <span class="meta-strip-val">${escapeHtml(t.dateTime)}</span>
+          </div>
+          <div class="meta-strip-item">
+            <span class="meta-strip-label">${isVi ? 'Địa điểm:' : 'Location:'}</span>
+            <span class="meta-strip-val">${escapeHtml(t.location)}</span>
+          </div>
+          <div class="meta-strip-item">
+            <span class="meta-strip-label">${isVi ? 'Vai trò:' : 'Role:'}</span>
+            <span class="meta-strip-val"><strong>${escapeHtml(t.role)}</strong></span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Event 2 Check-in Photo -->
+      <div id="event-2-cover-wrap" class="event-uploaded-photo-box" style="margin: 20px 0 28px 0;">
+        <div class="event-uploaded-img-wrap" onclick="openBlogImageModal('assets/images/events/event-2.jpg', '${escapeHtml(t.eventName)}')" title="${isVi ? 'Nhấp để xem ảnh độ nét cao (HD)' : 'Click to view high-definition image'}">
+          <img id="event-2-cover-img"
+               src="assets/images/events/event-2.jpg"
+               alt="${escapeHtml(t.eventName)}"
+               class="event-uploaded-img"
+               onload="const w = document.getElementById('event-2-cover-wrap'); if (w) w.style.display='block';"
+               onerror="const w = document.getElementById('event-2-cover-wrap'); if (w) w.style.display='none';"
+               loading="eager" />
+        </div>
+        <div style="font-size: 13px; color: #555555; margin-top: 10px; font-style: italic;">
+          ${isVi ? 'Ảnh check-in thực tế của sinh viên tại sự kiện First Cloud AI Journey Meetup (24/10/2026) – Tầng 26, Bitexco Financial Tower' : 'Authentic attendee check-in photograph at First Cloud AI Journey Meetup (October 24, 2026) – 26th Floor, Bitexco Financial Tower'}
+        </div>
+      </div>
+
+      <!-- SECTION I – EVENT OVERVIEW -->
+      <section class="report-section-block">
+        <div class="report-section-header">
+          <span class="report-section-num">01</span>
+          <h2 class="report-section-title">${isVi ? 'I. Tổng quan sự kiện (Event Overview)' : 'I. Event Overview'}</h2>
+        </div>
+        <div class="report-prose">
+          <p>${isVi
+            ? 'Vào ngày <strong>24/10/2026</strong>, tôi đã tham dự sự kiện <strong>First Cloud AI Journey Meetup</strong>, được tổ chức từ <strong>08:00 đến 12:00</strong> tại <strong>tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam</strong>.'
+            : 'On <strong>October 24, 2026</strong>, I attended the <strong>First Cloud AI Journey Meetup</strong>, held from <strong>08:00 AM to 12:00 PM</strong> on the <strong>26th floor of Bitexco Financial Tower, Ho Chi Minh City, Vietnam</strong>.'}</p>
           
           <div class="report-quote-box" style="border-left-color: #171717;">
             ${isVi
@@ -5932,38 +6362,34 @@ function renderMeetupEventDetail(container, lang = 'vi') {
         </div>
       </section>
 
-      <!-- SECTION V – PERSONAL REFLECTION -->
+      <!-- SECTION V – LESSONS LEARNED AND PERSONAL CONTRIBUTIONS -->
       <section class="report-section-block">
         <div class="report-section-header">
           <span class="report-section-num">05</span>
-          <h2 class="report-section-title">${isVi ? 'V. Góc nhìn và Cảm nhận cá nhân (Personal Reflection)' : 'V. Personal Reflection'}</h2>
+          <h2 class="report-section-title">${isVi ? 'V. Bài học rút ra & Đóng góp cá nhân (Lessons Learned & Personal Contributions)' : 'V. Lessons Learned and Personal Contributions'}</h2>
         </div>
         <div class="report-prose">
-          <p>${isVi
-            ? 'Tham dự sự kiện First Cloud AI Journey Meetup đã mang lại cho tôi cơ hội quý báu để kết nối những kiến thức học thuật tại nhà trường với thực tiễn ứng dụng sinh động trong ngành công nghiệp điện toán đám mây.'
-            : 'Attending the First Cloud AI Journey Meetup provided me with a valuable opportunity to connect academic knowledge with practical industry experience.'}</p>
           
-          <div class="report-quote-box" style="font-style:normal;">
-            ${isVi
-              ? '“Lắng nghe chia sẻ từ các kỹ sư giàu kinh nghiệm và chuyên gia công nghệ giúp tôi nhận thức sâu sắc rằng việc kiến tạo các hệ thống đám mây và AI không chỉ đơn thuần là nắm vững từng dịch vụ riêng lẻ. Nó đòi hỏi tư duy kiến trúc toàn diện, ý thức an ninh thường trực, năng lực tối ưu vận hành và tinh thần không ngừng cải tiến.”'
-              : '“Listening to experienced engineers and technology leaders helped me realize that building cloud and AI systems involves more than understanding individual services. It also requires architectural thinking, security awareness, operational efficiency, and continuous improvement.”'}
-          </div>
+          <h3 style="font-size:15px; font-weight:700; color:#0F172A; margin:16px 0 8px 0;">
+            ${isVi ? '1. Bài học rút ra (Lessons Learned)' : '1. Lessons Learned'}
+          </h3>
+          <ul>
+            <li>${isVi ? '<strong>Tối ưu hóa độ trễ trong Voice AI:</strong> Thấu hiểu tầm quan trọng sống còn của việc tối ưu hóa độ trễ phản hồi trong các hệ thống Voice AI để duy trì nhịp giao tiếp tự nhiên và trải nghiệm mượt mà.' : '<strong>Latency optimization in Voice AI:</strong> Understand the importance of latency optimization in Voice AI systems to maintain natural conversation turn-taking.'}</li>
+            <li>${isVi ? '<strong>Lợi ích của chia sẻ tài nguyên và quản trị tập trung:</strong> Nhận thức rõ ràng các lợi ích của cơ chế chia sẻ tài nguyên tập trung qua AWS RAM và quản trị đa tài khoản với AWS Organizations, SCPs.' : '<strong>Centralized resource sharing & governance:</strong> Recognize the benefits of centralized resource sharing and cloud governance across multi-account environments.'}</li>
+            <li>${isVi ? '<strong>Tích hợp bảo mật vào quy trình phát triển phần mềm:</strong> Hiểu sâu sắc tầm quan trọng của việc đưa các bước kiểm tra an ninh vào giai đoạn sớm nhất của chu trình SDLC (Shift-Left Security).' : '<strong>Integrating security into SDLC:</strong> Understand the importance of integrating security into the software development lifecycle rather than waiting for production.'}</li>
+            <li>${isVi ? '<strong>Vai trò của Runtime và Memory trong AI Agent:</strong> Nhận biết vai trò quyết định của môi trường thực thi (Runtime) và năng lực quản lý bộ nhớ ngắn/dài hạn đối với các AI Agent trong sản xuất.' : '<strong>Role of Runtime and Memory in AI Agents:</strong> Recognize the role of Runtime and Memory in production AI Agents.'}</li>
+            <li>${isVi ? '<strong>Ranh giới bảo mật trong tự động hóa AI:</strong> Thấu hiểu sự cần thiết của các ranh giới an toàn (Security Guardrails) nhằm ngăn chặn AI Agent tự ý thực hiện các hành vi nguy hiểm hoặc phá hoại.' : '<strong>Security guardrails in AI automation:</strong> Understand the importance of security guardrails in AI automation to prevent unauthorized or destructive operations.'}</li>
+          </ul>
 
-          <p>${isVi
-            ? 'Tôi đặc biệt quan tâm và hứng thú với các phiên thảo luận xoay quanh kiểm thử thâm nhập tự động, cơ chế quản trị truy cập tài nguyên đám mây và các ranh giới an ninh phòng hộ cho AI.'
-            : 'I was particularly interested in the sessions related to automated penetration testing, cloud access management, and AI security guardrails.'}</p>
-
-          <p>${isVi
-            ? 'Trong số năm phiên chia sẻ, giải pháp <strong>Kiro Crew</strong> để lại cho tôi ấn tượng sâu sắc nhất bởi tính thực tiễn vượt bậc: chứng minh sinh động cách các AI Agent có thể hỗ trợ phát triển phần mềm liên tục, tự động rà soát mã nguồn và kiểm tra hệ thống trong khi vẫn bảo toàn nguyên vẹn các cơ chế an ninh thiết yếu.'
-            : 'Among the five sessions, Kiro Crew was the most impressive because it demonstrated how AI Agents could support continuous software development, automated code review, and system inspection while maintaining essential security controls.'}</p>
-
-          <p>${isVi
-            ? 'Sự kiện cũng truyền cảm hứng giúp tôi tự tin hơn khi giao tiếp với các chuyên gia trong ngành, tích cực hòa mình vào các hoạt động cộng đồng và liên tục nâng cao trình độ chuyên môn của bản thân.'
-            : 'The event also encouraged me to become more confident in communicating with technology professionals, actively participate in community activities, and continuously improve my technical knowledge.'}</p>
-
-          <p>${isVi
-            ? 'Tôi xin bày tỏ lòng cảm ơn chân thành đến các diễn giả và ban tổ chức đã cởi mở chia sẻ những bài học thực chiến giá trị và tạo dựng một môi trường học tập vô cùng ý nghĩa cho sinh viên cũng như những người đam mê công nghệ.'
-            : 'I sincerely appreciate the speakers and organizers for sharing their practical experiences and creating a meaningful learning environment for students and technology enthusiasts.'}</p>
+          <h3 style="font-size:15px; font-weight:700; color:#0F172A; margin:24px 0 8px 0;">
+            ${isVi ? '2. Đóng góp cá nhân (Personal Contributions)' : '2. Personal Contributions'}
+          </h3>
+          <ul>
+            <li>${isVi ? 'Tham gia sự kiện meetup với tư cách người tham dự (Attendee) đầy đủ và nghiêm túc.' : 'Participated in the meetup as an attendee.'}</li>
+            <li>${isVi ? 'Tích cực theo dõi các bài thuyết trình chuyên sâu và các phiên demo kỹ thuật trực tiếp.' : 'Followed technical presentations and live demonstrations.'}</li>
+            <li>${isVi ? 'Hệ thống hóa và đúc kết toàn bộ kiến thức chuyên môn tiếp thu được vào báo cáo sự kiện cá nhân.' : 'Consolidated technical knowledge into a personal event report.'}</li>
+            <li>${isVi ? 'Xác định các cơ hội ứng dụng kiến thức về an ninh đám mây và tự động hóa AI vào các hoạt động học tập và dự án tương lai.' : 'Identified opportunities to apply cloud security and AI automation concepts in future learning activities.'}</li>
+          </ul>
         </div>
       </section>
 
@@ -6015,12 +6441,10 @@ function renderMeetupEventDetail(container, lang = 'vi') {
 
 function renderEnterpriseAIEventDetail(container, lang = 'vi') {
   const isVi = lang === 'vi';
-  const savedPhoto = localStorage.getItem('fcaj_event_checkin_photo_enterprise-ai-on-aws-cloud');
-  const hasAuthenticPhoto = Boolean(savedPhoto);
 
   const t = {
     breadcrumbEvents: isVi ? "Sự kiện tham gia" : "Events Participated",
-    breadcrumbCurrent: isVi ? "Sự kiện 3 - Enterprise AI trên AWS Cloud" : "Event 3 - Enterprise AI on AWS Cloud",
+    breadcrumbCurrent: isVi ? "Sự kiện 3 - Enterprise AI on AWS Cloud (14/11/2026)" : "Event 3 - Enterprise AI on AWS Cloud (November 14, 2026)",
     btnBack: isVi ? "← Quay lại sự kiện" : "← Back to Events",
     badgeReport: isVi ? "BÁO CÁO THU HOẠCH SỰ KIỆN" : "EVENT HARVEST REPORT",
     badgeCategory: "Artificial Intelligence & Cloud Computing",
@@ -6029,60 +6453,11 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
     subtitle: isVi 
       ? "Chiến lược chuyển đổi từ mô hình AI thử nghiệm sang hệ thống sản xuất cấp doanh nghiệp vận hành trên AWS Cloud"
       : "From AI Prototype to Production: Deploying and Operating Enterprise AI on AWS Cloud",
-    metaTitle: isVi ? "Thông tin sự kiện chính thức" : "Official Event Record",
-    lblEventName: isVi ? "Tên sự kiện" : "Event Name",
-    eventName: isVi 
-      ? "Sự kiện 3 - Enterprise AI trên AWS Cloud: Từ Prototype đến Production"
-      : "Event 3 - Enterprise AI on AWS Cloud: From Prototype to Production",
-    lblDateTime: isVi ? "Ngày & Giờ" : "Date & Time",
-    dateTime: isVi ? "Thông tin đang cập nhật" : "To be updated",
-    lblLocation: isVi ? "Địa điểm" : "Location",
-    location: isVi ? "AWS Cloud Event / Trực tuyến" : "AWS Cloud Event / Online",
-    lblRole: isVi ? "Vai trò tham gia" : "Role",
+    eventName: "Enterprise AI on AWS Cloud – 14/11/2026",
+    dateTime: isVi ? "09:00 – 12:00, 14/11/2026" : "09:00 AM – 12:00 PM, November 14, 2026",
+    location: isVi ? "Tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam" : "26th Floor, Bitexco Financial Tower, Ho Chi Minh City, Vietnam",
     role: isVi ? "Người tham dự (Attendee)" : "Attendee",
-    lblSpeakers: isVi ? "Diễn giả" : "Speakers",
-    speakers: isVi ? "Chuyên gia AWS & Khách mời" : "AWS Specialists & Guest Speakers",
-    lblTopic: isVi ? "Chủ đề" : "Topic",
-    topic: "From AI Prototype to Production: Deploying and Operating Enterprise AI on AWS Cloud",
-    lblCategory: isVi ? "Danh mục" : "Category",
-    category: "Artificial Intelligence & Cloud Computing",
-    metaNotice: isVi
-      ? "* Ghi nhận báo cáo chuyên môn theo nội dung phiên chia sẻ chuyên sâu về Enterprise AI trên AWS Cloud. Các thông tin thời gian, diễn giả và địa điểm chưa công bố chính thức được bảo lưu theo nguyên tắc trung thực."
-      : "* Official technical harvest report recorded from the deep-dive enterprise AI session. Unconfirmed details are strictly preserved without speculation.",
-    complianceTitle: isVi ? "Khung 7 Tiêu chí Báo cáo Sự kiện của Doanh nghiệp" : "Company 7 Reporting Criteria Verification Framework",
-    crit1: isVi ? "Tên sự kiện: Enterprise AI on AWS Cloud" : "Event Name: Enterprise AI on AWS Cloud",
-    crit2: isVi ? "Thời gian: Thông tin đang cập nhật" : "Time: To be updated",
-    crit3: isVi ? "Địa điểm: AWS Cloud Event" : "Location: AWS Cloud Event",
-    crit4: isVi ? "Vai trò: Người tham dự (Attendee)" : "Role: Attendee",
-    crit5: isVi ? "Nội dung tiếp thu: 4 Trụ cột Vận hành, Elastic AWS Scaling & Multi-Agent" : "Key Content: 4 Production Pillars, Elastic AWS Scaling & Multi-Agent",
-    crit6: isVi ? "Hình ảnh check-in rõ mặt (Đang chờ cập nhật)" : "Check-in Photo (Pending Official Upload)",
-    crit7: isVi ? "Bài học rút ra & Đóng góp cá nhân" : "Lessons Learned & Personal Reflection",
   };
-
-  const photoSectionHtml = hasAuthenticPhoto ? `
-    <div class="event-uploaded-photo-box">
-      <div class="event-uploaded-img-wrap" onclick="window.open('${savedPhoto}', '_blank')">
-        <img src="${savedPhoto}" alt="${escapeHtml(t.title)}" class="event-uploaded-img" />
-      </div>
-    </div>
-  ` : `
-    <div class="photo-pending-box">
-      <div class="photo-pending-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
-          <circle cx="12" cy="13" r="4"/>
-        </svg>
-      </div>
-      <span class="photo-pending-badge">${isVi ? '⏳ Đang chờ cập nhật ảnh chính thức' : '⏳ Pending Official Upload'}</span>
-      <h3 class="photo-pending-title" style="margin-top:12px;">${isVi ? 'Hình ảnh Check-in tham gia sự kiện' : 'Event Participant Check-in Photo'}</h3>
-      <p class="photo-pending-desc">${isVi
-        ? 'Theo tiêu chí báo cáo số 6 của công ty (Hình ảnh check-in rõ mặt), khu vực này sẽ hiển thị ảnh check-in thực tế của sinh viên tại sự kiện sau khi có ảnh chính thức. Hệ thống tuân thủ nguyên tắc không sử dụng ảnh giả lập nhằm bảo đảm tính trung thực và minh bạch.'
-        : 'In accordance with Company Reporting Criterion 6 (Clear participant check-in photo), this section is reserved for the authentic check-in photo of the student attending the event. In adherence to transparency and integrity standards, no artificial or unverified images are used.'}</p>
-      <p style="font-size:12px; color:#92400E; margin:0; font-style:italic;">${isVi
-        ? 'Thư mục tĩnh assets/images/events/ đã được khởi tạo sẵn sàng tiếp nhận ảnh thẻ và ảnh check-in thực tế.'
-        : 'Static folder assets/images/events/ is prepared to host authentic event check-in photographs.'}</p>
-    </div>
-  `;
 
   container.innerHTML = `
     <article class="event-report-article">
@@ -6110,21 +6485,41 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
         </div>
         <h1 class="report-main-title">${escapeHtml(t.title)}</h1>
         <p class="report-main-subtitle">${escapeHtml(t.subtitle)}</p>
+
+        <!-- Standardized Compact Event Metadata Strip -->
+        <div class="report-meta-compact-strip">
+          <div class="meta-strip-item">
+            <span class="meta-strip-label">${isVi ? 'Tên sự kiện:' : 'Event Name:'}</span>
+            <span class="meta-strip-val"><strong>${escapeHtml(t.eventName)}</strong></span>
+          </div>
+          <div class="meta-strip-item">
+            <span class="meta-strip-label">${isVi ? 'Thời gian:' : 'Date & Time:'}</span>
+            <span class="meta-strip-val">${escapeHtml(t.dateTime)}</span>
+          </div>
+          <div class="meta-strip-item">
+            <span class="meta-strip-label">${isVi ? 'Địa điểm:' : 'Location:'}</span>
+            <span class="meta-strip-val">${escapeHtml(t.location)}</span>
+          </div>
+          <div class="meta-strip-item">
+            <span class="meta-strip-label">${isVi ? 'Vai trò:' : 'Role:'}</span>
+            <span class="meta-strip-val"><strong>${escapeHtml(t.role)}</strong></span>
+          </div>
+        </div>
       </header>
 
-      <!-- Event 3 Cover Image (Auto-displays upon upload, gracefully hidden with zero broken icon if pending) -->
-      <div id="event-3-cover-wrap" class="event-uploaded-photo-box" style="display: none; margin: 20px 0 28px 0;">
-        <div class="event-uploaded-img-wrap" onclick="openBlogImageModal('assets/images/events/event-3.jpg', '${isVi ? 'Sự kiện 3 – Enterprise AI on AWS Cloud' : 'Event 3 – Enterprise AI on AWS Cloud'}')" title="${isVi ? 'Nhấp để xem ảnh độ nét cao (HD)' : 'Click to view high-definition image'}">
+      <!-- Event 3 Check-in Photo -->
+      <div id="event-3-cover-wrap" class="event-uploaded-photo-box" style="margin: 20px 0 28px 0;">
+        <div class="event-uploaded-img-wrap" onclick="openBlogImageModal('assets/images/events/event-3.jpg', '${escapeHtml(t.eventName)}')" title="${isVi ? 'Nhấp để xem ảnh độ nét cao (HD)' : 'Click to view high-definition image'}">
           <img id="event-3-cover-img"
                src="assets/images/events/event-3.jpg"
-               alt="${isVi ? 'Hình ảnh sự kiện Event 3 – Enterprise AI on AWS Cloud' : 'Event 3 – Enterprise AI on AWS Cloud event photograph'}"
+               alt="${escapeHtml(t.eventName)}"
                class="event-uploaded-img"
                onload="const w = document.getElementById('event-3-cover-wrap'); if (w) w.style.display='block';"
                onerror="const w = document.getElementById('event-3-cover-wrap'); if (w) w.style.display='none';"
                loading="eager" />
         </div>
-        <div style="font-size: 13px; color: #555555; margin-top: 12px; font-style: italic;">
-          ${isVi ? 'Hình ảnh sự kiện: From AI Prototype to Production – Enterprise AI on AWS Cloud' : 'Event Photograph: From AI Prototype to Production – Enterprise AI on AWS Cloud'}
+        <div style="font-size: 13px; color: #555555; margin-top: 10px; font-style: italic;">
+          ${isVi ? 'Ảnh check-in thực tế của sinh viên tại sự kiện Enterprise AI on AWS Cloud (14/11/2026) – Tầng 26, Bitexco Financial Tower' : 'Authentic attendee check-in photograph at Enterprise AI on AWS Cloud (November 14, 2026) – 26th Floor, Bitexco Financial Tower'}
         </div>
       </div>
 
@@ -6136,14 +6531,18 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
         </div>
         <div class="report-prose">
           <p>${isVi
-            ? 'Sự kiện <strong>Event 3 – Enterprise AI on AWS Cloud</strong> tập trung giải quyết bài toán cốt lõi và thách thức hàng đầu hiện nay của cộng đồng công nghệ: làm thế nào để chuyển dịch thành công một giải pháp Trí tuệ nhân tạo (AI) từ phiên bản thử nghiệm sơ khai (prototype) sang hệ thống sản xuất cấp doanh nghiệp (production-ready enterprise system).'
-            : 'Event 3 focused on the paramount challenges of transitioning artificial intelligence from an experimental prototype into a production-ready enterprise system.'}</p>
+            ? 'Vào ngày <strong>14/11/2026</strong>, tôi đã tham dự sự kiện <strong>Enterprise AI on AWS Cloud</strong>, được tổ chức từ <strong>09:00 đến 12:00</strong> tại <strong>tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam</strong>.'
+            : 'On <strong>November 14, 2026</strong>, I attended the <strong>Enterprise AI on AWS Cloud</strong> event, held from <strong>09:00 AM to 12:00 PM</strong> on the <strong>26th Floor of Bitexco Financial Tower, Ho Chi Minh City, Vietnam</strong>.'}</p>
           
           <div class="report-quote-box" style="border-left-color: #171717;">
             ${isVi
-              ? '“Một mô hình AI hoạt động xuất sắc trong môi trường thử nghiệm có kiểm soát chưa chắc đã vận hành hiệu quả, ổn định và bền vững khi phục vụ hàng nghìn hoặc hàng triệu người dùng thực tế.”'
-              : '“An AI model that performs well in a controlled experimental environment may not necessarily operate effectively when serving thousands or millions of users.”'}
+              ? '“Sự kiện tập trung giải quyết bài toán cốt lõi và thách thức hàng đầu của doanh nghiệp: làm thế nào để chuyển dịch thành công một giải pháp Trí tuệ nhân tạo (AI) từ phiên bản thử nghiệm sơ khai (prototype) sang hệ thống sản xuất cấp doanh nghiệp (production-ready enterprise system).”'
+              : '“Event 3 focused on the paramount challenges of transitioning artificial intelligence from an experimental prototype into a production-ready enterprise system.”'}
           </div>
+
+          <p>${isVi
+            ? 'Một mô hình AI hoạt động xuất sắc trong môi trường thử nghiệm có kiểm soát chưa chắc đã vận hành hiệu quả, ổn định và bền vững khi phục vụ hàng nghìn hoặc hàng triệu người dùng thực tế.'
+            : 'An AI model that performs well in a controlled experimental environment may not necessarily operate effectively when serving thousands or millions of users.'}</p>
 
           <p>${isVi
             ? 'Phiên chia sẻ nhấn mạnh tầm quan trọng đặc biệt của 6 yếu tố nền tảng bao quanh mô hình: <strong>Bảo mật (Security)</strong>, <strong>Độ tin cậy (Reliability)</strong>, <strong>Khả năng mở rộng (Scalability)</strong>, <strong>Tối ưu chi phí (Cost Optimization)</strong>, <strong>Đường ống dữ liệu (Data Pipelines)</strong> và <strong>Giám sát vận hành (Monitoring)</strong>. Đồng thời, sự kiện làm sáng tỏ vai trò chiến lược của nền tảng <strong>AWS Cloud</strong> trong việc cung cấp hạ tầng tính toán, dịch vụ serverless và công cụ quản trị giúp doanh nghiệp hiện thực hóa các giải pháp AI ở quy mô lớn.'
@@ -6176,7 +6575,7 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
       <section class="report-section-block">
         <div class="report-section-header">
           <span class="report-section-num">03</span>
-          <h2 class="report-section-title">${isVi ? 'III. Các chủ đề trọng tâm & Kiến thức tiếp thu' : 'III. Key Topics and Knowledge Acquired'}</h2>
+          <h2 class="report-section-title">${isVi ? 'III. Các chủ đề trọng tâm & Kiến thức tiếp thu (Key Topics and Knowledge Acquired)' : 'III. Key Topics and Knowledge Acquired'}</h2>
         </div>
         <div class="report-prose">
           
@@ -6202,503 +6601,170 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
                   <td>${isVi ? 'Chuỗi nhà hàng quy chuẩn (Restaurant Chain)' : 'Restaurant Chain'}</td>
                 </tr>
                 <tr>
-                  <td><strong>${isVi ? 'Mục tiêu chính (Main Objective)' : 'Main Objective'}</strong></td>
-                  <td>${isVi ? 'Độ chính xác của mô hình (Accuracy)' : 'Accuracy'}</td>
-                  <td>${isVi ? 'Giá trị kinh doanh thực tế (Business Value)' : 'Business Value'}</td>
+                  <td><strong>${isVi ? 'Mục tiêu tối thượng' : 'Primary Goal'}</strong></td>
+                  <td>${isVi ? 'Độ chính xác cao nhất trên tập dữ liệu cố định (Benchmark / Accuracy)' : 'Continuous Business Value, High Availability & High ROI'}</td>
                 </tr>
                 <tr>
-                  <td><strong>${isVi ? 'Đặc thù dữ liệu (Data)' : 'Data'}</strong></td>
-                  <td>${isVi ? 'Tập dữ liệu tĩnh, sạch & đóng gói (Clean & Fixed)' : 'Clean and fixed datasets'}</td>
-                  <td>${isVi ? 'Dữ liệu thực tế, liên tục biến động (Real & Continuously changing)' : 'Real and continuously changing data'}</td>
+                  <td><strong>${isVi ? 'Môi trường vận hành' : 'Operating Environment'}</strong></td>
+                  <td>${isVi ? 'Môi trường thử nghiệm tĩnh, có kiểm soát, tài nguyên biệt lập' : 'Dynamic, Unpredictable Traffic, Real-time Customer Facing'}</td>
                 </tr>
                 <tr>
-                  <td><strong>${isVi ? 'Quy mô người dùng (Users)' : 'Users'}</strong></td>
-                  <td>${isVi ? 'Số lượng hạn chế trong nghiên cứu (Limited users)' : 'A limited number of users'}</td>
-                  <td>${isVi ? 'Hàng nghìn đến hàng triệu người dùng đồng thời' : 'Potentially millions of users'}</td>
+                  <td><strong>${isVi ? 'Quy chuẩn an ninh' : 'Security Standard'}</strong></td>
+                  <td>${isVi ? 'Tối thiểu, ưu tiên tốc độ ra kết quả nghiên cứu' : 'Strict Compliance (GDPR, HIPAA, SOC 2), IAM, Encryption at Rest/Transit'}</td>
                 </tr>
                 <tr>
-                  <td><strong>${isVi ? 'Phương thức vận hành (Operation)' : 'Operation'}</strong></td>
-                  <td>${isVi ? 'Thử nghiệm hoặc chạy một lần (Experimental / One-off)' : 'Experimental or one-off execution'}</td>
-                  <td>${isVi ? 'Vận hành liên tục trong sản xuất (Continuous production)' : 'Continuous production operation'}</td>
-                </tr>
-                <tr>
-                  <td><strong>${isVi ? 'Ưu tiên hàng đầu (Priority)' : 'Priority'}</strong></td>
-                  <td>${isVi ? 'Hiệu năng mô hình (Model performance)' : 'Model performance'}</td>
-                  <td>${isVi ? 'Giá trị nghiệp vụ & Hiệu quả vận hành' : 'Business value and operational efficiency'}</td>
+                  <td><strong>${isVi ? 'Chi phí vận hành' : 'Operational Cost'}</strong></td>
+                  <td>${isVi ? 'Chi trả một lần theo đợt huấn luyện nghiên cứu' : 'Continuous Cost per Token, Elastic Scaling, Budget Governance'}</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <p>${isVi
-            ? 'Phép so sánh làm sáng tỏ một chân lý quan trọng trong kỹ thuật phần mềm: <em>Độ chính xác của mô hình đơn thuần không thể đảm bảo sự thành công của một sản phẩm AI doanh nghiệp</em>. Hệ thống sản xuất bắt buộc phải mang lại dịch vụ đáng tin cậy, an toàn thông tin và tạo ra giá trị kinh tế lâu dài.'
-            : 'The comparison demonstrates that model accuracy alone is insufficient for building a successful enterprise AI product. Production systems must also deliver reliable services and sustainable business value.'}</p>
+          <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
           <!-- III.2 -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:32px 0 10px 0;">2. Bốn thành phần nền tảng của hệ thống AI (Fundamental Components of an AI System)</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">2. 4 Thành phần nền tảng của hệ thống AI (4 Fundamental Components of an AI System)</h3>
           <p>${isVi
-            ? 'Một hệ thống AI hoàn chỉnh được cấu thành từ 4 thành phần nền tảng liên kết chặt chẽ theo chuỗi giá trị:'
-            : 'An AI-powered system consists of four fundamental components connected in a value chain:'}</p>
-          
+            ? 'Một hệ thống AI toàn diện trong doanh nghiệp được cấu thành từ chuỗi mắt xích liên kết chặt chẽ gồm 4 thành phần:'
+            : 'An enterprise AI system relies on an interconnected 4-part value chain:'}</p>
+
+          <div class="minimal-formula-box" style="text-align: center; font-weight: 600; overflow-x: auto;">
+            ${isVi 
+              ? 'Dữ liệu (Data) → Mô hình (Model) → Tính năng nghiệp vụ (Feature) → Người dùng (User)'
+              : 'Data → Model → Feature → User'}
+          </div>
+
           <ul>
-            <li><strong>Data (${isVi ? 'Dữ liệu' : 'Data'}):</strong> ${isVi ? 'Cung cấp nguồn thông tin đầu vào cần thiết cho mô hình AI xử lý.' : 'Provides the information required by the AI model.'}</li>
-            <li><strong>Model (${isVi ? 'Mô hình' : 'Model'}):</strong> ${isVi ? 'Tiếp nhận dữ liệu đầu vào, thực hiện suy luận logic và sinh kết quả.' : 'Processes input data and generates results.'}</li>
-            <li><strong>Feature (${isVi ? 'Tính năng' : 'Feature'}):</strong> ${isVi ? 'Chuyển hóa đầu ra của mô hình thành chức năng hữu ích trong sản phẩm.' : 'Transforms model outputs into practical product functionality.'}</li>
-            <li><strong>User (${isVi ? 'Người dùng' : 'User'}):</strong> ${isVi ? 'Tương tác trực tiếp và thụ hưởng giá trị từ tính năng tích hợp AI.' : 'Interacts with and benefits from the AI-powered feature.'}</li>
+            <li>${isVi ? '<strong>Dữ liệu (Data):</strong> Nguồn nguyên liệu thô đầu vào quyết định trực tiếp chất lượng đầu ra của mọi thuật toán học máy. Dữ liệu cần được thu thập, làm sạch và gán nhãn bài bản.' : '<strong>Data:</strong> The foundational fuel determining algorithm quality. Requires structured ingestion, curation, and governance.'}</li>
+            <li>${isVi ? '<strong>Mô hình (Model):</strong> Thuật toán máy học đã được huấn luyện hoặc tinh chỉnh (Fine-tuned/Pre-trained LLM) để chuyển hóa dữ liệu đầu vào thành tri thức và dự đoán.' : '<strong>Model:</strong> Machine learning algorithms or foundation LLMs transforming data inputs into predictions and reasoning.'}</li>
+            <li>${isVi ? '<strong>Tính năng (Feature):</strong> Lớp giao diện nghiệp vụ đóng gói mô hình thành chức năng hữu ích (như gợi ý sản phẩm, tóm tắt hợp đồng, phát hiện gian lận).' : '<strong>Feature:</strong> The business application layer encapsulating models into actionable services (e.g. recommendation, document summarization).'}</li>
+            <li>${isVi ? '<strong>Người dùng (User):</strong> Đối tượng trực tiếp thụ hưởng giá trị, đồng thời liên tục cung cấp dữ liệu phản hồi (Feedback Loop) để tinh chỉnh hệ thống ngày càng hoàn thiện.' : '<strong>User:</strong> The end beneficiary whose continuous interactions provide essential feedback loops to iteratively improve the entire system.'}</li>
           </ul>
 
-          <div style="background:#F9F9F9; border:1px solid #E5E5E5; padding:12px 18px; border-radius:6px; font-family:var(--font-mono); font-size:13.5px; font-weight:700; color:#171717; margin:14px 0; text-align:center;">
-            Data → Model → Feature → User
-          </div>
-
-          <!-- Value Chain Diagram -->
-          <div class="arch-diagram-wrapper" style="background:#FFFFFF; border:1px solid #E5E5E5;">
-            <svg class="arch-svg-container" viewBox="0 0 760 110" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <marker id="monoArrowVal" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                  <path d="M 0 1 L 8 5 L 0 9 z" fill="#171717"/>
-                </marker>
-              </defs>
-              <g transform="translate(20, 25)">
-                <rect width="140" height="60" rx="6" fill="#F9F9F9" stroke="#E5E5E5" stroke-width="1.5"/>
-                <text x="70" y="28" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#171717">1. DATA</text>
-                <text x="70" y="46" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#555555">${isVi ? 'Nguyên liệu thông tin' : 'Raw Ingredients'}</text>
-              </g>
-              <line x1="160" y1="55" x2="200" y2="55" stroke="#171717" stroke-width="1.5" marker-end="url(#monoArrowVal)"/>
-              <g transform="translate(210, 25)">
-                <rect width="140" height="60" rx="6" fill="#F9F9F9" stroke="#E5E5E5" stroke-width="1.5"/>
-                <text x="70" y="28" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#171717">2. MODEL</text>
-                <text x="70" y="46" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#555555">${isVi ? 'Bộ não suy luận (Đầu bếp)' : 'Cognitive Chef'}</text>
-              </g>
-              <line x1="350" y1="55" x2="390" y2="55" stroke="#171717" stroke-width="1.5" marker-end="url(#monoArrowVal)"/>
-              <g transform="translate(400, 25)">
-                <rect width="140" height="60" rx="6" fill="#F9F9F9" stroke="#E5E5E5" stroke-width="1.5"/>
-                <text x="70" y="28" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#171717">3. FEATURE</text>
-                <text x="70" y="46" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#555555">${isVi ? 'Tính năng sản phẩm (Món ăn)' : 'Product Feature'}</text>
-              </g>
-              <line x1="540" y1="55" x2="580" y2="55" stroke="#171717" stroke-width="1.5" marker-end="url(#monoArrowVal)"/>
-              <g transform="translate(590, 25)">
-                <rect width="140" height="60" rx="6" fill="#F9F9F9" stroke="#E5E5E5" stroke-width="1.5"/>
-                <text x="70" y="28" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#171717">4. USER</text>
-                <text x="70" y="46" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#555555">${isVi ? 'Khách hàng thụ hưởng' : 'Valued Customer'}</text>
-              </g>
-            </svg>
-            <div class="arch-caption" style="color:#555555;">${isVi ? 'Sơ đồ chuỗi giá trị 4 thành phần nền tảng của hệ thống AI' : '4-Component AI System Value Chain: Data → Model → Feature → User'}</div>
-          </div>
-
-          <p>${isVi
-            ? 'Theo phép ẩn dụ nhà hàng: Dữ liệu là <em>nguyên liệu</em>, Mô hình là <em>đầu bếp</em>, Tính năng là <em>món ăn hoàn chỉnh</em>, và Người dùng là <em>thực khách</em>. AI không nhất thiết phải là một sản phẩm độc lập (standalone product), mà thường được tích hợp linh hoạt vào các ứng dụng hiện có qua các tính năng như: Chatbot chăm sóc khách hàng, hệ thống phát hiện gian lận giao dịch, thuật toán gợi ý sản phẩm cá nhân hóa và công cụ phân tích tự động dữ liệu nghiệp vụ.'
-            : 'Using the restaurant analogy, data represents ingredients, the model represents the chef, the feature represents the completed dish, and the user represents the customer. AI does not always need to be a standalone product; it can be integrated into existing applications through features such as customer service chatbots, fraud detection, recommendation engines, and automated data analytics.'}</p>
+          <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
           <!-- III.3 -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:32px 0 10px 0;">3. Huấn luyện và Suy luận (Training and Inference)</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">3. Phân định Training, Inference, LLMs và Tokens</h3>
           <p>${isVi
-            ? 'Huấn luyện (Training) và Suy luận (Inference) đại diện cho hai giai đoạn hoàn toàn khác biệt trong vòng đời của hệ thống học máy:'
-            : 'Training and Inference represent two distinct stages in the machine learning lifecycle:'}</p>
+            ? 'Hội thảo làm rõ sự khác biệt bản chất giữa hai chu trình tính toán cơ bản trong vòng đời AI:'
+            : 'The workshop clearly delineated the operational differences between the two core computing phases in the AI lifecycle:'}</p>
 
           <div class="minimal-table-wrap">
             <table class="minimal-table">
               <thead>
                 <tr>
                   <th style="width: 20%;">${isVi ? 'Tiêu chí' : 'Criteria'}</th>
-                  <th style="width: 40%;">${isVi ? 'Huấn luyện (Training)' : 'Training'}</th>
-                  <th style="width: 40%;">${isVi ? 'Suy luận (Inference)' : 'Inference'}</th>
+                  <th style="width: 40%;">Training (${isVi ? 'Huấn luyện' : 'Training'})</th>
+                  <th style="width: 40%;">Inference (${isVi ? 'Suy luận' : 'Inference'})</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><strong>${isVi ? 'Mục đích (Purpose)' : 'Purpose'}</strong></td>
-                  <td>${isVi ? 'Dạy mô hình học quy luật từ tập dữ liệu' : 'Teach the model using data'}</td>
-                  <td>${isVi ? 'Sinh dự đoán hoặc phản hồi cho dữ liệu mới' : 'Generate predictions or responses'}</td>
+                  <td><strong>${isVi ? 'Bản chất' : 'Nature'}</strong></td>
+                  <td>${isVi ? 'Dạy mô hình học hỏi từ khối lượng dữ liệu khổng lồ trong quá khứ' : 'Áp dụng mô hình đã học để đưa ra câu trả lời cho yêu cầu mới'}</td>
+                  <td>${isVi ? 'Apply the learned model to answer real-time incoming queries' : 'Apply learned models to real-time incoming queries'}</td>
                 </tr>
                 <tr>
-                  <td><strong>${isVi ? 'Tần suất (Frequency)' : 'Frequency'}</strong></td>
-                  <td>${isVi ? 'Trong giai đoạn phát triển hoặc cập nhật định kỳ' : 'During development or periodic updates'}</td>
-                  <td>${isVi ? 'Lặp đi lặp lại liên tục trong suốt quá trình vận hành' : 'Repeatedly during operation'}</td>
+                  <td><strong>${isVi ? 'Tần suất &amp; Thời gian' : 'Frequency'}</strong></td>
+                  <td>${isVi ? 'Không liên tục (định kỳ theo mẻ, vài ngày đến vài tháng)' : 'Liên tục 24/7/365 theo thời gian thực'}</td>
                 </tr>
                 <tr>
-                  <td><strong>${isVi ? 'Tài nguyên tính toán (Resources)' : 'Resources'}</strong></td>
-                  <td>${isVi ? 'Rất lớn trong thời gian ngắn (GPU clusters)' : 'Often computationally intensive'}</td>
-                  <td>${isVi ? 'Phụ thuộc vào độ phức tạp mô hình và số lượng request' : 'Depends on model complexity and request volume'}</td>
+                  <td><strong>${isVi ? 'Tài nguyên tính toán' : 'Compute Resources'}</strong></td>
+                  <td>${isVi ? 'Cụm GPU/Trainium công suất lớn, xử lý tập trung' : 'Cụm suy luận nhẹ hơn (EC2 Inf2/G5, Serverless Bedrock)'}</td>
                 </tr>
                 <tr>
-                  <td><strong>${isVi ? 'Ví dụ thực tế (Example)' : 'Example'}</strong></td>
-                  <td>${isVi ? 'Huấn luyện một mô hình ngôn ngữ lớn' : 'Training a language model'}</td>
-                  <td>${isVi ? 'Trả lời câu hỏi của khách hàng trên hệ thống' : 'Answering a user question'}</td>
+                  <td><strong>${isVi ? 'Độ trễ yêu cầu' : 'Latency Requirement'}</strong></td>
+                  <td>${isVi ? 'Chấp nhận kéo dài nhiều giờ hoặc nhiều tuần' : 'Rất khắt khe (từ mili-giây đến vài giây)'}</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <p>${isVi
-            ? 'Trong môi trường doanh nghiệp, <strong>hiệu năng và chi phí của Inference</strong> đóng vai trò đặc biệt quan trọng vì các yêu cầu suy luận diễn ra lặp lại liên tục hàng triệu lần trong suốt vòng đời của hệ thống. Tối ưu hóa suy luận quyết định trực tiếp đến lợi nhuận và trải nghiệm khách hàng.'
-            : 'In enterprise environments, inference performance and cost are particularly critical because inference requests occur repeatedly throughout system operation. Optimizing inference directly determines operational viability.'}</p>
+            ? '<strong>Kinh tế học về Tokens (Token Economics):</strong> Đối với các mô hình ngôn ngữ lớn (LLMs), token là đơn vị cơ bản cấu thành văn bản. Số lượng tokens truyền vào (Input Tokens) và sinh ra (Output Tokens) tỷ lệ thuận trực tiếp với độ trễ phản hồi và chi phí vận hành hóa đơn đám mây. Do đó, việc tối ưu hóa prompt, nén ngữ cảnh và quản lý bộ nhớ đệm (Prompt Caching) là yêu cầu kỹ thuật sống còn.'
+            : '<strong>Token Economics:</strong> In foundation LLMs, tokens represent text chunks. Input and output tokens directly dictate API costs and inference latency. Prompt optimization, context window compression, and prompt caching are essential architectural capabilities.'}</p>
+
+          <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
           <!-- III.4 -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:32px 0 10px 0;">4. Mô hình ngôn ngữ lớn và Tokens (Large Language Models and Tokens)</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">4. 4 Trụ cột Vận hành của Production AI (4 Production AI Pillars)</h3>
           <p>${isVi
-            ? 'Mô hình ngôn ngữ lớn (LLM) xử lý và tạo văn bản thông qua các đơn vị cơ sở gọi là <strong>Tokens</strong>. Quy trình sinh văn bản cơ bản bao gồm 5 bước tuần tự:'
-            : 'A Large Language Model (LLM) processes and generates language using units known as Tokens. The basic text generation process includes:'}</p>
-
-          <ol>
-            <li>${isVi ? 'Người dùng gửi yêu cầu hoặc câu lệnh (Prompt).' : 'A user submits a Prompt.'}</li>
-            <li>${isVi ? 'Đoạn văn bản đầu vào được phân rã thành các Tokens (Tokenization).' : 'The input is converted into Tokens.'}</li>
-            <li>${isVi ? 'Mô hình tính toán xác suất để dự đoán Token kế tiếp phù hợp nhất.' : 'The model calculates probabilities for the next Token.'}</li>
-            <li>${isVi ? 'Quá trình sinh Token tiếp tục diễn ra theo cơ chế lặp (Iterative generation).' : 'Token generation continues iteratively.'}</li>
-            <li>${isVi ? 'Toàn bộ phản hồi hoàn chỉnh được ghép nối và trả về cho người dùng.' : 'The generated response is returned to the user.'}</li>
-          </ol>
-
-          <p>${isVi
-            ? 'Số lượng Tokens đầu vào (Input Tokens) và đầu ra (Output Tokens) ảnh hưởng trực tiếp đến tài nguyên tính toán phần cứng, độ trễ phản hồi (latency) và chi phí thanh toán API đám mây. Do đó, việc tối ưu hóa độ dài prompt, bộ nhớ ngữ cảnh và kích thước câu trả lời là yêu cầu bắt buộc khi vận hành ứng dụng LLM ở quy mô doanh nghiệp.'
-            : 'The number of input and output Tokens directly influences computational requirements, response latency, and usage costs. Therefore, optimizing prompt length and generated responses is an essential operational requirement when running LLM-powered applications at enterprise scale.'}</p>
-
-          <!-- III.5 -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:32px 0 10px 0;">5. Bốn trụ cột của Production AI (The Four Pillars of Production AI)</h3>
-          <p>${isVi
-            ? 'Triển khai AI vào thực tế sản xuất đòi hỏi nhiều hơn là việc sở hữu một mô hình chính xác. Phiên chia sẻ nhấn mạnh 4 nguyên tắc vận hành cốt lõi:'
-            : 'Deploying AI into production requires more than developing an accurate model. The session emphasized four major operational principles:'}</p>
-
-          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:14px; margin:16px 0;">
-            <div style="background:#F9F9F9; border:1px solid #E5E5E5; border-radius:6px; padding:16px;">
-              <h4 style="font-size:14px; font-weight:800; color:#171717; margin:0 0 6px 0;">5.1. ${isVi ? 'Bảo mật (Security)' : 'Security'}</h4>
-              <p style="font-size:13px; color:#555555; margin:0; line-height:1.5;">${isVi ? 'Bảo vệ dữ liệu nhạy cảm của khách hàng và doanh nghiệp, kiểm soát truy cập nghiêm ngặt (IAM Least Privilege), mã hóa đường truyền và bảo vệ mô hình khỏi tấn công trích xuất dữ liệu.' : 'Protects sensitive business and customer information through access control, encryption, and prevention of unauthorized access to models and infrastructure.'}</p>
-            </div>
-            <div style="background:#F9F9F9; border:1px solid #E5E5E5; border-radius:6px; padding:16px;">
-              <h4 style="font-size:14px; font-weight:800; color:#171717; margin:0 0 6px 0;">5.2. ${isVi ? 'Độ tin cậy (Reliability)' : 'Reliability'}</h4>
-              <p style="font-size:13px; color:#555555; margin:0; line-height:1.5;">${isVi ? 'Hệ thống phải hoạt động bền bỉ, có cơ chế tự phục hồi trước lỗi (resilience & failover), giảm thiểu gián đoạn dịch vụ và bảo đảm tính sẵn sàng cao.' : 'Ensures production AI systems operate reliably and recover from failures with appropriate redundancy to minimize service interruptions.'}</p>
-            </div>
-            <div style="background:#F9F9F9; border:1px solid #E5E5E5; border-radius:6px; padding:16px;">
-              <h4 style="font-size:14px; font-weight:800; color:#171717; margin:0 0 6px 0;">5.3. ${isVi ? 'Khả năng mở rộng (Scalability)' : 'Scalability'}</h4>
-              <p style="font-size:13px; color:#555555; margin:0; line-height:1.5;">${isVi ? 'Hạ tầng phải thích ứng tức thì với biến động tải, sẵn sàng mở rộng từ 100 người dùng thử nghiệm lên 100.000+ người dùng đồng thời mà không bị suy giảm hiệu năng.' : 'Accommodates evolving demand and processing workloads, scaling seamlessly from 100 initial users to 100,000+ concurrent enterprise users.'}</p>
-            </div>
-            <div style="background:#F9F9F9; border:1px solid #E5E5E5; border-radius:6px; padding:16px;">
-              <h4 style="font-size:14px; font-weight:800; color:#171717; margin:0 0 6px 0;">5.4. ${isVi ? 'Tối ưu chi phí (Cost Optimization)' : 'Cost Optimization'}</h4>
-              <p style="font-size:13px; color:#555555; margin:0; line-height:1.5;">${isVi ? 'Cân đối hài hòa giữa năng lực tính toán và ngân sách vận hành. Việc sử dụng tài nguyên suy luận không hiệu quả sẽ dẫn đến chi phí vận hành khổng lồ khi quy mô tăng cao.' : 'Balances model performance with operational expenses across computing resources, inference calls, data volume, and hardware utilization.'}</p>
-            </div>
-          </div>
-
-          <!-- III.6 -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:32px 0 10px 0;">6. Co giãn linh hoạt trên AWS (Elastic Scalability on AWS)</h3>
-          <p>${isVi
-            ? 'Phiên chia sẻ giới thiệu 3 công nghệ cốt lõi của AWS hỗ trợ co giãn hạ tầng một cách linh hoạt và tối ưu theo nhu cầu tải thực tế:'
-            : 'The session introduced three foundational AWS technologies that support flexible, automated infrastructure scaling:'}</p>
-
-          <div class="minimal-table-wrap">
-            <table class="minimal-table">
-              <thead>
-                <tr>
-                  <th style="width: 30%;">${isVi ? 'Công nghệ AWS' : 'AWS Technology'}</th>
-                  <th style="width: 70%;">${isVi ? 'Chức năng cốt lõi' : 'Primary Function'}</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>AWS Lambda</strong></td>
-                  <td>${isVi ? 'Thực thi mã hướng sự kiện (event-driven) và Serverless, tự động co giãn các phiên thực thi đồng thời theo khối lượng công việc đầu vào mà không cần người dùng tự quản lý máy chủ vật lý.' : 'Enables event-driven code execution without managing servers directly, scaling concurrent executions dynamically in response to incoming workloads.'}</td>
-                </tr>
-                <tr>
-                  <td><strong>Auto Scaling</strong></td>
-                  <td>${isVi ? 'Tự động điều chỉnh dung lượng hạ tầng tính toán (EC2, ECS, EKS) theo nhu cầu tải thực tế, giúp duy trì hiệu năng ổn định đồng thời loại bỏ chi phí lãng phí khi tải giảm.' : 'Adjusts infrastructure capacity dynamically according to workload demand, maintaining performance while avoiding unnecessary resource waste.'}</td>
-                </tr>
-                <tr>
-                  <td><strong>Load Balancer (ALB / NLB)</strong></td>
-                  <td>${isVi ? 'Phân phối đồng đều lưu lượng truy cập tới nhiều tài nguyên xử lý phía sau, giảm thiểu triệt để rủi ro quá tải máy chủ đơn lẻ và nâng cao tính sẵn sàng.' : 'Distributes incoming traffic across multiple processing targets to eliminate single points of failure and overload risks.'}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <!-- III.7 -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:32px 0 10px 0;">7. Hơn cả một mô hình (More Than a Model)</h3>
-          <p>${isVi
-            ? 'Một trong những thông điệp kiến trúc quan trọng nhất của hội thảo là: <strong>Enterprise AI vượt xa khỏi phạm vi của một mô hình máy học thuần túy</strong>. Một hệ thống AI hoàn chỉnh đòi hỏi 6 năng lực hỗ trợ toàn diện bao quanh:'
-            : 'One of the most profound concepts introduced during the event was that enterprise AI is much more than a machine learning model. A complete AI system requires six supporting capabilities:'}</p>
+            ? 'Một hệ thống AI muốn tồn tại và phục vụ khách hàng trên môi trường sản xuất phải thỏa mãn 4 trụ cột kiến trúc cốt lõi:'
+            : 'Operating enterprise AI in production requires four foundational architectural pillars:'}</p>
 
           <ul>
-            <li><strong>Security:</strong> ${isVi ? 'Bảo vệ dữ liệu, kiểm soát truy cập và phòng chống khai thác trái phép.' : 'Access control, data protection, and secure communications.'}</li>
-            <li><strong>Reliability:</strong> ${isVi ? 'Cơ chế dự phòng, chịu lỗi và duy trì tính khả dụng liên tục.' : 'System resilience, fault tolerance, and high availability.'}</li>
-            <li><strong>Scalability:</strong> ${isVi ? 'Khả năng co giãn linh hoạt theo lưu lượng người dùng.' : 'Elastic capacity expansion according to workload.'}</li>
-            <li><strong>Cost Optimization:</strong> ${isVi ? 'Kiểm soát chi phí suy luận và tối ưu hóa tài nguyên phần cứng.' : 'Balancing performance with operational inference expenses.'}</li>
-            <li><strong>Data Pipeline:</strong> ${isVi ? 'Thu thập, xử lý và làm sạch dữ liệu đầu vào liên tục theo thời gian thực.' : 'Continuous data ingestion, processing, and quality validation.'}</li>
-            <li><strong>Monitoring:</strong> ${isVi ? 'Giám sát chỉ số suy luận, độ trễ và phát hiện độ lệch dữ liệu (drift detection).' : 'Real-time observability, latency tracking, and error detection.'}</li>
+            <li>${isVi ? '<strong>1. An toàn &amp; Bảo mật (Security):</strong> Bảo vệ quyền riêng tư dữ liệu khách hàng, mã hóa hai chiều (KMS), kiểm soát truy cập nghiêm ngặt (IAM, VPC Endpoints) và thiết lập rào chắn an toàn (Bedrock Guardrails) ngăn chặn rò rỉ dữ liệu hoặc đầu ra độc hại.' : '<strong>1. Security:</strong> Protect customer privacy, end-to-end encryption (KMS), fine-grained access control (IAM), and guardrails preventing prompt injection or data leakage.'}</li>
+            <li>${isVi ? '<strong>2. Độ tin cậy &amp; Sẵn sàng cao (Reliability):</strong> Đảm bảo hệ thống duy trì thời gian hoạt động (Uptime) theo cam kết SLA, triển khai kiến trúc đa vùng khả dụng (Multi-AZ), cơ chế thử lại tự động (Exponential Backoff) và dự phòng chuyển đổi vùng linh hoạt.' : '<strong>2. Reliability:</strong> Maintain high availability across Multi-AZ deployments, resilient fallback mechanisms, and circuit breakers.'}</li>
+            <li>${isVi ? '<strong>3. Khả năng mở rộng (Scalability):</strong> Hệ thống tự động co giãn thích ứng mượt mà khi lưu lượng người dùng tăng đột biến mà không bị nghẽn cổ chai hay suy giảm tốc độ xử lý.' : '<strong>3. Scalability:</strong> Seamlessly handle unpredictable traffic surges via horizontal elastic compute without performance degradation.'}</li>
+            <li>${isVi ? '<strong>4. Tối ưu hóa chi phí (Cost Optimization):</strong> Sử dụng đúng loại tài nguyên (Right-sizing), tận dụng tính năng Serverless (trả tiền theo mức sử dụng thực tế), định tuyến mô hình linh hoạt (Model Routing: dùng mô hình nhỏ cho câu hỏi dễ và mô hình lớn cho bài toán phức tạp).' : '<strong>4. Cost Optimization:</strong> Right-size inference instances, leverage serverless architectures, and use dynamic model routing (lightweight models for routine tasks, frontier models for complex reasoning).'}</li>
           </ul>
 
-          <!-- System Architecture SVG -->
-          <div class="arch-diagram-wrapper" style="background:#FFFFFF; border:1px solid #E5E5E5;">
-            <svg class="arch-svg-container" viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg">
-              <g transform="translate(295, 75)">
-                <rect width="170" height="70" rx="8" fill="#171717" stroke="#171717"/>
-                <text x="85" y="32" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="800" fill="#FFFFFF">AI MODEL</text>
-                <text x="85" y="50" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#E5E5E5">${isVi ? 'Bộ xử lý trung tâm' : 'Core Engine'}</text>
-              </g>
-              <g transform="translate(40, 20)">
-                <rect width="180" height="48" rx="6" fill="#F9F9F9" stroke="#E5E5E5" stroke-width="1.2"/>
-                <text x="90" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="700" fill="#171717">1. SECURITY</text>
-                <text x="90" y="38" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#555555">${isVi ? 'Kiểm soát truy cập & Bảo vệ dữ liệu' : 'Access Control & Encryption'}</text>
-              </g>
-              <line x1="220" y1="44" x2="295" y2="85" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="3 3"/>
-              <g transform="translate(290, 10)">
-                <rect width="180" height="48" rx="6" fill="#F9F9F9" stroke="#E5E5E5" stroke-width="1.2"/>
-                <text x="90" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="700" fill="#171717">2. DATA PIPELINE</text>
-                <text x="90" y="38" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#555555">${isVi ? 'Thu thập & Làm sạch liên tục' : 'Ingestion & Processing'}</text>
-              </g>
-              <line x1="380" y1="58" x2="380" y2="75" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="3 3"/>
-              <g transform="translate(540, 20)">
-                <rect width="180" height="48" rx="6" fill="#F9F9F9" stroke="#E5E5E5" stroke-width="1.2"/>
-                <text x="90" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="700" fill="#171717">3. RELIABILITY</text>
-                <text x="90" y="38" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#555555">${isVi ? 'Tự phục hồi & Giảm gián đoạn' : 'Fault Recovery & Resilience'}</text>
-              </g>
-              <line x1="540" y1="44" x2="465" y2="85" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="3 3"/>
-              <g transform="translate(40, 150)">
-                <rect width="180" height="48" rx="6" fill="#F9F9F9" stroke="#E5E5E5" stroke-width="1.2"/>
-                <text x="90" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="700" fill="#171717">4. COST OPTIMIZATION</text>
-                <text x="90" y="38" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#555555">${isVi ? 'Tối ưu tài nguyên suy luận' : 'Inference & Token Control'}</text>
-              </g>
-              <line x1="220" y1="174" x2="295" y2="135" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="3 3"/>
-              <g transform="translate(290, 160)">
-                <rect width="180" height="48" rx="6" fill="#F9F9F9" stroke="#E5E5E5" stroke-width="1.2"/>
-                <text x="90" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="700" fill="#171717">5. MONITORING</text>
-                <text x="90" y="38" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#555555">${isVi ? 'Quan sát hiệu năng & Phát hiện lỗi' : 'Observability & Drift Check'}</text>
-              </g>
-              <line x1="380" y1="160" x2="380" y2="145" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="3 3"/>
-              <g transform="translate(540, 150)">
-                <rect width="180" height="48" rx="6" fill="#F9F9F9" stroke="#E5E5E5" stroke-width="1.2"/>
-                <text x="90" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="700" fill="#171717">6. SCALABILITY</text>
-                <text x="90" y="38" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#555555">${isVi ? 'Thích ứng tải 100 đến 100,000+' : 'Elastic Auto Scaling'}</text>
-              </g>
-              <line x1="540" y1="174" x2="465" y2="135" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="3 3"/>
-            </svg>
-            <div class="arch-caption" style="color:#555555;">${isVi ? 'Hệ thống Enterprise AI: Mô hình máy học được bao quanh bởi 6 năng lực vận hành then chốt' : 'Enterprise AI System: Central AI Model supported by 6 Production Capabilities'}</div>
-          </div>
+          <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
+          <!-- III.5 -->
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">5. Co giãn linh hoạt trên AWS (Elastic Scalability on AWS)</h3>
           <p>${isVi
-            ? 'Mô hình AI đóng vai trò là bộ máy xử lý trung tâm, nhưng chính hạ tầng đám mây bao quanh và các năng lực vận hành sẽ quyết định liệu mô hình đó có thể trở thành một sản phẩm doanh nghiệp đáng tin cậy hay không.'
-            : 'The AI model serves as the central processing component. However, the surrounding infrastructure and operational capabilities determine whether the model can become a reliable enterprise product.'}</p>
+            ? 'Diễn giả đã phân tích cơ chế co giãn đàn hồi của AWS giúp giải quyết bài toán tải biến động mạnh trong các ứng dụng AI:'
+            : 'The speaker analyzed AWS elastic infrastructure components that address fluctuating AI workloads:'}</p>
 
-          <!-- III.8 -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:32px 0 10px 0;">8. Các mô hình kiến trúc Multi-Agent phổ biến (Common Multi-Agent Architecture Patterns)</h3>
+          <ul>
+            <li>${isVi ? '<strong>AWS Lambda:</strong> Kiến trúc tính toán không máy chủ (Serverless), tự động nhân bản tức thì theo từng yêu cầu đến và tự động hạ về 0 khi không có lưu lượng, triệt tiêu chi phí tài nguyên nhàn rỗi.' : '<strong>AWS Lambda:</strong> Serverless compute automatically scaling to zero during idle periods, eliminating overprovisioning costs.'}</li>
+            <li>${isVi ? '<strong>Auto Scaling Groups (ASG):</strong> Tự động bổ sung hoặc giảm bớt số lượng máy chủ ảo Amazon EC2 (GPU/Inference instances) dựa trên các chỉ số giám sát thời gian thực như CPU Utilization, GPU Memory hoặc hàng đợi tin nhắn.' : '<strong>Auto Scaling Groups:</strong> Automatically adjust EC2 compute instances based on real-time CloudWatch metrics.'}</li>
+            <li>${isVi ? '<strong>Elastic Load Balancing (ALB/NLB):</strong> Phân phối đồng đều lưu lượng truy cập khổng lồ đến cụm máy chủ suy luận, đồng thời tự động kiểm tra tình trạng sức khỏe (Health Check) để cô lập các node gặp lỗi.' : '<strong>Elastic Load Balancing:</strong> Distributes user traffic evenly across inference targets while performing continuous health checks.'}</li>
+          </ul>
+
+          <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
+
+          <!-- III.6 -->
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">6. 4 Mô hình Kiến trúc Multi-Agent phổ biến (4 Common Multi-Agent Architecture Patterns)</h3>
           <p>${isVi
-            ? 'Kiến trúc Multi-Agent phân chia các tác vụ phức tạp cho nhiều Agent AI chuyên trách cùng phối hợp hoàn thành. Phiên hội thảo đã trình bày 4 mô hình điều phối tiêu chuẩn:'
-            : 'Multi-Agent architecture involves multiple specialized AI Agents collaborating to complete complex tasks. The session introduced four common coordination patterns:'}</p>
+            ? 'Khi một tác vụ kinh doanh trở nên quá phức tạp đối với một mô hình LLM đơn lẻ, kiến trúc Multi-Agent cho phép chia nhỏ bài toán và điều phối nhiều tác tử chuyên biệt cùng phối hợp xử lý:'
+            : 'When complex enterprise workflows exceed single-prompt capabilities, Multi-Agent patterns coordinate specialized agents:'}</p>
 
-          <!-- Pattern 8.1 -->
-          <div style="background:#FFFFFF; border:1px solid #E5E5E5; border-radius:6px; padding:18px; margin:16px 0;">
-            <h4 style="font-size:14.5px; font-weight:800; color:#171717; margin:0 0 6px 0;">8.1. Routing / Supervisor Pattern</h4>
-            <div style="font-family:var(--font-mono); font-size:12.5px; color:#171717; margin-bottom:8px;"><strong>Workflow:</strong> Router → Selected Agent</div>
-            <p style="font-size:13.5px; color:#555555; margin:0 0 12px 0;">${isVi
-              ? 'Một bộ điều phối trung tâm (Supervisor) phân tích yêu cầu đầu vào của người dùng và điều hướng tác vụ đến Agent chuyên trách phù hợp nhất (ví dụ: Tài chính, Hỗ trợ kỹ thuật, CSKH).'
-              : 'A central supervisor analyzes incoming requests and assigns them to the most appropriate specialized Agent (e.g. finance, tech support, customer service).'}</p>
-            
-            <!-- Svg Pattern 1 -->
-            <div style="overflow-x:auto;">
-              <svg viewBox="0 0 640 130" style="min-width:540px; width:100%; height:auto;" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <marker id="arrowP1" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                    <path d="M 0 1 L 8 5 L 0 9 z" fill="#171717"/>
-                  </marker>
-                </defs>
-                <g transform="translate(10, 40)">
-                  <rect width="130" height="50" rx="6" fill="#F9F9F9" stroke="#CBD5E1"/>
-                  <text x="65" y="24" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="700" fill="#171717">User Request</text>
-                  <text x="65" y="38" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#555555">${isVi ? 'Yêu cầu đầu vào' : 'Incoming Prompt'}</text>
-                </g>
-                <line x1="140" y1="65" x2="190" y2="65" stroke="#171717" stroke-width="1.5" marker-end="url(#arrowP1)"/>
-                <g transform="translate(200, 35)">
-                  <rect width="150" height="60" rx="6" fill="#171717" stroke="#171717"/>
-                  <text x="75" y="26" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="800" fill="#FFFFFF">ROUTER / SUPERVISOR</text>
-                  <text x="75" y="44" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#E5E5E5">${isVi ? 'Phân loại ý định' : 'Intent Classifier'}</text>
-                </g>
-                <line x1="350" y1="50" x2="430" y2="25" stroke="#171717" stroke-width="1.5" marker-end="url(#arrowP1)"/>
-                <line x1="350" y1="65" x2="430" y2="65" stroke="#171717" stroke-width="1.5" marker-end="url(#arrowP1)"/>
-                <line x1="350" y1="80" x2="430" y2="105" stroke="#171717" stroke-width="1.5" marker-end="url(#arrowP1)"/>
-                <g transform="translate(440, 5)">
-                  <rect width="180" height="35" rx="4" fill="#F9F9F9" stroke="#E5E5E5"/>
-                  <text x="90" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#171717">Finance Agent (${isVi ? 'Tài chính' : 'Finance'})</text>
-                </g>
-                <g transform="translate(440, 48)">
-                  <rect width="180" height="35" rx="4" fill="#F9F9F9" stroke="#E5E5E5"/>
-                  <text x="90" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#171717">Tech Support Agent (${isVi ? 'Kỹ thuật' : 'Tech'})</text>
-                </g>
-                <g transform="translate(440, 90)">
-                  <rect width="180" height="35" rx="4" fill="#F9F9F9" stroke="#E5E5E5"/>
-                  <text x="90" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#171717">Support Agent (${isVi ? 'CSKH' : 'Support'})</text>
-                </g>
-              </svg>
-            </div>
-          </div>
-
-          <!-- Pattern 8.2 -->
-          <div style="background:#FFFFFF; border:1px solid #E5E5E5; border-radius:6px; padding:18px; margin:16px 0;">
-            <h4 style="font-size:14.5px; font-weight:800; color:#171717; margin:0 0 6px 0;">8.2. Sequential Pattern (Mô hình Tuần tự)</h4>
-            <div style="font-family:var(--font-mono); font-size:12.5px; color:#171717; margin-bottom:8px;"><strong>Workflow:</strong> Agent A → Agent B → Agent C</div>
-            <p style="font-size:13.5px; color:#555555; margin:0 0 12px 0;">${isVi
-              ? 'Các Agent thực thi nhiệm vụ theo chuỗi tuyến tính định sẵn. Đầu ra của Agent trước trở thành dữ liệu đầu vào cho Agent tiếp theo (thích hợp luồng thu thập dữ liệu → phân tích sâu → xuất báo cáo).'
-              : 'Agents execute tasks in a predefined sequence. The output of one Agent becomes the input of the next Agent (ideal for data collection → deep analysis → report synthesis).'}</p>
-            
-            <!-- Svg Pattern 2 -->
-            <div style="overflow-x:auto;">
-              <svg viewBox="0 0 640 80" style="min-width:540px; width:100%; height:auto;" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <marker id="arrowP2" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                    <path d="M 0 1 L 8 5 L 0 9 z" fill="#171717"/>
-                  </marker>
-                </defs>
-                <g transform="translate(10, 15)">
-                  <rect width="170" height="50" rx="6" fill="#F9F9F9" stroke="#E5E5E5"/>
-                  <text x="85" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#171717">AGENT A</text>
-                  <text x="85" y="38" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#555555">${isVi ? 'Thu thập dữ liệu' : 'Data Ingestion'}</text>
-                </g>
-                <line x1="180" y1="40" x2="225" y2="40" stroke="#171717" stroke-width="1.5" marker-end="url(#arrowP2)"/>
-                <g transform="translate(235, 15)">
-                  <rect width="170" height="50" rx="6" fill="#F9F9F9" stroke="#E5E5E5"/>
-                  <text x="85" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#171717">AGENT B</text>
-                  <text x="85" y="38" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#555555">${isVi ? 'Phân tích & Xử lý' : 'Analysis & Processing'}</text>
-                </g>
-                <line x1="405" y1="40" x2="450" y2="40" stroke="#171717" stroke-width="1.5" marker-end="url(#arrowP2)"/>
-                <g transform="translate(460, 15)">
-                  <rect width="170" height="50" rx="6" fill="#F9F9F9" stroke="#E5E5E5"/>
-                  <text x="85" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#171717">AGENT C</text>
-                  <text x="85" y="38" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#555555">${isVi ? 'Xuất báo cáo tổng kết' : 'Report Generation'}</text>
-                </g>
-              </svg>
-            </div>
-          </div>
-
-          <!-- Pattern 8.3 -->
-          <div style="background:#FFFFFF; border:1px solid #E5E5E5; border-radius:6px; padding:18px; margin:16px 0;">
-            <h4 style="font-size:14.5px; font-weight:800; color:#171717; margin:0 0 6px 0;">8.3. Parallel Pattern (Mô hình Song song)</h4>
-            <div style="font-family:var(--font-mono); font-size:12.5px; color:#171717; margin-bottom:8px;"><strong>Workflow:</strong> Agent A + Agent B + Agent C → Aggregated Results</div>
-            <p style="font-size:13.5px; color:#555555; margin:0 0 12px 0;">${isVi
-              ? 'Nhiều Agent thực thi các tác vụ độc lập đồng thời cùng lúc, sau đó kết quả được một Aggregator Agent gom nhóm và tổng hợp (thích hợp phân tích đồng thời chân dung khách hàng, đối thủ cạnh tranh và xu hướng thị trường).'
-              : 'Multiple Agents perform independent tasks concurrently before their individual outputs are combined into an aggregated result (ideal for concurrent analysis of customers, competitors, and market trends).'}</p>
-            
-            <!-- Svg Pattern 3 -->
-            <div style="overflow-x:auto;">
-              <svg viewBox="0 0 640 135" style="min-width:540px; width:100%; height:auto;" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <marker id="arrowP3" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                    <path d="M 0 1 L 8 5 L 0 9 z" fill="#171717"/>
-                  </marker>
-                </defs>
-                <g transform="translate(10, 45)">
-                  <rect width="110" height="45" rx="6" fill="#F9F9F9" stroke="#E5E5E5"/>
-                  <text x="55" y="27" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#171717">Task Input</text>
-                </g>
-                <line x1="120" y1="58" x2="165" y2="25" stroke="#171717" stroke-width="1.5" marker-end="url(#arrowP3)"/>
-                <line x1="120" y1="68" x2="165" y2="68" stroke="#171717" stroke-width="1.5" marker-end="url(#arrowP3)"/>
-                <line x1="120" y1="78" x2="165" y2="110" stroke="#171717" stroke-width="1.5" marker-end="url(#arrowP3)"/>
-                <g transform="translate(175, 8)">
-                  <rect width="190" height="34" rx="4" fill="#F9F9F9" stroke="#E5E5E5"/>
-                  <text x="95" y="21" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#171717">Agent A (${isVi ? 'Phân tích khách hàng' : 'Customer'})</text>
-                </g>
-                <g transform="translate(175, 51)">
-                  <rect width="190" height="34" rx="4" fill="#F9F9F9" stroke="#E5E5E5"/>
-                  <text x="95" y="21" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#171717">Agent B (${isVi ? 'Phân tích đối thủ' : 'Competitor'})</text>
-                </g>
-                <g transform="translate(175, 94)">
-                  <rect width="190" height="34" rx="4" fill="#F9F9F9" stroke="#E5E5E5"/>
-                  <text x="95" y="21" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#171717">Agent C (${isVi ? 'Xu hướng thị trường' : 'Trends'})</text>
-                </g>
-                <line x1="365" y1="25" x2="415" y2="58" stroke="#171717" stroke-width="1.5" marker-end="url(#arrowP3)"/>
-                <line x1="365" y1="68" x2="415" y2="68" stroke="#171717" stroke-width="1.5" marker-end="url(#arrowP3)"/>
-                <line x1="365" y1="110" x2="415" y2="78" stroke="#171717" stroke-width="1.5" marker-end="url(#arrowP3)"/>
-                <g transform="translate(425, 45)">
-                  <rect width="195" height="48" rx="6" fill="#171717" stroke="#171717"/>
-                  <text x="97" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF">AGGREGATED RESULTS</text>
-                  <text x="97" y="38" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#E5E5E5">${isVi ? 'Báo cáo tổng hợp đa chiều' : 'Unified Insight Report'}</text>
-                </g>
-              </svg>
-            </div>
-          </div>
-
-          <!-- Pattern 8.4 -->
-          <div style="background:#FFFFFF; border:1px solid #E5E5E5; border-radius:6px; padding:18px; margin:16px 0;">
-            <h4 style="font-size:14.5px; font-weight:800; color:#171717; margin:0 0 6px 0;">8.4. Evaluator–Optimizer Pattern (Mô hình Đánh giá – Tối ưu hóa)</h4>
-            <div style="font-family:var(--font-mono); font-size:12.5px; color:#171717; margin-bottom:8px;"><strong>Workflow:</strong> Draft → Critic → Refine</div>
-            <p style="font-size:13.5px; color:#555555; margin:0 0 12px 0;">${isVi
-              ? 'Một Agent đóng vai trò sinh bản thảo ban đầu (Generator), trong khi một Agent khác đóng vai trò đánh giá, phản biện (Critic) và cung cấp phản hồi để Agent đầu tiên tinh chỉnh kết quả qua từng vòng lặp đến khi đạt tiêu chuẩn chất lượng.'
-              : 'One Agent generates an initial draft result, while another evaluates its quality and provides targeted critique for iterative refinement until excellence is attained.'}</p>
-            
-            <!-- Svg Pattern 4 -->
-            <div style="overflow-x:auto;">
-              <svg viewBox="0 0 640 100" style="min-width:540px; width:100%; height:auto;" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <marker id="arrowP4" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                    <path d="M 0 1 L 8 5 L 0 9 z" fill="#171717"/>
-                  </marker>
-                </defs>
-                <g transform="translate(10, 25)">
-                  <rect width="180" height="50" rx="6" fill="#F9F9F9" stroke="#E5E5E5"/>
-                  <text x="90" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#171717">GENERATOR AGENT</text>
-                  <text x="90" y="38" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#555555">${isVi ? 'Tạo bản thảo (Draft)' : 'Initial Draft'}</text>
-                </g>
-                <line x1="190" y1="40" x2="255" y2="40" stroke="#171717" stroke-width="1.5" marker-end="url(#arrowP4)"/>
-                <g transform="translate(265, 25)">
-                  <rect width="180" height="50" rx="6" fill="#F9F9F9" stroke="#E5E5E5"/>
-                  <text x="90" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#171717">EVALUATOR AGENT</text>
-                  <text x="90" y="38" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#555555">${isVi ? 'Đánh giá & Phê bình (Critic)' : 'Critic & Feedback'}</text>
-                </g>
-                <path d="M 355 75 C 355 95, 100 95, 100 75" fill="none" stroke="#64748B" stroke-width="1.2" stroke-dasharray="3 3" marker-end="url(#arrowP4)"/>
-                <text x="227" y="93" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" fill="#64748B">${isVi ? 'Vòng lặp phản hồi (Refine Loop)' : 'Iterative Refinement'}</text>
-                <line x1="445" y1="50" x2="495" y2="50" stroke="#171717" stroke-width="1.5" marker-end="url(#arrowP4)"/>
-                <g transform="translate(505, 25)">
-                  <rect width="125" height="50" rx="6" fill="#171717" stroke="#171717"/>
-                  <text x="62" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF">REFINED OUTPUT</text>
-                  <text x="62" y="38" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#E5E5E5">${isVi ? 'Kết quả tối ưu' : 'Approved'}</text>
-                </g>
-              </svg>
-            </div>
-          </div>
-
-          <!-- Multi-Agent Summary Table -->
           <div class="minimal-table-wrap">
             <table class="minimal-table">
               <thead>
                 <tr>
-                  <th style="width: 30%;">${isVi ? 'Mô hình Multi-Agent' : 'Pattern'}</th>
-                  <th style="width: 70%;">${isVi ? 'Mục đích chính & Phạm vi ứng dụng' : 'Main Purpose & Application Scope'}</th>
+                  <th style="width: 25%;">${isVi ? 'Mô hình Multi-Agent' : 'Pattern'}</th>
+                  <th style="width: 40%;">${isVi ? 'Cơ chế điều phối' : 'Coordination Mechanism'}</th>
+                  <th style="width: 35%;">${isVi ? 'Trường hợp ứng dụng tối ưu' : 'Best Use Case'}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td><strong>Routing / Supervisor</strong></td>
-                  <td>${isVi ? 'Phân loại ý định người dùng và giao việc cho Agent chuyên trách xử lý.' : 'Assign tasks dynamically to specialized Agents.'}</td>
+                  <td>${isVi ? 'Một Agent giám sát trung tâm phân tích câu hỏi người dùng và định tuyến đến đúng Agent chuyên môn tương ứng.' : 'Central supervisor inspects queries and routes to domain-specific specialist agents.'}</td>
+                  <td>${isVi ? 'Cổng chăm sóc khách hàng đa dịch vụ, tổng đài hỏi đáp đa lĩnh vực.' : 'Enterprise multi-service customer portals.'}</td>
                 </tr>
                 <tr>
                   <td><strong>Sequential (Tuần tự)</strong></td>
-                  <td>${isVi ? 'Thực thi các tác vụ có tính phụ thuộc lẫn nhau theo trật tự chuỗi xác định.' : 'Execute dependent pipeline tasks in sequential order.'}</td>
+                  <td>${isVi ? 'Các Agent hoạt động như một dây chuyền lắp ráp: kết quả đầu ra của Agent này là đầu vào của Agent tiếp theo.' : 'Agents execute in a linear pipeline: Agent A output becomes Agent B input.'}</td>
+                  <td>${isVi ? 'Quy trình thẩm định hồ sơ vay vốn, phân tích báo cáo tài chính qua nhiều bước.' : 'Multi-step financial loan appraisal and document processing.'}</td>
                 </tr>
                 <tr>
                   <td><strong>Parallel (Song song)</strong></td>
-                  <td>${isVi ? 'Xử lý đồng thời các tác vụ độc lập nhằm rút ngắn thời gian toàn trình.' : 'Process independent analytical tasks concurrently and aggregate.'}</td>
+                  <td>${isVi ? 'Nhiều Agent cùng thực thi đồng thời các tác vụ độc lập trên cùng một yêu cầu, sau đó một Agent tổng hợp gom kết quả.' : 'Multiple agents execute independent sub-tasks concurrently, aggregated by a final synthesizer.'}</td>
+                  <td>${isVi ? 'Phân tích dữ liệu từ nhiều nguồn độc lập, rà soát mã nguồn từ nhiều góc độ.' : 'Concurrent research across independent data repositories.'}</td>
                 </tr>
                 <tr>
-                  <td><strong>Evaluator–Optimizer</strong></td>
-                  <td>${isVi ? 'Đánh giá, phản biện và hoàn thiện kết quả qua nhiều vòng lặp chất lượng cao.' : 'Evaluate and iteratively improve generated results via critique.'}</td>
+                  <td><strong>Evaluator – Optimizer</strong></td>
+                  <td>${isVi ? 'Một Agent sinh kết quả và một Agent đánh giá đóng vai trò kiểm định, lặp lại quy trình cho đến khi đạt chuẩn chất lượng.' : 'One agent generates output while an evaluator critiques it in an iterative loop until passing.'}</td>
+                  <td>${isVi ? 'Viết mã nguồn phần mềm tự động, soạn thảo văn bản pháp lý đòi hỏi độ chính xác tuyệt đối.' : 'Automated software code generation and legal document drafting.'}</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <!-- III.9 -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:32px 0 10px 0;">9. Vai trò của AWS Cloud trong Enterprise AI (The Role of AWS Cloud in Enterprise AI)</h3>
+          <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
+
+          <!-- III.7 -->
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">7. Vai trò của AWS Cloud trong Triển khai Enterprise AI (The Role of AWS Cloud in Enterprise AI)</h3>
           <p>${isVi
-            ? 'AWS Cloud cung cấp hệ sinh thái hạ tầng và dịch vụ toàn diện hỗ trợ trọn vẹn toàn bộ chu trình phát triển, triển khai và vận hành hệ thống AI doanh nghiệp. Thay vì phải tự xây dựng toàn bộ cơ sở hạ tầng tính toán phức tạp từ đầu, tổ chức có thể tận dụng các dịch vụ đám mây chuyên dụng sẵn có:'
-            : 'AWS Cloud provides comprehensive infrastructure and managed services that support the development, deployment, and operation of enterprise AI systems. Instead of building compute infrastructure from scratch, organizations leverage proven cloud capabilities:'}</p>
-
-          <ul>
-            <li>${isVi ? '<strong>Triển khai ứng dụng AI nhanh chóng:</strong> Giảm thời gian đưa sản phẩm ra thị trường nhờ các dịch vụ tích hợp sẵn.' : '<strong>AI application deployment:</strong> Accelerated time-to-market using managed services.'}</li>
-            <li>${isVi ? '<strong>Lưu trữ và xử lý dữ liệu quy mô lớn:</strong> Với Amazon S3, OpenSearch Service, DynamoDB và Amazon Aurora.' : '<strong>Data storage and processing:</strong> High-throughput, scalable storage with S3 and purpose-built databases.'}</li>
-            <li>${isVi ? '<strong>Hạ tầng tính toán tối ưu phần cứng:</strong> Đa dạng lựa chọn từ Amazon EC2 GPU đến các chip tăng tốc chuyên dụng như AWS Trainium và Inferentia.' : '<strong>Computing infrastructure:</strong> Accelerated hardware compute instances optimized for training and inference.'}</li>
-            <li>${isVi ? '<strong>Co giãn tài nguyên tự động:</strong> Đáp ứng tức thì mọi biến động lưu lượng với Auto Scaling và Application Load Balancer.' : '<strong>Dynamic resource scaling:</strong> Automated elastic capacity adjustment based on real-time workload.'}</li>
-            <li>${isVi ? '<strong>Giám sát toàn trình và cảnh báo:</strong> Amazon CloudWatch và AWS X-Ray cung cấp khả năng quan sát chi tiết từng request suy luận.' : '<strong>System monitoring:</strong> End-to-end observability, distributed tracing, and health checks.'}</li>
-            <li>${isVi ? '<strong>Bảo mật và quản trị hạ tầng:</strong> IAM phân quyền chi tiết, KMS mã hóa dữ liệu và AWS PrivateLink cô lập kết nối mạng nội bộ.' : '<strong>Infrastructure security and management:</strong> Robust access control, data encryption, and secure internal networking.'}</li>
-          </ul>
-
+            ? 'AWS Cloud cung cấp hệ sinh thái dịch vụ hoàn chỉnh, khép kín từ hạ tầng phần cứng chuyên biệt (Trainium/Inferentia), nền tảng dịch vụ mô hình nền tảng toàn diện (Amazon Bedrock, Amazon SageMaker), đến các công cụ tích hợp dữ liệu và quản trị an ninh cấp cao (AWS IAM, KMS, CloudTrail).'
+            : 'AWS Cloud provides a comprehensive ecosystem bridging hardware accelerators, foundation models (Amazon Bedrock, SageMaker), and centralized governance tools (IAM, KMS, CloudTrail).'}</p>
           <p>${isVi
-            ? 'Phương tiếp cận này giải phóng các đội ngũ kỹ sư khỏi gánh nặng quản lý phần cứng phức tạp, giúp doanh nghiệp tập trung tối đa nguồn lực vào việc hoàn thiện tính năng sản phẩm và gia tăng giá trị kinh doanh.'
-            : 'This approach allows organizations to focus intensively on product functionality and business value while significantly reducing the operational overhead of managing underlying hardware.'}</p>
-
+            ? 'Nền tảng này giúp doanh nghiệp rút ngắn đáng kể thời gian đưa sản phẩm AI ra thị trường, kiểm soát chi phí vận hành minh bạch và bảo vệ an toàn dữ liệu khách hàng theo các tiêu chuẩn khắt khe nhất.'
+            : 'This foundation accelerates enterprise time-to-market, ensures transparent cost governance, and protects sensitive customer data under strict compliance frameworks.'}</p>
         </div>
       </section>
 
@@ -6706,67 +6772,99 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
       <section class="report-section-block">
         <div class="report-section-header">
           <span class="report-section-num">04</span>
-          <h2 class="report-section-title">${isVi ? 'IV. Những bài học thu hoạch cốt lõi (Key Takeaways)' : 'IV. Key Takeaways'}</h2>
-        </div>
-        <div class="takeaways-grid">
-          <div class="takeaway-card">
-            <div class="takeaway-card-num">01</div>
-            <div class="takeaway-card-title">${isVi ? 'Prototype ≠ Production' : 'Prototype ≠ Production'}</div>
-            <div class="takeaway-card-body">${isVi ? 'Một mô hình AI chạy thử nghiệm thành công chưa chắc đã đảm bảo một hệ thống sản xuất thành công. Quy mô người dùng thực tế và dữ liệu biến động đòi hỏi kiến trúc vững chắc.' : 'A successful AI prototype does not guarantee a successful production system. Real users and continuously changing data require robust architectural foundations.'}</div>
-          </div>
-          <div class="takeaway-card">
-            <div class="takeaway-card-num">02</div>
-            <div class="takeaway-card-title">${isVi ? 'Bốn trụ cột cân bằng' : 'The Four Pillars Balance'}</div>
-            <div class="takeaway-card-body">${isVi ? 'Enterprise AI bắt buộc phải dung hòa 4 yếu tố: Security, Reliability, Scalability và Cost. Thiếu hụt bất kỳ trụ cột nào cũng có thể khiến dự án thất bại.' : 'Enterprise AI must balance security, reliability, scalability, and cost optimization simultaneously.'}</div>
-          </div>
-          <div class="takeaway-card">
-            <div class="takeaway-card-num">03</div>
-            <div class="takeaway-card-title">${isVi ? 'Training vs Inference' : 'Training vs Inference'}</div>
-            <div class="takeaway-card-body">${isVi ? 'Training và Inference có yêu cầu tài nguyên hoàn toàn khác biệt. Trong môi trường doanh nghiệp, tối ưu hóa suy luận là chìa khóa duy trì chi phí bền vững.' : 'Training and inference have different operational requirements. In production, inference efficiency is paramount.'}</div>
-          </div>
-          <div class="takeaway-card">
-            <div class="takeaway-card-num">04</div>
-            <div class="takeaway-card-title">${isVi ? 'Kinh tế học Token' : 'Token Economics'}</div>
-            <div class="takeaway-card-body">${isVi ? 'Số lượng Tokens đầu vào/đầu ra ảnh hưởng trực tiếp đến tài nguyên tính toán, độ trễ và chi phí. Tối ưu prompt là kỹ năng kỹ thuật bắt buộc.' : 'Token usage directly influences LLM performance, latency, and operational expense at scale.'}</div>
-          </div>
-          <div class="takeaway-card">
-            <div class="takeaway-card-num">05</div>
-            <div class="takeaway-card-title">${isVi ? 'Co giãn linh hoạt' : 'Elastic Scalability'}</div>
-            <div class="takeaway-card-body">${isVi ? 'Khả năng co giãn tự động (AWS Lambda, Auto Scaling, ALB) giúp hạ tầng đám mây thích ứng với nhu cầu biến động mà không lãng phí tài nguyên.' : 'Elastic scalability helps infrastructure dynamically adapt to changing workloads without overprovisioning.'}</div>
-          </div>
-          <div class="takeaway-card">
-            <div class="takeaway-card-num">06</div>
-            <div class="takeaway-card-title">${isVi ? 'Multi-Agent Modularity' : 'Multi-Agent Modularity'}</div>
-            <div class="takeaway-card-body">${isVi ? '4 mô hình phối hợp Multi-Agent giúp chia nhỏ bài toán kinh doanh phức tạp thành các luồng xử lý chuyên biệt, dễ kiểm soát và kiểm toán.' : 'Multi-Agent patterns enable coordinated, modular execution of complex workflows through specialized agents.'}</div>
-          </div>
-          <div class="takeaway-card" style="grid-column: 1 / -1;">
-            <div class="takeaway-card-num">07</div>
-            <div class="takeaway-card-title">${isVi ? 'AWS Cloud là bệ phóng' : 'AWS Cloud Foundation'}</div>
-            <div class="takeaway-card-body">${isVi ? 'AWS Cloud cung cấp hệ sinh thái hạ tầng tính toán, dịch vụ dữ liệu và công cụ an ninh toàn diện giúp thu hẹp khoảng cách giữa mô hình thử nghiệm và ứng dụng doanh nghiệp thực tế.' : 'AWS Cloud provides the comprehensive infrastructure, databases, and operational technologies required to bridge the gap between experimental AI and enterprise applications.'}</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SECTION V – PERSONAL REFLECTION -->
-      <section class="report-section-block">
-        <div class="report-section-header">
-          <span class="report-section-num">05</span>
-          <h2 class="report-section-title">${isVi ? 'V. Góc nhìn & Chiêm nghiệm cá nhân (Personal Reflection)' : 'V. Personal Reflection'}</h2>
+          <h2 class="report-section-title">${isVi ? 'IV. Bài học cốt lõi (Key Takeaways)' : 'IV. Key Takeaways'}</h2>
         </div>
         <div class="report-prose">
           <p>${isVi
-            ? 'Trước khi tiếp cận các kiến thức chuyên sâu tại phiên hội thảo này, quá trình phát triển AI thường rất dễ bị nhìn nhận đơn thuần dưới góc độ bài toán độ chính xác của mô hình (model accuracy). Tuy nhiên, buổi chia sẻ đã mở ra cho em một góc nhìn toàn diện, thực tế và sâu sắc hơn rất nhiều về <strong>kiến trúc sản xuất (production architecture)</strong>.'
-            : 'Before studying the concepts introduced in this event, AI development could be viewed primarily as a model accuracy problem. However, the session provided a much broader perspective on the importance of production architecture.'}</p>
-          
-          <div class="report-quote-box" style="font-style:normal;">
-            ${isVi
-              ? '“Dưới lăng kính của một kỹ sư Cloud Solutions Architecture, một ứng dụng AI không thể chỉ được đo bằng khả năng sinh câu trả lời thông minh. Nó bắt buộc phải duy trì hiệu năng ổn định, bảo vệ thông tin nhạy cảm của khách hàng, co giãn linh hoạt trước mọi cơn sốt lưu lượng và giữ chi phí vận hành ở mức kiểm soát được.”'
-              : '“From a Cloud Architecture perspective, an AI application should not be evaluated solely by its ability to generate accurate results. It must also maintain reliable performance, protect sensitive information, respond to changing workloads, and control operational expenses.”'}
+            ? 'Hội thảo đã đúc kết các bài học kiến trúc mang tính sống còn đối với bất kỳ kỹ sư nào khi đưa AI vào môi trường sản xuất:'
+            : 'The session crystallized vital architectural lessons for bringing AI systems into real-world production:'}</p>
+
+          <div class="minimal-table-wrap">
+            <table class="minimal-table">
+              <thead>
+                <tr>
+                  <th style="width: 30%;">${isVi ? 'Lĩnh vực kiến trúc' : 'Architectural Area'}</th>
+                  <th style="width: 70%;">${isVi ? 'Kiến thức cốt lõi tiếp thu (Key Knowledge Acquired)' : 'Key Knowledge Acquired'}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Academic vs Enterprise AI</strong></td>
+                  <td>${isVi ? 'Chuyển đổi trọng tâm từ độ chính xác thuần túy sang giá trị kinh doanh, tính sẵn sàng cao và khả năng duy trì vận hành liên tục.' : 'Shifting focus from model accuracy to continuous business value and high availability.'}</td>
+                </tr>
+                <tr>
+                  <td><strong>AI System Components</strong></td>
+                  <td>${isVi ? 'Nắm vững chuỗi giá trị Data → Model → Feature → User và vòng lặp phản hồi cải tiến hệ thống.' : 'Mastering the Data → Model → Feature → User value chain and continuous feedback loops.'}</td>
+                </tr>
+                <tr>
+                  <td><strong>Training vs Inference</strong></td>
+                  <td>${isVi ? 'Phân định rõ yêu cầu tài nguyên không liên tục của Training và tính liên tục, yêu cầu độ trễ thấp của Inference.' : 'Differentiating batch periodic training compute from real-time low-latency inference demands.'}</td>
+                </tr>
+                <tr>
+                  <td><strong>Token Economics</strong></td>
+                  <td>${isVi ? 'Hiểu rõ tác động của Input/Output Tokens đến độ trễ và chi phí hóa đơn, áp dụng kỹ thuật tối ưu prompt và caching.' : 'Managing prompt token consumption to control operating expenses and inference latency.'}</td>
+                </tr>
+                <tr>
+                  <td><strong>4 Production Pillars</strong></td>
+                  <td>${isVi ? 'Xây dựng hệ thống vững chắc dựa trên 4 trụ cột: An ninh (Security), Độ tin cậy (Reliability), Mở rộng (Scalability) và Tối ưu chi phí (Cost).' : 'Ensuring systems meet Security, Reliability, Scalability, and Cost Optimization criteria.'}</td>
+                </tr>
+                <tr>
+                  <td><strong>Elastic Scalability</strong></td>
+                  <td>${isVi ? 'Tận dụng AWS Lambda, Auto Scaling và ALB để hệ thống co giãn tự động thích ứng với lưu lượng biến động.' : 'Employing AWS Lambda, ASGs, and ALB to adapt dynamically to unpredictable traffic.'}</td>
+                </tr>
+                <tr>
+                  <td><strong>Multi-Agent Patterns</strong></td>
+                  <td>${isVi ? 'Ứng dụng 4 mô hình: Supervisor, Sequential, Parallel và Evaluator-Optimizer để giải quyết quy trình nghiệp vụ phức tạp.' : 'Applying Supervisor, Sequential, Parallel, and Evaluator-Optimizer coordination patterns.'}</td>
+                </tr>
+                <tr>
+                  <td><strong>AWS Cloud Role</strong></td>
+                  <td>${isVi ? 'Đám mây AWS là bệ phóng hạ tầng, dữ liệu và công cụ quản trị giúp hiện thực hóa các giải pháp Enterprise AI quy mô lớn.' : 'AWS Cloud serves as the foundational compute, database, and governance engine for enterprise AI.'}</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
-          <p>${isVi
-            ? 'Các mô hình kiến trúc Multi-Agent đặc biệt cuốn hút em bởi tính thực tiễn cao: chúng chứng minh rõ ràng cách chia tách một quy trình nghiệp vụ phức tạp thành các tác vụ chuyên biệt, có thể kiểm soát và kiểm toán độc lập. Những kiến thức này củng cố mối liên kết chặt chẽ giữa phát triển AI và hạ tầng điện toán đám mây, đồng thời đặt nền tảng vững chắc cho quá trình học tập và định hướng nghề nghiệp của em trên nền tảng AWS.'
-            : 'The Multi-Agent architecture patterns were particularly fascinating because they demonstrated how complex AI workflows could be partitioned into specialized and coordinated tasks. This knowledge strengthens the essential connection between AI development and cloud infrastructure, providing a solid foundation for further exploration of enterprise AI architecture on AWS.'}</p>
+          <p style="font-weight:700; color:#171717; margin-top:20px;">
+            ${isVi ? 'Những nguyên lý vận hành cốt lõi:' : 'Core operational principles:'}
+          </p>
+          <ul>
+            <li>${isVi ? 'Độ chính xác của mô hình đơn thuần là chưa đủ cho các hệ thống AI cấp sản xuất.' : 'Model accuracy alone is insufficient for production AI systems.'}</li>
+            <li>${isVi ? 'Enterprise AI đòi hỏi một kiến trúc đám mây toàn diện đảm bảo tính tin cậy, an toàn, có khả năng mở rộng cao và tối ưu chi phí.' : 'Enterprise AI requires reliable, secure, scalable, and cost-effective architecture.'}</li>
+            <li>${isVi ? 'Hiệu năng suy luận và mức tiêu thụ token ảnh hưởng trực tiếp đến chi phí vận hành và trải nghiệm khách hàng.' : 'Inference performance and token consumption influence operational costs.'}</li>
+            <li>${isVi ? 'Kiến trúc Multi-Agent là chìa khóa phân rã và tự động hóa các luồng quy trình nghiệp vụ phức tạp.' : 'Multi-Agent architecture supports complex AI workflows.'}</li>
+            <li>${isVi ? 'Hạ tầng điện toán đám mây đóng vai trò nền tảng không thể thiếu trong việc triển khai và duy trì các hệ thống AI doanh nghiệp.' : 'Cloud infrastructure plays an important role in enterprise AI operations.'}</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION V – LESSONS LEARNED AND PERSONAL CONTRIBUTIONS -->
+      <section class="report-section-block">
+        <div class="report-section-header">
+          <span class="report-section-num">05</span>
+          <h2 class="report-section-title">${isVi ? 'V. Bài học rút ra & Đóng góp cá nhân (Lessons Learned & Personal Contributions)' : 'V. Lessons Learned and Personal Contributions'}</h2>
+        </div>
+        <div class="report-prose">
+          
+          <h3 style="font-size:15px; font-weight:700; color:#0F172A; margin:16px 0 8px 0;">
+            ${isVi ? '1. Bài học rút ra (Lessons Learned)' : '1. Lessons Learned'}
+          </h3>
+          <ul>
+            <li>${isVi ? '<strong>Độ chính xác mô hình là chưa đủ:</strong> Độ chính xác của mô hình đơn thuần là chưa đủ cho các hệ thống AI cấp sản xuất; giá trị kinh doanh và tính ổn định vận hành mới là thước đo quyết định.' : '<strong>Model accuracy alone is insufficient:</strong> Model accuracy alone is insufficient for production AI systems; continuous business value and operational reliability are paramount.'}</li>
+            <li>${isVi ? '<strong>Kiến trúc sản xuất toàn diện:</strong> Enterprise AI đòi hỏi một kiến trúc đám mây toàn diện đảm bảo tính tin cậy, an toàn, có khả năng mở rộng cao và tối ưu chi phí.' : '<strong>Comprehensive production architecture:</strong> Enterprise AI requires reliable, secure, scalable, and cost-effective architecture.'}</li>
+            <li>${isVi ? '<strong>Kinh tế học suy luận và token:</strong> Hiệu năng suy luận (Inference) và mức tiêu thụ token ảnh hưởng trực tiếp đến chi phí vận hành và độ trễ trải nghiệm người dùng.' : '<strong>Inference and token economics:</strong> Inference performance and token consumption influence operational costs.'}</li>
+            <li>${isVi ? '<strong>Giải quyết bài toán phức tạp bằng Multi-Agent:</strong> Các mô hình kiến trúc Multi-Agent hỗ trợ giải quyết hiệu quả các luồng quy trình nghiệp vụ phức tạp thông qua phân tách tác vụ chuyên biệt.' : '<strong>Multi-Agent workflow coordination:</strong> Multi-Agent architecture supports complex AI workflows.'}</li>
+            <li>${isVi ? '<strong>Nền tảng hạ tầng đám mây:</strong> Hạ tầng điện toán đám mây đóng vai trò nền tảng không thể thiếu trong việc triển khai và duy trì các hệ thống AI doanh nghiệp.' : '<strong>Cloud infrastructure foundation:</strong> Cloud infrastructure plays an important role in enterprise AI operations.'}</li>
+          </ul>
+
+          <h3 style="font-size:15px; font-weight:700; color:#0F172A; margin:24px 0 8px 0;">
+            ${isVi ? '2. Đóng góp cá nhân (Personal Contributions)' : '2. Personal Contributions'}
+          </h3>
+          <ul>
+            <li>${isVi ? 'Tham gia sự kiện với vai trò người tham dự (Attendee) tích cực từ 09:00 đến 12:00 ngày 14/11/2026 tại tầng 26, Bitexco Financial Tower.' : 'Participated in the event as an attendee from 09:00 AM to 12:00 PM on November 14, 2026, at the 26th Floor of Bitexco Financial Tower.'}</li>
+            <li>${isVi ? 'Nghiên cứu và tiếp thu các khái niệm kỹ thuật chuyên sâu được giới thiệu trong các bài chia sẻ.' : 'Studied the technical concepts introduced during the presentations.'}</li>
+            <li>${isVi ? 'Tổng hợp và hệ thống hóa kiến thức về Enterprise AI và AWS Cloud vào bài báo cáo kỹ thuật cá nhân chi tiết.' : 'Consolidated knowledge of enterprise AI and AWS Cloud into a personal technical report.'}</li>
+            <li>${isVi ? 'Xác định các cơ hội ứng dụng tiềm năng của kiến trúc Multi-Agent và hạ tầng đám mây vào các dự án nghiên cứu và phát triển sắp tới.' : 'Identified potential applications of Multi-Agent architectures and cloud infrastructure in future projects.'}</li>
+          </ul>
         </div>
       </section>
 
@@ -6774,25 +6872,25 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
       <section class="report-section-block">
         <div class="report-section-header">
           <span class="report-section-num">06</span>
-          <h2 class="report-section-title">${isVi ? 'VI. Kết luận & Đúc kết (Conclusion)' : 'VI. Conclusion'}</h2>
+          <h2 class="report-section-title">${isVi ? 'VI. Kết luận (Conclusion)' : 'VI. Conclusion'}</h2>
         </div>
         <div class="report-prose">
           <p>${isVi
-            ? 'Enterprise AI không đơn thuần chỉ là việc xây dựng một mô hình máy học mạnh mẽ. Nó đòi hỏi một hệ thống toàn diện có khả năng cung cấp dịch vụ tin cậy, an toàn, có khả năng mở rộng cao và hiệu quả về chi phí.'
+            ? 'Enterprise AI không đơn thuần chỉ là việc xây dựng một mô hình máy học mạnh mẽ. Nó đòi hỏi một hệ sinh thái kiến trúc toàn diện có khả năng cung cấp dịch vụ tin cậy, an toàn, có khả năng mở rộng cao và hiệu quả về chi phí.'
             : 'Enterprise AI is not simply about building a powerful model. It requires a complete system capable of delivering reliable, secure, scalable, and cost-effective services.'}</p>
 
           <p>${isVi
-            ? 'AWS Cloud cung cấp cơ sở hạ tầng và các công nghệ vận hành hiện đại giúp thu hẹp khoảng cách giữa các nghiên cứu AI thử nghiệm và các ứng dụng quy mô doanh nghiệp.'
-            : 'AWS Cloud provides infrastructure and operational technologies that can help bridge the gap between experimental AI and enterprise-level applications.'}</p>
+            ? 'AWS Cloud cung cấp cơ sở hạ tầng tính toán, nền tảng dịch vụ và các công nghệ vận hành hiện đại giúp thu hẹp hoàn hảo khoảng cách giữa các nghiên cứu AI thử nghiệm và các ứng dụng quy mô doanh nghiệp.'
+            : 'AWS Cloud provides infrastructure and operational technologies that bridge the gap between experimental AI prototypes and enterprise-level production applications.'}</p>
 
-          <div class="report-quote-box" style="border-left-color: #171717; font-weight:700; color:#171717; font-size:15px; margin:20px 0;">
+          <div class="report-quote-box" style="border-left-color: #171717; font-weight:700; color:#171717; font-size:15px; margin:22px 0;">
             ${isVi
               ? '“Sự thành công của Enterprise AI không chỉ phụ thuộc vào sự thông minh của mô hình, mà phụ thuộc vào kiến trúc đám mây nâng đỡ phía sau nó.”'
               : '“The success of enterprise AI depends not only on the intelligence of the model, but also on the architecture that supports it.”'}
           </div>
 
           <!-- Tags -->
-          <div style="margin:24px 0 10px 0; font-size:13.5px; color:#555555; line-height:1.8; word-spacing:4px; border-top:1px solid #E5E5E5; padding-top:16px;">
+          <div style="margin:24px 0 10px 0; font-size:13px; color:#555555; line-height:1.8; word-spacing:4px; border-top:1px solid #E5E5E5; padding-top:16px;">
             #AWS #AWSStudyGroup #EnterpriseAI #ArtificialIntelligence #CloudArchitecture #MultiAgent #LLM #Scalability #FirstCloudAIJourney
           </div>
         </div>
@@ -7013,6 +7111,7 @@ window.app = app;
 window.navigateTo = navigateTo;
 window.renderEventsList = renderEventsList;
 window.renderEventDetail = renderEventDetail;
+window.renderModernizationEventDetail = renderModernizationEventDetail;
 window.renderMeetupEventDetail = renderMeetupEventDetail;
 window.renderEnterpriseAIEventDetail = renderEnterpriseAIEventDetail;
 window.selectWeek = selectWeek;
