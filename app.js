@@ -110,7 +110,7 @@ const I18N_DICTIONARY = {
     toc4Title: "4. Sự kiện tham gia",
     toc4Desc: "Báo cáo tham dự các sự kiện công nghệ AWS thực tế: Modernization Workshop tại Bitexco, Voice AI Meetup và Enterprise AI trên AWS Cloud.",
     toc5Title: "5. Bài thực hành Workshop",
-    toc5Desc: "Bài thực hành chuyên sâu: Secure Hybrid Access to S3 using Gateway & Interface VPC Endpoints.",
+    toc5Desc: "Bài thực hành chuyên sâu: Truy cập Amazon S3 an toàn từ môi trường hybrid qua Gateway & Interface VPC Endpoints.",
     toc6Title: "6. Tự đánh giá",
     toc6Desc: "Bảng 12 tiêu chí tự đánh giá năng lực cá nhân và các điểm cần tiếp tục hoàn thiện.",
     toc7Title: "7. Chia sẻ & Góp ý",
@@ -235,7 +235,7 @@ const I18N_DICTIONARY = {
     
     // 6. Self-assessment
     selfSectionTitle: "6. Tự đánh giá kết quả thực tập",
-    selfSectionSubtitle: "Bảng 12 tiêu chí đánh giá năng lực của sinh viên Phan Nhat Uyen",
+    selfSectionSubtitle: "Bảng 12 tiêu chí đánh giá năng lực của sinh viên Phan Nhật Uyên",
     btnSaveAssessment: "Lưu tự đánh giá",
     assessNarrativeLabel: "Tóm tắt quá trình rèn luyện & công tác",
     criteriaTableTitle: "Bảng đánh giá theo 12 tiêu chí chuẩn của AWS FCAJ",
@@ -300,7 +300,26 @@ const I18N_DICTIONARY = {
     confirmDeleteTask: "Bạn có chắc muốn xóa công việc này?",
     confirmDeleteBlog: "Xóa bài blog này khỏi danh sách?",
     confirmDeleteEvent: "Xóa sự kiện này khỏi báo cáo?",
-    pageTitleDoc: "Báo cáo thực tập :: Phan Nhat Uyen - AWS First Cloud AI Journey"
+    pageTitleDoc: "Báo cáo thực tập :: Phan Nhật Uyên - AWS First Cloud AI Journey",
+
+    // Static tooltips, image alt text & modals
+    photoFrameTooltip: "Bấm để xem ảnh phóng to độ nét cao",
+    photoFitTooltip: "Đổi chế độ: Cắt vừa (Cover) / Hiển thị toàn ảnh không bị vỡ (Contain)",
+    photoViewHdTooltip: "Xem ảnh kích thước lớn độ nét cao",
+    photoAlt: "Ảnh thẻ sinh viên Phan Nhật Uyên",
+    photoHdAlt: "Ảnh cá nhân HD",
+    diagModalAlt: "Sơ đồ kiến trúc HD",
+    exportModalTitle: "Dữ liệu sao lưu Worklog (JSON)",
+    exportModalDesc: "Dưới đây là toàn bộ nội dung 12 tuần bạn đã viết trên trình duyệt. Bạn có thể sao chép đoạn mã này để lưu trữ hoặc gửi vào chat để được cập nhật vĩnh viễn vào mã nguồn GitHub:",
+    btnCopyClipboard: "Sao chép vào bộ nhớ tạm",
+    toastCopyJsonFull: "✓ Đã sao chép toàn bộ mã JSON vào bộ nhớ tạm!",
+    toastCopyJsonShort: "✓ Đã sao chép!",
+    reportUnavailable: "Báo cáo chưa khả dụng",
+    btnBackToEventsShort: "Quay lại sự kiện",
+    wsOnpremCmt1: "# Kiểm tra phân giải DNS nội bộ từ On-Premises",
+    wsOnpremCmt2: "# Tải file qua Interface Endpoint riêng tư",
+    minutesUnit: "phút",
+    viewPostOnCommunity: "Xem bài viết trên cộng đồng AWS Study Group VN"
   },
   
   en: {
@@ -395,6 +414,12 @@ const I18N_DICTIONARY = {
     toc2Desc: "Project Proposal: IoT Weather Platform - Real-Time AWS Serverless Monitoring Solution.",
     toc3Title: "3. Blogs Posted",
     toc3Desc: "Technical blog articles published on AWS Study Group (S3 Express One Zone, Event-Driven Architecture, EC2 Identity Containment).",
+    zoomDiagramTooltip: "Click to view the architecture diagram in high resolution (HD)",
+    btnExpandSnippet: "Read full content ▼",
+    btnCollapseSnippet: "Collapse article ▲",
+    diagModalTitle: "Architecture Diagram (High Resolution)",
+    diagModalDesc: "Architecture comparison between Amazon S3 Standard and Amazon S3 Express One Zone in an AI/ML processing pipeline.",
+    btnOpenTab: "Open image in new tab ↗",
     toc4Title: "4. Events Participated",
     toc4Desc: "Technical reports on AWS events attended: Modernization Workshop at Bitexco, Voice AI Meetup, and Enterprise AI on AWS Cloud.",
     toc5Title: "5. Workshop",
@@ -588,7 +613,26 @@ const I18N_DICTIONARY = {
     confirmDeleteTask: "Are you sure you want to delete this task?",
     confirmDeleteBlog: "Delete this blog from the list?",
     confirmDeleteEvent: "Delete this event from the report?",
-    pageTitleDoc: "Internship Report :: Phan Nhat Uyen - AWS First Cloud AI Journey"
+    pageTitleDoc: "Internship Report :: Phan Nhat Uyen - AWS First Cloud AI Journey",
+
+    // Static tooltips, image alt text & modals
+    photoFrameTooltip: "Click to view the photo in high resolution",
+    photoFitTooltip: "Switch mode: Fill (Cover) / Show the whole photo without cropping (Contain)",
+    photoViewHdTooltip: "View the photo in full size, high resolution",
+    photoAlt: "Student ID photo of Phan Nhat Uyen",
+    photoHdAlt: "Personal photo in HD",
+    diagModalAlt: "Architecture diagram in HD",
+    exportModalTitle: "Worklog Backup Data (JSON)",
+    exportModalDesc: "Below is the full 12-week content you wrote in the browser. You can copy this code to keep a backup or send it in chat to have it permanently updated in the GitHub source code:",
+    btnCopyClipboard: "Copy to clipboard",
+    toastCopyJsonFull: "✓ Copied the full JSON code to the clipboard!",
+    toastCopyJsonShort: "✓ Copied!",
+    reportUnavailable: "Report not available",
+    btnBackToEventsShort: "Back to events",
+    wsOnpremCmt1: "# Check internal DNS resolution from On-Premises",
+    wsOnpremCmt2: "# Upload a file through the private Interface Endpoint",
+    minutesUnit: "minutes",
+    viewPostOnCommunity: "View post on AWS Study Group VN community"
   }
 };
 
@@ -625,39 +669,39 @@ const DEFAULT_BILINGUAL_DATA = {
       return {
         weekNum: 1,
         vi: {
-          topic: "Cloud Fundamentals & Amazon EC2 (14/09/2026 – 18/09/2026)",
-          objectives: "- Get acquainted with FCAJ members and understand the internship working process.\n- Complete the AWS Free $100 Credit registration for hands-on practice.\n- Understand fundamental AWS services and AWS global infrastructure.\n- Become familiar with AWS Management Console and AWS CLI.\n- Learn basic Amazon EC2 concepts and perform the first EC2 hands-on lab.",
-          achievements: "- Successfully completed the AWS Free $100 Credit registration for AWS hands-on activities.\n- Understood the basic concepts of Cloud Computing and AWS Global Infrastructure:\n  - Region\n  - Availability Zone\n  - Edge Location\n- Understood the major AWS service groups:\n  - Compute\n  - Storage\n  - Networking\n  - Database\n  - Security\n  - Monitoring\n- Became familiar with the AWS Management Console and learned how to:\n  - Search and access AWS services\n  - Switch AWS Regions\n  - View and manage AWS resources\n  - Check basic resource information\n- Successfully installed and configured AWS CLI, including:\n  - Access Key\n  - Secret Key\n  - Default Region\n  - Output Format\n- Used AWS CLI to:\n  - Verify AWS identity and account information\n  - Check CLI configuration\n  - Retrieve the list of AWS Regions\n  - View EC2 instances and instance states\n  - Manage/check EC2 Key Pairs\n  - Retrieve basic AWS resource information\n- Learned the fundamental components of Amazon EC2:\n  - AMI\n  - Instance Type\n  - EBS\n  - Key Pair\n  - Security Group\n  - Public/Private IP\n  - Elastic IP\n- Successfully launched and managed an EC2 instance.\n- Successfully connected to a Linux EC2 instance through SSH.\n- Created and attached an additional EBS volume to an EC2 instance.\n- Practiced managing EC2 using both AWS Console and AWS CLI.\n- Gained the ability to perform a complete basic workflow:\n  AWS Account → Console/CLI → EC2 → Security Group → SSH → EBS → Resource Management.",
+          topic: "Nền tảng Điện toán đám mây & Amazon EC2 (14/09/2026 – 18/09/2026)",
+          objectives: "- Làm quen với các thành viên FCAJ và nắm rõ quy trình làm việc trong kỳ thực tập.\n- Hoàn tất đăng ký nhận AWS Free $100 Credit để phục vụ thực hành.\n- Hiểu các dịch vụ AWS cơ bản và hạ tầng toàn cầu của AWS.\n- Làm quen với AWS Management Console và AWS CLI.\n- Tìm hiểu các khái niệm cơ bản về Amazon EC2 và thực hiện bài lab EC2 đầu tiên.",
+          achievements: "- Đăng ký thành công AWS Free $100 Credit cho các hoạt động thực hành trên AWS.\n- Nắm được các khái niệm cơ bản về Điện toán đám mây và Hạ tầng toàn cầu AWS:\n  - Region\n  - Availability Zone\n  - Edge Location\n- Nắm được các nhóm dịch vụ AWS chính:\n  - Compute\n  - Storage\n  - Networking\n  - Database\n  - Security\n  - Monitoring\n- Làm quen với AWS Management Console và biết cách:\n  - Tìm kiếm và truy cập các dịch vụ AWS\n  - Chuyển đổi AWS Region\n  - Xem và quản lý tài nguyên AWS\n  - Kiểm tra thông tin cơ bản của tài nguyên\n- Cài đặt và cấu hình thành công AWS CLI, bao gồm:\n  - Access Key\n  - Secret Key\n  - Default Region\n  - Output Format\n- Sử dụng AWS CLI để:\n  - Xác minh danh tính và thông tin tài khoản AWS\n  - Kiểm tra cấu hình CLI\n  - Lấy danh sách các AWS Region\n  - Xem các EC2 instance và trạng thái instance\n  - Quản lý/kiểm tra EC2 Key Pair\n  - Truy xuất thông tin cơ bản của tài nguyên AWS\n- Nắm được các thành phần cơ bản của Amazon EC2:\n  - AMI\n  - Instance Type\n  - EBS\n  - Key Pair\n  - Security Group\n  - Public/Private IP\n  - Elastic IP\n- Khởi tạo và quản lý thành công một EC2 instance.\n- Kết nối thành công tới EC2 instance Linux qua SSH.\n- Tạo và gắn thêm một EBS volume vào EC2 instance.\n- Thực hành quản lý EC2 bằng cả AWS Console và AWS CLI.\n- Có khả năng thực hiện trọn vẹn một quy trình cơ bản:\n  AWS Account → Console/CLI → EC2 → Security Group → SSH → EBS → Quản lý tài nguyên.",
           tasks: [
             {
-              day: "2",
-              desc: "- Get acquainted with FCAJ mentors and members.\n- Learn about the FCAJ internship roadmap, working process, rules, and regulations.\n- Understand weekly worklog requirements and expected learning outcomes.\n- Complete the required process to receive AWS Free $100 Credit for hands-on labs.\n- Check the AWS learning environment and understand basic cost-control precautions.",
+              day: "Thứ 2",
+              desc: "- Làm quen với mentor và các thành viên FCAJ.\n- Tìm hiểu lộ trình thực tập, quy trình làm việc, nội quy và quy định của FCAJ.\n- Nắm rõ yêu cầu viết worklog hằng tuần và kết quả học tập mong đợi.\n- Hoàn tất thủ tục nhận AWS Free $100 Credit cho các bài lab thực hành.\n- Kiểm tra môi trường học tập AWS và tìm hiểu các biện pháp kiểm soát chi phí cơ bản.",
               start: "2026-09-14", end: "2026-09-14",
-              ref: "AWS Account: https://000001.awsstudygroup.com/\nAWS Budgets: https://000007.awsstudygroup.com/"
+              ref: "https://aws.amazon.com/free/"
             },
             {
-              day: "3",
-              desc: "- Learn the fundamentals of Cloud Computing and Amazon Web Services (AWS).\n- Understand AWS Global Infrastructure: Region, Availability Zone, Edge Location.\n- Learn major AWS service groups: Compute, Storage, Networking, Database, Security, Monitoring.\n- Explore AWS Management Console and locate commonly used AWS services.\n- Practice switching AWS Regions and checking available services/resources.",
+              day: "Thứ 3",
+              desc: "- Học kiến thức nền tảng về Điện toán đám mây và Amazon Web Services (AWS).\n- Tìm hiểu Hạ tầng toàn cầu AWS: Region, Availability Zone, Edge Location.\n- Tìm hiểu các nhóm dịch vụ AWS chính: Compute, Storage, Networking, Database, Security, Monitoring.\n- Khám phá AWS Management Console và tìm vị trí các dịch vụ AWS thường dùng.\n- Thực hành chuyển đổi AWS Region và kiểm tra các dịch vụ/tài nguyên khả dụng.",
               start: "2026-09-15", end: "2026-09-15",
-              ref: "First Cloud Journey: https://cloudjourney.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html"
             },
             {
-              day: "4",
-              desc: "- Learn about AWS Management Console and AWS CLI.\n- Install and configure AWS CLI on the local computer.\n- Configure Access Key, Secret Key, Default Region, and Output Format.\n- Practice basic CLI commands to check AWS identity, configuration, and available regions.\n- Use AWS CLI to retrieve EC2 information and compare results with AWS Console.\n- Understand the difference between managing AWS resources through Console and CLI.",
+              day: "Thứ 4",
+              desc: "- Tìm hiểu AWS Management Console và AWS CLI.\n- Cài đặt và cấu hình AWS CLI trên máy tính cá nhân.\n- Cấu hình Access Key, Secret Key, Default Region và Output Format.\n- Thực hành các lệnh CLI cơ bản để kiểm tra danh tính AWS, cấu hình và các Region khả dụng.\n- Dùng AWS CLI để lấy thông tin EC2 và so sánh kết quả với AWS Console.\n- Hiểu sự khác nhau giữa quản lý tài nguyên AWS qua Console và qua CLI.",
               start: "2026-09-16", end: "2026-09-16",
-              ref: "AWS CLI: https://000011.awsstudygroup.com/\nAWS Account: https://000001.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html"
             },
             {
-              day: "5",
-              desc: "- Learn basic concepts of Amazon EC2.\n- Study AMI, Instance Type, EBS, Key Pair, Security Group, Public IP, Private IP, and Elastic IP.\n- Understand EC2 instance lifecycle: Pending, Running, Stopping, Stopped, Terminated.\n- Learn how SSH authentication works when connecting to EC2.\n- Learn the role of Security Groups in controlling inbound/outbound traffic.\n- Explore the EC2 Dashboard and available instance configurations.",
+              day: "Thứ 5",
+              desc: "- Học các khái niệm cơ bản về Amazon EC2.\n- Tìm hiểu AMI, Instance Type, EBS, Key Pair, Security Group, Public IP, Private IP và Elastic IP.\n- Hiểu vòng đời EC2 instance: Pending, Running, Stopping, Stopped, Terminated.\n- Tìm hiểu cơ chế xác thực SSH khi kết nối tới EC2.\n- Tìm hiểu vai trò của Security Group trong việc kiểm soát lưu lượng inbound/outbound.\n- Khám phá EC2 Dashboard và các tùy chọn cấu hình instance.",
               start: "2026-09-17", end: "2026-09-18",
-              ref: "Amazon EC2: https://000004.awsstudygroup.com/\nIAM Roles for EC2: https://000048.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html"
             },
             {
-              day: "6",
-              desc: "- Practice launching an Amazon EC2 instance.\n- Configure AMI, Instance Type, Key Pair, Network, and Security Group.\n- Connect to the EC2 Linux instance through SSH.\n- Execute basic Linux commands and verify server status.\n- Create and attach an additional EBS volume to EC2.\n- Practice Start/Stop EC2 and check instance status using both AWS Console and AWS CLI.",
+              day: "Thứ 6",
+              desc: "- Thực hành khởi tạo một Amazon EC2 instance.\n- Cấu hình AMI, Instance Type, Key Pair, Network và Security Group.\n- Kết nối tới EC2 instance Linux qua SSH.\n- Chạy các lệnh Linux cơ bản và kiểm tra trạng thái máy chủ.\n- Tạo và gắn thêm một EBS volume vào EC2.\n- Thực hành Start/Stop EC2 và kiểm tra trạng thái instance bằng cả AWS Console và AWS CLI.",
               start: "2026-09-18", end: "2026-09-18",
-              ref: "Amazon EC2: https://000004.awsstudygroup.com/\nIAM Roles for EC2: https://000048.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html"
             }
           ]
         },
@@ -667,34 +711,34 @@ const DEFAULT_BILINGUAL_DATA = {
           achievements: "- Successfully completed the AWS Free $100 Credit registration for AWS hands-on activities.\n- Understood the basic concepts of Cloud Computing and AWS Global Infrastructure:\n  - Region\n  - Availability Zone\n  - Edge Location\n- Understood the major AWS service groups:\n  - Compute\n  - Storage\n  - Networking\n  - Database\n  - Security\n  - Monitoring\n- Became familiar with the AWS Management Console and learned how to:\n  - Search and access AWS services\n  - Switch AWS Regions\n  - View and manage AWS resources\n  - Check basic resource information\n- Successfully installed and configured AWS CLI, including:\n  - Access Key\n  - Secret Key\n  - Default Region\n  - Output Format\n- Used AWS CLI to:\n  - Verify AWS identity and account information\n  - Check CLI configuration\n  - Retrieve the list of AWS Regions\n  - View EC2 instances and instance states\n  - Manage/check EC2 Key Pairs\n  - Retrieve basic AWS resource information\n- Learned the fundamental components of Amazon EC2:\n  - AMI\n  - Instance Type\n  - EBS\n  - Key Pair\n  - Security Group\n  - Public/Private IP\n  - Elastic IP\n- Successfully launched and managed an EC2 instance.\n- Successfully connected to a Linux EC2 instance through SSH.\n- Created and attached an additional EBS volume to an EC2 instance.\n- Practiced managing EC2 using both AWS Console and AWS CLI.\n- Gained the ability to perform a complete basic workflow:\n  AWS Account → Console/CLI → EC2 → Security Group → SSH → EBS → Resource Management.",
           tasks: [
             {
-              day: "2",
+              day: "Monday",
               desc: "- Get acquainted with FCAJ mentors and members.\n- Learn about the FCAJ internship roadmap, working process, rules, and regulations.\n- Understand weekly worklog requirements and expected learning outcomes.\n- Complete the required process to receive AWS Free $100 Credit for hands-on labs.\n- Check the AWS learning environment and understand basic cost-control precautions.",
               start: "2026-09-14", end: "2026-09-14",
-              ref: "AWS Account: https://000001.awsstudygroup.com/\nAWS Budgets: https://000007.awsstudygroup.com/"
+              ref: "https://aws.amazon.com/free/"
             },
             {
-              day: "3",
+              day: "Tuesday",
               desc: "- Learn the fundamentals of Cloud Computing and Amazon Web Services (AWS).\n- Understand AWS Global Infrastructure: Region, Availability Zone, Edge Location.\n- Learn major AWS service groups: Compute, Storage, Networking, Database, Security, Monitoring.\n- Explore AWS Management Console and locate commonly used AWS services.\n- Practice switching AWS Regions and checking available services/resources.",
               start: "2026-09-15", end: "2026-09-15",
-              ref: "First Cloud Journey: https://cloudjourney.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html"
             },
             {
-              day: "4",
+              day: "Wednesday",
               desc: "- Learn about AWS Management Console and AWS CLI.\n- Install and configure AWS CLI on the local computer.\n- Configure Access Key, Secret Key, Default Region, and Output Format.\n- Practice basic CLI commands to check AWS identity, configuration, and available regions.\n- Use AWS CLI to retrieve EC2 information and compare results with AWS Console.\n- Understand the difference between managing AWS resources through Console and CLI.",
               start: "2026-09-16", end: "2026-09-16",
-              ref: "AWS CLI: https://000011.awsstudygroup.com/\nAWS Account: https://000001.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html"
             },
             {
-              day: "5",
+              day: "Thursday",
               desc: "- Learn basic concepts of Amazon EC2.\n- Study AMI, Instance Type, EBS, Key Pair, Security Group, Public IP, Private IP, and Elastic IP.\n- Understand EC2 instance lifecycle: Pending, Running, Stopping, Stopped, Terminated.\n- Learn how SSH authentication works when connecting to EC2.\n- Learn the role of Security Groups in controlling inbound/outbound traffic.\n- Explore the EC2 Dashboard and available instance configurations.",
               start: "2026-09-17", end: "2026-09-18",
-              ref: "Amazon EC2: https://000004.awsstudygroup.com/\nIAM Roles for EC2: https://000048.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html"
             },
             {
-              day: "6",
+              day: "Friday",
               desc: "- Practice launching an Amazon EC2 instance.\n- Configure AMI, Instance Type, Key Pair, Network, and Security Group.\n- Connect to the EC2 Linux instance through SSH.\n- Execute basic Linux commands and verify server status.\n- Create and attach an additional EBS volume to EC2.\n- Practice Start/Stop EC2 and check instance status using both AWS Console and AWS CLI.",
               start: "2026-09-18", end: "2026-09-18",
-              ref: "Amazon EC2: https://000004.awsstudygroup.com/\nIAM Roles for EC2: https://000048.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html"
             }
           ]
         }
@@ -703,44 +747,44 @@ const DEFAULT_BILINGUAL_DATA = {
       return {
         "weekNum": 2,
         "vi": {
-                "topic": "AWS IAM, VPC & Network Security (21/09/2026 – 25/09/2026)",
-                "objectives": "- Understand the fundamental concepts of AWS Identity and Access Management (IAM).\n- Learn how to manage AWS users, user groups, policies, roles, and permissions.\n- Understand Amazon VPC and its core networking components.\n- Learn the differences between public and private subnets.\n- Practice configuring VPC networking and security settings.\n- Apply basic AWS security best practices to cloud resources.",
-                "achievements": "- Understood the basic concepts of AWS IAM and its role in managing access to AWS resources.\n- Learned the differences between IAM Users, User Groups, Roles, and Policies.\n- Practiced creating IAM users and groups and assigning permissions.\n- Understood the principle of least privilege and basic AWS access management practices.\n- Learned the fundamental components of Amazon VPC:\n  - VPC and CIDR Block\n  - Public and Private Subnets\n  - Internet Gateway\n  - Route Table\n  - Security Group\n  - Network ACL\n- Practiced creating a custom VPC and configuring its networking components.\n- Understood how route tables and Internet Gateways control network connectivity.\n- Practiced configuring Security Groups to control EC2 inbound and outbound traffic.\n- Learned how to deploy EC2 instances within a custom VPC.\n- Gained a better understanding of AWS networking architecture and resource security.",
+                "topic": "AWS IAM, VPC & Bảo mật mạng (21/09/2026 – 25/09/2026)",
+                "objectives": "- Hiểu các khái niệm cơ bản về AWS Identity and Access Management (IAM).\n- Tìm hiểu cách quản lý AWS user, user group, policy, role và quyền truy cập.\n- Hiểu Amazon VPC và các thành phần mạng cốt lõi.\n- Phân biệt public subnet và private subnet.\n- Thực hành cấu hình mạng và bảo mật cho VPC.\n- Áp dụng các nguyên tắc bảo mật AWS cơ bản cho tài nguyên cloud.",
+                "achievements": "- Nắm được các khái niệm cơ bản về AWS IAM và vai trò của IAM trong quản lý quyền truy cập tài nguyên AWS.\n- Phân biệt được IAM User, User Group, Role và Policy.\n- Thực hành tạo IAM user, group và gán quyền.\n- Hiểu nguyên tắc least privilege và các cách quản lý quyền truy cập AWS cơ bản.\n- Nắm được các thành phần cơ bản của Amazon VPC:\n  - VPC và CIDR Block\n  - Public Subnet và Private Subnet\n  - Internet Gateway\n  - Route Table\n  - Security Group\n  - Network ACL\n- Thực hành tạo một VPC tùy chỉnh và cấu hình các thành phần mạng.\n- Hiểu cách Route Table và Internet Gateway điều khiển kết nối mạng.\n- Thực hành cấu hình Security Group để kiểm soát lưu lượng inbound và outbound của EC2.\n- Biết cách triển khai EC2 instance trong một VPC tùy chỉnh.\n- Hiểu rõ hơn về kiến trúc mạng AWS và bảo mật tài nguyên.",
                 "tasks": [
                         {
-                                "day": "2",
-                                "desc": "- Learn the fundamentals of AWS Identity and Access Management (IAM).\n- Understand IAM Users, User Groups, Roles, and Policies.\n- Learn the principle of least privilege.\n- Explore the IAM Dashboard and its main features.\n- Understand basic AWS account security practices.",
+                                "day": "Thứ 2",
+                                "desc": "- Học kiến thức nền tảng về AWS Identity and Access Management (IAM).\n- Tìm hiểu IAM User, User Group, Role và Policy.\n- Tìm hiểu nguyên tắc least privilege.\n- Khám phá IAM Dashboard và các tính năng chính.\n- Tìm hiểu các biện pháp bảo mật tài khoản AWS cơ bản.",
                                 "start": "2026-09-21",
                                 "end": "2026-09-21",
-                                "ref": "AWS IAM: https://000002.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html"
                         },
                         {
-                                "day": "3",
-                                "desc": "- Practice creating IAM users and user groups.\n- Configure permissions using AWS managed policies.\n- Learn about IAM Roles and their use cases.\n- Understand the differences between authentication and authorization.\n- Practice checking IAM permissions and access restrictions.",
+                                "day": "Thứ 3",
+                                "desc": "- Thực hành tạo IAM user và user group.\n- Cấu hình quyền bằng AWS managed policy.\n- Tìm hiểu IAM Role và các trường hợp sử dụng.\n- Phân biệt authentication và authorization.\n- Thực hành kiểm tra quyền IAM và các giới hạn truy cập.",
                                 "start": "2026-09-22",
                                 "end": "2026-09-22",
-                                "ref": "AWS IAM: https://000002.awsstudygroup.com/\nIAM Roles for EC2: https://000048.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html"
                         },
                         {
-                                "day": "4",
-                                "desc": "- Learn the fundamentals of Amazon Virtual Private Cloud (VPC).\n- Understand CIDR Blocks and private IP addressing.\n- Learn about public and private subnets.\n- Study Internet Gateway, Route Table, and NAT Gateway concepts.\n- Explore the VPC Dashboard and networking resources.",
+                                "day": "Thứ 4",
+                                "desc": "- Học kiến thức nền tảng về Amazon Virtual Private Cloud (VPC).\n- Tìm hiểu CIDR Block và địa chỉ IP private.\n- Tìm hiểu public subnet và private subnet.\n- Tìm hiểu các khái niệm Internet Gateway, Route Table và NAT Gateway.\n- Khám phá VPC Dashboard và các tài nguyên mạng.",
                                 "start": "2026-09-23",
                                 "end": "2026-09-23",
-                                "ref": "Amazon VPC: https://000003.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
                         },
                         {
-                                "day": "5",
-                                "desc": "- Practice creating a custom Amazon VPC.\n- Create public and private subnets.\n- Configure an Internet Gateway.\n- Create and associate Route Tables with subnets.\n- Configure Security Groups for basic network access control.",
+                                "day": "Thứ 5",
+                                "desc": "- Thực hành tạo một Amazon VPC tùy chỉnh.\n- Tạo public subnet và private subnet.\n- Cấu hình Internet Gateway.\n- Tạo Route Table và liên kết với các subnet.\n- Cấu hình Security Group để kiểm soát truy cập mạng cơ bản.",
                                 "start": "2026-09-24",
                                 "end": "2026-09-24",
-                                "ref": "Amazon VPC: https://000003.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html"
                         },
                         {
-                                "day": "6",
-                                "desc": "- Review the networking architecture created during the week.\n- Practice launching an EC2 instance in a custom public subnet.\n- Configure SSH access through Security Group rules.\n- Test network connectivity to the EC2 instance.\n- Review IAM and VPC security best practices.\n- Clean up unnecessary lab resources to avoid additional charges.",
+                                "day": "Thứ 6",
+                                "desc": "- Rà soát kiến trúc mạng đã xây dựng trong tuần.\n- Thực hành khởi tạo EC2 instance trong public subnet tùy chỉnh.\n- Cấu hình truy cập SSH qua các rule của Security Group.\n- Kiểm tra kết nối mạng tới EC2 instance.\n- Ôn lại các best practice bảo mật cho IAM và VPC.\n- Dọn dẹp các tài nguyên lab không cần thiết để tránh phát sinh chi phí.",
                                 "start": "2026-09-25",
                                 "end": "2026-09-25",
-                                "ref": "Amazon VPC: https://000003.awsstudygroup.com/\nAmazon EC2: https://000004.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules-reference.html"
                         }
                 ]
         },
@@ -750,39 +794,39 @@ const DEFAULT_BILINGUAL_DATA = {
                 "achievements": "- Understood the basic concepts of AWS IAM and its role in managing access to AWS resources.\n- Learned the differences between IAM Users, User Groups, Roles, and Policies.\n- Practiced creating IAM users and groups and assigning permissions.\n- Understood the principle of least privilege and basic AWS access management practices.\n- Learned the fundamental components of Amazon VPC:\n  - VPC and CIDR Block\n  - Public and Private Subnets\n  - Internet Gateway\n  - Route Table\n  - Security Group\n  - Network ACL\n- Practiced creating a custom VPC and configuring its networking components.\n- Understood how route tables and Internet Gateways control network connectivity.\n- Practiced configuring Security Groups to control EC2 inbound and outbound traffic.\n- Learned how to deploy EC2 instances within a custom VPC.\n- Gained a better understanding of AWS networking architecture and resource security.",
                 "tasks": [
                         {
-                                "day": "2",
+                                "day": "Monday",
                                 "desc": "- Learn the fundamentals of AWS Identity and Access Management (IAM).\n- Understand IAM Users, User Groups, Roles, and Policies.\n- Learn the principle of least privilege.\n- Explore the IAM Dashboard and its main features.\n- Understand basic AWS account security practices.",
                                 "start": "2026-09-21",
                                 "end": "2026-09-21",
-                                "ref": "AWS IAM: https://000002.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html"
                         },
                         {
-                                "day": "3",
+                                "day": "Tuesday",
                                 "desc": "- Practice creating IAM users and user groups.\n- Configure permissions using AWS managed policies.\n- Learn about IAM Roles and their use cases.\n- Understand the differences between authentication and authorization.\n- Practice checking IAM permissions and access restrictions.",
                                 "start": "2026-09-22",
                                 "end": "2026-09-22",
-                                "ref": "AWS IAM: https://000002.awsstudygroup.com/\nIAM Roles for EC2: https://000048.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html"
                         },
                         {
-                                "day": "4",
+                                "day": "Wednesday",
                                 "desc": "- Learn the fundamentals of Amazon Virtual Private Cloud (VPC).\n- Understand CIDR Blocks and private IP addressing.\n- Learn about public and private subnets.\n- Study Internet Gateway, Route Table, and NAT Gateway concepts.\n- Explore the VPC Dashboard and networking resources.",
                                 "start": "2026-09-23",
                                 "end": "2026-09-23",
-                                "ref": "Amazon VPC: https://000003.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
                         },
                         {
-                                "day": "5",
+                                "day": "Thursday",
                                 "desc": "- Practice creating a custom Amazon VPC.\n- Create public and private subnets.\n- Configure an Internet Gateway.\n- Create and associate Route Tables with subnets.\n- Configure Security Groups for basic network access control.",
                                 "start": "2026-09-24",
                                 "end": "2026-09-24",
-                                "ref": "Amazon VPC: https://000003.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html"
                         },
                         {
-                                "day": "6",
+                                "day": "Friday",
                                 "desc": "- Review the networking architecture created during the week.\n- Practice launching an EC2 instance in a custom public subnet.\n- Configure SSH access through Security Group rules.\n- Test network connectivity to the EC2 instance.\n- Review IAM and VPC security best practices.\n- Clean up unnecessary lab resources to avoid additional charges.",
                                 "start": "2026-09-25",
                                 "end": "2026-09-25",
-                                "ref": "Amazon VPC: https://000003.awsstudygroup.com/\nAmazon EC2: https://000004.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules-reference.html"
                         }
                 ]
         }
@@ -791,44 +835,44 @@ const DEFAULT_BILINGUAL_DATA = {
       return {
         "weekNum": 3,
         "vi": {
-                "topic": "Amazon S3, Static Website & CloudFront (28/09/2026 – 02/10/2026)",
-                "objectives": "- Understand Amazon S3 and the fundamentals of object storage.\n- Learn how to create and manage S3 Buckets and Objects.\n- Understand S3 storage classes, versioning, encryption, and access permissions.\n- Practice uploading, downloading, and managing files using AWS Console and AWS CLI.\n- Learn how to deploy a static website using Amazon S3.\n- Understand Amazon CloudFront and its role in content delivery.\n- Practice integrating Amazon S3 with CloudFront for secure website delivery.",
-                "achievements": "- Understood the fundamentals of Amazon S3 and object storage.\n- Learned the differences between object storage, block storage, and file storage.\n- Understood the major Amazon S3 components:\n  - Bucket\n  - Object\n  - Object Key\n  - Storage Class\n  - Versioning\n  - Bucket Policy\n  - Block Public Access\n- Practiced creating and configuring S3 Buckets.\n- Successfully uploaded, downloaded, and managed files using AWS Console and AWS CLI.\n- Learned how S3 Versioning helps preserve multiple versions of objects.\n- Understood the purpose of S3 Bucket Policies and public access restrictions.\n- Practiced configuring Amazon S3 Static Website Hosting.\n- Learned the fundamentals of Amazon CloudFront and Content Delivery Networks (CDN).\n- Practiced delivering static website content through CloudFront.\n- Understood how to use CloudFront Origin Access Control (OAC) to restrict direct access to S3 content.\n- Gained practical experience in cloud storage management and static website deployment.",
+                "topic": "Amazon S3, Website tĩnh & CloudFront (28/09/2026 – 02/10/2026)",
+                "objectives": "- Hiểu Amazon S3 và kiến thức nền tảng về object storage.\n- Tìm hiểu cách tạo và quản lý S3 Bucket và Object.\n- Hiểu S3 storage class, versioning, mã hóa và quyền truy cập.\n- Thực hành upload, download và quản lý file bằng AWS Console và AWS CLI.\n- Tìm hiểu cách triển khai website tĩnh bằng Amazon S3.\n- Hiểu Amazon CloudFront và vai trò của nó trong phân phối nội dung.\n- Thực hành tích hợp Amazon S3 với CloudFront để phân phối website an toàn.",
+                "achievements": "- Nắm được kiến thức nền tảng về Amazon S3 và object storage.\n- Phân biệt được object storage, block storage và file storage.\n- Nắm được các thành phần chính của Amazon S3:\n  - Bucket\n  - Object\n  - Object Key\n  - Storage Class\n  - Versioning\n  - Bucket Policy\n  - Block Public Access\n- Thực hành tạo và cấu hình S3 Bucket.\n- Upload, download và quản lý file thành công bằng AWS Console và AWS CLI.\n- Hiểu cách S3 Versioning giúp lưu giữ nhiều phiên bản của object.\n- Hiểu mục đích của S3 Bucket Policy và các giới hạn truy cập công khai.\n- Thực hành cấu hình Static Website Hosting trên Amazon S3.\n- Nắm được kiến thức nền tảng về Amazon CloudFront và Content Delivery Network (CDN).\n- Thực hành phân phối nội dung website tĩnh qua CloudFront.\n- Hiểu cách dùng CloudFront Origin Access Control (OAC) để chặn truy cập trực tiếp vào nội dung S3.\n- Có kinh nghiệm thực tế về quản lý lưu trữ trên cloud và triển khai website tĩnh.",
                 "tasks": [
                         {
-                                "day": "2",
-                                "desc": "- Learn the fundamentals of Amazon Simple Storage Service (S3).\n- Understand object storage and its common use cases.\n- Learn about S3 Buckets, Objects, Keys, and Storage Classes.\n- Compare Amazon S3 with Amazon EBS.\n- Explore the Amazon S3 Management Console.",
+                                "day": "Thứ 2",
+                                "desc": "- Học kiến thức nền tảng về Amazon Simple Storage Service (S3).\n- Tìm hiểu object storage và các trường hợp sử dụng phổ biến.\n- Tìm hiểu S3 Bucket, Object, Key và Storage Class.\n- So sánh Amazon S3 với Amazon EBS.\n- Khám phá Amazon S3 Management Console.",
                                 "start": "2026-09-28",
                                 "end": "2026-09-28",
-                                "ref": "Amazon S3: https://000057.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
                         },
                         {
-                                "day": "3",
-                                "desc": "- Practice creating an Amazon S3 Bucket.\n- Upload, download, and delete files.\n- Practice managing objects using AWS CLI.\n- Learn about S3 Versioning and Server-Side Encryption.\n- Understand Bucket Policies and Block Public Access settings.",
+                                "day": "Thứ 3",
+                                "desc": "- Thực hành tạo một Amazon S3 Bucket.\n- Upload, download và xóa file.\n- Thực hành quản lý object bằng AWS CLI.\n- Tìm hiểu S3 Versioning và Server-Side Encryption.\n- Tìm hiểu Bucket Policy và các thiết lập Block Public Access.",
                                 "start": "2026-09-29",
                                 "end": "2026-09-29",
-                                "ref": "Amazon S3: https://000057.awsstudygroup.com/\nAWS CLI: https://000011.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html"
                         },
                         {
-                                "day": "4",
-                                "desc": "- Learn about Static Website Hosting with Amazon S3.\n- Prepare a basic static website using HTML and CSS.\n- Upload website files to an S3 Bucket.\n- Configure Static Website Hosting settings.\n- Learn about index.html, error.html, and website endpoints.\n- Test website accessibility.",
+                                "day": "Thứ 4",
+                                "desc": "- Tìm hiểu Static Website Hosting với Amazon S3.\n- Chuẩn bị một website tĩnh cơ bản bằng HTML và CSS.\n- Upload các file website lên S3 Bucket.\n- Cấu hình Static Website Hosting.\n- Tìm hiểu index.html, error.html và website endpoint.\n- Kiểm tra khả năng truy cập website.",
                                 "start": "2026-09-30",
                                 "end": "2026-09-30",
-                                "ref": "Amazon S3 Static Website: https://000057.awsstudygroup.com/3-staticwebsite/"
+                                "ref": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html"
                         },
                         {
-                                "day": "5",
-                                "desc": "- Learn the fundamentals of Content Delivery Networks (CDN).\n- Understand Amazon CloudFront, Edge Locations, and Distributions.\n- Learn how CloudFront caches and delivers web content.\n- Study CloudFront Origins and cache behavior.\n- Understand Origin Access Control (OAC) for Amazon S3.",
+                                "day": "Thứ 5",
+                                "desc": "- Học kiến thức nền tảng về Content Delivery Network (CDN).\n- Tìm hiểu Amazon CloudFront, Edge Location và Distribution.\n- Tìm hiểu cách CloudFront cache và phân phối nội dung web.\n- Tìm hiểu CloudFront Origin và cache behavior.\n- Tìm hiểu Origin Access Control (OAC) cho Amazon S3.",
                                 "start": "2026-10-01",
                                 "end": "2026-10-01",
-                                "ref": "Amazon CloudFront: https://000094.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
                         },
                         {
-                                "day": "6",
-                                "desc": "- Practice creating a CloudFront Distribution.\n- Configure Amazon S3 as a CloudFront Origin.\n- Configure secure access to the S3 Bucket using OAC.\n- Test static website delivery through CloudFront.\n- Review the S3 and CloudFront architecture.\n- Clean up unnecessary resources and review service costs.",
+                                "day": "Thứ 6",
+                                "desc": "- Thực hành tạo một CloudFront Distribution.\n- Cấu hình Amazon S3 làm CloudFront Origin.\n- Cấu hình truy cập an toàn vào S3 Bucket bằng OAC.\n- Kiểm tra việc phân phối website tĩnh qua CloudFront.\n- Rà soát kiến trúc S3 và CloudFront.\n- Dọn dẹp tài nguyên không cần thiết và rà soát chi phí dịch vụ.",
                                 "start": "2026-10-02",
                                 "end": "2026-10-02",
-                                "ref": "Amazon S3: https://000057.awsstudygroup.com/\nAmazon CloudFront: https://000094.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/GettingStarted.SimpleDistribution.html"
                         }
                 ]
         },
@@ -838,39 +882,39 @@ const DEFAULT_BILINGUAL_DATA = {
                 "achievements": "- Understood the fundamentals of Amazon S3 and object storage.\n- Learned the differences between object storage, block storage, and file storage.\n- Understood the major Amazon S3 components:\n  - Bucket\n  - Object\n  - Object Key\n  - Storage Class\n  - Versioning\n  - Bucket Policy\n  - Block Public Access\n- Practiced creating and configuring S3 Buckets.\n- Successfully uploaded, downloaded, and managed files using AWS Console and AWS CLI.\n- Learned how S3 Versioning helps preserve multiple versions of objects.\n- Understood the purpose of S3 Bucket Policies and public access restrictions.\n- Practiced configuring Amazon S3 Static Website Hosting.\n- Learned the fundamentals of Amazon CloudFront and Content Delivery Networks (CDN).\n- Practiced delivering static website content through CloudFront.\n- Understood how to use CloudFront Origin Access Control (OAC) to restrict direct access to S3 content.\n- Gained practical experience in cloud storage management and static website deployment.",
                 "tasks": [
                         {
-                                "day": "2",
+                                "day": "Monday",
                                 "desc": "- Learn the fundamentals of Amazon Simple Storage Service (S3).\n- Understand object storage and its common use cases.\n- Learn about S3 Buckets, Objects, Keys, and Storage Classes.\n- Compare Amazon S3 with Amazon EBS.\n- Explore the Amazon S3 Management Console.",
                                 "start": "2026-09-28",
                                 "end": "2026-09-28",
-                                "ref": "Amazon S3: https://000057.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
                         },
                         {
-                                "day": "3",
+                                "day": "Tuesday",
                                 "desc": "- Practice creating an Amazon S3 Bucket.\n- Upload, download, and delete files.\n- Practice managing objects using AWS CLI.\n- Learn about S3 Versioning and Server-Side Encryption.\n- Understand Bucket Policies and Block Public Access settings.",
                                 "start": "2026-09-29",
                                 "end": "2026-09-29",
-                                "ref": "Amazon S3: https://000057.awsstudygroup.com/\nAWS CLI: https://000011.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html"
                         },
                         {
-                                "day": "4",
+                                "day": "Wednesday",
                                 "desc": "- Learn about Static Website Hosting with Amazon S3.\n- Prepare a basic static website using HTML and CSS.\n- Upload website files to an S3 Bucket.\n- Configure Static Website Hosting settings.\n- Learn about index.html, error.html, and website endpoints.\n- Test website accessibility.",
                                 "start": "2026-09-30",
                                 "end": "2026-09-30",
-                                "ref": "Amazon S3 Static Website: https://000057.awsstudygroup.com/3-staticwebsite/"
+                                "ref": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html"
                         },
                         {
-                                "day": "5",
+                                "day": "Thursday",
                                 "desc": "- Learn the fundamentals of Content Delivery Networks (CDN).\n- Understand Amazon CloudFront, Edge Locations, and Distributions.\n- Learn how CloudFront caches and delivers web content.\n- Study CloudFront Origins and cache behavior.\n- Understand Origin Access Control (OAC) for Amazon S3.",
                                 "start": "2026-10-01",
                                 "end": "2026-10-01",
-                                "ref": "Amazon CloudFront: https://000094.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
                         },
                         {
-                                "day": "6",
+                                "day": "Friday",
                                 "desc": "- Practice creating a CloudFront Distribution.\n- Configure Amazon S3 as a CloudFront Origin.\n- Configure secure access to the S3 Bucket using OAC.\n- Test static website delivery through CloudFront.\n- Review the S3 and CloudFront architecture.\n- Clean up unnecessary resources and review service costs.",
                                 "start": "2026-10-02",
                                 "end": "2026-10-02",
-                                "ref": "Amazon S3: https://000057.awsstudygroup.com/\nAmazon CloudFront: https://000094.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/GettingStarted.SimpleDistribution.html"
                         }
                 ]
         }
@@ -880,43 +924,43 @@ const DEFAULT_BILINGUAL_DATA = {
         "weekNum": 4,
         "vi": {
                 "topic": "Amazon RDS, CloudWatch & AWS Budgets (05/10/2026 – 09/10/2026)",
-                "objectives": "- Understand the fundamentals of Amazon Relational Database Service (RDS).\n- Learn about relational databases and managed database services on AWS.\n- Understand RDS DB Instances, Storage, Security Groups, and automated backups.\n- Practice creating and connecting to an Amazon RDS database.\n- Learn how Amazon CloudWatch monitors AWS resources and applications.\n- Practice monitoring EC2 performance using CloudWatch metrics and alarms.\n- Understand AWS Budgets and basic cloud cost management practices.",
-                "achievements": "- Understood the basic concepts of relational databases and Amazon RDS.\n- Learned the differences between self-managed databases on EC2 and managed databases using Amazon RDS.\n- Understood the fundamental components of Amazon RDS:\n  - DB Instance\n  - Database Engine\n  - DB Instance Class\n  - Storage\n  - DB Subnet Group\n  - Security Group\n  - Automated Backup\n  - Multi-AZ Deployment\n- Practiced creating and configuring an Amazon RDS database instance.\n- Learned how to configure database network connectivity and access permissions.\n- Practiced connecting to a database and executing basic SQL queries.\n- Understood the fundamentals of Amazon CloudWatch.\n- Learned about CloudWatch Metrics, Logs, Dashboards, and Alarms.\n- Practiced monitoring Amazon EC2 performance using CloudWatch.\n- Learned how to configure basic CloudWatch alarms.\n- Understood AWS Budgets and its role in cloud cost management.\n- Practiced reviewing AWS resource usage and estimated costs.",
+                "objectives": "- Hiểu kiến thức nền tảng về Amazon Relational Database Service (RDS).\n- Tìm hiểu cơ sở dữ liệu quan hệ và các dịch vụ cơ sở dữ liệu được quản lý trên AWS.\n- Hiểu RDS DB Instance, Storage, Security Group và automated backup.\n- Thực hành tạo và kết nối tới một cơ sở dữ liệu Amazon RDS.\n- Tìm hiểu cách Amazon CloudWatch giám sát tài nguyên và ứng dụng AWS.\n- Thực hành giám sát hiệu năng EC2 bằng CloudWatch metric và alarm.\n- Hiểu AWS Budgets và các cách quản lý chi phí cloud cơ bản.",
+                "achievements": "- Nắm được các khái niệm cơ bản về cơ sở dữ liệu quan hệ và Amazon RDS.\n- Phân biệt cơ sở dữ liệu tự quản lý trên EC2 với cơ sở dữ liệu được quản lý bằng Amazon RDS.\n- Nắm được các thành phần cơ bản của Amazon RDS:\n  - DB Instance\n  - Database Engine\n  - DB Instance Class\n  - Storage\n  - DB Subnet Group\n  - Security Group\n  - Automated Backup\n  - Multi-AZ Deployment\n- Thực hành tạo và cấu hình một Amazon RDS database instance.\n- Biết cách cấu hình kết nối mạng và quyền truy cập cho cơ sở dữ liệu.\n- Thực hành kết nối tới cơ sở dữ liệu và chạy các câu lệnh SQL cơ bản.\n- Nắm được kiến thức nền tảng về Amazon CloudWatch.\n- Tìm hiểu CloudWatch Metrics, Logs, Dashboards và Alarms.\n- Thực hành giám sát hiệu năng Amazon EC2 bằng CloudWatch.\n- Biết cách cấu hình các CloudWatch alarm cơ bản.\n- Hiểu AWS Budgets và vai trò của nó trong quản lý chi phí cloud.\n- Thực hành rà soát mức sử dụng tài nguyên AWS và chi phí ước tính.",
                 "tasks": [
                         {
-                                "day": "2",
-                                "desc": "- Learn the fundamentals of relational databases and Amazon RDS.\n- Understand managed database services on AWS.\n- Learn about supported RDS database engines.\n- Study DB Instance Classes, Storage, and Backup options.\n- Compare databases hosted on EC2 with Amazon RDS.",
+                                "day": "Thứ 2",
+                                "desc": "- Học kiến thức nền tảng về cơ sở dữ liệu quan hệ và Amazon RDS.\n- Tìm hiểu các dịch vụ cơ sở dữ liệu được quản lý trên AWS.\n- Tìm hiểu các database engine được RDS hỗ trợ.\n- Tìm hiểu DB Instance Class, Storage và các tùy chọn Backup.\n- So sánh cơ sở dữ liệu chạy trên EC2 với Amazon RDS.",
                                 "start": "2026-10-05",
                                 "end": "2026-10-05",
-                                "ref": "Amazon RDS: https://000005.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html"
                         },
                         {
-                                "day": "3",
-                                "desc": "- Practice creating an Amazon RDS database instance.\n- Configure database engine, instance class, and storage.\n- Learn about DB Subnet Groups and VPC integration.\n- Configure Security Groups for database connectivity.\n- Review database endpoint, port, and connection settings.",
+                                "day": "Thứ 3",
+                                "desc": "- Thực hành tạo một Amazon RDS database instance.\n- Cấu hình database engine, instance class và storage.\n- Tìm hiểu DB Subnet Group và việc tích hợp với VPC.\n- Cấu hình Security Group cho kết nối cơ sở dữ liệu.\n- Kiểm tra endpoint, port và các thiết lập kết nối của cơ sở dữ liệu.",
                                 "start": "2026-10-06",
                                 "end": "2026-10-06",
-                                "ref": "Amazon RDS: https://000005.awsstudygroup.com/\nAmazon VPC: https://000003.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html"
                         },
                         {
-                                "day": "4",
-                                "desc": "- Practice connecting to an Amazon RDS database.\n- Execute basic SQL queries to create tables and manage records.\n- Learn about automated backups and database snapshots.\n- Understand the concept of Multi-AZ Deployment.\n- Review RDS security and access management practices.",
+                                "day": "Thứ 4",
+                                "desc": "- Thực hành kết nối tới một cơ sở dữ liệu Amazon RDS.\n- Chạy các câu lệnh SQL cơ bản để tạo bảng và quản lý bản ghi.\n- Tìm hiểu automated backup và database snapshot.\n- Tìm hiểu khái niệm Multi-AZ Deployment.\n- Rà soát các biện pháp bảo mật và quản lý truy cập của RDS.",
                                 "start": "2026-10-07",
                                 "end": "2026-10-07",
-                                "ref": "Amazon RDS: https://000005.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.Connect.html"
                         },
                         {
-                                "day": "5",
-                                "desc": "- Learn the fundamentals of Amazon CloudWatch.\n- Understand CloudWatch Metrics, Logs, Dashboards, and Alarms.\n- Explore CloudWatch metrics for Amazon EC2.\n- Practice monitoring CPU utilization and instance status.\n- Create a basic CloudWatch alarm for EC2 monitoring.",
+                                "day": "Thứ 5",
+                                "desc": "- Học kiến thức nền tảng về Amazon CloudWatch.\n- Tìm hiểu CloudWatch Metrics, Logs, Dashboards và Alarms.\n- Khám phá các CloudWatch metric của Amazon EC2.\n- Thực hành giám sát CPU utilization và trạng thái instance.\n- Tạo một CloudWatch alarm cơ bản để giám sát EC2.",
                                 "start": "2026-10-08",
                                 "end": "2026-10-08",
-                                "ref": "Amazon CloudWatch: https://000008.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
                         },
                         {
-                                "day": "6",
-                                "desc": "- Learn about AWS Budgets and basic cloud cost optimization.\n- Review AWS billing information and estimated service costs.\n- Practice configuring a basic cost budget and alert threshold.\n- Review EC2, RDS, and CloudWatch resource usage.\n- Summarize the week's database and monitoring activities.\n- Delete unnecessary lab resources to minimize costs.",
+                                "day": "Thứ 6",
+                                "desc": "- Tìm hiểu AWS Budgets và cách tối ưu chi phí cloud cơ bản.\n- Rà soát thông tin hóa đơn AWS và chi phí dịch vụ ước tính.\n- Thực hành cấu hình một cost budget cơ bản và ngưỡng cảnh báo.\n- Rà soát mức sử dụng tài nguyên EC2, RDS và CloudWatch.\n- Tổng kết các hoạt động về cơ sở dữ liệu và giám sát trong tuần.\n- Xóa các tài nguyên lab không cần thiết để giảm chi phí.",
                                 "start": "2026-10-09",
                                 "end": "2026-10-09",
-                                "ref": "AWS Budgets: https://000007.awsstudygroup.com/\nAmazon CloudWatch: https://000008.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html"
                         }
                 ]
         },
@@ -926,39 +970,39 @@ const DEFAULT_BILINGUAL_DATA = {
                 "achievements": "- Understood the basic concepts of relational databases and Amazon RDS.\n- Learned the differences between self-managed databases on EC2 and managed databases using Amazon RDS.\n- Understood the fundamental components of Amazon RDS:\n  - DB Instance\n  - Database Engine\n  - DB Instance Class\n  - Storage\n  - DB Subnet Group\n  - Security Group\n  - Automated Backup\n  - Multi-AZ Deployment\n- Practiced creating and configuring an Amazon RDS database instance.\n- Learned how to configure database network connectivity and access permissions.\n- Practiced connecting to a database and executing basic SQL queries.\n- Understood the fundamentals of Amazon CloudWatch.\n- Learned about CloudWatch Metrics, Logs, Dashboards, and Alarms.\n- Practiced monitoring Amazon EC2 performance using CloudWatch.\n- Learned how to configure basic CloudWatch alarms.\n- Understood AWS Budgets and its role in cloud cost management.\n- Practiced reviewing AWS resource usage and estimated costs.",
                 "tasks": [
                         {
-                                "day": "2",
+                                "day": "Monday",
                                 "desc": "- Learn the fundamentals of relational databases and Amazon RDS.\n- Understand managed database services on AWS.\n- Learn about supported RDS database engines.\n- Study DB Instance Classes, Storage, and Backup options.\n- Compare databases hosted on EC2 with Amazon RDS.",
                                 "start": "2026-10-05",
                                 "end": "2026-10-05",
-                                "ref": "Amazon RDS: https://000005.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html"
                         },
                         {
-                                "day": "3",
+                                "day": "Tuesday",
                                 "desc": "- Practice creating an Amazon RDS database instance.\n- Configure database engine, instance class, and storage.\n- Learn about DB Subnet Groups and VPC integration.\n- Configure Security Groups for database connectivity.\n- Review database endpoint, port, and connection settings.",
                                 "start": "2026-10-06",
                                 "end": "2026-10-06",
-                                "ref": "Amazon RDS: https://000005.awsstudygroup.com/\nAmazon VPC: https://000003.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html"
                         },
                         {
-                                "day": "4",
+                                "day": "Wednesday",
                                 "desc": "- Practice connecting to an Amazon RDS database.\n- Execute basic SQL queries to create tables and manage records.\n- Learn about automated backups and database snapshots.\n- Understand the concept of Multi-AZ Deployment.\n- Review RDS security and access management practices.",
                                 "start": "2026-10-07",
                                 "end": "2026-10-07",
-                                "ref": "Amazon RDS: https://000005.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.Connect.html"
                         },
                         {
-                                "day": "5",
+                                "day": "Thursday",
                                 "desc": "- Learn the fundamentals of Amazon CloudWatch.\n- Understand CloudWatch Metrics, Logs, Dashboards, and Alarms.\n- Explore CloudWatch metrics for Amazon EC2.\n- Practice monitoring CPU utilization and instance status.\n- Create a basic CloudWatch alarm for EC2 monitoring.",
                                 "start": "2026-10-08",
                                 "end": "2026-10-08",
-                                "ref": "Amazon CloudWatch: https://000008.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
                         },
                         {
-                                "day": "6",
+                                "day": "Friday",
                                 "desc": "- Learn about AWS Budgets and basic cloud cost optimization.\n- Review AWS billing information and estimated service costs.\n- Practice configuring a basic cost budget and alert threshold.\n- Review EC2, RDS, and CloudWatch resource usage.\n- Summarize the week's database and monitoring activities.\n- Delete unnecessary lab resources to minimize costs.",
                                 "start": "2026-10-09",
                                 "end": "2026-10-09",
-                                "ref": "AWS Budgets: https://000007.awsstudygroup.com/\nAmazon CloudWatch: https://000008.awsstudygroup.com/"
+                                "ref": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html"
                         }
                 ]
         }
@@ -967,44 +1011,44 @@ const DEFAULT_BILINGUAL_DATA = {
       return {
         "weekNum": 5,
         "vi": {
-          "topic": "Integrated AWS Lab, Testing & Documentation (12/10/2026 – 16/10/2026)",
-          "objectives": "- Review and consolidate the AWS knowledge acquired during the previous four weeks.\n- Understand how IAM, VPC, EC2, RDS, S3, and CloudWatch work together.\n- Design a basic AWS cloud architecture for a simple web application.\n- Practice deploying and configuring multiple AWS services in an integrated environment.\n- Test application connectivity, resource permissions, and network security.\n- Monitor AWS resources and review basic cloud operating costs.\n- Improve troubleshooting, technical documentation, and cloud infrastructure management skills.",
-          "achievements": "- Consolidated fundamental knowledge of AWS Cloud Computing and cloud infrastructure.\n- Understood the relationships between major AWS services:\n  - IAM\n  - VPC\n  - EC2\n  - EBS\n  - S3\n  - RDS\n  - CloudWatch\n  - AWS Budgets\n- Designed a basic AWS cloud architecture for a simple web application.\n- Practiced creating and configuring a custom VPC with public and private subnets.\n- Practiced deploying an EC2 instance and configuring network access.\n- Configured an IAM Role for EC2 to access authorized AWS resources.\n- Practiced storing and retrieving files from Amazon S3.\n- Practiced connecting an EC2-based application to an Amazon RDS database.\n- Learned how to verify network connectivity and troubleshoot configuration issues.\n- Practiced monitoring EC2 and RDS resources using Amazon CloudWatch.\n- Reviewed AWS security configurations, resource usage, and estimated costs.\n- Prepared technical documentation describing the deployed AWS infrastructure.\n- Improved practical skills in AWS resource deployment, monitoring, troubleshooting, and management.",
+          "topic": "Lab tích hợp AWS, Kiểm thử & Tài liệu hóa (12/10/2026 – 16/10/2026)",
+          "objectives": "- Ôn tập và củng cố kiến thức AWS đã học trong bốn tuần trước.\n- Hiểu cách IAM, VPC, EC2, RDS, S3 và CloudWatch phối hợp với nhau.\n- Thiết kế một kiến trúc AWS cơ bản cho một ứng dụng web đơn giản.\n- Thực hành triển khai và cấu hình nhiều dịch vụ AWS trong một môi trường tích hợp.\n- Kiểm thử kết nối ứng dụng, quyền truy cập tài nguyên và bảo mật mạng.\n- Giám sát tài nguyên AWS và rà soát chi phí vận hành cloud cơ bản.\n- Nâng cao kỹ năng xử lý sự cố, viết tài liệu kỹ thuật và quản lý hạ tầng cloud.",
+          "achievements": "- Củng cố kiến thức nền tảng về Điện toán đám mây AWS và hạ tầng cloud.\n- Hiểu mối liên hệ giữa các dịch vụ AWS chính:\n  - IAM\n  - VPC\n  - EC2\n  - EBS\n  - S3\n  - RDS\n  - CloudWatch\n  - AWS Budgets\n- Thiết kế một kiến trúc AWS cơ bản cho một ứng dụng web đơn giản.\n- Thực hành tạo và cấu hình một VPC tùy chỉnh với public subnet và private subnet.\n- Thực hành triển khai EC2 instance và cấu hình truy cập mạng.\n- Cấu hình IAM Role cho EC2 để truy cập các tài nguyên AWS được cấp quyền.\n- Thực hành lưu trữ và truy xuất file trên Amazon S3.\n- Thực hành kết nối ứng dụng chạy trên EC2 tới cơ sở dữ liệu Amazon RDS.\n- Biết cách kiểm tra kết nối mạng và xử lý các lỗi cấu hình.\n- Thực hành giám sát tài nguyên EC2 và RDS bằng Amazon CloudWatch.\n- Rà soát cấu hình bảo mật, mức sử dụng tài nguyên và chi phí ước tính trên AWS.\n- Viết tài liệu kỹ thuật mô tả hạ tầng AWS đã triển khai.\n- Nâng cao kỹ năng thực hành triển khai, giám sát, xử lý sự cố và quản lý tài nguyên AWS.",
           "tasks": [
             {
-              "day": "2",
-              "desc": "- Review AWS knowledge acquired during Weeks 1–4.\n- Review IAM, VPC, EC2, S3, RDS, and CloudWatch concepts.\n- Learn about the architecture of a basic cloud-hosted web application.\n- Design a simple AWS infrastructure diagram.\n- Identify the required AWS resources and their relationships.\n- Prepare the environment for an integrated hands-on lab.",
+              "day": "Thứ 2",
+              "desc": "- Ôn lại kiến thức AWS đã học trong Tuần 1–4.\n- Ôn lại các khái niệm IAM, VPC, EC2, S3, RDS và CloudWatch.\n- Tìm hiểu kiến trúc của một ứng dụng web cơ bản chạy trên cloud.\n- Thiết kế một sơ đồ hạ tầng AWS đơn giản.\n- Xác định các tài nguyên AWS cần dùng và mối liên hệ giữa chúng.\n- Chuẩn bị môi trường cho bài lab tích hợp.",
               "start": "2026-10-12",
               "end": "2026-10-12",
-              "ref": "Cloud Journey: https://cloudjourney.awsstudygroup.com/\nAmazon VPC: https://000003.awsstudygroup.com/"
+              "ref": "https://docs.aws.amazon.com/wellarchitected/latest/framework/framework.html"
             },
             {
-              "day": "3",
-              "desc": "- Practice creating a custom VPC for a web application.\n- Configure public and private subnets.\n- Configure Internet Gateway, Route Tables, and Security Groups.\n- Launch an EC2 Linux instance in the public subnet.\n- Configure SSH access and verify instance connectivity.\n- Attach an IAM Role to the EC2 instance.",
+              "day": "Thứ 3",
+              "desc": "- Thực hành tạo một VPC tùy chỉnh cho ứng dụng web.\n- Cấu hình public subnet và private subnet.\n- Cấu hình Internet Gateway, Route Table và Security Group.\n- Khởi tạo một EC2 instance Linux trong public subnet.\n- Cấu hình truy cập SSH và kiểm tra kết nối tới instance.\n- Gắn IAM Role cho EC2 instance.",
               "start": "2026-10-13",
               "end": "2026-10-13",
-              "ref": "Amazon VPC: https://000003.awsstudygroup.com/\nAmazon EC2: https://000004.awsstudygroup.com/\nIAM Roles for EC2: https://000048.awsstudygroup.com/"
+              "ref": "https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html"
             },
             {
-              "day": "4",
-              "desc": "- Practice preparing a basic web application environment on EC2.\n- Configure a web server and verify HTTP connectivity.\n- Create an Amazon S3 Bucket for application files.\n- Configure appropriate IAM permissions for accessing S3.\n- Practice transferring files between EC2 and Amazon S3.\n- Review application security and resource access settings.",
+              "day": "Thứ 4",
+              "desc": "- Thực hành chuẩn bị môi trường ứng dụng web cơ bản trên EC2.\n- Cấu hình web server và kiểm tra kết nối HTTP.\n- Tạo một Amazon S3 Bucket để lưu file của ứng dụng.\n- Cấu hình quyền IAM phù hợp để truy cập S3.\n- Thực hành truyền file giữa EC2 và Amazon S3.\n- Rà soát bảo mật ứng dụng và các thiết lập truy cập tài nguyên.",
               "start": "2026-10-14",
               "end": "2026-10-14",
-              "ref": "Amazon EC2: https://000004.awsstudygroup.com/\nAmazon S3: https://000057.awsstudygroup.com/"
+              "ref": "https://docs.aws.amazon.com/linux/al2023/ug/ec2-lamp-amazon-linux-2023.html"
             },
             {
-              "day": "5",
-              "desc": "- Review Amazon RDS configuration and database connectivity.\n- Practice creating an RDS database for the web application.\n- Configure database access through Security Groups.\n- Test connectivity between EC2 and RDS.\n- Execute basic SQL queries to verify database operations.\n- Identify and troubleshoot common connection issues.",
+              "day": "Thứ 5",
+              "desc": "- Ôn lại cấu hình Amazon RDS và kết nối cơ sở dữ liệu.\n- Thực hành tạo một cơ sở dữ liệu RDS cho ứng dụng web.\n- Cấu hình truy cập cơ sở dữ liệu qua Security Group.\n- Kiểm tra kết nối giữa EC2 và RDS.\n- Chạy các câu lệnh SQL cơ bản để kiểm tra hoạt động của cơ sở dữ liệu.\n- Xác định và xử lý các lỗi kết nối thường gặp.",
               "start": "2026-10-15",
               "end": "2026-10-15",
-              "ref": "Amazon RDS: https://000005.awsstudygroup.com/\nAmazon VPC: https://000003.awsstudygroup.com/"
+              "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/TUT_WebAppWithRDS.html"
             },
             {
-              "day": "6",
-              "desc": "- Review the integrated AWS architecture and deployed resources.\n- Practice monitoring EC2 and RDS using Amazon CloudWatch.\n- Check Security Groups, IAM Roles, and resource permissions.\n- Review AWS Budgets and estimated service costs.\n- Perform basic testing of the integrated AWS environment.\n- Clean up unnecessary AWS resources.\n- Prepare a summary of hands-on results and technical documentation.",
+              "day": "Thứ 6",
+              "desc": "- Rà soát kiến trúc AWS tích hợp và các tài nguyên đã triển khai.\n- Thực hành giám sát EC2 và RDS bằng Amazon CloudWatch.\n- Kiểm tra Security Group, IAM Role và quyền truy cập tài nguyên.\n- Rà soát AWS Budgets và chi phí dịch vụ ước tính.\n- Kiểm thử cơ bản môi trường AWS tích hợp.\n- Dọn dẹp các tài nguyên AWS không cần thiết.\n- Tổng hợp kết quả thực hành và viết tài liệu kỹ thuật.",
               "start": "2026-10-16",
               "end": "2026-10-16",
-              "ref": "Amazon CloudWatch: https://000008.awsstudygroup.com/\nAWS Budgets: https://000007.awsstudygroup.com/"
+              "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/monitoring-cloudwatch.html"
             }
           ]
         },
@@ -1014,39 +1058,39 @@ const DEFAULT_BILINGUAL_DATA = {
           "achievements": "- Consolidated fundamental knowledge of AWS Cloud Computing and cloud infrastructure.\n- Understood the relationships between major AWS services:\n  - IAM\n  - VPC\n  - EC2\n  - EBS\n  - S3\n  - RDS\n  - CloudWatch\n  - AWS Budgets\n- Designed a basic AWS cloud architecture for a simple web application.\n- Practiced creating and configuring a custom VPC with public and private subnets.\n- Practiced deploying an EC2 instance and configuring network access.\n- Configured an IAM Role for EC2 to access authorized AWS resources.\n- Practiced storing and retrieving files from Amazon S3.\n- Practiced connecting an EC2-based application to an Amazon RDS database.\n- Learned how to verify network connectivity and troubleshoot configuration issues.\n- Practiced monitoring EC2 and RDS resources using Amazon CloudWatch.\n- Reviewed AWS security configurations, resource usage, and estimated costs.\n- Prepared technical documentation describing the deployed AWS infrastructure.\n- Improved practical skills in AWS resource deployment, monitoring, troubleshooting, and management.",
           "tasks": [
             {
-              "day": "2",
+              "day": "Monday",
               "desc": "- Review AWS knowledge acquired during Weeks 1–4.\n- Review IAM, VPC, EC2, S3, RDS, and CloudWatch concepts.\n- Learn about the architecture of a basic cloud-hosted web application.\n- Design a simple AWS infrastructure diagram.\n- Identify the required AWS resources and their relationships.\n- Prepare the environment for an integrated hands-on lab.",
               "start": "2026-10-12",
               "end": "2026-10-12",
-              "ref": "Cloud Journey: https://cloudjourney.awsstudygroup.com/\nAmazon VPC: https://000003.awsstudygroup.com/"
+              "ref": "https://docs.aws.amazon.com/wellarchitected/latest/framework/framework.html"
             },
             {
-              "day": "3",
+              "day": "Tuesday",
               "desc": "- Practice creating a custom VPC for a web application.\n- Configure public and private subnets.\n- Configure Internet Gateway, Route Tables, and Security Groups.\n- Launch an EC2 Linux instance in the public subnet.\n- Configure SSH access and verify instance connectivity.\n- Attach an IAM Role to the EC2 instance.",
               "start": "2026-10-13",
               "end": "2026-10-13",
-              "ref": "Amazon VPC: https://000003.awsstudygroup.com/\nAmazon EC2: https://000004.awsstudygroup.com/\nIAM Roles for EC2: https://000048.awsstudygroup.com/"
+              "ref": "https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html"
             },
             {
-              "day": "4",
+              "day": "Wednesday",
               "desc": "- Practice preparing a basic web application environment on EC2.\n- Configure a web server and verify HTTP connectivity.\n- Create an Amazon S3 Bucket for application files.\n- Configure appropriate IAM permissions for accessing S3.\n- Practice transferring files between EC2 and Amazon S3.\n- Review application security and resource access settings.",
               "start": "2026-10-14",
               "end": "2026-10-14",
-              "ref": "Amazon EC2: https://000004.awsstudygroup.com/\nAmazon S3: https://000057.awsstudygroup.com/"
+              "ref": "https://docs.aws.amazon.com/linux/al2023/ug/ec2-lamp-amazon-linux-2023.html"
             },
             {
-              "day": "5",
+              "day": "Thursday",
               "desc": "- Review Amazon RDS configuration and database connectivity.\n- Practice creating an RDS database for the web application.\n- Configure database access through Security Groups.\n- Test connectivity between EC2 and RDS.\n- Execute basic SQL queries to verify database operations.\n- Identify and troubleshoot common connection issues.",
               "start": "2026-10-15",
               "end": "2026-10-15",
-              "ref": "Amazon RDS: https://000005.awsstudygroup.com/\nAmazon VPC: https://000003.awsstudygroup.com/"
+              "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/TUT_WebAppWithRDS.html"
             },
             {
-              "day": "6",
+              "day": "Friday",
               "desc": "- Review the integrated AWS architecture and deployed resources.\n- Practice monitoring EC2 and RDS using Amazon CloudWatch.\n- Check Security Groups, IAM Roles, and resource permissions.\n- Review AWS Budgets and estimated service costs.\n- Perform basic testing of the integrated AWS environment.\n- Clean up unnecessary AWS resources.\n- Prepare a summary of hands-on results and technical documentation.",
               "start": "2026-10-16",
               "end": "2026-10-16",
-              "ref": "Amazon CloudWatch: https://000008.awsstudygroup.com/\nAWS Budgets: https://000007.awsstudygroup.com/"
+              "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/monitoring-cloudwatch.html"
             }
           ]
         }
@@ -1055,44 +1099,44 @@ const DEFAULT_BILINGUAL_DATA = {
       return {
         weekNum: 6,
         vi: {
-          topic: "AWS Lambda & Serverless Computing (19/10/2026 – 23/10/2026)",
-          objectives: "- Understand Serverless Computing and AWS Lambda.\n- Learn Lambda Functions, Triggers, Events, and Execution Roles.\n- Practice creating and deploying Lambda Functions.\n- Explore integration between Lambda and Amazon S3.\n- Learn basic monitoring using CloudWatch.",
-          achievements: "- Understood the fundamentals of Serverless Computing.\n- Learned Lambda Functions, Runtimes, Handlers, and Triggers.\n- Practiced creating and testing Lambda Functions using Python.\n- Explored S3 event notifications and Lambda integration.\n- Learned to monitor function execution using CloudWatch Logs.\n- Understood basic serverless application workflows.",
+          topic: "AWS Lambda & Điện toán Serverless (19/10/2026 – 23/10/2026)",
+          objectives: "- Hiểu Điện toán Serverless và AWS Lambda.\n- Tìm hiểu Lambda Function, Trigger, Event và Execution Role.\n- Thực hành tạo và triển khai Lambda Function.\n- Tìm hiểu cách tích hợp Lambda với Amazon S3.\n- Tìm hiểu cách giám sát cơ bản bằng CloudWatch.",
+          achievements: "- Nắm được kiến thức nền tảng về Điện toán Serverless.\n- Tìm hiểu Lambda Function, Runtime, Handler và Trigger.\n- Thực hành tạo và kiểm thử Lambda Function bằng Python.\n- Tìm hiểu S3 event notification và việc tích hợp với Lambda.\n- Biết cách giám sát quá trình thực thi function bằng CloudWatch Logs.\n- Hiểu các luồng xử lý cơ bản của một ứng dụng serverless.",
           tasks: [
             {
-              day: "Monday",
-              desc: "- Learn Serverless Computing fundamentals.\n- Explore AWS Lambda and its architecture.\n- Understand Functions, Runtimes, and Handlers.",
+              day: "Thứ 2",
+              desc: "- Học kiến thức nền tảng về Điện toán Serverless.\n- Tìm hiểu AWS Lambda và kiến trúc của nó.\n- Tìm hiểu Function, Runtime và Handler.",
               start: "2026-10-19",
               end: "2026-10-19",
-              ref: "https://000022.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"
             },
             {
-              day: "Tuesday",
-              desc: "- Create and configure Lambda Functions.\n- Write basic Python code.\n- Test functions using sample events.",
+              day: "Thứ 3",
+              desc: "- Tạo và cấu hình Lambda Function.\n- Viết code Python cơ bản.\n- Kiểm thử function bằng các sample event.",
               start: "2026-10-20",
               end: "2026-10-20",
-              ref: "https://000022.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html"
             },
             {
-              day: "Wednesday",
-              desc: "- Learn Lambda Triggers and Event Sources.\n- Integrate Lambda with Amazon S3.\n- Practice processing uploaded files.",
+              day: "Thứ 4",
+              desc: "- Tìm hiểu Lambda Trigger và Event Source.\n- Tích hợp Lambda với Amazon S3.\n- Thực hành xử lý các file được upload.",
               start: "2026-10-21",
               end: "2026-10-21",
-              ref: "https://000022.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/lambda/latest/dg/lambda-services.html"
             },
             {
-              day: "Thursday",
-              desc: "- Monitor Lambda using CloudWatch.\n- Review execution logs and metrics.\n- Practice troubleshooting basic errors.",
+              day: "Thứ 5",
+              desc: "- Giám sát Lambda bằng CloudWatch.\n- Xem log và metric của quá trình thực thi.\n- Thực hành xử lý các lỗi cơ bản.",
               start: "2026-10-22",
               end: "2026-10-22",
-              ref: "https://000008.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/lambda/latest/dg/lambda-monitoring.html"
             },
             {
-              day: "Friday",
-              desc: "- Test the serverless workflow.\n- Review permissions and configurations.\n- Document the practical results.",
+              day: "Thứ 6",
+              desc: "- Kiểm thử luồng xử lý serverless.\n- Rà soát quyền và cấu hình.\n- Ghi lại tài liệu kết quả thực hành.",
               start: "2026-10-23",
               end: "2026-10-23",
-              ref: "https://000022.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html"
             }
           ]
         },
@@ -1106,35 +1150,35 @@ const DEFAULT_BILINGUAL_DATA = {
               desc: "- Learn Serverless Computing fundamentals.\n- Explore AWS Lambda and its architecture.\n- Understand Functions, Runtimes, and Handlers.",
               start: "2026-10-19",
               end: "2026-10-19",
-              ref: "https://000022.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"
             },
             {
               day: "Tuesday",
               desc: "- Create and configure Lambda Functions.\n- Write basic Python code.\n- Test functions using sample events.",
               start: "2026-10-20",
               end: "2026-10-20",
-              ref: "https://000022.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html"
             },
             {
               day: "Wednesday",
               desc: "- Learn Lambda Triggers and Event Sources.\n- Integrate Lambda with Amazon S3.\n- Practice processing uploaded files.",
               start: "2026-10-21",
               end: "2026-10-21",
-              ref: "https://000022.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/lambda/latest/dg/lambda-services.html"
             },
             {
               day: "Thursday",
               desc: "- Monitor Lambda using CloudWatch.\n- Review execution logs and metrics.\n- Practice troubleshooting basic errors.",
               start: "2026-10-22",
               end: "2026-10-22",
-              ref: "https://000008.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/lambda/latest/dg/lambda-monitoring.html"
             },
             {
               day: "Friday",
               desc: "- Test the serverless workflow.\n- Review permissions and configurations.\n- Document the practical results.",
               start: "2026-10-23",
               end: "2026-10-23",
-              ref: "https://000022.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html"
             }
           ]
         }
@@ -1144,43 +1188,43 @@ const DEFAULT_BILINGUAL_DATA = {
         weekNum: 7,
         vi: {
           topic: "AWS CloudFormation & Infrastructure as Code (26/10/2026 – 30/10/2026)",
-          objectives: "- Understand Infrastructure as Code (IaC).\n- Learn AWS CloudFormation Templates and Stacks.\n- Practice writing YAML and JSON templates.\n- Deploy and manage AWS resources using CloudFormation.\n- Explore AWS Systems Manager.",
-          achievements: "- Understood the fundamentals of Infrastructure as Code.\n- Learned CloudFormation Templates, Stacks, and Resources.\n- Practiced writing basic YAML templates.\n- Deployed AWS resources using CloudFormation.\n- Learned to update and delete CloudFormation Stacks.\n- Explored AWS Systems Manager and Session Manager.",
+          objectives: "- Hiểu Infrastructure as Code (IaC).\n- Tìm hiểu CloudFormation Template và Stack.\n- Thực hành viết template YAML và JSON.\n- Triển khai và quản lý tài nguyên AWS bằng CloudFormation.\n- Tìm hiểu AWS Systems Manager.",
+          achievements: "- Nắm được kiến thức nền tảng về Infrastructure as Code.\n- Tìm hiểu CloudFormation Template, Stack và Resource.\n- Thực hành viết các template YAML cơ bản.\n- Triển khai tài nguyên AWS bằng CloudFormation.\n- Biết cách cập nhật và xóa CloudFormation Stack.\n- Tìm hiểu AWS Systems Manager và Session Manager.",
           tasks: [
             {
-              day: "Monday",
-              desc: "- Learn Infrastructure as Code concepts.\n- Explore AWS CloudFormation.\n- Understand Templates and Stacks.",
+              day: "Thứ 2",
+              desc: "- Tìm hiểu các khái niệm Infrastructure as Code.\n- Khám phá AWS CloudFormation.\n- Tìm hiểu Template và Stack.",
               start: "2026-10-26",
               end: "2026-10-26",
-              ref: "https://000037.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/infrastructure-as-code.html"
             },
             {
-              day: "Tuesday",
-              desc: "- Learn YAML and JSON template structures.\n- Understand Parameters, Resources, and Outputs.\n- Review sample templates.",
+              day: "Thứ 3",
+              desc: "- Tìm hiểu cấu trúc template YAML và JSON.\n- Tìm hiểu Parameters, Resources và Outputs.\n- Xem các template mẫu.",
               start: "2026-10-27",
               end: "2026-10-27",
-              ref: "https://000037.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html"
             },
             {
-              day: "Wednesday",
-              desc: "- Create a basic CloudFormation Template.\n- Define EC2 and Security Group resources.\n- Deploy and verify a Stack.",
+              day: "Thứ 4",
+              desc: "- Tạo một CloudFormation Template cơ bản.\n- Khai báo tài nguyên EC2 và Security Group.\n- Triển khai và kiểm tra một Stack.",
               start: "2026-10-28",
               end: "2026-10-28",
-              ref: "https://000037.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ec2-instance.html"
             },
             {
-              day: "Thursday",
-              desc: "- Practice updating CloudFormation Stacks.\n- Learn rollback and error handling.\n- Manage and delete deployed resources.",
+              day: "Thứ 5",
+              desc: "- Thực hành cập nhật CloudFormation Stack.\n- Tìm hiểu rollback và xử lý lỗi.\n- Quản lý và xóa các tài nguyên đã triển khai.",
               start: "2026-10-29",
               end: "2026-10-29",
-              ref: "https://000037.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-direct.html"
             },
             {
-              day: "Friday",
-              desc: "- Explore AWS Systems Manager.\n- Learn Parameter Store and Session Manager.\n- Review infrastructure management workflows.",
+              day: "Thứ 6",
+              desc: "- Khám phá AWS Systems Manager.\n- Tìm hiểu Parameter Store và Session Manager.\n- Rà soát các quy trình quản lý hạ tầng.",
               start: "2026-10-30",
               end: "2026-10-30",
-              ref: "https://000031.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html"
             }
           ]
         },
@@ -1194,35 +1238,35 @@ const DEFAULT_BILINGUAL_DATA = {
               desc: "- Learn Infrastructure as Code concepts.\n- Explore AWS CloudFormation.\n- Understand Templates and Stacks.",
               start: "2026-10-26",
               end: "2026-10-26",
-              ref: "https://000037.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/infrastructure-as-code.html"
             },
             {
               day: "Tuesday",
               desc: "- Learn YAML and JSON template structures.\n- Understand Parameters, Resources, and Outputs.\n- Review sample templates.",
               start: "2026-10-27",
               end: "2026-10-27",
-              ref: "https://000037.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html"
             },
             {
               day: "Wednesday",
               desc: "- Create a basic CloudFormation Template.\n- Define EC2 and Security Group resources.\n- Deploy and verify a Stack.",
               start: "2026-10-28",
               end: "2026-10-28",
-              ref: "https://000037.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ec2-instance.html"
             },
             {
               day: "Thursday",
               desc: "- Practice updating CloudFormation Stacks.\n- Learn rollback and error handling.\n- Manage and delete deployed resources.",
               start: "2026-10-29",
               end: "2026-10-29",
-              ref: "https://000037.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-direct.html"
             },
             {
               day: "Friday",
               desc: "- Explore AWS Systems Manager.\n- Learn Parameter Store and Session Manager.\n- Review infrastructure management workflows.",
               start: "2026-10-30",
               end: "2026-10-30",
-              ref: "https://000031.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html"
             }
           ]
         }
@@ -1231,44 +1275,44 @@ const DEFAULT_BILINGUAL_DATA = {
       return {
         weekNum: 8,
         vi: {
-          topic: "AWS Migration Services (02/11/2026 – 06/11/2026)",
-          objectives: "- Understand cloud migration concepts and strategies.\n- Explore AWS VM Import/Export.\n- Learn AWS Database Migration Service (DMS).\n- Understand database schema conversion.\n- Explore AWS Elastic Disaster Recovery.",
-          achievements: "- Understood basic cloud migration strategies.\n- Learned the VM Import/Export process.\n- Explored DMS Replication Instances, Endpoints, and Tasks.\n- Understood full load and ongoing data replication.\n- Learned the purpose of AWS Schema Conversion Tool.\n- Understood basic disaster recovery concepts, RPO, and RTO.",
+          topic: "Các dịch vụ Migration của AWS (02/11/2026 – 06/11/2026)",
+          objectives: "- Hiểu các khái niệm và chiến lược chuyển đổi lên cloud (migration).\n- Tìm hiểu AWS VM Import/Export.\n- Tìm hiểu AWS Database Migration Service (DMS).\n- Hiểu việc chuyển đổi schema cơ sở dữ liệu.\n- Tìm hiểu AWS Elastic Disaster Recovery.",
+          achievements: "- Nắm được các chiến lược migration lên cloud cơ bản.\n- Tìm hiểu quy trình VM Import/Export.\n- Tìm hiểu DMS Replication Instance, Endpoint và Task.\n- Hiểu full load và ongoing data replication.\n- Hiểu mục đích của AWS Schema Conversion Tool.\n- Hiểu các khái niệm cơ bản về disaster recovery, RPO và RTO.",
           tasks: [
             {
-              day: "Monday",
-              desc: "- Learn cloud migration fundamentals.\n- Explore migration strategies.\n- Review AWS migration services.",
+              day: "Thứ 2",
+              desc: "- Học kiến thức nền tảng về migration lên cloud.\n- Tìm hiểu các chiến lược migration.\n- Tìm hiểu các dịch vụ migration của AWS.",
               start: "2026-11-02",
               end: "2026-11-02",
-              ref: "https://cloudjourney.awsstudygroup.com/2-migrate/"
+              ref: "https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html"
             },
             {
-              day: "Tuesday",
-              desc: "- Explore AWS VM Import/Export.\n- Learn virtual machine image migration.\n- Review migration requirements.",
+              day: "Thứ 3",
+              desc: "- Khám phá AWS VM Import/Export.\n- Tìm hiểu cách migrate image máy ảo.\n- Rà soát các yêu cầu khi migration.",
               start: "2026-11-03",
               end: "2026-11-03",
-              ref: "https://000014.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/vm-import/latest/userguide/what-is-vmimport.html"
             },
             {
-              day: "Wednesday",
-              desc: "- Learn AWS Database Migration Service.\n- Explore Source and Target Endpoints.\n- Understand Replication Tasks.",
+              day: "Thứ 4",
+              desc: "- Tìm hiểu AWS Database Migration Service.\n- Tìm hiểu Source Endpoint và Target Endpoint.\n- Tìm hiểu Replication Task.",
               start: "2026-11-04",
               end: "2026-11-04",
-              ref: "https://000043.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
             },
             {
-              day: "Thursday",
-              desc: "- Explore AWS Schema Conversion Tool.\n- Learn database schema conversion.\n- Review database migration compatibility.",
+              day: "Thứ 5",
+              desc: "- Khám phá AWS Schema Conversion Tool.\n- Tìm hiểu việc chuyển đổi schema cơ sở dữ liệu.\n- Rà soát khả năng tương thích khi migrate cơ sở dữ liệu.",
               start: "2026-11-05",
               end: "2026-11-05",
-              ref: "https://000043.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Welcome.html"
             },
             {
-              day: "Friday",
-              desc: "- Learn AWS Elastic Disaster Recovery.\n- Understand RPO and RTO.\n- Review backup and recovery strategies.",
+              day: "Thứ 6",
+              desc: "- Tìm hiểu AWS Elastic Disaster Recovery.\n- Tìm hiểu RPO và RTO.\n- Rà soát các chiến lược backup và recovery.",
               start: "2026-11-06",
               end: "2026-11-06",
-              ref: "https://000100.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html"
             }
           ]
         },
@@ -1282,35 +1326,35 @@ const DEFAULT_BILINGUAL_DATA = {
               desc: "- Learn cloud migration fundamentals.\n- Explore migration strategies.\n- Review AWS migration services.",
               start: "2026-11-02",
               end: "2026-11-02",
-              ref: "https://cloudjourney.awsstudygroup.com/2-migrate/"
+              ref: "https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html"
             },
             {
               day: "Tuesday",
               desc: "- Explore AWS VM Import/Export.\n- Learn virtual machine image migration.\n- Review migration requirements.",
               start: "2026-11-03",
               end: "2026-11-03",
-              ref: "https://000014.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/vm-import/latest/userguide/what-is-vmimport.html"
             },
             {
               day: "Wednesday",
               desc: "- Learn AWS Database Migration Service.\n- Explore Source and Target Endpoints.\n- Understand Replication Tasks.",
               start: "2026-11-04",
               end: "2026-11-04",
-              ref: "https://000043.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
             },
             {
               day: "Thursday",
               desc: "- Explore AWS Schema Conversion Tool.\n- Learn database schema conversion.\n- Review database migration compatibility.",
               start: "2026-11-05",
               end: "2026-11-05",
-              ref: "https://000043.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Welcome.html"
             },
             {
               day: "Friday",
               desc: "- Learn AWS Elastic Disaster Recovery.\n- Understand RPO and RTO.\n- Review backup and recovery strategies.",
               start: "2026-11-06",
               end: "2026-11-06",
-              ref: "https://000100.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html"
             }
           ]
         }
@@ -1319,44 +1363,44 @@ const DEFAULT_BILINGUAL_DATA = {
       return {
         weekNum: 9,
         vi: {
-          topic: "Docker & Containerization (09/11/2026 – 13/11/2026)",
-          objectives: "- Understand containerization and Docker architecture.\n- Learn Docker Images, Containers, and Dockerfiles.\n- Practice building and running Docker Containers.\n- Learn container networking and persistent storage.\n- Explore Docker applications on AWS.",
-          achievements: "- Understood the differences between Virtual Machines and Containers.\n- Learned Docker Engine, Images, Containers, and Dockerfiles.\n- Practiced installing and configuring Docker.\n- Learned basic Docker CLI commands.\n- Practiced building and running custom containers.\n- Understood Docker Volumes and Networks.\n- Explored container deployment using Amazon ECS.",
+          topic: "Docker & Container hóa (09/11/2026 – 13/11/2026)",
+          objectives: "- Hiểu container hóa và kiến trúc Docker.\n- Tìm hiểu Docker Image, Container và Dockerfile.\n- Thực hành build và chạy Docker Container.\n- Tìm hiểu mạng container và lưu trữ dữ liệu bền vững.\n- Tìm hiểu cách chạy ứng dụng Docker trên AWS.",
+          achievements: "- Phân biệt được máy ảo (Virtual Machine) và Container.\n- Tìm hiểu Docker Engine, Image, Container và Dockerfile.\n- Thực hành cài đặt và cấu hình Docker.\n- Nắm được các lệnh Docker CLI cơ bản.\n- Thực hành build và chạy container tùy chỉnh.\n- Hiểu Docker Volume và Network.\n- Tìm hiểu việc triển khai container bằng Amazon ECS.",
           tasks: [
             {
-              day: "Monday",
-              desc: "- Learn containerization fundamentals.\n- Explore Docker architecture.\n- Compare Containers and Virtual Machines.",
+              day: "Thứ 2",
+              desc: "- Học kiến thức nền tảng về container hóa.\n- Tìm hiểu kiến trúc Docker.\n- So sánh Container và máy ảo.",
               start: "2026-11-09",
               end: "2026-11-09",
-              ref: "https://000015.awsstudygroup.com/"
+              ref: "https://docs.docker.com/learn/content/what-is-a-container/"
             },
             {
-              day: "Tuesday",
-              desc: "- Install and configure Docker.\n- Practice basic Docker CLI commands.\n- Download and run Docker Images.",
+              day: "Thứ 3",
+              desc: "- Cài đặt và cấu hình Docker.\n- Thực hành các lệnh Docker CLI cơ bản.\n- Tải và chạy Docker Image.",
               start: "2026-11-10",
               end: "2026-11-10",
-              ref: "https://000015.awsstudygroup/"
+              ref: "https://docs.docker.com/engine/install/"
             },
             {
-              day: "Wednesday",
-              desc: "- Learn Dockerfile instructions.\n- Build custom Docker Images.\n- Deploy a basic application in a container.",
+              day: "Thứ 4",
+              desc: "- Tìm hiểu các chỉ thị trong Dockerfile.\n- Build Docker Image tùy chỉnh.\n- Triển khai một ứng dụng cơ bản trong container.",
               start: "2026-11-11",
               end: "2026-11-11",
-              ref: "https://000015.awsstudygroup/"
+              ref: "https://docs.docker.com/reference/dockerfile/"
             },
             {
-              day: "Thursday",
-              desc: "- Learn Docker Volumes and Networks.\n- Manage container lifecycle.\n- Review container logs and configurations.",
+              day: "Thứ 5",
+              desc: "- Tìm hiểu Docker Volume và Network.\n- Quản lý vòng đời container.\n- Xem log và cấu hình của container.",
               start: "2026-11-12",
               end: "2026-11-12",
-              ref: "https://000015.awsstudygroup/"
+              ref: "https://docs.docker.com/engine/storage/volumes/"
             },
             {
-              day: "Friday",
-              desc: "- Test a containerized application.\n- Troubleshoot basic errors.\n- Explore Docker integration with Amazon ECS.",
+              day: "Thứ 6",
+              desc: "- Kiểm thử một ứng dụng đã container hóa.\n- Xử lý các lỗi cơ bản.\n- Tìm hiểu việc tích hợp Docker với Amazon ECS.",
               start: "2026-11-13",
               end: "2026-11-13",
-              ref: "https://000015.awsstudygroup/\nhttps://000067.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html"
             }
           ]
         },
@@ -1370,35 +1414,35 @@ const DEFAULT_BILINGUAL_DATA = {
               desc: "- Learn containerization fundamentals.\n- Explore Docker architecture.\n- Compare Containers and Virtual Machines.",
               start: "2026-11-09",
               end: "2026-11-09",
-              ref: "https://000015.awsstudygroup.com/"
+              ref: "https://docs.docker.com/learn/content/what-is-a-container/"
             },
             {
               day: "Tuesday",
               desc: "- Install and configure Docker.\n- Practice basic Docker CLI commands.\n- Download and run Docker Images.",
               start: "2026-11-10",
               end: "2026-11-10",
-              ref: "https://000015.awsstudygroup/"
+              ref: "https://docs.docker.com/engine/install/"
             },
             {
               day: "Wednesday",
               desc: "- Learn Dockerfile instructions.\n- Build custom Docker Images.\n- Deploy a basic application in a container.",
               start: "2026-11-11",
               end: "2026-11-11",
-              ref: "https://000015.awsstudygroup/"
+              ref: "https://docs.docker.com/reference/dockerfile/"
             },
             {
               day: "Thursday",
               desc: "- Learn Docker Volumes and Networks.\n- Manage container lifecycle.\n- Review container logs and configurations.",
               start: "2026-11-12",
               end: "2026-11-12",
-              ref: "https://000015.awsstudygroup/"
+              ref: "https://docs.docker.com/engine/storage/volumes/"
             },
             {
               day: "Friday",
               desc: "- Test a containerized application.\n- Troubleshoot basic errors.\n- Explore Docker integration with Amazon ECS.",
               start: "2026-11-13",
               end: "2026-11-13",
-              ref: "https://000015.awsstudygroup/\nhttps://000067.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html"
             }
           ]
         }
@@ -1408,85 +1452,85 @@ const DEFAULT_BILINGUAL_DATA = {
         weekNum: 10,
         vi: {
           topic: "Amazon ECS, Fargate & CI/CD (16/11/2026 – 20/11/2026)",
-          objectives: "- Understand container orchestration with Amazon ECS.\n- Learn ECS Clusters, Tasks, Services, and Task Definitions.\n- Explore AWS Fargate.\n- Practice deploying containerized applications.\n- Understand CI/CD and AWS CodePipeline.",
-          achievements: "[Kế hoạch học tập / Planned Learning Outcomes]\n- Understood the architecture of Amazon ECS.\n- Learned ECS Clusters, Services, and Task Definitions.\n- Understood the differences between ECS EC2 and Fargate.\n- Practiced deploying containers using ECS.\n- Learned basic CI/CD pipeline concepts.\n- Explored AWS CodePipeline and automated deployment workflows.",
+          objectives: "- Hiểu việc điều phối container với Amazon ECS.\n- Tìm hiểu ECS Cluster, Task, Service và Task Definition.\n- Tìm hiểu AWS Fargate.\n- Thực hành triển khai ứng dụng đã container hóa.\n- Hiểu CI/CD và AWS CodePipeline.",
+          achievements: "[Kế hoạch học tập]\n- Hiểu kiến trúc của Amazon ECS.\n- Tìm hiểu ECS Cluster, Service và Task Definition.\n- Phân biệt ECS chạy trên EC2 và Fargate.\n- Thực hành triển khai container bằng ECS.\n- Nắm được các khái niệm CI/CD pipeline cơ bản.\n- Tìm hiểu AWS CodePipeline và các luồng triển khai tự động.",
           tasks: [
             {
-              day: "Monday",
-              desc: "- Learn Amazon ECS fundamentals.\n- Explore Clusters, Tasks, and Services.\n- Understand Task Definitions.",
+              day: "Thứ 2",
+              desc: "- Học kiến thức nền tảng về Amazon ECS.\n- Tìm hiểu Cluster, Task và Service.\n- Tìm hiểu Task Definition.",
               start: "2026-11-16",
               end: "2026-11-16",
-              ref: "https://000067.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html"
             },
             {
-              day: "Tuesday",
-              desc: "- Learn AWS Fargate.\n- Compare EC2 and Fargate launch types.\n- Explore container configurations.",
+              day: "Thứ 3",
+              desc: "- Tìm hiểu AWS Fargate.\n- So sánh launch type EC2 và Fargate.\n- Tìm hiểu các cấu hình container.",
               start: "2026-11-17",
               end: "2026-11-17",
-              ref: "https://000067.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html"
             },
             {
-              day: "Wednesday",
-              desc: "- Create an ECS Cluster.\n- Configure Task Definitions.\n- Deploy a container using Fargate.",
+              day: "Thứ 4",
+              desc: "- Tạo một ECS Cluster.\n- Cấu hình Task Definition.\n- Triển khai một container bằng Fargate.",
               start: "2026-11-18",
               end: "2026-11-18",
-              ref: "https://000067.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/getting-started-fargate.html"
             },
             {
-              day: "Thursday",
-              desc: "- Learn CI/CD fundamentals.\n- Explore AWS CodePipeline.\n- Understand Source, Build, and Deploy stages.",
+              day: "Thứ 5",
+              desc: "- Học kiến thức nền tảng về CI/CD.\n- Tìm hiểu AWS CodePipeline.\n- Tìm hiểu các stage Source, Build và Deploy.",
               start: "2026-11-19",
               end: "2026-11-19",
-              ref: "https://000017.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/continuous-integration.html"
             },
             {
-              day: "Friday",
-              desc: "- Review the container deployment workflow.\n- Test application deployment.\n- Document the CI/CD process.",
+              day: "Thứ 6",
+              desc: "- Rà soát luồng triển khai container.\n- Kiểm thử việc triển khai ứng dụng.\n- Viết tài liệu cho quy trình CI/CD.",
               start: "2026-11-20",
               end: "2026-11-20",
-              ref: "https://000017.awsstudygroup/\nhttps://000067.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/codepipeline/latest/userguide/ecs-cd-pipeline.html"
             }
           ]
         },
         en: {
           topic: "Amazon ECS, Fargate & CI/CD (16/11/2026 – 20/11/2026)",
           objectives: "- Understand container orchestration with Amazon ECS.\n- Learn ECS Clusters, Tasks, Services, and Task Definitions.\n- Explore AWS Fargate.\n- Practice deploying containerized applications.\n- Understand CI/CD and AWS CodePipeline.",
-          achievements: "[Planned Outcomes / Scheduled Activity]\n- Understood the architecture of Amazon ECS.\n- Learned ECS Clusters, Services, and Task Definitions.\n- Understood the differences between ECS EC2 and Fargate.\n- Practiced deploying containers using ECS.\n- Learned basic CI/CD pipeline concepts.\n- Explored AWS CodePipeline and automated deployment workflows.",
+          achievements: "[Planned Learning Outcomes]\n- Understood the architecture of Amazon ECS.\n- Learned ECS Clusters, Services, and Task Definitions.\n- Understood the differences between ECS EC2 and Fargate.\n- Practiced deploying containers using ECS.\n- Learned basic CI/CD pipeline concepts.\n- Explored AWS CodePipeline and automated deployment workflows.",
           tasks: [
             {
               day: "Monday",
               desc: "- Learn Amazon ECS fundamentals.\n- Explore Clusters, Tasks, and Services.\n- Understand Task Definitions.",
               start: "2026-11-16",
               end: "2026-11-16",
-              ref: "https://000067.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html"
             },
             {
               day: "Tuesday",
               desc: "- Learn AWS Fargate.\n- Compare EC2 and Fargate launch types.\n- Explore container configurations.",
               start: "2026-11-17",
               end: "2026-11-17",
-              ref: "https://000067.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html"
             },
             {
               day: "Wednesday",
               desc: "- Create an ECS Cluster.\n- Configure Task Definitions.\n- Deploy a container using Fargate.",
               start: "2026-11-18",
               end: "2026-11-18",
-              ref: "https://000067.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/getting-started-fargate.html"
             },
             {
               day: "Thursday",
               desc: "- Learn CI/CD fundamentals.\n- Explore AWS CodePipeline.\n- Understand Source, Build, and Deploy stages.",
               start: "2026-11-19",
               end: "2026-11-19",
-              ref: "https://000017.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/continuous-integration.html"
             },
             {
               day: "Friday",
               desc: "- Review the container deployment workflow.\n- Test application deployment.\n- Document the CI/CD process.",
               start: "2026-11-20",
               end: "2026-11-20",
-              ref: "https://000017.awsstudygroup/\nhttps://000067.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/codepipeline/latest/userguide/ecs-cd-pipeline.html"
             }
           ]
         }
@@ -1495,86 +1539,86 @@ const DEFAULT_BILINGUAL_DATA = {
       return {
         weekNum: 11,
         vi: {
-          topic: "AWS Data Analytics & Business Intelligence (23/11/2026 – 27/11/2026)",
-          objectives: "- Understand Data Analytics and Data Lake concepts.\n- Explore AWS data storage and processing services.\n- Learn Amazon Athena and SQL queries.\n- Understand Amazon QuickSight and Business Intelligence.\n- Practice creating basic data visualizations.",
-          achievements: "[Kế hoạch học tập / Planned Learning Outcomes]\n- Understood Data Lake architecture and data storage concepts.\n- Learned structured, semi-structured, and unstructured data.\n- Explored AWS Glue and data processing workflows.\n- Practiced querying data using Amazon Athena.\n- Learned basic SQL operations for data analysis.\n- Explored Amazon QuickSight dashboards and visualizations.\n- Practiced creating basic charts and reports.",
+          topic: "Phân tích dữ liệu & Business Intelligence trên AWS (23/11/2026 – 27/11/2026)",
+          objectives: "- Hiểu các khái niệm Data Analytics và Data Lake.\n- Tìm hiểu các dịch vụ lưu trữ và xử lý dữ liệu của AWS.\n- Tìm hiểu Amazon Athena và truy vấn SQL.\n- Hiểu Amazon QuickSight và Business Intelligence.\n- Thực hành tạo các biểu đồ trực quan hóa dữ liệu cơ bản.",
+          achievements: "[Kế hoạch học tập]\n- Hiểu kiến trúc Data Lake và các khái niệm lưu trữ dữ liệu.\n- Tìm hiểu dữ liệu có cấu trúc, bán cấu trúc và phi cấu trúc.\n- Tìm hiểu AWS Glue và các luồng xử lý dữ liệu.\n- Thực hành truy vấn dữ liệu bằng Amazon Athena.\n- Nắm được các thao tác SQL cơ bản để phân tích dữ liệu.\n- Tìm hiểu dashboard và biểu đồ trực quan trên Amazon QuickSight.\n- Thực hành tạo các biểu đồ và báo cáo cơ bản.",
           tasks: [
             {
-              day: "Monday",
-              desc: "- Learn Data Analytics fundamentals.\n- Understand Data Lakes and Data Warehouses.\n- Explore Amazon S3 for data storage.",
+              day: "Thứ 2",
+              desc: "- Học kiến thức nền tảng về Data Analytics.\n- Tìm hiểu Data Lake và Data Warehouse.\n- Tìm hiểu cách dùng Amazon S3 để lưu trữ dữ liệu.",
               start: "2026-11-23",
               end: "2026-11-23",
-              ref: "https://000035.awsstudygroup.com/"
+              ref: "https://aws.amazon.com/what-is/data-lake/"
             },
             {
-              day: "Tuesday",
-              desc: "- Explore AWS data analytics services.\n- Learn about AWS Glue.\n- Understand basic data processing workflows.",
+              day: "Thứ 3",
+              desc: "- Khám phá các dịch vụ phân tích dữ liệu của AWS.\n- Tìm hiểu AWS Glue.\n- Tìm hiểu các luồng xử lý dữ liệu cơ bản.",
               start: "2026-11-24",
               end: "2026-11-24",
-              ref: "https://000040.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/analytics.html"
             },
             {
-              day: "Wednesday",
-              desc: "- Learn Amazon Athena.\n- Practice basic SQL queries.\n- Analyze datasets stored in Amazon S3.",
+              day: "Thứ 4",
+              desc: "- Tìm hiểu Amazon Athena.\n- Thực hành các câu truy vấn SQL cơ bản.\n- Phân tích các tập dữ liệu lưu trên Amazon S3.",
               start: "2026-11-25",
               end: "2026-11-25",
-              ref: "https://000106.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
             },
             {
-              day: "Thursday",
-              desc: "- Learn Business Intelligence fundamentals.\n- Explore Amazon QuickSight.\n- Understand Datasets and Dashboards.",
+              day: "Thứ 5",
+              desc: "- Học kiến thức nền tảng về Business Intelligence.\n- Tìm hiểu Amazon QuickSight.\n- Tìm hiểu Dataset và Dashboard.",
               start: "2026-11-26",
               end: "2026-11-26",
-              ref: "https://000073.awsstudygroup/"
+              ref: "https://aws.amazon.com/what-is/business-intelligence/"
             },
             {
-              day: "Friday",
-              desc: "- Create basic data visualizations.\n- Build a sample dashboard.\n- Review the AWS analytics workflow.",
+              day: "Thứ 6",
+              desc: "- Tạo các biểu đồ trực quan hóa dữ liệu cơ bản.\n- Xây dựng một dashboard mẫu.\n- Rà soát luồng phân tích dữ liệu trên AWS.",
               start: "2026-11-27",
               end: "2026-11-27",
-              ref: "https://000073.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/quick/latest/userguide/creating-a-visual.html"
             }
           ]
         },
         en: {
           topic: "AWS Data Analytics & Business Intelligence (23/11/2026 – 27/11/2026)",
           objectives: "- Understand Data Analytics and Data Lake concepts.\n- Explore AWS data storage and processing services.\n- Learn Amazon Athena and SQL queries.\n- Understand Amazon QuickSight and Business Intelligence.\n- Practice creating basic data visualizations.",
-          achievements: "[Planned Outcomes / Scheduled Activity]\n- Understood Data Lake architecture and data storage concepts.\n- Learned structured, semi-structured, and unstructured data.\n- Explored AWS Glue and data processing workflows.\n- Practiced querying data using Amazon Athena.\n- Learned basic SQL operations for data analysis.\n- Explored Amazon QuickSight dashboards and visualizations.\n- Practiced creating basic charts and reports.",
+          achievements: "[Planned Learning Outcomes]\n- Understood Data Lake architecture and data storage concepts.\n- Learned structured, semi-structured, and unstructured data.\n- Explored AWS Glue and data processing workflows.\n- Practiced querying data using Amazon Athena.\n- Learned basic SQL operations for data analysis.\n- Explored Amazon QuickSight dashboards and visualizations.\n- Practiced creating basic charts and reports.",
           tasks: [
             {
               day: "Monday",
               desc: "- Learn Data Analytics fundamentals.\n- Understand Data Lakes and Data Warehouses.\n- Explore Amazon S3 for data storage.",
               start: "2026-11-23",
               end: "2026-11-23",
-              ref: "https://000035.awsstudygroup.com/"
+              ref: "https://aws.amazon.com/what-is/data-lake/"
             },
             {
               day: "Tuesday",
               desc: "- Explore AWS data analytics services.\n- Learn about AWS Glue.\n- Understand basic data processing workflows.",
               start: "2026-11-24",
               end: "2026-11-24",
-              ref: "https://000040.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/analytics.html"
             },
             {
               day: "Wednesday",
               desc: "- Learn Amazon Athena.\n- Practice basic SQL queries.\n- Analyze datasets stored in Amazon S3.",
               start: "2026-11-25",
               end: "2026-11-25",
-              ref: "https://000106.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
             },
             {
               day: "Thursday",
               desc: "- Learn Business Intelligence fundamentals.\n- Explore Amazon QuickSight.\n- Understand Datasets and Dashboards.",
               start: "2026-11-26",
               end: "2026-11-26",
-              ref: "https://000073.awsstudygroup/"
+              ref: "https://aws.amazon.com/what-is/business-intelligence/"
             },
             {
               day: "Friday",
               desc: "- Create basic data visualizations.\n- Build a sample dashboard.\n- Review the AWS analytics workflow.",
               start: "2026-11-27",
               end: "2026-11-27",
-              ref: "https://000073.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/quick/latest/userguide/creating-a-visual.html"
             }
           ]
         }
@@ -1583,86 +1627,86 @@ const DEFAULT_BILINGUAL_DATA = {
       return {
         weekNum: 12,
         vi: {
-          topic: "Machine Learning with Amazon SageMaker (30/11/2026 – 04/12/2026)",
-          objectives: "- Understand AI, Machine Learning, and Deep Learning fundamentals.\n- Explore Amazon SageMaker and its main features.\n- Learn basic data preparation and model training.\n- Understand model evaluation and deployment.\n- Review and summarize the First Cloud AI Journey program.",
-          achievements: "[Kế hoạch học tập / Planned Learning Outcomes]\n- Understood the differences between AI, ML, and Deep Learning.\n- Learned supervised and unsupervised learning concepts.\n- Explored Amazon SageMaker and its development environment.\n- Understood basic dataset preparation.\n- Learned the machine learning model training workflow.\n- Explored model evaluation and inference concepts.\n- Reviewed AWS services and consolidated internship knowledge.\n- Prepared technical documentation and a final learning summary.",
+          topic: "Machine Learning với Amazon SageMaker (30/11/2026 – 04/12/2026)",
+          objectives: "- Hiểu kiến thức nền tảng về AI, Machine Learning và Deep Learning.\n- Tìm hiểu Amazon SageMaker và các tính năng chính.\n- Tìm hiểu cách chuẩn bị dữ liệu và huấn luyện mô hình cơ bản.\n- Hiểu cách đánh giá và triển khai mô hình.\n- Tổng kết và đúc kết chương trình First Cloud AI Journey.",
+          achievements: "[Kế hoạch học tập]\n- Phân biệt AI, ML và Deep Learning.\n- Tìm hiểu các khái niệm supervised learning và unsupervised learning.\n- Tìm hiểu Amazon SageMaker và môi trường phát triển.\n- Hiểu cách chuẩn bị tập dữ liệu cơ bản.\n- Tìm hiểu quy trình huấn luyện mô hình machine learning.\n- Tìm hiểu các khái niệm đánh giá mô hình và inference.\n- Ôn lại các dịch vụ AWS và củng cố kiến thức thực tập.\n- Chuẩn bị tài liệu kỹ thuật và bản tổng kết học tập cuối kỳ.",
           tasks: [
             {
-              day: "Monday",
-              desc: "- Learn AI and Machine Learning fundamentals.\n- Understand supervised and unsupervised learning.\n- Explore the ML lifecycle.",
+              day: "Thứ 2",
+              desc: "- Học kiến thức nền tảng về AI và Machine Learning.\n- Tìm hiểu supervised learning và unsupervised learning.\n- Tìm hiểu vòng đời ML (ML lifecycle).",
               start: "2026-11-30",
               end: "2026-11-30",
-              ref: "https://000200.awsstudygroup.com/"
+              ref: "https://aws.amazon.com/what-is/machine-learning/"
             },
             {
-              day: "Tuesday",
-              desc: "- Explore Amazon SageMaker.\n- Learn about development environments and notebooks.\n- Review dataset preparation.",
+              day: "Thứ 3",
+              desc: "- Khám phá Amazon SageMaker.\n- Tìm hiểu môi trường phát triển và notebook.\n- Ôn lại cách chuẩn bị tập dữ liệu.",
               start: "2026-12-01",
               end: "2026-12-01",
-              ref: "https://000200.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html"
             },
             {
-              day: "Wednesday",
-              desc: "- Learn machine learning model training.\n- Explore training datasets and configurations.\n- Understand model evaluation.",
+              day: "Thứ 4",
+              desc: "- Tìm hiểu cách huấn luyện mô hình machine learning.\n- Tìm hiểu tập dữ liệu huấn luyện và các cấu hình.\n- Tìm hiểu cách đánh giá mô hình.",
               start: "2026-12-02",
               end: "2026-12-02",
-              ref: "https://000200.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.html"
             },
             {
-              day: "Thursday",
-              desc: "- Learn model deployment and inference.\n- Explore SageMaker Endpoints.\n- Review model monitoring concepts.",
+              day: "Thứ 5",
+              desc: "- Tìm hiểu việc triển khai mô hình và inference.\n- Tìm hiểu SageMaker Endpoint.\n- Ôn lại các khái niệm giám sát mô hình.",
               start: "2026-12-03",
               end: "2026-12-03",
-              ref: "https://000200.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html"
             },
             {
-              day: "Friday",
-              desc: "- Review major AWS services studied.\n- Summarize hands-on lab results.\n- Prepare final internship documentation.",
+              day: "Thứ 6",
+              desc: "- Ôn lại các dịch vụ AWS chính đã học.\n- Tổng kết kết quả các bài lab thực hành.\n- Chuẩn bị tài liệu thực tập cuối kỳ.",
               start: "2026-12-04",
               end: "2026-12-04",
-              ref: "https://cloudjourney.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html"
             }
           ]
         },
         en: {
           topic: "Machine Learning with Amazon SageMaker (30/11/2026 – 04/12/2026)",
           objectives: "- Understand AI, Machine Learning, and Deep Learning fundamentals.\n- Explore Amazon SageMaker and its main features.\n- Learn basic data preparation and model training.\n- Understand model evaluation and deployment.\n- Review and summarize the First Cloud AI Journey program.",
-          achievements: "[Planned Outcomes / Scheduled Activity]\n- Understood the differences between AI, ML, and Deep Learning.\n- Learned supervised and unsupervised learning concepts.\n- Explored Amazon SageMaker and its development environment.\n- Understood basic dataset preparation.\n- Learned the machine learning model training workflow.\n- Explored model evaluation and inference concepts.\n- Reviewed AWS services and consolidated internship knowledge.\n- Prepared technical documentation and a final learning summary.",
+          achievements: "[Planned Learning Outcomes]\n- Understood the differences between AI, ML, and Deep Learning.\n- Learned supervised and unsupervised learning concepts.\n- Explored Amazon SageMaker and its development environment.\n- Understood basic dataset preparation.\n- Learned the machine learning model training workflow.\n- Explored model evaluation and inference concepts.\n- Reviewed AWS services and consolidated internship knowledge.\n- Prepared technical documentation and a final learning summary.",
           tasks: [
             {
               day: "Monday",
               desc: "- Learn AI and Machine Learning fundamentals.\n- Understand supervised and unsupervised learning.\n- Explore the ML lifecycle.",
               start: "2026-11-30",
               end: "2026-11-30",
-              ref: "https://000200.awsstudygroup.com/"
+              ref: "https://aws.amazon.com/what-is/machine-learning/"
             },
             {
               day: "Tuesday",
               desc: "- Explore Amazon SageMaker.\n- Learn about development environments and notebooks.\n- Review dataset preparation.",
               start: "2026-12-01",
               end: "2026-12-01",
-              ref: "https://000200.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html"
             },
             {
               day: "Wednesday",
               desc: "- Learn machine learning model training.\n- Explore training datasets and configurations.\n- Understand model evaluation.",
               start: "2026-12-02",
               end: "2026-12-02",
-              ref: "https://000200.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.html"
             },
             {
               day: "Thursday",
               desc: "- Learn model deployment and inference.\n- Explore SageMaker Endpoints.\n- Review model monitoring concepts.",
               start: "2026-12-03",
               end: "2026-12-03",
-              ref: "https://000200.awsstudygroup/"
+              ref: "https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html"
             },
             {
               day: "Friday",
               desc: "- Review major AWS services studied.\n- Summarize hands-on lab results.\n- Prepare final internship documentation.",
               start: "2026-12-04",
               end: "2026-12-04",
-              ref: "https://cloudjourney.awsstudygroup.com/"
+              ref: "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html"
             }
           ]
         }
@@ -1688,7 +1732,7 @@ const DEFAULT_BILINGUAL_DATA = {
       problem: "Current weather stations require manual data collection, becoming unmanageable with multiple units. There is no centralized system for real-time data or analytics, and third-party commercial platforms are costly and overly complex for academic research.",
       solution: "The platform uses AWS IoT Core to ingest MQTT data, AWS Lambda and API Gateway for processing, Amazon S3 for storage (including a data lake), and AWS Glue Crawlers/ETL jobs to extract, transform, and load data for analysis. AWS Amplify with Next.js provides the web dashboard.\nBenefits: Reduces manual reporting, provides centralized live data, enables AI researchers to train climate models, and optimizes operational cloud costs to under $10/month.",
       arch: "ESP32 Sensors -> MQTT over TLS -> AWS IoT Core Rule Engine -> AWS Lambda (Validation & Formatting) -> Amazon S3 Raw Bucket -> AWS Glue ETL -> Amazon S3 Processed Lake -> Amazon Athena / QuickSight / Next.js Dashboard via API Gateway.",
-      budget: "- AWS IoT Core (500k messages/month): $0.50\n- AWS Lambda (1M executions, 128MB): $0.20 (Covered by Free Tier)\n- Amazon S3 Storage & API Calls: $1.20\n- AWS Glue ETL Jobs (On-demand): $3.50\n- Amazon Cognito User Pool: $0.00 (Miễn phí)\n-> Estimated total cost: ~$5.40 USD/month."
+      budget: "- AWS IoT Core (500k messages/month): $0.50\n- AWS Lambda (1M executions, 128MB): $0.20 (Covered by Free Tier)\n- Amazon S3 Storage & API Calls: $1.20\n- AWS Glue ETL Jobs (On-demand): $3.50\n- Amazon Cognito User Pool: $0.00 (Free)\n-> Estimated total cost: ~$5.40 USD/month."
     }
   },
   blogs: {
@@ -2005,6 +2049,14 @@ class AppLanguageManager {
       }
     });
 
+    // Update all image alt texts
+    document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+      const key = el.getAttribute('data-i18n-alt');
+      if (dict[key]) {
+        el.alt = dict[key];
+      }
+    });
+
     // Update dynamic header title according to current active view
     updateHeaderPageTitle();
 
@@ -2215,7 +2267,8 @@ function handleHashChange() {
 const AVATAR_FIT_KEY = 'fcaj_student_avatar_fit';
 
 function getAvatarFitMode() {
-  return localStorage.getItem(AVATAR_FIT_KEY) || 'cover';
+  // The fit toggle button was removed: always use the default "cover" mode
+  return 'cover';
 }
 
 function setAvatarFitMode(mode) {
@@ -2349,23 +2402,12 @@ function setupStudentInfo() {
   }
 
   const photoFrame = document.getElementById('student-photo-frame');
-  const btnToggleFit = document.getElementById('btn-toggle-fit');
-  const btnViewHd = document.getElementById('btn-view-hd');
   const hdModal = document.getElementById('photo-hd-modal');
   const hdPreview = document.getElementById('photo-hd-preview');
   const btnCloseHd = document.getElementById('btn-close-hd-modal');
   const btnCloseHdBtn = document.getElementById('btn-close-hd-btn');
 
-  if (btnToggleFit) {
-    btnToggleFit.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const current = getAvatarFitMode();
-      const next = current === 'cover' ? 'contain' : 'cover';
-      setAvatarFitMode(next);
-      showToast(next === 'contain' ? t('toastFitContain') : t('toastFitCover'));
-    });
-  }
-
+  // Click the photo to open it enlarged (HD modal)
   const openHdModal = (e) => {
     if (e) e.stopPropagation();
     const info = app.data.studentInfo || {};
@@ -2383,9 +2425,6 @@ function setupStudentInfo() {
     }
   };
 
-  if (btnViewHd) {
-    btnViewHd.addEventListener('click', openHdModal);
-  }
   if (photoFrame) {
     photoFrame.addEventListener('click', openHdModal);
   }
@@ -2607,11 +2646,11 @@ function setupWorklog() {
     const textarea = document.getElementById('export-worklog-textarea');
     if (textarea) {
       navigator.clipboard.writeText(textarea.value).then(() => {
-        showToast('✓ Đã sao chép toàn bộ mã JSON vào bộ nhớ tạm!');
+        showToast(t('toastCopyJsonFull'));
       }).catch(() => {
         textarea.select();
         document.execCommand('copy');
-        showToast('✓ Đã sao chép!');
+        showToast(t('toastCopyJsonShort'));
       });
     }
   });
@@ -3204,9 +3243,9 @@ const BLOG_ARTICLES = {
           url: "https://aws.amazon.com/s3/pricing/"
         },
         {
-          title: "Xem bài viết trên cộng đồng AWS Study Group VN",
+          title: "View post on AWS Study Group VN community",
           url: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2309097553188537/",
-          linkText: "Xem bài viết trên cộng đồng AWS Study Group VN"
+          linkText: "View post on AWS Study Group VN community"
         }
       ],
       btnBackToBlogs: "← Back to Articles",
@@ -3221,7 +3260,7 @@ const BLOG_ARTICLES = {
       facebookUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2326019258163033/",
       leadSummary: "Trong quá trình nghiên cứu kiến trúc Event-Driven trên AWS, mình nhận thấy một vấn đề: Một hệ thống có thể xử lý tất cả sự kiện thành công nhưng vẫn tạo ra kết quả sai do Race Condition. Điều này xuất phát từ đặc điểm xử lý bất đồng bộ, đặc biệt khi kết hợp Amazon S3, EventBridge, SQS, Lambda và DynamoDB.",
       coverImage: "assets/images/aws-event-driven-architecture.png",
-      coverCaption: "AWS Event-Driven Architecture – Event Processing, Ordering and Atomic Publishing",
+      coverCaption: "Kiến trúc Event-Driven trên AWS – Xử lý sự kiện, kiểm soát thứ tự và công bố kết quả nguyên tử",
       sections: [
         {
           id: "eda-sec-1",
@@ -3460,9 +3499,9 @@ const BLOG_ARTICLES = {
           url: "https://aws.amazon.com/blogs/compute/handling-duplicate-records-in-amazon-sqs-fifo-queues/"
         },
         {
-          title: "Xem bài viết trên cộng đồng AWS Study Group VN",
+          title: "View post on AWS Study Group VN community",
           url: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2326019258163033/",
-          linkText: "Xem bài viết trên cộng đồng AWS Study Group VN"
+          linkText: "View post on AWS Study Group VN community"
         }
       ],
       btnBackToBlogs: "← Back to Articles",
@@ -3571,7 +3610,7 @@ const BLOG_ARTICLES = {
         }
       ],
       keyTakeaway: {
-        title: "Key Takeaway",
+        title: "Đúc kết chính",
         p1: "Một quy trình Incident Response trên AWS cần kiểm soát đồng thời cả Network Containment và Identity Containment. Việc cô lập EC2 chỉ giải quyết một phần sự cố nếu quyền truy cập của danh tính đã bị xâm phạm vẫn chưa được vô hiệu hóa.",
         p2: "Bởi trong môi trường Cloud, một cuộc tấn công có thể bắt đầu từ máy chủ nhưng tiếp tục dưới hình thức lạm dụng danh tính."
       },
@@ -3728,9 +3767,9 @@ const BLOG_ARTICLES = {
           url: "https://aws.amazon.com/blogs/security/how-to-use-aws-condition-keys-to-limit-access-from-specific-vpcs/"
         },
         {
-          title: "Xem bài viết trên cộng đồng AWS Study Group VN",
+          title: "View post on AWS Study Group VN community",
           url: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2338656276899331/",
-          linkText: "Xem bài viết trên cộng đồng AWS Study Group VN"
+          linkText: "View post on AWS Study Group VN community"
         }
       ],
       btnBackToBlogs: "← Back to Articles",
@@ -3923,7 +3962,7 @@ function renderBlogDetail(slug = 's3-express-one-zone') {
           <ul class="minimal-list" style="margin:0 0 14px 0; padding-left:20px;">
             <li>${a.sections[2].baselineIo}</li>
             <li>${a.sections[2].baselineCompute}</li>
-            <li><strong>${lang === 'vi' ? 'Tổng thời gian' : 'Total Baseline Time'}: 20 + 80 = 100 phút</strong></li>
+            <li><strong>${lang === 'vi' ? 'Tổng thời gian' : 'Total Baseline Time'}: 20 + 80 = 100 ${t('minutesUnit')}</strong></li>
           </ul>
 
           <div style="font-size:15px; font-weight:700; color:#171717; margin-bottom:8px;">
@@ -3950,20 +3989,20 @@ function renderBlogDetail(slug = 's3-express-one-zone') {
             <tbody>
               <tr>
                 <td><strong>${lang === 'vi' ? 'Đọc nạp dữ liệu (I/O Read)' : 'Data Read Time (I/O)'}</strong></td>
-                <td>20 phút (20%)</td>
-                <td>2 phút (2.4%)</td>
+                <td>20 ${t('minutesUnit')} (20%)</td>
+                <td>2 ${t('minutesUnit')} (2.4%)</td>
                 <td>${lang === 'vi' ? 'Nhanh hơn 10 lần (-90%)' : '10x Faster (-90%)'}</td>
               </tr>
               <tr>
                 <td><strong>${lang === 'vi' ? 'Xử lý tính toán (Compute / GPU)' : 'Compute & Processing'}</strong></td>
-                <td>80 phút (80%)</td>
-                <td>80 phút (97.6%)</td>
+                <td>80 ${t('minutesUnit')} (80%)</td>
+                <td>80 ${t('minutesUnit')} (97.6%)</td>
                 <td>${lang === 'vi' ? '0% (Không đổi)' : '0% (Unchanged)'}</td>
               </tr>
               <tr>
                 <td><strong>${lang === 'vi' ? 'Tổng thời gian hoàn thành' : 'Total End-to-End Time'}</strong></td>
-                <td><strong>100 phút</strong></td>
-                <td><strong>82 phút</strong></td>
+                <td><strong>100 ${t('minutesUnit')}</strong></td>
+                <td><strong>82 ${t('minutesUnit')}</strong></td>
                 <td><strong>${lang === 'vi' ? 'Rút ngắn 18% (Speedup 1.22x)' : '18% faster (Speedup 1.22x)'}</strong></td>
               </tr>
             </tbody>
@@ -5148,7 +5187,7 @@ function renderEventDetail(slug = 'first-cloud-ai-journey-24-10-2026') {
     : (EVENT_REPORTS['first-cloud-ai-journey-24-10-2026'] ? EVENT_REPORTS['first-cloud-ai-journey-24-10-2026'].vi : null);
 
   if (!reportData) {
-    container.innerHTML = `<div class="card" style="padding:40px; text-align:center;"><h3>Báo cáo chưa khả dụng</h3><button class="btn btn-outline" onclick="navigateTo('events')">Quay lại sự kiện</button></div>`;
+    container.innerHTML = `<div class="card" style="padding:40px; text-align:center;"><h3>${t('reportUnavailable')}</h3><button class="btn btn-outline" onclick="navigateTo('events')">${t('btnBackToEventsShort')}</button></div>`;
     return;
   }
 
@@ -5785,7 +5824,7 @@ function renderModernizationEventDetail(container, lang = 'vi') {
         <div class="report-prose">
 
           <!-- 1. Limitations of Legacy Monoliths -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">1. Hạn chế của Kiến trúc Nguyên khối truyền thống (Limitations of Legacy Monolithic Architectures)</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">${isVi ? '1. Hạn chế của Kiến trúc Nguyên khối truyền thống (Limitations of Legacy Monolithic Architectures)' : '1. Limitations of Legacy Monolithic Architectures'}</h3>
           <p>${isVi
             ? 'Phần đầu hội thảo phân tích chi tiết các nguyên nhân khiến kiến trúc Monolith gặp khó khăn trong môi trường doanh nghiệp hiện đại. Việc toàn bộ các module nghiệp vụ được đóng gói chung trong một khối mã nguồn duy nhất tạo ra các điểm nghẽn cố hữu:'
             : 'The opening session examined the fundamental challenges of legacy monolithic systems in modern enterprise environments. Bundling all business domains into a single monolithic codebase creates critical bottlenecks:'}</p>
@@ -5798,7 +5837,7 @@ function renderModernizationEventDetail(container, lang = 'vi') {
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
           <!-- 2. 3 Pillars of Modern Microservices Transition -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">2. Ba trụ cột chuyển đổi Microservices hiện đại (3 Pillars of Modern Microservices Transition)</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">${isVi ? '2. Ba trụ cột chuyển đổi Microservices hiện đại (3 Pillars of Modern Microservices Transition)' : '2. 3 Pillars of Modern Microservices Transition'}</h3>
           <p>${isVi
             ? 'Để phân rã kiến trúc Monolith sang Microservices mà không làm gián đoạn luồng vận hành kinh doanh, chuyên gia AWS đã trình bày 3 trụ cột kỹ thuật trọng tâm:'
             : 'To decouple monolithic dependencies without disrupting continuous operations, AWS specialists presented three technical pillars:'}</p>
@@ -5814,17 +5853,17 @@ function renderModernizationEventDetail(container, lang = 'vi') {
               </thead>
               <tbody>
                 <tr>
-                  <td><strong>Quản lý hàng đợi (Queue Management)</strong></td>
+                  <td><strong>${isVi ? 'Quản lý hàng đợi (Queue Management)' : 'Queue Management'}</strong></td>
                   <td>Amazon SQS (Simple Queue Service)</td>
                   <td>${isVi ? 'Đệm dữ liệu và tách rời các tiến trình xử lý, đảm bảo khả năng chịu lỗi và không làm mất thông điệp khi lưu lượng truy cập tăng vọt.' : 'Buffers requests and decouples processing stages, ensuring resilience and zero message loss during peak traffic bursts.'}</td>
                 </tr>
                 <tr>
-                  <td><strong>Chiến lược bộ nhớ đệm (Caching Strategies)</strong></td>
+                  <td><strong>${isVi ? 'Chiến lược bộ nhớ đệm (Caching Strategies)' : 'Caching Strategies'}</strong></td>
                   <td>Amazon ElastiCache (Redis/Memcached)</td>
                   <td>${isVi ? 'Lưu trữ tạm thời dữ liệu thường xuyên truy cập vào bộ nhớ RAM, giảm áp lực đọc trực tiếp lên CSDL quan hệ và đưa độ trễ phản hồi xuống dưới một mili-giây.' : 'Caches frequent queries in in-memory storage, drastically relieving database load and achieving sub-millisecond latencies.'}</td>
                 </tr>
                 <tr>
-                  <td><strong>Xử lý thông điệp linh hoạt (Flexible Messaging)</strong></td>
+                  <td><strong>${isVi ? 'Xử lý thông điệp linh hoạt (Flexible Messaging)' : 'Flexible Messaging'}</strong></td>
                   <td>Amazon SNS &amp; Amazon EventBridge</td>
                   <td>${isVi ? 'Định tuyến sự kiện và phân tán dữ liệu không đồng bộ (Publish/Subscribe) giữa các microservices độc lập, đảm bảo khả năng mở rộng phi tập trung.' : 'Routes events asynchronously via pub/sub fanout across independent microservices, facilitating loosely coupled integrations.'}</td>
                 </tr>
@@ -5835,7 +5874,7 @@ function renderModernizationEventDetail(container, lang = 'vi') {
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
           <!-- 3. Domain-Driven Design (DDD) 4-Step Methodology -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">3. Phương pháp Thiết kế Hướng tên miền (Domain-Driven Design 4-Step Methodology)</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">${isVi ? '3. Phương pháp Thiết kế Hướng tên miền (Domain-Driven Design 4-Step Methodology)' : '3. Domain-Driven Design 4-Step Methodology'}</h3>
           <p>${isVi
             ? 'Quy trình phân chia microservices được tiếp cận từ góc độ mô hình hóa nghiệp vụ thông qua phương pháp luận Domain-Driven Design (DDD) gồm 4 bước có cấu trúc:'
             : 'Decomposing microservices was structured around domain-driven modeling principles via a 4-step framework:'}</p>
@@ -5850,7 +5889,7 @@ function renderModernizationEventDetail(container, lang = 'vi') {
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
           <!-- 4. Event-Driven Architecture Patterns -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">4. Các mẫu Kiến trúc Hướng sự kiện (Event-Driven Architecture Patterns)</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">${isVi ? '4. Các mẫu Kiến trúc Hướng sự kiện (Event-Driven Architecture Patterns)' : '4. Event-Driven Architecture Patterns'}</h3>
           <p>${isVi
             ? 'Hội thảo đi sâu phân tích 3 mô hình giao tiếp bất đồng bộ chính giúp các dịch vụ trao đổi thông điệp phi tập trung:'
             : 'The workshop examined three asynchronous messaging patterns that enable decoupled service communications:'}</p>
@@ -5870,7 +5909,7 @@ function renderModernizationEventDetail(container, lang = 'vi') {
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
           <!-- 5. Amazon Q Developer -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">5. Ứng dụng Trợ lý AI Amazon Q Developer trong Hiện đại hóa phần mềm (AI-Assisted Modernization with Amazon Q Developer)</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">${isVi ? '5. Ứng dụng Trợ lý AI Amazon Q Developer trong Hiện đại hóa phần mềm (AI-Assisted Modernization with Amazon Q Developer)' : '5. AI-Assisted Modernization with Amazon Q Developer'}</h3>
           <p>${isVi
             ? 'Phiên chia sẻ của chuyên gia Erica Liu và Fabrianne Effendi giới thiệu giải pháp ứng dụng Trí tuệ nhân tạo tạo sinh (GenAI) nhằm tự động hóa các tác vụ chuyển đổi mã nguồn:'
             : 'Presentations by specialists Erica Liu and Fabrianne Effendi demonstrated how Generative AI tools accelerate labor-intensive modernization stages:'}</p>
@@ -5884,7 +5923,7 @@ function renderModernizationEventDetail(container, lang = 'vi') {
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
           <!-- 6. Technical Demos & Q&A -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">6. Trực quan Hướng dẫn Demo &amp; Phiên giải đáp Chuyên gia (Technical Demonstrations &amp; Expert Q&amp;A)</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">${isVi ? '6. Trực quan Hướng dẫn Demo &amp; Phiên giải đáp Chuyên gia (Technical Demonstrations &amp; Expert Q&amp;A)' : '6. Technical Demonstrations &amp; Expert Q&amp;A'}</h3>
           <p>${isVi
             ? 'Chương trình bao gồm các phần trình diễn kỹ thuật trực tiếp trên hệ thống AWS:'
             : 'The workshop included live technical demonstrations executed directly on AWS environments:'}</p>
@@ -6189,7 +6228,7 @@ function renderMeetupEventDetail(container, lang = 'vi') {
         <div class="report-prose">
 
           <!-- 1. Voice AI Contact Center -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">1. Hear, Think, Speak – Xây dựng Contact Center Voice-AI tiếng Việt trên AWS (Hear, Think, Speak – Building a Vietnamese Voice-AI Contact Center on AWS)</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">${isVi ? '1. Hear, Think, Speak – Xây dựng Contact Center Voice-AI tiếng Việt trên AWS (Hear, Think, Speak – Building a Vietnamese Voice-AI Contact Center on AWS)' : '1. Hear, Think, Speak – Building a Vietnamese Voice-AI Contact Center on AWS'}</h3>
           <p style="font-size:14px; color:#555555; margin-bottom:12px;">
             <strong>${isVi ? 'Diễn giả:' : 'Speaker:'}</strong> Kiệt Trần – Revve AI
           </p>
@@ -6279,7 +6318,7 @@ function renderMeetupEventDetail(container, lang = 'vi') {
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
           <!-- 3. AWS Pentest with AWS Continuum / Security Agent -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">3. AWS Pentest với AWS Continuum / Security Agent (AWS Pentest with AWS Continuum / Security Agent)</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">${isVi ? '3. AWS Pentest với AWS Continuum / Security Agent (AWS Pentest with AWS Continuum / Security Agent)' : '3. AWS Pentest with AWS Continuum / Security Agent'}</h3>
           <p style="font-size:14px; color:#555555; margin-bottom:12px;">
             <strong>${isVi ? 'Diễn giả:' : 'Speaker:'}</strong> Thịnh Nguyễn – Styl Solution
           </p>
@@ -6359,7 +6398,7 @@ function renderMeetupEventDetail(container, lang = 'vi') {
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
           <!-- 5. Kiro Crew -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">5. Kiro Crew – Tự động hóa và Phát triển phần mềm bằng AI (Kiro Crew – AI-Powered Development and Automation)</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">${isVi ? '5. Kiro Crew – Tự động hóa và Phát triển phần mềm bằng AI (Kiro Crew – AI-Powered Development and Automation)' : '5. Kiro Crew – AI-Powered Development and Automation'}</h3>
           <p style="font-size:14px; color:#555555; margin-bottom:12px;">
             <strong>${isVi ? 'Diễn giả:' : 'Speakers:'}</strong> Khoa Kiều – Tech Lead, ACB &amp; Nghi Danh – AWS Community Builder
           </p>
@@ -6367,12 +6406,12 @@ function renderMeetupEventDetail(container, lang = 'vi') {
             ? 'Phiên chia sẻ cuối cùng khám phá cách các nhóm AI Agent (AI Agent Crew) phối hợp hỗ trợ chu trình phát triển phần mềm liên tục, rà soát mã nguồn tự động và kiểm tra trạng thái vận hành hệ thống.'
             : 'The final session explored how autonomous AI Agent groups support continuous software development, automated code inspection, and system status monitoring.'}</p>
 
-          <h4 style="font-size:14.5px; font-weight:700; color:#171717; margin:18px 0 8px 0;">5.1. Khởi tạo Artifact trực quan (Artifact Generation)</h4>
+          <h4 style="font-size:14.5px; font-weight:700; color:#171717; margin:18px 0 8px 0;">${isVi ? '5.1. Khởi tạo Artifact trực quan (Artifact Generation)' : '5.1. Artifact Generation'}</h4>
           <p>${isVi
             ? 'Phiên demo thực tế minh họa cách AI Agent tự động thu thập thông tin tuyển dụng việc làm, xử lý dữ liệu và trực tiếp sinh các báo cáo trực quan, biểu đồ thống kê tương tác ngay trong giao diện làm việc.'
             : 'The live demonstration showed AI Agents collecting real-world job postings, parsing data streams, and generating interactive visual reports and analytical charts directly within the workspace.'}</p>
 
-          <h4 style="font-size:14.5px; font-weight:700; color:#171717; margin:18px 0 8px 0;">5.2. Quản trị cửa sổ ngữ cảnh (Context Window Management)</h4>
+          <h4 style="font-size:14.5px; font-weight:700; color:#171717; margin:18px 0 8px 0;">${isVi ? '5.2. Quản trị cửa sổ ngữ cảnh (Context Window Management)' : '5.2. Context Window Management'}</h4>
           <p>${isVi
             ? 'Các diễn giả phân tích các kỹ thuật tối ưu hóa khối lượng thông tin xử lý trong các luồng tương tác dài hạn qua hai khái niệm then chốt:'
             : 'The speakers analyzed context window optimization techniques for long-running workflows via two core mechanisms:'}</p>
@@ -6381,7 +6420,7 @@ function renderMeetupEventDetail(container, lang = 'vi') {
             <li>${isVi ? '<strong>Context Breakdown:</strong> Phân tích chi tiết mức độ đóng góp của từng thành phần vào lượng token tiêu thụ, giúp định vị chính xác nguyên nhân phình to ngữ cảnh.' : '<strong>Context Breakdown:</strong> Analyzes token distribution across components to isolate context expansion factors.'}</li>
           </ul>
 
-          <h4 style="font-size:14.5px; font-weight:700; color:#171717; margin:18px 0 8px 0;">5.3. Quản lý bộ nhớ và Ranh giới an ninh (Memory Management &amp; Security Guardrails)</h4>
+          <h4 style="font-size:14.5px; font-weight:700; color:#171717; margin:18px 0 8px 0;">${isVi ? '5.3. Quản lý bộ nhớ và Ranh giới an ninh (Memory Management &amp; Security Guardrails)' : '5.3. Memory Management &amp; Security Guardrails'}</h4>
           <p>${isVi
             ? 'Phiên chia sẻ nhấn mạnh tầm quan trọng của việc duy trì bộ nhớ chọn lọc và thiết lập các ranh giới bảo mật (Security Guardrails) nhằm ngăn chặn AI Agent:'
             : 'The presentation emphasized selective memory retention and establishing strict security guardrails preventing AI Agents from:'}</p>
@@ -6696,7 +6735,7 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
         <div class="report-prose">
           
           <!-- III.1 -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">1. Từ Academic AI đến Enterprise AI (From Academic AI to Enterprise AI)</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">${isVi ? '1. Từ Academic AI đến Enterprise AI (From Academic AI to Enterprise AI)' : '1. From Academic AI to Enterprise AI'}</h3>
           <p>${isVi
             ? 'Để phân định rõ nét sự khác biệt giữa AI thử nghiệm và AI quy mô doanh nghiệp, diễn giả đã sử dụng phép ẩn dụ trực quan giữa <strong>Bếp ăn gia đình (Home Kitchen)</strong> và <strong>Chuỗi nhà hàng tiêu chuẩn (Restaurant Chain)</strong>:'
             : 'The speaker used the vivid analogy of a home kitchen and a restaurant chain to explain the fundamental differences between experimental AI and enterprise AI:'}</p>
@@ -6739,7 +6778,7 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
           <!-- III.2 -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">2. 4 Thành phần nền tảng của hệ thống AI (4 Fundamental Components of an AI System)</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">${isVi ? '2. 4 Thành phần nền tảng của hệ thống AI (4 Fundamental Components of an AI System)' : '2. 4 Fundamental Components of an AI System'}</h3>
           <p>${isVi
             ? 'Một hệ thống AI toàn diện trong doanh nghiệp được cấu thành từ chuỗi mắt xích liên kết chặt chẽ gồm 4 thành phần:'
             : 'An enterprise AI system relies on an interconnected 4-part value chain:'}</p>
@@ -6760,7 +6799,7 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
           <!-- III.3 -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">3. Phân định Training, Inference, LLMs và Tokens</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">${isVi ? '3. Phân định Training, Inference, LLMs và Tokens' : '3. Training, Inference, LLMs and Tokens'}</h3>
           <p>${isVi
             ? 'Hội thảo làm rõ sự khác biệt bản chất giữa hai chu trình tính toán cơ bản trong vòng đời AI:'
             : 'The workshop clearly delineated the operational differences between the two core computing phases in the AI lifecycle:'}</p>
@@ -6770,27 +6809,30 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
               <thead>
                 <tr>
                   <th style="width: 20%;">${isVi ? 'Tiêu chí' : 'Criteria'}</th>
-                  <th style="width: 40%;">Training (${isVi ? 'Huấn luyện' : 'Training'})</th>
-                  <th style="width: 40%;">Inference (${isVi ? 'Suy luận' : 'Inference'})</th>
+                  <th style="width: 40%;">${isVi ? 'Training (Huấn luyện)' : 'Training'}</th>
+                  <th style="width: 40%;">${isVi ? 'Inference (Suy luận)' : 'Inference'}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td><strong>${isVi ? 'Bản chất' : 'Nature'}</strong></td>
-                  <td>${isVi ? 'Dạy mô hình học hỏi từ khối lượng dữ liệu khổng lồ trong quá khứ' : 'Áp dụng mô hình đã học để đưa ra câu trả lời cho yêu cầu mới'}</td>
-                  <td>${isVi ? 'Apply the learned model to answer real-time incoming queries' : 'Apply learned models to real-time incoming queries'}</td>
+                  <td>${isVi ? 'Dạy mô hình học hỏi từ khối lượng dữ liệu khổng lồ trong quá khứ' : 'Teach the model to learn from large volumes of historical data'}</td>
+                  <td>${isVi ? 'Áp dụng mô hình đã học để đưa ra câu trả lời cho yêu cầu mới' : 'Apply the learned model to answer new, real-time requests'}</td>
                 </tr>
                 <tr>
-                  <td><strong>${isVi ? 'Tần suất &amp; Thời gian' : 'Frequency'}</strong></td>
-                  <td>${isVi ? 'Không liên tục (định kỳ theo mẻ, vài ngày đến vài tháng)' : 'Liên tục 24/7/365 theo thời gian thực'}</td>
+                  <td><strong>${isVi ? 'Tần suất &amp; Thời gian' : 'Frequency &amp; Duration'}</strong></td>
+                  <td>${isVi ? 'Không liên tục (định kỳ theo mẻ, vài ngày đến vài tháng)' : 'Intermittent (periodic batches, from days to months)'}</td>
+                  <td>${isVi ? 'Liên tục 24/7/365 theo thời gian thực' : 'Continuous, 24/7/365 in real time'}</td>
                 </tr>
                 <tr>
                   <td><strong>${isVi ? 'Tài nguyên tính toán' : 'Compute Resources'}</strong></td>
-                  <td>${isVi ? 'Cụm GPU/Trainium công suất lớn, xử lý tập trung' : 'Cụm suy luận nhẹ hơn (EC2 Inf2/G5, Serverless Bedrock)'}</td>
+                  <td>${isVi ? 'Cụm GPU/Trainium công suất lớn, xử lý tập trung' : 'Large GPU/Trainium clusters with centralized processing'}</td>
+                  <td>${isVi ? 'Cụm suy luận nhẹ hơn (EC2 Inf2/G5, Serverless Bedrock)' : 'Lighter inference fleets (EC2 Inf2/G5, serverless Amazon Bedrock)'}</td>
                 </tr>
                 <tr>
                   <td><strong>${isVi ? 'Độ trễ yêu cầu' : 'Latency Requirement'}</strong></td>
-                  <td>${isVi ? 'Chấp nhận kéo dài nhiều giờ hoặc nhiều tuần' : 'Rất khắt khe (từ mili-giây đến vài giây)'}</td>
+                  <td>${isVi ? 'Chấp nhận kéo dài nhiều giờ hoặc nhiều tuần' : 'Can run for hours or even weeks'}</td>
+                  <td>${isVi ? 'Rất khắt khe (từ mili-giây đến vài giây)' : 'Very strict (milliseconds to a few seconds)'}</td>
                 </tr>
               </tbody>
             </table>
@@ -6803,7 +6845,7 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
           <!-- III.4 -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">4. 4 Trụ cột Vận hành của Production AI (4 Production AI Pillars)</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">${isVi ? '4. 4 Trụ cột Vận hành của Production AI (4 Production AI Pillars)' : '4. 4 Production AI Pillars'}</h3>
           <p>${isVi
             ? 'Một hệ thống AI muốn tồn tại và phục vụ khách hàng trên môi trường sản xuất phải thỏa mãn 4 trụ cột kiến trúc cốt lõi:'
             : 'Operating enterprise AI in production requires four foundational architectural pillars:'}</p>
@@ -6818,7 +6860,7 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
           <!-- III.5 -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">5. Co giãn linh hoạt trên AWS (Elastic Scalability on AWS)</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">${isVi ? '5. Co giãn linh hoạt trên AWS (Elastic Scalability on AWS)' : '5. Elastic Scalability on AWS'}</h3>
           <p>${isVi
             ? 'Diễn giả đã phân tích cơ chế co giãn đàn hồi của AWS giúp giải quyết bài toán tải biến động mạnh trong các ứng dụng AI:'
             : 'The speaker analyzed AWS elastic infrastructure components that address fluctuating AI workloads:'}</p>
@@ -6832,7 +6874,7 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
           <!-- III.6 -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">6. 4 Mô hình Kiến trúc Multi-Agent phổ biến (4 Common Multi-Agent Architecture Patterns)</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">${isVi ? '6. 4 Mô hình Kiến trúc Multi-Agent phổ biến (4 Common Multi-Agent Architecture Patterns)' : '6. 4 Common Multi-Agent Architecture Patterns'}</h3>
           <p>${isVi
             ? 'Khi một tác vụ kinh doanh trở nên quá phức tạp đối với một mô hình LLM đơn lẻ, kiến trúc Multi-Agent cho phép chia nhỏ bài toán và điều phối nhiều tác tử chuyên biệt cùng phối hợp xử lý:'
             : 'When complex enterprise workflows exceed single-prompt capabilities, Multi-Agent patterns coordinate specialized agents:'}</p>
@@ -6853,12 +6895,12 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
                   <td>${isVi ? 'Cổng chăm sóc khách hàng đa dịch vụ, tổng đài hỏi đáp đa lĩnh vực.' : 'Enterprise multi-service customer portals.'}</td>
                 </tr>
                 <tr>
-                  <td><strong>Sequential (Tuần tự)</strong></td>
+                  <td><strong>${isVi ? 'Sequential (Tuần tự)' : 'Sequential'}</strong></td>
                   <td>${isVi ? 'Các Agent hoạt động như một dây chuyền lắp ráp: kết quả đầu ra của Agent này là đầu vào của Agent tiếp theo.' : 'Agents execute in a linear pipeline: Agent A output becomes Agent B input.'}</td>
                   <td>${isVi ? 'Quy trình thẩm định hồ sơ vay vốn, phân tích báo cáo tài chính qua nhiều bước.' : 'Multi-step financial loan appraisal and document processing.'}</td>
                 </tr>
                 <tr>
-                  <td><strong>Parallel (Song song)</strong></td>
+                  <td><strong>${isVi ? 'Parallel (Song song)' : 'Parallel'}</strong></td>
                   <td>${isVi ? 'Nhiều Agent cùng thực thi đồng thời các tác vụ độc lập trên cùng một yêu cầu, sau đó một Agent tổng hợp gom kết quả.' : 'Multiple agents execute independent sub-tasks concurrently, aggregated by a final synthesizer.'}</td>
                   <td>${isVi ? 'Phân tích dữ liệu từ nhiều nguồn độc lập, rà soát mã nguồn từ nhiều góc độ.' : 'Concurrent research across independent data repositories.'}</td>
                 </tr>
@@ -6874,7 +6916,7 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
           <hr style="border:0; border-top:1px solid #E5E5E5; margin:32px 0;" />
 
           <!-- III.7 -->
-          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">7. Vai trò của AWS Cloud trong Triển khai Enterprise AI (The Role of AWS Cloud in Enterprise AI)</h3>
+          <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin:24px 0 10px 0;">${isVi ? '7. Vai trò của AWS Cloud trong Triển khai Enterprise AI (The Role of AWS Cloud in Enterprise AI)' : '7. The Role of AWS Cloud in Enterprise AI'}</h3>
           <p>${isVi
             ? 'AWS Cloud cung cấp hệ sinh thái dịch vụ hoàn chỉnh, khép kín từ hạ tầng phần cứng chuyên biệt (Trainium/Inferentia), nền tảng dịch vụ mô hình nền tảng toàn diện (Amazon Bedrock, Amazon SageMaker), đến các công cụ tích hợp dữ liệu và quản trị an ninh cấp cao (AWS IAM, KMS, CloudTrail).'
             : 'AWS Cloud provides a comprehensive ecosystem bridging hardware accelerators, foundation models (Amazon Bedrock, SageMaker), and centralized governance tools (IAM, KMS, CloudTrail).'}</p>
