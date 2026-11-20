@@ -1699,6 +1699,8 @@ const DEFAULT_BILINGUAL_DATA = {
         category: "AWS / Storage / Performance",
         title: "AMAZON S3 EXPRESS ONE ZONE – NHANH HƠN TỚI 10 LẦN, NHƯNG HỆ THỐNG CÓ THỰC SỰ HIỆU QUẢ HƠN?",
         url: "#/blogs/s3-express-one-zone",
+        facebookUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2309097553188537/",
+        postUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2309097553188537/",
         date: "18/10/2026",
         image: "assets/images/s3-express-one-zone-architecture.png",
         snippet: "Trong các hệ thống AI/ML, việc xử lý hàng triệu hình ảnh hoặc tệp dữ liệu đòi hỏi ứng dụng liên tục truy xuất dữ liệu từ Amazon S3. Khi tốc độ đọc không theo kịp CPU/GPU, hệ thống gặp I/O Bottleneck làm lãng phí compute. Amazon S3 Express One Zone cung cấp độ trễ sub-10ms với Directory Bucket trong cùng 1 AZ. Tuy nhiên, theo định luật Amdahl, tối ưu 10x I/O chỉ giúp tổng thời gian hoàn thành tác vụ giảm 18% nếu tác vụ bị nghẽn ở compute."
@@ -1736,6 +1738,8 @@ const DEFAULT_BILINGUAL_DATA = {
         category: "AWS / Storage / Performance",
         title: "AMAZON S3 EXPRESS ONE ZONE – UP TO 10X FASTER, BUT IS THE SYSTEM TRULY MORE EFFICIENT?",
         url: "#/blogs/s3-express-one-zone",
+        facebookUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2309097553188537/",
+        postUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2309097553188537/",
         date: "18/10/2026",
         image: "assets/images/s3-express-one-zone-architecture.png",
         snippet: "In modern AI/ML systems, continuously fetching millions of images from S3 often creates I/O bottlenecks where compute sits idle. Amazon S3 Express One Zone delivers single-digit millisecond latency with Directory Buckets in a single AZ. However, according to Amdahl's Law, a 10x I/O speedup only reduces total execution time by 18% if the workload is compute-heavy."
@@ -2651,6 +2655,7 @@ function renderBlogsList() {
     const isS3Express = b.id === 'blog-1' || b.id === 'blog-4' || b.slug === 's3-express-one-zone';
 
     if (isS3Express) {
+      const fbUrl = b.facebookUrl || b.postUrl || b.link || 'https://www.facebook.com/groups/awsstudygroupfcj/posts/2309097553188537/';
       const excerpt = lang === 'vi'
         ? "Trong các hệ thống AI/ML, việc xử lý hàng triệu hình ảnh hoặc tệp dữ liệu từ Amazon S3 thường gặp I/O Bottleneck khiến CPU/GPU phải nhàn rỗi chờ dữ liệu. Amazon S3 Express One Zone mang lại độ trễ sub-10ms với Directory Bucket trong cùng 1 AZ. Tuy nhiên, theo định luật Amdahl, tối ưu 10x I/O chỉ giúp tổng thời gian hoàn thành tác vụ giảm 18% nếu hệ thống bị nghẽn ở compute."
         : "In modern AI/ML systems, continuously fetching millions of images from S3 often creates I/O bottlenecks where expensive compute sits idle. Amazon S3 Express One Zone delivers single-digit millisecond latency with Directory Buckets in a single AZ. However, according to Amdahl's Law, a 10x I/O speedup only reduces total execution time by 18% if the workload is compute-heavy.";
@@ -2666,6 +2671,17 @@ function renderBlogsList() {
           <h3 class="blog-featured-title" onclick="navigateTo('blogs/s3-express-one-zone')">
             ${escapeHtml(b.title)}
           </h3>
+
+          <div style="margin: 0 0 14px 0;">
+            <a href="${escapeHtml(fbUrl)}" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="minimal-ref-link"
+               style="font-size:13.5px; font-weight:600; display:inline-flex; align-items:center; gap:6px;">
+              <span>${lang === 'vi' ? 'Xem bài viết trên cộng đồng AWS Study Group VN' : 'View post on AWS Study Group VN community'}</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
 
           <div class="blog-featured-grid-preview">
             <div class="blog-featured-img-preview" onclick="openBlogImageModal('${escapeHtml(b.image || 'assets/images/s3-express-one-zone-architecture.png')}', '${escapeHtml(b.title)}')" title="${t('zoomDiagramTooltip')}">
@@ -2686,6 +2702,14 @@ function renderBlogsList() {
             <button type="button" class="btn-minimal-read" onclick="navigateTo('blogs/s3-express-one-zone')">
               <span>${lang === 'vi' ? 'Đọc bài viết →' : 'Read Article →'}</span>
             </button>
+            <a href="${escapeHtml(fbUrl)}" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-minimal-outline" 
+               style="text-decoration:none;">
+              <span>${lang === 'vi' ? 'Xem bài viết trên AWS Study Group VN' : 'View post on AWS Study Group VN'}</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left:4px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
           </div>
         </div>
       `;
@@ -2928,6 +2952,7 @@ const BLOG_ARTICLES = {
       category: "AWS / Cloud Computing",
       date: "18/10/2026",
       title: "AMAZON S3 EXPRESS ONE ZONE – NHANH HƠN TỚI 10 LẦN, NHƯNG HỆ THỐNG CÓ THỰC SỰ HIỆU QUẢ HƠN?",
+      facebookUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2309097553188537/",
       leadSummary: "Trong các hệ thống AI/ML và Data Analytics hiện đại, việc xử lý hàng triệu hình ảnh hoặc tệp dữ liệu đòi hỏi ứng dụng liên tục truy xuất dữ liệu từ Amazon S3. Tuy nhiên, khi tốc độ đọc dữ liệu không theo kịp khả năng xử lý của CPU/GPU, hệ thống dễ rơi vào tình trạng I/O Bottleneck – tài nguyên tính toán đắt đỏ phải nhàn rỗi chờ dữ liệu, kéo dài thời gian thực thi và làm tăng chi phí hạ tầng. Để giải quyết bài toán này, AWS cung cấp Amazon S3 Express One Zone – một storage class được tối ưu hóa chuyên biệt cho các ứng dụng đòi hỏi độ trễ truy cập cực thấp.",
       coverImage: "assets/images/s3-express-one-zone-architecture.png",
       coverCaption: "Hình 1: Mô hình kiến trúc Amazon S3 Express One Zone với Directory Bucket đặt cùng Availability Zone với cụm máy chủ EC2 / GPU.",
@@ -3045,6 +3070,11 @@ const BLOG_ARTICLES = {
         {
           title: "AWS Documentation – Amazon S3 Pricing & Cost Calculator",
           url: "https://aws.amazon.com/s3/pricing/"
+        },
+        {
+          title: "Xem bài viết trên cộng đồng AWS Study Group VN",
+          url: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2309097553188537/",
+          linkText: "Xem bài viết trên cộng đồng AWS Study Group VN"
         }
       ],
       btnBackToBlogs: "← Quay lại danh sách bài viết",
@@ -3054,6 +3084,7 @@ const BLOG_ARTICLES = {
       category: "AWS / Cloud Computing",
       date: "18/10/2026",
       title: "AMAZON S3 EXPRESS ONE ZONE – UP TO 10X FASTER, BUT IS THE SYSTEM TRULY MORE EFFICIENT?",
+      facebookUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2309097553188537/",
       leadSummary: "In modern AI/ML and Data Analytics architectures, ingesting and processing millions of images or unstructured files requires continuous high-frequency access to Amazon S3. When data read speeds cannot keep pace with CPU/GPU processing capabilities, the system encounters an I/O Bottleneck — expensive compute clusters sit idle waiting for bytes, inflating execution time and infrastructure costs. To eliminate this friction, AWS introduced Amazon S3 Express One Zone, a specialized high-performance storage class engineered for ultra-low latency workloads.",
       coverImage: "assets/images/s3-express-one-zone-architecture.png",
       coverCaption: "Figure 1: Architectural model of Amazon S3 Express One Zone utilizing Directory Buckets co-located within the identical Availability Zone as EC2 / GPU compute clusters.",
@@ -3171,6 +3202,11 @@ const BLOG_ARTICLES = {
         {
           title: "AWS Documentation – Amazon S3 Pricing & Cost Calculator",
           url: "https://aws.amazon.com/s3/pricing/"
+        },
+        {
+          title: "Xem bài viết trên cộng đồng AWS Study Group VN",
+          url: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2309097553188537/",
+          linkText: "Xem bài viết trên cộng đồng AWS Study Group VN"
         }
       ],
       btnBackToBlogs: "← Back to Articles",
@@ -3752,6 +3788,19 @@ function renderBlogDetail(slug = 's3-express-one-zone') {
       <header class="minimal-article-header">
         <div class="minimal-category-tag">${escapeHtml(a.category)}</div>
         <h1 class="minimal-article-title">${escapeHtml(a.title)}</h1>
+
+        <!-- Community Post Link under Title -->
+        <div style="margin: 4px 0 16px 0;">
+          <a href="${escapeHtml(a.facebookUrl || 'https://www.facebook.com/groups/awsstudygroupfcj/posts/2309097553188537/')}" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="minimal-ref-link"
+             style="font-size:14.5px; font-weight:600; display:inline-flex; align-items:center; gap:6px;">
+            <span>${lang === 'vi' ? 'Xem bài viết trên cộng đồng AWS Study Group VN' : 'View post on AWS Study Group VN community'}</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+
         <div class="minimal-article-date">${escapeHtml(a.date)}</div>
 
         <!-- Architecture Cover Image -->
