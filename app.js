@@ -3475,6 +3475,7 @@ const BLOG_ARTICLES = {
         p2: "Bởi trong môi trường Cloud, một cuộc tấn công có thể bắt đầu từ máy chủ nhưng tiếp tục dưới hình thức lạm dụng danh tính."
       },
       hashtags: "#AWS #AWSStudyGroup #CloudSecurity #CyberSecurity #IAM #AmazonEC2 #GuardDuty #IncidentResponse #DefenseInDepth #CloudArchitecture",
+      referencesTitle: "Tài liệu tham khảo",
       references: [
         {
           title: "AWS Security Incident Response Guide – Containment and Remediation Strategies",
@@ -3491,6 +3492,11 @@ const BLOG_ARTICLES = {
         {
           title: "AWS Security Blog – Limiting Scope of Compromised Credentials with VPC Condition Keys",
           url: "https://aws.amazon.com/blogs/security/how-to-use-aws-condition-keys-to-limit-access-from-specific-vpcs/"
+        },
+        {
+          title: "Xem bài viết trên cộng đồng AWS Study Group VN",
+          url: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2338656276899331/",
+          linkText: "Xem bài viết trên cộng đồng AWS Study Group VN"
         }
       ],
       btnBackToBlogs: "← Quay lại danh sách bài viết",
@@ -3601,6 +3607,7 @@ const BLOG_ARTICLES = {
         p2: "Because in cloud environments, an attack may begin on a host but propagates through identity abuse."
       },
       hashtags: "#AWS #AWSStudyGroup #CloudSecurity #CyberSecurity #IAM #AmazonEC2 #GuardDuty #IncidentResponse #DefenseInDepth #CloudArchitecture",
+      referencesTitle: "Official Documentation & References",
       references: [
         {
           title: "AWS Security Incident Response Guide – Containment and Remediation Strategies",
@@ -3617,6 +3624,11 @@ const BLOG_ARTICLES = {
         {
           title: "AWS Security Blog – Limiting Scope of Compromised Credentials with VPC Condition Keys",
           url: "https://aws.amazon.com/blogs/security/how-to-use-aws-condition-keys-to-limit-access-from-specific-vpcs/"
+        },
+        {
+          title: "Xem bài viết trên cộng đồng AWS Study Group VN",
+          url: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2338656276899331/",
+          linkText: "Xem bài viết trên cộng đồng AWS Study Group VN"
         }
       ],
       btnBackToBlogs: "← Back to Articles",
@@ -4323,14 +4335,14 @@ function renderIdentityContainmentBlogDetail(container, a, lang) {
       <!-- References Section -->
       <section class="minimal-section" id="ic-sec-refs">
         <h2 class="minimal-section-title" style="font-size:18px;">
-          ${lang === 'vi' ? 'Tài liệu tham khảo chính thức' : 'Official Documentation & References'}
+          ${a.referencesTitle || (lang === 'vi' ? 'Tài liệu tham khảo' : 'Official Documentation & References')}
         </h2>
         <ul class="minimal-ref-list">
           ${a.references.map(ref => `
             <li>
-              <span>${escapeHtml(ref.title)}:</span>
-              <a href="${escapeHtml(ref.url)}" target="_blank" rel="noopener" class="minimal-ref-link">
-                ${escapeHtml(ref.url)}
+              ${ref.title && ref.title !== ref.linkText ? `<span>${escapeHtml(ref.title)}:</span> ` : ''}
+              <a href="${escapeHtml(ref.url)}" target="_blank" rel="noopener noreferrer" class="minimal-ref-link">
+                ${escapeHtml(ref.linkText || ref.url)}
               </a>
             </li>
           `).join('')}
