@@ -1720,6 +1720,8 @@ const DEFAULT_BILINGUAL_DATA = {
         title: "CÔ LẬP EC2 KHÔNG CÓ NGHĨA LÀ ĐÃ CÔ LẬP KẺ TẤN CÔNG",
         subtitle: "Beyond Network Isolation: Rethinking Identity Containment on AWS",
         url: "#/blogs/aws-ec2-identity-containment",
+        facebookUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2338656276899331/",
+        postUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2338656276899331/",
         date: "15/11/2026",
         image: "assets/images/aws-ec2-identity-containment-architecture.png",
         snippet: "Điều gì sẽ xảy ra nếu một EC2 instance đã bị cô lập khỏi hệ thống mạng, nhưng kẻ tấn công vẫn có thể truy cập các tài nguyên AWS? Phân tích sự khác biệt cốt lõi giữa Network Containment và Identity Containment: Security Group không thu hồi IAM Session, IMDSv2 không bảo vệ credentials khi máy chủ bị thực thi mã từ xa. Đề xuất quy trình Automated Incident Response kết hợp GuardDuty, EventBridge, Lambda runbook và điều kiện aws:EC2InstanceSourceVPC."
@@ -1753,6 +1755,8 @@ const DEFAULT_BILINGUAL_DATA = {
         title: "EC2 ISOLATION DOES NOT MEAN THE ATTACKER IS ISOLATED",
         subtitle: "Beyond Network Isolation: Rethinking Identity Containment on AWS",
         url: "#/blogs/aws-ec2-identity-containment",
+        facebookUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2338656276899331/",
+        postUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2338656276899331/",
         date: "15/11/2026",
         image: "assets/images/aws-ec2-identity-containment-architecture.png",
         snippet: "What happens if an EC2 instance is completely isolated from the network, yet an attacker can still access your AWS resources? An in-depth analysis of Network Containment vs Identity Containment: why Security Groups do not terminate active IAM sessions, and how IMDSv2 falls short after remote code execution. Architecting automated incident response combining GuardDuty, EventBridge, Lambda runbooks, and aws:EC2InstanceSourceVPC condition keys."
@@ -2726,9 +2730,10 @@ function renderBlogsList() {
       `;
     }
 
-    const isIdentityContainment = b.id === 'blog-3' || b.slug === 'aws-ec2-identity-containment';
+    const isIdentityContainment = b.id === 'blog-3' || b.slug === 'aws-ec2-identity-containment' || (b.title && b.title.includes('CÔ LẬP EC2')) || (b.title && b.title.includes('EC2 ISOLATION'));
 
     if (isIdentityContainment) {
+      const fbUrl = b.facebookUrl || b.postUrl || b.link || 'https://www.facebook.com/groups/awsstudygroupfcj/posts/2338656276899331/';
       const excerpt = lang === 'vi'
         ? "Điều gì sẽ xảy ra nếu một EC2 instance đã bị cô lập khỏi hệ thống mạng, nhưng kẻ tấn công vẫn có thể truy cập các tài nguyên AWS? Phân tích sự khác biệt cốt lõi giữa Network Containment và Identity Containment: Security Group không thu hồi IAM Session, IMDSv2 không bảo vệ credentials khi máy chủ bị thực thi mã từ xa. Đề xuất quy trình Automated Incident Response kết hợp GuardDuty, EventBridge, Lambda runbook và điều kiện aws:EC2InstanceSourceVPC."
         : "What happens if an EC2 instance is completely isolated from the network, yet an attacker can still access your AWS resources? An in-depth analysis of Network Containment vs Identity Containment: why Security Groups do not terminate active IAM sessions, and how IMDSv2 falls short after remote code execution. Architecting automated incident response combining GuardDuty, EventBridge, Lambda runbooks, and aws:EC2InstanceSourceVPC condition keys.";
@@ -2764,6 +2769,14 @@ function renderBlogsList() {
             <button type="button" class="btn-minimal-read" onclick="navigateTo('blogs/aws-ec2-identity-containment')">
               <span>${lang === 'vi' ? 'Đọc bài viết →' : 'Read Article →'}</span>
             </button>
+            <a href="${escapeHtml(fbUrl)}" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-minimal-outline" 
+               style="text-decoration:none;">
+              <span>${lang === 'vi' ? 'Xem bài viết trên AWS Study Group VN' : 'View post on AWS Study Group VN'}</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left:4px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
           </div>
         </div>
       `;
