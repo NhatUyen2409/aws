@@ -1709,6 +1709,8 @@ const DEFAULT_BILINGUAL_DATA = {
         category: "AWS Cloud / Distributed Systems / Architecture",
         title: "AWS EVENT-DRIVEN ARCHITECTURE – KHI MỌI DỊCH VỤ ĐỀU HOẠT ĐỘNG ĐÚNG, TẠI SAO DỮ LIỆU VẪN CÓ THỂ SAI?",
         url: "#/blogs/aws-event-driven-architecture",
+        facebookUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2326019258163033/",
+        postUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2326019258163033/",
         date: "04/11/2026",
         image: "assets/images/aws-event-driven-architecture.png",
         snippet: "Trong quá trình nghiên cứu kiến trúc Event-Driven trên AWS kết hợp Amazon S3, EventBridge, SQS, Lambda và DynamoDB: Một hệ thống có thể xử lý tất cả sự kiện thành công 100% nhưng vẫn tạo ra kết quả sai do Race Condition. Phân tích nguyên nhân tại sao Idempotency và SQS FIFO chưa đủ, và đề xuất mô hình giải pháp kết hợp S3 Versioning, S3 Sequencer, Immutable Output, DynamoDB Conditional Write và Reconciliation worker."
@@ -1744,6 +1746,8 @@ const DEFAULT_BILINGUAL_DATA = {
         category: "AWS Cloud / Distributed Systems / Architecture",
         title: "AWS EVENT-DRIVEN ARCHITECTURE – WHEN ALL SERVICES SUCCEED, WHY CAN DATA STILL BE WRONG?",
         url: "#/blogs/aws-event-driven-architecture",
+        facebookUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2326019258163033/",
+        postUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2326019258163033/",
         date: "04/11/2026",
         image: "assets/images/aws-event-driven-architecture.png",
         snippet: "In AWS Event-Driven Architectures combining Amazon S3, EventBridge, SQS, Lambda, and DynamoDB: a system can process all events with 100% success yet produce incorrect business state due to Race Conditions. An investigation into why Idempotency and SQS FIFO are not enough, proposing S3 Versioning, S3 Sequencer, Immutable Output, DynamoDB Conditional Writes, and Reconciliation."
@@ -2690,6 +2694,7 @@ function renderBlogsList() {
     const isEventDriven = b.id === 'blog-2' || b.id === 'blog-5' || b.slug === 'aws-event-driven-architecture';
 
     if (isEventDriven) {
+      const fbUrl = b.facebookUrl || b.postUrl || b.link || 'https://www.facebook.com/groups/awsstudygroupfcj/posts/2326019258163033/';
       const excerpt = lang === 'vi'
         ? "Trong quá trình nghiên cứu kiến trúc Event-Driven trên AWS kết hợp Amazon S3, EventBridge, SQS, Lambda và DynamoDB: Một hệ thống có thể xử lý tất cả sự kiện thành công 100% nhưng vẫn tạo ra kết quả sai do Race Condition. Phân tích nguyên nhân tại sao Idempotency và SQS FIFO chưa đủ, và đề xuất mô hình giải pháp kết hợp S3 Versioning, S3 Sequencer, Immutable Output, DynamoDB Conditional Write và Reconciliation worker."
         : "In AWS Event-Driven Architectures combining Amazon S3, EventBridge, SQS, Lambda, and DynamoDB: a system can process all events with 100% success yet produce incorrect business state due to Race Conditions. An investigation into why Idempotency and SQS FIFO are not enough, proposing S3 Versioning, S3 Sequencer, Immutable Output, DynamoDB Conditional Writes, and Reconciliation.";
@@ -2705,6 +2710,17 @@ function renderBlogsList() {
           <h3 class="blog-featured-title" onclick="navigateTo('blogs/aws-event-driven-architecture')">
             ${escapeHtml(b.title)}
           </h3>
+
+          <div style="margin: 0 0 14px 0;">
+            <a href="${escapeHtml(fbUrl)}" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="minimal-ref-link"
+               style="font-size:13.5px; font-weight:600; display:inline-flex; align-items:center; gap:6px;">
+              <span>${lang === 'vi' ? 'Xem bài viết trên cộng đồng AWS Study Group VN' : 'View post on AWS Study Group VN community'}</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
 
           <div class="blog-featured-grid-preview">
             <div class="blog-featured-img-preview" onclick="openBlogImageModal('${escapeHtml(b.image || 'assets/images/aws-event-driven-architecture.png')}', '${escapeHtml(b.title)}')" title="${t('zoomDiagramTooltip')}">
@@ -2725,6 +2741,14 @@ function renderBlogsList() {
             <button type="button" class="btn-minimal-read" onclick="navigateTo('blogs/aws-event-driven-architecture')">
               <span>${lang === 'vi' ? 'Đọc bài viết →' : 'Read Article →'}</span>
             </button>
+            <a href="${escapeHtml(fbUrl)}" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-minimal-outline" 
+               style="text-decoration:none;">
+              <span>${lang === 'vi' ? 'Xem bài viết trên AWS Study Group VN' : 'View post on AWS Study Group VN'}</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left:4px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
           </div>
         </div>
       `;
@@ -3158,6 +3182,7 @@ const BLOG_ARTICLES = {
       category: "AWS / Distributed Systems / Architecture",
       date: "04/11/2026",
       title: "AWS EVENT-DRIVEN ARCHITECTURE – KHI MỌI DỊCH VỤ ĐỀU HOẠT ĐỘNG ĐÚNG, TẠI SAO DỮ LIỆU VẪN CÓ THỂ SAI?",
+      facebookUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2326019258163033/",
       leadSummary: "Trong quá trình nghiên cứu kiến trúc Event-Driven trên AWS, mình nhận thấy một vấn đề: Một hệ thống có thể xử lý tất cả sự kiện thành công nhưng vẫn tạo ra kết quả sai do Race Condition. Điều này xuất phát từ đặc điểm xử lý bất đồng bộ, đặc biệt khi kết hợp Amazon S3, EventBridge, SQS, Lambda và DynamoDB.",
       coverImage: "assets/images/aws-event-driven-architecture.png",
       coverCaption: "AWS Event-Driven Architecture – Event Processing, Ordering and Atomic Publishing",
@@ -3270,6 +3295,11 @@ const BLOG_ARTICLES = {
         {
           title: "AWS Compute Blog – Designing for Idempotency and Race Conditions in Serverless",
           url: "https://aws.amazon.com/blogs/compute/handling-duplicate-records-in-amazon-sqs-fifo-queues/"
+        },
+        {
+          title: "Xem bài viết trên cộng đồng AWS Study Group VN",
+          url: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2326019258163033/",
+          linkText: "Xem bài viết trên cộng đồng AWS Study Group VN"
         }
       ],
       btnBackToBlogs: "← Quay lại danh sách bài viết",
@@ -3279,6 +3309,7 @@ const BLOG_ARTICLES = {
       category: "AWS / Distributed Systems / Architecture",
       date: "04/11/2026",
       title: "AWS EVENT-DRIVEN ARCHITECTURE – WHEN ALL SERVICES SUCCEED, WHY CAN DATA STILL BE WRONG?",
+      facebookUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2326019258163033/",
       leadSummary: "While researching Event-Driven Architecture on AWS, I identified a critical paradox: A system can process all events with 100% success yet still generate incorrect business data due to Race Conditions. This stems directly from the asynchronous nature of decoupled services, particularly when orchestrating Amazon S3, EventBridge, SQS, AWS Lambda, and DynamoDB.",
       coverImage: "assets/images/aws-event-driven-architecture.png",
       coverCaption: "AWS Event-Driven Architecture – Event Processing, Ordering and Atomic Publishing",
@@ -3391,6 +3422,11 @@ const BLOG_ARTICLES = {
         {
           title: "AWS Compute Blog – Designing for Idempotency and Race Conditions in Serverless",
           url: "https://aws.amazon.com/blogs/compute/handling-duplicate-records-in-amazon-sqs-fifo-queues/"
+        },
+        {
+          title: "Xem bài viết trên cộng đồng AWS Study Group VN",
+          url: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2326019258163033/",
+          linkText: "Xem bài viết trên cộng đồng AWS Study Group VN"
         }
       ],
       btnBackToBlogs: "← Back to Articles",
@@ -4004,6 +4040,19 @@ function renderEventDrivenBlogDetail(container, a, lang) {
       <header class="minimal-article-header">
         <div class="minimal-category-tag">${escapeHtml(a.category)}</div>
         <h1 class="minimal-article-title">${escapeHtml(a.title)}</h1>
+
+        <!-- Community Post Link under Title -->
+        <div style="margin: 4px 0 16px 0;">
+          <a href="${escapeHtml(a.facebookUrl || 'https://www.facebook.com/groups/awsstudygroupfcj/posts/2326019258163033/')}" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="minimal-ref-link"
+             style="font-size:14.5px; font-weight:600; display:inline-flex; align-items:center; gap:6px;">
+            <span>${lang === 'vi' ? 'Xem bài viết trên cộng đồng AWS Study Group VN' : 'View post on AWS Study Group VN community'}</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+
         <div class="minimal-article-date">${escapeHtml(a.date)}</div>
 
         <!-- Architecture Cover Image -->
