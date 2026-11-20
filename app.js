@@ -2750,6 +2750,21 @@ function renderBlogsList() {
             ${escapeHtml(b.title)}
           </h3>
 
+          <div style="font-size:14px; font-weight:600; color:#555555; margin:-4px 0 8px 0; font-style:italic;">
+            ${escapeHtml(b.subtitle || 'Beyond Network Isolation: Rethinking Identity Containment on AWS')}
+          </div>
+
+          <div style="margin: 0 0 14px 0;">
+            <a href="${escapeHtml(fbUrl)}" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="minimal-ref-link"
+               style="font-size:13.5px; font-weight:600; display:inline-flex; align-items:center; gap:6px;">
+              <span>${lang === 'vi' ? 'Xem bài viết trên cộng đồng AWS Study Group VN' : 'View post on AWS Study Group VN community'}</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+
           <div class="blog-featured-grid-preview">
             <div class="blog-featured-img-preview" onclick="openBlogImageModal('${escapeHtml(b.image || 'assets/images/aws-ec2-identity-containment-architecture.png')}', '${escapeHtml(b.title)}')" title="${t('zoomDiagramTooltip')}">
               <img src="${escapeHtml(b.image || 'assets/images/aws-ec2-identity-containment-architecture.png')}" alt="${escapeHtml(b.title)}" loading="lazy">
@@ -3388,6 +3403,7 @@ const BLOG_ARTICLES = {
       date: "15/11/2026",
       title: "CÔ LẬP EC2 KHÔNG CÓ NGHĨA LÀ ĐÃ CÔ LẬP KẺ TẤN CÔNG",
       subtitle: "Beyond Network Isolation: Rethinking Identity Containment on AWS",
+      facebookUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2338656276899331/",
       leadSummary: "Điều gì sẽ xảy ra nếu một EC2 instance đã bị cô lập khỏi hệ thống mạng, nhưng kẻ tấn công vẫn có thể truy cập các tài nguyên AWS? Phân tích chuyên sâu về sự khác biệt giữa Network Containment và Identity Containment: Vì sao Security Group không thể thu hồi IAM Sessions, giới hạn của IMDSv2 trước Remote Code Execution, và mô hình phản ứng sự cố tự động (Automated Incident Response) kết hợp GuardDuty, EventBridge, Lambda runbook và điều kiện aws:EC2InstanceSourceVPC.",
       coverImage: "assets/images/aws-ec2-identity-containment-architecture.png",
       coverCaption: "Hình 1: Mô hình Automated Incident Response trên AWS – Kết hợp Network Containment, Credential Issuance Containment và Identity Containment.",
@@ -3520,6 +3536,7 @@ const BLOG_ARTICLES = {
       date: "15/11/2026",
       title: "EC2 ISOLATION DOES NOT MEAN THE ATTACKER IS ISOLATED",
       subtitle: "Beyond Network Isolation: Rethinking Identity Containment on AWS",
+      facebookUrl: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2338656276899331/",
       leadSummary: "What happens if an EC2 instance is completely isolated from the network, yet an attacker can still access your AWS resources? An in-depth architectural analysis of Network Containment versus Identity Containment: why Security Groups cannot terminate active IAM sessions, the limitations of IMDSv2 against remote code execution, and designing an automated incident response workflow combining GuardDuty, EventBridge, Lambda runbooks, and aws:EC2InstanceSourceVPC condition keys.",
       coverImage: "assets/images/aws-ec2-identity-containment-architecture.png",
       coverCaption: "Figure 1: Automated Incident Response architecture on AWS – Combining Network Containment, Credential Issuance Containment, and Identity Containment.",
@@ -4158,9 +4175,22 @@ function renderIdentityContainmentBlogDetail(container, a, lang) {
       <header class="minimal-article-header">
         <div class="minimal-category-tag">${escapeHtml(a.category)}</div>
         <h1 class="minimal-article-title">${escapeHtml(a.title)}</h1>
-        <div style="font-size:16px; font-weight:600; color:#555555; margin:-4px 0 14px 0; font-style:italic;">
+        <div style="font-size:16px; font-weight:600; color:#555555; margin:-4px 0 10px 0; font-style:italic;">
           ${escapeHtml(a.subtitle)}
         </div>
+
+        <!-- Community Post Link under Title & Subtitle -->
+        <div style="margin: 4px 0 16px 0;">
+          <a href="${escapeHtml(a.facebookUrl || 'https://www.facebook.com/groups/awsstudygroupfcj/posts/2338656276899331/')}" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="minimal-ref-link"
+             style="font-size:14.5px; font-weight:600; display:inline-flex; align-items:center; gap:6px;">
+            <span>${lang === 'vi' ? 'Xem bài viết trên cộng đồng AWS Study Group VN' : 'View post on AWS Study Group VN community'}</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+
         <div class="minimal-article-date">${escapeHtml(a.date)}</div>
 
         <!-- Architecture Cover Image -->
