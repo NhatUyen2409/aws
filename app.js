@@ -662,7 +662,7 @@ const DEFAULT_BILINGUAL_DATA = {
       duration: "From 14/09/2026 to 14/12/2026"
     }
   },
-  currentWeek: 9,
+  currentWeek: 5,
   worklogs: Array.from({ length: 12 }, (_, i) => {
     const weekNum = i + 1;
     if (weekNum === 1) {
@@ -885,44 +885,44 @@ const DEFAULT_BILINGUAL_DATA = {
       return {
         weekNum: 5,
         vi: {
-          topic: "Project Ideation & Preparation (13/10/2026 – 14/10/2026)",
+          topic: "Week 5 – Project Ideation & Preparation",
           objectives: "Thảo luận, lựa chọn chủ đề và xây dựng ý tưởng ban đầu cho dự án Nutrition E-Commerce.",
-          achievements: "- Thống nhất lựa chọn chủ đề Nutrition E-Commerce.\n- Xác định mục tiêu và các chức năng dự kiến.\n- Tìm hiểu website bán thực phẩm Eat Clean và nguồn dữ liệu dinh dưỡng bên thứ ba.",
+          achievements: "- Thống nhất lựa chọn chủ đề Nutrition E-Commerce.\n- Xác định mục tiêu và các chức năng dự kiến của dự án.\n- Tìm hiểu các website bán thực phẩm Eat Clean và nguồn dữ liệu dinh dưỡng bên thứ ba.",
           tasks: [
             {
               day: "Thứ Ba",
-              desc: "Main Task: Project Topic Discussion.\nDetailed Activities: Thảo luận nhóm, tìm kiếm và đề xuất ý tưởng dự án. Tìm hiểu mô hình kinh doanh thực phẩm Eat Clean, các sản phẩm và cách tổ chức danh mục trên website thương mại điện tử.",
+              desc: "Main Task: Project Topic Discussion\nDetailed Activities: Thảo luận nhóm, tìm kiếm và đề xuất ý tưởng dự án. Tìm hiểu mô hình kinh doanh thực phẩm Eat Clean, các sản phẩm và cách tổ chức danh mục trên website thương mại điện tử.",
               start: "2026-10-13",
               end: "2026-10-13",
-              ref: "[HelloFresh](https://www.hellofresh.com/) / [Go Fit Mart](https://gofitmart.vn/)"
+              ref: "[HelloFresh](https://www.hellofresh.com/)\n[Go Fit Mart](https://gofitmart.vn/)"
             },
             {
               day: "Thứ Tư",
-              desc: "Main Task: Project Ideation & Preparation.\nDetailed Activities: Thống nhất chủ đề Nutrition E-Commerce, xác định mục tiêu và các chức năng dự kiến. Tìm hiểu nguồn dữ liệu bên thứ ba để tra cứu thông tin dinh dưỡng như calo, protein, carbohydrate và chất béo.",
+              desc: "Main Task: Project Ideation & Preparation\nDetailed Activities: Thống nhất chủ đề Nutrition E-Commerce, xác định mục tiêu và các chức năng dự kiến. Tìm hiểu nguồn dữ liệu bên thứ ba để tra cứu thông tin dinh dưỡng như calo, protein, carbohydrate và chất béo.",
               start: "2026-10-14",
               end: "2026-10-14",
-              ref: "[FoodData Central](https://fdc.nal.usda.gov/) / [Open Food Facts](https://world.openfoodfacts.org/) / [MyFitnessPal](https://www.myfitnesspal.com/)"
+              ref: "[FoodData Central](https://fdc.nal.usda.gov/)\n[Open Food Facts](https://world.openfoodfacts.org/)\n[MyFitnessPal](https://www.myfitnesspal.com/)"
             }
           ]
         },
         en: {
-          topic: "Project Ideation & Preparation (13/10/2026 – 14/10/2026)",
+          topic: "Week 5 – Project Ideation & Preparation",
           objectives: "Discuss, select the project topic, and build the initial ideation for the Nutrition E-Commerce project.",
-          achievements: "- Agreed on the Nutrition E-Commerce project topic.\n- Defined project goals and expected features.\n- Researched Eat Clean food e-commerce websites and third-party nutritional data sources.",
+          achievements: "- Agreed on the Nutrition E-Commerce project topic.\n- Defined project goals and expected features of the project.\n- Researched Eat Clean food e-commerce websites and third-party nutritional data sources.",
           tasks: [
             {
               day: "Tuesday",
-              desc: "Main Task: Project Topic Discussion.\nDetailed Activities: Group discussion, searching and proposing project ideas. Research Eat Clean food business models, products, and catalog organization on e-commerce websites.",
+              desc: "Main Task: Project Topic Discussion\nDetailed Activities: Group discussion, searching and proposing project ideas. Research Eat Clean food business models, products, and catalog organization on e-commerce websites.",
               start: "2026-10-13",
               end: "2026-10-13",
-              ref: "[HelloFresh](https://www.hellofresh.com/) / [Go Fit Mart](https://gofitmart.vn/)"
+              ref: "[HelloFresh](https://www.hellofresh.com/)\n[Go Fit Mart](https://gofitmart.vn/)"
             },
             {
               day: "Wednesday",
-              desc: "Main Task: Project Ideation & Preparation.\nDetailed Activities: Finalize the Nutrition E-Commerce topic, define project objectives and planned features. Research third-party nutritional data sources to look up calories, protein, carbohydrates, and fat.",
+              desc: "Main Task: Project Ideation & Preparation\nDetailed Activities: Finalize the Nutrition E-Commerce topic, define project objectives and planned features. Research third-party nutritional data sources to look up calories, protein, carbohydrates, and fat.",
               start: "2026-10-14",
               end: "2026-10-14",
-              ref: "[FoodData Central](https://fdc.nal.usda.gov/) / [Open Food Facts](https://world.openfoodfacts.org/) / [MyFitnessPal](https://www.myfitnesspal.com/)"
+              ref: "[FoodData Central](https://fdc.nal.usda.gov/)\n[Open Food Facts](https://world.openfoodfacts.org/)\n[MyFitnessPal](https://www.myfitnesspal.com/)"
             }
           ]
         }
@@ -1780,7 +1780,7 @@ const DEFAULT_BILINGUAL_DATA = {
 // ==========================================
 // 3. PERSISTENCE & STATE MANAGEMENT
 // ==========================================
-const STORAGE_KEY = 'fcaj_report_bilingual_v22';
+const STORAGE_KEY = 'fcaj_report_bilingual_v23';
 const LANG_KEY = 'fcaj_report_lang';
 
 class AppLanguageManager {
@@ -1792,6 +1792,7 @@ class AppLanguageManager {
 
   cleanupLegacyStorage() {
     const legacyKeys = [
+      'fcaj_report_bilingual_v22',
       'fcaj_report_bilingual_v21',
       'fcaj_report_bilingual_v20',
       'fcaj_report_bilingual_v19',
@@ -1904,6 +1905,7 @@ class AppLanguageManager {
     renderWeekTabs();
     renderWorklogView();
     renderProposalInputs();
+    renderWorkshopView();
     renderBlogsList();
     renderEventsList();
     const currentHash = window.location.hash.replace(/^#\/?/, '').replace(/\/$/, '');
@@ -2082,6 +2084,10 @@ function navigateTo(pageId) {
     renderBlogDetail(slug);
   } else if (cleanId === 'blogs-posted') {
     renderBlogsList();
+  } else if (cleanId === 'proposal') {
+    renderProposalView();
+  } else if (cleanId === 'workshop') {
+    renderWorkshopView();
   }
 
   updateHeaderPageTitle();
@@ -2329,9 +2335,11 @@ function renderRefLinks(refStr) {
     if (mdMatch) {
       const title = mdMatch[1];
       const url = mdMatch[2];
-      return `<div style="margin-bottom: 5px; font-size: 13px; line-height: 1.45;">
-        <span style="font-weight:600; color:var(--text-main);">${escapeHtml(title)}:</span> 
-        <a href="${escapeHtml(url)}" target="_blank" rel="noopener" style="color:var(--primary); font-weight:600; text-decoration:underline; word-break:break-all;">${escapeHtml(url)} ↗</a>
+      return `<div style="margin-bottom: 6px; font-size: 13.5px; line-height: 1.5;">
+        <a href="${escapeHtml(url)}" target="_blank" rel="noopener" style="color:var(--primary); font-weight:600; text-decoration:underline; display:inline-flex; align-items:center; gap:4px;">
+          <span>${escapeHtml(title)}</span>
+          <span style="font-size:11px; text-decoration:none;">↗</span>
+        </a>
       </div>`;
     }
     const match = line.match(/(https?:\/\/[^\s]+)/);
@@ -2339,9 +2347,12 @@ function renderRefLinks(refStr) {
       let url = match[1];
       url = url.replace(/\)+$/, '');
       let prefix = line.replace(match[1], '').replace(/[\[\]\(\)]/g, '').trim();
-      return `<div style="margin-bottom: 5px; font-size: 13px; line-height: 1.45;">
-        ${prefix ? `<span style="font-weight:600; color:var(--text-main);">${escapeHtml(prefix)}</span> ` : ''}
-        <a href="${escapeHtml(url)}" target="_blank" rel="noopener" style="color:var(--primary); font-weight:600; text-decoration:underline; word-break:break-all;">${escapeHtml(url)} ↗</a>
+      const label = prefix || url;
+      return `<div style="margin-bottom: 6px; font-size: 13.5px; line-height: 1.5;">
+        <a href="${escapeHtml(url)}" target="_blank" rel="noopener" style="color:var(--primary); font-weight:600; text-decoration:underline; display:inline-flex; align-items:center; gap:4px;">
+          <span>${escapeHtml(label)}</span>
+          <span style="font-size:11px; text-decoration:none;">↗</span>
+        </a>
       </div>`;
     }
     return `<div style="margin-bottom: 5px; font-size: 13px; color:var(--text-subtle);">${escapeHtml(line)}</div>`;
@@ -2502,16 +2513,896 @@ function setContent(id, val) {
   }
 }
 
-function renderProposalInputs() {
-  const p = app.data.proposal[app.currentLang] || app.data.proposal.vi;
-  setContent('prop-summary', p.summary);
-  setContent('prop-problem', p.problem);
-  setContent('prop-solution', p.solution);
-  setContent('prop-arch', p.arch);
-  setContent('prop-budget', p.budget);
+
+// ==========================================
+// 8. 2. PROJECT PROPOSAL (NUTRITION E-COMMERCE - MINIMAL REPORT)
+// ==========================================
+
+function getProposalViHtml() {
+  const archImg = 'assets/images/proposal/aws-architecture.png';
+  const flowImg = 'assets/images/proposal/application-flow.png';
+
+  return `
+    <div class="tech-report">
+      <!-- HEADER -->
+      <header>
+        <div class="report-eyebrow">Project Proposal</div>
+        <h1 class="report-title">Nền tảng Thương mại Điện tử Dinh dưỡng Cá nhân hóa trên AWS</h1>
+        <p class="report-subtitle">Personalized Nutrition E-Commerce Platform on AWS</p>
+        <p class="report-intro">
+          Dự án xây dựng nền tảng thương mại điện tử thực phẩm tích hợp trí tuệ nhân tạo (AI) hỗ trợ phân tích và cá nhân hóa nhu cầu dinh dưỡng cho người dùng. 
+          Toàn bộ hệ thống được thiết kế, vận hành và tự động hóa trên nền tảng điện toán đám mây AWS với React, Spring Boot 4, Amazon ECS Fargate, 
+          Amazon Bedrock và Terraform.
+        </p>
+      </header>
+
+      <!-- 1. TỔNG QUAN DỰ ÁN -->
+      <section class="report-section">
+        <h2 class="report-h2">1. Tổng quan dự án</h2>
+        <p class="report-p">
+          Nền tảng Thương mại Điện tử Dinh dưỡng Cá nhân hóa là giải pháp hỗ trợ người tiêu dùng tiếp cận thực phẩm lành mạnh 
+          (Eat Clean, Low-Carb, High-Protein, Vegan) dựa trên chỉ số dinh dưỡng rõ ràng và mục tiêu thể trạng cá nhân. 
+          Hệ thống kết hợp giữa kiến trúc backend mạnh mẽ và trợ lý AI thông minh nhằm đơn giản hóa việc tra cứu khẩu phần ăn.
+        </p>
+
+        <h3 class="report-h3">Các công nghệ và dịch vụ nền tảng:</h3>
+        <ul class="report-list">
+          <li><strong>Giao diện người dùng:</strong> React 19, TypeScript, Vite, Tailwind CSS – Ứng dụng Single Page Application (SPA) tối ưu tốc độ phản hồi.</li>
+          <li><strong>Dịch vụ ứng dụng backend:</strong> Spring Boot 4 (Java 21) – RESTful API xử lý nghiệp vụ đơn hàng, danh mục và truy vấn dữ liệu dinh dưỡng.</li>
+          <li><strong>Cơ sở dữ liệu:</strong> PostgreSQL 17 trên Amazon RDS – Lưu trữ chuẩn hóa 152 sản phẩm với hồ sơ dinh dưỡng USDA FoodData Central.</li>
+          <li><strong>Phân phối và lưu trữ tĩnh:</strong> Amazon CloudFront và Amazon S3 – Mạng CDN toàn cầu và lưu trữ an toàn mã nguồn frontend cùng hình ảnh sản phẩm.</li>
+          <li><strong>Môi trường tính toán và cân bằng tải:</strong> Amazon ECS Fargate và Application Load Balancer (ALB) – Vận hành container không máy chủ, tự động quản lý.</li>
+          <li><strong>Quản lý định danh:</strong> Amazon Cognito User Pools – Xác thực tài khoản người dùng và cấp phát JWT token an toàn.</li>
+          <li><strong>Trí tuệ nhân tạo (AI):</strong> Amazon Bedrock (Nova 2 Lite) và Bedrock Guardrails – Xử lý ngôn ngữ tự nhiên và kiểm duyệt an toàn nội dung.</li>
+          <li><strong>Hạ tầng như mã nguồn (IaC) và CI/CD:</strong> Terraform và GitHub Actions (AWS OIDC) – Tự động hóa triển khai 100%, bảo mật không lưu Access Key tĩnh.</li>
+        </ul>
+
+        <div class="report-callout">
+          <strong>Nguyên tắc cốt lõi về AI:</strong> Hệ thống tuân thủ nguyên tắc <em>AI chỉ phân tích ý đồ (Intent Classification) và trích xuất tham số lọc (Parameter Extraction)</em> từ câu hỏi tự nhiên của người dùng. Toàn bộ số liệu dinh dưỡng (calo, macro, chất dị ứng) <strong>đều được truy vấn trực tiếp từ cơ sở dữ liệu PostgreSQL chuẩn USDA</strong>, loại bỏ hoàn toàn hiện tượng AI tự sinh số liệu (hallucination).
+        </div>
+      </section>
+
+      <!-- 2. VẤN ĐỀ VÀ GIẢI PHÁP -->
+      <section class="report-section">
+        <h2 class="report-h2">2. Vấn đề và giải pháp</h2>
+        <p class="report-p"><strong>Khó khăn thực tế của người dùng:</strong></p>
+        <ul class="report-list">
+          <li>Thiếu thông tin dinh dưỡng minh bạch và chi tiết trên các sàn thương mại điện tử thực phẩm truyền thống.</li>
+          <li>Khó kiểm soát các chất gây dị ứng nguy hiểm (gluten, đậu phộng, hải sản,...) do thành phần không được ghi rõ ràng.</li>
+          <li>Tốn nhiều thời gian và công sức tính toán macro (Calo, Protein, Carbs, Fat) thủ công cho từng bữa ăn.</li>
+          <li>Thiếu công cụ tìm kiếm và lọc sản phẩm theo mục tiêu dinh dưỡng cá nhân hóa linh hoạt.</li>
+        </ul>
+
+        <p class="report-p"><strong>Các chức năng giải pháp cốt lõi:</strong></p>
+        <ul class="report-list">
+          <li><strong>Catalog 152 sản phẩm USDA:</strong> Dữ liệu thực phẩm sạch được chuẩn hóa theo chuẩn USDA FoodData Central với đầy đủ hàm lượng calo và macro trên từng khẩu phần.</li>
+          <li><strong>Bộ lọc dinh dưỡng đa tiêu chí:</strong> Cho phép lọc chính xác theo khoảng calo, mức protein tối thiểu, giới hạn carb và chất béo.</li>
+          <li><strong>Kiểm soát 9 allergen và 6 chế độ ăn:</strong> Nhận diện và cảnh báo nghiêm ngặt 9 chất gây dị ứng phổ biến (cơ chế fail-closed: loại bỏ khi nghi vấn) và 6 nhãn chế độ ăn (Low-Carb, High-Protein, Vegan, Keto, Gluten-Free, Clean Eating).</li>
+          <li><strong>AI tra cứu sản phẩm thông minh:</strong> Trợ lý Amazon Bedrock Nova 2 Lite chuyển đổi yêu cầu ngôn ngữ tự nhiên thành các tham số truy vấn dữ liệu chuẩn xác.</li>
+          <li><strong>Hồ sơ dinh dưỡng và gợi ý bữa ăn:</strong> Tính toán chỉ số BMR, TDEE và gợi ý cơ cấu một bữa ăn cân bằng macro phù hợp với người dùng.</li>
+          <li><strong>Giỏ hàng và đặt hàng trực tuyến:</strong> Theo dõi tổng lượng dinh dưỡng và biểu đồ phân bổ macro của đơn hàng theo thời gian thực.</li>
+          <li><strong>Thanh toán linh hoạt:</strong> Hỗ trợ thanh toán khi nhận hàng (COD) và tích hợp cổng thanh toán trực tuyến mô phỏng VNPAY Sandbox.</li>
+          <li><strong>Trang quản trị (Admin):</strong> Quản lý danh mục sản phẩm, theo dõi đơn hàng và cập nhật dữ liệu USDA.</li>
+        </ul>
+
+        <div class="report-callout report-callout-disclaimer">
+          <strong>Tuyên bố miễn trừ trách nhiệm y tế (Medical Disclaimer):</strong> Nền tảng được xây dựng nhằm hỗ trợ theo dõi thói quen dinh dưỡng và mua sắm thực phẩm lành mạnh; hệ thống <strong>không phải là thiết bị y tế và không đưa ra chẩn đoán, điều trị hay tư vấn y khoa chuyên nghiệp</strong>. Người dùng có bệnh lý nền cần tham khảo ý kiến bác sĩ hoặc chuyên gia dinh dưỡng.
+        </div>
+      </section>
+
+      <!-- 3. KIẾN TRÚC AWS -->
+      <section class="report-section">
+        <h2 class="report-h2">3. Kiến trúc AWS</h2>
+        <p class="report-p">
+          Hệ thống được thiết kế theo các nguyên tắc của <strong>AWS Well-Architected Framework</strong>, 
+          kết hợp giữa mô hình container không máy chủ, cơ sở dữ liệu quan hệ được quản lý và dịch vụ trí tuệ nhân tạo tạo sinh.
+        </p>
+
+        <!-- HÌNH 1: AWS ARCHITECTURE -->
+        <div class="report-figure">
+          <div class="report-figure-img-wrap" onclick="openBlogImageModal('${archImg}', 'Sơ đồ kiến trúc hạ tầng AWS')" title="Nhấp để phóng to">
+            <img src="${archImg}" alt="Sơ đồ kiến trúc hạ tầng AWS" class="report-figure-img" loading="lazy" />
+          </div>
+          <div class="report-figure-caption">Hình 1: Sơ đồ kiến trúc tổng thể AWS (Singapore ap-southeast-1 & Tokyo ap-northeast-1) — <em>Nhấp để phóng to</em></div>
+        </div>
+
+        <h3 class="report-h3">Mô tả cấu hình và phân bổ dịch vụ:</h3>
+        <ul class="report-list">
+          <li><strong>Singapore (<code>ap-southeast-1</code>):</strong> Vùng vận hành chính chứa VPC, Subnets, ECS Fargate, ALB, RDS PostgreSQL, S3, Cognito và CloudWatch.</li>
+          <li><strong>Tokyo (<code>ap-northeast-1</code>):</strong> Vùng phục vụ cho Amazon Bedrock (Nova 2 Lite) và Bedrock Guardrails nhằm đảm bảo tính khả dụng của mô hình AI.</li>
+          <li><strong>Amazon CloudFront & S3:</strong> CloudFront phân phối giao diện React tĩnh từ S3 và chuyển tiếp API request đến ALB.</li>
+          <li><strong>Application Load Balancer (ALB):</strong> Tiếp nhận yêu cầu từ CloudFront, cân bằng tải và định tuyến đến cụm container Spring Boot trên ECS Fargate.</li>
+          <li><strong>Amazon ECS Fargate:</strong> Chạy container backend Spring Boot 4. Trong môi trường Demo, hệ thống triển khai <strong>1 task duy nhất (Active)</strong> với cấu hình tối ưu chi phí: <strong>0,5 vCPU và 1 GB RAM</strong>.</li>
+          <li><strong>Amazon RDS PostgreSQL:</strong> PostgreSQL 17, instance class <strong>db.t4g.micro, dung lượng 20 GB gp3, Single-AZ</strong>.</li>
+          <li><strong>Phân vùng mạng và tối ưu chi phí:</strong>
+            ECS Task đặt trong Public Subnet (gán Public IPv4) để kéo Docker image từ ECR và gọi Bedrock Tokyo mà <em>không cần khởi tạo NAT Gateway</em> (tiết kiệm ~32 USD/tháng cho mỗi NAT Gateway). 
+            RDS PostgreSQL đặt trong Private Subnet cách ly hoàn toàn Internet, chỉ chấp nhận kết nối nội bộ từ Security Group của ECS trên cổng 5432. 
+            Subnet thứ hai ở AZ-2 đóng vai trò standby resilience (sẵn sàng nâng cấp Multi-AZ trong tương lai), không chạy task đồng thời trong demo.
+          </li>
+          <li><strong>Định danh và giám sát:</strong> Amazon Cognito quản lý định danh người dùng qua JWT; AWS Secrets Manager bảo vệ mật khẩu; CloudWatch, Budgets và SNS giám sát tài nguyên và cảnh báo chi phí.</li>
+          <li><strong>Giới hạn kiến trúc hiện tại:</strong> Giao tiếp từ CloudFront đến ALB hiện sử dụng giao thức HTTP (kết nối Client đến CloudFront là HTTPS, kết hợp Custom Secret Header xác thực giữa CloudFront và ALB để chặn truy cập trực tiếp).</li>
+        </ul>
+
+        <!-- HÌNH 2: APPLICATION FLOW -->
+        <div class="report-figure" style="margin-top: 28px;">
+          <div class="report-figure-img-wrap" onclick="openBlogImageModal('${flowImg}', 'Sơ đồ luồng hoạt động ứng dụng')" title="Nhấp để phóng to">
+            <img src="${flowImg}" alt="Sơ đồ luồng hoạt động ứng dụng" class="report-figure-img" loading="lazy" />
+          </div>
+          <div class="report-figure-caption">Hình 2: Sơ đồ luồng hoạt động ứng dụng (Application Flow Diagram) — <em>Nhấp để phóng to</em></div>
+        </div>
+
+        <h3 class="report-h3">Luồng xử lý 8 bước của ứng dụng:</h3>
+        <ol class="report-list" style="padding-left: 20px;">
+          <li>Người dùng truy cập ứng dụng qua giao thức HTTPS đến tên miền Amazon CloudFront CDN.</li>
+          <li>CloudFront trả về các tệp tĩnh React SPA từ Amazon S3 hoặc chuyển tiếp yêu cầu API <code>/api/*</code> đến ALB.</li>
+          <li>ALB kiểm tra Custom Secret Header từ CloudFront và chuyển tiếp yêu cầu đến container Spring Boot trên ECS Fargate.</li>
+          <li>Người dùng xác thực với Amazon Cognito User Pool; Client đính kèm JWT Bearer token vào Header của mọi request.</li>
+          <li>Spring Security xác thực chữ ký số JWT của Cognito và phân quyền truy cập người dùng/quản trị viên.</li>
+          <li>Khi có câu hỏi tự nhiên về dinh dưỡng, Backend gọi API Amazon Bedrock Nova 2 Lite (Tokyo) để trích xuất ý đồ và tham số lọc.</li>
+          <li>Backend dùng tham số từ AI truy vấn dữ liệu 152 sản phẩm trực tiếp từ PostgreSQL RDS trong Private Subnet.</li>
+          <li>Backend trả về kết quả JSON chứa thông tin dinh dưỡng chuẩn hóa cho Client hiển thị.</li>
+        </ol>
+      </section>
+
+      <!-- 4. CÔNG NGHỆ VÀ KẾ HOẠCH TRIỂN KHAI -->
+      <section class="report-section">
+        <h2 class="report-h2">4. Công nghệ và kế hoạch triển khai</h2>
+        <p class="report-p"><strong>Bảng tổng hợp công nghệ:</strong></p>
+        <div class="report-table-wrapper">
+          <table class="report-table">
+            <thead>
+              <tr>
+                <th style="width: 25%;">Lớp kiến trúc</th>
+                <th style="width: 35%;">Công nghệ / Dịch vụ</th>
+                <th style="width: 40%;">Mục đích sử dụng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Frontend</strong></td>
+                <td>React 19, TypeScript, Vite, Tailwind CSS</td>
+                <td>Single Page Application phản hồi nhanh, giao diện thân thiện và responsive.</td>
+              </tr>
+              <tr>
+                <td><strong>Backend</strong></td>
+                <td>Spring Boot 4.1 (Java 21), Spring Security</td>
+                <td>RESTful API xử lý logic đơn hàng, xác thực JWT và kết nối cơ sở dữ liệu.</td>
+              </tr>
+              <tr>
+                <td><strong>Database</strong></td>
+                <td>PostgreSQL 17 trên Amazon RDS (db.t4g.micro)</td>
+                <td>Lưu trữ dữ liệu quan hệ, người dùng, đơn hàng và 152 sản phẩm chuẩn USDA.</td>
+              </tr>
+              <tr>
+                <td><strong>AI & GenAI</strong></td>
+                <td>Amazon Bedrock (Nova 2 Lite), Bedrock Guardrails</td>
+                <td>Trích xuất ý đồ tìm kiếm dinh dưỡng và kiểm duyệt an toàn nội dung.</td>
+              </tr>
+              <tr>
+                <td><strong>Compute</strong></td>
+                <td>Amazon ECS (Fargate), Amazon ECR, Docker</td>
+                <td>Vận hành container backend không máy chủ (0,5 vCPU, 1 GB RAM active task).</td>
+              </tr>
+              <tr>
+                <td><strong>Networking</strong></td>
+                <td>Amazon CloudFront, Application Load Balancer, VPC</td>
+                <td>Phân phối CDN toàn cầu, cân bằng tải và phân vùng mạng bảo vệ dữ liệu.</td>
+              </tr>
+              <tr>
+                <td><strong>Security</strong></td>
+                <td>Amazon Cognito, AWS Secrets Manager, IAM Roles</td>
+                <td>Quản lý định danh người dùng và bảo mật thông tin xác thực backend.</td>
+              </tr>
+              <tr>
+                <td><strong>IaC & CI/CD</strong></td>
+                <td>Terraform, GitHub Actions, AWS OIDC</td>
+                <td>Tự động hóa 100% hạ tầng và triển khai liên tục không dùng static keys.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="report-p" style="margin-top: 18px;"><strong>Kế hoạch 5 giai đoạn thực hiện:</strong></p>
+        <div class="report-table-wrapper">
+          <table class="report-table">
+            <thead>
+              <tr>
+                <th style="width: 24%;">Giai đoạn</th>
+                <th style="width: 30%;">Hạng mục chính</th>
+                <th style="width: 46%;">Kết quả bàn giao</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>29/10 – 01/11/2026</strong></td>
+                <td>Khởi tạo & Thiết kế</td>
+                <td>Xác định phạm vi, thiết kế kiến trúc AWS và mô hình dữ liệu dinh dưỡng.</td>
+              </tr>
+              <tr>
+                <td><strong>03/11 – 10/11/2026</strong></td>
+                <td>Giao diện & Dữ liệu</td>
+                <td>Phát triển giao diện React, chuẩn hóa 152 sản phẩm USDA và các Entity backend.</td>
+              </tr>
+              <tr>
+                <td><strong>11/11 – 12/11/2026</strong></td>
+                <td>Triển khai hạ tầng</td>
+                <td>Viết Terraform triển khai VPC, Subnets, RDS, ECR, ECS Fargate, ALB và CloudFront.</td>
+              </tr>
+              <tr>
+                <td><strong>13/11 – 18/11/2026</strong></td>
+                <td>AI & Nghiệp vụ</td>
+                <td>Tích hợp Bedrock Nova 2 Lite, cấu hình Guardrails, hoàn thiện giỏ hàng và VNPAY Sandbox.</td>
+              </tr>
+              <tr>
+                <td><strong>20/11 – 22/11/2026</strong></td>
+                <td>Kiểm thử & Tối ưu</td>
+                <td>Kiểm thử tích hợp đầu cuối, tối ưu chi phí thực tế và hoàn tất tài liệu đồ án.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 5. ƯỚC TÍNH CHI PHÍ -->
+      <section class="report-section">
+        <h2 class="report-h2">5. Ước tính chi phí</h2>
+        <p class="report-p">
+          Chi phí được ước tính dựa trên 3 kịch bản vận hành và được đối chiếu với dữ liệu thực tế từ <strong>AWS Cost Explorer</strong>:
+        </p>
+
+        <p class="report-p"><strong>Bảng 1: So sánh chi phí theo 3 kịch bản vận hành (USD/tháng):</strong></p>
+        <div class="report-table-wrapper">
+          <table class="report-table">
+            <thead>
+              <tr>
+                <th style="width: 40%;">Dịch vụ AWS</th>
+                <th class="text-right" style="width: 20%;">Demo (~4h/ngày)</th>
+                <th class="text-right" style="width: 20%;">24/7</th>
+                <th class="text-right" style="width: 20%;">Production đề xuất</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Amazon RDS PostgreSQL (db.t4g.micro)</td>
+                <td class="text-right">~4</td>
+                <td class="text-right">~22</td>
+                <td class="text-right">~70</td>
+              </tr>
+              <tr>
+                <td>Application Load Balancer (ALB)</td>
+                <td class="text-right">~3</td>
+                <td class="text-right">~20</td>
+                <td class="text-right">~22</td>
+              </tr>
+              <tr>
+                <td>Amazon ECS Fargate (0,5 vCPU, 1 GB RAM)</td>
+                <td class="text-right">~2,5</td>
+                <td class="text-right">~15</td>
+                <td class="text-right">~30</td>
+              </tr>
+              <tr>
+                <td>Public IPv4 Address</td>
+                <td class="text-right">~2</td>
+                <td class="text-right">~11</td>
+                <td class="text-right">~11</td>
+              </tr>
+              <tr>
+                <td>AWS Secrets Manager</td>
+                <td class="text-right">0,8</td>
+                <td class="text-right">0,8</td>
+                <td class="text-right">0,8</td>
+              </tr>
+              <tr>
+                <td>Amazon Bedrock (Nova 2 Lite)</td>
+                <td class="text-right">Dưới 1</td>
+                <td class="text-right">Dưới 1</td>
+                <td class="text-right">Theo lượng dùng</td>
+              </tr>
+              <tr>
+                <td>CloudFront, Cognito, CloudTrail, S3, ECR, CloudWatch</td>
+                <td class="text-right">~0–1</td>
+                <td class="text-right">~1–3</td>
+                <td class="text-right">~5</td>
+              </tr>
+              <tr>
+                <td>AWS WAF (Tùy chọn)</td>
+                <td class="text-right">0</td>
+                <td class="text-right">~8–10</td>
+                <td class="text-right">~10</td>
+              </tr>
+              <tr class="total-row">
+                <td>Tổng dự kiến (USD/tháng)</td>
+                <td class="text-right">~12–18</td>
+                <td class="text-right">~65–75</td>
+                <td class="text-right">~150–200</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="report-p" style="margin-top: 18px;"><strong>Bảng 2: Chi phí thực tế ghi nhận từ AWS Cost Explorer (01/11 – 21/11/2026):</strong></p>
+        <div class="report-table-wrapper">
+          <table class="report-table">
+            <thead>
+              <tr>
+                <th style="width: 50%;">Hạng mục dịch vụ chính</th>
+                <th class="text-right" style="width: 25%;">Chi phí phát sinh (USD)</th>
+                <th style="width: 25%;">Ghi chú</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Amazon RDS PostgreSQL (db.t4g.micro)</td>
+                <td class="text-right font-bold">2,77</td>
+                <td>Instance PostgreSQL và 20 GB gp3 storage.</td>
+              </tr>
+              <tr>
+                <td>Application Load Balancer (ALB)</td>
+                <td class="text-right font-bold">1,29</td>
+                <td>Cân bằng tải kiểm thử tích hợp hệ thống.</td>
+              </tr>
+              <tr>
+                <td>Amazon ECS Fargate</td>
+                <td class="text-right font-bold">1,21</td>
+                <td>Tài nguyên container Spring Boot hoạt động.</td>
+              </tr>
+              <tr>
+                <td>Public IPv4 Address</td>
+                <td class="text-right font-bold">0,74</td>
+                <td>Địa chỉ IPv4 công cộng cho task trong public subnet.</td>
+              </tr>
+              <tr>
+                <td>Amazon Bedrock (Nova 2 Lite)</td>
+                <td class="text-right font-bold">0,21</td>
+                <td>Token phân tích ngôn ngữ tự nhiên câu hỏi dinh dưỡng.</td>
+              </tr>
+              <tr>
+                <td>AWS Secrets Manager</td>
+                <td class="text-right font-bold">0,20</td>
+                <td>Lưu trữ và truy xuất các khóa bí mật hệ thống.</td>
+              </tr>
+              <tr class="total-row">
+                <td>Tổng chi phí các khoản chính</td>
+                <td class="text-right">6,44</td>
+                <td>Được bù đắp 100% bằng AWS Credits</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="report-p" style="font-size: 12.5px; color: #64748B; font-style: italic;">
+          * Ghi chú: Số liệu trên là các khoản chi phí chính ghi nhận trong kỳ đo từ 01/11 đến 21/11/2026, không phải toàn bộ hóa đơn. 
+          Phương án Production là kế hoạch đề xuất cho tương lai, chưa triển khai thực tế trong khuôn khổ kỳ thực tập.
+        </p>
+      </section>
+
+      <!-- 6. BẢO MẬT VÀ QUẢN LÝ RỦI RO -->
+      <section class="report-section">
+        <h2 class="report-h2">6. Bảo mật và quản lý rủi ro</h2>
+        <p class="report-p"><strong>Các cơ chế bảo mật đã triển khai:</strong></p>
+        <ul class="report-list">
+          <li><strong>Xác thực Stateless với Cognito JWT:</strong> Kiểm tra chữ ký số RSA từ token của Cognito trên mọi API request, loại bỏ hoàn toàn việc lưu session tại máy chủ backend.</li>
+          <li><strong>Nguyên tắc đặc quyền tối thiểu (IAM Least Privilege):</strong> Phân quyền qua IAM Task Role chuyên biệt cho ECS; GitHub Actions triển khai qua AWS OIDC không dùng key tĩnh.</li>
+          <li><strong>Quản lý bí mật bằng Secrets Manager:</strong> Mật khẩu database và các secret được lưu tập trung và inject vào container lúc khởi động.</li>
+          <li><strong>Cách ly mạng Private Subnet:</strong> RDS PostgreSQL nằm hoàn toàn trong Private Subnet, chỉ chấp nhận kết nối nội bộ từ Security Group của ECS trên cổng 5432.</li>
+          <li><strong>Kiểm duyệt AI qua Bedrock Guardrails:</strong> Thiết lập bộ lọc ngăn chặn prompt injection và ngăn chặn việc đưa ra lời khuyên y tế sai lệch.</li>
+          <li><strong>Bảo vệ ALB bằng Custom Secret Header:</strong> Thiết lập header bí mật giữa CloudFront và ALB; các request gọi trực tiếp vào ALB sẽ bị chặn (403 Forbidden).</li>
+          <li><strong>Giám sát ngân sách AWS Budgets & SNS:</strong> Tự động gửi email cảnh báo khi chi phí chạm 80% ngân sách dự kiến.</li>
+          <li><strong>AWS WAF (Tùy chọn cho Production):</strong> Tường lửa ứng dụng web phòng chống SQL Injection, XSS và DDoS.</li>
+        </ul>
+
+        <p class="report-p" style="margin-top: 18px;"><strong>Ma trận đánh giá rủi ro và biện pháp giảm thiểu:</strong></p>
+        <div class="report-table-wrapper">
+          <table class="report-table">
+            <thead>
+              <tr>
+                <th style="width: 25%;">Rủi ro tiềm ẩn</th>
+                <th style="width: 35%;">Mức độ & Tác động</th>
+                <th style="width: 40%;">Biện pháp giảm thiểu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Vượt chi phí (Cost Overrun)</strong></td>
+                <td>Trung bình – Có thể phát sinh chi phí nếu quên tắt tài nguyên.</td>
+                <td>Cấu hình AWS Budgets cảnh báo qua SNS; chỉ chạy 1 ECS task trong giờ làm việc; dùng Fargate và RDS db.t4g.micro.</td>
+              </tr>
+              <tr>
+                <td><strong>Ảo giác AI (AI Hallucination)</strong></td>
+                <td>Nghiêm trọng – Nếu AI tự đưa ra con số calo/macro sai lệch sẽ ảnh hưởng sức khỏe.</td>
+                <td>Giới hạn AI chỉ trích xuất intent/filter; 100% số liệu dinh dưỡng được truy vấn từ bảng USDA trong PostgreSQL.</td>
+              </tr>
+              <tr>
+                <td><strong>Sự cố đơn vùng (Single-AZ Failure)</strong></td>
+                <td>Thấp (môi trường Demo) – Có thể gặp gián đoạn nếu AZ Singapore gặp lỗi.</td>
+                <td>ECS service tự tạo task mới khi crash; kiến trúc Terraform đã sẵn sàng subnet thứ hai để nâng cấp Multi-AZ.</td>
+              </tr>
+              <tr>
+                <td><strong>Dị ứng thực phẩm (Allergen Safety)</strong></td>
+                <td>Nghiêm trọng – Bỏ sót chất dị ứng có thể nguy hiểm cho người dùng.</td>
+                <td>Áp dụng cơ chế fail-closed: nếu sản phẩm có nghi vấn chứa allergen người dùng chọn, hệ thống tự động loại trừ khỏi kết quả.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 7. KẾT QUẢ VÀ ĐỊNH HƯỚNG -->
+      <section class="report-section">
+        <h2 class="report-h2">7. Kết quả và định hướng</h2>
+        <p class="report-p"><strong>Kết quả đạt được:</strong></p>
+        <ul class="report-list">
+          <li>Triển khai thành công nền tảng full-stack thương mại điện tử dinh dưỡng hoàn chỉnh trên hạ tầng đám mây AWS.</li>
+          <li>Vận hành ổn định mô hình Serverless Container với Amazon ECS Fargate và cơ sở dữ liệu quan hệ Amazon RDS PostgreSQL.</li>
+          <li>Tích hợp thành công Amazon Bedrock Nova 2 Lite trích xuất ý đồ tìm kiếm dinh dưỡng ngôn ngữ tự nhiên chính xác.</li>
+          <li>Chuẩn hóa 152 sản phẩm thực phẩm theo nguồn USDA, tích hợp bộ lọc dinh dưỡng, 9 chất dị ứng và 6 chế độ ăn.</li>
+          <li>Tự động hóa 100% hạ tầng bằng Terraform và thiết lập quy trình CI/CD an toàn qua GitHub Actions với AWS OIDC.</li>
+          <li>Kiểm soát chi phí thực tế xuất sắc: chỉ phát sinh 6,44 USD trong 3 tuần và được tài trợ 100% bằng AWS Credits.</li>
+        </ul>
+
+        <p class="report-p" style="margin-top: 18px;"><strong>Định hướng nâng cấp Production (Kế hoạch tương lai chưa triển khai):</strong></p>
+        <ul class="report-list">
+          <li><strong>Chuyển đổi Amazon RDS sang Multi-AZ:</strong> Kích hoạt Standby Replica tự động failover để đạt độ sẵn sàng cao 99.95%.</li>
+          <li><strong>Mở rộng cụm ECS Fargate tối thiểu 2 tasks đa vùng:</strong> Thiết lập chính sách tự động co giãn (Auto Scaling Policy) theo CPU/RAM.</li>
+          <li><strong>Bảo mật HTTPS toàn trình (Origin SSL/TLS):</strong> Tích hợp chứng chỉ ACM lên ALB với tên miền tùy chỉnh qua Route 53.</li>
+          <li><strong>Triển khai AWS WAF thường trực:</strong> Bảo vệ toàn diện tầng CDN CloudFront trước các cuộc tấn công DDoS và khai thác lỗ hổng web.</li>
+          <li><strong>Chiến lược sao lưu tự động & Disaster Recovery:</strong> Tự động snapshot RDS hàng ngày và sao chép định kỳ sang AWS Region thứ hai.</li>
+          <li><strong>Mở rộng thuật toán phân tích dinh dưỡng:</strong> Bổ sung tính năng lập kế hoạch thực đơn trọn gói theo tuần dựa trên hồ sơ sức khỏe dài hạn.</li>
+        </ul>
+      </section>
+    </div>
+  `;
 }
 
-function setupProposal() {}
+function getProposalEnHtml() {
+  const archImg = 'assets/images/proposal/aws-architecture.png';
+  const flowImg = 'assets/images/proposal/application-flow.png';
+
+  return `
+    <div class="tech-report">
+      <!-- HEADER -->
+      <header>
+        <div class="report-eyebrow">Project Proposal</div>
+        <h1 class="report-title">Personalized Nutrition E-Commerce Platform on AWS</h1>
+        <p class="report-subtitle">Cloud-native AI-Powered Nutrition E-Commerce Platform</p>
+        <p class="report-intro">
+          An intelligent e-commerce platform integrating generative AI for personalized nutrition analysis and meal planning, 
+          architected and deployed entirely on Amazon Web Services using React, Spring Boot 4, Amazon ECS Fargate, 
+          Amazon Bedrock, and Terraform.
+        </p>
+      </header>
+
+      <!-- 1. PROJECT OVERVIEW -->
+      <section class="report-section">
+        <h2 class="report-h2">1. Project Overview</h2>
+        <p class="report-p">
+          The Personalized Nutrition E-Commerce Platform is developed as part of the <strong>AWS First Cloud AI Journey (FCAJ)</strong> program. 
+          The platform delivers a healthy food e-commerce experience (Eat Clean, Low-Carb, High-Protein, Vegan) augmented by an intelligent AI assistant, 
+          empowering consumers to find and purchase products tailored to their nutritional requirements and fitness goals.
+        </p>
+
+        <h3 class="report-h3">Core Technologies and AWS Services:</h3>
+        <ul class="report-list">
+          <li><strong>Frontend:</strong> React 19, TypeScript, Vite, Tailwind CSS – Modern responsive Single Page Application.</li>
+          <li><strong>Backend API:</strong> Spring Boot 4 (Java 21) – RESTful microservices-ready architecture handling orders and USDA data.</li>
+          <li><strong>Database:</strong> PostgreSQL 17 on Amazon RDS – Standardized 152-product catalog with detailed USDA nutritional metrics.</li>
+          <li><strong>Distribution & Storage:</strong> Amazon CloudFront & Amazon S3 – Global low-latency CDN and secure static asset hosting.</li>
+          <li><strong>Compute & Load Balancing:</strong> Amazon ECS Fargate & Application Load Balancer (ALB) – Serverless container management.</li>
+          <li><strong>Identity & Authentication:</strong> Amazon Cognito User Pools – Secure stateless JWT Bearer token issuance and RBAC.</li>
+          <li><strong>Artificial Intelligence (AI):</strong> Amazon Bedrock (Nova 2 Lite) & Bedrock Guardrails – Natural Language Understanding and content moderation.</li>
+          <li><strong>Infrastructure as Code (IaC) & CI/CD:</strong> Terraform & GitHub Actions (AWS OIDC) – 100% automated provisioning without long-lived static keys.</li>
+        </ul>
+
+        <div class="report-callout">
+          <strong>Core AI Principle:</strong> The architecture strictly adheres to the rule that <em>AI only performs intent classification and parameter extraction</em> from the user's natural language queries. All numerical nutritional figures (Calories, Protein, Carbohydrates, Fat, and allergens) <strong>are queried directly from the verified PostgreSQL database sourced from USDA FoodData Central</strong>, eliminating AI hallucination.
+        </div>
+      </section>
+
+      <!-- 2. PROBLEMS AND SOLUTIONS -->
+      <section class="report-section">
+        <h2 class="report-h2">2. Problem Statement & Solutions</h2>
+        <p class="report-p"><strong>User Challenges in Traditional Food E-Commerce:</strong></p>
+        <ul class="report-list">
+          <li>Lack of transparent nutritional data on conventional food shopping platforms.</li>
+          <li>Hidden food allergy hazards due to ambiguous ingredient labeling.</li>
+          <li>Tedious manual calculation required to balance daily macro targets.</li>
+          <li>No flexible personalized filtering based on individual fitness goals.</li>
+        </ul>
+
+        <p class="report-p"><strong>Core Solution Capabilities:</strong></p>
+        <ul class="report-list">
+          <li><strong>152 USDA Standardized Catalog:</strong> Clean food catalog standardized against USDA FoodData Central with precise macro/calorie breakdown.</li>
+          <li><strong>Multi-Attribute Nutrition Filter:</strong> Allows users to filter by calorie ranges (Min-Max), minimum protein targets, and carb/fat ceilings.</li>
+          <li><strong>9 Allergens & 6 Diet Tags:</strong> Strict detection of 9 major allergens (fail-closed exclusion) and 6 dietary badges (Low-Carb, High-Protein, Vegan, Keto, Gluten-Free, Clean Eating).</li>
+          <li><strong>AI Natural Language Lookup:</strong> Amazon Bedrock Nova 2 Lite transforms free-text user inquiries into structured SQL query parameters.</li>
+          <li><strong>Nutrition Profile & Meal Suggestions:</strong> Calculates user BMR and TDEE, suggesting balanced single-meal compositions aligned with daily targets.</li>
+          <li><strong>Real-Time Cart Macro Summary:</strong> Automatically tallies cumulative calories and macro distribution in the shopping cart prior to checkout.</li>
+          <li><strong>Flexible Payment Methods:</strong> Supports Cash on Delivery (COD) and secure simulated online payment via VNPAY Sandbox gateway.</li>
+          <li><strong>Administrative Dashboard:</strong> Product inventory management, order processing, and USDA data synchronization.</li>
+        </ul>
+
+        <div class="report-callout report-callout-disclaimer">
+          <strong>Medical Disclaimer:</strong> This application is intended solely for general nutritional guidance and e-commerce shopping. It <strong>is not a medical device and does not offer clinical diagnosis, medical therapy, or licensed dietary treatment</strong>. Users with chronic medical conditions or severe food allergies must consult licensed healthcare professionals.
+        </div>
+      </section>
+
+      <!-- 3. AWS ARCHITECTURE -->
+      <section class="report-section">
+        <h2 class="report-h2">3. AWS Architecture</h2>
+        <p class="report-p">
+          The system architecture follows the <strong>AWS Well-Architected Framework</strong>, combining serverless containers, 
+          managed relational databases, and secure foundation AI services across two Asia-Pacific regions.
+        </p>
+
+        <!-- FIGURE 1: AWS ARCHITECTURE -->
+        <div class="report-figure">
+          <div class="report-figure-img-wrap" onclick="openBlogImageModal('${archImg}', 'AWS Architecture Diagram')" title="Click to enlarge">
+            <img src="${archImg}" alt="AWS Architecture Diagram" class="report-figure-img" loading="lazy" />
+          </div>
+          <div class="report-figure-caption">Figure 1: Comprehensive AWS Cloud Architecture Diagram (Singapore ap-southeast-1 & Tokyo ap-northeast-1) — <em>Click to enlarge</em></div>
+        </div>
+
+        <h3 class="report-h3">Architectural Specifications & Infrastructure Components:</h3>
+        <ul class="report-list">
+          <li><strong>Primary Region (Singapore - <code>ap-southeast-1</code>):</strong> Hosts all primary compute, database, storage, networking, and security services.</li>
+          <li><strong>AI Services Region (Tokyo - <code>ap-northeast-1</code>):</strong> Direct integration with Amazon Bedrock (Nova 2 Lite) and Bedrock Guardrails.</li>
+          <li><strong>Amazon CloudFront & Amazon S3:</strong> Edge caching distributes the React SPA static build from S3 and securely proxies <code>/api/*</code> traffic to the ALB.</li>
+          <li><strong>Application Load Balancer (ALB):</strong> Ingress controller routing incoming API traffic across ECS Fargate tasks.</li>
+          <li><strong>Amazon ECS Fargate:</strong> Serverless compute hosting Spring Boot 4. In demo mode, it runs <strong>a single active task</strong> provisioned with <strong>0.5 vCPU and 1 GB RAM</strong>.</li>
+          <li><strong>Amazon RDS PostgreSQL:</strong> PostgreSQL 17 engine on instance class <strong>db.t4g.micro with 20 GB gp3 storage in Single-AZ configuration</strong>.</li>
+          <li><strong>Subnet & Network Topology:</strong>
+            ECS Task is placed in a Public Subnet with a Public IPv4 address to pull container images from ECR and call Bedrock (Tokyo) <em>without requiring an AWS NAT Gateway</em> (saving ~$32/month per gateway). 
+            RDS PostgreSQL resides strictly within a Private Subnet isolated from public ingress, strictly permitting connections only from the ECS Security Group on port 5432. 
+            The secondary subnet in AZ-2 serves as standby resilience for future Multi-AZ failover; no concurrent tasks run in AZ-2 during demo.
+          </li>
+          <li><strong>Identity & Monitoring:</strong> Amazon Cognito User Pool manages authentication via stateless JWT tokens; AWS Secrets Manager stores credentials; CloudWatch, Budgets, and SNS provide monitoring and cost alerts.</li>
+          <li><strong>Current Architectural Constraint:</strong> Transport between CloudFront and ALB currently uses <strong>HTTP</strong> (Client-to-CloudFront is HTTPS; communication is secured with a Custom Secret Header validating origin).</li>
+        </ul>
+
+        <!-- FIGURE 2: APPLICATION FLOW -->
+        <div class="report-figure" style="margin-top: 28px;">
+          <div class="report-figure-img-wrap" onclick="openBlogImageModal('${flowImg}', 'Application Flow Diagram')" title="Click to enlarge">
+            <img src="${flowImg}" alt="Application Flow Diagram" class="report-figure-img" loading="lazy" />
+          </div>
+          <div class="report-figure-caption">Figure 2: Application Flow Diagram — Complete transaction lifecycle from Client to CloudFront, Cognito, ALB, ECS, Bedrock Tokyo, and RDS — <em>Click to enlarge</em></div>
+        </div>
+
+        <h3 class="report-h3">Eight-Step Application Execution Flow:</h3>
+        <ol class="report-list" style="padding-left: 20px;">
+          <li>Client sends secure HTTPS requests to the Amazon CloudFront edge distribution domain.</li>
+          <li>CloudFront serves cached React assets from S3 or routes <code>/api/*</code> calls to the Application Load Balancer.</li>
+          <li>ALB verifies the Custom Secret Header from CloudFront and routes requests to the Spring Boot container on ECS Fargate.</li>
+          <li>Users authenticate against Amazon Cognito User Pool; Client attaches JWT Bearer token to API request headers.</li>
+          <li>Spring Security validates RSA JWT cryptographic signature and enforces Role-Based Access Control (RBAC).</li>
+          <li>For natural language queries, Spring Boot invokes Bedrock Nova 2 Lite in Tokyo to extract structured nutrient filter parameters.</li>
+          <li>Backend executes SQL queries with extracted parameters against the isolated PostgreSQL RDS instance in the Private Subnet.</li>
+          <li>Backend returns standardized JSON containing USDA-verified nutritional items to the React SPA for immediate rendering.</li>
+        </ol>
+      </section>
+
+      <!-- 4. TECHNOLOGIES AND IMPLEMENTATION PLAN -->
+      <section class="report-section">
+        <h2 class="report-h2">4. Technologies & Implementation Plan</h2>
+        <p class="report-p"><strong>Technology Stack Summary:</strong></p>
+        <div class="report-table-wrapper">
+          <table class="report-table">
+            <thead>
+              <tr>
+                <th style="width: 25%;">Layer</th>
+                <th style="width: 35%;">Technology / Service</th>
+                <th style="width: 40%;">Role in Architecture</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Frontend</strong></td>
+                <td>React 19, TypeScript, Vite, Tailwind CSS</td>
+                <td>Responsive Single Page Application with optimized bundle delivery.</td>
+              </tr>
+              <tr>
+                <td><strong>Backend</strong></td>
+                <td>Spring Boot 4.1 (Java 21), Spring Security</td>
+                <td>High-throughput RESTful API with automated database migrations and security filtering.</td>
+              </tr>
+              <tr>
+                <td><strong>Database</strong></td>
+                <td>PostgreSQL 17 on Amazon RDS (db.t4g.micro)</td>
+                <td>Relational data persistence storing users, orders, and 152 USDA food items.</td>
+              </tr>
+              <tr>
+                <td><strong>AI & GenAI</strong></td>
+                <td>Amazon Bedrock (Nova 2 Lite), Bedrock Guardrails</td>
+                <td>Nutritional natural language parsing and prompt safety moderation.</td>
+              </tr>
+              <tr>
+                <td><strong>Compute</strong></td>
+                <td>Amazon ECS (Fargate), Amazon ECR, Docker</td>
+                <td>Serverless container execution (0.5 vCPU, 1 GB RAM active task).</td>
+              </tr>
+              <tr>
+                <td><strong>Networking</strong></td>
+                <td>Amazon CloudFront, Application Load Balancer, VPC</td>
+                <td>Global CDN acceleration, Layer-7 load balancing, and private network isolation.</td>
+              </tr>
+              <tr>
+                <td><strong>Security</strong></td>
+                <td>Amazon Cognito, AWS Secrets Manager, IAM Roles</td>
+                <td>Identity provider, centralized credential vault, and least-privilege policies.</td>
+              </tr>
+              <tr>
+                <td><strong>IaC & CI/CD</strong></td>
+                <td>Terraform, GitHub Actions, AWS OIDC</td>
+                <td>100% Infrastructure as Code and automated delivery pipeline without static access keys.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="report-p" style="margin-top: 18px;"><strong>Five Project Phases:</strong></p>
+        <div class="report-table-wrapper">
+          <table class="report-table">
+            <thead>
+              <tr>
+                <th style="width: 24%;">Phase Timeline</th>
+                <th style="width: 30%;">Key Activities</th>
+                <th style="width: 46%;">Deliverables</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Oct 29 – Nov 01, 2026</strong></td>
+                <td>Project Inception & Architecture</td>
+                <td>Scope specification, AWS Well-Architected design, and USDA data model definition.</td>
+              </tr>
+              <tr>
+                <td><strong>Nov 03 – Nov 10, 2026</strong></td>
+                <td>Frontend UI & USDA Dataset</td>
+                <td>React components, Tailwind layouts, 152-product USDA data ingestion and JPA entities.</td>
+              </tr>
+              <tr>
+                <td><strong>Nov 11 – Nov 12, 2026</strong></td>
+                <td>AWS Infrastructure Provisioning</td>
+                <td>Terraform modules deploying VPC, Subnets, RDS, ECR, ECS Fargate, ALB, and CloudFront.</td>
+              </tr>
+              <tr>
+                <td><strong>Nov 13 – Nov 18, 2026</strong></td>
+                <td>AI Integration & Business Logic</td>
+                <td>Bedrock Nova 2 Lite prompt engineering, Guardrails configuration, cart, and VNPAY Sandbox.</td>
+              </tr>
+              <tr>
+                <td><strong>Nov 20 – Nov 22, 2026</strong></td>
+                <td>End-to-End Testing & Optimization</td>
+                <td>Integration testing, cost reconciliation, security hardening, and final technical report.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 5. AWS COST ESTIMATION -->
+      <section class="report-section">
+        <h2 class="report-h2">5. AWS Cost Estimation</h2>
+        <p class="report-p">
+          Expenditures are modeled across three operational scenarios and reconciled against empirical data from <strong>AWS Cost Explorer</strong>:
+        </p>
+
+        <p class="report-p"><strong>Table 1: Three-Scenario Monthly Cost Comparison (USD/month):</strong></p>
+        <div class="report-table-wrapper">
+          <table class="report-table">
+            <thead>
+              <tr>
+                <th style="width: 40%;">AWS Service</th>
+                <th class="text-right" style="width: 20%;">Demo (~4h/day)</th>
+                <th class="text-right" style="width: 20%;">24/7 Continuous</th>
+                <th class="text-right" style="width: 20%;">Proposed Production</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Amazon RDS PostgreSQL (db.t4g.micro)</td>
+                <td class="text-right">~4</td>
+                <td class="text-right">~22</td>
+                <td class="text-right">~70</td>
+              </tr>
+              <tr>
+                <td>Application Load Balancer (ALB)</td>
+                <td class="text-right">~3</td>
+                <td class="text-right">~20</td>
+                <td class="text-right">~22</td>
+              </tr>
+              <tr>
+                <td>Amazon ECS Fargate (0.5 vCPU, 1 GB RAM)</td>
+                <td class="text-right">~2.5</td>
+                <td class="text-right">~15</td>
+                <td class="text-right">~30</td>
+              </tr>
+              <tr>
+                <td>Public IPv4 Address</td>
+                <td class="text-right">~2</td>
+                <td class="text-right">~11</td>
+                <td class="text-right">~11</td>
+              </tr>
+              <tr>
+                <td>AWS Secrets Manager</td>
+                <td class="text-right">0.8</td>
+                <td class="text-right">0.8</td>
+                <td class="text-right">0.8</td>
+              </tr>
+              <tr>
+                <td>Amazon Bedrock (Nova 2 Lite)</td>
+                <td class="text-right">&lt; 1</td>
+                <td class="text-right">&lt; 1</td>
+                <td class="text-right">Usage-based</td>
+              </tr>
+              <tr>
+                <td>CloudFront, Cognito, CloudTrail, S3, ECR, CloudWatch</td>
+                <td class="text-right">~0–1</td>
+                <td class="text-right">~1–3</td>
+                <td class="text-right">~5</td>
+              </tr>
+              <tr>
+                <td>AWS WAF (Optional)</td>
+                <td class="text-right">0</td>
+                <td class="text-right">~8–10</td>
+                <td class="text-right">~10</td>
+              </tr>
+              <tr class="total-row">
+                <td>Projected Total (USD/month)</td>
+                <td class="text-right">~12–18</td>
+                <td class="text-right">~65–75</td>
+                <td class="text-right">~150–200</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="report-p" style="margin-top: 18px;"><strong>Table 2: Empirical Spending from AWS Cost Explorer (Nov 01 – Nov 21, 2026):</strong></p>
+        <div class="report-table-wrapper">
+          <table class="report-table">
+            <thead>
+              <tr>
+                <th style="width: 50%;">Primary AWS Service Item</th>
+                <th class="text-right" style="width: 25%;">Actual Incurred Cost (USD)</th>
+                <th style="width: 25%;">Operational Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Amazon RDS PostgreSQL (db.t4g.micro)</td>
+                <td class="text-right font-bold">2.77</td>
+                <td>Instance hours and 20 GB gp3 storage.</td>
+              </tr>
+              <tr>
+                <td>Application Load Balancer (ALB)</td>
+                <td class="text-right font-bold">1.29</td>
+                <td>Load balancer active hours and integration testing traffic.</td>
+              </tr>
+              <tr>
+                <td>Amazon ECS Fargate</td>
+                <td class="text-right font-bold">1.21</td>
+                <td>Serverless container compute runtime for active tasks.</td>
+              </tr>
+              <tr>
+                <td>Public IPv4 Address</td>
+                <td class="text-right font-bold">0.74</td>
+                <td>Public IPv4 allocation fees for task in public subnet.</td>
+              </tr>
+              <tr>
+                <td>Amazon Bedrock (Nova 2 Lite)</td>
+                <td class="text-right font-bold">0.21</td>
+                <td>Token processing for nutrition natural language queries.</td>
+              </tr>
+              <tr>
+                <td>AWS Secrets Manager</td>
+                <td class="text-right font-bold">0.20</td>
+                <td>Encrypted credential storage and retrieval API calls.</td>
+              </tr>
+              <tr class="total-row">
+                <td>Total Major Services Spend</td>
+                <td class="text-right">6.44</td>
+                <td>100% Offset by Promotional AWS Credits</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="report-p" style="font-size: 12.5px; color: #64748B; font-style: italic;">
+          * Note: Figures represent dominant expenditures incurred from Nov 01 to Nov 21, 2026. 
+          The production scenario reflects future architectural recommendations not yet deployed during the internship.
+        </p>
+      </section>
+
+      <!-- 6. SECURITY AND RISK MANAGEMENT -->
+      <section class="report-section">
+        <h2 class="report-h2">6. Security & Risk Management</h2>
+        <p class="report-p"><strong>Implemented Multi-Layered Security Controls:</strong></p>
+        <ul class="report-list">
+          <li><strong>Stateless Authentication with Cognito JWT:</strong> RSA cryptographic validation on incoming bearer tokens; completely stateless backend without session affinity.</li>
+          <li><strong>IAM Least Privilege & OIDC:</strong> Dedicated IAM Task and Execution Roles; GitHub Actions deployments use AWS OIDC without static long-lived credentials.</li>
+          <li><strong>AWS Secrets Manager:</strong> Database credentials and API keys are encrypted at rest and injected directly at container boot.</li>
+          <li><strong>Network Isolation & Private Subnets:</strong> RDS PostgreSQL resides strictly within private subnets, accepting ingress only from the ECS task Security Group on port 5432.</li>
+          <li><strong>Bedrock Guardrails Safety:</strong> Proactive defense filtering prompt injection attempts and blocking unauthorized clinical advice.</li>
+          <li><strong>Custom Secret Header Defense:</strong> CloudFront injects a custom cryptographic header; direct requests to the ALB public DNS are rejected with 403 Forbidden.</li>
+          <li><strong>AWS Budgets & SNS Alerting:</strong> Real-time budget threshold monitors dispatching immediate email alerts via Amazon SNS if spend crosses 80%.</li>
+          <li><strong>AWS WAF (Production Proposal):</strong> Web Application Firewall evaluating managed rulesets against SQLi, XSS, and volumetric attacks.</li>
+        </ul>
+
+        <p class="report-p" style="margin-top: 18px;"><strong>Risk Analysis and Mitigation Strategy:</strong></p>
+        <div class="report-table-wrapper">
+          <table class="report-table">
+            <thead>
+              <tr>
+                <th style="width: 25%;">Identified Risk</th>
+                <th style="width: 35%;">Severity & Impact</th>
+                <th style="width: 40%;">Implemented Mitigation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Cloud Cost Overrun</strong></td>
+                <td>Medium – Potential budget depletion from forgotten running resources.</td>
+                <td>AWS Budgets configured with SNS alerts; single active ECS task running during demo hours; lightweight db.t4g.micro RDS instance.</td>
+              </tr>
+              <tr>
+                <td><strong>AI Hallucination</strong></td>
+                <td>High – Fabricated calorie or macro figures posing potential health concerns.</td>
+                <td>AI scope strictly restricted to intent parsing; 100% of nutritional figures are retrieved directly from PostgreSQL USDA tables.</td>
+              </tr>
+              <tr>
+                <td><strong>Single-AZ Outage</strong></td>
+                <td>Low (Demo Environment) – Brief downtime if the primary Singapore AZ experiences disruption.</td>
+                <td>ECS service automatically restarts containers upon failure; Terraform manifests already define a secondary standby subnet for Multi-AZ upgrades.</td>
+              </tr>
+              <tr>
+                <td><strong>Allergen Ingestion Risk</strong></td>
+                <td>High – Undetected allergens posing severe health threats to consumers.</td>
+                <td>Fail-closed verification: if an item has ambiguous allergen tags matching user exclusion criteria, it is automatically omitted from suggestions.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 7. RESULTS AND FUTURE ROADMAP -->
+      <section class="report-section">
+        <h2 class="report-h2">7. Results & Future Roadmap</h2>
+        <p class="report-p"><strong>Key Project Accomplishments:</strong></p>
+        <ul class="report-list">
+          <li>End-to-end cloud deployment of a full-stack personalized nutrition platform on AWS.</li>
+          <li>Robust serverless container operation using Amazon ECS Fargate and managed PostgreSQL RDS.</li>
+          <li>Accurate nutritional intent extraction with Amazon Bedrock Nova 2 Lite in Tokyo.</li>
+          <li>152 items standardized with 9 allergen filters and 6 dietary tags according to USDA FoodData Central.</li>
+          <li>100% Terraform coverage with secure GitHub Actions OIDC CI/CD automated deployment.</li>
+          <li>Incurred only $6.44 over three weeks, fully offset by promotional AWS credits.</li>
+        </ul>
+
+        <p class="report-p" style="margin-top: 18px;"><strong>Production Roadmap (Future Enhancements - Not Yet Deployed):</strong></p>
+        <ul class="report-list">
+          <li><strong>Amazon RDS Multi-AZ Deployment:</strong> Enable automatic synchronous standby replica failover achieving 99.95% availability SLA.</li>
+          <li><strong>Multi-Task ECS Fargate Auto-Scaling:</strong> Scale from 1 task to minimum 2 tasks distributed across multiple AZs with metric-based autoscaling.</li>
+          <li><strong>End-to-End HTTPS Origin Encryption:</strong> Attach AWS Certificate Manager (ACM) public certificates to the ALB with custom Route 53 domain routing.</li>
+          <li><strong>Permanent AWS WAF Protection:</strong> Deploy AWS WAF at the CloudFront tier with managed rule groups against layer-7 exploitation.</li>
+          <li><strong>Automated Backups & Cross-Region DR:</strong> Automated daily snapshots with asynchronous cross-region replication for disaster recovery.</li>
+          <li><strong>Deep Nutrition Algorithms:</strong> Expand to automated weekly meal planning workflows based on long-term user health metrics.</li>
+        </ul>
+      </section>
+    </div>
+  `;
+}
+
+function renderProposalView() {
+  const container = document.getElementById('proposal-content-container');
+  if (!container) return;
+
+  const lang = (window.app && window.app.currentLang) || 'vi';
+  container.innerHTML = lang === 'en' ? getProposalEnHtml() : getProposalViHtml();
+}
+
+function renderProposalInputs() {
+  renderProposalView();
+}
+
+function setupProposal() {
+  renderProposalView();
+}
 
 // ==========================================
 // 9. 3. BLOGS POSTED MODULE
@@ -6923,21 +7814,2568 @@ function setupEvents() {}
 // ==========================================
 // 11. 5. WORKSHOP STEPS
 // ==========================================
-function setupWorkshopSteps() {
-  const stepBtns = document.querySelectorAll('.ws-step-btn');
-  stepBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const stepId = btn.getAttribute('data-step');
-      stepBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+// Workshop Full Implementation
+let currentWorkshopStepId = 'ws-5-1';
 
-      document.querySelectorAll('.ws-step-pane').forEach(pane => {
-        pane.classList.remove('active');
-      });
-      const targetPane = document.getElementById(`pane-${stepId}`);
-      if (targetPane) targetPane.classList.add('active');
-    });
+function switchWorkshopTab(stepId) {
+  currentWorkshopStepId = stepId;
+  const tabs = document.querySelectorAll('.ws-tab-btn');
+  tabs.forEach(tab => {
+    tab.classList.toggle('active', tab.getAttribute('data-step') === stepId);
   });
+
+  const panes = document.querySelectorAll('.ws-module-pane');
+  panes.forEach(pane => {
+    pane.classList.toggle('active', pane.id === `pane-${stepId}`);
+  });
+
+  const container = document.getElementById('workshop-content-container');
+  if (container) {
+    container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+function copyCodeSnippet(btn) {
+  const wrap = btn.closest('.code-snippet-wrap');
+  if (!wrap) return;
+  const code = wrap.querySelector('code');
+  if (!code) return;
+
+  const text = (code.innerText || code.textContent || '').trim();
+  const isEn = btn.textContent.trim().toLowerCase() === 'copy';
+  const copiedMsg = isEn ? 'Copied!' : 'Đã sao chép!';
+  navigator.clipboard.writeText(text).then(() => {
+    const originalText = btn.textContent;
+    btn.textContent = copiedMsg;
+    btn.style.borderColor = '#10B981';
+    btn.style.color = '#10B981';
+    setTimeout(() => {
+      btn.textContent = originalText;
+      btn.style.borderColor = '';
+      btn.style.color = '';
+    }, 2000);
+  }).catch(err => {
+    console.error('Copy failed: ', err);
+  });
+}
+
+function renderEvidenceBox(path, title, caption, isVi) {
+  const clickTooltip = isVi ? 'Nhấp để xem ảnh phóng to' : 'Click to enlarge image';
+  const tagLabel = isVi ? 'Ảnh minh chứng' : 'Evidence Screenshot';
+  const placeholderNote = isVi 
+    ? 'Hình ảnh minh chứng sẽ được bổ sung.' 
+    : 'Evidence screenshot will be updated.';
+
+  return `
+    <div class="ws-evidence-box">
+      <div class="ws-evidence-header">
+        <span class="ws-evidence-tag">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>${tagLabel}</span>
+        </span>
+        <span class="ws-evidence-path">${path}</span>
+      </div>
+      <div class="ws-evidence-preview" onclick="openBlogImageModal('${path}', '${title}')" title="${clickTooltip}">
+        <img src="${path}" alt="${title}" class="ws-evidence-img" 
+             onload="this.style.display='inline-block'; const p = this.nextElementSibling; if (p) p.style.display='none';" 
+             onerror="this.style.display='none'; const p = this.nextElementSibling; if (p) p.style.display='flex';" 
+             loading="lazy" />
+        <div class="ws-evidence-placeholder">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <div class="ws-placeholder-title">${title}</div>
+          <div class="ws-placeholder-desc">${placeholderNote}</div>
+        </div>
+      </div>
+      <div class="ws-evidence-caption">
+        <strong>${title}:</strong> ${caption}
+      </div>
+    </div>
+  `;
+}
+
+function renderPrevNextBar(prevId, prevTitle, nextId, nextTitle) {
+  return `
+    <div class="ws-prev-next-bar">
+      ${prevId 
+        ? `<button type="button" class="ws-nav-btn" onclick="switchWorkshopTab('${prevId}')">← ${prevTitle}</button>` 
+        : `<span></span>`}
+      ${nextId 
+        ? `<button type="button" class="ws-nav-btn" onclick="switchWorkshopTab('${nextId}')">${nextTitle} →</button>` 
+        : `<span></span>`}
+    </div>
+  `;
+}
+
+
+function getWorkshopViHtml() {
+  return `
+    <div class="tech-report">
+      <!-- HEADER -->
+      <header>
+        <div class="report-eyebrow">Technical Workshop Guide</div>
+        <h1 class="report-title">Triển khai Nền tảng Dinh dưỡng Cá nhân hóa trên AWS</h1>
+        <p class="report-subtitle">Hands-on Deployment Guide: Spring Boot 4, React 19, ECS Fargate, RDS PostgreSQL, Bedrock AI & Terraform</p>
+        <p class="report-intro">
+          Tài liệu hướng dẫn kỹ thuật thực hành từng bước (Step-by-Step Lab Guide) giúp kỹ sư và sinh viên triển khai hoàn chỉnh 
+          hệ thống thương mại điện tử dinh dưỡng thông minh trên hạ tầng đám mây AWS. Toàn bộ hạ tầng được tự động hóa bằng Terraform, 
+          ứng dụng chạy trên container không máy chủ ECS Fargate, cơ sở dữ liệu quan hệ RDS PostgreSQL và tích hợp trợ lý AI Amazon Bedrock Nova 2 Lite.
+        </p>
+      </header>
+
+      <!-- NAVIGATION TABS -->
+      <nav class="ws-nav-tabs">
+        <button type="button" class="ws-tab-btn ${currentWorkshopStepId === 'ws-5-1' ? 'active' : ''}" data-step="ws-5-1" onclick="switchWorkshopTab('ws-5-1')">5.1 Giới thiệu</button>
+        <button type="button" class="ws-tab-btn ${currentWorkshopStepId === 'ws-5-2' ? 'active' : ''}" data-step="ws-5-2" onclick="switchWorkshopTab('ws-5-2')">5.2 Điều kiện chuẩn bị</button>
+        <button type="button" class="ws-tab-btn ${currentWorkshopStepId === 'ws-5-3' ? 'active' : ''}" data-step="ws-5-3" onclick="switchWorkshopTab('ws-5-3')">5.3 Xây dựng hạ tầng</button>
+        <button type="button" class="ws-tab-btn ${currentWorkshopStepId === 'ws-5-4' ? 'active' : ''}" data-step="ws-5-4" onclick="switchWorkshopTab('ws-5-4')">5.4 Triển khai ứng dụng</button>
+        <button type="button" class="ws-tab-btn ${currentWorkshopStepId === 'ws-5-5' ? 'active' : ''}" data-step="ws-5-5" onclick="switchWorkshopTab('ws-5-5')">5.5 Tích hợp Bedrock</button>
+        <button type="button" class="ws-tab-btn ${currentWorkshopStepId === 'ws-5-6' ? 'active' : ''}" data-step="ws-5-6" onclick="switchWorkshopTab('ws-5-6')">5.6 Giám sát & Chi phí</button>
+        <button type="button" class="ws-tab-btn ${currentWorkshopStepId === 'ws-5-7' ? 'active' : ''}" data-step="ws-5-7" onclick="switchWorkshopTab('ws-5-7')">5.7 Dọn dẹp tài nguyên</button>
+      </nav>
+
+            <!-- MODULE 5.1 -->
+      <div class="ws-module-pane ${currentWorkshopStepId === 'ws-5-1' ? 'active' : ''}" id="pane-ws-5-1">
+        <section class="report-section">
+          <h2 class="report-h2">5.1. Giới thiệu Workshop</h2>
+          
+          <h3 class="report-h3" style="margin-top:0;">Xây dựng Nền tảng Thương mại Điện tử Dinh dưỡng Cá nhân hóa trên AWS</h3>
+          <p class="report-p">
+            Workshop hướng dẫn triển khai nền tảng thương mại điện tử dinh dưỡng trên AWS, sử dụng React, Spring Boot và PostgreSQL, kết hợp Amazon Bedrock để hỗ trợ tra cứu thông tin thực phẩm bằng ngôn ngữ tự nhiên.
+          </p>
+          <p class="report-p">
+            Người học sẽ thực hành xây dựng hạ tầng, triển khai ứng dụng, tích hợp AI, giám sát hệ thống và quản lý chi phí trên AWS.
+          </p>
+
+          <h3 class="report-h3">Mục tiêu Workshop</h3>
+          <ul class="report-list">
+            <li>Hiểu kiến trúc ứng dụng web trên AWS.</li>
+            <li>Triển khai frontend, backend và database.</li>
+            <li>Tích hợp Amazon Bedrock để hỗ trợ tra cứu dinh dưỡng.</li>
+            <li>Thiết lập giám sát, bảo mật và tối ưu chi phí.</li>
+          </ul>
+
+          <h3 class="report-h3">Kiến trúc tổng quan</h3>
+          <div class="report-figure" style="margin: 18px 0;">
+            <div class="report-figure-img-wrap" onclick="openBlogImageModal('assets/images/proposal/aws-architecture.png', 'Kiến trúc tổng quan hệ thống Nutrition E-Commerce trên AWS')" title="Nhấp để phóng to">
+              <img src="assets/images/proposal/aws-architecture.png" alt="Kiến trúc tổng quan hệ thống Nutrition E-Commerce trên AWS" class="report-figure-img" loading="lazy" />
+            </div>
+            <div class="report-figure-caption"><em>Kiến trúc tổng quan hệ thống Nutrition E-Commerce trên AWS.</em></div>
+          </div>
+          <p class="report-p">
+            Ứng dụng React được phân phối qua CloudFront và S3. Các yêu cầu API được chuyển đến Spring Boot trên ECS Fargate thông qua ALB. PostgreSQL được lưu trữ trên Amazon RDS, Cognito cung cấp xác thực người dùng và Amazon Bedrock hỗ trợ tra cứu dinh dưỡng. Hạ tầng ứng dụng đặt tại Singapore, riêng Bedrock và Guardrails sử dụng Tokyo.
+          </p>
+
+          <h3 class="report-h3">Lộ trình thực hành</h3>
+          <ul class="report-list">
+            <li><strong>5.2. Điều kiện chuẩn bị:</strong> Chuẩn bị AWS Account và công cụ phát triển.</li>
+            <li><strong>5.3. Hạ tầng cốt lõi:</strong> Triển khai tài nguyên AWS bằng Terraform.</li>
+            <li><strong>5.4. Triển khai ứng dụng:</strong> Đưa React và Spring Boot lên AWS.</li>
+            <li><strong>5.5. Amazon Bedrock:</strong> Tích hợp AI tra cứu dinh dưỡng.</li>
+            <li><strong>5.6. Giám sát và chi phí:</strong> Theo dõi hệ thống, bảo mật và ngân sách.</li>
+            <li><strong>5.7. Dọn tài nguyên:</strong> Dừng hoặc xóa tài nguyên sau workshop.</li>
+          </ul>
+
+          <h3 class="report-h3">Kết quả mong đợi</h3>
+          <p class="report-p">
+            Sau workshop, người học có thể triển khai và vận hành thử nghiệm một ứng dụng thương mại điện tử dinh dưỡng tích hợp AI trên AWS, đồng thời hiểu cách theo dõi và kiểm soát chi phí.
+          </p>
+
+          ${renderPrevNextBar('', '', 'ws-5-2', '5.2 Điều kiện chuẩn bị')}
+        </section>
+      </div>
+
+            <!-- MODULE 5.2 -->
+      <div class="ws-module-pane ${currentWorkshopStepId === 'ws-5-2' ? 'active' : ''}" id="pane-ws-5-2">
+        <section class="report-section">
+          <h2 class="report-h2">5.2 – Điều kiện chuẩn bị</h2>
+          <p class="report-p">
+            Trước khi triển khai nền tảng Nutrition E-Commerce trên AWS, người học cần chuẩn bị tài khoản AWS, các công cụ phát triển, quyền truy cập IAM và nơi lưu trữ Terraform State.
+          </p>
+          <p class="report-p">
+            Bài thực hành hướng dẫn kiểm tra môi trường, cấu hình AWS IAM Identity Center và khởi tạo Terraform Backend trên Amazon S3.
+          </p>
+
+          <h3 class="report-h3">5.2.1. Chuẩn bị công cụ</h3>
+          <p class="report-p">
+            Bảng dưới đây liệt kê các công cụ và runtime bắt buộc để thực hiện bài thực hành:
+          </p>
+
+          <div class="report-table-wrapper">
+            <table class="report-table">
+              <thead>
+                <tr>
+                  <th style="width: 25%;">Công cụ</th>
+                  <th style="width: 75%;">Yêu cầu</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-bold">AWS Account</td>
+                  <td>Có quyền cấu hình các dịch vụ cần thiết (VPC, ECS, RDS, IAM, CloudFront, Bedrock)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">AWS CLI</td>
+                  <td>Phiên bản 2 (AWS CLI v2.x)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Terraform</td>
+                  <td>Phiên bản ≥ 1.10 (dự án kiểm thử với Terraform v1.10.5)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Java</td>
+                  <td>JDK 21 (Eclipse Temurin hoặc OpenJDK 21)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Node.js & npm</td>
+                  <td>Phiên bản tương thích với repository (Node.js ≥ 20.x hoặc 22.x LTS, npm ≥ 10.x)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Docker</td>
+                  <td>Docker Desktop hoặc Docker Engine hỗ trợ build container đa nền tảng (<code>linux/arm64</code>)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Git</td>
+                  <td>Quản lý mã nguồn (Git ≥ 2.40.x)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">PowerShell</td>
+                  <td>PowerShell 7 hoặc Windows PowerShell để chạy lệnh minh họa và script vòng đời trên Windows</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="report-h3">5.2.2. Cấu hình quyền truy cập AWS</h3>
+          <p class="report-p">
+            Hạ tầng dự án được phân quyền dựa trên nguyên tắc đặc quyền tối thiểu (Least Privilege) với các thành phần chính:
+          </p>
+          <ul class="report-list">
+            <li><strong>AWS IAM Identity Center:</strong> Quản lý quyền truy cập tập trung vào tài khoản AWS thông qua xác thực Single Sign-On (SSO).</li>
+            <li><strong>Permission set <code>nutrition-plan</code>:</strong> Chỉ gồm chính sách <code>ReadOnlyAccess</code> của AWS, dùng để kiểm tra cú pháp, validate và lập kế hoạch thực thi (<code>terraform plan</code>).</li>
+            <li><strong>Permission set <code>nutrition-apply</code>:</strong> Gồm chính sách <code>ReadOnlyAccess</code> kết hợp cùng Inline Policy <code>nutrition-apply-policy.json</code> để triển khai tài nguyên được phê duyệt.</li>
+            <li><strong>Chính sách <code>nutrition-boundary</code>:</strong> Đóng vai trò trần quyền tối đa (Permission Boundary) cho toàn bộ IAM Role do Terraform khởi tạo (ECS Task Role, Execution Role, GitHub Actions OIDC Role).</li>
+          </ul>
+
+          <p class="report-p">
+            <strong>Các bước cấu hình và xác minh trong IAM Identity Center (theo <code>docs/aws-setup/README.md</code>):</strong>
+          </p>
+          <ol class="report-list" style="list-style-type: decimal; padding-left: 20px;">
+            <li>Đăng nhập AWS Management Console với tài khoản quản trị (Root hoặc Admin).</li>
+            <li>Mở <strong>IAM Policies</strong> và tạo chính sách <code>nutrition-boundary</code> từ file <code>docs/aws-setup/nutrition-boundary-policy.json</code>. Kiểm tra Access Analyzer / Policy Validation không báo lỗi cú pháp.</li>
+            <li>Mở <strong>IAM Identity Center &rarr; Permission sets</strong>:
+              <ul style="list-style-type: circle; padding-left: 20px; margin-top: 4px;">
+                <li>Tạo permission set <code>nutrition-plan</code> với AWS managed policy <code>ReadOnlyAccess</code>.</li>
+                <li>Tạo permission set <code>nutrition-apply</code> với <code>ReadOnlyAccess</code> và dán nội dung từ <code>docs/aws-setup/nutrition-apply-policy.json</code> vào Inline policy. Thời hạn phiên (Session duration) thiết lập 4 giờ.</li>
+              </ul>
+            </li>
+            <li>Gán (Assign) cả hai permission set trên cho người dùng trên tài khoản AWS đích.</li>
+            <li>Xác minh các ngoại lệ theo Region: Toàn bộ dịch vụ dự án giới hạn tại <code>ap-southeast-1</code> (Singapore); CloudFront là dịch vụ toàn cầu và S3 giới hạn theo tên bucket <code>nutrition-*</code>; ngoại lệ <code>ap-northeast-1</code> (Tokyo) được mở riêng cho Amazon Bedrock và Guardrails.</li>
+          </ol>
+
+          <p class="report-p" style="font-size: 13.5px; color: #B45309; background: #FFFBEB; padding: 10px 14px; border-left: 3px solid #F59E0B; border-radius: 2px;">
+            <strong>Lưu ý bảo mật:</strong> Tuyệt đối không cấp quyền <code>AdministratorAccess</code> không giới hạn. Dự án sử dụng Permission Boundary để khóa trần quyền và ngăn chặn việc gán quyền leo thang ngoài ý muốn.
+          </p>
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.2-prerequisites/iam-permission-sets.png',
+            'Hình 5.2.1. Permission Sets trong AWS IAM Identity Center',
+            'Cấu hình permission sets nutrition-plan và nutrition-apply trong Identity Center.',
+            true
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.2-prerequisites/iam-permission-boundary.png',
+            'Hình 5.2.2. IAM Permission Boundary của dự án',
+            'Chính sách nutrition-boundary giới hạn trần quyền tối đa cho các role của ứng dụng.',
+            true
+          )}
+
+          <h3 class="report-h3">5.2.3. Đăng nhập AWS CLI bằng SSO</h3>
+          <p class="report-p">
+            Đăng nhập vào phiên làm việc SSO qua cấu hình session <code>nutrition</code> đã thiết lập trên AWS CLI:
+          </p>
+
+          <div class="code-snippet-wrap">
+            <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+            <pre><code>aws sso login --sso-session nutrition</code></pre>
+          </div>
+
+          <p class="report-p">
+            Sau khi trình duyệt xác thực thành công, xác minh danh tính đang hoạt động bằng profile <code>nutrition-plan</code>:
+          </p>
+
+          <div class="code-snippet-wrap">
+            <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+            <pre><code>aws sts get-caller-identity --profile nutrition-plan</code></pre>
+          </div>
+
+          <p class="report-p">
+            <strong>Kết quả mong đợi:</strong> Lệnh trả về cấu trúc JSON hợp lệ chứa các trường <code>UserId</code>, <code>Account</code> và <code>Arn</code> tương ứng với permission set đang đăng nhập. (Để đảm bảo nguyên tắc bảo mật, thông tin Account ID và Arn thực tế được bảo vệ và không đưa vào tài liệu công khai).
+          </p>
+
+          <p class="report-p" style="font-size: 13.5px; color: #475569;">
+            <strong>Xử lý lỗi <code>InvalidGrantException</code>:</strong> Lỗi này xuất hiện khi token của phiên SSO đã hết thời hạn hợp lệ. Thực hiện đăng nhập lại bằng lệnh <code>aws sso login --sso-session nutrition</code> để cấp token mới.
+          </p>
+
+          <h3 class="report-h3">5.2.4. Khởi tạo Terraform Backend trên S3</h3>
+          <p class="report-p">
+            Terraform State lưu trữ toàn bộ trạng thái tài nguyên AWS do Terraform quản lý. Dự án sử dụng Amazon S3 làm Remote Backend với mã hóa tĩnh SSE-S3 (AES256), bật tính năng kiểm soát phiên bản (Versioning) và khóa trạng thái đồng thời bằng tham số native <code>use_lockfile = true</code> của Terraform 1.10+.
+          </p>
+
+          <p class="report-p">
+            Các bước thực hiện theo hướng dẫn tại <code>infra/README.md</code>:
+          </p>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">1</span> Khởi tạo Terraform Bootstrap</div>
+            <p class="report-p">Di chuyển vào thư mục bootstrap và tải AWS provider:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>terraform -chdir=infra/bootstrap init</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">2</span> Kiểm tra Terraform Plan</div>
+            <p class="report-p">Gán biến định danh người sở hữu và xuất bản kế hoạch triển khai ra file nhị phân:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>$env:TF_VAR_owner = "your-name"
+terraform -chdir=infra/bootstrap plan -out=tfplan</code></pre>
+            </div>
+            <p class="report-p" style="font-size: 13.5px; color: #64748B;">
+              <em>Người học đọc kỹ danh sách tài nguyên S3 bucket dự kiến tạo và kiểm tra không có tài nguyên lạ trước khi thực hiện apply.</em>
+            </p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">3</span> Triển khai Bootstrap</div>
+            <p class="report-p">Chuyển sang profile <code>nutrition-apply</code> để áp dụng bản kế hoạch:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>$env:AWS_PROFILE = "nutrition-apply"
+terraform -chdir=infra/bootstrap apply tfplan</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">4</span> Lấy thông tin State Bucket</div>
+            <p class="report-p">Truy vấn tên bucket S3 vừa được tạo từ output của Terraform:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>terraform -chdir=infra/bootstrap output state_bucket</code></pre>
+            </div>
+            <p class="report-p">Tên bucket có định dạng duy nhất: <code>nutrition-dev-tfstate-&lt;account-id&gt;</code>.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">5</span> Cấu hình Terraform Backend</div>
+            <p class="report-p">Sao chép file mẫu <code>backend.hcl.example</code> có sẵn trong thư mục môi trường dev và điền tên bucket thực tế:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>cp infra/envs/dev/backend.hcl.example infra/envs/dev/backend.hcl</code></pre>
+            </div>
+            <p class="report-p">Nội dung file <code>infra/envs/dev/backend.hcl</code> sau khi điền:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>HCL</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>bucket = "nutrition-dev-tfstate-&lt;account-id&gt;"</code></pre>
+            </div>
+          </div>
+
+          <p class="report-p">
+            <strong>Đặc tính bảo vệ của S3 State Backend:</strong>
+          </p>
+          <ul class="report-list">
+            <li>Terraform State được lưu trữ an toàn trong bucket S3 với mã hóa phía máy chủ (SSE-S3).</li>
+            <li>Tham số <code>use_lockfile = true</code> kích hoạt cơ chế khóa native của S3, loại bỏ hoàn toàn nguy cơ ghi đè đồng thời mà không cần bảng DynamoDB bổ sung.</li>
+            <li>Bucket được cấu hình <code>prevent_destroy = true</code> trong Terraform bootstrap để bảo vệ khỏi các thao tác xóa nhầm ngoài ý muốn.</li>
+          </ul>
+
+          <p class="report-p" style="font-size: 13.5px; color: #1E293B; background: #F1F5F9; padding: 12px 14px; border-left: 3px solid #3B82F6; border-radius: 2px;">
+            <strong>Lưu ý về AWS Budgets:</strong> Trước khi triển khai các dịch vụ tính phí, người học nên thiết lập ngân sách cảnh báo trên AWS Budgets. Dự án sử dụng mức ngân sách tham chiếu 100 USD. Hướng dẫn chi tiết cấu hình ngân sách, thông báo email và ảnh minh chứng sẽ được trình bày trong bài <strong>5.6 – Giám sát, bảo mật và chi phí</strong>. Module bootstrap hiện tại không tạo AWS Budgets tự động.
+          </p>
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.2-prerequisites/terraform-state-s3.png',
+            'Hình 5.2.3. Amazon S3 Bucket lưu Terraform State',
+            'Bucket S3 nutrition-dev-tfstate bật mã hóa SSE-S3 và cơ chế khóa use_lockfile.',
+            true
+          )}
+
+          <h3 class="report-h3">5.2.5. Kiểm tra kết quả</h3>
+          <p class="report-p">
+            Xác nhận danh sách các tiêu chí trước khi chuyển sang bài thực hành tiếp theo:
+          </p>
+          <ul class="report-list">
+            <li>&#10003; AWS CLI đăng nhập thành công qua phiên SSO và phản hồi mã thoát 0.</li>
+            <li>&#10003; Cả hai profile <code>nutrition-plan</code> và <code>nutrition-apply</code> được cấu hình đúng.</li>
+            <li>&#10003; Chính sách <code>nutrition-boundary</code> tồn tại và hợp lệ trong AWS IAM Policies.</li>
+            <li>&#10003; Khởi tạo và triển khai Terraform Bootstrap thành công mà không có lỗi phân quyền.</li>
+            <li>&#10003; Bucket lưu trữ Terraform State đã được tạo tại vùng <code>ap-southeast-1</code> với đầy đủ mã hóa và chặn public access.</li>
+            <li>&#10003; File cấu hình <code>infra/envs/dev/backend.hcl</code> trỏ chính xác đến tên bucket thực tế.</li>
+            <li>&#10003; Các thông tin nhạy cảm (Account ID thực tế, khóa truy cập) không xuất hiện trong tài liệu hoặc git commit.</li>
+          </ul>
+
+          <h3 class="report-h3">5.2.6. Lưu ý và lỗi thường gặp</h3>
+          <ul class="report-list">
+            <li>
+              <strong>Phiên AWS SSO hết hạn (<code>InvalidGrantException</code> / <code>ExpiredToken</code>):</strong>
+              Thực hiện đăng nhập lại bằng lệnh <code>aws sso login --sso-session nutrition</code> để cấp token phiên mới.
+            </li>
+            <li>
+              <strong>Lỗi khóa trạng thái (Terraform State Lock):</strong>
+              Nếu state bị khóa do phiên apply trước đó bị gián đoạn đột ngột, hãy xác minh kỹ lưỡng không còn bất kỳ tiến trình Terraform nào đang thao tác trên tài nguyên. Chỉ thực hiện lệnh <code>terraform force-unlock &lt;LOCK-ID&gt;</code> khi đã xác minh an toàn và có đủ quyền hạn. Tuyệt đối không xóa file state hoặc bucket lưu trữ.
+            </li>
+            <li>
+              <strong>Lỗi quyền AWS không đủ (<code>AccessDeniedException</code>):</strong>
+              Kiểm tra biến môi trường <code>$env:AWS_PROFILE</code> xem đã chuyển sang profile <code>nutrition-apply</code> hay chưa. Đối chiếu quyền còn thiếu với tài liệu <code>docs/aws-setup/README.md</code>, không tự ý cấp quyền <code>AdministratorAccess</code> toàn bộ.
+            </li>
+          </ul>
+
+          ${renderPrevNextBar('ws-5-1', '5.1 Giới thiệu Workshop', 'ws-5-3', '5.3 Xây dựng hạ tầng AWS')}
+        </section>
+      </div>
+
+            <!-- MODULE 5.3 -->
+      <div class="ws-module-pane ${currentWorkshopStepId === 'ws-5-3' ? 'active' : ''}" id="pane-ws-5-3">
+        <section class="report-section">
+          <h2 class="report-h2">5.3 – Hạ tầng cốt lõi</h2>
+          <p class="report-p">
+            Bài thực hành này hướng dẫn triển khai mạng VPC, cơ sở dữ liệu Amazon RDS PostgreSQL và dịch vụ xác thực Amazon Cognito bằng Terraform. Đây là những thành phần nền tảng để triển khai backend Spring Boot trong các bước tiếp theo.
+          </p>
+
+          <!-- 5.3.1. TẠO MẠNG VPC -->
+          <h3 class="report-h3">5.3.1. Tạo mạng VPC</h3>
+          
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">A. Mục tiêu</h4>
+          <p class="report-p">
+            Triển khai hạ tầng mạng phân vùng phục vụ backend và database, bảo đảm Application Load Balancer (ALB), ECS Fargate và RDS có phạm vi truy cập phù hợp, đồng thời tối ưu chi phí bằng cách loại bỏ NAT Gateway.
+          </p>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">B. Kiến trúc mạng</h4>
+          <p class="report-p">
+            Theo thiết kế của nhóm (Quyết định D15 & D19), hạ tầng mạng bao gồm:
+          </p>
+          <ul class="report-list">
+            <li>Một VPC tại Region Singapore (<code>ap-southeast-1</code>), dải mạng mặc định <code>10.0.0.0/16</code> trải rộng trên 2 Availability Zones.</li>
+            <li>Hai Public Subnets (<code>10.0.0.0/24</code> và <code>10.0.1.0/24</code>) dành cho ALB và các container ECS Fargate.</li>
+            <li>Hai Private Database Subnets (<code>10.0.100.0/24</code> và <code>10.0.101.0/24</code>) dành riêng cho Amazon RDS, hoàn toàn không có route ra Internet.</li>
+            <li>Một Internet Gateway (IGW) kết nối VPC với mạng Internet công cộng.</li>
+            <li>Bảng định tuyến (Route Tables): Bảng public trỏ <code>0.0.0.0/0</code> ra IGW; bảng database chỉ định tuyến nội bộ VPC.</li>
+            <li><strong>S3 Gateway Endpoint:</strong> Cho phép ECS task truyền nhận dữ liệu với Amazon S3 (ảnh sản phẩm) qua mạng nội bộ AWS hoàn toàn miễn phí, không đi qua Internet Gateway.</li>
+            <li><strong>Managed Prefix List của CloudFront:</strong> Chỉ cho phép các dải địa chỉ IP xuất phát từ CloudFront truy cập vào ALB.</li>
+          </ul>
+
+          <p class="report-p">
+            <strong>Phân tách Security Groups 3 lớp độc lập:</strong>
+          </p>
+          <ul class="report-list">
+            <li><strong>ALB Security Group (<code>nutrition-dev-alb</code>):</strong> Ingress chỉ nhận HTTP (cổng 80) từ CloudFront Managed Prefix List; Egress chỉ chuyển tiếp tới Security Group của ECS trên cổng <code>8080</code>.</li>
+            <li><strong>ECS Security Group (<code>nutrition-dev-ecs</code>):</strong> Ingress chỉ nhận lưu lượng ứng dụng (cổng <code>8080</code>) từ ALB SG; Egress cho phép cổng <code>5432</code> tới RDS SG và HTTPS (cổng <code>443</code>) ra ngoài để gọi ECR, Bedrock, Cognito JWKS và CloudWatch.</li>
+            <li><strong>RDS Security Group (<code>nutrition-dev-rds</code>):</strong> Ingress chỉ cho phép kết nối PostgreSQL (cổng <code>5432</code>) duy nhất từ ECS SG; nghiêm cấm mọi truy cập từ Internet.</li>
+          </ul>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">C. Các bước thực hành</h4>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">1</span> Kiểm tra cấu hình Terraform Network</div>
+            <p class="report-p">Mở file <code>infra/modules/network/main.tf</code> để kiểm tra khai báo prefix list của CloudFront và định tuyến S3 Gateway Endpoint:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>HCL</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>data "aws_ec2_managed_prefix_list" "cloudfront" {
+  name = "com.amazonaws.global.cloudfront.origin-facing"
+}</code></pre>
+            </div>
+            <p class="report-p">Đoạn mã trên đảm bảo ALB chỉ chấp nhận các gói tin được định tuyến qua mạng phân phối CDN của CloudFront.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">2</span> Kiểm tra Terraform Variables</div>
+            <p class="report-p">Đối chiếu các biến đầu vào từ <code>infra/envs/dev/main.tf</code> được truyền cho module network:</p>
+            <ul class="report-list">
+              <li><code>name_prefix = "nutrition-dev"</code>: Tiền tố định danh tài nguyên thống nhất.</li>
+              <li><code>enable_nat = false</code>: Mặc định tắt NAT Gateway để tiết kiệm chi phí vận hành (~32 USD/tháng). ECS Fargate sẽ sử dụng Public IP trong Public Subnet để giao tiếp ra các API của AWS.</li>
+            </ul>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">3</span> Kiểm tra Terraform Plan</div>
+            <p class="report-p">Sử dụng profile <code>nutrition-plan</code> đã chuẩn bị ở Bài 5.2 để kiểm tra kế hoạch triển khai tài nguyên:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>$env:AWS_PROFILE = "nutrition-plan"
+terraform -chdir=infra/envs/dev init
+terraform -chdir=infra/envs/dev plan -var="app_running=false" -out=tfplan</code></pre>
+            </div>
+            <p class="report-p" style="font-size: 13.5px; color: #64748B;">
+              <em>Người học đọc kỹ danh sách tài nguyên mạng dự kiến được tạo: 1 VPC, 4 Subnets, 1 Internet Gateway, 2 Route Tables, 3 Security Groups và 1 VPC Endpoint.</em>
+            </p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">4</span> Triển khai hạ tầng (Apply)</div>
+            <p class="report-p">Chuyển sang profile <code>nutrition-apply</code> và áp dụng bản kế hoạch vừa kiểm tra:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>$env:AWS_PROFILE = "nutrition-apply"
+terraform -chdir=infra/envs/dev apply tfplan</code></pre>
+            </div>
+            <p class="report-p" style="font-size: 13.5px; color: #1E293B; background: #F1F5F9; padding: 10px 14px; border-left: 3px solid #3B82F6; border-radius: 2px;">
+              <strong>Lưu ý kiến trúc:</strong> Root module tại <code>infra/envs/dev/main.tf</code> quản lý đồng bộ toàn bộ tài nguyên nền tảng. Khi chạy apply, Terraform sẽ triển khai đồng thời cả mạng VPC, cơ sở dữ liệu RDS và Cognito (ở trạng thái chờ <code>app_running = false</code>). Không nên sử dụng cờ <code>-target</code> vì có thể gây sai lệch phụ thuộc state.
+            </p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">5</span> Kiểm tra kết quả trên AWS Console</div>
+            <p class="report-p">Đăng nhập AWS Management Console, điều hướng tới <strong>VPC &rarr; Your VPCs</strong> và kiểm tra:</p>
+            <ul class="report-list">
+              <li>VPC <code>nutrition-dev-vpc</code> đã sẵn sàng với dải mạng <code>10.0.0.0/16</code>.</li>
+              <li>2 Public Subnets và 2 Private Database Subnets trải đều trên 2 Availability Zones.</li>
+              <li>Internet Gateway <code>nutrition-dev-igw</code> đã đính kèm (attached) vào VPC.</li>
+              <li>Route table cho database subnets không có route trỏ ra <code>0.0.0.0/0</code>.</li>
+              <li>3 Security Groups (<code>nutrition-dev-alb</code>, <code>nutrition-dev-ecs</code>, <code>nutrition-dev-rds</code>) đã được liên kết chính xác.</li>
+              <li>VPC Endpoint cho S3 ở trạng thái <strong>Available</strong>.</li>
+            </ul>
+          </div>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">D. Hình ảnh minh chứng</h4>
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.3-core-infra/vpc-resource-map.png',
+            'Hình 5.3.1.1. VPC Resource Map',
+            'Sơ đồ phân bổ tài nguyên VPC, subnets và bảng định tuyến trên AWS Console.',
+            true
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.3-core-infra/vpc-security-groups.png',
+            'Hình 5.3.1.2. Security Groups của hệ thống',
+            'Danh sách và quy tắc kiểm soát lưu lượng ingress/egress cho ALB, ECS và RDS.',
+            true
+          )}
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">E. Kiểm tra kết quả</h4>
+          <ul class="report-list">
+            <li>&#10003; VPC và các subnets đã được tạo đúng cấu trúc 2 Availability Zones.</li>
+            <li>&#10003; ALB và ECS sử dụng Security Groups đúng vai trò và cổng chỉ định.</li>
+            <li>&#10003; RDS chỉ cho phép kết nối PostgreSQL từ ECS tasks.</li>
+            <li>&#10003; Route tables phân tách nghiêm ngặt vùng public và private database.</li>
+            <li>&#10003; S3 Gateway Endpoint ở trạng thái Available.</li>
+          </ul>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">F. Lưu ý bảo mật</h4>
+          <p class="report-p" style="font-size: 13.5px; color: #64748B;">
+            <em>Tuyệt đối không lưu trữ Account ID, IP nhạy cảm hoặc thông tin định danh nội bộ vào ảnh chụp minh chứng hoặc tài liệu công khai.</em>
+          </p>
+
+          <hr style="border: none; border-top: 1px solid #E2E8F0; margin: 32px 0;" />
+
+          <!-- 5.3.2. TẠO CƠ SỞ DỮ LIỆU AMAZON RDS -->
+          <h3 class="report-h3">5.3.2. Tạo cơ sở dữ liệu Amazon RDS</h3>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">A. Mục tiêu</h4>
+          <p class="report-p">
+            Triển khai hệ quản trị cơ sở dữ liệu quan hệ PostgreSQL 17 trên Amazon RDS, thiết lập cô lập bảo mật tuyệt đối và tự động hóa quản lý lược đồ dữ liệu bằng Flyway.
+          </p>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">B. Cấu hình cơ sở dữ liệu</h4>
+          <p class="report-p">
+            Bảng thông số kỹ thuật của Amazon RDS PostgreSQL trong môi trường dev:
+          </p>
+
+          <div class="report-table-wrapper">
+            <table class="report-table">
+              <thead>
+                <tr>
+                  <th style="width: 30%;">Thuộc tính</th>
+                  <th style="width: 70%;">Giá trị cấu hình</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-bold">Dịch vụ</td>
+                  <td>Amazon RDS for PostgreSQL (Engine version 17.x)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Instance Class</td>
+                  <td><code>db.t4g.micro</code> (Kiến trúc AWS Graviton2 ARM, tối ưu chi phí)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Storage</td>
+                  <td>20 GB gp3 (Hỗ trợ autoscaling tối đa 100 GB)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Availability</td>
+                  <td>Single-AZ (mặc định tiết kiệm chi phí demo, hỗ trợ chuyển Multi-AZ qua biến <code>rds_multi_az</code>)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Phân vùng mạng</td>
+                  <td>Private database subnets (<code>nutrition-dev-db</code>)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Truy cập công khai</td>
+                  <td>Tắt hoàn toàn (<code>publicly_accessible = false</code>)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Mã hóa dữ liệu</td>
+                  <td>Bật mã hóa tĩnh với AWS KMS (<code>storage_encrypted = true</code>)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Quản lý xác thực</td>
+                  <td>AWS Secrets Manager tự sinh và xoay vòng mật khẩu (<code>manage_master_user_password = true</code>)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Quản lý Lược đồ</td>
+                  <td>Flyway migrations V1–V11 tích hợp sẵn trong Spring Boot</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="report-p">
+            <strong>Đặc tính bảo vệ chính:</strong>
+          </p>
+          <ul class="report-list">
+            <li>RDS không thể bị truy cập trực tiếp từ Internet, ngăn chặn hoàn toàn nguy cơ rò rỉ dữ liệu qua tấn công mạng công cộng.</li>
+            <li>Security Group chỉ chấp nhận kết nối qua cổng PostgreSQL tiêu chuẩn (<code>5432</code>) từ các ECS tasks mang nhãn <code>nutrition-dev-ecs</code>.</li>
+            <li>Mật khẩu master được tạo tự động bởi Secrets Manager, không bao giờ xuất hiện dưới dạng văn bản thô (plaintext) trong code hay state file.</li>
+            <li>Flyway đảm bảo tính bất biến và đồng bộ phiên bản của cấu trúc cơ sở dữ liệu.</li>
+          </ul>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">C. Các bước thực hành</h4>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">1</span> Kiểm tra Terraform RDS Module</div>
+            <p class="report-p">Mở <code>infra/modules/rds/main.tf</code> và đối chiếu các thiết lập bảo mật cốt lõi:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>HCL</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>manage_master_user_password = true
+
+db_subnet_group_name   = aws_db_subnet_group.main.name
+vpc_security_group_ids = [var.security_group_id]
+publicly_accessible    = false
+multi_az               = var.multi_az</code></pre>
+            </div>
+            <p class="report-p">Thiết lập <code>manage_master_user_password = true</code> kích hoạt tính năng tích hợp trực tiếp với Secrets Manager của RDS mà không cần quản lý secret thủ công.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">2</span> Kiểm tra DB Subnet Group và Security Group</div>
+            <p class="report-p">Đảm bảo tài nguyên <code>aws_db_subnet_group.main</code> liên kết đầy đủ 2 subnet ID thuộc vùng private và gắn đúng Security Group ID của RDS từ module network.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">3</span> Triển khai qua Terraform</div>
+            <p class="report-p">Cơ sở dữ liệu RDS đã được tạo tự động khi áp dụng kế hoạch tại thư mục <code>infra/envs/dev</code> trong Bước 4 của mục 5.3.1. Quá trình tạo RDS PostgreSQL thường mất khoảng 5–8 phút.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">4</span> Kiểm tra RDS trên AWS Console</div>
+            <p class="report-p">Mở <strong>Amazon RDS &rarr; Databases</strong> và chọn cơ sở dữ liệu <code>nutrition-dev-postgres</code>. Kiểm tra các thông số:</p>
+            <ul class="report-list">
+              <li>Status: <strong>Available</strong> (khi bật app) hoặc <strong>Stopped</strong> (ở trạng thái tiết kiệm chi phí demo).</li>
+              <li>Engine version: PostgreSQL 17.x.</li>
+              <li>Instance: <code>db.t4g.micro</code> | Storage: 20 GB gp3.</li>
+              <li>Multi-AZ: No (Single-AZ).</li>
+              <li>Public access: <strong>No</strong>.</li>
+              <li>Security Group: <code>nutrition-dev-rds</code>.</li>
+            </ul>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">5</span> Kiểm tra AWS Secrets Manager</div>
+            <p class="report-p">Mở <strong>AWS Secrets Manager</strong> và tìm kiếm secret có định dạng <code>rds!db-...</code> được liên kết với instance RDS. Kiểm tra metadata của secret; tuyệt đối không mở hoặc chụp màn hình giá trị mật khẩu (Plaintext Secret).</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">6</span> Kiểm tra cấu trúc Flyway Migrations</div>
+            <p class="report-p">Kiểm tra thư mục mã nguồn <code>backend/src/main/resources/db/migration/</code> để xem các tệp di chuyển lược đồ từ V1 đến V11:</p>
+            <ul class="report-list">
+              <li><code>V1__catalog.sql</code>: Khởi tạo bảng danh mục sản phẩm (categories), sản phẩm (products) và chất gây dị ứng (allergens).</li>
+              <li><code>V3__commerce.sql</code>: Khởi tạo bảng đơn hàng (orders), giỏ hàng (carts) và chi tiết đơn hàng (order_items).</li>
+              <li><code>V4__chat_usage.sql</code>: Bảng ghi nhận giới hạn sử dụng chatbot AI.</li>
+              <li><code>V5__product_images.sql</code>: Quản lý ảnh sản phẩm lưu trữ trên S3.</li>
+              <li><code>V6–V8</code>: Bổ sung chất gây dị ứng và hàm tìm kiếm tiếng Việt không dấu (unaccent).</li>
+              <li><code>V9__payments.sql</code>: Cấu trúc dữ liệu thanh toán.</li>
+              <li><code>V10__payment_events.sql</code>: Xử lý idempotent sự kiện thanh toán từ cổng thanh toán.</li>
+              <li><code>V11__nutrition_profiles.sql</code>: Hồ sơ dinh dưỡng cá nhân hóa của người dùng.</li>
+            </ul>
+            <p class="report-p">Khi backend Spring Boot khởi chạy trên ECS, Flyway sẽ tự động kiểm tra bảng <code>flyway_schema_history</code> và thực thi tuần tự các migration chưa áp dụng.</p>
+          </div>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">D. Hình ảnh minh chứng</h4>
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.3-core-infra/rds-configuration.png',
+            'Hình 5.3.2.1. Cấu hình Amazon RDS PostgreSQL',
+            'Bảng điều khiển RDS hiển thị phiên bản PostgreSQL 17, instance db.t4g.micro và trạng thái mã hóa.',
+            true
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.3-core-infra/rds-connectivity.png',
+            'Hình 5.3.2.2. Kết nối và bảo mật RDS',
+            'Cấu hình Subnet Group private, Security Group cô lập và Public access bị vô hiệu hóa.',
+            true
+          )}
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">E. Kiểm tra kết quả</h4>
+          <ul class="report-list">
+            <li>&#10003; RDS PostgreSQL 17 được khởi tạo thành công với instance <code>db.t4g.micro</code>.</li>
+            <li>&#10003; Tính năng truy cập công khai bị tắt (Public access = No).</li>
+            <li>&#10003; Mã hóa lưu trữ bằng KMS được kích hoạt.</li>
+            <li>&#10003; Cổng 5432 mở duy nhất cho Security Group của ECS.</li>
+            <li>&#10003; Flyway migration scripts sẵn sàng thực thi khi ứng dụng khởi chạy.</li>
+          </ul>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">F. Lỗi thường gặp & Xử lý vận hành</h4>
+          <p class="report-p">
+            <strong>Terraform không tự khởi động RDS đang dừng (Stopped):</strong> Theo thiết kế của AWS API, Terraform không thể tự động chuyển trạng thái instance từ <code>stopped</code> sang <code>available</code> khi chạy apply thông thường.
+          </p>
+          <p class="report-p">
+            <strong>Giải pháp chuẩn (theo <code>docs/runbook.md</code>):</strong> Sử dụng kịch bản điều khiển vòng đời demo do nhóm xây dựng:
+          </p>
+          <div class="code-snippet-wrap">
+            <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+            <pre><code>powershell -ExecutionPolicy Bypass -File .\scripts\demo-infra.ps1 up</code></pre>
+          </div>
+          <p class="report-p" style="font-size: 13.5px; color: #64748B;">
+            <em>Script sẽ sử dụng AWS CLI để khởi động RDS, chờ đợi cho đến khi instance chuyển sang trạng thái Available hoàn tất rồi mới thực thi các thao tác Terraform tiếp theo.</em>
+          </p>
+
+          <hr style="border: none; border-top: 1px solid #E2E8F0; margin: 32px 0;" />
+
+          <!-- 5.3.3. CẤU HÌNH AMAZON COGNITO -->
+          <h3 class="report-h3">5.3.3. Cấu hình Amazon Cognito</h3>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">A. Mục tiêu</h4>
+          <p class="report-p">
+            Xây dựng hệ thống nhận thực người dùng tập trung, cấp phát mã thông báo JWT và phân quyền truy cập ứng dụng theo vai trò (Role-Based Access Control).
+          </p>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">B. Cấu hình Cognito</h4>
+          <p class="report-p">
+            Theo thiết kế bảo mật của hệ thống:
+          </p>
+          <ul class="report-list">
+            <li><strong>User Pool (<code>nutrition-dev-users</code>):</strong> Định danh người dùng bằng địa chỉ Email; kích hoạt tự động gửi mã xác thực email; áp dụng chính sách mật khẩu mạnh (tối thiểu 8 ký tự, có ký tự in hoa, in thường, chữ số và ký tự đặc biệt).</li>
+            <li><strong>App Client (<code>nutrition-dev-spa</code>):</strong> Dành cho ứng dụng Single Page Application (React SPA), cấu hình <code>generate_secret = false</code> vì ứng dụng chạy phía trình duyệt của người dùng không thể giữ bí mật Client Secret.</li>
+            <li><strong>Luồng xác thực:</strong> Sử dụng giao thức Secure Remote Password (<code>ALLOW_USER_SRP_AUTH</code>) và làm mới phiên qua <code>ALLOW_REFRESH_TOKEN_AUTH</code>. Không sử dụng Cognito Hosted UI mà tích hợp giao diện đăng nhập trực tiếp trong React.</li>
+            <li><strong>Nhóm người dùng (User Groups):</strong> Thiết lập 2 nhóm chính gồm <code>USER</code> (khách hàng tiêu dùng) và <code>ADMIN</code> (quản trị viên cửa hàng).</li>
+            <li><strong>Xác thực phía Backend:</strong> Spring Boot Resource Server kiểm tra chữ ký số của JWT token thông qua JWKS endpoint của Cognito, giải mã định danh người dùng từ claim <code>sub</code> và phân quyền hạn từ claim <code>cognito:groups</code>.</li>
+          </ul>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">C. Các bước thực hành</h4>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">1</span> Kiểm tra Cognito Terraform Module</div>
+            <p class="report-p">Mở <code>infra/modules/cognito/main.tf</code> để xem định nghĩa User Pool, App Client và thiết lập khôi phục tài khoản qua email:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>HCL</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>resource "aws_cognito_user_pool_client" "spa" {
+  name            = "\${var.name_prefix}-spa"
+  user_pool_id    = aws_cognito_user_pool.users.id
+  generate_secret = false
+
+  explicit_auth_flows = [
+    "ALLOW_USER_SRP_AUTH",
+    "ALLOW_REFRESH_TOKEN_AUTH",
+    "ALLOW_ADMIN_USER_PASSWORD_AUTH",
+  ]
+}</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">2</span> Kiểm tra các nhóm USER và ADMIN</div>
+            <p class="report-p">Khai báo nhóm người dùng trong <code>infra/modules/cognito/main.tf</code>:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>HCL</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>resource "aws_cognito_user_group" "admin" {
+  name         = "ADMIN"
+  user_pool_id = aws_cognito_user_pool.users.id
+}
+
+resource "aws_cognito_user_group" "user" {
+  name         = "USER"
+  user_pool_id = aws_cognito_user_pool.users.id
+}</code></pre>
+            </div>
+            <p class="report-p">Người dùng sau khi đăng ký sẽ được gán vào nhóm <code>USER</code>. Chỉ những tài khoản được chỉ định trong nhóm <code>ADMIN</code> mới có quyền truy cập vào các API quản lý sản phẩm và đơn hàng.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">3</span> Triển khai Cognito</div>
+            <p class="report-p">Module Cognito được quản lý hoàn toàn bằng mã nguồn Terraform và đã được áp dụng trong lệnh apply tổng thể. Tuyệt đối không tạo User Pool thủ công qua Console để tránh tình trạng lệch trạng thái (drift state).</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">4</span> Kiểm tra trên AWS Console</div>
+            <p class="report-p">Điều hướng tới <strong>Amazon Cognito &rarr; User pools</strong> và chọn <code>nutrition-dev-users</code>. Xác minh:</p>
+            <ul class="report-list">
+              <li>User Pool ID có tiền tố dạng <code>ap-southeast-1_...</code>.</li>
+              <li>Tại thẻ <strong>App integration &rarr; App clients</strong>: Có client <code>nutrition-dev-spa</code> với thiết lập <em>Client secret: No client secret</em>.</li>
+              <li>Tại thẻ <strong>Groups</strong>: Xuất hiện đầy đủ 2 nhóm <code>ADMIN</code> và <code>USER</code>.</li>
+            </ul>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">5</span> Kiểm tra phân quyền API (theo docs/demo.md)</div>
+            <p class="report-p">Xác nhận cơ chế bảo vệ phân quyền của backend Spring Boot đối với các lệnh gọi API:</p>
+            <ul class="report-list">
+              <li><strong>Yêu cầu không có Token:</strong> Gửi request tới các endpoint được bảo vệ mà thiếu header <code>Authorization: Bearer &lt;token&gt;</code> &rarr; Backend lập tức từ chối và phản hồi <code>HTTP 401 Unauthorized</code>.</li>
+              <li><strong>Khách hàng thông thường (USER) gọi API quản trị:</strong> Tài khoản thuộc nhóm <code>USER</code> gọi các endpoint <code>/api/admin/**</code> &rarr; Backend kiểm tra claim <code>cognito:groups</code> và phản hồi <code>HTTP 403 Forbidden</code>.</li>
+              <li><strong>Quản trị viên (ADMIN):</strong> Xác thực thành công và được phép thao tác toàn quyền trên các API quản lý.</li>
+            </ul>
+          </div>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">D. Hình ảnh minh chứng</h4>
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.3-core-infra/cognito-user-groups.png',
+            'Hình 5.3.3.1. Hai nhóm USER và ADMIN trong Amazon Cognito',
+            'Bảng điều khiển Cognito User Pool hiển thị danh sách các nhóm người dùng đã được định cấu hình.',
+            true
+          )}
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">E. Kiểm tra kết quả</h4>
+          <ul class="report-list">
+            <li>&#10003; Cognito User Pool và App Client SPA được triển khai thành công.</li>
+            <li>&#10003; Client Secret được tắt nhằm bảo đảm an toàn cho ứng dụng phía trình duyệt.</li>
+            <li>&#10003; Hai nhóm <code>USER</code> và <code>ADMIN</code> được tạo đầy đủ.</li>
+            <li>&#10003; JWT Token được backend xác thực và phân quyền chuẩn HTTP 401 / 403.</li>
+          </ul>
+
+          ${renderPrevNextBar('ws-5-2', '5.2 Điều kiện chuẩn bị', 'ws-5-4', '5.4 Triển khai ứng dụng')}
+        </section>
+      </div>
+
+      <!-- MODULE 5.4 -->
+      <div class="ws-module-pane ${currentWorkshopStepId === 'ws-5-4' ? 'active' : ''}" id="pane-ws-5-4">
+        <section class="report-section">
+          <h2 class="report-h2">5.4 – Triển khai ứng dụng</h2>
+
+          <h3 class="report-h3">1. Mục tiêu học tập</h3>
+          <ul class="report-list">
+            <li>Đóng gói backend Spring Boot 4 thành Docker image tối ưu cho kiến trúc ARM64 (tiết kiệm 20% chi phí điện toán).</li>
+            <li>Đăng nhập và đẩy image lên Amazon ECR repository.</li>
+            <li>Khởi động ECS Fargate service với 1 task hoạt động và kết nối ALB.</li>
+            <li>Build frontend React 19 và đồng bộ mã nguồn tĩnh lên Amazon S3, làm mới cache CloudFront.</li>
+          </ul>
+
+          <h3 class="report-h3">2. Điều kiện chuẩn bị</h3>
+          <p class="report-p">Đã hoàn thành bài 5.3 (đã có ECR, ECS cluster, S3 buckets, ALB).</p>
+
+          <h3 class="report-h3">3. Các bước thực hành chi tiết</h3>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">1</span> Đóng gói Backend Spring Boot và đẩy Docker Image lên ECR</div>
+            <p class="report-p">Mở terminal tại thư mục gốc của repository, build file JAR và đóng gói container ARM64:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code># 1. Di chuyển vào thư mục backend và build file JAR
+cd backend
+./mvnw clean package -DskipTests
+
+# 2. Lấy URL của ECR Repository
+cd ../infra/envs/dev
+ECR_URL=$(terraform output -raw ecr_repository_url)
+cd ../../../backend
+
+# 3. Đăng nhập Docker CLI vào ECR Registry
+aws ecr get-login-password --region ap-southeast-1 | docker login --username AWS --password-stdin $ECR_URL
+
+# 4. Build Docker container image cho kiến trúc linux/arm64
+docker build --platform linux/arm64 -t $ECR_URL:latest .
+
+# 5. Đẩy image lên ECR
+docker push $ECR_URL:latest</code></pre>
+            </div>
+            <p class="report-p">Sau khi đẩy xong, Amazon ECR sẽ tự động quét bảo mật (scan-on-push) để rà soát các lỗ hổng CVE tiềm ẩn trong image.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">2</span> Bật hạ tầng ứng dụng và khởi động ECS Task</div>
+            <p class="report-p">Chuyển sang thư mục <code>infra/envs/dev</code> và chạy apply với biến <code>app_running=true</code>:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>cd ../infra/envs/dev
+terraform apply -var="app_running=true" -var="api_desired_count=1" -auto-approve</code></pre>
+            </div>
+            <p class="report-p">Thao tác này sẽ thực hiện:</p>
+            <ul class="report-list">
+              <li>Khởi động instance Amazon RDS PostgreSQL từ trạng thái stopped sang available.</li>
+              <li>Tạo Application Load Balancer (ALB), Target Group, Listener Rules và Custom Header <code>X-Origin-Verify</code>.</li>
+              <li>Tạo ECS Task Definition và kích hoạt ECS Fargate Service chạy 1 active task kéo image <code>:latest</code> từ ECR.</li>
+              <li>Chạy Flyway migrations tự động nạp 152 sản phẩm và hồ sơ dinh dưỡng USDA vào cơ sở dữ liệu.</li>
+            </ul>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">3</span> Build và Deploy Frontend React lên Amazon S3</div>
+            <p class="report-p">Biên dịch frontend React 19 và tải lên S3 bucket, sau đó xóa cache CloudFront Edge PoPs:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>cd ../../../frontend
+npm install
+npm run build
+
+# Lấy tên Bucket và Distribution ID từ terraform output
+cd ../infra/envs/dev
+FRONTEND_BUCKET=$(terraform output -raw frontend_bucket_name)
+DIST_ID=$(terraform output -raw cloudfront_distribution_id)
+cd ../../../frontend
+
+# Đồng bộ file build lên S3
+aws s3 sync dist/ s3://$FRONTEND_BUCKET/ --delete
+
+# Làm mới cache CloudFront toàn cầu
+aws cloudfront create-invalidation --distribution-id $DIST_ID --paths "/*"</code></pre>
+            </div>
+          </div>
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.4-deployment/ecr-image-push.png',
+            'Image backend đẩy thành công lên Amazon ECR với tag latest',
+            'Giao diện ECR Console hiển thị image digest và kết quả quét lỗ hổng bảo mật.',
+            true
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.4-deployment/ecs-task-running.png',
+            'ECS Fargate Task ở trạng thái RUNNING và Health Check Passed',
+            'Màn hình ECS Console hiển thị 1 task hoạt động trong cluster nutrition-dev-cluster.',
+            true
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.4-deployment/cloudfront-app-live.png',
+            'Trang web Nutrition E-Commerce hoạt động trực tiếp trên domain CloudFront',
+            'Giao diện website tải danh mục sản phẩm 152 món ăn với bộ lọc dinh dưỡng đầy đủ.',
+            true
+          )}
+
+          <h3 class="report-h3">4. Kết quả mong đợi & Xác minh</h3>
+          <ul class="report-list">
+            <li>Truy cập địa chỉ <code>https://&lt;cloudfront_domain&gt;/</code> hiển thị giao diện bán hàng hoàn chỉnh.</li>
+            <li>Kiểm tra trạng thái backend qua API Actuator:
+              <div class="code-snippet-wrap">
+                <div class="code-snippet-header"><span>Health Check</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+                <pre><code>curl -s https://<cloudfront_domain>/api/actuator/health
+# Kết quả phản hồi: {"status":"UP"}</code></pre>
+              </div>
+            </li>
+            <li>Kiểm tra API danh mục 152 sản phẩm: <code>curl -s https://<cloudfront_domain>/api/products</code> trả về danh sách JSON sản phẩm cùng dữ liệu calo, protein, carbs, fat chuẩn xác.</li>
+          </ul>
+
+          <h3 class="report-h3">5. Lỗi thường gặp & Cách xử lý</h3>
+          <ul class="report-list">
+            <li><strong>Lỗi "no basic auth credentials" khi push Docker:</strong> Lệnh đăng nhập ECR có hạn sử dụng 12 tiếng. Hãy chạy lại lệnh <code>aws ecr get-login-password</code> để làm mới token đăng nhập.</li>
+            <li><strong>ECS Task dừng liên tục với exit code 1:</strong> Mở CloudWatch Logs nhóm <code>/ecs/nutrition-dev-backend</code> để xem chi tiết. Thường do RDS chưa kết nối được (kiểm tra Security Group) hoặc thiếu biến môi trường bí mật từ Secrets Manager.</li>
+          </ul>
+
+          ${renderPrevNextBar('ws-5-3', '5.3 Xây dựng hạ tầng', 'ws-5-5', '5.5 Tích hợp Bedrock')}
+        </section>
+      </div>
+
+      <!-- MODULE 5.5 -->
+      <div class="ws-module-pane ${currentWorkshopStepId === 'ws-5-5' ? 'active' : ''}" id="pane-ws-5-5">
+        <section class="report-section">
+          <h2 class="report-h2">5.5 – Tích hợp Amazon Bedrock</h2>
+
+          <h3 class="report-h3">1. Mục tiêu học tập</h3>
+          <ul class="report-list">
+            <li>Kích hoạt và cấp quyền truy cập mô hình nền tảng Amazon Nova 2 Lite tại vùng Tokyo (<code>ap-northeast-1</code>).</li>
+            <li>Cấu hình Bedrock Guardrails nhằm ngăn chặn prompt injection và chặn thông tin tư vấn y khoa sai lệch.</li>
+            <li>Kiểm thử luồng AI Assistant: xử lý ngôn ngữ tự nhiên -> trích xuất tham số dinh dưỡng -> truy vấn PostgreSQL -> trả kết quả cho người dùng.</li>
+          </ul>
+
+          <h3 class="report-h3">2. Điều kiện chuẩn bị</h3>
+          <p class="report-p">Đã hoàn thành bài 5.4. Tài khoản AWS có quyền gọi Bedrock API tại khu vực Châu Á Thái Bình Dương (Tokyo).</p>
+
+          <h3 class="report-h3">3. Các bước thực hành chi tiết</h3>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">1</span> Kích hoạt Model Access trên Amazon Bedrock Console</div>
+            <p class="report-p">Đăng nhập AWS Management Console, chuyển vùng sang <strong>Tokyo (ap-northeast-1)</strong>:</p>
+            <ol class="report-list">
+              <li>Truy cập dịch vụ <strong>Amazon Bedrock</strong> → Chọn mục <strong>Model access</strong> ở menu bên trái.</li>
+              <li>Nhấp nút <strong>Modify model access</strong>.</li>
+              <li>Tìm nhà cung cấp <strong>Amazon</strong> và tích chọn mô hình <strong>Amazon Nova 2 Lite</strong> (hoặc inference profile <code>jp.amazon.nova-lite-v1:0</code>).</li>
+              <li>Nhấp <strong>Next</strong> và <strong>Submit</strong> để hoàn tất cấp quyền truy cập (thường được phê duyệt tức thì).</li>
+            </ol>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">2</span> Cấu hình Bedrock Guardrails trong Terraform</div>
+            <p class="report-p">Hạ tầng Terraform của dự án đã tích hợp sẵn module <code>infra/modules/guardrail</code> để bảo vệ an toàn nội dung. Kiểm tra cấu hình trong <code>infra/envs/dev/terraform.tfvars</code>:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>terraform.tfvars</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>bedrock_region               = "ap-northeast-1"
+bedrock_model_id             = "amazon.nova-lite-v1:0"
+bedrock_inference_profile_id = "jp.amazon.nova-lite-v1:0"
+guardrail_tier               = "STANDARD"</code></pre>
+            </div>
+            <p class="report-p">Cấu hình này thiết lập các bộ lọc:</p>
+            <ul class="report-list">
+              <li><strong>Content Filters:</strong> Chặn các nội dung thù ghét, bạo lực và hành vi độc hại với ngưỡng HIGH.</li>
+              <li><strong>Sensitive Information Filters:</strong> Ngăn chặn việc làm lộ số thẻ tín dụng, mật khẩu hay dữ liệu cá nhân.</li>
+              <li><strong>Topic Deny:</strong> Ngăn AI đưa ra các phác đồ điều trị bệnh lý hoặc chẩn đoán thay thế bác sĩ (tuân thủ Medical Disclaimer).</li>
+            </ul>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">3</span> Phân tích luồng xử lý AI trong Spring Boot Backend</div>
+            <p class="report-p">Backend Spring Boot 4 gọi Bedrock Converse API với prompt định chuẩn để trích xuất JSON có cấu trúc:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Java / Spring Boot Logic</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>// 1. Nhận câu hỏi tự nhiên: "tìm bữa tối dưới 500 calo giàu protein không có gluten"
+// 2. Gửi request đến Bedrock Nova 2 Lite (Tokyo) với Guardrail ID
+ConverseResponse response = bedrockClient.converse(req -> req
+    .modelId("jp.amazon.nova-lite-v1:0")
+    .guardrailConfig(g -> g.guardrailIdentifier(guardrailId).guardrailVersion(guardrailVer))
+    .messages(userMessage)
+);
+
+// 3. AI trả về kết quả JSON tham số lọc (Parameter Extraction):
+// { "maxCalories": 500, "minProtein": 25, "excludedAllergens": ["GLUTEN"] }
+
+// 4. Backend dùng JPA Specification / SQL truy vấn trực tiếp bảng products trong PostgreSQL:
+// SELECT * FROM products WHERE calories <= 500 AND protein >= 25 AND NOT ('GLUTEN' = ANY(allergens));</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">4</span> Kiểm thử thực tế API tra cứu dinh dưỡng</div>
+            <p class="report-p">Thực hiện gọi API kiểm thử từ dòng lệnh để xác minh chức năng:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>curl -X POST "https://<cloudfront_domain>/api/ai/nutrition-lookup" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "gợi ý món ăn ít carb dưới 350 calo cho người tập gym"}'</code></pre>
+            </div>
+            <p class="report-p">Kết quả JSON trả về danh sách các món ăn thực tế (ví dụ: Salad ức gà áp chảo, Thịt bò phi lê nướng măng tây) kèm số liệu calo và macro chuẩn xác từ cơ sở dữ liệu USDA.</p>
+          </div>
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.5-bedrock/bedrock-model-access.png',
+            'Xác nhận trạng thái Model Access của Amazon Nova 2 Lite tại Tokyo',
+            'Màn hình Bedrock Console hiển thị Access granted cho mô hình Amazon Nova 2 Lite.',
+            true
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.5-bedrock/bedrock-guardrail.png',
+            'Cấu hình Bedrock Guardrail ngăn ngừa nội dung độc hại và tư vấn y tế sai lệch',
+            'Giao diện Bedrock Guardrails hiển thị các bộ lọc Content filter và Topic Deny.',
+            true
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.5-bedrock/ai-lookup-test.png',
+            'Kết quả kiểm thử API AI Nutrition Lookup trên Terminal / Postman',
+            'Phản hồi JSON chứa intent, tham số lọc và danh sách sản phẩm chuẩn hóa.',
+            true
+          )}
+
+          <h3 class="report-h3">4. Kết quả mong đợi & Xác minh</h3>
+          <ul class="report-list">
+            <li>AI nhận diện chính xác các từ khóa dinh dưỡng và chuyển đổi thành bộ lọc SQL hợp lệ.</li>
+            <li>Khi người dùng cố tình hỏi câu hỏi độc hại hoặc yêu cầu kê đơn thuốc, Bedrock Guardrail sẽ chặn và trả về thông báo: <em>"Yêu cầu không phù hợp với chính sách an toàn thông tin dinh dưỡng của hệ thống."</em></li>
+          </ul>
+
+          <h3 class="report-h3">5. Lỗi thường gặp & Cách xử lý</h3>
+          <ul class="report-list">
+            <li><strong>Lỗi "AccessDeniedException: You don't have access to the model":</strong> Bạn chưa kích hoạt Model Access trên AWS Console ở vùng Tokyo (<code>ap-northeast-1</code>). Hãy vào Bedrock Console Tokyo để yêu cầu quyền truy cập.</li>
+            <li><strong>Lỗi "ValidationException: Guardrail not found":</strong> Guardrail ID chưa khớp hoặc chưa được tạo. Hãy chạy lệnh <code>terraform apply</code> để Terraform hoàn tất việc provisioning module guardrail.</li>
+          </ul>
+
+          ${renderPrevNextBar('ws-5-4', '5.4 Triển khai ứng dụng', 'ws-5-6', '5.6 Giám sát & Chi phí')}
+        </section>
+      </div>
+
+      <!-- MODULE 5.6 -->
+      <div class="ws-module-pane ${currentWorkshopStepId === 'ws-5-6' ? 'active' : ''}" id="pane-ws-5-6">
+        <section class="report-section">
+          <h2 class="report-h2">5.6 – Giám sát, bảo mật và chi phí</h2>
+
+          <h3 class="report-h3">1. Mục tiêu học tập</h3>
+          <ul class="report-list">
+            <li>Cấu hình Amazon CloudWatch Logs theo dõi hoạt động container và phát hiện lỗi hệ thống.</li>
+            <li>Thiết lập CloudWatch Alarms và cảnh báo qua Amazon SNS khi CPU/RAM cao hoặc có lỗi 5XX.</li>
+            <li>Cấu hình AWS Budgets với hạn mức 10 USD để tự động gửi email cảnh báo khi vượt ngân sách.</li>
+            <li>Nắm vững quy trình vận hành demo với script <code>demo-infra.ps1</code> và phân tích chi phí thực tế từ AWS Cost Explorer.</li>
+          </ul>
+
+          <h3 class="report-h3">2. Điều kiện chuẩn bị</h3>
+          <p class="report-p">Đã hoàn thành bài 5.5. Hệ thống đang hoạt động trên AWS.</p>
+
+          <h3 class="report-h3">3. Các bước thực hành chi tiết</h3>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">1</span> Cấu hình Email nhận cảnh báo CloudWatch & AWS Budgets</div>
+            <p class="report-p">Thiết lập biến môi trường email nhận cảnh báo và cập nhật Terraform:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>cd infra/envs/dev
+export TF_VAR_alert_email="your-email@example.com"
+terraform apply -auto-approve</code></pre>
+            </div>
+            <p class="report-p">Sau khi apply, AWS SNS sẽ gửi một bức thư có tiêu đề <em>"AWS Notification - Subscription Confirmation"</em>. Hãy mở hộp thư cá nhân và nhấp vào liên kết <strong>Confirm subscription</strong> để kích hoạt.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">2</span> Theo dõi Real-Time CloudWatch Logs</div>
+            <p class="report-p">Xem luồng nhật ký log thời gian thực của backend Spring Boot trực tiếp từ terminal:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>aws logs tail /ecs/nutrition-dev-backend --follow --region ap-southeast-1</code></pre>
+            </div>
+            <p class="report-p">Mọi thao tác truy vấn sản phẩm, xác thực JWT Cognito hay gọi Bedrock AI đều được ghi vết rõ ràng tại đây mà không làm lộ các dữ liệu nhạy cảm.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">3</span> Kiểm tra CloudWatch Alarms</div>
+            <p class="report-p">Các chỉ số cảnh báo được khởi tạo sẵn trong Terraform:</p>
+            <ul class="report-list">
+              <li><strong>ALB 5XX Errors:</strong> Cảnh báo khi tỷ lệ lỗi máy chủ vượt 1% trong 5 phút.</li>
+              <li><strong>ECS CPU Utilization:</strong> Cảnh báo khi mức sử dụng CPU của container vượt 80%.</li>
+              <li><strong>ECS Memory Utilization:</strong> Cảnh báo khi RAM vượt 85%.</li>
+              <li><strong>RDS Free Storage Space:</strong> Cảnh báo khi dung lượng ổ cứng gp3 còn dưới 2 GB.</li>
+            </ul>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">4</span> Vận hành hạ tầng linh hoạt theo buổi Demo</div>
+            <p class="report-p">Để tối ưu hóa chi phí và không lãng phí tài nguyên khi không có người sử dụng, hãy sử dụng script tự động hóa:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code># Trước buổi demo (~10-15 phút): Bật RDS và tạo ECS task
+powershell -ExecutionPolicy Bypass -File .\scripts\demo-infra.ps1 up
+
+# Sau khi kết thúc buổi demo (~5-10 phút): Dừng RDS và xóa ECS task để ngừng tính phí
+powershell -ExecutionPolicy Bypass -File .\scripts\demo-infra.ps1 down</code></pre>
+            </div>
+            <p class="report-p"><em>Toàn bộ dữ liệu 152 sản phẩm, người dùng Cognito và image ECR vẫn được bảo lưu an toàn 100% giữa các lần bật/tắt.</em></p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">5</span> Đối chiếu chi phí thực tế (AWS Cost Explorer)</div>
+            <p class="report-p">Bảng tổng hợp chi phí thực tế phát sinh trong kỳ phát triển 01–21/11/2026 của nhóm:</p>
+            <div class="report-table-wrapper">
+              <table class="report-table">
+                <thead>
+                  <tr>
+                    <th>Dịch vụ AWS</th>
+                    <th class="text-right">Chi phí thực tế (USD)</th>
+                    <th>Nhận xét vận hành</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Amazon RDS PostgreSQL (db.t4g.micro)</td>
+                    <td class="text-right font-bold">2,77</td>
+                    <td>Chạy cơ sở dữ liệu khi demo và lưu trữ 20 GB gp3.</td>
+                  </tr>
+                  <tr>
+                    <td>Application Load Balancer (ALB)</td>
+                    <td class="text-right font-bold">1,29</td>
+                    <td>Thời gian hoạt động trong các đợt kiểm thử tích hợp.</td>
+                  </tr>
+                  <tr>
+                    <td>Amazon ECS Fargate (0,5 vCPU / 1 GB RAM)</td>
+                    <td class="text-right font-bold">1,21</td>
+                    <td>Tài nguyên container tính toán thực tế.</td>
+                  </tr>
+                  <tr>
+                    <td>Public IPv4 Address</td>
+                    <td class="text-right font-bold">0,74</td>
+                    <td>Phí địa chỉ IPv4 công cộng cho task trong public subnet.</td>
+                  </tr>
+                  <tr>
+                    <td>Amazon Bedrock (Nova 2 Lite)</td>
+                    <td class="text-right font-bold">0,21</td>
+                    <td>Chi phí token gọi AI phân tích ý đồ dinh dưỡng.</td>
+                  </tr>
+                  <tr>
+                    <td>AWS Secrets Manager</td>
+                    <td class="text-right font-bold">0,20</td>
+                    <td>Phí lưu trữ khóa bí mật hệ thống.</td>
+                  </tr>
+                  <tr class="total-row">
+                    <td>Tổng chi phí phát sinh</td>
+                    <td class="text-right">6,44</td>
+                    <td>Được bù đắp 100% bằng AWS Credits</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.6-monitoring/cloudwatch-logs.png',
+            'Theo dõi nhật ký container trên Amazon CloudWatch Logs',
+            'Màn hình Log streams /ecs/nutrition-dev-backend ghi nhận các request thành công HTTP 200.',
+            true
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.6-monitoring/cloudwatch-alarms.png',
+            'Trạng thái các chỉ số cảnh báo CloudWatch Alarms',
+            'Danh sách các Alarms hiển thị trạng thái OK xanh lá cây.',
+            true
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.6-monitoring/aws-budgets.png',
+            'Theo dõi ngân sách trên AWS Budgets và Cost Explorer',
+            'Báo cáo chi phí thực tế 6,44 USD nằm dưới ngưỡng dự toán 10 USD.',
+            true
+          )}
+
+          <h3 class="report-h3">4. Kết quả mong đợi & Xác minh</h3>
+          <ul class="report-list">
+            <li>Đã xác nhận subscription qua email; các chỉ số CloudWatch Alarms ở trạng thái <code>OK</code>.</li>
+            <li>Script <code>demo-infra.ps1 down</code> giảm chi phí theo giờ về mức tối thiểu mà không làm mất dữ liệu.</li>
+          </ul>
+
+          <h3 class="report-h3">5. Lỗi thường gặp & Cách xử lý</h3>
+          <ul class="report-list">
+            <li><strong>AWS tự động bật lại RDS sau 7 ngày:</strong> Đây là cơ chế mặc định của AWS RDS đối với instance ở trạng thái stopped. Nếu chưa cần demo tiếp, hãy chạy lại lệnh <code>demo-infra.ps1 down</code> để tiếp tục dừng DB.</li>
+          </ul>
+
+          ${renderPrevNextBar('ws-5-5', '5.5 Tích hợp Bedrock', 'ws-5-7', '5.7 Dọn dẹp tài nguyên')}
+        </section>
+      </div>
+
+      <!-- MODULE 5.7 -->
+      <div class="ws-module-pane ${currentWorkshopStepId === 'ws-5-7' ? 'active' : ''}" id="pane-ws-5-7">
+        <section class="report-section">
+          <h2 class="report-h2">5.7 – Dọn dẹp tài nguyên</h2>
+
+          <h3 class="report-h3">1. Mục tiêu học tập</h3>
+          <ul class="report-list">
+            <li>Nắm vững quy trình teardown toàn diện, an toàn và đúng thứ tự phụ thuộc tài nguyên.</li>
+            <li>Xóa sạch các S3 buckets, RDS database, ECS service, ECR images và Cognito User Pool khi kết thúc khóa học hoặc kỳ thực tập.</li>
+            <li>Kiểm tra và xác minh trên AWS Console để đảm bảo không còn tài nguyên chạy ngầm gây phát sinh chi phí bất ngờ.</li>
+          </ul>
+
+          <h3 class="report-h3">2. Điều kiện chuẩn bị</h3>
+          <p class="report-p">Đã lưu trữ toàn bộ bằng chứng, ảnh chụp và dữ liệu báo cáo nghiệm thu đồ án.</p>
+
+          <h3 class="report-h3">3. Các bước thực hành chi tiết</h3>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">1</span> Sao lưu Snapshot cơ sở dữ liệu cuối cùng (Tùy chọn)</div>
+            <p class="report-p">Nếu bạn muốn lưu trữ lại toàn bộ dữ liệu đơn hàng và sản phẩm phục vụ cho tương lai:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>aws rds create-db-snapshot \
+  --db-instance-identifier nutrition-dev-postgres \
+  --db-snapshot-identifier nutrition-dev-final-backup \
+  --region ap-southeast-1</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">2</span> Làm rỗng các S3 Buckets</div>
+            <p class="report-p">AWS không cho phép xóa các bucket S3 nếu bên trong vẫn còn chứa tệp tin hoặc các version cũ. Hãy làm rỗng nội dung các buckets trước:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code># Lấy danh sách tên bucket từ terraform output
+cd infra/envs/dev
+FRONTEND_BUCKET=$(terraform output -raw frontend_bucket_name)
+IMAGES_BUCKET=$(terraform output -raw images_bucket_name)
+
+# Xóa toàn bộ tệp trong các bucket
+aws s3 rm s3://$FRONTEND_BUCKET/ --recursive
+aws s3 rm s3://$IMAGES_BUCKET/ --recursive</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">3</span> Hủy toàn bộ hạ tầng Dev bằng Terraform Destroy</div>
+            <p class="report-p">Thực thi lệnh hủy diệt toàn bộ hạ tầng đám mây đã tạo:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>terraform destroy -auto-approve</code></pre>
+            </div>
+            <p class="report-p">Quá trình này sẽ giải phóng CloudFront distribution, ALB, ECS service/task, RDS instance, ECR repository, Cognito User Pool, VPC và các Security Groups.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">4</span> Hủy Terraform Bootstrap State Bucket</div>
+            <p class="report-p">Xóa nốt S3 bucket lưu trữ state file ở thư mục bootstrap:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Sao chép</button></div>
+              <pre><code>cd ../bootstrap
+# Lấy tên state bucket và xóa
+TF_STATE_BUCKET=$(terraform output -raw state_bucket_name)
+aws s3 rm s3://$TF_STATE_BUCKET/ --recursive
+terraform destroy -auto-approve</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">5</span> Kiểm tra xác minh trên AWS Management Console</div>
+            <p class="report-p">Đăng nhập AWS Console và kiểm tra lần lượt các dịch vụ tại vùng <strong>Singapore (ap-southeast-1)</strong>:</p>
+            <ul class="report-list">
+              <li><strong>Amazon ECS:</strong> Clusters rỗng, không còn Task nào chạy ngầm.</li>
+              <li><strong>Amazon RDS:</strong> Databases rỗng (chỉ còn final snapshot nếu bạn chủ động giữ lại).</li>
+              <li><strong>Amazon EC2:</strong> Load Balancers và Target Groups đã bị xóa; không có Elastic IP nào bị giữ lại mà không gắn vào instance.</li>
+              <li><strong>Amazon VPC:</strong> Không còn NAT Gateway nào đang chạy.</li>
+              <li><strong>CloudFront:</strong> Distribution đã bị vô hiệu hóa hoặc xóa hoàn toàn.</li>
+            </ul>
+          </div>
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.7-cleanup/terraform-destroy-success.png',
+            'Lệnh Terraform Destroy hoàn tất giải phóng toàn bộ tài nguyên',
+            'Màn hình terminal thông báo "Destroy complete! Resources: XX destroyed".',
+            true
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.7-cleanup/console-clean-verification.png',
+            'Xác minh tài nguyên rỗng trên AWS Management Console',
+            'Màn hình RDS và ECS Console hiển thị 0 resources, không còn tài nguyên tính phí.',
+            true
+          )}
+
+          <h3 class="report-h3">4. Kết quả mong đợi & Xác minh</h3>
+          <p class="report-p">Lệnh <code>terraform destroy</code> kết thúc với mã thoát 0; bảng điều khiển AWS Console không còn bất kỳ tài nguyên nào phát sinh chi phí; hóa đơn trên AWS Cost Explorer dừng hoàn toàn.</p>
+
+          <h3 class="report-h3">5. Lỗi thường gặp & Cách xử lý</h3>
+          <ul class="report-list">
+            <li><strong>Lỗi "RDS instance has deletion protection enabled":</strong> Nếu RDS có bật cờ bảo vệ chống xóa, hãy mở file <code>infra/modules/rds/main.tf</code> sửa <code>deletion_protection = false</code>, chạy <code>terraform apply -auto-approve</code> rồi mới thực hiện <code>terraform destroy</code>.</li>
+            <li><strong>Lỗi "BucketNotEmpty":</strong> Vẫn còn đối tượng hoặc delete markers trong S3 bucket. Hãy sử dụng lệnh <code>aws s3api delete-objects</code> hoặc mở S3 Console để chọn nút "Empty bucket".</li>
+          </ul>
+
+          ${renderPrevNextBar('ws-5-6', '5.6 Giám sát & Chi phí', '', '')}
+        </section>
+      </div>
+    </div>
+  `;
+}
+
+
+function getWorkshopEnHtml() {
+  return `
+    <div class="tech-report">
+      <!-- HEADER -->
+      <header>
+        <div class="report-eyebrow">Technical Workshop Guide</div>
+        <h1 class="report-title">Deploying Personalized Nutrition E-Commerce Platform on AWS</h1>
+        <p class="report-subtitle">Hands-on Deployment Guide: Spring Boot 4, React 19, ECS Fargate, RDS PostgreSQL, Bedrock AI & Terraform</p>
+        <p class="report-intro">
+          A comprehensive step-by-step practical lab guide enabling engineers and students to deploy an end-to-end cloud-native 
+          nutrition e-commerce platform on Amazon Web Services. The entire infrastructure is automated via Terraform, running containerized 
+          Spring Boot 4 backend on serverless ECS Fargate, managed PostgreSQL on RDS, and generative AI intent parsing with Amazon Bedrock Nova 2 Lite.
+        </p>
+      </header>
+
+      <!-- NAVIGATION TABS -->
+      <nav class="ws-nav-tabs">
+        <button type="button" class="ws-tab-btn ${currentWorkshopStepId === 'ws-5-1' ? 'active' : ''}" data-step="ws-5-1" onclick="switchWorkshopTab('ws-5-1')">5.1 Overview</button>
+        <button type="button" class="ws-tab-btn ${currentWorkshopStepId === 'ws-5-2' ? 'active' : ''}" data-step="ws-5-2" onclick="switchWorkshopTab('ws-5-2')">5.2 Prerequisites</button>
+        <button type="button" class="ws-tab-btn ${currentWorkshopStepId === 'ws-5-3' ? 'active' : ''}" data-step="ws-5-3" onclick="switchWorkshopTab('ws-5-3')">5.3 Core Infra</button>
+        <button type="button" class="ws-tab-btn ${currentWorkshopStepId === 'ws-5-4' ? 'active' : ''}" data-step="ws-5-4" onclick="switchWorkshopTab('ws-5-4')">5.4 App Deployment</button>
+        <button type="button" class="ws-tab-btn ${currentWorkshopStepId === 'ws-5-5' ? 'active' : ''}" data-step="ws-5-5" onclick="switchWorkshopTab('ws-5-5')">5.5 Bedrock AI</button>
+        <button type="button" class="ws-tab-btn ${currentWorkshopStepId === 'ws-5-6' ? 'active' : ''}" data-step="ws-5-6" onclick="switchWorkshopTab('ws-5-6')">5.6 Monitoring & Cost</button>
+        <button type="button" class="ws-tab-btn ${currentWorkshopStepId === 'ws-5-7' ? 'active' : ''}" data-step="ws-5-7" onclick="switchWorkshopTab('ws-5-7')">5.7 Clean-up</button>
+      </nav>
+
+            <!-- MODULE 5.1 -->
+      <div class="ws-module-pane ${currentWorkshopStepId === 'ws-5-1' ? 'active' : ''}" id="pane-ws-5-1">
+        <section class="report-section">
+          <h2 class="report-h2">5.1. Workshop Overview</h2>
+          
+          <h3 class="report-h3" style="margin-top:0;">Building a Personalized Nutrition E-Commerce Platform on AWS</h3>
+          <p class="report-p">
+            This workshop guides you through deploying a cloud-native nutrition e-commerce platform on AWS using React, Spring Boot, and PostgreSQL, integrated with Amazon Bedrock for natural language food search.
+          </p>
+          <p class="report-p">
+            Learners will practice provisioning infrastructure, deploying application workloads, integrating AI capabilities, monitoring systems, and managing AWS cloud costs.
+          </p>
+
+          <h3 class="report-h3">Workshop Objectives</h3>
+          <ul class="report-list">
+            <li>Understand cloud web application architecture on AWS.</li>
+            <li>Deploy frontend, backend, and managed database tiers.</li>
+            <li>Integrate Amazon Bedrock for AI-assisted nutritional queries.</li>
+            <li>Establish monitoring, security controls, and cost optimization.</li>
+          </ul>
+
+          <h3 class="report-h3">Overall Architecture</h3>
+          <div class="report-figure" style="margin: 18px 0;">
+            <div class="report-figure-img-wrap" onclick="openBlogImageModal('assets/images/proposal/aws-architecture.png', 'Overall Architecture Diagram of Nutrition E-Commerce on AWS')" title="Click to enlarge">
+              <img src="assets/images/proposal/aws-architecture.png" alt="Overall Architecture Diagram of Nutrition E-Commerce on AWS" class="report-figure-img" loading="lazy" />
+            </div>
+            <div class="report-figure-caption"><em>Overall Architecture Diagram of Nutrition E-Commerce on AWS.</em></div>
+          </div>
+          <p class="report-p">
+            The React application is distributed globally via CloudFront and S3. API requests are routed through an Application Load Balancer to Spring Boot on ECS Fargate. PostgreSQL is hosted on Amazon RDS, Cognito manages user authentication, and Amazon Bedrock powers nutritional intent extraction. Core application infrastructure is hosted in Singapore, with Bedrock and Guardrails operating in Tokyo.
+          </p>
+
+          <h3 class="report-h3">Workshop Roadmap</h3>
+          <ul class="report-list">
+            <li><strong>5.2. Prerequisites:</strong> Prepare AWS Account and developer toolchain.</li>
+            <li><strong>5.3. Core Infrastructure:</strong> Provision cloud resources using Terraform.</li>
+            <li><strong>5.4. Application Deployment:</strong> Deploy React and Spring Boot to AWS.</li>
+            <li><strong>5.5. Amazon Bedrock:</strong> Integrate AI conversational nutrition search.</li>
+            <li><strong>5.6. Monitoring & Cost:</strong> Configure observability, security, and budgets.</li>
+            <li><strong>5.7. Resource Cleanup:</strong> Stop or tear down resources after the workshop.</li>
+          </ul>
+
+          <h3 class="report-h3">Expected Outcome</h3>
+          <p class="report-p">
+            Upon completing this workshop, learners will be capable of deploying, operating, and testing an AI-enabled nutrition e-commerce system on AWS while understanding how to monitor and control cloud expenditures.
+          </p>
+
+          ${renderPrevNextBar('', '', 'ws-5-2', '5.2 Prerequisites')}
+        </section>
+      </div>
+
+            <!-- MODULE 5.2 -->
+      <div class="ws-module-pane ${currentWorkshopStepId === 'ws-5-2' ? 'active' : ''}" id="pane-ws-5-2">
+        <section class="report-section">
+          <h2 class="report-h2">5.2 – Prerequisites & Environment Setup</h2>
+          <p class="report-p">
+            Before deploying the Nutrition E-Commerce platform on AWS, learners must prepare an AWS account, developer toolchains, IAM access permissions, and a remote storage backend for Terraform State.
+          </p>
+          <p class="report-p">
+            This hands-on lab guides you through environment verification, configuring AWS IAM Identity Center, and bootstrapping the Terraform Backend on Amazon S3.
+          </p>
+
+          <h3 class="report-h3">5.2.1. Tooling Preparation</h3>
+          <p class="report-p">
+            The table below lists the required developer toolchains and runtimes:
+          </p>
+
+          <div class="report-table-wrapper">
+            <table class="report-table">
+              <thead>
+                <tr>
+                  <th style="width: 25%;">Tool</th>
+                  <th style="width: 75%;">Requirement</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-bold">AWS Account</td>
+                  <td>Permissions to configure required AWS services (VPC, ECS, RDS, IAM, CloudFront, Bedrock)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">AWS CLI</td>
+                  <td>Version 2 (AWS CLI v2.x)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Terraform</td>
+                  <td>Version ≥ 1.10 (tested with Terraform v1.10.5)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Java</td>
+                  <td>JDK 21 (Eclipse Temurin or OpenJDK 21)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Node.js & npm</td>
+                  <td>Compatible with repository (Node.js ≥ 20.x or 22.x LTS, npm ≥ 10.x)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Docker</td>
+                  <td>Docker Desktop or Docker Engine with multi-platform container build support (<code>linux/arm64</code>)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Git</td>
+                  <td>Source code version control (Git ≥ 2.40.x)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">PowerShell</td>
+                  <td>PowerShell 7 or Windows PowerShell for running verification commands and lifecycle scripts on Windows</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="report-h3">5.2.2. Configure AWS Access & IAM</h3>
+          <p class="report-p">
+            Infrastructure provisioning adheres strictly to the Least Privilege principle with the following IAM components:
+          </p>
+          <ul class="report-list">
+            <li><strong>AWS IAM Identity Center:</strong> Centrally manages user authentication and role assignments to AWS accounts via Single Sign-On (SSO).</li>
+            <li><strong>Permission set <code>nutrition-plan</code>:</strong> Attached with AWS managed policy <code>ReadOnlyAccess</code>, used for daily inspection, syntax validation, and planning (<code>terraform plan</code>).</li>
+            <li><strong>Permission set <code>nutrition-apply</code>:</strong> Combines <code>ReadOnlyAccess</code> with an inline policy from <code>nutrition-apply-policy.json</code> to apply approved infrastructure changes.</li>
+            <li><strong>Policy <code>nutrition-boundary</code>:</strong> Enforces a maximum permission boundary (<code>nutrition-boundary-policy.json</code>) on all IAM roles generated by Terraform (ECS task roles, execution roles, GitHub Actions OIDC roles).</li>
+          </ul>
+
+          <p class="report-p">
+            <strong>Configuration and Verification Steps (per <code>docs/aws-setup/README.md</code>):</strong>
+          </p>
+          <ol class="report-list" style="list-style-type: decimal; padding-left: 20px;">
+            <li>Log in to the AWS Management Console with administrative privileges (Root or Admin).</li>
+            <li>Open <strong>IAM Policies</strong> and create policy <code>nutrition-boundary</code> pasting <code>docs/aws-setup/nutrition-boundary-policy.json</code>. Verify that Access Analyzer reports zero validation errors.</li>
+            <li>Open <strong>IAM Identity Center &rarr; Permission sets</strong>:
+              <ul style="list-style-type: circle; padding-left: 20px; margin-top: 4px;">
+                <li>Create permission set <code>nutrition-plan</code> attaching AWS managed policy <code>ReadOnlyAccess</code>.</li>
+                <li>Create permission set <code>nutrition-apply</code> attaching <code>ReadOnlyAccess</code> and pasting <code>docs/aws-setup/nutrition-apply-policy.json</code> into the Inline Policy. Set session duration to 4 hours.</li>
+              </ul>
+            </li>
+            <li>Assign both permission sets to your designated IAM Identity Center user on the target AWS account.</li>
+            <li>Verify regional isolation constraints: Core services are restricted to <code>ap-southeast-1</code> (Singapore); CloudFront is global and S3 is restricted to <code>nutrition-*</code> buckets; an exception in <code>ap-northeast-1</code> (Tokyo) is granted exclusively for Amazon Bedrock and Guardrails.</li>
+          </ol>
+
+          <p class="report-p" style="font-size: 13.5px; color: #B45309; background: #FFFBEB; padding: 10px 14px; border-left: 3px solid #F59E0B; border-radius: 2px;">
+            <strong>Security Notice:</strong> Never attach unrestricted <code>AdministratorAccess</code>. The project enforces an IAM Permission Boundary to cap maximum permissions and prevent unintended privilege escalation.
+          </p>
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.2-prerequisites/iam-permission-sets.png',
+            'Figure 5.2.1. Permission Sets in AWS IAM Identity Center',
+            'Configuration of nutrition-plan and nutrition-apply permission sets in Identity Center.',
+            false
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.2-prerequisites/iam-permission-boundary.png',
+            'Figure 5.2.2. IAM Permission Boundary for Project Roles',
+            'The nutrition-boundary policy bounding maximum permissions for application roles.',
+            false
+          )}
+
+          <h3 class="report-h3">5.2.3. AWS CLI SSO Login</h3>
+          <p class="report-p">
+            Authenticate your AWS CLI session using the pre-configured SSO session name <code>nutrition</code>:
+          </p>
+
+          <div class="code-snippet-wrap">
+            <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+            <pre><code>aws sso login --sso-session nutrition</code></pre>
+          </div>
+
+          <p class="report-p">
+            After completing browser authentication, verify your active identity with profile <code>nutrition-plan</code>:
+          </p>
+
+          <div class="code-snippet-wrap">
+            <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+            <pre><code>aws sts get-caller-identity --profile nutrition-plan</code></pre>
+          </div>
+
+          <p class="report-p">
+            <strong>Expected Output:</strong> The command responds with a valid JSON document containing <code>UserId</code>, <code>Account</code>, and <code>Arn</code> corresponding to your permission set. (For security reasons, actual Account IDs and sensitive data are sanitized and omitted from public documentation).
+          </p>
+
+          <p class="report-p" style="font-size: 13.5px; color: #475569;">
+            <strong>Troubleshooting <code>InvalidGrantException</code>:</strong> This error indicates an expired SSO token session. Re-authenticate by executing <code>aws sso login --sso-session nutrition</code> to obtain a fresh token.
+          </p>
+
+          <h3 class="report-h3">5.2.4. Bootstrap Terraform Backend on S3</h3>
+          <p class="report-p">
+            Terraform State preserves the current state of AWS infrastructure managed by Terraform. The project uses Amazon S3 as a Remote Backend with server-side encryption (SSE-S3 AES256), Versioning enabled, and native state locking via <code>use_lockfile = true</code> (introduced in Terraform 1.10+, eliminating the need for a DynamoDB table).
+          </p>
+
+          <p class="report-p">
+            Follow the step-by-step instructions from <code>infra/README.md</code>:
+          </p>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">1</span> Initialize Terraform Bootstrap</div>
+            <p class="report-p">Navigate to the bootstrap directory and download required providers:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>terraform -chdir=infra/bootstrap init</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">2</span> Review Terraform Plan</div>
+            <p class="report-p">Set the owner variable and save the binary execution plan:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>$env:TF_VAR_owner = "your-name"
+terraform -chdir=infra/bootstrap plan -out=tfplan</code></pre>
+            </div>
+            <p class="report-p" style="font-size: 13.5px; color: #64748B;">
+              <em>Review the planned resources carefully to confirm that only intended S3 state bucket components will be created before proceeding to apply.</em>
+            </p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">3</span> Deploy Bootstrap</div>
+            <p class="report-p">Switch to the <code>nutrition-apply</code> profile and apply the saved plan:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>$env:AWS_PROFILE = "nutrition-apply"
+terraform -chdir=infra/bootstrap apply tfplan</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">4</span> Retrieve State Bucket Name</div>
+            <p class="report-p">Query the created S3 state bucket name from Terraform output:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>terraform -chdir=infra/bootstrap output state_bucket</code></pre>
+            </div>
+            <p class="report-p">The output displays a unique bucket name formatted as: <code>nutrition-dev-tfstate-&lt;account-id&gt;</code>.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">5</span> Configure Dev Environment Backend</div>
+            <p class="report-p">Copy the backend template file from the dev environment folder and populate the bucket name:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>cp infra/envs/dev/backend.hcl.example infra/envs/dev/backend.hcl</code></pre>
+            </div>
+            <p class="report-p">Configured content inside <code>infra/envs/dev/backend.hcl</code>:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>HCL</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>bucket = "nutrition-dev-tfstate-&lt;account-id&gt;"</code></pre>
+            </div>
+          </div>
+
+          <p class="report-p">
+            <strong>Key S3 Remote Backend Features:</strong>
+          </p>
+          <ul class="report-list">
+            <li>Terraform State is stored securely with server-side encryption (SSE-S3 AES256) and TLS enforcement.</li>
+            <li><code>use_lockfile = true</code> provides robust native state locking directly on S3 objects, preventing concurrent write collisions.</li>
+            <li>The bucket is protected by <code>prevent_destroy = true</code> in the bootstrap definition to guard against accidental removal.</li>
+          </ul>
+
+          <p class="report-p" style="font-size: 13.5px; color: #1E293B; background: #F1F5F9; padding: 12px 14px; border-left: 3px solid #3B82F6; border-radius: 2px;">
+            <strong>AWS Budgets Advisory:</strong> Prior to deploying chargeable resources, learners should configure budget alert thresholds in AWS Budgets. The team project adheres to a 100 USD benchmark limit. Detailed step-by-step setup, email alerts, and screenshot evidence are covered in <strong>Module 5.6 – Monitoring, Security & Cost</strong>. Note that the bootstrap module does not automatically create AWS Budgets.
+          </p>
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.2-prerequisites/terraform-state-s3.png',
+            'Figure 5.2.3. Amazon S3 Bucket for Terraform State',
+            'S3 bucket nutrition-dev-tfstate with SSE-S3 encryption and use_lockfile native locking.',
+            false
+          )}
+
+          <h3 class="report-h3">5.2.5. Results Verification</h3>
+          <p class="report-p">
+            Verify the following checklist before proceeding to infrastructure provisioning:
+          </p>
+          <ul class="report-list">
+            <li>&#10003; AWS CLI successfully authenticated via SSO with return exit code 0.</li>
+            <li>&#10003; Profiles <code>nutrition-plan</code> and <code>nutrition-apply</code> configured correctly in AWS config.</li>
+            <li>&#10003; The <code>nutrition-boundary</code> policy exists and passes IAM Policy Validation.</li>
+            <li>&#10003; Terraform Bootstrap initialized and applied without permission errors.</li>
+            <li>&#10003; S3 Remote State bucket created in Singapore (<code>ap-southeast-1</code>) with encryption and public access blocks.</li>
+            <li>&#10003; Configuration in <code>infra/envs/dev/backend.hcl</code> correctly matches the actual state bucket name.</li>
+            <li>&#10003; No sensitive access keys or real account IDs are committed to version control.</li>
+          </ul>
+
+          <h3 class="report-h3">5.2.6. Common Errors & Troubleshooting</h3>
+          <ul class="report-list">
+            <li>
+              <strong>Expired AWS SSO Session (<code>InvalidGrantException</code> / <code>ExpiredToken</code>):</strong>
+              Re-authenticate by running <code>aws sso login --sso-session nutrition</code> to refresh your temporary session token.
+            </li>
+            <li>
+              <strong>Terraform State Lock:</strong>
+              If state locking errors occur due to an aborted execution, verify that no other terraform processes are active. Only execute <code>terraform force-unlock &lt;LOCK-ID&gt;</code> after ensuring safety and proper permissions. Never manually delete the state bucket or state file.
+            </li>
+            <li>
+              <strong>Insufficient AWS Permissions (<code>AccessDeniedException</code>):</strong>
+              Check your current active profile via <code>$env:AWS_PROFILE</code> to ensure it is set to <code>nutrition-apply</code>. Compare the missing permissions against <code>docs/aws-setup/README.md</code>; never grant full <code>AdministratorAccess</code> as a workaround.
+            </li>
+          </ul>
+
+          ${renderPrevNextBar('ws-5-1', '5.1 Workshop Overview', 'ws-5-3', '5.3 Core Infrastructure')}
+        </section>
+      </div>
+
+            <!-- MODULE 5.3 -->
+      <div class="ws-module-pane ${currentWorkshopStepId === 'ws-5-3' ? 'active' : ''}" id="pane-ws-5-3">
+        <section class="report-section">
+          <h2 class="report-h2">5.3 – Core Infrastructure</h2>
+          <p class="report-p">
+            This hands-on lab guides you through provisioning the VPC network, Amazon RDS PostgreSQL database, and Amazon Cognito authentication service using Terraform. These components provide the foundational infrastructure required for deploying the Spring Boot backend in subsequent steps.
+          </p>
+
+          <!-- 5.3.1. VPC NETWORKING -->
+          <h3 class="report-h3">5.3.1. VPC Networking</h3>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">A. Learning Objectives</h4>
+          <p class="report-p">
+            Deploy segmented network infrastructure for backend services and databases, ensuring Application Load Balancer (ALB), ECS Fargate, and RDS operate within appropriate network boundaries while eliminating NAT Gateway costs.
+          </p>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">B. Network Architecture</h4>
+          <p class="report-p">
+            According to project architectural decisions (D15 & D19), the network comprises:
+          </p>
+          <ul class="report-list">
+            <li>One VPC in Singapore (<code>ap-southeast-1</code>), with default CIDR <code>10.0.0.0/16</code> spanned across 2 Availability Zones.</li>
+            <li>Two Public Subnets (<code>10.0.0.0/24</code> and <code>10.0.1.0/24</code>) hosting the ALB and ECS Fargate container tasks.</li>
+            <li>Two Private Database Subnets (<code>10.0.100.0/24</code> and <code>10.0.101.0/24</code>) dedicated to Amazon RDS with zero direct Internet routing.</li>
+            <li>An Internet Gateway (IGW) attached to the VPC.</li>
+            <li>Route Tables: Public route table directs <code>0.0.0.0/0</code> to IGW; database route table restricts traffic strictly to internal VPC CIDRs.</li>
+            <li><strong>S3 Gateway Endpoint:</strong> Enables ECS tasks to transfer product media with Amazon S3 over AWS internal network at zero hourly cost, bypassing the Internet Gateway.</li>
+            <li><strong>CloudFront Origin-Facing Managed Prefix List:</strong> Restricts ALB ingress exclusively to CloudFront CDN origin-facing IP ranges.</li>
+          </ul>
+
+          <p class="report-p">
+            <strong>Three-Tier Security Group Isolation:</strong>
+          </p>
+          <ul class="report-list">
+            <li><strong>ALB Security Group (<code>nutrition-dev-alb</code>):</strong> Ingress accepts HTTP (port 80) only from CloudFront Managed Prefix List; Egress forwards traffic only to ECS tasks on port <code>8080</code>.</li>
+            <li><strong>ECS Security Group (<code>nutrition-dev-ecs</code>):</strong> Ingress accepts application traffic (port <code>8080</code>) only from ALB SG; Egress allows port <code>5432</code> to RDS SG and HTTPS (port <code>443</code>) outbound to AWS APIs (ECR, Bedrock, Cognito JWKS, CloudWatch).</li>
+            <li><strong>RDS Security Group (<code>nutrition-dev-rds</code>):</strong> Ingress permits PostgreSQL traffic (port <code>5432</code>) strictly from ECS SG; direct Internet ingress is completely forbidden.</li>
+          </ul>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">C. Step-by-Step Implementation</h4>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">1</span> Review Terraform Network Configuration</div>
+            <p class="report-p">Inspect <code>infra/modules/network/main.tf</code> to review CloudFront prefix list and S3 gateway endpoint definitions:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>HCL</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>data "aws_ec2_managed_prefix_list" "cloudfront" {
+  name = "com.amazonaws.global.cloudfront.origin-facing"
+}</code></pre>
+            </div>
+            <p class="report-p">This ensures ALB only accepts incoming requests originating from CloudFront edge distributions.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">2</span> Review Terraform Variables</div>
+            <p class="report-p">Verify parameters passed into module network from <code>infra/envs/dev/main.tf</code>:</p>
+            <ul class="report-list">
+              <li><code>name_prefix = "nutrition-dev"</code>: Unified naming prefix.</li>
+              <li><code>enable_nat = false</code>: Disables NAT Gateway by default to prevent hourly billing (~$32/month). ECS tasks assign public IPs in public subnets to communicate outbound with AWS APIs.</li>
+            </ul>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">3</span> Generate and Review Terraform Plan</div>
+            <p class="report-p">Authenticate with profile <code>nutrition-plan</code> and generate an execution plan:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>$env:AWS_PROFILE = "nutrition-plan"
+terraform -chdir=infra/envs/dev init
+terraform -chdir=infra/envs/dev plan -var="app_running=false" -out=tfplan</code></pre>
+            </div>
+            <p class="report-p" style="font-size: 13.5px; color: #64748B;">
+              <em>Review the staged resources: 1 VPC, 4 Subnets, 1 Internet Gateway, 2 Route Tables, 3 Security Groups, and 1 S3 Gateway Endpoint.</em>
+            </p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">4</span> Apply Core Infrastructure</div>
+            <p class="report-p">Switch to profile <code>nutrition-apply</code> and apply the plan:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>$env:AWS_PROFILE = "nutrition-apply"
+terraform -chdir=infra/envs/dev apply tfplan</code></pre>
+            </div>
+            <p class="report-p" style="font-size: 13.5px; color: #1E293B; background: #F1F5F9; padding: 10px 14px; border-left: 3px solid #3B82F6; border-radius: 2px;">
+              <strong>Architecture Note:</strong> The dev root module simultaneously provisions network, RDS, and Cognito in an idle state (<code>app_running = false</code>). Do not use <code>-target</code> flags as this can disrupt Terraform state dependency graphs.
+            </p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">5</span> Verify Resources in AWS Console</div>
+            <p class="report-p">Sign in to AWS Console and navigate to <strong>VPC &rarr; Your VPCs</strong>:</p>
+            <ul class="report-list">
+              <li>Confirm VPC <code>nutrition-dev-vpc</code> exists with CIDR <code>10.0.0.0/16</code>.</li>
+              <li>Confirm 2 Public Subnets and 2 Private DB Subnets across 2 Availability Zones.</li>
+              <li>Confirm Internet Gateway attached to the VPC.</li>
+              <li>Verify DB route table contains no routes toward <code>0.0.0.0/0</code>.</li>
+              <li>Verify the 3 Security Groups: <code>nutrition-dev-alb</code>, <code>nutrition-dev-ecs</code>, and <code>nutrition-dev-rds</code>.</li>
+              <li>Confirm S3 Gateway Endpoint status is <strong>Available</strong>.</li>
+            </ul>
+          </div>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">D. Evidence Screenshots</h4>
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.3-core-infra/vpc-resource-map.png',
+            'Figure 5.3.1.1. VPC Resource Map',
+            'AWS VPC console displaying VPC CIDR, subnets, and routing table associations.',
+            false
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.3-core-infra/vpc-security-groups.png',
+            'Figure 5.3.1.2. System Security Groups',
+            'Ingress and egress rules for ALB, ECS, and RDS security groups.',
+            false
+          )}
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">E. Results Verification</h4>
+          <ul class="report-list">
+            <li>&#10003; VPC and subnets deployed across 2 Availability Zones.</li>
+            <li>&#10003; ALB and ECS enforce proper security group isolation and designated ports.</li>
+            <li>&#10003; RDS allows PostgreSQL connections exclusively from ECS tasks.</li>
+            <li>&#10003; Route tables strictly separate public and database tiers.</li>
+            <li>&#10003; S3 Gateway Endpoint status is Available.</li>
+          </ul>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">F. Security Notice</h4>
+          <p class="report-p" style="font-size: 13.5px; color: #64748B;">
+            <em>Never include real AWS Account IDs, sensitive IPs, or internal secrets in public documentation or screenshots.</em>
+          </p>
+
+          <hr style="border: none; border-top: 1px solid #E2E8F0; margin: 32px 0;" />
+
+          <!-- 5.3.2. AMAZON RDS DATABASE -->
+          <h3 class="report-h3">5.3.2. Amazon RDS PostgreSQL Database</h3>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">A. Learning Objectives</h4>
+          <p class="report-p">
+            Provision PostgreSQL 17 on Amazon RDS, enforce zero public exposure, and automate database schema evolution using Flyway migrations.
+          </p>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">B. Database Specifications</h4>
+          <p class="report-p">
+            Amazon RDS PostgreSQL configuration parameters in the dev environment:
+          </p>
+
+          <div class="report-table-wrapper">
+            <table class="report-table">
+              <thead>
+                <tr>
+                  <th style="width: 30%;">Property</th>
+                  <th style="width: 70%;">Configured Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-bold">Service</td>
+                  <td>Amazon RDS for PostgreSQL (Engine version 17.x)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Instance Class</td>
+                  <td><code>db.t4g.micro</code> (AWS Graviton2 ARM architecture, cost-optimized)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Storage</td>
+                  <td>20 GB gp3 (Autoscaling up to 100 GB)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Availability</td>
+                  <td>Single-AZ (default for demo savings, supports Multi-AZ via <code>rds_multi_az</code>)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Subnet Group</td>
+                  <td>Private database subnets (<code>nutrition-dev-db</code>)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Public Access</td>
+                  <td>Disabled (<code>publicly_accessible = false</code>)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Encryption</td>
+                  <td>Enabled with AWS KMS (<code>storage_encrypted = true</code>)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Credential Management</td>
+                  <td>AWS Secrets Manager managed password (<code>manage_master_user_password = true</code>)</td>
+                </tr>
+                <tr>
+                  <td class="font-bold">Schema Migration</td>
+                  <td>Flyway migrations V1–V11 executed by Spring Boot</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="report-p">
+            <strong>Key Security Properties:</strong>
+          </p>
+          <ul class="report-list">
+            <li>RDS cannot be reached from the Internet, preventing public exposure and credential attacks.</li>
+            <li>Security Group accepts inbound traffic on PostgreSQL port (<code>5432</code>) exclusively from <code>nutrition-dev-ecs</code> tasks.</li>
+            <li>Master password is generated and rotated automatically by Secrets Manager, never stored as plaintext in code or tfstate.</li>
+            <li>Flyway guarantees deterministic, versioned schema state.</li>
+          </ul>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">C. Step-by-Step Implementation</h4>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">1</span> Review Terraform RDS Module</div>
+            <p class="report-p">Inspect <code>infra/modules/rds/main.tf</code> for essential security directives:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>HCL</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>manage_master_user_password = true
+
+db_subnet_group_name   = aws_db_subnet_group.main.name
+vpc_security_group_ids = [var.security_group_id]
+publicly_accessible    = false
+multi_az               = var.multi_az</code></pre>
+            </div>
+            <p class="report-p"><code>manage_master_user_password = true</code> delegates database credentials to Secrets Manager directly.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">2</span> Verify DB Subnet Group and Security Group</div>
+            <p class="report-p">Ensure <code>aws_db_subnet_group.main</code> binds the 2 private DB subnets and attaches the RDS security group from the network module.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">3</span> Deploy via Terraform</div>
+            <p class="report-p">RDS PostgreSQL was provisioned during the root apply step in Lab 5.3.1. Initialization typically takes 5–8 minutes.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">4</span> Inspect RDS in AWS Console</div>
+            <p class="report-p">Navigate to <strong>Amazon RDS &rarr; Databases</strong> and select <code>nutrition-dev-postgres</code>:</p>
+            <ul class="report-list">
+              <li>Status: <strong>Available</strong> (when app is running) or <strong>Stopped</strong> (during idle demo periods).</li>
+              <li>Engine version: PostgreSQL 17.x.</li>
+              <li>Instance: <code>db.t4g.micro</code> | Storage: 20 GB gp3.</li>
+              <li>Multi-AZ: No (Single-AZ).</li>
+              <li>Public access: <strong>No</strong>.</li>
+              <li>Security Group: <code>nutrition-dev-rds</code>.</li>
+            </ul>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">5</span> Verify Secrets Manager Metadata</div>
+            <p class="report-p">Navigate to <strong>AWS Secrets Manager</strong> and verify the managed secret matching <code>rds!db-...</code>. Do not open or reveal the plaintext secret value.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">6</span> Review Flyway Migration Structure</div>
+            <p class="report-p">Inspect <code>backend/src/main/resources/db/migration/</code> for SQL migration files V1 through V11:</p>
+            <ul class="report-list">
+              <li><code>V1__catalog.sql</code>: Categories, products, and allergens tables.</li>
+              <li><code>V3__commerce.sql</code>: Orders, order items, and shopping cart tables.</li>
+              <li><code>V4__chat_usage.sql</code>: Chatbot usage limits table.</li>
+              <li><code>V5__product_images.sql</code>: Product image S3 keys.</li>
+              <li><code>V6–V8</code>: Expanded allergens and Vietnamese unaccent search.</li>
+              <li><code>V9__payments.sql</code>: Payment transaction entities.</li>
+              <li><code>V10__payment_events.sql</code>: Idempotent payment webhook events.</li>
+              <li><code>V11__nutrition_profiles.sql</code>: Personalized user nutrition profiles.</li>
+            </ul>
+            <p class="report-p">When backend tasks launch on ECS, Flyway reads <code>flyway_schema_history</code> and automatically applies pending migrations.</p>
+          </div>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">D. Evidence Screenshots</h4>
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.3-core-infra/rds-configuration.png',
+            'Figure 5.3.2.1. Amazon RDS PostgreSQL Configuration',
+            'RDS dashboard displaying PostgreSQL 17, db.t4g.micro instance class, and encryption status.',
+            false
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.3-core-infra/rds-connectivity.png',
+            'Figure 5.3.2.2. RDS Connectivity & Security',
+            'Private subnet group binding, security group isolation, and disabled public accessibility.',
+            false
+          )}
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">E. Results Verification</h4>
+          <ul class="report-list">
+            <li>&#10003; RDS PostgreSQL 17 provisioned with instance class <code>db.t4g.micro</code>.</li>
+            <li>&#10003; Public access is disabled.</li>
+            <li>&#10003; Storage encryption with AWS KMS is active.</li>
+            <li>&#10003; Port 5432 ingress permitted strictly from ECS security group.</li>
+            <li>&#10003; Flyway migrations ready to execute upon application startup.</li>
+          </ul>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">F. Common Issues & Operational Runbook</h4>
+          <p class="report-p">
+            <strong>Terraform cannot resume stopped RDS instances:</strong> The AWS RDS API prevents Terraform from transitioning an instance from <code>stopped</code> to <code>available</code> during standard apply calls.
+          </p>
+          <p class="report-p">
+            <strong>Operational Solution (per <code>docs/runbook.md</code>):</strong> Use the automated lifecycle script:
+          </p>
+          <div class="code-snippet-wrap">
+            <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+            <pre><code>powershell -ExecutionPolicy Bypass -File .\scripts\demo-infra.ps1 up</code></pre>
+          </div>
+          <p class="report-p" style="font-size: 13.5px; color: #64748B;">
+            <em>The script invokes AWS CLI to start the RDS instance, awaits Available state, and then invokes Terraform apply.</em>
+          </p>
+
+          <hr style="border: none; border-top: 1px solid #E2E8F0; margin: 32px 0;" />
+
+          <!-- 5.3.3. AMAZON COGNITO -->
+          <h3 class="report-h3">5.3.3. Amazon Cognito Authentication</h3>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">A. Learning Objectives</h4>
+          <p class="report-p">
+            Provision a centralized user authentication system, issue JWT tokens, and enforce Role-Based Access Control (RBAC).
+          </p>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">B. Cognito Architecture</h4>
+          <p class="report-p">
+            According to system security architecture:
+          </p>
+          <ul class="report-list">
+            <li><strong>User Pool (<code>nutrition-dev-users</code>):</strong> Email-based user identification, automated verification email dispatch, and strong password enforcement (8+ chars, uppercase, lowercase, numbers, symbols).</li>
+            <li><strong>App Client (<code>nutrition-dev-spa</code>):</strong> Designed for Single Page Applications (React SPA) with <code>generate_secret = false</code> because browser clients cannot securely hold secret keys.</li>
+            <li><strong>Authentication Flows:</strong> Utilizes Secure Remote Password protocol (<code>ALLOW_USER_SRP_AUTH</code>) and refresh tokens (<code>ALLOW_REFRESH_TOKEN_AUTH</code>). Does not use Cognito Hosted UI, opting for embedded React authentication screens.</li>
+            <li><strong>User Groups:</strong> Two pre-configured groups: <code>USER</code> (customers) and <code>ADMIN</code> (store administrators).</li>
+            <li><strong>Backend JWT Verification:</strong> Spring Boot Resource Server verifies JWT cryptographic signatures against Cognito JWKS, extracting user identity from claim <code>sub</code> and authorities from claim <code>cognito:groups</code>.</li>
+          </ul>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">C. Step-by-Step Implementation</h4>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">1</span> Review Cognito Terraform Module</div>
+            <p class="report-p">Inspect <code>infra/modules/cognito/main.tf</code> for User Pool, App Client, and recovery settings:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>HCL</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>resource "aws_cognito_user_pool_client" "spa" {
+  name            = "\${var.name_prefix}-spa"
+  user_pool_id    = aws_cognito_user_pool.users.id
+  generate_secret = false
+
+  explicit_auth_flows = [
+    "ALLOW_USER_SRP_AUTH",
+    "ALLOW_REFRESH_TOKEN_AUTH",
+    "ALLOW_ADMIN_USER_PASSWORD_AUTH",
+  ]
+}</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">2</span> Review USER and ADMIN User Groups</div>
+            <p class="report-p">Verify user group definitions in <code>infra/modules/cognito/main.tf</code>:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>HCL</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>resource "aws_cognito_user_group" "admin" {
+  name         = "ADMIN"
+  user_pool_id = aws_cognito_user_pool.users.id
+}
+
+resource "aws_cognito_user_group" "user" {
+  name         = "USER"
+  user_pool_id = aws_cognito_user_pool.users.id
+}</code></pre>
+            </div>
+            <p class="report-p">Registered users belong to <code>USER</code>. Only users assigned to <code>ADMIN</code> are granted access to administrative order and catalog endpoints.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">3</span> Deploy Cognito Module</div>
+            <p class="report-p">Cognito is managed as code and provisioned during the root apply step. Do not manually create user pools in the AWS Console to avoid state drift.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">4</span> Inspect Cognito in AWS Console</div>
+            <p class="report-p">Navigate to <strong>Amazon Cognito &rarr; User pools</strong> and select <code>nutrition-dev-users</code>:</p>
+            <ul class="report-list">
+              <li>Verify User Pool ID prefix: <code>ap-southeast-1_...</code>.</li>
+              <li>Under <strong>App integration &rarr; App clients</strong>: Verify client <code>nutrition-dev-spa</code> with <em>No client secret</em>.</li>
+              <li>Under <strong>Groups</strong>: Verify <code>ADMIN</code> and <code>USER</code> groups exist.</li>
+            </ul>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">5</span> Verify API Authorization Enforcement (per docs/demo.md)</div>
+            <p class="report-p">Verify backend Spring Boot RBAC enforcement against incoming API calls:</p>
+            <ul class="report-list">
+              <li><strong>Unauthenticated Requests:</strong> Calling protected endpoints without an <code>Authorization: Bearer &lt;token&gt;</code> header responds with <code>HTTP 401 Unauthorized</code>.</li>
+              <li><strong>Standard User accessing Admin API:</strong> A user in group <code>USER</code> attempting to access <code>/api/admin/**</code> triggers a claim inspection on <code>cognito:groups</code> and responds with <code>HTTP 403 Forbidden</code>.</li>
+              <li><strong>Admin User:</strong> Validated successfully and granted administrative permissions.</li>
+            </ul>
+          </div>
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">D. Evidence Screenshots</h4>
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.3-core-infra/cognito-user-groups.png',
+            'Figure 5.3.3.1. USER and ADMIN Groups in Amazon Cognito',
+            'AWS Cognito console displaying configured user pool groups.',
+            false
+          )}
+
+          <h4 class="report-h4" style="margin-top: 14px; font-size: 15px; font-weight: 600; color: #1E293B;">E. Results Verification</h4>
+          <ul class="report-list">
+            <li>&#10003; Cognito User Pool and SPA Client provisioned.</li>
+            <li>&#10003; Client Secret disabled for browser client security.</li>
+            <li>&#10003; <code>USER</code> and <code>ADMIN</code> groups created.</li>
+            <li>&#10003; JWT tokens validated by backend with HTTP 401 / 403 access control.</li>
+          </ul>
+
+          ${renderPrevNextBar('ws-5-2', '5.2 Prerequisites', 'ws-5-4', '5.4 App Deployment')}
+        </section>
+      </div>
+
+      <!-- MODULE 5.4 -->
+      <div class="ws-module-pane ${currentWorkshopStepId === 'ws-5-4' ? 'active' : ''}" id="pane-ws-5-4">
+        <section class="report-section">
+          <h2 class="report-h2">5.4 – Application Deployment</h2>
+
+          <h3 class="report-h3">1. Learning Objectives</h3>
+          <ul class="report-list">
+            <li>Package Spring Boot 4 into an ARM64-optimized Docker container image.</li>
+            <li>Authenticate with Amazon ECR and push the backend container image.</li>
+            <li>Deploy the ECS Fargate service with 1 active task wired to the ALB.</li>
+            <li>Compile the React 19 frontend and synchronize assets to Amazon S3 / CloudFront.</li>
+          </ul>
+
+          <h3 class="report-h3">2. Prerequisites</h3>
+          <p class="report-p">Completed Lab 5.3 (infrastructure outputs available).</p>
+
+          <h3 class="report-h3">3. Step-by-Step Practical Steps</h3>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">1</span> Package Spring Boot Backend & Push to ECR</div>
+            <p class="report-p">Compile the JAR file and build the linux/arm64 Docker image:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code># 1. Build JAR package
+cd backend
+./mvnw clean package -DskipTests
+
+# 2. Extract ECR URL
+cd ../infra/envs/dev
+ECR_URL=$(terraform output -raw ecr_repository_url)
+cd ../../../backend
+
+# 3. Authenticate Docker with ECR
+aws ecr get-login-password --region ap-southeast-1 | docker login --username AWS --password-stdin $ECR_URL
+
+# 4. Build ARM64 Docker container image
+docker build --platform linux/arm64 -t $ECR_URL:latest .
+
+# 5. Push image to Amazon ECR
+docker push $ECR_URL:latest</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">2</span> Start ECS Service & Launch Active Task</div>
+            <p class="report-p">Apply Terraform with <code>app_running=true</code> to spin up the ALB and ECS Fargate task:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>cd ../infra/envs/dev
+terraform apply -var="app_running=true" -var="api_desired_count=1" -auto-approve</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">3</span> Build & Deploy React Frontend to S3</div>
+            <p class="report-p">Build the React SPA bundle and invalidate the CloudFront edge cache:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>cd ../../../frontend
+npm install
+npm run build
+
+cd ../infra/envs/dev
+FRONTEND_BUCKET=$(terraform output -raw frontend_bucket_name)
+DIST_ID=$(terraform output -raw cloudfront_distribution_id)
+cd ../../../frontend
+
+aws s3 sync dist/ s3://$FRONTEND_BUCKET/ --delete
+aws cloudfront create-invalidation --distribution-id $DIST_ID --paths "/*"</code></pre>
+            </div>
+          </div>
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.4-deployment/ecr-image-push.png',
+            'Backend Image Pushed to Amazon ECR',
+            'ECR Console displaying the pushed container image with latest tag and scan results.',
+            false
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.4-deployment/ecs-task-running.png',
+            'ECS Fargate Task in RUNNING State',
+            'ECS Console displaying 1 healthy running container task in nutrition-dev-cluster.',
+            false
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.4-deployment/cloudfront-app-live.png',
+            'Live Application on CloudFront Domain',
+            'Browser viewing the live React e-commerce application with 152 USDA products.',
+            false
+          )}
+
+          <h3 class="report-h3">4. Verification & Expected Output</h3>
+          <ul class="report-list">
+            <li>Navigating to <code>https://&lt;cloudfront_domain&gt;/</code> displays the storefront.</li>
+            <li>Backend Actuator health check returns healthy:
+              <div class="code-snippet-wrap">
+                <div class="code-snippet-header"><span>Health Check</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+                <pre><code>curl -s https://<cloudfront_domain>/api/actuator/health
+# Returns: {"status":"UP"}</code></pre>
+              </div>
+            </li>
+          </ul>
+
+          <h3 class="report-h3">5. Common Errors & Troubleshooting</h3>
+          <ul class="report-list">
+            <li><strong>Login Denied on ECR:</strong> The ECR authorization token expires after 12 hours. Refresh token via <code>aws ecr get-login-password</code>.</li>
+            <li><strong>ECS Task Exits with Crash:</strong> Check CloudWatch Log Group <code>/ecs/nutrition-dev-backend</code> for database connectivity issues.</li>
+          </ul>
+
+          ${renderPrevNextBar('ws-5-3', '5.3 Core Infra', 'ws-5-5', '5.5 Bedrock AI')}
+        </section>
+      </div>
+
+      <!-- MODULE 5.5 -->
+      <div class="ws-module-pane ${currentWorkshopStepId === 'ws-5-5' ? 'active' : ''}" id="pane-ws-5-5">
+        <section class="report-section">
+          <h2 class="report-h2">5.5 – Amazon Bedrock Integration</h2>
+
+          <h3 class="report-h3">1. Learning Objectives</h3>
+          <ul class="report-list">
+            <li>Request model access for Amazon Nova 2 Lite in Tokyo (<code>ap-northeast-1</code>).</li>
+            <li>Configure Bedrock Guardrails to mitigate prompt injection and medical diagnostic queries.</li>
+            <li>Validate the end-to-end AI intent parsing and PostgreSQL SQL lookup workflow.</li>
+          </ul>
+
+          <h3 class="report-h3">2. Prerequisites</h3>
+          <p class="report-p">Completed Lab 5.4. Active AWS credentials with Bedrock access in Asia Pacific (Tokyo).</p>
+
+          <h3 class="report-h3">3. Step-by-Step Practical Steps</h3>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">1</span> Enable Model Access in Tokyo (ap-northeast-1)</div>
+            <p class="report-p">In the AWS Management Console, switch your region to <strong>Tokyo (ap-northeast-1)</strong>:</p>
+            <ol class="report-list">
+              <li>Open <strong>Amazon Bedrock</strong> → Click <strong>Model access</strong>.</li>
+              <li>Click <strong>Modify model access</strong>.</li>
+              <li>Locate provider <strong>Amazon</strong> and select <strong>Amazon Nova 2 Lite</strong> (or inference profile <code>jp.amazon.nova-lite-v1:0</code>).</li>
+              <li>Click <strong>Next</strong> and <strong>Submit</strong> to finalize access approval.</li>
+            </ol>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">2</span> Configure Guardrails via Terraform</div>
+            <p class="report-p">Verify Guardrail variables in <code>infra/envs/dev/terraform.tfvars</code>:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>terraform.tfvars</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>bedrock_region               = "ap-northeast-1"
+bedrock_model_id             = "amazon.nova-lite-v1:0"
+bedrock_inference_profile_id = "jp.amazon.nova-lite-v1:0"
+guardrail_tier               = "STANDARD"</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">3</span> Test AI Nutrition Intent Query API</div>
+            <p class="report-p">Execute a test cURL request to verify conversational parameter extraction:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>curl -X POST "https://<cloudfront_domain>/api/ai/nutrition-lookup" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "find dinner under 450 calories with over 30g protein and gluten free"}'</code></pre>
+            </div>
+            <p class="report-p">Expected JSON response containing verified USDA food items matching criteria:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Response JSON</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>{
+  "intent": "FIND_FOOD",
+  "extractedFilters": {
+    "maxCalories": 450,
+    "minProtein": 30,
+    "excludedAllergens": ["GLUTEN"]
+  },
+  "products": [
+    {
+      "id": 18,
+      "name": "Grilled Chicken Breast with Steamed Asparagus",
+      "calories": 310,
+      "protein": 36.5,
+      "carbohydrates": 3.8,
+      "fat": 4.5,
+      "allergens": []
+    }
+  ]
+}</code></pre>
+            </div>
+          </div>
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.5-bedrock/bedrock-model-access.png',
+            'Amazon Nova 2 Lite Model Access in Tokyo',
+            'AWS Bedrock Console displaying Access granted for Amazon Nova 2 Lite.',
+            false
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.5-bedrock/bedrock-guardrail.png',
+            'Bedrock Guardrail Safety Filters Configuration',
+            'Bedrock Guardrails Console displaying content filtering and topic deny policies.',
+            false
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.5-bedrock/ai-lookup-test.png',
+            'AI Nutrition Lookup API Response',
+            'Terminal / Postman screenshot displaying the structured JSON payload.',
+            false
+          )}
+
+          <h3 class="report-h3">4. Verification & Expected Output</h3>
+          <p class="report-p">AI extracts search parameters cleanly; backend returns verified PostgreSQL items; clinical advice queries are intercepted by Guardrails.</p>
+
+          <h3 class="report-h3">5. Common Errors & Troubleshooting</h3>
+          <ul class="report-list">
+            <li><strong>AccessDeniedException:</strong> Model access was not granted in Tokyo (<code>ap-northeast-1</code>). Request model access in the Bedrock Console.</li>
+          </ul>
+
+          ${renderPrevNextBar('ws-5-4', '5.4 App Deployment', 'ws-5-6', '5.6 Monitoring & Cost')}
+        </section>
+      </div>
+
+      <!-- MODULE 5.6 -->
+      <div class="ws-module-pane ${currentWorkshopStepId === 'ws-5-6' ? 'active' : ''}" id="pane-ws-5-6">
+        <section class="report-section">
+          <h2 class="report-h2">5.6 – Monitoring, Security & Cost Management</h2>
+
+          <h3 class="report-h3">1. Learning Objectives</h3>
+          <ul class="report-list">
+            <li>Stream and inspect live container logs with Amazon CloudWatch Logs.</li>
+            <li>Configure metric alarms and email notifications via Amazon SNS.</li>
+            <li>Enforce budget guardrails using AWS Budgets ($10 threshold).</li>
+            <li>Operate the demo lifecycle script <code>demo-infra.ps1</code> and reconcile empirical costs from AWS Cost Explorer.</li>
+          </ul>
+
+          <h3 class="report-h3">2. Prerequisites</h3>
+          <p class="report-p">Completed Lab 5.5. Live application on AWS.</p>
+
+          <h3 class="report-h3">3. Step-by-Step Practical Steps</h3>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">1</span> Configure Alert Email for CloudWatch & Budgets</div>
+            <p class="report-p">Set your notification email and apply Terraform configuration:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>cd infra/envs/dev
+export TF_VAR_alert_email="your-email@example.com"
+terraform apply -auto-approve</code></pre>
+            </div>
+            <p class="report-p">Check your email inbox for <em>"AWS Notification - Subscription Confirmation"</em> and click <strong>Confirm subscription</strong>.</p>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">2</span> Inspect Real-Time CloudWatch Logs</div>
+            <p class="report-p">Tail live container logs from your terminal:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>aws logs tail /ecs/nutrition-dev-backend --follow --region ap-southeast-1</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">3</span> Operate the Automated Demo Lifecycle Script</div>
+            <p class="report-p">Control active compute costs using the demo script:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>PowerShell</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code># Before presentation (~10-15 mins): Spin up RDS & ECS tasks
+powershell -ExecutionPolicy Bypass -File .\scripts\demo-infra.ps1 up
+
+# After presentation (~5-10 mins): Stop RDS & destroy ECS tasks to cease hourly compute fees
+powershell -ExecutionPolicy Bypass -File .\scripts\demo-infra.ps1 down</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">4</span> Empirical AWS Cost Explorer Spending Summary</div>
+            <p class="report-p">Active development spend from Nov 01 to Nov 21, 2026:</p>
+            <div class="report-table-wrapper">
+              <table class="report-table">
+                <thead>
+                  <tr>
+                    <th>AWS Service</th>
+                    <th class="text-right">Actual Cost (USD)</th>
+                    <th>Operational Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Amazon RDS PostgreSQL (db.t4g.micro)</td>
+                    <td class="text-right font-bold">2.77</td>
+                    <td>Instance hours during demo + 20 GB gp3 storage.</td>
+                  </tr>
+                  <tr>
+                    <td>Application Load Balancer (ALB)</td>
+                    <td class="text-right font-bold">1.29</td>
+                    <td>Active load balancer hours during integration testing.</td>
+                  </tr>
+                  <tr>
+                    <td>Amazon ECS Fargate (0.5 vCPU / 1 GB RAM)</td>
+                    <td class="text-right font-bold">1.21</td>
+                    <td>Serverless container compute runtime.</td>
+                  </tr>
+                  <tr>
+                    <td>Public IPv4 Address</td>
+                    <td class="text-right font-bold">0.74</td>
+                    <td>Public IPv4 allocation fees for task in public subnet.</td>
+                  </tr>
+                  <tr>
+                    <td>Amazon Bedrock (Nova 2 Lite)</td>
+                    <td class="text-right font-bold">0.21</td>
+                    <td>Token usage for conversational intent extraction.</td>
+                  </tr>
+                  <tr>
+                    <td>AWS Secrets Manager</td>
+                    <td class="text-right font-bold">0.20</td>
+                    <td>Encrypted credential vault storage and lookups.</td>
+                  </tr>
+                  <tr class="total-row">
+                    <td>Total Actual Spend</td>
+                    <td class="text-right">6.44</td>
+                    <td>100% Offset by Promotional AWS Credits</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.6-monitoring/cloudwatch-logs.png',
+            'Real-Time CloudWatch Logs Inspection',
+            'CloudWatch Logs stream recording HTTP 200 responses.',
+            false
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.6-monitoring/cloudwatch-alarms.png',
+            'CloudWatch Alarms Dashboard Status',
+            'CloudWatch Alarms dashboard displaying all metrics in healthy OK status.',
+            false
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.6-monitoring/aws-budgets.png',
+            'AWS Budgets & Cost Explorer Reconciled',
+            'AWS Budgets dashboard showing $6.44 spend well within the $10 budget ceiling.',
+            false
+          )}
+
+          <h3 class="report-h3">4. Verification & Expected Output</h3>
+          <p class="report-p">Alarms indicate OK; email notification received; demo script successfully starts and halts running compute on demand.</p>
+
+          <h3 class="report-h3">5. Common Errors & Troubleshooting</h3>
+          <ul class="report-list">
+            <li><strong>AWS Automatically Restarts Stopped RDS After 7 Days:</strong> AWS automatically starts stopped DB instances after 7 days. Re-run <code>demo-infra.ps1 down</code> if not presenting.</li>
+          </ul>
+
+          ${renderPrevNextBar('ws-5-5', '5.5 Bedrock AI', 'ws-5-7', '5.7 Clean-up')}
+        </section>
+      </div>
+
+      <!-- MODULE 5.7 -->
+      <div class="ws-module-pane ${currentWorkshopStepId === 'ws-5-7' ? 'active' : ''}" id="pane-ws-5-7">
+        <section class="report-section">
+          <h2 class="report-h2">5.7 – Resource Cleanup & Teardown</h2>
+
+          <h3 class="report-h3">1. Learning Objectives</h3>
+          <ul class="report-list">
+            <li>Master the complete, safe, and dependency-ordered infrastructure teardown procedure.</li>
+            <li>Purge S3 buckets, RDS database, ECS service, ECR images, and Cognito User Pool upon course completion.</li>
+            <li>Validate on the AWS Console that zero active billable resources remain.</li>
+          </ul>
+
+          <h3 class="report-h3">2. Prerequisites</h3>
+          <p class="report-p">All final project report artifacts, screenshots, and evaluations have been safely exported.</p>
+
+          <h3 class="report-h3">3. Step-by-Step Practical Steps</h3>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">1</span> Final Database Snapshot (Optional)</div>
+            <p class="report-p">Preserve database records for future reference:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>aws rds create-db-snapshot \
+  --db-instance-identifier nutrition-dev-postgres \
+  --db-snapshot-identifier nutrition-dev-final-backup \
+  --region ap-southeast-1</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">2</span> Empty Private S3 Buckets</div>
+            <p class="report-p">AWS prevents deletion of non-empty buckets. Purge all bucket contents:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>cd infra/envs/dev
+FRONTEND_BUCKET=$(terraform output -raw frontend_bucket_name)
+IMAGES_BUCKET=$(terraform output -raw images_bucket_name)
+
+aws s3 rm s3://$FRONTEND_BUCKET/ --recursive
+aws s3 rm s3://$IMAGES_BUCKET/ --recursive</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">3</span> Destroy Dev Infrastructure with Terraform</div>
+            <p class="report-p">Destroy all cloud infrastructure provisioned in the dev environment:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>terraform destroy -auto-approve</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">4</span> Destroy Bootstrap State Storage</div>
+            <p class="report-p">Purge and destroy the bootstrap S3 remote state bucket:</p>
+            <div class="code-snippet-wrap">
+              <div class="code-snippet-header"><span>Terminal</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div>
+              <pre><code>cd ../bootstrap
+TF_STATE_BUCKET=$(terraform output -raw state_bucket_name)
+aws s3 rm s3://$TF_STATE_BUCKET/ --recursive
+terraform destroy -auto-approve</code></pre>
+            </div>
+          </div>
+
+          <div class="ws-step-block">
+            <div class="ws-step-title"><span class="ws-step-badge">5</span> Validate Resource Deletion in AWS Console</div>
+            <p class="report-p">Check each service in Singapore (<code>ap-southeast-1</code>):</p>
+            <ul class="report-list">
+              <li><strong>ECS:</strong> Zero active clusters or tasks.</li>
+              <li><strong>RDS:</strong> Zero databases (only manual snapshot if created).</li>
+              <li><strong>EC2 / VPC:</strong> Load Balancers and Target Groups deleted; zero unattached Elastic IPs.</li>
+              <li><strong>CloudFront:</strong> Distribution disabled and removed.</li>
+            </ul>
+          </div>
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.7-cleanup/terraform-destroy-success.png',
+            'Terraform Destroy Completion',
+            'Terminal displaying "Destroy complete! Resources: XX destroyed".',
+            false
+          )}
+
+          ${renderEvidenceBox(
+            'assets/images/workshop/5.7-cleanup/console-clean-verification.png',
+            'AWS Console Post-Cleanup Verification',
+            'RDS and ECS Consoles confirming 0 active resources.',
+            false
+          )}
+
+          <h3 class="report-h3">4. Verification & Expected Output</h3>
+          <p class="report-p"><code>terraform destroy</code> exits with code 0; AWS Console reflects zero lingering resources; AWS Cost Explorer flatlines to $0.00.</p>
+
+          <h3 class="report-h3">5. Common Errors & Troubleshooting</h3>
+          <ul class="report-list">
+            <li><strong>RDS Deletion Protection Enabled:</strong> In <code>infra/modules/rds/main.tf</code> set <code>deletion_protection = false</code>, apply, then re-run destroy.</li>
+          </ul>
+
+          ${renderPrevNextBar('ws-5-6', '5.6 Monitoring & Cost', '', '')}
+        </section>
+      </div>
+    </div>
+  `;
+}
+
+function renderWorkshopView() {
+  const container = document.getElementById('workshop-content-container');
+  if (!container) return;
+
+  const lang = (window.app && window.app.currentLang) || 'vi';
+  container.innerHTML = lang === 'en' ? getWorkshopEnHtml() : getWorkshopViHtml();
+}
+
+function setupWorkshopSteps() {
+  renderWorkshopView();
 }
 
 // ==========================================
@@ -7131,6 +10569,10 @@ window.renderBlogDetail = renderBlogDetail;
 window.renderEventDrivenBlogDetail = renderEventDrivenBlogDetail;
 window.renderIdentityContainmentBlogDetail = renderIdentityContainmentBlogDetail;
 window.renderBlogsList = renderBlogsList;
+window.renderProposalView = renderProposalView;
+window.renderWorkshopView = renderWorkshopView;
+window.switchWorkshopTab = switchWorkshopTab;
+window.copyCodeSnippet = copyCodeSnippet;
 window.openBlogImageModal = openBlogImageModal;
 window.closeBlogImageModal = closeBlogImageModal;
 window.toggleBlogSnippet = toggleBlogSnippet;

@@ -277,7 +277,7 @@
                 <div class="toc-badge">2</div>
                 <div>
                   <h4 data-i18n="toc2Title">2. Đề xuất đồ án</h4>
-                  <p data-i18n="toc2Desc">Đề xuất đồ án: IoT Weather Platform - Giải pháp AWS Serverless Real-Time Monitoring.</p>
+                  <p data-i18n="toc2Desc">Đề xuất đồ án: Nền tảng Thương mại Điện tử Dinh dưỡng Cá nhân hóa trên AWS (Spring Boot, React, Bedrock, Terraform).</p>
                 </div>
               </div>
 
@@ -301,7 +301,7 @@
                 <div class="toc-badge">5</div>
                 <div>
                   <h4 data-i18n="toc5Title">5. Bài thực hành Workshop</h4>
-                  <p data-i18n="toc5Desc">Bài thực hành chuyên sâu: Secure Hybrid Access to S3 using Gateway & Interface VPC Endpoints.</p>
+                  <p data-i18n="toc5Desc">Hướng dẫn triển khai Nền tảng Dinh dưỡng Cá nhân hóa trên AWS (Terraform, ECS Fargate, RDS, Bedrock, CI/CD).</p>
                 </div>
               </div>
 
@@ -391,59 +391,8 @@
         <!-- VIEW: 2. PROPOSAL                              -->
         <!-- ============================================== -->
         <section class="page-view" id="view-proposal">
-          <div class="section-header-flex">
-            <div>
-              <h2 class="section-title" data-i18n="proposalSectionTitle">2. Đề xuất đồ án thực tập</h2>
-              <p class="section-subtitle" data-i18n="proposalSectionSubtitle">Giải pháp AWS Serverless toàn diện cho giám sát thời tiết thời gian thực</p>
-            </div>
-          </div>
-
-          <div class="notice-callout notice-info" style="margin-top: 1rem;">
-            <div class="notice-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></div>
-            <div class="notice-content" data-i18n="proposalNotice">
-              Đề tài nghiên cứu: Nền tảng quan trắc thời tiết IoT cho phòng thí nghiệm - Giải pháp AWS Serverless Real-Time Monitoring sử dụng AWS IoT Core, Lambda, S3 Data Lake, AWS Glue và Amplify Next.js.
-            </div>
-          </div>
-
-          <div class="proposal-container card" style="margin-top: 1.5rem;">
-            
-            <!-- 1. Executive Summary -->
-            <div class="proposal-block">
-              <h3 class="proposal-h3" data-i18n="prop1Heading">1. Tóm tắt điều hành</h3>
-              <div id="prop-summary" class="report-readonly-box"></div>
-            </div>
-
-            <!-- 2. Problem Statement -->
-            <div class="proposal-block">
-              <h3 class="proposal-h3" data-i18n="prop2Heading">2. Đặt vấn đề & Giải pháp</h3>
-              <label class="form-label" data-i18n="propProblemLabel">Thách thức hiện tại</label>
-              <div id="prop-problem" class="report-readonly-box"></div>
-
-              <label class="form-label" style="margin-top:12px;" data-i18n="propSolutionLabel">Giải pháp & Lợi ích mang lại</label>
-              <div id="prop-solution" class="report-readonly-box"></div>
-            </div>
-
-            <!-- 3. Solution Architecture -->
-            <div class="proposal-block">
-              <h3 class="proposal-h3" data-i18n="prop3Heading">3. Kiến trúc giải pháp & Dịch vụ AWS sử dụng</h3>
-              <div class="services-badge-grid">
-                <span class="badge badge-purple">AWS IoT Core</span>
-                <span class="badge badge-blue">AWS Lambda</span>
-                <span class="badge badge-blue">Amazon API Gateway</span>
-                <span class="badge badge-green">Amazon S3 (Data Lake)</span>
-                <span class="badge badge-green">AWS Glue (Crawler & ETL)</span>
-                <span class="badge badge-purple">AWS Amplify (Next.js)</span>
-                <span class="badge badge-gray">Amazon Cognito</span>
-                <span class="badge badge-gray">Amazon CloudWatch</span>
-              </div>
-              <div id="prop-arch" class="report-readonly-box" style="margin-top:12px;"></div>
-            </div>
-
-            <!-- 4. Budget Estimation -->
-            <div class="proposal-block">
-              <h3 class="proposal-h3" data-i18n="prop4Heading">4. Dự toán chi phí hạ tầng AWS hàng tháng</h3>
-              <div id="prop-budget" class="report-readonly-box"></div>
-            </div>
+          <div id="proposal-content-container">
+            <!-- Rendered dynamically by renderProposalView() -->
           </div>
         </section>
 
@@ -523,125 +472,8 @@
         <!-- VIEW: 5. WORKSHOP (S3 VPC ENDPOINTS)           -->
         <!-- ============================================== -->
         <section class="page-view" id="view-workshop">
-          <div class="section-header-flex">
-            <div>
-              <h2 class="section-title" data-i18n="workshopSectionTitle">5. Bài thực hành: Truy cập S3 an toàn qua VPC Endpoints</h2>
-              <p class="section-subtitle" data-i18n="workshopSectionSubtitle">Bài thực hành chuyên sâu về AWS PrivateLink, Gateway & Interface Endpoints</p>
-            </div>
-          </div>
-
-          <div class="card" style="margin-top: 1.5rem;">
-            <!-- Workshop Nav Pills -->
-            <div class="workshop-steps-nav">
-              <button class="ws-step-btn active" data-step="ws-overview" data-i18n="wsTabOverview">5.1 Tổng quan</button>
-              <button class="ws-step-btn" data-step="ws-prereq" data-i18n="wsTabPrereq">5.2 Điều kiện tiên quyết</button>
-              <button class="ws-step-btn" data-step="ws-vpc" data-i18n="wsTabVpc">5.3 Truy cập S3 từ VPC</button>
-              <button class="ws-step-btn" data-step="ws-onprem" data-i18n="wsTabOnPrem">5.4 Truy cập từ On-Premises</button>
-              <button class="ws-step-btn" data-step="ws-policy" data-i18n="wsTabPolicy">5.5 Chính sách Endpoint</button>
-              <button class="ws-step-btn" data-step="ws-cleanup" data-i18n="wsTabCleanup">5.6 Dọn dẹp tài nguyên</button>
-            </div>
-
-            <!-- Step 5.1 -->
-            <div class="ws-step-pane active" id="pane-ws-overview">
-              <h3 class="ws-pane-title" data-i18n="wsOverviewTitle">5.1 Tổng quan & Kiến trúc bài thực hành</h3>
-              <p data-i18n="wsOverviewDesc">AWS PrivateLink cung cấp kết nối riêng tư an toàn tới các dịch vụ AWS từ VPC và mạng On-premises nội bộ mà không cần đưa lưu lượng truy cập qua Internet công cộng.</p>
-              
-              <div class="endpoint-comparison-grid">
-                <div class="compare-card">
-                  <h4 data-i18n="wsGatewayCardTitle">Gateway VPC Endpoint</h4>
-                  <p data-i18n="wsGatewayCardDesc">Sử dụng cho tài nguyên bên trong VPC truy cập vào Amazon S3 và Amazon DynamoDB. Định tuyến lưu lượng thông qua Route Table mà không phát sinh thêm chi phí theo giờ.</p>
-                </div>
-                <div class="compare-card">
-                  <h4 data-i18n="wsInterfaceCardTitle">Interface VPC Endpoint</h4>
-                  <p data-i18n="wsInterfaceCardDesc">Được cấp phát Elastic Network Interface (ENI) với địa chỉ IP riêng trong Subnet của bạn. Hỗ trợ truy cập cả từ VPC lẫn mạng On-premises thông qua AWS Site-to-Site VPN hoặc Direct Connect.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Step 5.2 -->
-            <div class="ws-step-pane" id="pane-ws-prereq">
-              <h3 class="ws-pane-title" data-i18n="wsPrereqTitle">5.2 Điều kiện tiên quyết & Chính sách IAM</h3>
-              <p data-i18n="wsPrereqDesc">Chính sách IAM quyền tối thiểu để khởi tạo tài nguyên CloudFormation và Transit Gateway:</p>
-              <div class="code-block">
-                <pre><code>{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": [
-        "ec2:*TransitGateway*",
-        "ec2:*VpcEndpoint*",
-        "ec2:*RouteTable*",
-        "s3:*",
-        "route53resolver:*"
-      ],
-      "Resource": "*"
-    }
-  ]
-}</code></pre>
-              </div>
-            </div>
-
-            <!-- Step 5.3 -->
-            <div class="ws-step-pane" id="pane-ws-vpc">
-              <h3 class="ws-pane-title" data-i18n="wsVpcTitle">5.3 Truy cập S3 từ VPC (Gateway Endpoint)</h3>
-              <p data-i18n="wsVpcDesc">Các bước thực hiện tạo Gateway Endpoint và kiểm thử kết nối riêng tư:</p>
-              <ol class="step-list">
-                <li data-i18n="wsVpcStep1">Vào VPC Console > Endpoints > Chọn Create Endpoint.</li>
-                <li data-i18n="wsVpcStep2">Chọn Service: com.amazonaws.us-east-1.s3 dạng Gateway.</li>
-                <li data-i18n="wsVpcStep3">Gắn Route Table của VPC Cloud để tự động cập nhật route prefix S3.</li>
-                <li><span data-i18n="wsVpcStep4">Kiểm tra lệnh từ EC2 instance:</span>
-                  <div class="code-block"><pre><code>aws s3 ls s3://&lt;your-bucket-name&gt;</code></pre></div>
-                </li>
-              </ol>
-            </div>
-
-            <!-- Step 5.4 -->
-            <div class="ws-step-pane" id="pane-ws-onprem">
-              <h3 class="ws-pane-title" data-i18n="wsOnpremTitle">5.4 Truy cập S3 từ On-Premises (Interface Endpoint)</h3>
-              <p data-i18n="wsOnpremDesc">Mô phỏng môi trường On-Premises kết nối qua strongSwan VPN và cấu hình Route 53 Resolver Rule:</p>
-              <div class="code-block">
-                <pre><code><span data-i18n="wsOnpremCmt1"># Kiểm tra phân giải DNS nội bộ từ On-Premises</span>
-nslookup s3.us-east-1.amazonaws.com
-
-<span data-i18n="wsOnpremCmt2"># Tải file qua Interface Endpoint riêng tư</span>
-aws s3 cp test-file.bin s3://&lt;your-bucket-name&gt;/ --endpoint-url https://bucket.vpce-xxxx.s3.us-east-1.vpce.amazonaws.com</code></pre>
-              </div>
-            </div>
-
-            <!-- Step 5.5 -->
-            <div class="ws-step-pane" id="pane-ws-policy">
-              <h3 class="ws-pane-title" data-i18n="wsPolicyTitle">5.5 Chính sách VPC Endpoint (Kiểm soát quyền truy cập)</h3>
-              <p data-i18n="wsPolicyDesc">Chính sách giới hạn chỉ cho phép truy cập vào duy nhất bucket yourbucketname-2:</p>
-              <div class="code-block">
-                <pre><code>{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "RestrictSpecificBucket",
-      "Effect": "Allow",
-      "Principal": "*",
-      "Action": "s3:*",
-      "Resource": [
-        "arn:aws:s3:::yourbucketname-2",
-        "arn:aws:s3:::yourbucketname-2/*"
-      ]
-    }
-  ]
-}</code></pre>
-              </div>
-            </div>
-
-            <!-- Step 5.6 -->
-            <div class="ws-step-pane" id="pane-ws-cleanup">
-              <h3 class="ws-pane-title" data-i18n="wsCleanupTitle">5.6 Dọn dẹp tài nguyên (Tối ưu chi phí)</h3>
-              <ul class="step-list">
-                <li data-i18n="wsCleanupStep1">Xóa Route 53 Hosted Zone s3.us-east-1.amazonaws.com.</li>
-                <li data-i18n="wsCleanupStep2">Hủy liên kết Route 53 Resolver Rule myS3Rule khỏi VPC On-prem.</li>
-                <li data-i18n="wsCleanupStep3">Xóa 2 CloudFormation Stacks: PLOnpremSetup và PLCloudSetup.</li>
-                <li data-i18n="wsCleanupStep4">Empty và Delete các S3 buckets đã tạo trong bài lab.</li>
-              </ul>
-            </div>
+          <div id="workshop-content-container">
+            <!-- Rendered dynamically by renderWorkshopView() -->
           </div>
         </section>
 
