@@ -734,7 +734,7 @@ const DEFAULT_BILINGUAL_DATA = {
               ref: "[Bắt đầu với EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)"
             },
             {
-              day: "Thứ Ba (Văn phòng)",
+              day: "Thứ Ba",
               desc: "Main Task: EC2 Configuration.\nDetailed Activities: Tìm hiểu cách cấu hình EC2, Key Pair và Security Group.",
               start: "2026-09-22", end: "2026-09-22",
               ref: "[EC2 Security Groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)"
@@ -759,7 +759,7 @@ const DEFAULT_BILINGUAL_DATA = {
               ref: "[Getting Started with EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)"
             },
             {
-              day: "Tuesday (Office)",
+              day: "Tuesday",
               desc: "Main Task: EC2 Configuration.\nDetailed Activities: Learn how to configure EC2, Key Pairs and Security Groups.",
               start: "2026-09-22", end: "2026-09-22",
               ref: "[EC2 Security Groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)"
@@ -794,7 +794,7 @@ const DEFAULT_BILINGUAL_DATA = {
               ref: "[Cấu hình Subnet](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html)"
             },
             {
-              day: "Thứ Năm (Văn phòng)",
+              day: "Thứ Năm",
               desc: "Main Task: VPC Connectivity & Security.\nDetailed Activities: Tìm hiểu Internet Gateway và Security Group để kết nối, kiểm soát lưu lượng mạng.",
               start: "2026-10-01", end: "2026-10-01",
               ref: "[Internet Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)"
@@ -819,7 +819,7 @@ const DEFAULT_BILINGUAL_DATA = {
               ref: "[Subnet Configuration](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html)"
             },
             {
-              day: "Thursday (Office)",
+              day: "Thursday",
               desc: "Main Task: VPC Connectivity & Security.\nDetailed Activities: Learn about Internet Gateway and Security Groups for connectivity and traffic control.",
               start: "2026-10-01", end: "2026-10-01",
               ref: "[Internet Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)"
@@ -836,7 +836,7 @@ const DEFAULT_BILINGUAL_DATA = {
           achievements: "- Hiểu cơ bản về AWS Lambda và mô hình Serverless.\n- Biết cách lưu trữ dữ liệu trên Amazon S3.\n- Làm quen với môi trường AWS Cloud9.\n- Phân biệt cơ sở dữ liệu quan hệ RDS và NoSQL DynamoDB.",
           tasks: [
             {
-              day: "Thứ Ba (Văn phòng)",
+              day: "Thứ Ba",
               desc: "Main Task: AWS Lambda.\nDetailed Activities: Tìm hiểu Lambda Function và cách thực thi mã nguồn theo mô hình Serverless.",
               start: "2026-10-06", end: "2026-10-06",
               ref: "[Bắt đầu với AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html)"
@@ -861,7 +861,7 @@ const DEFAULT_BILINGUAL_DATA = {
           achievements: "- Understood the basics of AWS Lambda and the Serverless model.\n- Learned how to store data on Amazon S3.\n- Got familiar with the AWS Cloud9 development environment.\n- Distinguished between relational database RDS and NoSQL DynamoDB.",
           tasks: [
             {
-              day: "Tuesday (Office)",
+              day: "Tuesday",
               desc: "Main Task: AWS Lambda.\nDetailed Activities: Learn about Lambda Functions and how to execute code using the Serverless model.",
               start: "2026-10-06", end: "2026-10-06",
               ref: "[Getting Started with AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html)"
@@ -883,88 +883,46 @@ const DEFAULT_BILINGUAL_DATA = {
       };
     } else if (weekNum === 5) {
       return {
-        "weekNum": 5,
-        "vi": {
-          "topic": "Lab tích hợp AWS, Kiểm thử & Tài liệu hóa (12/10/2026 – 16/10/2026)",
-          "objectives": "- Ôn tập và củng cố kiến thức AWS đã học trong bốn tuần trước.\n- Hiểu cách IAM, VPC, EC2, RDS, S3 và CloudWatch phối hợp với nhau.\n- Thiết kế một kiến trúc AWS cơ bản cho một ứng dụng web đơn giản.\n- Thực hành triển khai và cấu hình nhiều dịch vụ AWS trong một môi trường tích hợp.\n- Kiểm thử kết nối ứng dụng, quyền truy cập tài nguyên và bảo mật mạng.\n- Giám sát tài nguyên AWS và rà soát chi phí vận hành cloud cơ bản.\n- Nâng cao kỹ năng xử lý sự cố, viết tài liệu kỹ thuật và quản lý hạ tầng cloud.",
-          "achievements": "- Củng cố kiến thức nền tảng về Điện toán đám mây AWS và hạ tầng cloud.\n- Hiểu mối liên hệ giữa các dịch vụ AWS chính:\n  - IAM\n  - VPC\n  - EC2\n  - EBS\n  - S3\n  - RDS\n  - CloudWatch\n  - AWS Budgets\n- Thiết kế một kiến trúc AWS cơ bản cho một ứng dụng web đơn giản.\n- Thực hành tạo và cấu hình một VPC tùy chỉnh với public subnet và private subnet.\n- Thực hành triển khai EC2 instance và cấu hình truy cập mạng.\n- Cấu hình IAM Role cho EC2 để truy cập các tài nguyên AWS được cấp quyền.\n- Thực hành lưu trữ và truy xuất file trên Amazon S3.\n- Thực hành kết nối ứng dụng chạy trên EC2 tới cơ sở dữ liệu Amazon RDS.\n- Biết cách kiểm tra kết nối mạng và xử lý các lỗi cấu hình.\n- Thực hành giám sát tài nguyên EC2 và RDS bằng Amazon CloudWatch.\n- Rà soát cấu hình bảo mật, mức sử dụng tài nguyên và chi phí ước tính trên AWS.\n- Viết tài liệu kỹ thuật mô tả hạ tầng AWS đã triển khai.\n- Nâng cao kỹ năng thực hành triển khai, giám sát, xử lý sự cố và quản lý tài nguyên AWS.",
-          "tasks": [
+        weekNum: 5,
+        vi: {
+          topic: "Project Ideation & Preparation (13/10/2026 – 14/10/2026)",
+          objectives: "Thảo luận, lựa chọn chủ đề và xây dựng ý tưởng ban đầu cho dự án Nutrition E-Commerce.",
+          achievements: "- Thống nhất lựa chọn chủ đề Nutrition E-Commerce.\n- Xác định mục tiêu và các chức năng dự kiến.\n- Tìm hiểu website bán thực phẩm Eat Clean và nguồn dữ liệu dinh dưỡng bên thứ ba.",
+          tasks: [
             {
-              "day": "Thứ 2",
-              "desc": "- Ôn lại kiến thức AWS đã học trong Tuần 1–4.\n- Ôn lại các khái niệm IAM, VPC, EC2, S3, RDS và CloudWatch.\n- Tìm hiểu kiến trúc của một ứng dụng web cơ bản chạy trên cloud.\n- Thiết kế một sơ đồ hạ tầng AWS đơn giản.\n- Xác định các tài nguyên AWS cần dùng và mối liên hệ giữa chúng.\n- Chuẩn bị môi trường cho bài lab tích hợp.",
-              "start": "2026-10-12",
-              "end": "2026-10-12",
-              "ref": "https://docs.aws.amazon.com/wellarchitected/latest/framework/framework.html"
+              day: "Thứ Ba",
+              desc: "Main Task: Project Topic Discussion.\nDetailed Activities: Thảo luận nhóm, tìm kiếm và đề xuất ý tưởng dự án. Tìm hiểu mô hình kinh doanh thực phẩm Eat Clean, các sản phẩm và cách tổ chức danh mục trên website thương mại điện tử.",
+              start: "2026-10-13",
+              end: "2026-10-13",
+              ref: "[HelloFresh](https://www.hellofresh.com/) / [Go Fit Mart](https://gofitmart.vn/)"
             },
             {
-              "day": "Thứ 3",
-              "desc": "- Thực hành tạo một VPC tùy chỉnh cho ứng dụng web.\n- Cấu hình public subnet và private subnet.\n- Cấu hình Internet Gateway, Route Table và Security Group.\n- Khởi tạo một EC2 instance Linux trong public subnet.\n- Cấu hình truy cập SSH và kiểm tra kết nối tới instance.\n- Gắn IAM Role cho EC2 instance.",
-              "start": "2026-10-13",
-              "end": "2026-10-13",
-              "ref": "https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html"
-            },
-            {
-              "day": "Thứ 4",
-              "desc": "- Thực hành chuẩn bị môi trường ứng dụng web cơ bản trên EC2.\n- Cấu hình web server và kiểm tra kết nối HTTP.\n- Tạo một Amazon S3 Bucket để lưu file của ứng dụng.\n- Cấu hình quyền IAM phù hợp để truy cập S3.\n- Thực hành truyền file giữa EC2 và Amazon S3.\n- Rà soát bảo mật ứng dụng và các thiết lập truy cập tài nguyên.",
-              "start": "2026-10-14",
-              "end": "2026-10-14",
-              "ref": "https://docs.aws.amazon.com/linux/al2023/ug/ec2-lamp-amazon-linux-2023.html"
-            },
-            {
-              "day": "Thứ 5",
-              "desc": "- Ôn lại cấu hình Amazon RDS và kết nối cơ sở dữ liệu.\n- Thực hành tạo một cơ sở dữ liệu RDS cho ứng dụng web.\n- Cấu hình truy cập cơ sở dữ liệu qua Security Group.\n- Kiểm tra kết nối giữa EC2 và RDS.\n- Chạy các câu lệnh SQL cơ bản để kiểm tra hoạt động của cơ sở dữ liệu.\n- Xác định và xử lý các lỗi kết nối thường gặp.",
-              "start": "2026-10-15",
-              "end": "2026-10-15",
-              "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/TUT_WebAppWithRDS.html"
-            },
-            {
-              "day": "Thứ 6",
-              "desc": "- Rà soát kiến trúc AWS tích hợp và các tài nguyên đã triển khai.\n- Thực hành giám sát EC2 và RDS bằng Amazon CloudWatch.\n- Kiểm tra Security Group, IAM Role và quyền truy cập tài nguyên.\n- Rà soát AWS Budgets và chi phí dịch vụ ước tính.\n- Kiểm thử cơ bản môi trường AWS tích hợp.\n- Dọn dẹp các tài nguyên AWS không cần thiết.\n- Tổng hợp kết quả thực hành và viết tài liệu kỹ thuật.",
-              "start": "2026-10-16",
-              "end": "2026-10-16",
-              "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/monitoring-cloudwatch.html"
+              day: "Thứ Tư",
+              desc: "Main Task: Project Ideation & Preparation.\nDetailed Activities: Thống nhất chủ đề Nutrition E-Commerce, xác định mục tiêu và các chức năng dự kiến. Tìm hiểu nguồn dữ liệu bên thứ ba để tra cứu thông tin dinh dưỡng như calo, protein, carbohydrate và chất béo.",
+              start: "2026-10-14",
+              end: "2026-10-14",
+              ref: "[FoodData Central](https://fdc.nal.usda.gov/) / [Open Food Facts](https://world.openfoodfacts.org/) / [MyFitnessPal](https://www.myfitnesspal.com/)"
             }
           ]
         },
-        "en": {
-          "topic": "Integrated AWS Lab, Testing & Documentation (12/10/2026 – 16/10/2026)",
-          "objectives": "- Review and consolidate the AWS knowledge acquired during the previous four weeks.\n- Understand how IAM, VPC, EC2, RDS, S3, and CloudWatch work together.\n- Design a basic AWS cloud architecture for a simple web application.\n- Practice deploying and configuring multiple AWS services in an integrated environment.\n- Test application connectivity, resource permissions, and network security.\n- Monitor AWS resources and review basic cloud operating costs.\n- Improve troubleshooting, technical documentation, and cloud infrastructure management skills.",
-          "achievements": "- Consolidated fundamental knowledge of AWS Cloud Computing and cloud infrastructure.\n- Understood the relationships between major AWS services:\n  - IAM\n  - VPC\n  - EC2\n  - EBS\n  - S3\n  - RDS\n  - CloudWatch\n  - AWS Budgets\n- Designed a basic AWS cloud architecture for a simple web application.\n- Practiced creating and configuring a custom VPC with public and private subnets.\n- Practiced deploying an EC2 instance and configuring network access.\n- Configured an IAM Role for EC2 to access authorized AWS resources.\n- Practiced storing and retrieving files from Amazon S3.\n- Practiced connecting an EC2-based application to an Amazon RDS database.\n- Learned how to verify network connectivity and troubleshoot configuration issues.\n- Practiced monitoring EC2 and RDS resources using Amazon CloudWatch.\n- Reviewed AWS security configurations, resource usage, and estimated costs.\n- Prepared technical documentation describing the deployed AWS infrastructure.\n- Improved practical skills in AWS resource deployment, monitoring, troubleshooting, and management.",
-          "tasks": [
+        en: {
+          topic: "Project Ideation & Preparation (13/10/2026 – 14/10/2026)",
+          objectives: "Discuss, select the project topic, and build the initial ideation for the Nutrition E-Commerce project.",
+          achievements: "- Agreed on the Nutrition E-Commerce project topic.\n- Defined project goals and expected features.\n- Researched Eat Clean food e-commerce websites and third-party nutritional data sources.",
+          tasks: [
             {
-              "day": "Monday",
-              "desc": "- Review AWS knowledge acquired during Weeks 1–4.\n- Review IAM, VPC, EC2, S3, RDS, and CloudWatch concepts.\n- Learn about the architecture of a basic cloud-hosted web application.\n- Design a simple AWS infrastructure diagram.\n- Identify the required AWS resources and their relationships.\n- Prepare the environment for an integrated hands-on lab.",
-              "start": "2026-10-12",
-              "end": "2026-10-12",
-              "ref": "https://docs.aws.amazon.com/wellarchitected/latest/framework/framework.html"
+              day: "Tuesday",
+              desc: "Main Task: Project Topic Discussion.\nDetailed Activities: Group discussion, searching and proposing project ideas. Research Eat Clean food business models, products, and catalog organization on e-commerce websites.",
+              start: "2026-10-13",
+              end: "2026-10-13",
+              ref: "[HelloFresh](https://www.hellofresh.com/) / [Go Fit Mart](https://gofitmart.vn/)"
             },
             {
-              "day": "Tuesday",
-              "desc": "- Practice creating a custom VPC for a web application.\n- Configure public and private subnets.\n- Configure Internet Gateway, Route Tables, and Security Groups.\n- Launch an EC2 Linux instance in the public subnet.\n- Configure SSH access and verify instance connectivity.\n- Attach an IAM Role to the EC2 instance.",
-              "start": "2026-10-13",
-              "end": "2026-10-13",
-              "ref": "https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html"
-            },
-            {
-              "day": "Wednesday",
-              "desc": "- Practice preparing a basic web application environment on EC2.\n- Configure a web server and verify HTTP connectivity.\n- Create an Amazon S3 Bucket for application files.\n- Configure appropriate IAM permissions for accessing S3.\n- Practice transferring files between EC2 and Amazon S3.\n- Review application security and resource access settings.",
-              "start": "2026-10-14",
-              "end": "2026-10-14",
-              "ref": "https://docs.aws.amazon.com/linux/al2023/ug/ec2-lamp-amazon-linux-2023.html"
-            },
-            {
-              "day": "Thursday",
-              "desc": "- Review Amazon RDS configuration and database connectivity.\n- Practice creating an RDS database for the web application.\n- Configure database access through Security Groups.\n- Test connectivity between EC2 and RDS.\n- Execute basic SQL queries to verify database operations.\n- Identify and troubleshoot common connection issues.",
-              "start": "2026-10-15",
-              "end": "2026-10-15",
-              "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/TUT_WebAppWithRDS.html"
-            },
-            {
-              "day": "Friday",
-              "desc": "- Review the integrated AWS architecture and deployed resources.\n- Practice monitoring EC2 and RDS using Amazon CloudWatch.\n- Check Security Groups, IAM Roles, and resource permissions.\n- Review AWS Budgets and estimated service costs.\n- Perform basic testing of the integrated AWS environment.\n- Clean up unnecessary AWS resources.\n- Prepare a summary of hands-on results and technical documentation.",
-              "start": "2026-10-16",
-              "end": "2026-10-16",
-              "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/monitoring-cloudwatch.html"
+              day: "Wednesday",
+              desc: "Main Task: Project Ideation & Preparation.\nDetailed Activities: Finalize the Nutrition E-Commerce topic, define project objectives and planned features. Research third-party nutritional data sources to look up calories, protein, carbohydrates, and fat.",
+              start: "2026-10-14",
+              end: "2026-10-14",
+              ref: "[FoodData Central](https://fdc.nal.usda.gov/) / [Open Food Facts](https://world.openfoodfacts.org/) / [MyFitnessPal](https://www.myfitnesspal.com/)"
             }
           ]
         }
@@ -1822,7 +1780,7 @@ const DEFAULT_BILINGUAL_DATA = {
 // ==========================================
 // 3. PERSISTENCE & STATE MANAGEMENT
 // ==========================================
-const STORAGE_KEY = 'fcaj_report_bilingual_v21';
+const STORAGE_KEY = 'fcaj_report_bilingual_v22';
 const LANG_KEY = 'fcaj_report_lang';
 
 class AppLanguageManager {
@@ -1834,6 +1792,7 @@ class AppLanguageManager {
 
   cleanupLegacyStorage() {
     const legacyKeys = [
+      'fcaj_report_bilingual_v21',
       'fcaj_report_bilingual_v20',
       'fcaj_report_bilingual_v19',
       'fcaj_report_bilingual_v18',
