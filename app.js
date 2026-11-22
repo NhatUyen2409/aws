@@ -669,342 +669,216 @@ const DEFAULT_BILINGUAL_DATA = {
       return {
         weekNum: 1,
         vi: {
-          topic: "Nền tảng Điện toán đám mây & Amazon EC2 (14/09/2026 – 18/09/2026)",
-          objectives: "- Làm quen với các thành viên FCAJ và nắm rõ quy trình làm việc trong kỳ thực tập.\n- Hoàn tất đăng ký nhận AWS Free $100 Credit để phục vụ thực hành.\n- Hiểu các dịch vụ AWS cơ bản và hạ tầng toàn cầu của AWS.\n- Làm quen với AWS Management Console và AWS CLI.\n- Tìm hiểu các khái niệm cơ bản về Amazon EC2 và thực hiện bài lab EC2 đầu tiên.",
-          achievements: "- Đăng ký thành công AWS Free $100 Credit cho các hoạt động thực hành trên AWS.\n- Nắm được các khái niệm cơ bản về Điện toán đám mây và Hạ tầng toàn cầu AWS:\n  - Region\n  - Availability Zone\n  - Edge Location\n- Nắm được các nhóm dịch vụ AWS chính:\n  - Compute\n  - Storage\n  - Networking\n  - Database\n  - Security\n  - Monitoring\n- Làm quen với AWS Management Console và biết cách:\n  - Tìm kiếm và truy cập các dịch vụ AWS\n  - Chuyển đổi AWS Region\n  - Xem và quản lý tài nguyên AWS\n  - Kiểm tra thông tin cơ bản của tài nguyên\n- Cài đặt và cấu hình thành công AWS CLI, bao gồm:\n  - Access Key\n  - Secret Key\n  - Default Region\n  - Output Format\n- Sử dụng AWS CLI để:\n  - Xác minh danh tính và thông tin tài khoản AWS\n  - Kiểm tra cấu hình CLI\n  - Lấy danh sách các AWS Region\n  - Xem các EC2 instance và trạng thái instance\n  - Quản lý/kiểm tra EC2 Key Pair\n  - Truy xuất thông tin cơ bản của tài nguyên AWS\n- Nắm được các thành phần cơ bản của Amazon EC2:\n  - AMI\n  - Instance Type\n  - EBS\n  - Key Pair\n  - Security Group\n  - Public/Private IP\n  - Elastic IP\n- Khởi tạo và quản lý thành công một EC2 instance.\n- Kết nối thành công tới EC2 instance Linux qua SSH.\n- Tạo và gắn thêm một EBS volume vào EC2 instance.\n- Thực hành quản lý EC2 bằng cả AWS Console và AWS CLI.\n- Có khả năng thực hiện trọn vẹn một quy trình cơ bản:\n  AWS Account → Console/CLI → EC2 → Security Group → SSH → EBS → Quản lý tài nguyên.",
+          topic: "AWS Fundamentals & IAM (15/09/2026 – 20/09/2026)",
+          objectives: "Làm quen với AWS và tìm hiểu dịch vụ quản lý quyền truy cập IAM.",
+          achievements: "- Hiểu tổng quan về AWS và hạ tầng AWS.\n- Biết cách quản lý người dùng và quyền truy cập bằng IAM.\n- Hiểu IAM Roles, Policies và Least Privilege.",
           tasks: [
             {
-              day: "Thứ 2",
-              desc: "- Làm quen với mentor và các thành viên FCAJ.\n- Tìm hiểu lộ trình thực tập, quy trình làm việc, nội quy và quy định của FCAJ.\n- Nắm rõ yêu cầu viết worklog hằng tuần và kết quả học tập mong đợi.\n- Hoàn tất thủ tục nhận AWS Free $100 Credit cho các bài lab thực hành.\n- Kiểm tra môi trường học tập AWS và tìm hiểu các biện pháp kiểm soát chi phí cơ bản.",
-              start: "2026-09-14", end: "2026-09-14",
-              ref: "https://aws.amazon.com/free/"
-            },
-            {
-              day: "Thứ 3",
-              desc: "- Học kiến thức nền tảng về Điện toán đám mây và Amazon Web Services (AWS).\n- Tìm hiểu Hạ tầng toàn cầu AWS: Region, Availability Zone, Edge Location.\n- Tìm hiểu các nhóm dịch vụ AWS chính: Compute, Storage, Networking, Database, Security, Monitoring.\n- Khám phá AWS Management Console và tìm vị trí các dịch vụ AWS thường dùng.\n- Thực hành chuyển đổi AWS Region và kiểm tra các dịch vụ/tài nguyên khả dụng.",
+              day: "Thứ Ba",
+              desc: "Main Task: AWS Fundamentals.\nDetailed Activities: Tìm hiểu tổng quan AWS, AWS Console, Regions và Availability Zones.",
               start: "2026-09-15", end: "2026-09-15",
-              ref: "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html"
+              ref: "[Tổng quan hạ tầng AWS](https://aws.amazon.com/about-aws/global-infrastructure/)"
             },
             {
-              day: "Thứ 4",
-              desc: "- Tìm hiểu AWS Management Console và AWS CLI.\n- Cài đặt và cấu hình AWS CLI trên máy tính cá nhân.\n- Cấu hình Access Key, Secret Key, Default Region và Output Format.\n- Thực hành các lệnh CLI cơ bản để kiểm tra danh tính AWS, cấu hình và các Region khả dụng.\n- Dùng AWS CLI để lấy thông tin EC2 và so sánh kết quả với AWS Console.\n- Hiểu sự khác nhau giữa quản lý tài nguyên AWS qua Console và qua CLI.",
-              start: "2026-09-16", end: "2026-09-16",
-              ref: "https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html"
+              day: "Thứ Năm",
+              desc: "Main Task: IAM Users & Groups.\nDetailed Activities: Tìm hiểu IAM User, User Groups và cách quản lý quyền truy cập.",
+              start: "2026-09-17", end: "2026-09-17",
+              ref: "[Quản lý IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html)"
             },
             {
-              day: "Thứ 5",
-              desc: "- Học các khái niệm cơ bản về Amazon EC2.\n- Tìm hiểu AMI, Instance Type, EBS, Key Pair, Security Group, Public IP, Private IP và Elastic IP.\n- Hiểu vòng đời EC2 instance: Pending, Running, Stopping, Stopped, Terminated.\n- Tìm hiểu cơ chế xác thực SSH khi kết nối tới EC2.\n- Tìm hiểu vai trò của Security Group trong việc kiểm soát lưu lượng inbound/outbound.\n- Khám phá EC2 Dashboard và các tùy chọn cấu hình instance.",
-              start: "2026-09-17", end: "2026-09-18",
-              ref: "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html"
-            },
-            {
-              day: "Thứ 6",
-              desc: "- Thực hành khởi tạo một Amazon EC2 instance.\n- Cấu hình AMI, Instance Type, Key Pair, Network và Security Group.\n- Kết nối tới EC2 instance Linux qua SSH.\n- Chạy các lệnh Linux cơ bản và kiểm tra trạng thái máy chủ.\n- Tạo và gắn thêm một EBS volume vào EC2.\n- Thực hành Start/Stop EC2 và kiểm tra trạng thái instance bằng cả AWS Console và AWS CLI.",
-              start: "2026-09-18", end: "2026-09-18",
-              ref: "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html"
+              day: "Chủ Nhật",
+              desc: "Main Task: IAM Roles & Policies.\nDetailed Activities: Tìm hiểu IAM Roles, Policies và nguyên tắc Least Privilege.",
+              start: "2026-09-20", end: "2026-09-20",
+              ref: "[IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)"
             }
           ]
         },
         en: {
-          topic: "Cloud Fundamentals & Amazon EC2 (14/09/2026 – 18/09/2026)",
-          objectives: "- Get acquainted with FCAJ members and understand the internship working process.\n- Complete the AWS Free $100 Credit registration for hands-on practice.\n- Understand fundamental AWS services and AWS global infrastructure.\n- Become familiar with AWS Management Console and AWS CLI.\n- Learn basic Amazon EC2 concepts and perform the first EC2 hands-on lab.",
-          achievements: "- Successfully completed the AWS Free $100 Credit registration for AWS hands-on activities.\n- Understood the basic concepts of Cloud Computing and AWS Global Infrastructure:\n  - Region\n  - Availability Zone\n  - Edge Location\n- Understood the major AWS service groups:\n  - Compute\n  - Storage\n  - Networking\n  - Database\n  - Security\n  - Monitoring\n- Became familiar with the AWS Management Console and learned how to:\n  - Search and access AWS services\n  - Switch AWS Regions\n  - View and manage AWS resources\n  - Check basic resource information\n- Successfully installed and configured AWS CLI, including:\n  - Access Key\n  - Secret Key\n  - Default Region\n  - Output Format\n- Used AWS CLI to:\n  - Verify AWS identity and account information\n  - Check CLI configuration\n  - Retrieve the list of AWS Regions\n  - View EC2 instances and instance states\n  - Manage/check EC2 Key Pairs\n  - Retrieve basic AWS resource information\n- Learned the fundamental components of Amazon EC2:\n  - AMI\n  - Instance Type\n  - EBS\n  - Key Pair\n  - Security Group\n  - Public/Private IP\n  - Elastic IP\n- Successfully launched and managed an EC2 instance.\n- Successfully connected to a Linux EC2 instance through SSH.\n- Created and attached an additional EBS volume to an EC2 instance.\n- Practiced managing EC2 using both AWS Console and AWS CLI.\n- Gained the ability to perform a complete basic workflow:\n  AWS Account → Console/CLI → EC2 → Security Group → SSH → EBS → Resource Management.",
+          topic: "AWS Fundamentals & IAM (15/09/2026 – 20/09/2026)",
+          objectives: "Get familiar with AWS and learn about the IAM access management service.",
+          achievements: "- Understood the overview of AWS and AWS infrastructure.\n- Learned how to manage users and access permissions using IAM.\n- Understood IAM Roles, Policies and Least Privilege.",
           tasks: [
             {
-              day: "Monday",
-              desc: "- Get acquainted with FCAJ mentors and members.\n- Learn about the FCAJ internship roadmap, working process, rules, and regulations.\n- Understand weekly worklog requirements and expected learning outcomes.\n- Complete the required process to receive AWS Free $100 Credit for hands-on labs.\n- Check the AWS learning environment and understand basic cost-control precautions.",
-              start: "2026-09-14", end: "2026-09-14",
-              ref: "https://aws.amazon.com/free/"
-            },
-            {
               day: "Tuesday",
-              desc: "- Learn the fundamentals of Cloud Computing and Amazon Web Services (AWS).\n- Understand AWS Global Infrastructure: Region, Availability Zone, Edge Location.\n- Learn major AWS service groups: Compute, Storage, Networking, Database, Security, Monitoring.\n- Explore AWS Management Console and locate commonly used AWS services.\n- Practice switching AWS Regions and checking available services/resources.",
+              desc: "Main Task: AWS Fundamentals.\nDetailed Activities: Learn about AWS overview, AWS Console, Regions and Availability Zones.",
               start: "2026-09-15", end: "2026-09-15",
-              ref: "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html"
-            },
-            {
-              day: "Wednesday",
-              desc: "- Learn about AWS Management Console and AWS CLI.\n- Install and configure AWS CLI on the local computer.\n- Configure Access Key, Secret Key, Default Region, and Output Format.\n- Practice basic CLI commands to check AWS identity, configuration, and available regions.\n- Use AWS CLI to retrieve EC2 information and compare results with AWS Console.\n- Understand the difference between managing AWS resources through Console and CLI.",
-              start: "2026-09-16", end: "2026-09-16",
-              ref: "https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html"
+              ref: "[AWS Global Infrastructure Overview](https://aws.amazon.com/about-aws/global-infrastructure/)"
             },
             {
               day: "Thursday",
-              desc: "- Learn basic concepts of Amazon EC2.\n- Study AMI, Instance Type, EBS, Key Pair, Security Group, Public IP, Private IP, and Elastic IP.\n- Understand EC2 instance lifecycle: Pending, Running, Stopping, Stopped, Terminated.\n- Learn how SSH authentication works when connecting to EC2.\n- Learn the role of Security Groups in controlling inbound/outbound traffic.\n- Explore the EC2 Dashboard and available instance configurations.",
-              start: "2026-09-17", end: "2026-09-18",
-              ref: "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html"
+              desc: "Main Task: IAM Users & Groups.\nDetailed Activities: Learn about IAM Users, User Groups and access management.",
+              start: "2026-09-17", end: "2026-09-17",
+              ref: "[Managing IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html)"
             },
             {
-              day: "Friday",
-              desc: "- Practice launching an Amazon EC2 instance.\n- Configure AMI, Instance Type, Key Pair, Network, and Security Group.\n- Connect to the EC2 Linux instance through SSH.\n- Execute basic Linux commands and verify server status.\n- Create and attach an additional EBS volume to EC2.\n- Practice Start/Stop EC2 and check instance status using both AWS Console and AWS CLI.",
-              start: "2026-09-18", end: "2026-09-18",
-              ref: "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html"
+              day: "Sunday",
+              desc: "Main Task: IAM Roles & Policies.\nDetailed Activities: Learn about IAM Roles, Policies and the Least Privilege principle.",
+              start: "2026-09-20", end: "2026-09-20",
+              ref: "[IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)"
             }
           ]
         }
       };
     } else if (weekNum === 2) {
       return {
-        "weekNum": 2,
-        "vi": {
-                "topic": "AWS IAM, VPC & Bảo mật mạng (21/09/2026 – 25/09/2026)",
-                "objectives": "- Hiểu các khái niệm cơ bản về AWS Identity and Access Management (IAM).\n- Tìm hiểu cách quản lý AWS user, user group, policy, role và quyền truy cập.\n- Hiểu Amazon VPC và các thành phần mạng cốt lõi.\n- Phân biệt public subnet và private subnet.\n- Thực hành cấu hình mạng và bảo mật cho VPC.\n- Áp dụng các nguyên tắc bảo mật AWS cơ bản cho tài nguyên cloud.",
-                "achievements": "- Nắm được các khái niệm cơ bản về AWS IAM và vai trò của IAM trong quản lý quyền truy cập tài nguyên AWS.\n- Phân biệt được IAM User, User Group, Role và Policy.\n- Thực hành tạo IAM user, group và gán quyền.\n- Hiểu nguyên tắc least privilege và các cách quản lý quyền truy cập AWS cơ bản.\n- Nắm được các thành phần cơ bản của Amazon VPC:\n  - VPC và CIDR Block\n  - Public Subnet và Private Subnet\n  - Internet Gateway\n  - Route Table\n  - Security Group\n  - Network ACL\n- Thực hành tạo một VPC tùy chỉnh và cấu hình các thành phần mạng.\n- Hiểu cách Route Table và Internet Gateway điều khiển kết nối mạng.\n- Thực hành cấu hình Security Group để kiểm soát lưu lượng inbound và outbound của EC2.\n- Biết cách triển khai EC2 instance trong một VPC tùy chỉnh.\n- Hiểu rõ hơn về kiến trúc mạng AWS và bảo mật tài nguyên.",
-                "tasks": [
-                        {
-                                "day": "Thứ 2",
-                                "desc": "- Học kiến thức nền tảng về AWS Identity and Access Management (IAM).\n- Tìm hiểu IAM User, User Group, Role và Policy.\n- Tìm hiểu nguyên tắc least privilege.\n- Khám phá IAM Dashboard và các tính năng chính.\n- Tìm hiểu các biện pháp bảo mật tài khoản AWS cơ bản.",
-                                "start": "2026-09-21",
-                                "end": "2026-09-21",
-                                "ref": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html"
-                        },
-                        {
-                                "day": "Thứ 3",
-                                "desc": "- Thực hành tạo IAM user và user group.\n- Cấu hình quyền bằng AWS managed policy.\n- Tìm hiểu IAM Role và các trường hợp sử dụng.\n- Phân biệt authentication và authorization.\n- Thực hành kiểm tra quyền IAM và các giới hạn truy cập.",
-                                "start": "2026-09-22",
-                                "end": "2026-09-22",
-                                "ref": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html"
-                        },
-                        {
-                                "day": "Thứ 4",
-                                "desc": "- Học kiến thức nền tảng về Amazon Virtual Private Cloud (VPC).\n- Tìm hiểu CIDR Block và địa chỉ IP private.\n- Tìm hiểu public subnet và private subnet.\n- Tìm hiểu các khái niệm Internet Gateway, Route Table và NAT Gateway.\n- Khám phá VPC Dashboard và các tài nguyên mạng.",
-                                "start": "2026-09-23",
-                                "end": "2026-09-23",
-                                "ref": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
-                        },
-                        {
-                                "day": "Thứ 5",
-                                "desc": "- Thực hành tạo một Amazon VPC tùy chỉnh.\n- Tạo public subnet và private subnet.\n- Cấu hình Internet Gateway.\n- Tạo Route Table và liên kết với các subnet.\n- Cấu hình Security Group để kiểm soát truy cập mạng cơ bản.",
-                                "start": "2026-09-24",
-                                "end": "2026-09-24",
-                                "ref": "https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html"
-                        },
-                        {
-                                "day": "Thứ 6",
-                                "desc": "- Rà soát kiến trúc mạng đã xây dựng trong tuần.\n- Thực hành khởi tạo EC2 instance trong public subnet tùy chỉnh.\n- Cấu hình truy cập SSH qua các rule của Security Group.\n- Kiểm tra kết nối mạng tới EC2 instance.\n- Ôn lại các best practice bảo mật cho IAM và VPC.\n- Dọn dẹp các tài nguyên lab không cần thiết để tránh phát sinh chi phí.",
-                                "start": "2026-09-25",
-                                "end": "2026-09-25",
-                                "ref": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules-reference.html"
-                        }
-                ]
+        weekNum: 2,
+        vi: {
+          topic: "Amazon EC2 (21/09/2026 – 25/09/2026)",
+          objectives: "Tìm hiểu dịch vụ máy chủ ảo Amazon EC2 và cách quản lý Instance.",
+          achievements: "- Hiểu cách hoạt động của Amazon EC2.\n- Biết cách khởi tạo và cấu hình EC2 Instance.\n- Hiểu vai trò của Key Pair và Security Group.",
+          tasks: [
+            {
+              day: "Thứ Hai",
+              desc: "Main Task: EC2 Fundamentals.\nDetailed Activities: Tìm hiểu Amazon EC2, các loại Instance và cách khởi tạo máy chủ ảo.",
+              start: "2026-09-21", end: "2026-09-21",
+              ref: "[Bắt đầu với EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)"
+            },
+            {
+              day: "Thứ Ba (Văn phòng)",
+              desc: "Main Task: EC2 Configuration.\nDetailed Activities: Tìm hiểu cách cấu hình EC2, Key Pair và Security Group.",
+              start: "2026-09-22", end: "2026-09-22",
+              ref: "[EC2 Security Groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)"
+            },
+            {
+              day: "Thứ Sáu",
+              desc: "Main Task: EC2 Instance Management.\nDetailed Activities: Tìm hiểu cách kết nối, khởi động, dừng và quản lý EC2 Instance.",
+              start: "2026-09-25", end: "2026-09-25",
+              ref: "[EC2 Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html)"
+            }
+          ]
         },
-        "en": {
-                "topic": "AWS IAM, VPC & Network Security (21/09/2026 – 25/09/2026)",
-                "objectives": "- Understand the fundamental concepts of AWS Identity and Access Management (IAM).\n- Learn how to manage AWS users, user groups, policies, roles, and permissions.\n- Understand Amazon VPC and its core networking components.\n- Learn the differences between public and private subnets.\n- Practice configuring VPC networking and security settings.\n- Apply basic AWS security best practices to cloud resources.",
-                "achievements": "- Understood the basic concepts of AWS IAM and its role in managing access to AWS resources.\n- Learned the differences between IAM Users, User Groups, Roles, and Policies.\n- Practiced creating IAM users and groups and assigning permissions.\n- Understood the principle of least privilege and basic AWS access management practices.\n- Learned the fundamental components of Amazon VPC:\n  - VPC and CIDR Block\n  - Public and Private Subnets\n  - Internet Gateway\n  - Route Table\n  - Security Group\n  - Network ACL\n- Practiced creating a custom VPC and configuring its networking components.\n- Understood how route tables and Internet Gateways control network connectivity.\n- Practiced configuring Security Groups to control EC2 inbound and outbound traffic.\n- Learned how to deploy EC2 instances within a custom VPC.\n- Gained a better understanding of AWS networking architecture and resource security.",
-                "tasks": [
-                        {
-                                "day": "Monday",
-                                "desc": "- Learn the fundamentals of AWS Identity and Access Management (IAM).\n- Understand IAM Users, User Groups, Roles, and Policies.\n- Learn the principle of least privilege.\n- Explore the IAM Dashboard and its main features.\n- Understand basic AWS account security practices.",
-                                "start": "2026-09-21",
-                                "end": "2026-09-21",
-                                "ref": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html"
-                        },
-                        {
-                                "day": "Tuesday",
-                                "desc": "- Practice creating IAM users and user groups.\n- Configure permissions using AWS managed policies.\n- Learn about IAM Roles and their use cases.\n- Understand the differences between authentication and authorization.\n- Practice checking IAM permissions and access restrictions.",
-                                "start": "2026-09-22",
-                                "end": "2026-09-22",
-                                "ref": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html"
-                        },
-                        {
-                                "day": "Wednesday",
-                                "desc": "- Learn the fundamentals of Amazon Virtual Private Cloud (VPC).\n- Understand CIDR Blocks and private IP addressing.\n- Learn about public and private subnets.\n- Study Internet Gateway, Route Table, and NAT Gateway concepts.\n- Explore the VPC Dashboard and networking resources.",
-                                "start": "2026-09-23",
-                                "end": "2026-09-23",
-                                "ref": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
-                        },
-                        {
-                                "day": "Thursday",
-                                "desc": "- Practice creating a custom Amazon VPC.\n- Create public and private subnets.\n- Configure an Internet Gateway.\n- Create and associate Route Tables with subnets.\n- Configure Security Groups for basic network access control.",
-                                "start": "2026-09-24",
-                                "end": "2026-09-24",
-                                "ref": "https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html"
-                        },
-                        {
-                                "day": "Friday",
-                                "desc": "- Review the networking architecture created during the week.\n- Practice launching an EC2 instance in a custom public subnet.\n- Configure SSH access through Security Group rules.\n- Test network connectivity to the EC2 instance.\n- Review IAM and VPC security best practices.\n- Clean up unnecessary lab resources to avoid additional charges.",
-                                "start": "2026-09-25",
-                                "end": "2026-09-25",
-                                "ref": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules-reference.html"
-                        }
-                ]
+        en: {
+          topic: "Amazon EC2 (21/09/2026 – 25/09/2026)",
+          objectives: "Learn about the Amazon EC2 virtual server service and Instance management.",
+          achievements: "- Understood how Amazon EC2 works.\n- Learned how to launch and configure EC2 Instances.\n- Understood the role of Key Pairs and Security Groups.",
+          tasks: [
+            {
+              day: "Monday",
+              desc: "Main Task: EC2 Fundamentals.\nDetailed Activities: Learn about Amazon EC2, Instance types and how to launch virtual servers.",
+              start: "2026-09-21", end: "2026-09-21",
+              ref: "[Getting Started with EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)"
+            },
+            {
+              day: "Tuesday (Office)",
+              desc: "Main Task: EC2 Configuration.\nDetailed Activities: Learn how to configure EC2, Key Pairs and Security Groups.",
+              start: "2026-09-22", end: "2026-09-22",
+              ref: "[EC2 Security Groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)"
+            },
+            {
+              day: "Friday",
+              desc: "Main Task: EC2 Instance Management.\nDetailed Activities: Learn how to connect, start, stop and manage EC2 Instances.",
+              start: "2026-09-25", end: "2026-09-25",
+              ref: "[EC2 Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html)"
+            }
+          ]
         }
-};
+      };
     } else if (weekNum === 3) {
       return {
-        "weekNum": 3,
-        "vi": {
-                "topic": "Amazon S3, Website tĩnh & CloudFront (28/09/2026 – 02/10/2026)",
-                "objectives": "- Hiểu Amazon S3 và kiến thức nền tảng về object storage.\n- Tìm hiểu cách tạo và quản lý S3 Bucket và Object.\n- Hiểu S3 storage class, versioning, mã hóa và quyền truy cập.\n- Thực hành upload, download và quản lý file bằng AWS Console và AWS CLI.\n- Tìm hiểu cách triển khai website tĩnh bằng Amazon S3.\n- Hiểu Amazon CloudFront và vai trò của nó trong phân phối nội dung.\n- Thực hành tích hợp Amazon S3 với CloudFront để phân phối website an toàn.",
-                "achievements": "- Nắm được kiến thức nền tảng về Amazon S3 và object storage.\n- Phân biệt được object storage, block storage và file storage.\n- Nắm được các thành phần chính của Amazon S3:\n  - Bucket\n  - Object\n  - Object Key\n  - Storage Class\n  - Versioning\n  - Bucket Policy\n  - Block Public Access\n- Thực hành tạo và cấu hình S3 Bucket.\n- Upload, download và quản lý file thành công bằng AWS Console và AWS CLI.\n- Hiểu cách S3 Versioning giúp lưu giữ nhiều phiên bản của object.\n- Hiểu mục đích của S3 Bucket Policy và các giới hạn truy cập công khai.\n- Thực hành cấu hình Static Website Hosting trên Amazon S3.\n- Nắm được kiến thức nền tảng về Amazon CloudFront và Content Delivery Network (CDN).\n- Thực hành phân phối nội dung website tĩnh qua CloudFront.\n- Hiểu cách dùng CloudFront Origin Access Control (OAC) để chặn truy cập trực tiếp vào nội dung S3.\n- Có kinh nghiệm thực tế về quản lý lưu trữ trên cloud và triển khai website tĩnh.",
-                "tasks": [
-                        {
-                                "day": "Thứ 2",
-                                "desc": "- Học kiến thức nền tảng về Amazon Simple Storage Service (S3).\n- Tìm hiểu object storage và các trường hợp sử dụng phổ biến.\n- Tìm hiểu S3 Bucket, Object, Key và Storage Class.\n- So sánh Amazon S3 với Amazon EBS.\n- Khám phá Amazon S3 Management Console.",
-                                "start": "2026-09-28",
-                                "end": "2026-09-28",
-                                "ref": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
-                        },
-                        {
-                                "day": "Thứ 3",
-                                "desc": "- Thực hành tạo một Amazon S3 Bucket.\n- Upload, download và xóa file.\n- Thực hành quản lý object bằng AWS CLI.\n- Tìm hiểu S3 Versioning và Server-Side Encryption.\n- Tìm hiểu Bucket Policy và các thiết lập Block Public Access.",
-                                "start": "2026-09-29",
-                                "end": "2026-09-29",
-                                "ref": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html"
-                        },
-                        {
-                                "day": "Thứ 4",
-                                "desc": "- Tìm hiểu Static Website Hosting với Amazon S3.\n- Chuẩn bị một website tĩnh cơ bản bằng HTML và CSS.\n- Upload các file website lên S3 Bucket.\n- Cấu hình Static Website Hosting.\n- Tìm hiểu index.html, error.html và website endpoint.\n- Kiểm tra khả năng truy cập website.",
-                                "start": "2026-09-30",
-                                "end": "2026-09-30",
-                                "ref": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html"
-                        },
-                        {
-                                "day": "Thứ 5",
-                                "desc": "- Học kiến thức nền tảng về Content Delivery Network (CDN).\n- Tìm hiểu Amazon CloudFront, Edge Location và Distribution.\n- Tìm hiểu cách CloudFront cache và phân phối nội dung web.\n- Tìm hiểu CloudFront Origin và cache behavior.\n- Tìm hiểu Origin Access Control (OAC) cho Amazon S3.",
-                                "start": "2026-10-01",
-                                "end": "2026-10-01",
-                                "ref": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
-                        },
-                        {
-                                "day": "Thứ 6",
-                                "desc": "- Thực hành tạo một CloudFront Distribution.\n- Cấu hình Amazon S3 làm CloudFront Origin.\n- Cấu hình truy cập an toàn vào S3 Bucket bằng OAC.\n- Kiểm tra việc phân phối website tĩnh qua CloudFront.\n- Rà soát kiến trúc S3 và CloudFront.\n- Dọn dẹp tài nguyên không cần thiết và rà soát chi phí dịch vụ.",
-                                "start": "2026-10-02",
-                                "end": "2026-10-02",
-                                "ref": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/GettingStarted.SimpleDistribution.html"
-                        }
-                ]
+        weekNum: 3,
+        vi: {
+          topic: "Amazon VPC (28/09/2026 – 01/10/2026)",
+          objectives: "Tìm hiểu cách xây dựng và quản lý mạng riêng trên AWS.",
+          achievements: "- Hiểu cấu trúc và chức năng của VPC.\n- Phân biệt Public Subnet và Private Subnet.\n- Hiểu vai trò của Route Table, Internet Gateway và Security Group.",
+          tasks: [
+            {
+              day: "Thứ Hai",
+              desc: "Main Task: VPC Fundamentals.\nDetailed Activities: Tìm hiểu VPC, CIDR và cách xây dựng mạng riêng trên AWS.",
+              start: "2026-09-28", end: "2026-09-28",
+              ref: "[Tổng quan Amazon VPC](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)"
+            },
+            {
+              day: "Thứ Ba",
+              desc: "Main Task: Subnets & Route Tables.\nDetailed Activities: Tìm hiểu Public Subnet, Private Subnet và cách định tuyến bằng Route Table.",
+              start: "2026-09-29", end: "2026-09-29",
+              ref: "[Cấu hình Subnet](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html)"
+            },
+            {
+              day: "Thứ Năm (Văn phòng)",
+              desc: "Main Task: VPC Connectivity & Security.\nDetailed Activities: Tìm hiểu Internet Gateway và Security Group để kết nối, kiểm soát lưu lượng mạng.",
+              start: "2026-10-01", end: "2026-10-01",
+              ref: "[Internet Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)"
+            }
+          ]
         },
-        "en": {
-                "topic": "Amazon S3, Static Website & CloudFront (28/09/2026 – 02/10/2026)",
-                "objectives": "- Understand Amazon S3 and the fundamentals of object storage.\n- Learn how to create and manage S3 Buckets and Objects.\n- Understand S3 storage classes, versioning, encryption, and access permissions.\n- Practice uploading, downloading, and managing files using AWS Console and AWS CLI.\n- Learn how to deploy a static website using Amazon S3.\n- Understand Amazon CloudFront and its role in content delivery.\n- Practice integrating Amazon S3 with CloudFront for secure website delivery.",
-                "achievements": "- Understood the fundamentals of Amazon S3 and object storage.\n- Learned the differences between object storage, block storage, and file storage.\n- Understood the major Amazon S3 components:\n  - Bucket\n  - Object\n  - Object Key\n  - Storage Class\n  - Versioning\n  - Bucket Policy\n  - Block Public Access\n- Practiced creating and configuring S3 Buckets.\n- Successfully uploaded, downloaded, and managed files using AWS Console and AWS CLI.\n- Learned how S3 Versioning helps preserve multiple versions of objects.\n- Understood the purpose of S3 Bucket Policies and public access restrictions.\n- Practiced configuring Amazon S3 Static Website Hosting.\n- Learned the fundamentals of Amazon CloudFront and Content Delivery Networks (CDN).\n- Practiced delivering static website content through CloudFront.\n- Understood how to use CloudFront Origin Access Control (OAC) to restrict direct access to S3 content.\n- Gained practical experience in cloud storage management and static website deployment.",
-                "tasks": [
-                        {
-                                "day": "Monday",
-                                "desc": "- Learn the fundamentals of Amazon Simple Storage Service (S3).\n- Understand object storage and its common use cases.\n- Learn about S3 Buckets, Objects, Keys, and Storage Classes.\n- Compare Amazon S3 with Amazon EBS.\n- Explore the Amazon S3 Management Console.",
-                                "start": "2026-09-28",
-                                "end": "2026-09-28",
-                                "ref": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
-                        },
-                        {
-                                "day": "Tuesday",
-                                "desc": "- Practice creating an Amazon S3 Bucket.\n- Upload, download, and delete files.\n- Practice managing objects using AWS CLI.\n- Learn about S3 Versioning and Server-Side Encryption.\n- Understand Bucket Policies and Block Public Access settings.",
-                                "start": "2026-09-29",
-                                "end": "2026-09-29",
-                                "ref": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html"
-                        },
-                        {
-                                "day": "Wednesday",
-                                "desc": "- Learn about Static Website Hosting with Amazon S3.\n- Prepare a basic static website using HTML and CSS.\n- Upload website files to an S3 Bucket.\n- Configure Static Website Hosting settings.\n- Learn about index.html, error.html, and website endpoints.\n- Test website accessibility.",
-                                "start": "2026-09-30",
-                                "end": "2026-09-30",
-                                "ref": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html"
-                        },
-                        {
-                                "day": "Thursday",
-                                "desc": "- Learn the fundamentals of Content Delivery Networks (CDN).\n- Understand Amazon CloudFront, Edge Locations, and Distributions.\n- Learn how CloudFront caches and delivers web content.\n- Study CloudFront Origins and cache behavior.\n- Understand Origin Access Control (OAC) for Amazon S3.",
-                                "start": "2026-10-01",
-                                "end": "2026-10-01",
-                                "ref": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
-                        },
-                        {
-                                "day": "Friday",
-                                "desc": "- Practice creating a CloudFront Distribution.\n- Configure Amazon S3 as a CloudFront Origin.\n- Configure secure access to the S3 Bucket using OAC.\n- Test static website delivery through CloudFront.\n- Review the S3 and CloudFront architecture.\n- Clean up unnecessary resources and review service costs.",
-                                "start": "2026-10-02",
-                                "end": "2026-10-02",
-                                "ref": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/GettingStarted.SimpleDistribution.html"
-                        }
-                ]
+        en: {
+          topic: "Amazon VPC (28/09/2026 – 01/10/2026)",
+          objectives: "Learn how to build and manage a private network on AWS.",
+          achievements: "- Understood the structure and functionality of VPC.\n- Distinguished between Public Subnet and Private Subnet.\n- Understood the role of Route Tables, Internet Gateway and Security Groups.",
+          tasks: [
+            {
+              day: "Monday",
+              desc: "Main Task: VPC Fundamentals.\nDetailed Activities: Learn about VPC, CIDR and how to build a private network on AWS.",
+              start: "2026-09-28", end: "2026-09-28",
+              ref: "[Amazon VPC Overview](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)"
+            },
+            {
+              day: "Tuesday",
+              desc: "Main Task: Subnets & Route Tables.\nDetailed Activities: Learn about Public Subnet, Private Subnet and routing with Route Tables.",
+              start: "2026-09-29", end: "2026-09-29",
+              ref: "[Subnet Configuration](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html)"
+            },
+            {
+              day: "Thursday (Office)",
+              desc: "Main Task: VPC Connectivity & Security.\nDetailed Activities: Learn about Internet Gateway and Security Groups for connectivity and traffic control.",
+              start: "2026-10-01", end: "2026-10-01",
+              ref: "[Internet Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)"
+            }
+          ]
         }
-};
+      };
     } else if (weekNum === 4) {
       return {
-        "weekNum": 4,
-        "vi": {
-                "topic": "Amazon RDS, CloudWatch & AWS Budgets (05/10/2026 – 09/10/2026)",
-                "objectives": "- Hiểu kiến thức nền tảng về Amazon Relational Database Service (RDS).\n- Tìm hiểu cơ sở dữ liệu quan hệ và các dịch vụ cơ sở dữ liệu được quản lý trên AWS.\n- Hiểu RDS DB Instance, Storage, Security Group và automated backup.\n- Thực hành tạo và kết nối tới một cơ sở dữ liệu Amazon RDS.\n- Tìm hiểu cách Amazon CloudWatch giám sát tài nguyên và ứng dụng AWS.\n- Thực hành giám sát hiệu năng EC2 bằng CloudWatch metric và alarm.\n- Hiểu AWS Budgets và các cách quản lý chi phí cloud cơ bản.",
-                "achievements": "- Nắm được các khái niệm cơ bản về cơ sở dữ liệu quan hệ và Amazon RDS.\n- Phân biệt cơ sở dữ liệu tự quản lý trên EC2 với cơ sở dữ liệu được quản lý bằng Amazon RDS.\n- Nắm được các thành phần cơ bản của Amazon RDS:\n  - DB Instance\n  - Database Engine\n  - DB Instance Class\n  - Storage\n  - DB Subnet Group\n  - Security Group\n  - Automated Backup\n  - Multi-AZ Deployment\n- Thực hành tạo và cấu hình một Amazon RDS database instance.\n- Biết cách cấu hình kết nối mạng và quyền truy cập cho cơ sở dữ liệu.\n- Thực hành kết nối tới cơ sở dữ liệu và chạy các câu lệnh SQL cơ bản.\n- Nắm được kiến thức nền tảng về Amazon CloudWatch.\n- Tìm hiểu CloudWatch Metrics, Logs, Dashboards và Alarms.\n- Thực hành giám sát hiệu năng Amazon EC2 bằng CloudWatch.\n- Biết cách cấu hình các CloudWatch alarm cơ bản.\n- Hiểu AWS Budgets và vai trò của nó trong quản lý chi phí cloud.\n- Thực hành rà soát mức sử dụng tài nguyên AWS và chi phí ước tính.",
-                "tasks": [
-                        {
-                                "day": "Thứ 2",
-                                "desc": "- Học kiến thức nền tảng về cơ sở dữ liệu quan hệ và Amazon RDS.\n- Tìm hiểu các dịch vụ cơ sở dữ liệu được quản lý trên AWS.\n- Tìm hiểu các database engine được RDS hỗ trợ.\n- Tìm hiểu DB Instance Class, Storage và các tùy chọn Backup.\n- So sánh cơ sở dữ liệu chạy trên EC2 với Amazon RDS.",
-                                "start": "2026-10-05",
-                                "end": "2026-10-05",
-                                "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html"
-                        },
-                        {
-                                "day": "Thứ 3",
-                                "desc": "- Thực hành tạo một Amazon RDS database instance.\n- Cấu hình database engine, instance class và storage.\n- Tìm hiểu DB Subnet Group và việc tích hợp với VPC.\n- Cấu hình Security Group cho kết nối cơ sở dữ liệu.\n- Kiểm tra endpoint, port và các thiết lập kết nối của cơ sở dữ liệu.",
-                                "start": "2026-10-06",
-                                "end": "2026-10-06",
-                                "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html"
-                        },
-                        {
-                                "day": "Thứ 4",
-                                "desc": "- Thực hành kết nối tới một cơ sở dữ liệu Amazon RDS.\n- Chạy các câu lệnh SQL cơ bản để tạo bảng và quản lý bản ghi.\n- Tìm hiểu automated backup và database snapshot.\n- Tìm hiểu khái niệm Multi-AZ Deployment.\n- Rà soát các biện pháp bảo mật và quản lý truy cập của RDS.",
-                                "start": "2026-10-07",
-                                "end": "2026-10-07",
-                                "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.Connect.html"
-                        },
-                        {
-                                "day": "Thứ 5",
-                                "desc": "- Học kiến thức nền tảng về Amazon CloudWatch.\n- Tìm hiểu CloudWatch Metrics, Logs, Dashboards và Alarms.\n- Khám phá các CloudWatch metric của Amazon EC2.\n- Thực hành giám sát CPU utilization và trạng thái instance.\n- Tạo một CloudWatch alarm cơ bản để giám sát EC2.",
-                                "start": "2026-10-08",
-                                "end": "2026-10-08",
-                                "ref": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
-                        },
-                        {
-                                "day": "Thứ 6",
-                                "desc": "- Tìm hiểu AWS Budgets và cách tối ưu chi phí cloud cơ bản.\n- Rà soát thông tin hóa đơn AWS và chi phí dịch vụ ước tính.\n- Thực hành cấu hình một cost budget cơ bản và ngưỡng cảnh báo.\n- Rà soát mức sử dụng tài nguyên EC2, RDS và CloudWatch.\n- Tổng kết các hoạt động về cơ sở dữ liệu và giám sát trong tuần.\n- Xóa các tài nguyên lab không cần thiết để giảm chi phí.",
-                                "start": "2026-10-09",
-                                "end": "2026-10-09",
-                                "ref": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html"
-                        }
-                ]
+        weekNum: 4,
+        vi: {
+          topic: "AWS Lambda, S3, Cloud9, RDS & DynamoDB (06/10/2026 – 09/10/2026)",
+          objectives: "Tìm hiểu các dịch vụ AWS phục vụ xử lý dữ liệu, lưu trữ và quản lý cơ sở dữ liệu.",
+          achievements: "- Hiểu cơ bản về AWS Lambda và mô hình Serverless.\n- Biết cách lưu trữ dữ liệu trên Amazon S3.\n- Làm quen với môi trường AWS Cloud9.\n- Phân biệt cơ sở dữ liệu quan hệ RDS và NoSQL DynamoDB.",
+          tasks: [
+            {
+              day: "Thứ Ba (Văn phòng)",
+              desc: "Main Task: AWS Lambda.\nDetailed Activities: Tìm hiểu Lambda Function và cách thực thi mã nguồn theo mô hình Serverless.",
+              start: "2026-10-06", end: "2026-10-06",
+              ref: "[Bắt đầu với AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html)"
+            },
+            {
+              day: "Thứ Năm",
+              desc: "Main Task: Amazon S3 & Cloud9.\nDetailed Activities: Tìm hiểu Bucket, Object trong S3 và môi trường phát triển AWS Cloud9.",
+              start: "2026-10-08", end: "2026-10-08",
+              ref: "[Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) / [AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html)"
+            },
+            {
+              day: "Thứ Sáu",
+              desc: "Main Task: Amazon RDS & DynamoDB.\nDetailed Activities: Tìm hiểu cơ sở dữ liệu quan hệ RDS và cơ sở dữ liệu NoSQL DynamoDB.",
+              start: "2026-10-09", end: "2026-10-09",
+              ref: "[Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html) / [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)"
+            }
+          ]
         },
-        "en": {
-                "topic": "Amazon RDS, CloudWatch & AWS Budgets (05/10/2026 – 09/10/2026)",
-                "objectives": "- Understand the fundamentals of Amazon Relational Database Service (RDS).\n- Learn about relational databases and managed database services on AWS.\n- Understand RDS DB Instances, Storage, Security Groups, and automated backups.\n- Practice creating and connecting to an Amazon RDS database.\n- Learn how Amazon CloudWatch monitors AWS resources and applications.\n- Practice monitoring EC2 performance using CloudWatch metrics and alarms.\n- Understand AWS Budgets and basic cloud cost management practices.",
-                "achievements": "- Understood the basic concepts of relational databases and Amazon RDS.\n- Learned the differences between self-managed databases on EC2 and managed databases using Amazon RDS.\n- Understood the fundamental components of Amazon RDS:\n  - DB Instance\n  - Database Engine\n  - DB Instance Class\n  - Storage\n  - DB Subnet Group\n  - Security Group\n  - Automated Backup\n  - Multi-AZ Deployment\n- Practiced creating and configuring an Amazon RDS database instance.\n- Learned how to configure database network connectivity and access permissions.\n- Practiced connecting to a database and executing basic SQL queries.\n- Understood the fundamentals of Amazon CloudWatch.\n- Learned about CloudWatch Metrics, Logs, Dashboards, and Alarms.\n- Practiced monitoring Amazon EC2 performance using CloudWatch.\n- Learned how to configure basic CloudWatch alarms.\n- Understood AWS Budgets and its role in cloud cost management.\n- Practiced reviewing AWS resource usage and estimated costs.",
-                "tasks": [
-                        {
-                                "day": "Monday",
-                                "desc": "- Learn the fundamentals of relational databases and Amazon RDS.\n- Understand managed database services on AWS.\n- Learn about supported RDS database engines.\n- Study DB Instance Classes, Storage, and Backup options.\n- Compare databases hosted on EC2 with Amazon RDS.",
-                                "start": "2026-10-05",
-                                "end": "2026-10-05",
-                                "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html"
-                        },
-                        {
-                                "day": "Tuesday",
-                                "desc": "- Practice creating an Amazon RDS database instance.\n- Configure database engine, instance class, and storage.\n- Learn about DB Subnet Groups and VPC integration.\n- Configure Security Groups for database connectivity.\n- Review database endpoint, port, and connection settings.",
-                                "start": "2026-10-06",
-                                "end": "2026-10-06",
-                                "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html"
-                        },
-                        {
-                                "day": "Wednesday",
-                                "desc": "- Practice connecting to an Amazon RDS database.\n- Execute basic SQL queries to create tables and manage records.\n- Learn about automated backups and database snapshots.\n- Understand the concept of Multi-AZ Deployment.\n- Review RDS security and access management practices.",
-                                "start": "2026-10-07",
-                                "end": "2026-10-07",
-                                "ref": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.Connect.html"
-                        },
-                        {
-                                "day": "Thursday",
-                                "desc": "- Learn the fundamentals of Amazon CloudWatch.\n- Understand CloudWatch Metrics, Logs, Dashboards, and Alarms.\n- Explore CloudWatch metrics for Amazon EC2.\n- Practice monitoring CPU utilization and instance status.\n- Create a basic CloudWatch alarm for EC2 monitoring.",
-                                "start": "2026-10-08",
-                                "end": "2026-10-08",
-                                "ref": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
-                        },
-                        {
-                                "day": "Friday",
-                                "desc": "- Learn about AWS Budgets and basic cloud cost optimization.\n- Review AWS billing information and estimated service costs.\n- Practice configuring a basic cost budget and alert threshold.\n- Review EC2, RDS, and CloudWatch resource usage.\n- Summarize the week's database and monitoring activities.\n- Delete unnecessary lab resources to minimize costs.",
-                                "start": "2026-10-09",
-                                "end": "2026-10-09",
-                                "ref": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html"
-                        }
-                ]
+        en: {
+          topic: "AWS Lambda, S3, Cloud9, RDS & DynamoDB (06/10/2026 – 09/10/2026)",
+          objectives: "Learn about AWS services for data processing, storage and database management.",
+          achievements: "- Understood the basics of AWS Lambda and the Serverless model.\n- Learned how to store data on Amazon S3.\n- Got familiar with the AWS Cloud9 development environment.\n- Distinguished between relational database RDS and NoSQL DynamoDB.",
+          tasks: [
+            {
+              day: "Tuesday (Office)",
+              desc: "Main Task: AWS Lambda.\nDetailed Activities: Learn about Lambda Functions and how to execute code using the Serverless model.",
+              start: "2026-10-06", end: "2026-10-06",
+              ref: "[Getting Started with AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html)"
+            },
+            {
+              day: "Thursday",
+              desc: "Main Task: Amazon S3 & Cloud9.\nDetailed Activities: Learn about Buckets, Objects in S3 and the AWS Cloud9 development environment.",
+              start: "2026-10-08", end: "2026-10-08",
+              ref: "[Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) / [AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html)"
+            },
+            {
+              day: "Friday",
+              desc: "Main Task: Amazon RDS & DynamoDB.\nDetailed Activities: Learn about relational database RDS and NoSQL database DynamoDB.",
+              start: "2026-10-09", end: "2026-10-09",
+              ref: "[Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html) / [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)"
+            }
+          ]
         }
       };
     } else if (weekNum === 5) {
@@ -1948,7 +1822,7 @@ const DEFAULT_BILINGUAL_DATA = {
 // ==========================================
 // 3. PERSISTENCE & STATE MANAGEMENT
 // ==========================================
-const STORAGE_KEY = 'fcaj_report_bilingual_v20';
+const STORAGE_KEY = 'fcaj_report_bilingual_v21';
 const LANG_KEY = 'fcaj_report_lang';
 
 class AppLanguageManager {
