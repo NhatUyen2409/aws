@@ -1682,7 +1682,7 @@ const DEFAULT_BILINGUAL_DATA = {
         dateTime: "09:00 – 12:00, 14/11/2026",
         location: "Tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam",
         role: "Người tham dự (Attendee)",
-        speakers: "Chuyên gia AWS & Khách mời",
+        speakers: "Khang Duong, Phuong Huyen, Bao Nguyen, Khuong Huynh",
         topic: "From AI Prototype to Production: Deploying and Operating Enterprise AI on AWS Cloud",
         category: "Artificial Intelligence & Cloud Computing",
         shortDesc: "Thách thức chuyển đổi AI từ thử nghiệm sang môi trường doanh nghiệp: 4 trụ cột vận hành (Security, Reliability, Scalability, Cost), co giãn linh hoạt trên AWS và 4 mô hình Multi-Agent.",
@@ -1724,7 +1724,7 @@ const DEFAULT_BILINGUAL_DATA = {
         dateTime: "09:00 AM – 12:00 PM, November 14, 2026",
         location: "26th Floor, Bitexco Financial Tower, Ho Chi Minh City, Vietnam",
         role: "Attendee",
-        speakers: "AWS Specialists & Guest Speakers",
+        speakers: "Khang Duong, Phuong Huyen, Bao Nguyen, Khuong Huynh",
         topic: "From AI Prototype to Production: Deploying and Operating Enterprise AI on AWS Cloud",
         category: "Artificial Intelligence & Cloud Computing",
         shortDesc: "Challenges of transitioning AI from prototype to enterprise production: 4 operational pillars (Security, Reliability, Scalability, Cost), elastic AWS scaling, and 4 common Multi-Agent architectures.",
@@ -7339,6 +7339,7 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
     eventName: "Enterprise AI on AWS Cloud – 14/11/2026",
     dateTime: isVi ? "09:00 – 12:00, 14/11/2026" : "09:00 AM – 12:00 PM, November 14, 2026",
     location: isVi ? "Tầng 26, Bitexco Financial Tower, TP. Hồ Chí Minh, Việt Nam" : "26th Floor, Bitexco Financial Tower, Ho Chi Minh City, Vietnam",
+    speakers: "Khang Duong, Phuong Huyen, Bao Nguyen, Khuong Huynh",
     role: isVi ? "Người tham dự (Attendee)" : "Attendee",
   };
 
@@ -7384,6 +7385,10 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
             <span class="meta-strip-val">${escapeHtml(t.location)}</span>
           </div>
           <div class="meta-strip-item">
+            <span class="meta-strip-label">${isVi ? 'Diễn giả:' : 'Speakers:'}</span>
+            <span class="meta-strip-val"><strong>${escapeHtml(t.speakers)}</strong></span>
+          </div>
+          <div class="meta-strip-item">
             <span class="meta-strip-label">${isVi ? 'Vai trò:' : 'Role:'}</span>
             <span class="meta-strip-val"><strong>${escapeHtml(t.role)}</strong></span>
           </div>
@@ -7416,6 +7421,10 @@ function renderEnterpriseAIEventDetail(container, lang = 'vi') {
           <p>${isVi
             ? 'Hội thảo <strong>Enterprise AI on AWS Cloud</strong> tập trung vào các thách thức kỹ thuật cốt lõi khi chuyển đổi một giải pháp Trí tuệ nhân tạo (AI) từ phiên bản thử nghiệm (prototype) sang hệ thống sản xuất cấp doanh nghiệp (production-ready enterprise system).'
             : 'The <strong>Enterprise AI on AWS Cloud</strong> workshop addressed the paramount engineering challenges of transitioning artificial intelligence from an experimental prototype into a production-grade enterprise system.'}</p>
+
+          <p>${isVi
+            ? 'Sự kiện quy tụ các diễn giả giàu kinh nghiệm từ AWS và cộng đồng công nghệ: <strong>Khang Duong</strong>, <strong>Phuong Huyen</strong>, <strong>Bao Nguyen</strong> và <strong>Khuong Huynh</strong>, cùng chia sẻ về chiến lược kiến trúc và bài học thực tiễn khi đưa AI vào vận hành thực tế.'
+            : 'The event featured experienced speakers from AWS and the tech community: <strong>Khang Duong</strong>, <strong>Phuong Huyen</strong>, <strong>Bao Nguyen</strong>, and <strong>Khuong Huynh</strong>, who shared architectural strategies and practical lessons for bringing AI into production.'}</p>
           
           <div class="report-quote-box" style="border-left-color: #171717;">
             ${isVi
