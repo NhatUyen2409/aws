@@ -11,7 +11,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="styles.css?v=20261120_v7">
+  <link rel="stylesheet" href="styles.css?v=20261125_tablefix">
+  <!-- Early Navigation Fallback Definition: Guarantees navigateTo is never undefined -->
+  <script>
+    window.navigateTo = function(pageId) {
+      var targetHash = '#/' + (pageId || '').replace(/^#\/?/, '').replace(/\/$/, '');
+      if (window.location.hash !== targetHash) {
+        window.location.hash = targetHash;
+      }
+    };
+  </script>
 </head>
 <body>
   <div class="app-layout">
@@ -109,25 +118,14 @@
             </a>
           </li>
         </ul>
-
-        <!-- External Communities as in workshop-sample -->
-        <div class="nav-section-title" style="margin-top: 18px;" data-i18n="externalLinksTitle">LIÊN KẾT NGOÀI</div>
-        <div class="external-links-box">
-          <a href="https://awsstudygroup.com" target="_blank" rel="noopener" class="ext-link">
-            <span>AWS Study Group - Blog</span>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-          </a>
-          <a href="https://www.facebook.com/groups/awsstudygroupfcj" target="_blank" rel="noopener" class="ext-link">
-            <span>AWS Study Group - FB Group</span>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-          </a>
-        </div>
       </nav>
 
-      <!-- Sidebar User Profile (Phan Nhat Uyen) -->
+      <!-- Sidebar User Profile (Phan Nhật Uyên) -->
       <div class="sidebar-footer">
         <div class="user-profile-badge">
-          <div class="user-avatar" id="sidebar-avatar">U</div>
+          <div class="user-avatar" id="sidebar-avatar">
+            <img src="assets/images/profile.jpg" alt="Phan Nhật Uyên" onerror="this.parentElement.innerHTML='U'">
+          </div>
           <div class="user-details">
             <span class="user-name" id="sidebar-username">Phan Nhật Uyên</span>
           </div>
@@ -251,7 +249,7 @@
 
                     <div class="form-group full-span">
                       <label class="form-label" data-i18n="labelDuration">Thời gian thực tập</label>
-                      <input type="text" id="info-duration" class="form-control" value="Từ 14/09/2026 đến 14/12/2026" readonly>
+                      <input type="text" id="info-duration" class="form-control" value="Từ 14/09/2026 đến 30/11/2026" readonly>
                     </div>
                   </div>
                 </div>
@@ -309,7 +307,7 @@
                 <div class="toc-badge">6</div>
                 <div>
                   <h4 data-i18n="toc6Title">6. Tự đánh giá</h4>
-                  <p data-i18n="toc6Desc">Bảng 12 tiêu chí tự đánh giá năng lực cá nhân và các điểm cần tiếp tục hoàn thiện.</p>
+                  <p data-i18n="toc6Desc">Bảng 8 tiêu chí tự đánh giá năng lực cá nhân và các điểm cần tiếp tục hoàn thiện.</p>
                 </div>
               </div>
 
@@ -450,8 +448,23 @@
         </section>
 
         <!-- ============================================== -->
+        <!-- ============================================== -->
+        <!-- VIEW: 4.2 EVENT DETAIL: FIRESIDE CHAT DR WERNER VOGELS -->
+        <!-- ============================================== -->
+        <section class="page-view" id="view-events-fireside-chat-dr-werner-vogels">
+          <div id="event-detail-fireside-chat-container">
+            <!-- Rendered dynamically by renderEventDetail('fireside-chat-dr-werner-vogels') -->
+          </div>
+        </section>
+
         <!-- VIEW: 4.2 EVENT DETAIL: MODERNIZATION WORKSHOP -->
         <!-- ============================================== -->
+        <section class="page-view" id="view-events-aws-cloud-ai-day-hanoi-2026">
+          <div id="event-detail-cloud-ai-day-container">
+            <!-- Rendered dynamically by renderEventDetail('aws-cloud-ai-day-hanoi-2026') -->
+          </div>
+        </section>
+
         <section class="page-view" id="view-events-hoi-thao-hien-dai-hoa-ung-dung-csdl-genai">
           <div id="event-detail-modernization-container">
             <!-- Rendered dynamically by renderEventDetail('hoi-thao-hien-dai-hoa-ung-dung-csdl-genai') -->
@@ -485,7 +498,7 @@
           <div class="section-header-flex">
             <div>
               <h2 class="section-title" data-i18n="selfSectionTitle">6. Tự đánh giá kết quả thực tập</h2>
-              <p class="section-subtitle" data-i18n="selfSectionSubtitle">Bảng 12 tiêu chí đánh giá năng lực của sinh viên Phan Nhat Uyen</p>
+              <p class="section-subtitle" data-i18n="selfSectionSubtitle">Bảng 8 tiêu chí đánh giá năng lực của sinh viên Phan Nhật Uyên</p>
             </div>
           </div>
 
@@ -497,7 +510,7 @@
 
             <!-- 12 Criteria Table Matching Official Standard -->
             <h4 style="font-size:15px; font-weight:700; margin: 24px 0 12px; color: var(--text-main);" data-i18n="criteriaTableTitle">
-              Bảng đánh giá theo 12 tiêu chí chuẩn của AWS FCAJ
+              Bảng đánh giá theo 8 tiêu chí chuẩn của AWS FCAJ
             </h4>
 
             <div class="table-responsive">
@@ -538,42 +551,27 @@
           </div>
 
           <div class="card" style="margin-top: 1.5rem;">
-            <div class="feedback-grid">
-              
-              <div class="feedback-item">
-                <label class="form-label" data-i18n="fb1Label">1. Môi trường làm việc</label>
-                <div id="fb-env" class="report-readonly-box"></div>
+            <div class="feedback-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+              <div class="feedback-item" style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:6px; padding:16px;">
+                <label class="form-label" style="font-weight:700; color:#0F172A; margin-bottom:8px; display:block;" data-i18n="fb1Label">1. Môi trường làm việc</label>
+                <div id="fb-experience" class="report-readonly-box" style="font-size:13.5px; line-height:1.6; color:#334155;"></div>
               </div>
 
-              <div class="feedback-item">
-                <label class="form-label" data-i18n="fb2Label">2. Sự hỗ trợ từ Mentor & Ban tổ chức</label>
-                <div id="fb-mentor" class="report-readonly-box"></div>
+              <div class="feedback-item" style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:6px; padding:16px;">
+                <label class="form-label" style="font-weight:700; color:#0F172A; margin-bottom:8px; display:block;" data-i18n="fb2Label">2. Sự hỗ trợ từ Mentor & Ban tổ chức</label>
+                <div id="fb-satisfaction" class="report-readonly-box" style="font-size:13.5px; line-height:1.6; color:#334155;"></div>
               </div>
 
-              <div class="feedback-item">
-                <label class="form-label" data-i18n="fb3Label">3. Mức độ phù hợp với ngành học</label>
-                <div id="fb-relevance" class="report-readonly-box"></div>
+              <div class="feedback-item" style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:6px; padding:16px;">
+                <label class="form-label" style="font-weight:700; color:#0F172A; margin-bottom:8px; display:block;" data-i18n="fb3Label">3. Mức độ phù hợp với ngành học</label>
+                <div id="fb-improvements" class="report-readonly-box" style="font-size:13.5px; line-height:1.6; color:#334155;"></div>
               </div>
 
-              <div class="feedback-item">
-                <label class="form-label" data-i18n="fb4Label">4. Cơ hội học tập & Phát triển kỹ năng</label>
-                <div id="fb-learning" class="report-readonly-box"></div>
+              <div class="feedback-item" style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:6px; padding:16px;">
+                <label class="form-label" style="font-weight:700; color:#0F172A; margin-bottom:8px; display:block;" data-i18n="fb4Label">4. Cơ hội học tập & Phát triển kỹ năng</label>
+                <div id="fb-recommendations" class="report-readonly-box" style="font-size:13.5px; line-height:1.6; color:#334155;"></div>
               </div>
-
-              <div class="feedback-item">
-                <label class="form-label" data-i18n="fb5Label">5. Văn hóa công ty & Tinh thần đồng đội</label>
-                <div id="fb-culture" class="report-readonly-box"></div>
-              </div>
-
-              <div class="feedback-item">
-                <label class="form-label" data-i18n="fb6Label">6. Chính sách & Chế độ đãi ngộ</label>
-                <div id="fb-policies" class="report-readonly-box"></div>
-              </div>
-
-              <div class="feedback-item full-span">
-                <label class="form-label" data-i18n="fbSuggestionsLabel">Đề xuất & Kỳ vọng phát triển tương lai</label>
-                <div id="fb-suggestions" class="report-readonly-box"></div>
-              </div>
+            </div>
             </div>
           </div>
         </section>
@@ -687,6 +685,6 @@
   <!-- TOAST CONTAINER -->
   <div class="toast-container" id="toast-container"></div>
 
-  <script src="app.js?v=20261120_v6"></script>
+  <script src="app.js?v=20261125_tablefix"></script>
 </body>
 </html>

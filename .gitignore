@@ -21,3 +21,16 @@ Thumbs.db
 *.swp
 *.bak
 
+
+# Hugo Specific (for independent Hugo repo)
+content/
+layouts/
+themes/
+archetypes/
+static/
+public/
+config.toml
+.hugo_build.lock
+scratch/
+.gitmodules
+.github/workflows/hugo.yml

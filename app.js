@@ -565,9 +565,9 @@ const I18N_DICTIONARY = {
     feedbackSectionSubtitle: "Constructive suggestions for the First Cloud AI Journey program",
     btnSaveFeedback: "Save Feedback",
     fb1Label: "1. Working Environment",
-    fb2Label: "2. Support from Mentor / Team Admin",
-    fb3Label: "3. Relevance to Academic Major",
-    fb4Label: "4. Learning & Skill Opportunities",
+    fb2Label: "2. Support from Mentor & Organizers",
+    fb3Label: "3. Alignment with Academic Major",
+    fb4Label: "4. Learning Opportunities & Skill Development",
     fb5Label: "5. Company Culture & Team Spirit",
     fb6Label: "6. Policies / Benefits",
     fbSuggestionsLabel: "Suggestions & Future Expectations",
@@ -652,905 +652,601 @@ const DEFAULT_BILINGUAL_DATA = {
       major: "An toàn thông tin",
       company: "Công ty TNHH Amazon Web Services (AWS) Việt Nam",
       position: "Workforce Bootcamp - First Cloud AI Journey (FCAJ)",
-      duration: "Từ 14/09/2026 đến 14/12/2026"
+      duration: "Từ 14/09/2026 đến 30/11/2026"
     },
     en: {
       university: "FPT University",
       major: "Information Assurance",
       company: "Amazon Web Services (AWS) Vietnam Company Limited",
       position: "Workforce Bootcamp - First Cloud AI Journey (FCAJ)",
-      duration: "From 14/09/2026 to 14/12/2026"
+      duration: "From 14/09/2026 to 30/11/2026"
     }
   },
   currentWeek: 5,
-  worklogs: Array.from({ length: 12 }, (_, i) => {
-    const weekNum = i + 1;
-    if (weekNum === 1) {
-      return {
-        weekNum: 1,
-        vi: {
-          topic: "AWS Fundamentals & IAM (15/09/2026 – 20/09/2026)",
-          objectives: "Làm quen với AWS và tìm hiểu dịch vụ quản lý quyền truy cập IAM.",
-          achievements: "- Hiểu tổng quan về AWS và hạ tầng AWS.\n- Biết cách quản lý người dùng và quyền truy cập bằng IAM.\n- Hiểu IAM Roles, Policies và Least Privilege.",
-          tasks: [
-            {
-              day: "Thứ Ba",
-              desc: "Main Task: AWS Fundamentals.\nDetailed Activities: Tìm hiểu tổng quan AWS, AWS Console, Regions và Availability Zones.",
-              start: "2026-09-15", end: "2026-09-15",
-              ref: "[Tổng quan hạ tầng AWS](https://aws.amazon.com/about-aws/global-infrastructure/)"
-            },
-            {
-              day: "Thứ Năm",
-              desc: "Main Task: IAM Users & Groups.\nDetailed Activities: Tìm hiểu IAM User, User Groups và cách quản lý quyền truy cập.",
-              start: "2026-09-17", end: "2026-09-17",
-              ref: "[Quản lý IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html)"
-            },
-            {
-              day: "Chủ Nhật",
-              desc: "Main Task: IAM Roles & Policies.\nDetailed Activities: Tìm hiểu IAM Roles, Policies và nguyên tắc Least Privilege.",
-              start: "2026-09-20", end: "2026-09-20",
-              ref: "[IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)"
-            }
-          ]
+  worklogs: [
+    {
+        "weekNum": 1,
+        "vi": {
+            "topic": "Tuần 1: AWS Fundamentals & IAM (14/09/2026 – 18/09/2026)",
+            "objectives": "Làm quen với AWS và tìm hiểu dịch vụ quản lý quyền truy cập IAM.",
+            "achievements": "- Hiểu tổng quan về AWS và hạ tầng AWS.\n- Biết cách quản lý người dùng và quyền truy cập bằng IAM.\n- Hiểu IAM Roles, Policies và Least Privilege.",
+            "tasks": [
+                {
+                    "day": "Thứ Hai",
+                    "desc": "Main Task: AWS Fundamentals & Cloud Infrastructure.\nDetailed Activities: Tìm hiểu tổng quan AWS, AWS Management Console, Regions và Availability Zones.",
+                    "start": "2026-09-14",
+                    "end": "2026-09-14",
+                    "ref": "[Tổng quan hạ tầng AWS](https://aws.amazon.com/about-aws/global-infrastructure/)"
+                },
+                {
+                    "day": "Thứ Tư",
+                    "desc": "Main Task: IAM Users & Groups.\nDetailed Activities: Tìm hiểu dịch vụ IAM, cấu hình IAM Users, User Groups và quản lý quyền truy cập.",
+                    "start": "2026-09-16",
+                    "end": "2026-09-16",
+                    "ref": "[Quản lý IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html)"
+                },
+                {
+                    "day": "Thứ Sáu",
+                    "desc": "Main Task: IAM Roles & Policies.\nDetailed Activities: Tìm hiểu IAM Roles, Policies và áp dụng nguyên tắc đặc quyền tối thiểu (Least Privilege).",
+                    "start": "2026-09-18",
+                    "end": "2026-09-18",
+                    "ref": "[IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)"
+                }
+            ]
         },
-        en: {
-          topic: "AWS Fundamentals & IAM (15/09/2026 – 20/09/2026)",
-          objectives: "Get familiar with AWS and learn about the IAM access management service.",
-          achievements: "- Understood the overview of AWS and AWS infrastructure.\n- Learned how to manage users and access permissions using IAM.\n- Understood IAM Roles, Policies and Least Privilege.",
-          tasks: [
-            {
-              day: "Tuesday",
-              desc: "Main Task: AWS Fundamentals.\nDetailed Activities: Learn about AWS overview, AWS Console, Regions and Availability Zones.",
-              start: "2026-09-15", end: "2026-09-15",
-              ref: "[AWS Global Infrastructure Overview](https://aws.amazon.com/about-aws/global-infrastructure/)"
-            },
-            {
-              day: "Thursday",
-              desc: "Main Task: IAM Users & Groups.\nDetailed Activities: Learn about IAM Users, User Groups and access management.",
-              start: "2026-09-17", end: "2026-09-17",
-              ref: "[Managing IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html)"
-            },
-            {
-              day: "Sunday",
-              desc: "Main Task: IAM Roles & Policies.\nDetailed Activities: Learn about IAM Roles, Policies and the Least Privilege principle.",
-              start: "2026-09-20", end: "2026-09-20",
-              ref: "[IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)"
-            }
-          ]
+        "en": {
+            "topic": "Week 1: AWS Fundamentals & IAM (14/09/2026 – 18/09/2026)",
+            "objectives": "Get familiar with AWS and learn about the IAM access management service.",
+            "achievements": "- Understood the overview of AWS and AWS infrastructure.\n- Learned how to manage users and access permissions using IAM.\n- Understood IAM Roles, Policies and Least Privilege.",
+            "tasks": [
+                {
+                    "day": "Monday",
+                    "desc": "Main Task: AWS Fundamentals & Cloud Infrastructure.\nDetailed Activities: Learn about AWS overview, AWS Management Console, Regions and Availability Zones.",
+                    "start": "2026-09-14",
+                    "end": "2026-09-14",
+                    "ref": "[AWS Global Infrastructure Overview](https://aws.amazon.com/about-aws/global-infrastructure/)"
+                },
+                {
+                    "day": "Wednesday",
+                    "desc": "Main Task: IAM Users & Groups.\nDetailed Activities: Learn about IAM service, configuring IAM Users, User Groups and access management.",
+                    "start": "2026-09-16",
+                    "end": "2026-09-16",
+                    "ref": "[Managing IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html)"
+                },
+                {
+                    "day": "Friday",
+                    "desc": "Main Task: IAM Roles & Policies.\nDetailed Activities: Learn about IAM Roles, Policies and applying the Least Privilege principle.",
+                    "start": "2026-09-18",
+                    "end": "2026-09-18",
+                    "ref": "[IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)"
+                }
+            ]
         }
-      };
-    } else if (weekNum === 2) {
-      return {
-        weekNum: 2,
-        vi: {
-          topic: "Amazon EC2 (21/09/2026 – 25/09/2026)",
-          objectives: "Tìm hiểu dịch vụ máy chủ ảo Amazon EC2 và cách quản lý Instance.",
-          achievements: "- Hiểu cách hoạt động của Amazon EC2.\n- Biết cách khởi tạo và cấu hình EC2 Instance.\n- Hiểu vai trò của Key Pair và Security Group.",
-          tasks: [
-            {
-              day: "Thứ Hai",
-              desc: "Main Task: EC2 Fundamentals.\nDetailed Activities: Tìm hiểu Amazon EC2, các loại Instance và cách khởi tạo máy chủ ảo.",
-              start: "2026-09-21", end: "2026-09-21",
-              ref: "[Bắt đầu với EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)"
-            },
-            {
-              day: "Thứ Ba",
-              desc: "Main Task: EC2 Configuration.\nDetailed Activities: Tìm hiểu cách cấu hình EC2, Key Pair và Security Group.",
-              start: "2026-09-22", end: "2026-09-22",
-              ref: "[EC2 Security Groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)"
-            },
-            {
-              day: "Thứ Sáu",
-              desc: "Main Task: EC2 Instance Management.\nDetailed Activities: Tìm hiểu cách kết nối, khởi động, dừng và quản lý EC2 Instance.",
-              start: "2026-09-25", end: "2026-09-25",
-              ref: "[EC2 Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html)"
-            }
-          ]
+    },
+    {
+        "weekNum": 2,
+        "vi": {
+            "topic": "Tuần 2: Amazon EC2 (21/09/2026 – 25/09/2026)",
+            "objectives": "Tìm hiểu dịch vụ máy chủ ảo Amazon EC2 và cách quản lý Instance.",
+            "achievements": "- Hiểu cách hoạt động của Amazon EC2.\n- Biết cách khởi tạo và cấu hình EC2 Instance.\n- Hiểu vai trò của Key Pair và Security Group.",
+            "tasks": [
+                {
+                    "day": "Thứ Hai",
+                    "desc": "Main Task: EC2 Fundamentals & Instance Types.\nDetailed Activities: Tìm hiểu Amazon EC2, các loại Instance và cách khởi tạo máy chủ ảo.",
+                    "start": "2026-09-21",
+                    "end": "2026-09-21",
+                    "ref": "[Bắt đầu với EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)"
+                },
+                {
+                    "day": "Thứ Tư",
+                    "desc": "Main Task: EC2 Configuration & Security Groups.\nDetailed Activities: Tìm hiểu cách cấu hình EC2, Key Pair và Security Group.",
+                    "start": "2026-09-23",
+                    "end": "2026-09-23",
+                    "ref": "[EC2 Security Groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)"
+                },
+                {
+                    "day": "Thứ Sáu",
+                    "desc": "Main Task: EC2 Instance Management & Lifecycle.\nDetailed Activities: Tìm hiểu cách kết nối, khởi động, dừng và quản lý EC2 Instance.",
+                    "start": "2026-09-25",
+                    "end": "2026-09-25",
+                    "ref": "[EC2 Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html)"
+                }
+            ]
         },
-        en: {
-          topic: "Amazon EC2 (21/09/2026 – 25/09/2026)",
-          objectives: "Learn about the Amazon EC2 virtual server service and Instance management.",
-          achievements: "- Understood how Amazon EC2 works.\n- Learned how to launch and configure EC2 Instances.\n- Understood the role of Key Pairs and Security Groups.",
-          tasks: [
-            {
-              day: "Monday",
-              desc: "Main Task: EC2 Fundamentals.\nDetailed Activities: Learn about Amazon EC2, Instance types and how to launch virtual servers.",
-              start: "2026-09-21", end: "2026-09-21",
-              ref: "[Getting Started with EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)"
-            },
-            {
-              day: "Tuesday",
-              desc: "Main Task: EC2 Configuration.\nDetailed Activities: Learn how to configure EC2, Key Pairs and Security Groups.",
-              start: "2026-09-22", end: "2026-09-22",
-              ref: "[EC2 Security Groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)"
-            },
-            {
-              day: "Friday",
-              desc: "Main Task: EC2 Instance Management.\nDetailed Activities: Learn how to connect, start, stop and manage EC2 Instances.",
-              start: "2026-09-25", end: "2026-09-25",
-              ref: "[EC2 Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html)"
-            }
-          ]
+        "en": {
+            "topic": "Week 2: Amazon EC2 (21/09/2026 – 25/09/2026)",
+            "objectives": "Learn about the Amazon EC2 virtual server service and Instance management.",
+            "achievements": "- Understood how Amazon EC2 works.\n- Learned how to launch and configure EC2 Instances.\n- Understood the role of Key Pairs and Security Groups.",
+            "tasks": [
+                {
+                    "day": "Monday",
+                    "desc": "Main Task: EC2 Fundamentals & Instance Types.\nDetailed Activities: Learn about Amazon EC2, Instance types and how to launch virtual servers.",
+                    "start": "2026-09-21",
+                    "end": "2026-09-21",
+                    "ref": "[Getting Started with EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)"
+                },
+                {
+                    "day": "Wednesday",
+                    "desc": "Main Task: EC2 Configuration & Security Groups.\nDetailed Activities: Learn how to configure EC2, Key Pairs and Security Groups.",
+                    "start": "2026-09-23",
+                    "end": "2026-09-23",
+                    "ref": "[EC2 Security Groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)"
+                },
+                {
+                    "day": "Friday",
+                    "desc": "Main Task: EC2 Instance Management & Lifecycle.\nDetailed Activities: Learn how to connect, start, stop and manage EC2 Instances.",
+                    "start": "2026-09-25",
+                    "end": "2026-09-25",
+                    "ref": "[EC2 Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html)"
+                }
+            ]
         }
-      };
-    } else if (weekNum === 3) {
-      return {
-        weekNum: 3,
-        vi: {
-          topic: "Amazon VPC (28/09/2026 – 01/10/2026)",
-          objectives: "Tìm hiểu cách xây dựng và quản lý mạng riêng trên AWS.",
-          achievements: "- Hiểu cấu trúc và chức năng của VPC.\n- Phân biệt Public Subnet và Private Subnet.\n- Hiểu vai trò của Route Table, Internet Gateway và Security Group.",
-          tasks: [
-            {
-              day: "Thứ Hai",
-              desc: "Main Task: VPC Fundamentals.\nDetailed Activities: Tìm hiểu VPC, CIDR và cách xây dựng mạng riêng trên AWS.",
-              start: "2026-09-28", end: "2026-09-28",
-              ref: "[Tổng quan Amazon VPC](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)"
-            },
-            {
-              day: "Thứ Ba",
-              desc: "Main Task: Subnets & Route Tables.\nDetailed Activities: Tìm hiểu Public Subnet, Private Subnet và cách định tuyến bằng Route Table.",
-              start: "2026-09-29", end: "2026-09-29",
-              ref: "[Cấu hình Subnet](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html)"
-            },
-            {
-              day: "Thứ Năm",
-              desc: "Main Task: VPC Connectivity & Security.\nDetailed Activities: Tìm hiểu Internet Gateway và Security Group để kết nối, kiểm soát lưu lượng mạng.",
-              start: "2026-10-01", end: "2026-10-01",
-              ref: "[Internet Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)"
-            }
-          ]
+    },
+    {
+        "weekNum": 3,
+        "vi": {
+            "topic": "Tuần 3: Amazon VPC & Mạng cơ bản (01/10/2026 – 02/10/2026)",
+            "objectives": "Tìm hiểu kiến trúc mạng riêng ảo Amazon VPC, phân chia Subnet và cấu hình bảo mật mạng.",
+            "achievements": "- Hiểu cách khởi tạo và quy hoạch mạng riêng ảo Amazon VPC với CIDR block.\n- Phân định rõ vai trò của Public Subnet, Private Subnet, Route Table và Internet Gateway.",
+            "tasks": [
+                {
+                    "day": "Thứ Năm",
+                    "desc": "Main Task: VPC Architecture & Subnets.\nDetailed Activities: Tìm hiểu tổng quan Amazon VPC, phân dải địa chỉ CIDR block, cấu hình Public Subnet và Private Subnet.",
+                    "start": "2026-10-01",
+                    "end": "2026-10-01",
+                    "ref": "[Tài liệu Amazon VPC](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)"
+                },
+                {
+                    "day": "Thứ Sáu",
+                    "desc": "Main Task: Route Tables & Internet Gateway.\nDetailed Activities: Tìm hiểu định tuyến qua Route Table, kết nối Internet Gateway cho Public Subnet và bảo vệ tài nguyên với Security Groups & Network ACLs.",
+                    "start": "2026-10-02",
+                    "end": "2026-10-02",
+                    "ref": "[Định tuyến mạng VPC](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html)"
+                }
+            ]
         },
-        en: {
-          topic: "Amazon VPC (28/09/2026 – 01/10/2026)",
-          objectives: "Learn how to build and manage a private network on AWS.",
-          achievements: "- Understood the structure and functionality of VPC.\n- Distinguished between Public Subnet and Private Subnet.\n- Understood the role of Route Tables, Internet Gateway and Security Groups.",
-          tasks: [
-            {
-              day: "Monday",
-              desc: "Main Task: VPC Fundamentals.\nDetailed Activities: Learn about VPC, CIDR and how to build a private network on AWS.",
-              start: "2026-09-28", end: "2026-09-28",
-              ref: "[Amazon VPC Overview](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)"
-            },
-            {
-              day: "Tuesday",
-              desc: "Main Task: Subnets & Route Tables.\nDetailed Activities: Learn about Public Subnet, Private Subnet and routing with Route Tables.",
-              start: "2026-09-29", end: "2026-09-29",
-              ref: "[Subnet Configuration](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html)"
-            },
-            {
-              day: "Thursday",
-              desc: "Main Task: VPC Connectivity & Security.\nDetailed Activities: Learn about Internet Gateway and Security Groups for connectivity and traffic control.",
-              start: "2026-10-01", end: "2026-10-01",
-              ref: "[Internet Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)"
-            }
-          ]
+        "en": {
+            "topic": "Week 3: Amazon VPC & Networking Fundamentals (01/10/2026 – 02/10/2026)",
+            "objectives": "Learn Amazon VPC networking fundamentals, subnet segmentation, and network security.",
+            "achievements": "- Understood how to create and plan virtual private clouds using Amazon VPC with CIDR blocks.\n- Clearly distinguished the roles of Public Subnets, Private Subnets, Route Tables, and Internet Gateways.",
+            "tasks": [
+                {
+                    "day": "Thursday",
+                    "desc": "Main Task: VPC Architecture & Subnets.\nDetailed Activities: Learn Amazon VPC overview, CIDR block allocation, and configure Public and Private Subnets.",
+                    "start": "2026-10-01",
+                    "end": "2026-10-01",
+                    "ref": "[Amazon VPC Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)"
+                },
+                {
+                    "day": "Friday",
+                    "desc": "Main Task: Route Tables & Internet Gateway.\nDetailed Activities: Learn routing via Route Tables, connect Internet Gateway for Public Subnets, and secure resources with Security Groups & Network ACLs.",
+                    "start": "2026-10-02",
+                    "end": "2026-10-02",
+                    "ref": "[VPC Route Tables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html)"
+                }
+            ]
         }
-      };
-    } else if (weekNum === 4) {
-      return {
-        weekNum: 4,
-        vi: {
-          topic: "AWS Lambda, S3, Cloud9, RDS & DynamoDB (06/10/2026 – 09/10/2026)",
-          objectives: "Tìm hiểu các dịch vụ AWS phục vụ xử lý dữ liệu, lưu trữ và quản lý cơ sở dữ liệu.",
-          achievements: "- Hiểu cơ bản về AWS Lambda và mô hình Serverless.\n- Biết cách lưu trữ dữ liệu trên Amazon S3.\n- Làm quen với môi trường AWS Cloud9.\n- Phân biệt cơ sở dữ liệu quan hệ RDS và NoSQL DynamoDB.",
-          tasks: [
-            {
-              day: "Thứ Ba",
-              desc: "Main Task: AWS Lambda.\nDetailed Activities: Tìm hiểu Lambda Function và cách thực thi mã nguồn theo mô hình Serverless.",
-              start: "2026-10-06", end: "2026-10-06",
-              ref: "[Bắt đầu với AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html)"
-            },
-            {
-              day: "Thứ Năm",
-              desc: "Main Task: Amazon S3 & Cloud9.\nDetailed Activities: Tìm hiểu Bucket, Object trong S3 và môi trường phát triển AWS Cloud9.",
-              start: "2026-10-08", end: "2026-10-08",
-              ref: "[Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) / [AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html)"
-            },
-            {
-              day: "Thứ Sáu",
-              desc: "Main Task: Amazon RDS & DynamoDB.\nDetailed Activities: Tìm hiểu cơ sở dữ liệu quan hệ RDS và cơ sở dữ liệu NoSQL DynamoDB.",
-              start: "2026-10-09", end: "2026-10-09",
-              ref: "[Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html) / [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)"
-            }
-          ]
+    },
+    {
+        "weekNum": 4,
+        "vi": {
+            "topic": "Tuần 4: AWS Lambda, S3, Cloud9, RDS & DynamoDB (06/10/2026 – 08/10/2026)",
+            "objectives": "Tìm hiểu dịch vụ tính toán không máy chủ Lambda, lưu trữ đối tượng S3, môi trường Cloud9 và cơ sở dữ liệu RDS, DynamoDB.",
+            "achievements": "- Nắm vững nguyên lý hoạt động của AWS Lambda và cơ chế lưu trữ Amazon S3.\n- Phân biệt trường hợp sử dụng phù hợp giữa Amazon RDS (quan hệ) và DynamoDB (NoSQL).",
+            "tasks": [
+                {
+                    "day": "Thứ Ba",
+                    "desc": "Main Task: AWS Lambda & Amazon S3.\nDetailed Activities: Tìm hiểu mô hình tính toán Serverless với AWS Lambda, quản lý Bucket và Object trên Amazon S3, tích hợp sự kiện S3 kích hoạt Lambda.",
+                    "start": "2026-10-06",
+                    "end": "2026-10-06",
+                    "ref": "[Tài liệu AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)"
+                },
+                {
+                    "day": "Thứ Năm",
+                    "desc": "Main Task: Cloud9, Amazon RDS & DynamoDB.\nDetailed Activities: Thiết lập môi trường phát triển trên AWS Cloud9; so sánh đặc tính của cơ sở dữ liệu quan hệ Amazon RDS và cơ sở dữ liệu NoSQL Amazon DynamoDB.",
+                    "start": "2026-10-08",
+                    "end": "2026-10-08",
+                    "ref": "[Tài liệu Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)"
+                }
+            ]
         },
-        en: {
-          topic: "AWS Lambda, S3, Cloud9, RDS & DynamoDB (06/10/2026 – 09/10/2026)",
-          objectives: "Learn about AWS services for data processing, storage and database management.",
-          achievements: "- Understood the basics of AWS Lambda and the Serverless model.\n- Learned how to store data on Amazon S3.\n- Got familiar with the AWS Cloud9 development environment.\n- Distinguished between relational database RDS and NoSQL DynamoDB.",
-          tasks: [
-            {
-              day: "Tuesday",
-              desc: "Main Task: AWS Lambda.\nDetailed Activities: Learn about Lambda Functions and how to execute code using the Serverless model.",
-              start: "2026-10-06", end: "2026-10-06",
-              ref: "[Getting Started with AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html)"
-            },
-            {
-              day: "Thursday",
-              desc: "Main Task: Amazon S3 & Cloud9.\nDetailed Activities: Learn about Buckets, Objects in S3 and the AWS Cloud9 development environment.",
-              start: "2026-10-08", end: "2026-10-08",
-              ref: "[Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) / [AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html)"
-            },
-            {
-              day: "Friday",
-              desc: "Main Task: Amazon RDS & DynamoDB.\nDetailed Activities: Learn about relational database RDS and NoSQL database DynamoDB.",
-              start: "2026-10-09", end: "2026-10-09",
-              ref: "[Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html) / [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)"
-            }
-          ]
+        "en": {
+            "topic": "Week 4: AWS Lambda, S3, Cloud9, RDS & DynamoDB (06/10/2026 – 08/10/2026)",
+            "objectives": "Learn serverless compute with AWS Lambda, object storage with S3, Cloud9 IDE, and databases with RDS and DynamoDB.",
+            "achievements": "- Mastered core concepts of AWS Lambda serverless execution and Amazon S3 storage.\n- Understood suitable use cases for relational Amazon RDS versus NoSQL DynamoDB.",
+            "tasks": [
+                {
+                    "day": "Tuesday",
+                    "desc": "Main Task: AWS Lambda & Amazon S3.\nDetailed Activities: Learn serverless compute with AWS Lambda, manage buckets and objects in Amazon S3, and integrate S3 event notifications with Lambda.",
+                    "start": "2026-10-06",
+                    "end": "2026-10-06",
+                    "ref": "[AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)"
+                },
+                {
+                    "day": "Thursday",
+                    "desc": "Main Task: Cloud9, Amazon RDS & DynamoDB.\nDetailed Activities: Set up development environment on AWS Cloud9; compare relational database Amazon RDS with NoSQL database Amazon DynamoDB.",
+                    "start": "2026-10-08",
+                    "end": "2026-10-08",
+                    "ref": "[Amazon RDS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)"
+                }
+            ]
         }
-      };
-    } else if (weekNum === 5) {
-      return {
-        weekNum: 5,
-        vi: {
-          topic: "Week 5 – Project Ideation & Preparation",
-          objectives: "Thảo luận, lựa chọn chủ đề và xây dựng ý tưởng ban đầu cho dự án Nutrition E-Commerce.",
-          achievements: "- Thống nhất lựa chọn chủ đề Nutrition E-Commerce.\n- Xác định mục tiêu và các chức năng dự kiến của dự án.\n- Tìm hiểu các website bán thực phẩm Eat Clean và nguồn dữ liệu dinh dưỡng bên thứ ba.",
-          tasks: [
-            {
-              day: "Thứ Ba",
-              desc: "Main Task: Project Topic Discussion\nDetailed Activities: Thảo luận nhóm, tìm kiếm và đề xuất ý tưởng dự án. Tìm hiểu mô hình kinh doanh thực phẩm Eat Clean, các sản phẩm và cách tổ chức danh mục trên website thương mại điện tử.",
-              start: "2026-10-13",
-              end: "2026-10-13",
-              ref: "[HelloFresh](https://www.hellofresh.com/)\n[Go Fit Mart](https://gofitmart.vn/)"
-            },
-            {
-              day: "Thứ Tư",
-              desc: "Main Task: Project Ideation & Preparation\nDetailed Activities: Thống nhất chủ đề Nutrition E-Commerce, xác định mục tiêu và các chức năng dự kiến. Tìm hiểu nguồn dữ liệu bên thứ ba để tra cứu thông tin dinh dưỡng như calo, protein, carbohydrate và chất béo.",
-              start: "2026-10-14",
-              end: "2026-10-14",
-              ref: "[FoodData Central](https://fdc.nal.usda.gov/)\n[Open Food Facts](https://world.openfoodfacts.org/)\n[MyFitnessPal](https://www.myfitnesspal.com/)"
-            }
-          ]
+    },
+    {
+        "weekNum": 5,
+        "vi": {
+            "topic": "Tuần 5: Định hướng đề xuất dự án & Chuẩn bị kiến trúc (14/10/2026 – 16/10/2026)",
+            "objectives": "Thống nhất chủ đề dự án Nutrition E-Commerce, nghiên cứu kiến trúc giải pháp và lập đề xuất đồ án thực tập.",
+            "achievements": "- Thống nhất mục tiêu và phạm vi nghiệp vụ của đồ án Nutrition E-Commerce.\n- Hoàn thành tài liệu Đề xuất đồ án (Proposal) với sơ đồ kiến trúc phân tầng trên AWS.",
+            "tasks": [
+                {
+                    "day": "Thứ Tư",
+                    "desc": "Main Task: Thảo luận và thống nhất đề xuất đồ án Nutrition E-Commerce.\nDetailed Activities: Họp nhóm thảo luận yêu cầu bài toán thương mại điện tử dinh dưỡng, xác định đối tượng người dùng, tính năng gợi ý khẩu phần và phạm vi triển khai trên AWS.",
+                    "start": "2026-10-14",
+                    "end": "2026-10-14",
+                    "ref": "[AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)"
+                },
+                {
+                    "day": "Thứ Sáu",
+                    "desc": "Main Task: Khảo sát kiến trúc kỹ thuật và lập sơ đồ phân tầng hệ thống.\nDetailed Activities: Phân tích mô hình kiến trúc dự kiến gồm Frontend, Backend Microservices, Cơ sở dữ liệu và tích hợp GenAI; hoàn thiện bản đề xuất đồ án (Proposal).",
+                    "start": "2026-10-16",
+                    "end": "2026-10-16",
+                    "ref": "[Kiến trúc ứng dụng Web trên AWS](https://aws.amazon.com/solutions/implementations/serverless-image-handler/)"
+                }
+            ]
         },
-        en: {
-          topic: "Week 5 – Project Ideation & Preparation",
-          objectives: "Discuss, select the project topic, and build the initial ideation for the Nutrition E-Commerce project.",
-          achievements: "- Agreed on the Nutrition E-Commerce project topic.\n- Defined project goals and expected features of the project.\n- Researched Eat Clean food e-commerce websites and third-party nutritional data sources.",
-          tasks: [
-            {
-              day: "Tuesday",
-              desc: "Main Task: Project Topic Discussion\nDetailed Activities: Group discussion, searching and proposing project ideas. Research Eat Clean food business models, products, and catalog organization on e-commerce websites.",
-              start: "2026-10-13",
-              end: "2026-10-13",
-              ref: "[HelloFresh](https://www.hellofresh.com/)\n[Go Fit Mart](https://gofitmart.vn/)"
-            },
-            {
-              day: "Wednesday",
-              desc: "Main Task: Project Ideation & Preparation\nDetailed Activities: Finalize the Nutrition E-Commerce topic, define project objectives and planned features. Research third-party nutritional data sources to look up calories, protein, carbohydrates, and fat.",
-              start: "2026-10-14",
-              end: "2026-10-14",
-              ref: "[FoodData Central](https://fdc.nal.usda.gov/)\n[Open Food Facts](https://world.openfoodfacts.org/)\n[MyFitnessPal](https://www.myfitnesspal.com/)"
-            }
-          ]
+        "en": {
+            "topic": "Week 5: Project Ideation & Architecture Preparation (14/10/2026 – 16/10/2026)",
+            "objectives": "Finalize Nutrition E-Commerce project topic, research solution architecture, and prepare internship proposal.",
+            "achievements": "- Finalized objectives and business scope for the Nutrition E-Commerce project.\n- Completed the Proposal document featuring a tiered AWS cloud architecture diagram.",
+            "tasks": [
+                {
+                    "day": "Wednesday",
+                    "desc": "Main Task: Discuss and finalize Nutrition E-Commerce project proposal.\nDetailed Activities: Group discussion on nutrition e-commerce requirements, identifying user personas, meal recommendation features, and scope of deployment on AWS.",
+                    "start": "2026-10-14",
+                    "end": "2026-10-14",
+                    "ref": "[AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)"
+                },
+                {
+                    "day": "Friday",
+                    "desc": "Main Task: Technical architecture research and system tier diagramming.\nDetailed Activities: Analyze target architecture including Frontend, Backend Microservices, Database, and GenAI integration; finalize project proposal document.",
+                    "start": "2026-10-16",
+                    "end": "2026-10-16",
+                    "ref": "[Web Application Architecture on AWS](https://aws.amazon.com/solutions/implementations/serverless-image-handler/)"
+                }
+            ]
         }
-      };
-    } else if (weekNum === 6) {
-      return {
-        weekNum: 6,
-        vi: {
-          topic: "AWS Lambda & Điện toán Serverless (19/10/2026 – 23/10/2026)",
-          objectives: "- Hiểu Điện toán Serverless và AWS Lambda.\n- Tìm hiểu Lambda Function, Trigger, Event và Execution Role.\n- Thực hành tạo và triển khai Lambda Function.\n- Tìm hiểu cách tích hợp Lambda với Amazon S3.\n- Tìm hiểu cách giám sát cơ bản bằng CloudWatch.",
-          achievements: "- Nắm được kiến thức nền tảng về Điện toán Serverless.\n- Tìm hiểu Lambda Function, Runtime, Handler và Trigger.\n- Thực hành tạo và kiểm thử Lambda Function bằng Python.\n- Tìm hiểu S3 event notification và việc tích hợp với Lambda.\n- Biết cách giám sát quá trình thực thi function bằng CloudWatch Logs.\n- Hiểu các luồng xử lý cơ bản của một ứng dụng serverless.",
-          tasks: [
-            {
-              day: "Thứ 2",
-              desc: "- Học kiến thức nền tảng về Điện toán Serverless.\n- Tìm hiểu AWS Lambda và kiến trúc của nó.\n- Tìm hiểu Function, Runtime và Handler.",
-              start: "2026-10-19",
-              end: "2026-10-19",
-              ref: "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"
-            },
-            {
-              day: "Thứ 3",
-              desc: "- Tạo và cấu hình Lambda Function.\n- Viết code Python cơ bản.\n- Kiểm thử function bằng các sample event.",
-              start: "2026-10-20",
-              end: "2026-10-20",
-              ref: "https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html"
-            },
-            {
-              day: "Thứ 4",
-              desc: "- Tìm hiểu Lambda Trigger và Event Source.\n- Tích hợp Lambda với Amazon S3.\n- Thực hành xử lý các file được upload.",
-              start: "2026-10-21",
-              end: "2026-10-21",
-              ref: "https://docs.aws.amazon.com/lambda/latest/dg/lambda-services.html"
-            },
-            {
-              day: "Thứ 5",
-              desc: "- Giám sát Lambda bằng CloudWatch.\n- Xem log và metric của quá trình thực thi.\n- Thực hành xử lý các lỗi cơ bản.",
-              start: "2026-10-22",
-              end: "2026-10-22",
-              ref: "https://docs.aws.amazon.com/lambda/latest/dg/lambda-monitoring.html"
-            },
-            {
-              day: "Thứ 6",
-              desc: "- Kiểm thử luồng xử lý serverless.\n- Rà soát quyền và cấu hình.\n- Ghi lại tài liệu kết quả thực hành.",
-              start: "2026-10-23",
-              end: "2026-10-23",
-              ref: "https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html"
-            }
-          ]
+    },
+    {
+        "weekNum": 6,
+        "vi": {
+            "topic": "Tuần 6: Docker & Amazon ECR (21/10/2026 – 23/10/2026)",
+            "objectives": "Nắm vững kiến thức nền tảng về Docker, container hóa ứng dụng và tìm hiểu quản lý image container với Amazon ECR.",
+            "achievements": "- Nắm vững kiến thức đóng gói ứng dụng bằng Docker.\n- Hiểu quy trình tạo và quản lý kho lưu trữ container image trên Amazon ECR.",
+            "tasks": [
+                {
+                    "day": "Thứ Tư",
+                    "desc": "Main Task: Học kiến thức nền tảng về Docker và container hóa ứng dụng.\nDetailed Activities: Tìm hiểu kiến trúc Docker, Dockerfile và cách container hóa các thành phần của ứng dụng Nutrition E-Commerce.",
+                    "start": "2026-10-21",
+                    "end": "2026-10-21",
+                    "ref": "[Docker – Container Fundamentals](https://docs.docker.com/get-started/)"
+                },
+                {
+                    "day": "Thứ Sáu",
+                    "desc": "Main Task: Tìm hiểu Amazon ECR và quản lý image container.\nDetailed Activities: Tìm hiểu cấu hình repository Amazon ECR, cơ chế xác thực IAM và theo dõi quy trình đẩy container image lên Amazon ECR.",
+                    "start": "2026-10-23",
+                    "end": "2026-10-23",
+                    "ref": "[Amazon ECR – User Guide](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html)"
+                }
+            ]
         },
-        en: {
-          topic: "AWS Lambda & Serverless Computing (19/10/2026 – 23/10/2026)",
-          objectives: "- Understand Serverless Computing and AWS Lambda.\n- Learn Lambda Functions, Triggers, Events, and Execution Roles.\n- Practice creating and deploying Lambda Functions.\n- Explore integration between Lambda and Amazon S3.\n- Learn basic monitoring using CloudWatch.",
-          achievements: "- Understood the fundamentals of Serverless Computing.\n- Learned Lambda Functions, Runtimes, Handlers, and Triggers.\n- Practiced creating and testing Lambda Functions using Python.\n- Explored S3 event notifications and Lambda integration.\n- Learned to monitor function execution using CloudWatch Logs.\n- Understood basic serverless application workflows.",
-          tasks: [
-            {
-              day: "Monday",
-              desc: "- Learn Serverless Computing fundamentals.\n- Explore AWS Lambda and its architecture.\n- Understand Functions, Runtimes, and Handlers.",
-              start: "2026-10-19",
-              end: "2026-10-19",
-              ref: "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"
-            },
-            {
-              day: "Tuesday",
-              desc: "- Create and configure Lambda Functions.\n- Write basic Python code.\n- Test functions using sample events.",
-              start: "2026-10-20",
-              end: "2026-10-20",
-              ref: "https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html"
-            },
-            {
-              day: "Wednesday",
-              desc: "- Learn Lambda Triggers and Event Sources.\n- Integrate Lambda with Amazon S3.\n- Practice processing uploaded files.",
-              start: "2026-10-21",
-              end: "2026-10-21",
-              ref: "https://docs.aws.amazon.com/lambda/latest/dg/lambda-services.html"
-            },
-            {
-              day: "Thursday",
-              desc: "- Monitor Lambda using CloudWatch.\n- Review execution logs and metrics.\n- Practice troubleshooting basic errors.",
-              start: "2026-10-22",
-              end: "2026-10-22",
-              ref: "https://docs.aws.amazon.com/lambda/latest/dg/lambda-monitoring.html"
-            },
-            {
-              day: "Friday",
-              desc: "- Test the serverless workflow.\n- Review permissions and configurations.\n- Document the practical results.",
-              start: "2026-10-23",
-              end: "2026-10-23",
-              ref: "https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html"
-            }
-          ]
+        "en": {
+            "topic": "Week 6: Docker & Amazon ECR (21/10/2026 – 23/10/2026)",
+            "objectives": "Master Docker fundamentals, containerization concepts, and explore container image management with Amazon ECR.",
+            "achievements": "- Mastered application containerization concepts using Docker.\n- Understood how to create and manage container image repositories on Amazon ECR.",
+            "tasks": [
+                {
+                    "day": "Wednesday",
+                    "desc": "Main Task: Learn Docker fundamentals and containerize applications.\nDetailed Activities: Study Docker architecture, images, containers, and write Dockerfiles to containerize application components.",
+                    "start": "2026-10-21",
+                    "end": "2026-10-21",
+                    "ref": "[Docker – Container Fundamentals](https://docs.docker.com/get-started/)"
+                },
+                {
+                    "day": "Friday",
+                    "desc": "Main Task: Explore Amazon ECR and container image management.\nDetailed Activities: Create Amazon ECR repositories, configure IAM permissions, and practice authentication and pushing container images to ECR.",
+                    "start": "2026-10-23",
+                    "end": "2026-10-23",
+                    "ref": "[Amazon ECR – User Guide](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html)"
+                }
+            ]
         }
-      };
-    } else if (weekNum === 7) {
-      return {
-        weekNum: 7,
-        vi: {
-          topic: "AWS CloudFormation & Infrastructure as Code (26/10/2026 – 30/10/2026)",
-          objectives: "- Hiểu Infrastructure as Code (IaC).\n- Tìm hiểu CloudFormation Template và Stack.\n- Thực hành viết template YAML và JSON.\n- Triển khai và quản lý tài nguyên AWS bằng CloudFormation.\n- Tìm hiểu AWS Systems Manager.",
-          achievements: "- Nắm được kiến thức nền tảng về Infrastructure as Code.\n- Tìm hiểu CloudFormation Template, Stack và Resource.\n- Thực hành viết các template YAML cơ bản.\n- Triển khai tài nguyên AWS bằng CloudFormation.\n- Biết cách cập nhật và xóa CloudFormation Stack.\n- Tìm hiểu AWS Systems Manager và Session Manager.",
-          tasks: [
-            {
-              day: "Thứ 2",
-              desc: "- Tìm hiểu các khái niệm Infrastructure as Code.\n- Khám phá AWS CloudFormation.\n- Tìm hiểu Template và Stack.",
-              start: "2026-10-26",
-              end: "2026-10-26",
-              ref: "https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/infrastructure-as-code.html"
-            },
-            {
-              day: "Thứ 3",
-              desc: "- Tìm hiểu cấu trúc template YAML và JSON.\n- Tìm hiểu Parameters, Resources và Outputs.\n- Xem các template mẫu.",
-              start: "2026-10-27",
-              end: "2026-10-27",
-              ref: "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html"
-            },
-            {
-              day: "Thứ 4",
-              desc: "- Tạo một CloudFormation Template cơ bản.\n- Khai báo tài nguyên EC2 và Security Group.\n- Triển khai và kiểm tra một Stack.",
-              start: "2026-10-28",
-              end: "2026-10-28",
-              ref: "https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ec2-instance.html"
-            },
-            {
-              day: "Thứ 5",
-              desc: "- Thực hành cập nhật CloudFormation Stack.\n- Tìm hiểu rollback và xử lý lỗi.\n- Quản lý và xóa các tài nguyên đã triển khai.",
-              start: "2026-10-29",
-              end: "2026-10-29",
-              ref: "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-direct.html"
-            },
-            {
-              day: "Thứ 6",
-              desc: "- Khám phá AWS Systems Manager.\n- Tìm hiểu Parameter Store và Session Manager.\n- Rà soát các quy trình quản lý hạ tầng.",
-              start: "2026-10-30",
-              end: "2026-10-30",
-              ref: "https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html"
-            }
-          ]
+    },
+    {
+        "weekNum": 7,
+        "vi": {
+            "topic": "Tuần 7: Amazon ECS Fargate & Application Load Balancer (27/10/2026 – 28/10/2026)",
+            "objectives": "Tìm hiểu nền tảng điều phối container Amazon ECS với AWS Fargate và cân bằng tải Application Load Balancer (ALB).",
+            "achievements": "- Hiểu cách vận hành container không máy chủ với Amazon ECS Fargate.\n- Nắm vững cơ chế phân phối tải và kiểm tra sức khỏe dịch vụ thông qua Application Load Balancer.",
+            "tasks": [
+                {
+                    "day": "Thứ Ba",
+                    "desc": "Main Task: Tìm hiểu nền tảng Amazon ECS và AWS Fargate.\nDetailed Activities: Tìm hiểu mô hình điều phối container Amazon ECS, cấu hình Task Definition, Service và chế độ thực thi serverless AWS Fargate.",
+                    "start": "2026-10-27",
+                    "end": "2026-10-27",
+                    "ref": "[Tài liệu Amazon ECS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)"
+                },
+                {
+                    "day": "Thứ Tư",
+                    "desc": "Main Task: Tìm hiểu Application Load Balancer và kết nối mạng container.\nDetailed Activities: Cấu hình Application Load Balancer (ALB), Target Group, định tuyến lưu lượng đến các container ECS Fargate và kiểm tra tính sẵn sàng (Health Check).",
+                    "start": "2026-10-28",
+                    "end": "2026-10-28",
+                    "ref": "[Tài liệu Elastic Load Balancing](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)"
+                }
+            ]
         },
-        en: {
-          topic: "AWS CloudFormation & Infrastructure as Code (26/10/2026 – 30/10/2026)",
-          objectives: "- Understand Infrastructure as Code (IaC).\n- Learn AWS CloudFormation Templates and Stacks.\n- Practice writing YAML and JSON templates.\n- Deploy and manage AWS resources using CloudFormation.\n- Explore AWS Systems Manager.",
-          achievements: "- Understood the fundamentals of Infrastructure as Code.\n- Learned CloudFormation Templates, Stacks, and Resources.\n- Practiced writing basic YAML templates.\n- Deployed AWS resources using CloudFormation.\n- Learned to update and delete CloudFormation Stacks.\n- Explored AWS Systems Manager and Session Manager.",
-          tasks: [
-            {
-              day: "Monday",
-              desc: "- Learn Infrastructure as Code concepts.\n- Explore AWS CloudFormation.\n- Understand Templates and Stacks.",
-              start: "2026-10-26",
-              end: "2026-10-26",
-              ref: "https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/infrastructure-as-code.html"
-            },
-            {
-              day: "Tuesday",
-              desc: "- Learn YAML and JSON template structures.\n- Understand Parameters, Resources, and Outputs.\n- Review sample templates.",
-              start: "2026-10-27",
-              end: "2026-10-27",
-              ref: "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html"
-            },
-            {
-              day: "Wednesday",
-              desc: "- Create a basic CloudFormation Template.\n- Define EC2 and Security Group resources.\n- Deploy and verify a Stack.",
-              start: "2026-10-28",
-              end: "2026-10-28",
-              ref: "https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ec2-instance.html"
-            },
-            {
-              day: "Thursday",
-              desc: "- Practice updating CloudFormation Stacks.\n- Learn rollback and error handling.\n- Manage and delete deployed resources.",
-              start: "2026-10-29",
-              end: "2026-10-29",
-              ref: "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-direct.html"
-            },
-            {
-              day: "Friday",
-              desc: "- Explore AWS Systems Manager.\n- Learn Parameter Store and Session Manager.\n- Review infrastructure management workflows.",
-              start: "2026-10-30",
-              end: "2026-10-30",
-              ref: "https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html"
-            }
-          ]
+        "en": {
+            "topic": "Week 7: Amazon ECS Fargate & Application Load Balancer (27/10/2026 – 28/10/2026)",
+            "objectives": "Learn Amazon ECS container orchestration with AWS Fargate serverless launch type and Application Load Balancer (ALB).",
+            "achievements": "- Understood serverless container operations using Amazon ECS Fargate.\n- Mastered traffic distribution and service health checks through Application Load Balancers.",
+            "tasks": [
+                {
+                    "day": "Tuesday",
+                    "desc": "Main Task: Explore Amazon ECS and AWS Fargate serverless compute.\nDetailed Activities: Learn Amazon ECS container orchestration, configuring Task Definitions, Services, and AWS Fargate serverless launch type.",
+                    "start": "2026-10-27",
+                    "end": "2026-10-27",
+                    "ref": "[Amazon ECS Fargate Documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)"
+                },
+                {
+                    "day": "Wednesday",
+                    "desc": "Main Task: Explore Application Load Balancer and container networking.\nDetailed Activities: Configure Application Load Balancer (ALB), Target Groups, traffic routing to ECS Fargate containers, and health check monitoring.",
+                    "start": "2026-10-28",
+                    "end": "2026-10-28",
+                    "ref": "[Elastic Load Balancing Documentation](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)"
+                }
+            ]
         }
-      };
-    } else if (weekNum === 8) {
-      return {
-        weekNum: 8,
-        vi: {
-          topic: "Các dịch vụ Migration của AWS (02/11/2026 – 06/11/2026)",
-          objectives: "- Hiểu các khái niệm và chiến lược chuyển đổi lên cloud (migration).\n- Tìm hiểu AWS VM Import/Export.\n- Tìm hiểu AWS Database Migration Service (DMS).\n- Hiểu việc chuyển đổi schema cơ sở dữ liệu.\n- Tìm hiểu AWS Elastic Disaster Recovery.",
-          achievements: "- Nắm được các chiến lược migration lên cloud cơ bản.\n- Tìm hiểu quy trình VM Import/Export.\n- Tìm hiểu DMS Replication Instance, Endpoint và Task.\n- Hiểu full load và ongoing data replication.\n- Hiểu mục đích của AWS Schema Conversion Tool.\n- Hiểu các khái niệm cơ bản về disaster recovery, RPO và RTO.",
-          tasks: [
-            {
-              day: "Thứ 2",
-              desc: "- Học kiến thức nền tảng về migration lên cloud.\n- Tìm hiểu các chiến lược migration.\n- Tìm hiểu các dịch vụ migration của AWS.",
-              start: "2026-11-02",
-              end: "2026-11-02",
-              ref: "https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html"
-            },
-            {
-              day: "Thứ 3",
-              desc: "- Khám phá AWS VM Import/Export.\n- Tìm hiểu cách migrate image máy ảo.\n- Rà soát các yêu cầu khi migration.",
-              start: "2026-11-03",
-              end: "2026-11-03",
-              ref: "https://docs.aws.amazon.com/vm-import/latest/userguide/what-is-vmimport.html"
-            },
-            {
-              day: "Thứ 4",
-              desc: "- Tìm hiểu AWS Database Migration Service.\n- Tìm hiểu Source Endpoint và Target Endpoint.\n- Tìm hiểu Replication Task.",
-              start: "2026-11-04",
-              end: "2026-11-04",
-              ref: "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
-            },
-            {
-              day: "Thứ 5",
-              desc: "- Khám phá AWS Schema Conversion Tool.\n- Tìm hiểu việc chuyển đổi schema cơ sở dữ liệu.\n- Rà soát khả năng tương thích khi migrate cơ sở dữ liệu.",
-              start: "2026-11-05",
-              end: "2026-11-05",
-              ref: "https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Welcome.html"
-            },
-            {
-              day: "Thứ 6",
-              desc: "- Tìm hiểu AWS Elastic Disaster Recovery.\n- Tìm hiểu RPO và RTO.\n- Rà soát các chiến lược backup và recovery.",
-              start: "2026-11-06",
-              end: "2026-11-06",
-              ref: "https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html"
-            }
-          ]
+    },
+    {
+        "weekNum": 8,
+        "vi": {
+            "topic": "Tuần 8: CloudFront & Cognito (03/11/2026 – 06/11/2026)",
+            "objectives": "Tìm hiểu tăng tốc phân phối nội dung với Amazon CloudFront và quản lý định danh người dùng với Amazon Cognito.",
+            "achievements": "- Nắm vững cơ chế caching và phân phối nội dung tĩnh/động tại biên qua Amazon CloudFront.\n- Hiểu quy trình xác thực người dùng dựa trên JWT token với Amazon Cognito User Pools.\n- Đánh giá kiến trúc tích hợp an toàn giữa CloudFront và Cognito trong dự án Nutrition E-Commerce.",
+            "tasks": [
+                {
+                    "day": "Thứ Ba",
+                    "desc": "Main Task: Tìm hiểu Amazon CloudFront và phân phối nội dung.\nDetailed Activities: Cấu hình phân phối Amazon CloudFront, Origin Access Control (OAC), chứng chỉ SSL/TLS và bộ nhớ đệm tại biên cho tài nguyên web.",
+                    "start": "2026-11-03",
+                    "end": "2026-11-03",
+                    "ref": "[Amazon CloudFront – Developer Guide](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)"
+                },
+                {
+                    "day": "Thứ Năm",
+                    "desc": "Main Task: Tìm hiểu xác thực người dùng với Amazon Cognito.\nDetailed Activities: Cấu hình Amazon Cognito User Pools, App Clients và quy trình xác thực dựa trên token cho đăng ký và đăng nhập người dùng.",
+                    "start": "2026-11-05",
+                    "end": "2026-11-05",
+                    "ref": "[Amazon Cognito – Developer Guide](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html)"
+                },
+                {
+                    "day": "Thứ Sáu",
+                    "desc": "Main Task: Đánh giá tích hợp CloudFront và Cognito trong kiến trúc Nutrition E-Commerce.\nDetailed Activities: Phân tích luồng xác thực an toàn, phân quyền API gateway và phân phối nội dung tại biên trong giải pháp Nutrition E-Commerce.",
+                    "start": "2026-11-06",
+                    "end": "2026-11-06",
+                    "ref": "[Nutrition E-Commerce – Project Documentation](https://github.com/trungnguyen-VNTN/nutrition-ecommerce)"
+                }
+            ]
         },
-        en: {
-          topic: "AWS Migration Services (02/11/2026 – 06/11/2026)",
-          objectives: "- Understand cloud migration concepts and strategies.\n- Explore AWS VM Import/Export.\n- Learn AWS Database Migration Service (DMS).\n- Understand database schema conversion.\n- Explore AWS Elastic Disaster Recovery.",
-          achievements: "- Understood basic cloud migration strategies.\n- Learned the VM Import/Export process.\n- Explored DMS Replication Instances, Endpoints, and Tasks.\n- Understood full load and ongoing data replication.\n- Learned the purpose of AWS Schema Conversion Tool.\n- Understood basic disaster recovery concepts, RPO, and RTO.",
-          tasks: [
-            {
-              day: "Monday",
-              desc: "- Learn cloud migration fundamentals.\n- Explore migration strategies.\n- Review AWS migration services.",
-              start: "2026-11-02",
-              end: "2026-11-02",
-              ref: "https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/migration-strategies.html"
-            },
-            {
-              day: "Tuesday",
-              desc: "- Explore AWS VM Import/Export.\n- Learn virtual machine image migration.\n- Review migration requirements.",
-              start: "2026-11-03",
-              end: "2026-11-03",
-              ref: "https://docs.aws.amazon.com/vm-import/latest/userguide/what-is-vmimport.html"
-            },
-            {
-              day: "Wednesday",
-              desc: "- Learn AWS Database Migration Service.\n- Explore Source and Target Endpoints.\n- Understand Replication Tasks.",
-              start: "2026-11-04",
-              end: "2026-11-04",
-              ref: "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html"
-            },
-            {
-              day: "Thursday",
-              desc: "- Explore AWS Schema Conversion Tool.\n- Learn database schema conversion.\n- Review database migration compatibility.",
-              start: "2026-11-05",
-              end: "2026-11-05",
-              ref: "https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Welcome.html"
-            },
-            {
-              day: "Friday",
-              desc: "- Learn AWS Elastic Disaster Recovery.\n- Understand RPO and RTO.\n- Review backup and recovery strategies.",
-              start: "2026-11-06",
-              end: "2026-11-06",
-              ref: "https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html"
-            }
-          ]
+        "en": {
+            "topic": "Week 8: CloudFront & Cognito (03/11/2026 – 06/11/2026)",
+            "objectives": "Learn content delivery acceleration using Amazon CloudFront and user identity management using Amazon Cognito.",
+            "achievements": "- Mastered caching and edge distribution mechanisms via Amazon CloudFront.\n- Understood JWT token-based user authentication flows with Amazon Cognito User Pools.\n- Evaluated secure architecture combining CloudFront and Cognito in Nutrition E-Commerce.",
+            "tasks": [
+                {
+                    "day": "Tuesday",
+                    "desc": "Main Task: Explore Amazon CloudFront and content delivery.\nDetailed Activities: Set up Amazon CloudFront distribution, origin access control (OAC), SSL/TLS certificates, and edge caching for web assets.",
+                    "start": "2026-11-03",
+                    "end": "2026-11-03",
+                    "ref": "[Amazon CloudFront – Developer Guide](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)"
+                },
+                {
+                    "day": "Thursday",
+                    "desc": "Main Task: Learn Amazon Cognito user authentication.\nDetailed Activities: Configure Amazon Cognito User Pools, App Clients, and token-based authentication workflows for user signup and signin.",
+                    "start": "2026-11-05",
+                    "end": "2026-11-05",
+                    "ref": "[Amazon Cognito – Developer Guide](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html)"
+                },
+                {
+                    "day": "Friday",
+                    "desc": "Main Task: Review CloudFront and Cognito integration in the Nutrition E-Commerce architecture.\nDetailed Activities: Analyze secure authentication flow, API gateway authorization, and edge distribution in the Nutrition E-Commerce solution.",
+                    "start": "2026-11-06",
+                    "end": "2026-11-06",
+                    "ref": "[Nutrition E-Commerce – Project Documentation](https://github.com/trungnguyen-VNTN/nutrition-ecommerce)"
+                }
+            ]
         }
-      };
-    } else if (weekNum === 9) {
-      return {
-        weekNum: 9,
-        vi: {
-          topic: "Docker & Container hóa (09/11/2026 – 13/11/2026)",
-          objectives: "- Hiểu container hóa và kiến trúc Docker.\n- Tìm hiểu Docker Image, Container và Dockerfile.\n- Thực hành build và chạy Docker Container.\n- Tìm hiểu mạng container và lưu trữ dữ liệu bền vững.\n- Tìm hiểu cách chạy ứng dụng Docker trên AWS.",
-          achievements: "- Phân biệt được máy ảo (Virtual Machine) và Container.\n- Tìm hiểu Docker Engine, Image, Container và Dockerfile.\n- Thực hành cài đặt và cấu hình Docker.\n- Nắm được các lệnh Docker CLI cơ bản.\n- Thực hành build và chạy container tùy chỉnh.\n- Hiểu Docker Volume và Network.\n- Tìm hiểu việc triển khai container bằng Amazon ECS.",
-          tasks: [
-            {
-              day: "Thứ 2",
-              desc: "- Học kiến thức nền tảng về container hóa.\n- Tìm hiểu kiến trúc Docker.\n- So sánh Container và máy ảo.",
-              start: "2026-11-09",
-              end: "2026-11-09",
-              ref: "https://docs.docker.com/learn/content/what-is-a-container/"
-            },
-            {
-              day: "Thứ 3",
-              desc: "- Cài đặt và cấu hình Docker.\n- Thực hành các lệnh Docker CLI cơ bản.\n- Tải và chạy Docker Image.",
-              start: "2026-11-10",
-              end: "2026-11-10",
-              ref: "https://docs.docker.com/engine/install/"
-            },
-            {
-              day: "Thứ 4",
-              desc: "- Tìm hiểu các chỉ thị trong Dockerfile.\n- Build Docker Image tùy chỉnh.\n- Triển khai một ứng dụng cơ bản trong container.",
-              start: "2026-11-11",
-              end: "2026-11-11",
-              ref: "https://docs.docker.com/reference/dockerfile/"
-            },
-            {
-              day: "Thứ 5",
-              desc: "- Tìm hiểu Docker Volume và Network.\n- Quản lý vòng đời container.\n- Xem log và cấu hình của container.",
-              start: "2026-11-12",
-              end: "2026-11-12",
-              ref: "https://docs.docker.com/engine/storage/volumes/"
-            },
-            {
-              day: "Thứ 6",
-              desc: "- Kiểm thử một ứng dụng đã container hóa.\n- Xử lý các lỗi cơ bản.\n- Tìm hiểu việc tích hợp Docker với Amazon ECS.",
-              start: "2026-11-13",
-              end: "2026-11-13",
-              ref: "https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html"
-            }
-          ]
+    },
+    {
+        "weekNum": 9,
+        "vi": {
+            "topic": "Tuần 9: Terraform, GitHub Actions & Bedrock (10/11/2026 – 13/11/2026)",
+            "objectives": "Tìm hiểu Hạ tầng dưới dạng mã nguồn (IaC) với Terraform, CI/CD với GitHub Actions OIDC và ứng dụng Generative AI với Amazon Bedrock.",
+            "achievements": "- Hiểu cú pháp Terraform và cách quản lý tài nguyên hạ tầng AWS tự động.\n- Nắm vững quy trình CI/CD an toàn qua GitHub Actions và IAM OIDC không dùng Access Key cố định.\n- Khảo sát các mô hình nền tảng Amazon Bedrock phục vụ tính năng gợi ý thực đơn thông minh.",
+            "tasks": [
+                {
+                    "day": "Thứ Ba",
+                    "desc": "Main Task: Tìm hiểu Terraform và Hạ tầng dưới dạng mã nguồn (IaC).\nDetailed Activities: Tìm hiểu nền tảng HashiCorp Terraform, cú pháp HCL, cấu hình provider, khai báo tài nguyên và quản lý file trạng thái trên AWS.",
+                    "start": "2026-11-10",
+                    "end": "2026-11-10",
+                    "ref": "[Terraform – AWS Provider Documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)"
+                },
+                {
+                    "day": "Thứ Năm",
+                    "desc": "Main Task: Tìm hiểu GitHub Actions và xác thực AWS OIDC.\nDetailed Activities: Xây dựng pipeline CI/CD tự động hóa bằng GitHub Actions và cấu hình xác thực không dùng khóa bảo mật lâu dài với AWS qua OpenID Connect (OIDC).",
+                    "start": "2026-11-12",
+                    "end": "2026-11-12",
+                    "ref": "[AWS Security – OpenID Connect with GitHub Actions](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html)"
+                },
+                {
+                    "day": "Thứ Sáu",
+                    "desc": "Main Task: Tìm hiểu nền tảng Amazon Bedrock và tích hợp AI.\nDetailed Activities: Tìm hiểu các mô hình nền tảng trên Amazon Bedrock, gọi API mô hình, khái niệm kỹ thuật prompt và tính năng Generative AI trong ứng dụng.",
+                    "start": "2026-11-13",
+                    "end": "2026-11-13",
+                    "ref": "[Amazon Bedrock – User Guide](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html)"
+                }
+            ]
         },
-        en: {
-          topic: "Docker & Containerization (09/11/2026 – 13/11/2026)",
-          objectives: "- Understand containerization and Docker architecture.\n- Learn Docker Images, Containers, and Dockerfiles.\n- Practice building and running Docker Containers.\n- Learn container networking and persistent storage.\n- Explore Docker applications on AWS.",
-          achievements: "- Understood the differences between Virtual Machines and Containers.\n- Learned Docker Engine, Images, Containers, and Dockerfiles.\n- Practiced installing and configuring Docker.\n- Learned basic Docker CLI commands.\n- Practiced building and running custom containers.\n- Understood Docker Volumes and Networks.\n- Explored container deployment using Amazon ECS.",
-          tasks: [
-            {
-              day: "Monday",
-              desc: "- Learn containerization fundamentals.\n- Explore Docker architecture.\n- Compare Containers and Virtual Machines.",
-              start: "2026-11-09",
-              end: "2026-11-09",
-              ref: "https://docs.docker.com/learn/content/what-is-a-container/"
-            },
-            {
-              day: "Tuesday",
-              desc: "- Install and configure Docker.\n- Practice basic Docker CLI commands.\n- Download and run Docker Images.",
-              start: "2026-11-10",
-              end: "2026-11-10",
-              ref: "https://docs.docker.com/engine/install/"
-            },
-            {
-              day: "Wednesday",
-              desc: "- Learn Dockerfile instructions.\n- Build custom Docker Images.\n- Deploy a basic application in a container.",
-              start: "2026-11-11",
-              end: "2026-11-11",
-              ref: "https://docs.docker.com/reference/dockerfile/"
-            },
-            {
-              day: "Thursday",
-              desc: "- Learn Docker Volumes and Networks.\n- Manage container lifecycle.\n- Review container logs and configurations.",
-              start: "2026-11-12",
-              end: "2026-11-12",
-              ref: "https://docs.docker.com/engine/storage/volumes/"
-            },
-            {
-              day: "Friday",
-              desc: "- Test a containerized application.\n- Troubleshoot basic errors.\n- Explore Docker integration with Amazon ECS.",
-              start: "2026-11-13",
-              end: "2026-11-13",
-              ref: "https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html"
-            }
-          ]
+        "en": {
+            "topic": "Week 9: Terraform, GitHub Actions & Bedrock (10/11/2026 – 13/11/2026)",
+            "objectives": "Learn Infrastructure as Code (IaC) with Terraform, CI/CD with GitHub Actions OIDC, and Generative AI applications with Amazon Bedrock.",
+            "achievements": "- Understood Terraform syntax and automated AWS infrastructure provisioning.\n- Mastered secure CI/CD workflows using GitHub Actions and IAM OIDC keyless authentication.\n- Explored Amazon Bedrock foundation models for smart meal recommendation features.",
+            "tasks": [
+                {
+                    "day": "Tuesday",
+                    "desc": "Main Task: Learn Terraform and Infrastructure as Code.\nDetailed Activities: Study HashiCorp Terraform fundamentals, HCL syntax, provider configurations, resource declarations, and state management on AWS.",
+                    "start": "2026-11-10",
+                    "end": "2026-11-10",
+                    "ref": "[Terraform – AWS Provider Documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)"
+                },
+                {
+                    "day": "Thursday",
+                    "desc": "Main Task: Explore GitHub Actions and AWS OIDC authentication.\nDetailed Activities: Build automated CI/CD workflows using GitHub Actions and configure secure keyless authentication to AWS via OpenID Connect (OIDC).",
+                    "start": "2026-11-12",
+                    "end": "2026-11-12",
+                    "ref": "[AWS Security – OpenID Connect with GitHub Actions](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html)"
+                },
+                {
+                    "day": "Friday",
+                    "desc": "Main Task: Learn Amazon Bedrock fundamentals and AI integration.\nDetailed Activities: Explore Amazon Bedrock foundation models, API invocations, prompt engineering concepts, and generative AI features in the application.",
+                    "start": "2026-11-13",
+                    "end": "2026-11-13",
+                    "ref": "[Amazon Bedrock – User Guide](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html)"
+                }
+            ]
         }
-      };
-    } else if (weekNum === 10) {
-      return {
-        weekNum: 10,
-        vi: {
-          topic: "Amazon ECS, Fargate & CI/CD (16/11/2026 – 20/11/2026)",
-          objectives: "- Hiểu việc điều phối container với Amazon ECS.\n- Tìm hiểu ECS Cluster, Task, Service và Task Definition.\n- Tìm hiểu AWS Fargate.\n- Thực hành triển khai ứng dụng đã container hóa.\n- Hiểu CI/CD và AWS CodePipeline.",
-          achievements: "[Kế hoạch học tập]\n- Hiểu kiến trúc của Amazon ECS.\n- Tìm hiểu ECS Cluster, Service và Task Definition.\n- Phân biệt ECS chạy trên EC2 và Fargate.\n- Thực hành triển khai container bằng ECS.\n- Nắm được các khái niệm CI/CD pipeline cơ bản.\n- Tìm hiểu AWS CodePipeline và các luồng triển khai tự động.",
-          tasks: [
-            {
-              day: "Thứ 2",
-              desc: "- Học kiến thức nền tảng về Amazon ECS.\n- Tìm hiểu Cluster, Task và Service.\n- Tìm hiểu Task Definition.",
-              start: "2026-11-16",
-              end: "2026-11-16",
-              ref: "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html"
-            },
-            {
-              day: "Thứ 3",
-              desc: "- Tìm hiểu AWS Fargate.\n- So sánh launch type EC2 và Fargate.\n- Tìm hiểu các cấu hình container.",
-              start: "2026-11-17",
-              end: "2026-11-17",
-              ref: "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html"
-            },
-            {
-              day: "Thứ 4",
-              desc: "- Tạo một ECS Cluster.\n- Cấu hình Task Definition.\n- Triển khai một container bằng Fargate.",
-              start: "2026-11-18",
-              end: "2026-11-18",
-              ref: "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/getting-started-fargate.html"
-            },
-            {
-              day: "Thứ 5",
-              desc: "- Học kiến thức nền tảng về CI/CD.\n- Tìm hiểu AWS CodePipeline.\n- Tìm hiểu các stage Source, Build và Deploy.",
-              start: "2026-11-19",
-              end: "2026-11-19",
-              ref: "https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/continuous-integration.html"
-            },
-            {
-              day: "Thứ 6",
-              desc: "- Rà soát luồng triển khai container.\n- Kiểm thử việc triển khai ứng dụng.\n- Viết tài liệu cho quy trình CI/CD.",
-              start: "2026-11-20",
-              end: "2026-11-20",
-              ref: "https://docs.aws.amazon.com/codepipeline/latest/userguide/ecs-cd-pipeline.html"
-            }
-          ]
+    },
+    {
+        "weekNum": 10,
+        "vi": {
+            "topic": "Tuần 10: Rà soát phát triển & Tích hợp hoàn thiện dự án Nutrition E-Commerce (18/11/2026 – 20/11/2026)",
+            "objectives": "Rà soát các tính năng ứng dụng Nutrition E-Commerce, kiểm tra tích hợp hạ tầng AWS và chuẩn bị kế hoạch kiểm thử.",
+            "achievements": "- Hoàn tất rà soát tính toàn vẹn của hạ tầng đám mây và mã nguồn ứng dụng.\n- Xây dựng hoàn chỉnh kế hoạch và kịch bản kiểm thử chức năng cho dự án.",
+            "tasks": [
+                {
+                    "day": "Thứ Tư",
+                    "desc": "Main Task: Rà soát hạ tầng AWS và tích hợp triển khai.\nDetailed Activities: Kiểm tra triển khai container trên ECS Fargate, kết nối cơ sở dữ liệu RDS và cấu hình phân phối nội dung tĩnh qua CloudFront.",
+                    "start": "2026-11-18",
+                    "end": "2026-11-18",
+                    "ref": "[Hướng dẫn triển khai AWS ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-best-practices.html)"
+                },
+                {
+                    "day": "Thứ Sáu",
+                    "desc": "Main Task: Rà soát hoàn thiện phát triển và chuẩn bị kế hoạch kiểm thử.\nDetailed Activities: Tổng hợp các tính năng đã hoàn thiện của ứng dụng Nutrition E-Commerce, rà soát mã nguồn và xây dựng kịch bản kiểm thử cho tuần tiếp theo.",
+                    "start": "2026-11-20",
+                    "end": "2026-11-20",
+                    "ref": "[Kiểm thử ứng dụng trên AWS](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/testing-for-reliability.html)"
+                }
+            ]
         },
-        en: {
-          topic: "Amazon ECS, Fargate & CI/CD (16/11/2026 – 20/11/2026)",
-          objectives: "- Understand container orchestration with Amazon ECS.\n- Learn ECS Clusters, Tasks, Services, and Task Definitions.\n- Explore AWS Fargate.\n- Practice deploying containerized applications.\n- Understand CI/CD and AWS CodePipeline.",
-          achievements: "[Planned Learning Outcomes]\n- Understood the architecture of Amazon ECS.\n- Learned ECS Clusters, Services, and Task Definitions.\n- Understood the differences between ECS EC2 and Fargate.\n- Practiced deploying containers using ECS.\n- Learned basic CI/CD pipeline concepts.\n- Explored AWS CodePipeline and automated deployment workflows.",
-          tasks: [
-            {
-              day: "Monday",
-              desc: "- Learn Amazon ECS fundamentals.\n- Explore Clusters, Tasks, and Services.\n- Understand Task Definitions.",
-              start: "2026-11-16",
-              end: "2026-11-16",
-              ref: "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html"
-            },
-            {
-              day: "Tuesday",
-              desc: "- Learn AWS Fargate.\n- Compare EC2 and Fargate launch types.\n- Explore container configurations.",
-              start: "2026-11-17",
-              end: "2026-11-17",
-              ref: "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html"
-            },
-            {
-              day: "Wednesday",
-              desc: "- Create an ECS Cluster.\n- Configure Task Definitions.\n- Deploy a container using Fargate.",
-              start: "2026-11-18",
-              end: "2026-11-18",
-              ref: "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/getting-started-fargate.html"
-            },
-            {
-              day: "Thursday",
-              desc: "- Learn CI/CD fundamentals.\n- Explore AWS CodePipeline.\n- Understand Source, Build, and Deploy stages.",
-              start: "2026-11-19",
-              end: "2026-11-19",
-              ref: "https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/continuous-integration.html"
-            },
-            {
-              day: "Friday",
-              desc: "- Review the container deployment workflow.\n- Test application deployment.\n- Document the CI/CD process.",
-              start: "2026-11-20",
-              end: "2026-11-20",
-              ref: "https://docs.aws.amazon.com/codepipeline/latest/userguide/ecs-cd-pipeline.html"
-            }
-          ]
+        "en": {
+            "topic": "Week 10: Development Review & System Integration for Nutrition E-Commerce (18/11/2026 – 20/11/2026)",
+            "objectives": "Review Nutrition E-Commerce application features, verify AWS infrastructure integration, and prepare test plans.",
+            "achievements": "- Completed review of cloud infrastructure integrity and application codebase.\n- Established a comprehensive functional testing plan and test scenarios for the project.",
+            "tasks": [
+                {
+                    "day": "Wednesday",
+                    "desc": "Main Task: Review AWS infrastructure and deployment integration.\nDetailed Activities: Inspect container deployment on ECS Fargate, RDS database connectivity, and CloudFront static content distribution.",
+                    "start": "2026-11-18",
+                    "end": "2026-11-18",
+                    "ref": "[AWS ECS Deployment Best Practices](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-best-practices.html)"
+                },
+                {
+                    "day": "Friday",
+                    "desc": "Main Task: Development completion review and test plan preparation.\nDetailed Activities: Consolidate completed Nutrition E-Commerce application features, review codebase, and design test scenarios for the final testing phase.",
+                    "start": "2026-11-20",
+                    "end": "2026-11-20",
+                    "ref": "[Testing for Reliability on AWS](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/testing-for-reliability.html)"
+                }
+            ]
         }
-      };
-    } else if (weekNum === 11) {
-      return {
-        weekNum: 11,
-        vi: {
-          topic: "Phân tích dữ liệu & Business Intelligence trên AWS (23/11/2026 – 27/11/2026)",
-          objectives: "- Hiểu các khái niệm Data Analytics và Data Lake.\n- Tìm hiểu các dịch vụ lưu trữ và xử lý dữ liệu của AWS.\n- Tìm hiểu Amazon Athena và truy vấn SQL.\n- Hiểu Amazon QuickSight và Business Intelligence.\n- Thực hành tạo các biểu đồ trực quan hóa dữ liệu cơ bản.",
-          achievements: "[Kế hoạch học tập]\n- Hiểu kiến trúc Data Lake và các khái niệm lưu trữ dữ liệu.\n- Tìm hiểu dữ liệu có cấu trúc, bán cấu trúc và phi cấu trúc.\n- Tìm hiểu AWS Glue và các luồng xử lý dữ liệu.\n- Thực hành truy vấn dữ liệu bằng Amazon Athena.\n- Nắm được các thao tác SQL cơ bản để phân tích dữ liệu.\n- Tìm hiểu dashboard và biểu đồ trực quan trên Amazon QuickSight.\n- Thực hành tạo các biểu đồ và báo cáo cơ bản.",
-          tasks: [
-            {
-              day: "Thứ 2",
-              desc: "- Học kiến thức nền tảng về Data Analytics.\n- Tìm hiểu Data Lake và Data Warehouse.\n- Tìm hiểu cách dùng Amazon S3 để lưu trữ dữ liệu.",
-              start: "2026-11-23",
-              end: "2026-11-23",
-              ref: "https://aws.amazon.com/what-is/data-lake/"
-            },
-            {
-              day: "Thứ 3",
-              desc: "- Khám phá các dịch vụ phân tích dữ liệu của AWS.\n- Tìm hiểu AWS Glue.\n- Tìm hiểu các luồng xử lý dữ liệu cơ bản.",
-              start: "2026-11-24",
-              end: "2026-11-24",
-              ref: "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/analytics.html"
-            },
-            {
-              day: "Thứ 4",
-              desc: "- Tìm hiểu Amazon Athena.\n- Thực hành các câu truy vấn SQL cơ bản.\n- Phân tích các tập dữ liệu lưu trên Amazon S3.",
-              start: "2026-11-25",
-              end: "2026-11-25",
-              ref: "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
-            },
-            {
-              day: "Thứ 5",
-              desc: "- Học kiến thức nền tảng về Business Intelligence.\n- Tìm hiểu Amazon QuickSight.\n- Tìm hiểu Dataset và Dashboard.",
-              start: "2026-11-26",
-              end: "2026-11-26",
-              ref: "https://aws.amazon.com/what-is/business-intelligence/"
-            },
-            {
-              day: "Thứ 6",
-              desc: "- Tạo các biểu đồ trực quan hóa dữ liệu cơ bản.\n- Xây dựng một dashboard mẫu.\n- Rà soát luồng phân tích dữ liệu trên AWS.",
-              start: "2026-11-27",
-              end: "2026-11-27",
-              ref: "https://docs.aws.amazon.com/quick/latest/userguide/creating-a-visual.html"
-            }
-          ]
+    },
+    {
+        "weekNum": 11,
+        "vi": {
+            "topic": "Tuần 11: Kiểm thử dự án cuối kỳ và nộp dự án (23/11/2026 – 27/11/2026)",
+            "objectives": "Kiểm thử và xác thực các chức năng chính của ứng dụng; hoàn thiện tài liệu kỹ thuật và nộp dự án nhóm hoàn chỉnh.",
+            "achievements": "- Đã kiểm thử các luồng hoạt động chính của ứng dụng và ghi nhận các điểm cần tối ưu.\n- Xác nhận các lỗi đã được xử lý và hoàn thiện tài liệu dự án.\n- Hoàn tất nộp dự án nhóm Nutrition E-Commerce.",
+            "tasks": [
+                {
+                    "day": "Thứ Hai",
+                    "desc": "Main Task: Kiểm thử hệ thống dự án cuối kỳ (Final Project Testing).\nDetailed Activities: Kiểm thử các chức năng chính của Nutrition E-Commerce, rà soát trạng thái triển khai AWS và ghi nhận các điểm cần hoàn thiện trước khi nộp.",
+                    "start": "2026-11-23",
+                    "end": "2026-11-23",
+                    "ref": "[Nutrition E-Commerce – Project Documentation](https://github.com/trungnguyen-VNTN/nutrition-ecommerce)\n[AWS Well-Architected – Reliability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html)"
+                },
+                {
+                    "day": "Thứ Sáu",
+                    "desc": "Main Task: Hoàn thiện tài liệu và nộp dự án (Project Finalization & Submission).\nDetailed Activities: Xác nhận các vấn đề kỹ thuật đã được xử lý, đóng gói tài liệu dự án và nộp hoàn tất đồ án Nutrition E-Commerce.",
+                    "start": "2026-11-27",
+                    "end": "2026-11-27",
+                    "ref": "[Nutrition E-Commerce – Project Documentation](https://github.com/trungnguyen-VNTN/nutrition-ecommerce)"
+                }
+            ]
         },
-        en: {
-          topic: "AWS Data Analytics & Business Intelligence (23/11/2026 – 27/11/2026)",
-          objectives: "- Understand Data Analytics and Data Lake concepts.\n- Explore AWS data storage and processing services.\n- Learn Amazon Athena and SQL queries.\n- Understand Amazon QuickSight and Business Intelligence.\n- Practice creating basic data visualizations.",
-          achievements: "[Planned Learning Outcomes]\n- Understood Data Lake architecture and data storage concepts.\n- Learned structured, semi-structured, and unstructured data.\n- Explored AWS Glue and data processing workflows.\n- Practiced querying data using Amazon Athena.\n- Learned basic SQL operations for data analysis.\n- Explored Amazon QuickSight dashboards and visualizations.\n- Practiced creating basic charts and reports.",
-          tasks: [
-            {
-              day: "Monday",
-              desc: "- Learn Data Analytics fundamentals.\n- Understand Data Lakes and Data Warehouses.\n- Explore Amazon S3 for data storage.",
-              start: "2026-11-23",
-              end: "2026-11-23",
-              ref: "https://aws.amazon.com/what-is/data-lake/"
-            },
-            {
-              day: "Tuesday",
-              desc: "- Explore AWS data analytics services.\n- Learn about AWS Glue.\n- Understand basic data processing workflows.",
-              start: "2026-11-24",
-              end: "2026-11-24",
-              ref: "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/analytics.html"
-            },
-            {
-              day: "Wednesday",
-              desc: "- Learn Amazon Athena.\n- Practice basic SQL queries.\n- Analyze datasets stored in Amazon S3.",
-              start: "2026-11-25",
-              end: "2026-11-25",
-              ref: "https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
-            },
-            {
-              day: "Thursday",
-              desc: "- Learn Business Intelligence fundamentals.\n- Explore Amazon QuickSight.\n- Understand Datasets and Dashboards.",
-              start: "2026-11-26",
-              end: "2026-11-26",
-              ref: "https://aws.amazon.com/what-is/business-intelligence/"
-            },
-            {
-              day: "Friday",
-              desc: "- Create basic data visualizations.\n- Build a sample dashboard.\n- Review the AWS analytics workflow.",
-              start: "2026-11-27",
-              end: "2026-11-27",
-              ref: "https://docs.aws.amazon.com/quick/latest/userguide/creating-a-visual.html"
-            }
-          ]
+        "en": {
+            "topic": "Week 11: Final Project Testing & Project Submission (23/11/2026 – 27/11/2026)",
+            "objectives": "Test and validate core application features across user journeys; finalize technical documentation and submit the team project.",
+            "achievements": "- Verified primary application user flows and identified optimization areas during testing.\n- Confirmed resolved issues and finalized project documentation.\n- Completed final submission of the Nutrition E-Commerce team project.",
+            "tasks": [
+                {
+                    "day": "Monday",
+                    "desc": "Main Task: Final Project Testing.\nDetailed Activities: Test the main features of Nutrition E-Commerce, review AWS deployment status, and identify remaining issues before final submission.",
+                    "start": "2026-11-23",
+                    "end": "2026-11-23",
+                    "ref": "[Nutrition E-Commerce – Project Documentation](https://github.com/trungnguyen-VNTN/nutrition-ecommerce)\n[AWS Well-Architected – Reliability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html)"
+                },
+                {
+                    "day": "Friday",
+                    "desc": "Main Task: Project Finalization and Submission.\nDetailed Activities: Verify resolved issues, finalize project documentation, and submit the completed Nutrition E-Commerce project.",
+                    "start": "2026-11-27",
+                    "end": "2026-11-27",
+                    "ref": "[Nutrition E-Commerce – Project Documentation](https://github.com/trungnguyen-VNTN/nutrition-ecommerce)"
+                }
+            ]
         }
-      };
-    } else if (weekNum === 12) {
-      return {
-        weekNum: 12,
-        vi: {
-          topic: "Machine Learning với Amazon SageMaker (30/11/2026 – 04/12/2026)",
-          objectives: "- Hiểu kiến thức nền tảng về AI, Machine Learning và Deep Learning.\n- Tìm hiểu Amazon SageMaker và các tính năng chính.\n- Tìm hiểu cách chuẩn bị dữ liệu và huấn luyện mô hình cơ bản.\n- Hiểu cách đánh giá và triển khai mô hình.\n- Tổng kết và đúc kết chương trình First Cloud AI Journey.",
-          achievements: "[Kế hoạch học tập]\n- Phân biệt AI, ML và Deep Learning.\n- Tìm hiểu các khái niệm supervised learning và unsupervised learning.\n- Tìm hiểu Amazon SageMaker và môi trường phát triển.\n- Hiểu cách chuẩn bị tập dữ liệu cơ bản.\n- Tìm hiểu quy trình huấn luyện mô hình machine learning.\n- Tìm hiểu các khái niệm đánh giá mô hình và inference.\n- Ôn lại các dịch vụ AWS và củng cố kiến thức thực tập.\n- Chuẩn bị tài liệu kỹ thuật và bản tổng kết học tập cuối kỳ.",
-          tasks: [
-            {
-              day: "Thứ 2",
-              desc: "- Học kiến thức nền tảng về AI và Machine Learning.\n- Tìm hiểu supervised learning và unsupervised learning.\n- Tìm hiểu vòng đời ML (ML lifecycle).",
-              start: "2026-11-30",
-              end: "2026-11-30",
-              ref: "https://aws.amazon.com/what-is/machine-learning/"
-            },
-            {
-              day: "Thứ 3",
-              desc: "- Khám phá Amazon SageMaker.\n- Tìm hiểu môi trường phát triển và notebook.\n- Ôn lại cách chuẩn bị tập dữ liệu.",
-              start: "2026-12-01",
-              end: "2026-12-01",
-              ref: "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html"
-            },
-            {
-              day: "Thứ 4",
-              desc: "- Tìm hiểu cách huấn luyện mô hình machine learning.\n- Tìm hiểu tập dữ liệu huấn luyện và các cấu hình.\n- Tìm hiểu cách đánh giá mô hình.",
-              start: "2026-12-02",
-              end: "2026-12-02",
-              ref: "https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.html"
-            },
-            {
-              day: "Thứ 5",
-              desc: "- Tìm hiểu việc triển khai mô hình và inference.\n- Tìm hiểu SageMaker Endpoint.\n- Ôn lại các khái niệm giám sát mô hình.",
-              start: "2026-12-03",
-              end: "2026-12-03",
-              ref: "https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html"
-            },
-            {
-              day: "Thứ 6",
-              desc: "- Ôn lại các dịch vụ AWS chính đã học.\n- Tổng kết kết quả các bài lab thực hành.\n- Chuẩn bị tài liệu thực tập cuối kỳ.",
-              start: "2026-12-04",
-              end: "2026-12-04",
-              ref: "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html"
-            }
-          ]
+    },
+    {
+        "weekNum": 12,
+        "vi": {
+            "topic": "Tuần 12: Ôn tập kiến thức AWS (30/11/2026)",
+            "objectives": "Củng cố kiến thức AWS đã tích lũy trong kỳ thực tập; ôn tập các khái niệm kiến trúc đám mây cốt lõi và tổng kết các bài học kỹ thuật đã học.",
+            "achievements": "- Nắm vững và hệ thống hóa các khái niệm AWS cốt lõi.\n- Ôn tập các bài học liên quan đến kiến trúc ứng dụng và vận hành đám mây.\n- Tổng kết những kiến thức quan trọng thu nhận được từ kỳ thực tập.",
+            "tasks": [
+                {
+                    "day": "Thứ Hai",
+                    "desc": "Main Task: Ôn tập kiến thức AWS và tổng kết nội dung đã học trong kỳ thực tập.\nDetailed Activities: Ôn tập các dịch vụ AWS cốt lõi và các khái niệm kiến trúc đám mây đã học trong suốt kỳ thực tập. Tổng hợp các bài học kỹ thuật quan trọng từ dự án Nutrition E-Commerce và đúc kết kinh nghiệm học tập thực tế.",
+                    "start": "2026-11-30",
+                    "end": "2026-11-30",
+                    "ref": "[AWS Skill Builder](https://explore.skillbuilder.aws/)"
+                }
+            ]
         },
-        en: {
-          topic: "Machine Learning with Amazon SageMaker (30/11/2026 – 04/12/2026)",
-          objectives: "- Understand AI, Machine Learning, and Deep Learning fundamentals.\n- Explore Amazon SageMaker and its main features.\n- Learn basic data preparation and model training.\n- Understand model evaluation and deployment.\n- Review and summarize the First Cloud AI Journey program.",
-          achievements: "[Planned Learning Outcomes]\n- Understood the differences between AI, ML, and Deep Learning.\n- Learned supervised and unsupervised learning concepts.\n- Explored Amazon SageMaker and its development environment.\n- Understood basic dataset preparation.\n- Learned the machine learning model training workflow.\n- Explored model evaluation and inference concepts.\n- Reviewed AWS services and consolidated internship knowledge.\n- Prepared technical documentation and a final learning summary.",
-          tasks: [
-            {
-              day: "Monday",
-              desc: "- Learn AI and Machine Learning fundamentals.\n- Understand supervised and unsupervised learning.\n- Explore the ML lifecycle.",
-              start: "2026-11-30",
-              end: "2026-11-30",
-              ref: "https://aws.amazon.com/what-is/machine-learning/"
-            },
-            {
-              day: "Tuesday",
-              desc: "- Explore Amazon SageMaker.\n- Learn about development environments and notebooks.\n- Review dataset preparation.",
-              start: "2026-12-01",
-              end: "2026-12-01",
-              ref: "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html"
-            },
-            {
-              day: "Wednesday",
-              desc: "- Learn machine learning model training.\n- Explore training datasets and configurations.\n- Understand model evaluation.",
-              start: "2026-12-02",
-              end: "2026-12-02",
-              ref: "https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-training.html"
-            },
-            {
-              day: "Thursday",
-              desc: "- Learn model deployment and inference.\n- Explore SageMaker Endpoints.\n- Review model monitoring concepts.",
-              start: "2026-12-03",
-              end: "2026-12-03",
-              ref: "https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html"
-            },
-            {
-              day: "Friday",
-              desc: "- Review major AWS services studied.\n- Summarize hands-on lab results.\n- Prepare final internship documentation.",
-              start: "2026-12-04",
-              end: "2026-12-04",
-              ref: "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html"
-            }
-          ]
+        "en": {
+            "topic": "Week 12: AWS Knowledge Review (30/11/2026)",
+            "objectives": "Consolidate AWS knowledge gained during the internship; review key cloud architecture concepts and summarize technical lessons learned.",
+            "achievements": "- Consolidated understanding of core AWS concepts.\n- Reviewed lessons related to application architecture and cloud operations.\n- Summarized key knowledge gained from the internship.",
+            "tasks": [
+                {
+                    "day": "Monday",
+                    "desc": "Main Task: Review AWS Knowledge and Internship Learnings.\nDetailed Activities: Review core AWS services and cloud architecture concepts learned throughout the internship. Consolidate key technical lessons from the Nutrition E-Commerce project and reflect on the overall learning experience.",
+                    "start": "2026-11-30",
+                    "end": "2026-11-30",
+                    "ref": "[AWS Skill Builder](https://explore.skillbuilder.aws/)"
+                }
+            ]
         }
-      };
-    } else {
-      return {
-        weekNum: weekNum,
-        vi: { objectives: '', achievements: '', tasks: [] },
-        en: { objectives: '', achievements: '', tasks: [] }
-      };
     }
-  }),
+],
   proposal: {
     vi: {
       summary: "Hệ thống IoT Weather Platform được thiết kế nhằm nâng cao năng lực thu thập và phân tích dữ liệu thời tiết cho phòng thí nghiệm tại TP.HCM. Giải pháp hỗ trợ kết nối từ 5 đến 15 trạm quan trắc sử dụng vi điều khiển ESP32 và Raspberry Pi truyền tin qua giao thức MQTT. Nền tảng tận dụng tối đa các dịch vụ AWS Serverless giúp giám sát thời gian thực, dự báo xu hướng với chi phí vận hành tối ưu, phân quyền truy cập an toàn qua Amazon Cognito.",
@@ -1757,22 +1453,16 @@ const DEFAULT_BILINGUAL_DATA = {
   },
   feedback: {
     vi: {
-      env: "Môi trường làm việc tại AWS vô cùng thân thiện, cởi mở và chuyên nghiệp. Mọi thành viên luôn sẵn sàng giải đáp và hỗ trợ bất kể khi nào gặp vướng mắc kỹ thuật. Không gian làm việc hiện đại, tạo cảm hứng sáng tạo rất cao.",
-      mentor: "Mentor hướng dẫn rất tận tâm, định hướng tư duy giải quyết vấn đề thay vì đưa sẵn đáp án. Đội ngũ admin hỗ trợ tài liệu, tài khoản Sandbox và thủ tục hành chính rất nhanh chóng và chu đáo.",
-      relevance: "Nội dung thực tập bám sát và phát triển sâu hơn các môn học Mạng máy tính, Hệ điều hành và Cơ sở dữ liệu tại trường Đại học Sư phạm Kỹ thuật TP.HCM.",
-      learning: "Được thực chiến với các dịch vụ Cloud hàng đầu thế giới (EKS, PrivateLink, Serverless, AI Q Developer), nâng cao tác phong làm việc chuẩn doanh nghiệp toàn cầu.",
-      culture: "Văn hóa Customer Obsession và Ownership thể hiện rất rõ nét. Tinh thần hỗ trợ lẫn nhau không phân biệt cấp bậc giúp thực tập sinh nhanh chóng hòa nhập.",
-      policies: "Chính sách hỗ trợ chi phí thực tập rõ ràng, thời gian làm việc linh hoạt, được cấp đầy đủ tài nguyên thực hành cloud miễn phí trong suốt khóa học.",
-      suggestions: "Kỳ vọng chương trình FCAJ sẽ tổ chức thêm nhiều buổi Offline Hackathon và kết nối giao lưu với các cựu học viên đang làm việc tại các đối tác AWS lớn."
+      env: "Chương trình AWS First Cloud AI Journey mang đến môi trường học tập và thực tập chuyên nghiệp, thân thiện, giúp em có thêm nhiều trải nghiệm và kiến thức bổ ích.",
+      mentor: "Mentor và Ban tổ chức luôn nhiệt tình hướng dẫn, hỗ trợ và giải đáp những thắc mắc khi em gặp khó khăn hoặc có nội dung chưa hiểu trong quá trình tham gia chương trình.",
+      relevance: "Chương trình có sự liên hệ với ngành học của em ở một số khía cạnh, đồng thời giúp em mở rộng kiến thức về điện toán đám mây và bảo mật hệ thống.",
+      learning: "Thông qua chương trình, em có cơ hội tiếp cận kiến thức thực tế, rèn luyện khả năng tự học và tích lũy thêm kinh nghiệm hữu ích."
     },
     en: {
-      env: "The working environment at AWS is exceptionally welcoming, open, and professional. Team members are always willing to assist whenever technical difficulties arise. The workplace is modern and fosters deep focus and creativity.",
-      mentor: "The mentor provides thorough, problem-solving guidance rather than simply handing out answers. The admin team provides timely support for Sandbox cloud accounts and operational procedures.",
-      relevance: "Assigned tasks align closely with the curriculum at Ho Chi Minh City University of Technology and Education, while broadening exposure to enterprise-grade technologies.",
-      learning: "Gained hands-on experience with cutting-edge cloud technologies (EKS, PrivateLink, Serverless, Amazon Q Developer) and cultivated professional international corporate discipline.",
-      culture: "Amazon's leadership principles such as Customer Obsession and Ownership are vividly demonstrated across teams. The collaborative culture made me feel like an integral team member.",
-      policies: "Internship policies and allowances are transparent, with flexible scheduling and generous free cloud practice resources provided throughout the bootcamp.",
-      suggestions: "I hope future FCAJ cohorts can include more in-person hackathons and networking alumni roundtables with cloud engineers working at major AWS partners."
+      env: "The AWS First Cloud AI Journey program provided a professional and welcoming learning and internship environment, giving me valuable practical experience and knowledge.",
+      mentor: "The Mentor and organizing team were consistently supportive and dedicated, answering questions whenever I faced challenges or needed clarification throughout the program.",
+      relevance: "The program connects with my academic major across several aspects while helping me broaden my knowledge of cloud computing and system security.",
+      learning: "Through the program, I had the opportunity to access real-world knowledge, cultivate independent learning skills, and gain meaningful practical experience."
     }
   }
 };
@@ -2430,11 +2120,11 @@ function renderWorklogView() {
 
     tbody.innerHTML = content.tasks.map((task) => `
       <tr>
-        <td style="font-weight:700; text-align:center; vertical-align:top; font-size:14px; padding-top:14px;">${escapeHtml(task.day)}</td>
-        <td style="white-space:pre-wrap; line-height: 1.6; font-size:13.5px; vertical-align:top; padding-top:14px;">${escapeHtml(task.desc)}</td>
-        <td style="white-space:nowrap; font-size:13px; color:var(--text-subtle); vertical-align:top; padding-top:14px;">${escapeHtml(formatWorklogDate(task.start))}</td>
-        <td style="white-space:nowrap; font-size:13px; color:var(--text-subtle); vertical-align:top; padding-top:14px;">${escapeHtml(formatWorklogDate(task.end))}</td>
-        <td style="vertical-align:top; padding-top:14px;">
+        <td style="font-weight:700; text-align:center; vertical-align:top; font-size:14px;">${escapeHtml(task.day)}</td>
+        <td style="white-space:pre-wrap; line-height: 1.6; font-size:13.5px; vertical-align:top;">${escapeHtml(task.desc)}</td>
+        <td style="white-space:nowrap; font-size:13px; color:var(--text-subtle); vertical-align:top;">${escapeHtml(formatWorklogDate(task.start))}</td>
+        <td style="white-space:nowrap; font-size:13px; color:var(--text-subtle); vertical-align:top;">${escapeHtml(formatWorklogDate(task.end))}</td>
+        <td style="vertical-align:top;">
           ${renderRefLinks(task.ref)}
         </td>
       </tr>
@@ -10428,13 +10118,15 @@ function renderFeedbackInputs() {
   const lang = app.currentLang;
   const fb = app.data.feedback[lang] || app.data.feedback.vi;
 
+  setContent('fb-experience', fb.env);
+  setContent('fb-satisfaction', fb.mentor);
+  setContent('fb-improvements', fb.relevance);
+  setContent('fb-recommendations', fb.learning);
+
   setContent('fb-env', fb.env);
   setContent('fb-mentor', fb.mentor);
   setContent('fb-relevance', fb.relevance);
   setContent('fb-learning', fb.learning);
-  setContent('fb-culture', fb.culture);
-  setContent('fb-policies', fb.policies);
-  setContent('fb-suggestions', fb.suggestions);
 }
 
 function setupFeedback() {}

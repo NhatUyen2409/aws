@@ -1,81 +1,79 @@
-# AWS First Cloud AI Journey (FCAJ) - Internship Report
-## Báo cáo thực tập tốt nghiệp :: Phan Nhật Uyên
+# AWS FCAJ Internship Report Website (Official Hugo Template)
 
-Trang web báo cáo thực tập chính thức được chuẩn hóa 100% theo khung chương trình **AWS First Cloud AI Journey (FCAJ)**.
-
----
-
-### 🌐 1. Địa chỉ Website chính thức (GitHub Pages)
-
-Website được triển khai tự động qua **GitHub Pages** tại đường dẫn:
-
-👉 **[https://nhatuyen2409.github.io/web-worklog-fcaj/](https://nhatuyen2409.github.io/web-worklog-fcaj/)**
-
-* **Nhật ký công việc (Worklog):** [https://nhatuyen2409.github.io/web-worklog-fcaj/#/worklog](https://nhatuyen2409.github.io/web-worklog-fcaj/#/worklog)
-* **Đề xuất đồ án (Proposal):** [https://nhatuyen2409.github.io/web-worklog-fcaj/#/proposal](https://nhatuyen2409.github.io/web-worklog-fcaj/#/proposal)
-* **Bài viết Blog kỹ thuật:** [https://nhatuyen2409.github.io/web-worklog-fcaj/#/blogs-posted](https://nhatuyen2409.github.io/web-worklog-fcaj/#/blogs-posted)
-* **Sự kiện tham gia:** [https://nhatuyen2409.github.io/web-worklog-fcaj/#/events](https://nhatuyen2409.github.io/web-worklog-fcaj/#/events)
+Website báo cáo thực tập chương trình **AWS First Cloud AI Journey (FCAJ)** của sinh viên **Phan Nhật Uyên**, được xây dựng dựa trên template chuẩn chính thức của FCAJ ([fcj-workshop-template](https://github.com/thienluhoan/fcj-workshop-template)) sử dụng Static Site Generator **Hugo** kết hợp theme **Hugo Learn** (`themeVariant = "workshop"`).
 
 ---
 
-### 📋 2. Thông tin sinh viên & Kỳ thực tập (Năm 2026)
+## 📌 Thông tin dự án
 
-* **Họ và tên sinh viên:** Phan Nhật Uyên
-* **Trường:** Trường Đại học FPT
-* **Chuyên ngành:** An toàn thông tin
-* **Đơn vị thực tập:** Công ty TNHH Amazon Web Services (AWS) Việt Nam
-* **Chương trình:** Workforce Bootcamp - First Cloud AI Journey (FCAJ)
-* **Mã số sinh viên:** SE196682
-* **Số điện thoại:** 0394728982
-* **Email:** nhatuien218@gmail.com
-* **Thời gian thực tập:** Từ **14/09/2026** đến **14/12/2026**
-
----
-
-### 📅 3. Tóm tắt Nội dung Tuần 1 (Week 1)
-
-#### Mục tiêu tuần (Week 1 Objectives):
-* Get acquainted with FCAJ members and understand the internship working process.
-* Complete the AWS Free $100 Credit registration for hands-on practice.
-* Understand fundamental AWS services and AWS global infrastructure.
-* Become familiar with AWS Management Console and AWS CLI.
-* Learn basic Amazon EC2 concepts and perform the first EC2 hands-on lab.
-
-#### Nội dung công việc từng ngày (Tasks):
-* **Thứ 2 (14/09/2026):**
-  * Làm quen với mentor và các thành viên FCAJ.
-  * Tìm hiểu lộ trình, quy trình làm việc, nội quy và quy định thực tập.
-  * Hoàn thành thủ tục đăng ký nhận AWS Free $100 Credit.
-  * Kiểm tra môi trường học tập AWS và biện pháp kiểm soát chi phí.
-  * *Tài liệu:* [AWS Account](https://000001.awsstudygroup.com/) | [AWS Budgets](https://000007.awsstudygroup.com/)
-* **Thứ 3 (15/09/2026):**
-  * Học nền tảng Điện toán đám mây và Amazon Web Services (AWS).
-  * Tìm hiểu Hạ tầng toàn cầu AWS: Region, Availability Zone, Edge Location.
-  * Khám phá các nhóm dịch vụ chính: Compute, Storage, Networking, Database, Security, Monitoring.
-  * *Tài liệu:* [First Cloud Journey](https://cloudjourney.awsstudygroup.com/)
-* **Thứ 4 (16/09/2026):**
-  * Tìm hiểu AWS Management Console và AWS CLI.
-  * Cài đặt và cấu hình AWS CLI trên máy tính (Access Key, Secret Key, Region, Output Format).
-  * Thực hành các lệnh CLI kiểm tra danh tính và tài nguyên.
-  * *Tài liệu:* [AWS CLI](https://000011.awsstudygroup.com/) | [AWS Account](https://000001.awsstudygroup.com/)
-* **Thứ 5 (17/09/2026 - 18/09/2026):**
-  * Học khái niệm cơ bản về Amazon EC2 (AMI, Instance Type, EBS, Key Pair, Security Group, IP).
-  * Vòng đời instance và cơ chế xác thực SSH.
-  * *Tài liệu:* [Amazon EC2](https://000004.awsstudygroup.com/) | [IAM Roles for EC2](https://000048.awsstudygroup.com/)
-* **Thứ 6 (18/09/2026):**
-  * Thực hành khởi chạy EC2 Linux instance, kết nối qua SSH.
-  * Tạo và gắn thêm ổ đĩa EBS volume mới vào máy chủ EC2.
-  * *Tài liệu:* [Amazon EC2](https://000004.awsstudygroup.com/) | [IAM Roles for EC2](https://000048.awsstudygroup.com/)
+- **Họ và tên sinh viên:** Phan Nhật Uyên
+- **MSSV:** SE196682
+- **Trường:** Trường Đại học FPT
+- **Chuyên ngành:** An toàn thông tin
+- **Đơn vị thực tập:** Công ty TNHH Amazon Web Services (AWS) Việt Nam
+- **Vị trí:** Workforce Bootcamp - First Cloud AI Journey (FCAJ)
+- **Thời gian thực tập:** 14/09/2026 – 30/11/2026
+- **Trang web GitHub Pages:** [https://nhatuyen2409.github.io/aws/](https://nhatuyen2409.github.io/aws/)
 
 ---
 
-### ⚙️ 4. Tính năng kỹ thuật của Website
+## 🏗️ Cấu trúc hệ thống tài liệu Hugo
 
-1. **Chỉnh sửa trực tiếp trên Web:**
-   * Hỗ trợ sửa nhanh Mục tiêu tuần, Thành tích đạt được qua Modal chuyên nghiệp.
-   * Thêm / Sửa / Xóa từng dòng công việc linh hoạt.
-   * Xuất / Nhập dữ liệu sao lưu định dạng JSON.
-2. **Hỗ trợ chuyển đổi song ngữ:**
-   * Tiếng Việt / English mượt mà, lưu trạng thái tự động.
-3. **Triển khai tự động:**
-   * GitHub Actions Workflow `.github/workflows/deploy.yml` tự động build và xuất bản lên GitHub Pages khi push mã nguồn.
+Website được tổ chức đầy đủ theo cấu trúc đa ngôn ngữ song ngữ (Tiếng Việt & English):
+
+1. **Trang chủ (`content/_index.md`, `content/_index.vi.md`):** Thông tin sinh viên, ảnh đại diện, thông tin công ty và danh mục báo cáo.
+2. **1. Worklog (`content/1-Worklog/`):** Nhật ký công việc 12 tuần thực tập (từ Tuần 1 đến Tuần 12 với đầy đủ ngày tháng 2026, mục tiêu, kết quả và bảng công việc hàng ngày kèm liên kết tài liệu).
+3. **2. Proposal (`content/2-Proposal/`):** Đề xuất dự án *Personalized Nutrition E-Commerce Platform on AWS* (Spring Boot, React 19, RDS PostgreSQL, ECS Fargate, Amazon Bedrock AI) với đầy đủ 11 mục, kiến trúc AWS, luồng nghiệp vụ và phân tích chi phí.
+4. **3. Blogs Posted (`content/3-BlogsPosted/`):** 3 bài viết chuyên môn sâu về AWS (Amazon S3 Express One Zone, Kiến trúc hướng sự kiện Event-Driven, EC2 Identity Containment) kèm link Facebook và hình ảnh kiến trúc.
+5. **4. Events Participated (`content/4-EventParticipated/`):** 3 sự kiện công nghệ AWS (Hiện đại hóa CSDL & GenAI 29/09, First Cloud AI Journey Meetup 24/10, Enterprise AI on AWS Cloud 14/11 với dàn diễn giả Khang Duong, Phuong Huyen, Bao Nguyen, Khuong Huynh) kèm ảnh check-in và nội dung thu hoạch.
+6. **5. Workshop (`content/5-Workshop/`):** Hướng dẫn thực hành kỹ thuật chuyên sâu từ 5.1 đến 5.7:
+   - `5.1-Workshop-overview`: Tổng quan và kiến trúc lab.
+   - `5.2-Prerequisites`: Điều kiện chuẩn bị môi trường, AWS CLI SSO, Terraform S3 Backend.
+   - `5.3-Core-infrastructure`: Hạ tầng cốt lõi (VPC mạng con, RDS PostgreSQL, Cognito User Pool).
+   - `5.4-Application-deployment`: Triển khai ứng dụng (ECS Fargate ALB, S3 CloudFront, CI/CD GitHub Actions OIDC, Cổng thanh toán VNPay sandbox).
+   - `5.5-Bedrock-ai`: Tích hợp Amazon Bedrock Nova 2 Lite và Bedrock Guardrails cho trợ lý dinh dưỡng cá nhân hóa.
+   - `5.6-Monitoring-cost`: Giám sát CloudWatch, AWS Budgets, Cost Explorer.
+   - `5.7-Cleanup`: Quy trình dọn dẹp tài nguyên và teardown hạ tầng an toàn.
+7. **6. Self-evaluation (`content/6-Self-evaluation/`):** Báo cáo tự đánh giá theo 12 tiêu chí chuẩn của AWS FCAJ.
+8. **7. Feedback (`content/7-Feedback/`):** Chia sẻ trải nghiệm, mức độ hài lòng, đóng góp cải tiến và khuyến nghị.
+
+---
+
+## 🛠️ Hướng dẫn cài đặt và chạy thử nghiệm tại Local
+
+### 1. Yêu cầu môi trường
+- [Hugo Extended](https://gohugo.io/installation/) (khuyến nghị phiên bản `>= 0.134.0`)
+- Git
+
+### 2. Chạy website trên máy cục bộ
+```bash
+# Clone repository kèm submodules (chứa theme hugo-theme-learn)
+git clone --recurse-submodules https://github.com/NhatUyen2409/aws.git
+cd aws
+
+# Khởi động máy chủ Hugo phát triển nội bộ
+hugo server -D
+```
+Truy cập trình duyệt tại: `http://localhost:1313/` (hoặc `http://localhost:1313/aws/`).
+
+### 3. Build tĩnh (Production Build)
+```bash
+hugo --minify
+```
+Mã nguồn tĩnh sau khi biên dịch sẽ được tạo tại thư mục `public/`.
+
+---
+
+## 🚀 CI/CD & Triển khai lên GitHub Pages
+
+Repository được cấu hình quy trình GitHub Actions tự động tại `.github/workflows/hugo.yml`:
+- Tự động kích hoạt khi có push vào nhánh `main`.
+- Cài đặt Hugo Extended `0.134.3`.
+- Chạy lệnh `hugo --minify`.
+- Xuất bản thư mục `./public` lên nhánh `gh-pages` để GitHub Pages phục vụ tại `https://nhatuyen2409.github.io/aws/`.
+
+---
+
+## 🔄 Tương thích ngược đường dẫn cũ (Legacy Hash Routes)
+
+Website đã tích hợp sẵn cơ chế chuyển hướng (redirect) tại `static/404.html` và `layouts/404.html` để tự động điều hướng người dùng mở các liên kết cũ dạng hash (`/#/worklog`, `/#/proposal`, `/#/blogs-posted`, `/#/events`, `/#/workshop`,...) sang cấu trúc đường dẫn mới của Hugo Learn.
