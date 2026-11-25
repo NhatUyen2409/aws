@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="styles.css?v=20261125_tablefix">
+  <link rel="stylesheet" href="styles.css?v=20261126_workshop_content_568_v4">
   <!-- Early Navigation Fallback Definition: Guarantees navigateTo is never undefined -->
   <script>
     window.navigateTo = function(pageId) {
@@ -92,9 +92,13 @@
 
           <!-- 5. Workshop -->
           <li class="nav-item">
-            <a href="#/workshop" class="nav-link" data-page="workshop">
+            <button type="button" id="workshop-sidebar-toggle" class="workshop-sidebar-main"
+              aria-controls="workshop-sidebar-tree" aria-expanded="false"
+              aria-label="Mở các mục Workshop">
               <span class="nav-label" data-i18n="navWorkshop">Bài thực hành Workshop</span>
-            </a>
+              <span class="workshop-chevron" aria-hidden="true">▸</span>
+            </button>
+            <div id="workshop-sidebar-tree" class="workshop-sidebar-tree" hidden></div>
           </li>
 
           <!-- 6. Self-Assessment -->
@@ -685,6 +689,6 @@
   <!-- TOAST CONTAINER -->
   <div class="toast-container" id="toast-container"></div>
 
-  <script src="app.js?v=20261125_tablefix"></script>
+  <script src="app.js?v=20261126_source_exact_568_v7"></script>
 </body>
 </html>
