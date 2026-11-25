@@ -1,79 +1,186 @@
-# AWS FCAJ Internship Report Website (Official Hugo Template)
+<div align="center">
 
-Website báo cáo thực tập chương trình **AWS First Cloud AI Journey (FCAJ)** của sinh viên **Phan Nhật Uyên**, được xây dựng dựa trên template chuẩn chính thức của FCAJ ([fcj-workshop-template](https://github.com/thienluhoan/fcj-workshop-template)) sử dụng Static Site Generator **Hugo** kết hợp theme **Hugo Learn** (`themeVariant = "workshop"`).
+# ☁️ AWS First Cloud AI Journey — Internship Report
 
----
+### Báo cáo thực tập | Phan Nhật Uyên
 
-## 📌 Thông tin dự án
+[![Deploy to GitHub Pages](https://github.com/NhatUyen2409/aws/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/NhatUyen2409/aws/actions/workflows/deploy.yml)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?logo=github&logoColor=white)
 
-- **Họ và tên sinh viên:** Phan Nhật Uyên
-- **MSSV:** SE196682
-- **Trường:** Trường Đại học FPT
-- **Chuyên ngành:** An toàn thông tin
-- **Đơn vị thực tập:** Công ty TNHH Amazon Web Services (AWS) Việt Nam
-- **Vị trí:** Workforce Bootcamp - First Cloud AI Journey (FCAJ)
-- **Thời gian thực tập:** 14/09/2026 – 30/11/2026
-- **Trang web GitHub Pages:** [https://nhatuyen2409.github.io/aws/](https://nhatuyen2409.github.io/aws/)
+**Website báo cáo thực tập chương trình First Cloud AI Journey (FCAJ)**, tổng hợp nhật ký học tập, đề xuất dự án, bài viết chuyên môn, sự kiện, workshop AWS và phần tự đánh giá.
 
----
+**[🌐 Xem website báo cáo](https://nhatuyen2409.github.io/aws/)** · **[📖 Worklog](https://nhatuyen2409.github.io/aws/#/worklog)** · **[🧪 Workshop](https://nhatuyen2409.github.io/aws/#/workshop)** · **[⚙️ GitHub Actions](https://github.com/NhatUyen2409/aws/actions)**
 
-## 🏗️ Cấu trúc hệ thống tài liệu Hugo
-
-Website được tổ chức đầy đủ theo cấu trúc đa ngôn ngữ song ngữ (Tiếng Việt & English):
-
-1. **Trang chủ (`content/_index.md`, `content/_index.vi.md`):** Thông tin sinh viên, ảnh đại diện, thông tin công ty và danh mục báo cáo.
-2. **1. Worklog (`content/1-Worklog/`):** Nhật ký công việc 12 tuần thực tập (từ Tuần 1 đến Tuần 12 với đầy đủ ngày tháng 2026, mục tiêu, kết quả và bảng công việc hàng ngày kèm liên kết tài liệu).
-3. **2. Proposal (`content/2-Proposal/`):** Đề xuất dự án *Personalized Nutrition E-Commerce Platform on AWS* (Spring Boot, React 19, RDS PostgreSQL, ECS Fargate, Amazon Bedrock AI) với đầy đủ 11 mục, kiến trúc AWS, luồng nghiệp vụ và phân tích chi phí.
-4. **3. Blogs Posted (`content/3-BlogsPosted/`):** 3 bài viết chuyên môn sâu về AWS (Amazon S3 Express One Zone, Kiến trúc hướng sự kiện Event-Driven, EC2 Identity Containment) kèm link Facebook và hình ảnh kiến trúc.
-5. **4. Events Participated (`content/4-EventParticipated/`):** 3 sự kiện công nghệ AWS (Hiện đại hóa CSDL & GenAI 29/09, First Cloud AI Journey Meetup 24/10, Enterprise AI on AWS Cloud 14/11 với dàn diễn giả Khang Duong, Phuong Huyen, Bao Nguyen, Khuong Huynh) kèm ảnh check-in và nội dung thu hoạch.
-6. **5. Workshop (`content/5-Workshop/`):** Hướng dẫn thực hành kỹ thuật chuyên sâu từ 5.1 đến 5.7:
-   - `5.1-Workshop-overview`: Tổng quan và kiến trúc lab.
-   - `5.2-Prerequisites`: Điều kiện chuẩn bị môi trường, AWS CLI SSO, Terraform S3 Backend.
-   - `5.3-Core-infrastructure`: Hạ tầng cốt lõi (VPC mạng con, RDS PostgreSQL, Cognito User Pool).
-   - `5.4-Application-deployment`: Triển khai ứng dụng (ECS Fargate ALB, S3 CloudFront, CI/CD GitHub Actions OIDC, Cổng thanh toán VNPay sandbox).
-   - `5.5-Bedrock-ai`: Tích hợp Amazon Bedrock Nova 2 Lite và Bedrock Guardrails cho trợ lý dinh dưỡng cá nhân hóa.
-   - `5.6-Monitoring-cost`: Giám sát CloudWatch, AWS Budgets, Cost Explorer.
-   - `5.7-Cleanup`: Quy trình dọn dẹp tài nguyên và teardown hạ tầng an toàn.
-7. **6. Self-evaluation (`content/6-Self-evaluation/`):** Báo cáo tự đánh giá theo 12 tiêu chí chuẩn của AWS FCAJ.
-8. **7. Feedback (`content/7-Feedback/`):** Chia sẻ trải nghiệm, mức độ hài lòng, đóng góp cải tiến và khuyến nghị.
+</div>
 
 ---
 
-## 🛠️ Hướng dẫn cài đặt và chạy thử nghiệm tại Local
+## 📌 Giới thiệu dự án
 
-### 1. Yêu cầu môi trường
-- [Hugo Extended](https://gohugo.io/installation/) (khuyến nghị phiên bản `>= 0.134.0`)
-- Git
+| Thông tin | Chi tiết |
+| --- | --- |
+| **Sinh viên** | Phan Nhật Uyên |
+| **Trường** | Đại học FPT |
+| **Chuyên ngành** | An toàn thông tin |
+| **Chương trình** | AWS First Cloud AI Journey (FCAJ) — Workforce Bootcamp |
+| **Nền tảng triển khai** | GitHub Pages |
+| **Ngôn ngữ website** | Tiếng Việt / English |
+| **Mã nguồn** | [NhatUyen2409/aws](https://github.com/NhatUyen2409/aws) |
 
-### 2. Chạy website trên máy cục bộ
+Website được thiết kế để trình bày báo cáo trực tuyến theo từng chuyên mục, thuận tiện đọc trên máy tính và thiết bị di động. Nội dung có thể được cập nhật liên tục trên GitHub, sau đó tự động xuất bản qua GitHub Actions.
+
+## 📚 Nội dung báo cáo
+
+| Phần | Nội dung chính |
+| --- | --- |
+| **1. Worklog** | Nhật ký học tập và công việc theo **12 tuần**, gồm mục tiêu, hoạt động và tài liệu tham khảo. |
+| **2. Proposal** | Đề xuất nền tảng thương mại điện tử dinh dưỡng cá nhân hóa trên AWS; mô tả kiến trúc, dịch vụ và quy trình triển khai. |
+| **3. Blogs Posted** | Các bài viết chia sẻ kiến thức AWS, kiến trúc hệ thống và kinh nghiệm kỹ thuật. |
+| **4. Events Participated** | Tổng hợp các sự kiện công nghệ, nội dung tiếp thu và ghi chú liên quan. |
+| **5. Workshop** | Hướng dẫn thực hành AWS theo các mục **5.1–5.8**, bao gồm chuẩn bị, hạ tầng, triển khai ứng dụng, AI, giám sát và các bước thực hành liên quan. |
+| **6. Self-Assessment** | Tự đánh giá kiến thức, kỹ năng và kết quả thực tập. |
+| **7. Sharing & Feedback** | Chia sẻ trải nghiệm và đề xuất cải thiện chương trình. |
+
+> Nội dung báo cáo và minh chứng được cập nhật theo tiến độ. Vui lòng đối chiếu từng chuyên mục trên website để xem phiên bản mới nhất.
+
+## ✨ Tính năng website
+
+- **Song ngữ Việt / Anh**, chuyển đổi ngôn ngữ ngay trong giao diện.
+- **Điều hướng theo chuyên mục** với sidebar và các mục Workshop có thể mở/thu gọn.
+- **Worklog 12 tuần**, chọn tuần để xem mục tiêu và công việc chi tiết.
+- **Workshop có hướng dẫn chi tiết**, trình bày nội dung theo từng bước thực hành.
+- **Giao diện responsive**, sử dụng trên máy tính và điện thoại.
+- **Liên kết nội bộ bằng hash route** (`#/worklog`, `#/proposal`, `#/workshop`...), thuận tiện chia sẻ trực tiếp.
+- **Triển khai tự động** lên GitHub Pages khi cập nhật nhánh `main`.
+
+## 🧪 Workshop và công nghệ AWS
+
+Workshop tập trung vào bài toán triển khai một nền tảng thương mại điện tử dinh dưỡng cá nhân hóa trên hạ tầng AWS. Các thành phần kỹ thuật được đề cập trong nội dung dự án bao gồm:
+
+| Nhóm | Công nghệ / dịch vụ |
+| --- | --- |
+| **Networking** | Amazon VPC, Subnet, Security Group |
+| **Compute & deployment** | Amazon ECS, AWS Fargate, Application Load Balancer |
+| **Database & storage** | Amazon RDS, Amazon S3 |
+| **AI** | Amazon Bedrock |
+| **Monitoring & cost** | Amazon CloudWatch, AWS Budgets, Cost Explorer |
+| **Infrastructure & CI/CD** | Terraform, GitHub Actions |
+
+> Bảng trên mô tả các công nghệ trong nội dung workshop, không khẳng định tất cả tài nguyên đang vận hành trên một môi trường AWS production.
+
+## 🧱 Công nghệ xây dựng website
+
+Website báo cáo sử dụng **HTML5, CSS3 và JavaScript thuần**. Đây là website tĩnh, không cần React, Vite, Hugo hoặc một bước build frontend riêng để xuất bản.
+
+```text
+index.html    Giao diện và các khu vực hiển thị
+styles.css    Kiểu dáng, bố cục và responsive
+app.js        Nội dung, điều hướng và tương tác
+assets/       Hình ảnh và tài nguyên minh chứng
+```
+
+## 🚀 Chạy website trên máy cá nhân
+
+**Yêu cầu:** Git và trình duyệt hiện đại. Có thể chạy bằng VS Code Live Server hoặc một HTTP server đơn giản.
+
+### 1. Tải mã nguồn
+
 ```bash
-# Clone repository kèm submodules (chứa theme hugo-theme-learn)
-git clone --recurse-submodules https://github.com/NhatUyen2409/aws.git
+git clone https://github.com/NhatUyen2409/aws.git
 cd aws
-
-# Khởi động máy chủ Hugo phát triển nội bộ
-hugo server -D
 ```
-Truy cập trình duyệt tại: `http://localhost:1313/` (hoặc `http://localhost:1313/aws/`).
 
-### 3. Build tĩnh (Production Build)
+### 2. Chạy local
+
+Mở thư mục dự án bằng **VS Code**, sau đó dùng tiện ích **Live Server** để mở `index.html` trong trình duyệt.
+
+Hoặc, nếu máy đã có Python, chạy:
+
 ```bash
-hugo --minify
+python -m http.server 8000
 ```
-Mã nguồn tĩnh sau khi biên dịch sẽ được tạo tại thư mục `public/`.
+
+Truy cập **http://localhost:8000**.
+
+### 3. Kiểm tra JavaScript (tùy chọn)
+
+Nếu đã cài Node.js:
+
+```bash
+node --check app.js
+```
+
+## 📁 Cấu trúc repository
+
+```text
+aws/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml      # Workflow triển khai GitHub Pages
+├── index.html              # Trang web chính
+├── app.js                  # Nội dung và tương tác
+├── styles.css              # Giao diện và responsive
+├── README.md               # Giới thiệu dự án
+└── ...                     # Các tài nguyên khác của báo cáo
+```
+
+## ⚙️ CI/CD & Triển khai GitHub Pages
+
+Repository sử dụng workflow [`deploy.yml`](https://github.com/NhatUyen2409/aws/blob/main/.github/workflows/deploy.yml) để triển khai website.
+
+**Quy trình:**
+
+1. Thay đổi mã nguồn và push lên nhánh `main`.
+2. GitHub Actions chuẩn bị các file tĩnh và tạo deployment artifact.
+3. GitHub Pages triển khai bản mới lên website.
+4. Kiểm tra kết quả ở mục [Actions](https://github.com/NhatUyen2409/aws/actions).
+
+**Website chính thức:** https://nhatuyen2409.github.io/aws/
+
+### Cập nhật nội dung
+
+```bash
+git add README.md
+git commit -m "docs: update GitHub README"
+git push aws HEAD:main
+```
+
+> Lệnh `git push aws HEAD:main` áp dụng cho môi trường làm việc đã cấu hình remote tên `aws`. Nếu clone repository mới, remote mặc định thường là `origin`; khi đó dùng `git push origin main`.
+
+## ✅ Kiểm tra trước khi xuất bản
+
+- [ ] Kiểm tra nội dung tiếng Việt và tiếng Anh.
+- [ ] Mở Worklog, Proposal, Blogs, Events, Workshop, Self-Assessment và Feedback.
+- [ ] Kiểm tra các liên kết và nội dung từng chuyên mục.
+- [ ] Chạy `node --check app.js`.
+- [ ] Kiểm tra hiển thị trên máy tính và điện thoại.
+- [ ] Xác nhận GitHub Actions triển khai thành công.
+
+## 🔗 Liên kết
+
+- [Website báo cáo](https://nhatuyen2409.github.io/aws/)
+- [Repository GitHub](https://github.com/NhatUyen2409/aws)
+- [GitHub Actions](https://github.com/NhatUyen2409/aws/actions)
+- [AWS Documentation](https://docs.aws.amazon.com/)
+- [AWS Study Group](https://000001.awsstudygroup.com/)
+
+## 🌍 English overview
+
+This repository hosts **Phan Nhat Uyen's AWS First Cloud AI Journey internship report**, featuring a 12-week worklog, project proposal, AWS technical blogs, events, hands-on workshops, self-assessment, and feedback.
+
+The bilingual website is built with **HTML, CSS, and vanilla JavaScript** and deployed to **GitHub Pages** through GitHub Actions.
+
+**[Visit the live website](https://nhatuyen2409.github.io/aws/)** · **[Browse source code](https://github.com/NhatUyen2409/aws)**
 
 ---
 
-## 🚀 CI/CD & Triển khai lên GitHub Pages
+<div align="center">
 
-Repository được cấu hình quy trình GitHub Actions tự động tại `.github/workflows/hugo.yml`:
-- Tự động kích hoạt khi có push vào nhánh `main`.
-- Cài đặt Hugo Extended `0.134.3`.
-- Chạy lệnh `hugo --minify`.
-- Xuất bản thư mục `./public` lên nhánh `gh-pages` để GitHub Pages phục vụ tại `https://nhatuyen2409.github.io/aws/`.
+**AWS First Cloud AI Journey · Internship Report · 2026**
 
----
+Made for learning, documenting, and sharing cloud knowledge.
 
-## 🔄 Tương thích ngược đường dẫn cũ (Legacy Hash Routes)
-
-Website đã tích hợp sẵn cơ chế chuyển hướng (redirect) tại `static/404.html` và `layouts/404.html` để tự động điều hướng người dùng mở các liên kết cũ dạng hash (`/#/worklog`, `/#/proposal`, `/#/blogs-posted`, `/#/events`, `/#/workshop`,...) sang cấu trúc đường dẫn mới của Hugo Learn.
+</div>
