@@ -1,90 +1,74 @@
-<div align="center">
+# AWS First Cloud AI Journey — Internship Report
 
-# ☁️ AWS First Cloud AI Journey — Internship Report
-
-### Báo cáo thực tập | Phan Nhật Uyên
-
-[![Deploy to GitHub Pages](https://github.com/NhatUyen2409/aws/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/NhatUyen2409/aws/actions/workflows/deploy.yml)
+[![Deploy to GitHub Pages](https://github.com/NhatUyen2409/aws/actions/workflows/deploy.yml/badge.svg)](https://github.com/NhatUyen2409/aws/actions/workflows/deploy.yml)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?logo=github&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/Hosted_on-GitHub_Pages-222222?logo=github&logoColor=white)
 
-**Website báo cáo thực tập chương trình First Cloud AI Journey (FCAJ)**, tổng hợp nhật ký học tập, đề xuất dự án, bài viết chuyên môn, sự kiện, workshop AWS và phần tự đánh giá.
+Báo cáo thực tập **First Cloud AI Journey (FCAJ)** của **Phan Nhật Uyên**, trình bày nhật ký thực tập, đề xuất dự án, bài viết chuyên môn, sự kiện tham gia và các workshop thực hành AWS. Website được xây dựng dưới dạng ứng dụng web tĩnh, hỗ trợ nội dung **Tiếng Việt / English** và triển khai bằng **GitHub Pages**.
 
-**[🌐 Xem website báo cáo](https://nhatuyen2409.github.io/aws/)** · **[📖 Worklog](https://nhatuyen2409.github.io/aws/#/worklog)** · **[🧪 Workshop](https://nhatuyen2409.github.io/aws/#/workshop)** · **[⚙️ GitHub Actions](https://github.com/NhatUyen2409/aws/actions)**
+**[🌐 Xem báo cáo trực tuyến](https://nhatuyen2409.github.io/aws/)** · **[📁 Mã nguồn website](https://github.com/NhatUyen2409/aws)** · **[⚙️ Xem trạng thái triển khai](https://github.com/NhatUyen2409/aws/actions/workflows/deploy.yml)**
 
-</div>
-
----
-
-## 📌 Giới thiệu dự án
+## Thông tin báo cáo
 
 | Thông tin | Chi tiết |
 | --- | --- |
-| **Sinh viên** | Phan Nhật Uyên |
-| **Trường** | Đại học FPT |
-| **Chuyên ngành** | An toàn thông tin |
-| **Chương trình** | AWS First Cloud AI Journey (FCAJ) — Workforce Bootcamp |
-| **Nền tảng triển khai** | GitHub Pages |
-| **Ngôn ngữ website** | Tiếng Việt / English |
-| **Mã nguồn** | [NhatUyen2409/aws](https://github.com/NhatUyen2409/aws) |
+| Sinh viên | **Phan Nhật Uyên** |
+| Trường | Đại học FPT |
+| Chuyên ngành | An toàn thông tin |
+| Chương trình | First Cloud AI Journey (FCAJ) |
+| Giai đoạn báo cáo | 14/09/2026 – 30/11/2026 |
+| Nền tảng xuất bản | GitHub Pages |
+| Ngôn ngữ | Tiếng Việt / English |
 
-Website được thiết kế để trình bày báo cáo trực tuyến theo từng chuyên mục, thuận tiện đọc trên máy tính và thiết bị di động. Nội dung có thể được cập nhật liên tục trên GitHub, sau đó tự động xuất bản qua GitHub Actions.
+## Nội dung báo cáo
 
-## 📚 Nội dung báo cáo
+| Phần | Nội dung | Ghi chú |
+| --- | --- | --- |
+| **1. Worklog** | Nhật ký học tập và công việc theo tuần | Theo dõi tiến độ thực tập; mặc định mở Tuần 1 |
+| **2. Proposal** | Đề xuất nền tảng thương mại điện tử dinh dưỡng cá nhân hóa trên AWS | Mục tiêu, kiến trúc, dịch vụ và kế hoạch thực hiện |
+| **3. Blogs Posted** | Các bài viết chia sẻ kiến thức AWS | Nội dung và liên kết bài đăng |
+| **4. Events Participated** | Báo cáo tham gia các sự kiện công nghệ | Thông tin sự kiện, nội dung học hỏi và minh chứng |
+| **5. Workshop** | Các bước thực hành triển khai hệ thống AWS | Các mục **5.1–5.8** trên website |
+| **6. Self-Assessment** | Tự đánh giá quá trình thực tập | Điểm mạnh, hạn chế và hướng cải thiện |
+| **7. Sharing and Feedback** | Chia sẻ trải nghiệm và phản hồi chương trình | Tổng kết và đề xuất |
 
-| Phần | Nội dung chính |
+> **Lưu ý:** Nội dung báo cáo và minh chứng có thể được cập nhật tiếp trong quá trình hoàn thiện. Trạng thái thực hiện cụ thể được xem trên website; README không mặc định khẳng định mọi workshop đã triển khai thành công.
+
+## Tính năng website
+
+- **Song ngữ:** truy cập nội dung tiếng Việt và tiếng Anh trong cùng website.
+- **Điều hướng theo đề mục:** Worklog, Proposal, Blogs Posted, Events Participated, Workshop, Self-Assessment và Feedback.
+- **Workshop có cấu trúc:** phân chia hướng dẫn theo các mục thực hành, hỗ trợ mở nội dung từ sidebar.
+- **Trình bày tài liệu:** bảng, mã lệnh, liên kết, sơ đồ và ảnh minh chứng khi có dữ liệu.
+- **Giao diện web responsive:** sử dụng HTML, CSS và JavaScript, không cần biên dịch React/Vite.
+- **Tự động xuất bản:** GitHub Actions triển khai website khi cập nhật nhánh `main`.
+
+## Workshop — Lộ trình thực hành AWS
+
+Workshop trong báo cáo tập trung vào nền tảng **Personalized Nutrition E-Commerce Platform on AWS**, kết hợp hạ tầng đám mây, triển khai ứng dụng, AI và quản trị vận hành.
+
+| Nhóm nội dung | Công việc chính |
 | --- | --- |
-| **1. Worklog** | Nhật ký học tập và công việc theo **12 tuần**, gồm mục tiêu, hoạt động và tài liệu tham khảo. |
-| **2. Proposal** | Đề xuất nền tảng thương mại điện tử dinh dưỡng cá nhân hóa trên AWS; mô tả kiến trúc, dịch vụ và quy trình triển khai. |
-| **3. Blogs Posted** | Các bài viết chia sẻ kiến thức AWS, kiến trúc hệ thống và kinh nghiệm kỹ thuật. |
-| **4. Events Participated** | Tổng hợp các sự kiện công nghệ, nội dung tiếp thu và ghi chú liên quan. |
-| **5. Workshop** | Hướng dẫn thực hành AWS theo các mục **5.1–5.8**, bao gồm chuẩn bị, hạ tầng, triển khai ứng dụng, AI, giám sát và các bước thực hành liên quan. |
-| **6. Self-Assessment** | Tự đánh giá kiến thức, kỹ năng và kết quả thực tập. |
-| **7. Sharing & Feedback** | Chia sẻ trải nghiệm và đề xuất cải thiện chương trình. |
+| Tổng quan và chuẩn bị | Giới thiệu kiến trúc, tài khoản, công cụ và điều kiện thực hành |
+| Hạ tầng nền tảng | Thiết lập mạng, cơ sở dữ liệu và các thành phần hỗ trợ ứng dụng |
+| Triển khai ứng dụng | Cấu hình dịch vụ, kết nối thành phần hệ thống và quy trình triển khai |
+| Tích hợp AI | Tìm hiểu và tích hợp các dịch vụ AI phù hợp với hệ thống dinh dưỡng |
+| Giám sát và chi phí | Theo dõi hoạt động, quản lý ngân sách và quan sát tài nguyên |
+| Hoàn tất và dọn dẹp | Kiểm tra, tổng kết và xử lý tài nguyên sau thực hành |
 
-> Nội dung báo cáo và minh chứng được cập nhật theo tiến độ. Vui lòng đối chiếu từng chuyên mục trên website để xem phiên bản mới nhất.
+**[→ Mở trực tiếp mục Workshop trên website](https://nhatuyen2409.github.io/aws/#/workshop)**
 
-## ✨ Tính năng website
+## Cách hoạt động của website
 
-- **Song ngữ Việt / Anh**, chuyển đổi ngôn ngữ ngay trong giao diện.
-- **Điều hướng theo chuyên mục** với sidebar và các mục Workshop có thể mở/thu gọn.
-- **Worklog 12 tuần**, chọn tuần để xem mục tiêu và công việc chi tiết.
-- **Workshop có hướng dẫn chi tiết**, trình bày nội dung theo từng bước thực hành.
-- **Giao diện responsive**, sử dụng trên máy tính và điện thoại.
-- **Liên kết nội bộ bằng hash route** (`#/worklog`, `#/proposal`, `#/workshop`...), thuận tiện chia sẻ trực tiếp.
-- **Triển khai tự động** lên GitHub Pages khi cập nhật nhánh `main`.
+Website báo cáo được xây dựng bằng **HTML, CSS và JavaScript**. `index.html` là trang khởi đầu; `styles.css` quản lý giao diện và bố cục; `app.js` xử lý nội dung, điều hướng giữa các phần báo cáo và hiển thị tiếng Việt/tiếng Anh.
 
-## 🧪 Workshop và công nghệ AWS
+Khi cập nhật mã nguồn lên nhánh `main`, **GitHub Actions** thực hiện quy trình xuất bản lên **GitHub Pages**. Người xem truy cập báo cáo tại [nhatuyen2409.github.io/aws](https://nhatuyen2409.github.io/aws/).
 
-Workshop tập trung vào bài toán triển khai một nền tảng thương mại điện tử dinh dưỡng cá nhân hóa trên hạ tầng AWS. Các thành phần kỹ thuật được đề cập trong nội dung dự án bao gồm:
+Website này dùng để **trình bày báo cáo thực tập**, không phải chính ứng dụng thương mại điện tử hoặc hạ tầng AWS được mô tả trong Workshop.
 
-| Nhóm | Công nghệ / dịch vụ |
-| --- | --- |
-| **Networking** | Amazon VPC, Subnet, Security Group |
-| **Compute & deployment** | Amazon ECS, AWS Fargate, Application Load Balancer |
-| **Database & storage** | Amazon RDS, Amazon S3 |
-| **AI** | Amazon Bedrock |
-| **Monitoring & cost** | Amazon CloudWatch, AWS Budgets, Cost Explorer |
-| **Infrastructure & CI/CD** | Terraform, GitHub Actions |
-
-> Bảng trên mô tả các công nghệ trong nội dung workshop, không khẳng định tất cả tài nguyên đang vận hành trên một môi trường AWS production.
-
-## 🧱 Công nghệ xây dựng website
-
-Website báo cáo sử dụng **HTML5, CSS3 và JavaScript thuần**. Đây là website tĩnh, không cần React, Vite, Hugo hoặc một bước build frontend riêng để xuất bản.
-
-```text
-index.html    Giao diện và các khu vực hiển thị
-styles.css    Kiểu dáng, bố cục và responsive
-app.js        Nội dung, điều hướng và tương tác
-assets/       Hình ảnh và tài nguyên minh chứng
-```
-
-## 🚀 Chạy website trên máy cá nhân
-
-**Yêu cầu:** Git và trình duyệt hiện đại. Có thể chạy bằng VS Code Live Server hoặc một HTTP server đơn giản.
+## Chạy website trên máy cục bộ
 
 ### 1. Tải mã nguồn
 
@@ -95,92 +79,80 @@ cd aws
 
 ### 2. Chạy local
 
-Mở thư mục dự án bằng **VS Code**, sau đó dùng tiện ích **Live Server** để mở `index.html` trong trình duyệt.
-
-Hoặc, nếu máy đã có Python, chạy:
+Repo có lệnh `start` sử dụng `serve` trên cổng **3000**. Khi có Node.js và npm, chạy:
 
 ```bash
-python -m http.server 8000
+npm start
 ```
 
-Truy cập **http://localhost:8000**.
+Mở **http://localhost:3000**. Nếu hệ thống hỏi cài `serve` qua `npx`, xác nhận theo hướng dẫn của npm. Có thể dùng một HTTP server tĩnh tương đương để mở website.
 
-### 3. Kiểm tra JavaScript (tùy chọn)
-
-Nếu đã cài Node.js:
+### 3. Kiểm tra thay đổi JavaScript
 
 ```bash
 node --check app.js
 ```
 
-## 📁 Cấu trúc repository
+Đây là bước kiểm tra **cú pháp JavaScript**, không thay thế việc kiểm thử giao diện trong trình duyệt.
+
+## Cấu trúc repository
 
 ```text
 aws/
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml      # Workflow triển khai GitHub Pages
-├── index.html              # Trang web chính
-├── app.js                  # Nội dung và tương tác
+│       └── deploy.yml       # Triển khai GitHub Pages
+├── assets/
+│   └── images/             # Tài nguyên và minh chứng
+├── .nojekyll               # Phục vụ website tĩnh trên Pages
+├── 404.html                # Trang xử lý đường dẫn không tồn tại
+├── index.html              # Điểm vào website
+├── app.js                  # Nội dung và điều hướng ứng dụng
 ├── styles.css              # Giao diện và responsive
-├── README.md               # Giới thiệu dự án
-└── ...                     # Các tài nguyên khác của báo cáo
+├── package.json            # Thông tin và lệnh chạy local
+├── README.md               # Giới thiệu repository
+├── CONTRIBUTING.md         # Hướng dẫn đóng góp
+└── docs/
+    ├── HOW_TO_EDIT_CONTENT.md
+    └── DEPLOYMENT.md
 ```
 
-## ⚙️ CI/CD & Triển khai GitHub Pages
+> Các tệp `CONTRIBUTING.md` và `docs/` là bộ tài liệu đi kèm README này: thêm chúng vào repo để các liên kết bên dưới hoạt động.
 
-Repository sử dụng workflow [`deploy.yml`](https://github.com/NhatUyen2409/aws/blob/main/.github/workflows/deploy.yml) để triển khai website.
+## CI/CD và triển khai GitHub Pages
 
-**Quy trình:**
+Quy trình triển khai được cấu hình tại [`.github/workflows/deploy.yml`](https://github.com/NhatUyen2409/aws/blob/main/.github/workflows/deploy.yml).
 
-1. Thay đổi mã nguồn và push lên nhánh `main`.
-2. GitHub Actions chuẩn bị các file tĩnh và tạo deployment artifact.
-3. GitHub Pages triển khai bản mới lên website.
-4. Kiểm tra kết quả ở mục [Actions](https://github.com/NhatUyen2409/aws/actions).
+1. Push thay đổi lên nhánh `main`.
+2. Job **build** checkout source, cấu hình Pages và upload artifact `github-pages`.
+3. Job **deploy** sử dụng artifact đó để xuất bản website.
+4. Kiểm tra kết quả tại [GitHub Actions](https://github.com/NhatUyen2409/aws/actions) và mở website chính thức.
 
-**Website chính thức:** https://nhatuyen2409.github.io/aws/
+**Production:** https://nhatuyen2409.github.io/aws/
 
-### Cập nhật nội dung
+**[Hướng dẫn triển khai và xử lý lỗi](docs/DEPLOYMENT.md)**
 
-```bash
-git add README.md
-git commit -m "docs: update GitHub README"
-git push aws HEAD:main
-```
+## Hướng dẫn biên tập nội dung
 
-> Lệnh `git push aws HEAD:main` áp dụng cho môi trường làm việc đã cấu hình remote tên `aws`. Nếu clone repository mới, remote mặc định thường là `origin`; khi đó dùng `git push origin main`.
+Nội dung và cách điều hướng báo cáo hiện được xử lý chủ yếu trong **`app.js`**; giao diện nằm ở `styles.css`, cấu trúc trang trong `index.html`. Không chỉnh theo hướng dẫn `content/vi/`, `src/config/structure.ts` hay Vite từ repo tham khảo — các đường dẫn đó không thuộc cấu trúc hiện tại.
 
-## ✅ Kiểm tra trước khi xuất bản
+Xem **[Hướng dẫn biên tập](docs/HOW_TO_EDIT_CONTENT.md)** để sửa Worklog, Workshop, nội dung song ngữ và bổ sung minh chứng.
 
-- [ ] Kiểm tra nội dung tiếng Việt và tiếng Anh.
-- [ ] Mở Worklog, Proposal, Blogs, Events, Workshop, Self-Assessment và Feedback.
-- [ ] Kiểm tra các liên kết và nội dung từng chuyên mục.
-- [ ] Chạy `node --check app.js`.
-- [ ] Kiểm tra hiển thị trên máy tính và điện thoại.
-- [ ] Xác nhận GitHub Actions triển khai thành công.
+## Tài liệu và đóng góp
 
-## 🔗 Liên kết
+- [Hướng dẫn biên tập nội dung](docs/HOW_TO_EDIT_CONTENT.md)
+- [Hướng dẫn triển khai GitHub Pages](docs/DEPLOYMENT.md)
+- [Quy trình đóng góp](CONTRIBUTING.md)
+- [Báo lỗi hoặc đề xuất cải tiến](https://github.com/NhatUyen2409/aws/issues)
 
-- [Website báo cáo](https://nhatuyen2409.github.io/aws/)
-- [Repository GitHub](https://github.com/NhatUyen2409/aws)
-- [GitHub Actions](https://github.com/NhatUyen2409/aws/actions)
-- [AWS Documentation](https://docs.aws.amazon.com/)
-- [AWS Study Group](https://000001.awsstudygroup.com/)
+## English
 
-## 🌍 English overview
+This repository hosts **Phan Nhat Uyen's First Cloud AI Journey (FCAJ) internship report**, covering a worklog, project proposal, technical blog posts, events, hands-on AWS workshops, self-assessment, and program feedback.
 
-This repository hosts **Phan Nhat Uyen's AWS First Cloud AI Journey internship report**, featuring a 12-week worklog, project proposal, AWS technical blogs, events, hands-on workshops, self-assessment, and feedback.
+The bilingual report website is a static HTML/CSS/JavaScript application hosted on **GitHub Pages**. The source is managed on GitHub, and deployment is automated through GitHub Actions.
 
-The bilingual website is built with **HTML, CSS, and vanilla JavaScript** and deployed to **GitHub Pages** through GitHub Actions.
-
-**[Visit the live website](https://nhatuyen2409.github.io/aws/)** · **[Browse source code](https://github.com/NhatUyen2409/aws)**
+**[Open report](https://nhatuyen2409.github.io/aws/)** · **[Deployment workflow](https://github.com/NhatUyen2409/aws/actions/workflows/deploy.yml)** · **[Contribution guide](CONTRIBUTING.md)**
 
 ---
 
-<div align="center">
-
-**AWS First Cloud AI Journey · Internship Report · 2026**
-
-Made for learning, documenting, and sharing cloud knowledge.
-
-</div>
+**First Cloud AI Journey · Internship Report · Phan Nhật Uyên**
