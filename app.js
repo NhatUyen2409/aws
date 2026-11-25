@@ -1763,6 +1763,12 @@ function updateHeaderGreeting() {
 
 function navigateTo(pageId) {
   const cleanId = (pageId || '').replace(/^#\/?/, '').replace(/\/$/, '') || 'thong-tin';
+  // Mỗi lần mở Worklog, mặc định hiển thị Tuần 1
+if (cleanId === 'worklog') {
+  app.data.currentWeek = 1;
+  renderWeekTabs();
+  renderWorklogView();
+}
   if (['cai-dat', 'settings', 'export-print'].includes(cleanId)) {
     navigateTo('thong-tin');
     return;
