@@ -9178,7 +9178,7 @@ function getWorkshopViHtml() {
 
       <p class="report-p">Đối chiếu /api/products, đăng nhập và kịch bản demo trong docs/demo.md. Snapshot test ngày 21/11/2026: backend 86, frontend 145, E2E + axe 57. Đây là kết quả được ghi lại, không phải lượt chạy trong báo cáo.</p>
       <p class="report-p">Các bước kiểm thử bằng lệnh và những sự cố thực tế đã gặp được ghi ở <a href="#workshop-5-8" style="color:inherit;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:2px;cursor:pointer;" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Kiểm thử và xử lý sự cố</a>.</p>
-      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/diagrams/architecture-star.txt" target="_blank">docs/diagrams/architecture-star.txt</a>.</p>
+      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/diagrams/architecture-star.txt" target="_blank">docs/diagrams/architecture-star.txt</a>.</p>
     </section>
   </div>
 
@@ -9233,7 +9233,7 @@ $env:TF_VAR_owner = "&lt;tên bạn&gt;"</code></pre>
 
       <p class="report-p">Kiểm tra profile đăng nhập và boundary trước bước bootstrap. Không ghi thông tin phiên, token hay dữ liệu đăng nhập vào báo cáo.</p>
       <p class="report-p">InvalidGrantException: phiên SSO hết hạn. Đăng nhập lại bằng aws sso login --sso-session nutrition trước khi tiếp tục.</p>
-      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>.</p>
+      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>.</p>
 
       <h3 class="report-h3">Dựng tài nguyên bằng Terraform</h3>
       <p class="report-p">Khởi tạo state S3 và quy trình kiểm tra plan.</p>
@@ -9314,7 +9314,7 @@ terraform -chdir=infra/bootstrap output state_bucket</code></pre>
 
       <p class="report-p">Kiểm tra key envs/dev/terraform.tfstate, mã hóa và use_lockfile=true. Đọc plan để phát hiện thay thế, xóa và quyền IAM trước apply.</p>
       <p class="report-p">Khóa state từng bị kẹt sau apply dở. Chỉ khi xác nhận không còn tiến trình đang dùng state, chủ repo mới dùng terraform force-unlock ; không xóa khóa đang hoạt động.</p>
-      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/envs/dev/versions.tf" target="_blank">infra/envs/dev/versions.tf</a>.</p>
+      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/envs/dev/versions.tf" target="_blank">infra/envs/dev/versions.tf</a>.</p>
       <p class="report-p">Ngân sách 100 USD được tạo thủ công trên Console (không nằm trong Terraform). Ngày 25/11/2026: đã dùng 15,06 USD, dự báo cả tháng 26,95 USD, trạng thái Healthy.</p>
     </section>
   </div>
@@ -9431,7 +9431,7 @@ terraform -chdir=infra/bootstrap output state_bucket</code></pre>
 
       <h3 class="report-h3">Lỗi đã ghi nhận</h3>
       <p class="report-p">Không ghi nhận sự cố riêng cho bước này. Các sự cố thực tế của toàn dự án (khóa state Terraform, SSO hết hạn, favicon 403, mất phiên khi tải lại, RDS đang dừng, quota Bedrock) và cách xử lý được tổng hợp ở <a href="#workshop-5-8" style="color:inherit;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:2px;cursor:pointer;" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Kiểm thử và xử lý sự cố</a>.</p>
-      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/network/main.tf" target="_blank">infra/modules/network/main.tf</a>.</p>
+      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/network/main.tf" target="_blank">infra/modules/network/main.tf</a>.</p>
     </section>
   </div>
 
@@ -9509,7 +9509,7 @@ multi_az = var.multi_az</code></pre>
 
       <h3 class="report-h3">Lỗi đã ghi nhận</h3>
       <p class="report-p">Terraform không tự bật RDS đang stopped. demo-infra.ps1 up gọi start-db-instance và chờ available trước apply.</p>
-      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/rds/main.tf" target="_blank">infra/modules/rds/main.tf</a>.</p>
+      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/rds/main.tf" target="_blank">infra/modules/rds/main.tf</a>.</p>
     </section>
   </div>
 
@@ -9588,7 +9588,7 @@ resource "aws_cognito_user_group" "user" {
 
       <h3 class="report-h3">Lỗi đã ghi nhận</h3>
       <p class="report-p">Không ghi nhận sự cố riêng cho bước này. Các sự cố thực tế của toàn dự án (khóa state Terraform, SSO hết hạn, favicon 403, mất phiên khi tải lại, RDS đang dừng, quota Bedrock) và cách xử lý được tổng hợp ở <a href="#workshop-5-8" style="color:inherit;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:2px;cursor:pointer;" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Kiểm thử và xử lý sự cố</a>.</p>
-      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/cognito/main.tf" target="_blank">infra/modules/cognito/main.tf</a>.</p>
+      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/cognito/main.tf" target="_blank">infra/modules/cognito/main.tf</a>.</p>
     </section>
   </div>
 
@@ -9702,7 +9702,7 @@ resource "aws_cognito_user_group" "user" {
 
       <h3 class="report-h3">Lỗi đã ghi nhận</h3>
       <p class="report-p">Không ghi nhận sự cố riêng cho bước này. Các sự cố thực tế của toàn dự án (khóa state Terraform, SSO hết hạn, favicon 403, mất phiên khi tải lại, RDS đang dừng, quota Bedrock) và cách xử lý được tổng hợp ở <a href="#workshop-5-8" style="color:inherit;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:2px;cursor:pointer;" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Kiểm thử và xử lý sự cố</a>.</p>
-      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/service/main.tf" target="_blank">infra/modules/service/main.tf</a>.</p>
+      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/service/main.tf" target="_blank">infra/modules/service/main.tf</a>.</p>
     </section>
   </div>
 
@@ -9775,7 +9775,7 @@ resource "aws_cognito_user_group" "user" {
 
       <h3 class="report-h3">Lỗi đã ghi nhận</h3>
       <p class="report-p">Favicon không hiện trên trang thật vì CloudFront trả 403: bước build tắt thư mục <strong>public</strong> nên file icon không được tải lên S3. Đã sửa cấu hình Vite và thêm bước kiểm tra icon trong bản build production. Các sự cố khác xem <a href="#workshop-5-8" style="color:inherit;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:2px;cursor:pointer;" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Kiểm thử và xử lý sự cố</a>.</p>
-      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/frontend/main.tf" target="_blank">infra/modules/frontend/main.tf</a>.</p>
+      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/frontend/main.tf" target="_blank">infra/modules/frontend/main.tf</a>.</p>
     </section>
   </div>
 
@@ -9848,7 +9848,7 @@ resource "aws_cognito_user_group" "user" {
 
       <h3 class="report-h3">Lỗi đã ghi nhận</h3>
       <p class="report-p">PR #36 sửa OIDC trust policy theo immutable subject. Đối chiếu github_subject_prefix trong module và cấu hình hiện tại của GitHub.</p>
-      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/github-oidc/main.tf" target="_blank">infra/modules/github-oidc/main.tf</a>.</p>
+      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/github-oidc/main.tf" target="_blank">infra/modules/github-oidc/main.tf</a>.</p>
     </section>
   </div>
 
@@ -9936,7 +9936,7 @@ resource "aws_cognito_user_group" "user" {
 
       <h3 class="report-h3">Lỗi đã ghi nhận</h3>
       <p class="report-p">Sau khi thanh toán thử bằng thẻ NCB, đơn đứng ở trạng thái "Đang chờ VNPAY xác nhận": log ALB cho thấy VNPAY trả mã 00 về Return URL nhưng không gọi IPN. Nguyên nhân là tài khoản sandbox chưa đăng ký IPN URL; sau khi khai báo https://&lt;cloudfront&gt;/api/payments/vnpay/ipn với VNPAY, đơn #10 chuyển sang "Đã thanh toán" và nhật ký thanh toán ghi nhận IPN. Các sự cố khác xem <a href="#workshop-5-8" style="color:inherit;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:2px;cursor:pointer;" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Kiểm thử và xử lý sự cố</a>.</p>
-      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/backend/src/main/java/com/nutrition/payments/VnpaySigner.java" target="_blank">backend/src/main/java/com/nutrition/payments/VnpaySigner.java</a>.</p>
+      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/backend/src/main/java/com/nutrition/payments/VnpaySigner.java" target="_blank">backend/src/main/java/com/nutrition/payments/VnpaySigner.java</a>.</p>
     </section>
   </div>
 
@@ -10057,7 +10057,7 @@ resource "aws_cognito_user_group" "user" {
 
       <h3 class="report-h3">Lỗi đã ghi nhận</h3>
       <p class="report-p">Quota Singapore của tài khoản bằng 0. D18 chuyển sang Tokyo; theo dõi quota L-C6F5908D và L-210172B5. AccessDenied với Guardrail cần bedrock:ApplyGuardrail ở Tokyo trong policy và boundary.</p>
-      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/ai-eval.md" target="_blank">docs/ai-eval.md</a>.</p>
+      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/ai-eval.md" target="_blank">docs/ai-eval.md</a>.</p>
     </section>
   </div>
 
@@ -10135,7 +10135,7 @@ cd backend
 
       <h3 class="report-h3">Lỗi đã ghi nhận</h3>
       <p class="report-p">Quota Singapore của tài khoản bằng 0. D18 chuyển sang Tokyo; theo dõi quota L-C6F5908D và L-210172B5. AccessDenied với Guardrail cần bedrock:ApplyGuardrail ở Tokyo trong policy và boundary.</p>
-      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/ai-eval.md" target="_blank">docs/ai-eval.md</a>.</p>
+      <p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/ai-eval.md" target="_blank">docs/ai-eval.md</a>.</p>
     </section>
   </div>
 
@@ -10298,7 +10298,7 @@ ${renderWorkshopEvidence568('monitor','CloudWatch: 7 alarm đều ở trạng th
 ${renderWorkshopEvidence568('logs','Bucket log: thư mục alb/ (access log ALB) và cloudtrail/','Bucket log: thư mục alb/ (access log ALB) và cloudtrail/',true)}
 <h3 class="report-h3">Lỗi đã ghi nhận</h3>
 <p class="report-p">Không ghi nhận sự cố riêng cho bước này. Các sự cố thực tế của toàn dự án (khóa state Terraform, SSO hết hạn, favicon 403, mất phiên khi tải lại, RDS đang dừng, quota Bedrock) và cách xử lý được tổng hợp ở <a href="#/workshop" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Kiểm thử và xử lý sự cố</a>.</p>
-<p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank" rel="noopener noreferrer">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank" rel="noopener noreferrer">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/PROGRESS.md" target="_blank" rel="noopener noreferrer">docs/PROGRESS.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/alarms/main.tf" target="_blank" rel="noopener noreferrer">infra/modules/alarms/main.tf</a>.</p>
+<p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank" rel="noopener noreferrer">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank" rel="noopener noreferrer">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/alarms/main.tf" target="_blank" rel="noopener noreferrer">infra/modules/alarms/main.tf</a>.</p>
 <div class="ws-prev-next-bar" style="margin-top: 2rem;display:flex;justify-content:space-between;"><button type="button" class="ws-nav-btn" onclick="switchWorkshopTab('ws-5-6')">← Mục trước</button><button type="button" class="ws-nav-btn" onclick="switchWorkshopTab('ws-5-6-2')">Mục tiếp theo →</button></div>
 </section>
       </div>
@@ -10326,7 +10326,7 @@ ${renderWorkshopEvidence568('audit','CloudTrail nutrition-dev-trail: multi-regio
 ${renderWorkshopEvidence568('logs','Bucket log: thư mục alb/ (access log ALB) và cloudtrail/','Bucket log: thư mục alb/ (access log ALB) và cloudtrail/',true)}
 <h3 class="report-h3">Lỗi đã ghi nhận</h3>
 <p class="report-p">Không ghi nhận sự cố riêng cho bước này. Các sự cố thực tế của toàn dự án (khóa state Terraform, SSO hết hạn, favicon 403, mất phiên khi tải lại, RDS đang dừng, quota Bedrock) và cách xử lý được tổng hợp ở <a href="#/workshop" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Kiểm thử và xử lý sự cố</a>.</p>
-<p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank" rel="noopener noreferrer">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank" rel="noopener noreferrer">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/PROGRESS.md" target="_blank" rel="noopener noreferrer">docs/PROGRESS.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/alarms/main.tf" target="_blank" rel="noopener noreferrer">infra/modules/alarms/main.tf</a>.</p>
+<p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank" rel="noopener noreferrer">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank" rel="noopener noreferrer">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/alarms/main.tf" target="_blank" rel="noopener noreferrer">infra/modules/alarms/main.tf</a>.</p>
 <div class="ws-prev-next-bar" style="margin-top: 2rem;display:flex;justify-content:space-between;"><button type="button" class="ws-nav-btn" onclick="switchWorkshopTab('ws-5-6-1')">← Mục trước</button><button type="button" class="ws-nav-btn" onclick="switchWorkshopTab('ws-5-6-3')">Mục tiếp theo →</button></div>
 </section>
       </div>
@@ -10349,7 +10349,7 @@ ${renderWorkshopEvidence568('cost','Cost Explorer tháng 11/2026, chi phí theo 
 ${renderWorkshopEvidence568('credits','Billing → Credits: tổng credit 199,99 USD, đã dùng ước tính 15,07 USD','Billing → Credits: tổng credit 199,99 USD, đã dùng ước tính 15,07 USD',true)}
 <h3 class="report-h3">Lỗi đã ghi nhận</h3>
 <p class="report-p">Không ghi nhận sự cố riêng cho bước này. Các sự cố thực tế của toàn dự án (khóa state Terraform, SSO hết hạn, favicon 403, mất phiên khi tải lại, RDS đang dừng, quota Bedrock) và cách xử lý được tổng hợp ở <a href="#/workshop" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Kiểm thử và xử lý sự cố</a>.</p>
-<p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank" rel="noopener noreferrer">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank" rel="noopener noreferrer">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/PROGRESS.md" target="_blank" rel="noopener noreferrer">docs/PROGRESS.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/scripts/demo-infra.ps1" target="_blank" rel="noopener noreferrer">scripts/demo-infra.ps1</a>.</p>
+<p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank" rel="noopener noreferrer">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank" rel="noopener noreferrer">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/scripts/demo-infra.ps1" target="_blank" rel="noopener noreferrer">scripts/demo-infra.ps1</a>.</p>
 <div class="ws-prev-next-bar" style="margin-top: 2rem;display:flex;justify-content:space-between;"><button type="button" class="ws-nav-btn" onclick="switchWorkshopTab('ws-5-6-2')">← Mục trước</button><button type="button" class="ws-nav-btn" onclick="switchWorkshopTab('ws-5-7')">Mục tiếp theo →</button></div>
 </section>
       </div>
@@ -10372,7 +10372,7 @@ ${renderWorkshopEvidence568('cleanup3','RDS sau khi tắt: trạng thái Stopped
 ${renderWorkshopEvidence568('cleanup4','RDS System snapshots: 9 bản sao lưu tự động hằng ngày','RDS System snapshots: 9 bản sao lưu tự động hằng ngày',true)}
 <h3 class="report-h3">Lỗi đã ghi nhận</h3>
 <p class="report-p">Đóng cửa sổ khi <strong>down</strong>/apply đang chạy để lại khóa state (<strong>Error acquiring the state lock</strong>). Cách xử lý: kiểm tra không còn tiến trình Terraform nào chạy và state không đổi, rồi chạy <strong>terraform force-unlock &lt;LOCK_ID&gt;</strong>. Các sự cố khác xem <a href="#/workshop" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Kiểm thử và xử lý sự cố</a>.</p>
-<p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank" rel="noopener noreferrer">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank" rel="noopener noreferrer">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/PROGRESS.md" target="_blank" rel="noopener noreferrer">docs/PROGRESS.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/scripts/demo-infra.ps1" target="_blank" rel="noopener noreferrer">scripts/demo-infra.ps1</a>.</p>
+<p class="report-p">Nguồn: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank" rel="noopener noreferrer">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank" rel="noopener noreferrer">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/scripts/demo-infra.ps1" target="_blank" rel="noopener noreferrer">scripts/demo-infra.ps1</a>.</p>
 <div class="ws-prev-next-bar" style="margin-top: 2rem;display:flex;justify-content:space-between;"><button type="button" class="ws-nav-btn" onclick="switchWorkshopTab('ws-5-6-3')">← Mục trước</button><button type="button" class="ws-nav-btn" onclick="switchWorkshopTab('ws-5-8')">Mục tiếp theo →</button></div>
 </section>
       </div>
@@ -10607,7 +10607,7 @@ function getWorkshopEnHtml() {
 
       <p class="report-p">Cross-check /api/products, login, and demo scenarios against docs/demo.md. Test snapshot on November 21, 2026: backend 86, frontend 145, E2E + axe 57. These are recorded results, not test runs performed for this report.</p>
       <p class="report-p">Command-line test procedures and actual project incidents are documented in <a href="#workshop-5-8" style="color:inherit;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:2px;cursor:pointer;" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Testing and Troubleshooting</a>.</p>
-      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/diagrams/architecture-star.txt" target="_blank">docs/diagrams/architecture-star.txt</a>.</p>
+      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/diagrams/architecture-star.txt" target="_blank">docs/diagrams/architecture-star.txt</a>.</p>
     </section>
   </div>
 
@@ -10662,7 +10662,7 @@ $env:TF_VAR_owner = "&lt;your name&gt;"</code></pre>
 
       <p class="report-p">Verify the login profile and permission boundary before bootstrap. Do not include session information, tokens, or credentials in the report.</p>
       <p class="report-p">InvalidGrantException: the SSO session expired. Sign in again using aws sso login --sso-session nutrition before continuing.</p>
-      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>.</p>
+      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>.</p>
 
       <h3 class="report-h3">Provisioning Infrastructure with Terraform</h3>
       <p class="report-p">Initialize S3 state and the plan review workflow.</p>
@@ -10743,7 +10743,7 @@ terraform -chdir=infra/bootstrap output state_bucket</code></pre>
 
       <p class="report-p">Check the envs/dev/terraform.tfstate key, encryption, and use_lockfile=true. Read the plan for replacements, deletions, and IAM permissions before applying.</p>
       <p class="report-p">A state lock was once left behind by an interrupted apply. Only after confirming no process is using the state may the repository owner run terraform force-unlock; never remove an active lock.</p>
-      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/envs/dev/versions.tf" target="_blank">infra/envs/dev/versions.tf</a>.</p>
+      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/envs/dev/versions.tf" target="_blank">infra/envs/dev/versions.tf</a>.</p>
       <p class="report-p">The USD 100 budget was created manually in the Console (not in Terraform). On November 25, 2026: USD 15.06 spent, USD 26.95 forecast for the month, status Healthy.</p>
     </section>
   </div>
@@ -10860,7 +10860,7 @@ terraform -chdir=infra/bootstrap output state_bucket</code></pre>
 
       <h3 class="report-h3">Recorded Issues</h3>
       <p class="report-p">No issue was recorded specifically for this step. Actual project incidents (Terraform state lock, expired SSO, favicon 403, lost session on refresh, stopped RDS, and Bedrock quota) and their resolutions are compiled in <a href="#workshop-5-8" style="color:inherit;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:2px;cursor:pointer;" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Testing and Troubleshooting</a>.</p>
-      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/network/main.tf" target="_blank">infra/modules/network/main.tf</a>.</p>
+      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/network/main.tf" target="_blank">infra/modules/network/main.tf</a>.</p>
     </section>
   </div>
 
@@ -10938,7 +10938,7 @@ multi_az = var.multi_az</code></pre>
 
       <h3 class="report-h3">Recorded Issues</h3>
       <p class="report-p">Terraform does not automatically start a stopped RDS instance. demo-infra.ps1 up calls start-db-instance and waits until the instance is available before applying.</p>
-      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/rds/main.tf" target="_blank">infra/modules/rds/main.tf</a>.</p>
+      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/rds/main.tf" target="_blank">infra/modules/rds/main.tf</a>.</p>
     </section>
   </div>
 
@@ -11017,7 +11017,7 @@ resource "aws_cognito_user_group" "user" {
 
       <h3 class="report-h3">Recorded Issues</h3>
       <p class="report-p">No issue was recorded specifically for this step. Actual project incidents (Terraform state lock, expired SSO, favicon 403, lost session on refresh, stopped RDS, and Bedrock quota) and their resolutions are compiled in <a href="#workshop-5-8" style="color:inherit;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:2px;cursor:pointer;" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Testing and Troubleshooting</a>.</p>
-      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/cognito/main.tf" target="_blank">infra/modules/cognito/main.tf</a>.</p>
+      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/cognito/main.tf" target="_blank">infra/modules/cognito/main.tf</a>.</p>
     </section>
   </div>
 
@@ -11131,7 +11131,7 @@ resource "aws_cognito_user_group" "user" {
 
       <h3 class="report-h3">Recorded Issues</h3>
       <p class="report-p">No issue was recorded specifically for this step. Actual project incidents (Terraform state lock, expired SSO, favicon 403, lost session on refresh, stopped RDS, and Bedrock quota) and their resolutions are compiled in <a href="#workshop-5-8" style="color:inherit;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:2px;cursor:pointer;" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Testing and Troubleshooting</a>.</p>
-      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/service/main.tf" target="_blank">infra/modules/service/main.tf</a>.</p>
+      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/service/main.tf" target="_blank">infra/modules/service/main.tf</a>.</p>
     </section>
   </div>
 
@@ -11204,7 +11204,7 @@ resource "aws_cognito_user_group" "user" {
 
       <h3 class="report-h3">Recorded Issues</h3>
       <p class="report-p">The favicon was missing on the deployed site because CloudFront returned 403: the build excluded the public folder, so the icon was not uploaded to S3. The Vite configuration was fixed and an icon check added to the production build. See <a href="#workshop-5-8" style="color:inherit;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:2px;cursor:pointer;" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Testing and Troubleshooting</a> for other incidents.</p>
-      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/frontend/main.tf" target="_blank">infra/modules/frontend/main.tf</a>.</p>
+      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/frontend/main.tf" target="_blank">infra/modules/frontend/main.tf</a>.</p>
     </section>
   </div>
 
@@ -11273,7 +11273,7 @@ resource "aws_cognito_user_group" "user" {
 
       <h3 class="report-h3">Recorded Issues</h3>
       <p class="report-p">PR #36 updated the OIDC trust policy to use an immutable subject. Compare github_subject_prefix in the module with the current GitHub configuration.</p>
-      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/github-oidc/main.tf" target="_blank">infra/modules/github-oidc/main.tf</a>.</p>
+      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/github-oidc/main.tf" target="_blank">infra/modules/github-oidc/main.tf</a>.</p>
     </section>
   </div>
 
@@ -11368,7 +11368,7 @@ resource "aws_cognito_user_group" "user" {
 
       <h3 class="report-h3">Recorded Issues</h3>
       <p class="report-p">After a test payment using an NCB card, the order remained in "Waiting for VNPAY confirmation": ALB logs showed VNPAY returned code 00 to the Return URL but did not call IPN. The sandbox account had not registered an IPN URL. After registering https://&lt;cloudfront&gt;/api/payments/vnpay/ipn with VNPAY, order #10 changed to "Paid", and the payment log recorded IPN. See <a href="#workshop-5-8" style="color:inherit;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:2px;cursor:pointer;" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Testing and Troubleshooting</a> for other incidents.</p>
-      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/backend/src/main/java/com/nutrition/payments/VnpaySigner.java" target="_blank">backend/src/main/java/com/nutrition/payments/VnpaySigner.java</a>.</p>
+      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/backend/src/main/java/com/nutrition/payments/VnpaySigner.java" target="_blank">backend/src/main/java/com/nutrition/payments/VnpaySigner.java</a>.</p>
     </section>
   </div>
 
@@ -11489,7 +11489,7 @@ resource "aws_cognito_user_group" "user" {
 
       <h3 class="report-h3">Recorded Issues</h3>
       <p class="report-p">The account's Singapore quota is zero. D18 moved calls to Tokyo; monitor quotas L-C6F5908D and L-210172B5. A Guardrail AccessDenied error requires bedrock:ApplyGuardrail permissions in Tokyo in both the policy and permission boundary.</p>
-      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/ai-eval.md" target="_blank">docs/ai-eval.md</a>.</p>
+      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/ai-eval.md" target="_blank">docs/ai-eval.md</a>.</p>
     </section>
   </div>
 
@@ -11567,7 +11567,7 @@ cd backend
 
       <h3 class="report-h3">Recorded Issues</h3>
       <p class="report-p">The account's Singapore quota is zero. D18 moved calls to Tokyo; monitor quotas L-C6F5908D and L-210172B5. A Guardrail AccessDenied error requires bedrock:ApplyGuardrail permissions in Tokyo in both the policy and permission boundary.</p>
-      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, docs/PROGRESS.md, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/ai-eval.md" target="_blank">docs/ai-eval.md</a>.</p>
+      <p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/ai-eval.md" target="_blank">docs/ai-eval.md</a>.</p>
     </section>
   </div>
 
@@ -11737,7 +11737,6 @@ ${renderWorkshopEvidence568('logs','Log bucket: alb/ (ALB access logs) and cloud
 <p class="report-p">Sources:
   <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank" rel="noopener noreferrer">infra/README.md</a>,
   <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank" rel="noopener noreferrer">docs/runbook.md</a>,
-  <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/PROGRESS.md" target="_blank" rel="noopener noreferrer">docs/PROGRESS.md</a>,
   <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/alarms/main.tf" target="_blank" rel="noopener noreferrer">infra/modules/alarms/main.tf</a>.
 </p>
 
@@ -11763,7 +11762,7 @@ ${renderPrevNextBar('ws-5-6', '5.6 Overview', 'ws-5-6-2', '5.6.2 Audit / WAF')}
           <h3 class="report-h3">Result Verification</h3><p class="report-p">Compare alarm states with app_running; confirm the SNS subscription, CloudTrail logging, and log objects in S3. WAF may be absent when disabled to reduce costs.</p>
           ${renderWorkshopEvidence568('logs', 'S3 log bucket: ALB access logs in alb/ and CloudTrail records in cloudtrail/', 'S3 log bucket: ALB access logs in alb/ and CloudTrail records in cloudtrail/', false)}
           <h3 class="report-h3">Recorded Issues</h3>
-          <p class="report-p">No issues were recorded specifically for this step. Project-wide incidents (Terraform state lock, expired SSO, favicon 403, session loss on refresh, stopped RDS, and Bedrock quota) and their resolutions are summarized in <a href="#/workshop" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Testing and Troubleshooting</a>.</p><p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank" rel="noopener noreferrer">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank" rel="noopener noreferrer">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/PROGRESS.md" target="_blank" rel="noopener noreferrer">docs/PROGRESS.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/audit/main.tf" target="_blank" rel="noopener noreferrer">infra/modules/audit/main.tf</a>.</p>
+          <p class="report-p">No issues were recorded specifically for this step. Project-wide incidents (Terraform state lock, expired SSO, favicon 403, session loss on refresh, stopped RDS, and Bedrock quota) and their resolutions are summarized in <a href="#/workshop" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Testing and Troubleshooting</a>.</p><p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank" rel="noopener noreferrer">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank" rel="noopener noreferrer">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/modules/audit/main.tf" target="_blank" rel="noopener noreferrer">infra/modules/audit/main.tf</a>.</p>
 
 
           ${renderPrevNextBar('ws-5-6-1', '5.6.1 CloudWatch', 'ws-5-6-3', '5.6.3 Costs')}
@@ -11780,7 +11779,7 @@ ${renderPrevNextBar('ws-5-6', '5.6 Overview', 'ws-5-6-2', '5.6.2 Audit / WAF')}
           <h3 class="report-h3">Result Verification</h3><p class="report-p">Use the Cost Explorer period of Nov 1–21, 2026, and verify credits separately from usage. Monthly estimates are not guaranteed invoices.</p>
           ${renderWorkshopEvidence568('credits', 'Billing → Credits: total credits USD 199.99, approximately USD 15.07 used', 'Billing → Credits: total credits USD 199.99, approximately USD 15.07 used', false)}
           <h3 class="report-h3">Recorded Issues</h3>
-          <p class="report-p">No issues were recorded specifically for this step. Other project incidents and their resolutions are summarized in <a href="#/workshop" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Testing and Troubleshooting</a>.</p><p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank" rel="noopener noreferrer">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank" rel="noopener noreferrer">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/PROGRESS.md" target="_blank" rel="noopener noreferrer">docs/PROGRESS.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/scripts/demo-infra.ps1" target="_blank" rel="noopener noreferrer">scripts/demo-infra.ps1</a>.</p>
+          <p class="report-p">No issues were recorded specifically for this step. Other project incidents and their resolutions are summarized in <a href="#/workshop" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Testing and Troubleshooting</a>.</p><p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank" rel="noopener noreferrer">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank" rel="noopener noreferrer">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/scripts/demo-infra.ps1" target="_blank" rel="noopener noreferrer">scripts/demo-infra.ps1</a>.</p>
 
 
 
@@ -11796,7 +11795,7 @@ ${renderPrevNextBar('ws-5-6', '5.6 Overview', 'ws-5-6-2', '5.6.2 Audit / WAF')}
           <h3 class="report-h3">Verify Resource State and the Seven-Day Cycle</h3><p class="report-p">Shutting down the demo retains the data and is distinct from a full destroy.</p>${renderWorkshopEvidence568('cleanup2', 'RDS dừng sau buổi demo', 'EC2 Load Balancers after shutdown: no ALB remains', false)}
           ${renderWorkshopEvidence568('cleanup3', 'RDS: các bản snapshot tự động', 'RDS after shutdown: Stopped', false)}
           <h3 class="report-h3">Full Teardown and Recovery Drill</h3><p class="report-p">Full teardown per runbook: create a snapshot and wait until Available; deliberately disable RDS/Cognito deletion protection, inspect the Terraform destroy plan, destroy dev, then reinstate protections on re-deploy. The bootstrap bucket uses prevent_destroy and is outside the drill. <strong>No snapshot restore drill report is available; do not claim it has been completed.</strong></p><p class="report-p">The fault-tolerance drill on Nov 22, 2026 used RDS → Reboot with failover in a Multi-AZ configuration. The primary AZ changed from ap-southeast-1a to ap-southeast-1b; the database restarted after approximately 18 seconds, and AWS reported completion after approximately 43 seconds. The API was unavailable for approximately 25–35 seconds, then recovered automatically without data loss or manual intervention. A snapshot recovery drill has not been performed; RDS still has daily automated snapshots (shown below) available for recovery if required.</p>${renderWorkshopEvidence568('cleanup4', 'Minh chứng bổ sung trong quá trình dọn tài nguyên', 'RDS System Snapshots: nine daily automated backups', false)}
-          <h3 class="report-h3">Recorded Issues</h3><p class="report-p">Closing the terminal during Terraform down/apply may leave a state lock. Only consider <strong>terraform force-unlock &lt;LOCK_ID&gt;</strong> after verifying that no Terraform process is active and the state is unchanged. See <a href="#/workshop" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Testing and Troubleshooting</a>.</p><p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank" rel="noopener noreferrer">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank" rel="noopener noreferrer">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/PROGRESS.md" target="_blank" rel="noopener noreferrer">docs/PROGRESS.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/scripts/demo-infra.ps1" target="_blank" rel="noopener noreferrer">scripts/demo-infra.ps1</a>.</p>
+          <h3 class="report-h3">Recorded Issues</h3><p class="report-p">Closing the terminal during Terraform down/apply may leave a state lock. Only consider <strong>terraform force-unlock &lt;LOCK_ID&gt;</strong> after verifying that no Terraform process is active and the state is unchanged. See <a href="#/workshop" onclick="switchWorkshopTab('ws-5-8');return false;">5.8 Testing and Troubleshooting</a>.</p><p class="report-p">Sources: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/infra/README.md" target="_blank" rel="noopener noreferrer">infra/README.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/runbook.md" target="_blank" rel="noopener noreferrer">docs/runbook.md</a>, <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/scripts/demo-infra.ps1" target="_blank" rel="noopener noreferrer">scripts/demo-infra.ps1</a>.</p>
 
 
 
