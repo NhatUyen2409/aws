@@ -3786,10 +3786,6 @@ const BLOG_ARTICLES = {
           url: "https://aws.amazon.com/event-driven-architecture/"
         },
         {
-          title: "AWS Compute Blog – Designing for Idempotency and Race Conditions in Serverless",
-          url: "https://aws.amazon.com/blogs/compute/handling-duplicate-records-in-amazon-sqs-fifo-queues/"
-        },
-        {
           title: "Xem bài viết trên cộng đồng AWS Study Group VN",
           url: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2326019258163033/",
           linkText: "Xem bài viết trên cộng đồng AWS Study Group VN"
@@ -3911,10 +3907,6 @@ const BLOG_ARTICLES = {
         {
           title: "AWS Architecture Center – Event-Driven Architecture Patterns and Best Practices",
           url: "https://aws.amazon.com/event-driven-architecture/"
-        },
-        {
-          title: "AWS Compute Blog – Designing for Idempotency and Race Conditions in Serverless",
-          url: "https://aws.amazon.com/blogs/compute/handling-duplicate-records-in-amazon-sqs-fifo-queues/"
         },
         {
           title: "View post on AWS Study Group VN community",
