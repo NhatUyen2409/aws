@@ -34,7 +34,6 @@ Báo cáo thực tập **First Cloud AI Journey (FCAJ)** của **Phan Nhật Uy�
 | **6. Self-Assessment** | Tự đánh giá quá trình thực tập | Điểm mạnh, hạn chế và hướng cải thiện |
 | **7. Sharing and Feedback** | Chia sẻ trải nghiệm và phản hồi chương trình | Tổng kết và đề xuất |
 
-> **Lưu ý:** Nội dung báo cáo và minh chứng có thể được cập nhật tiếp trong quá trình hoàn thiện. Trạng thái thực hiện cụ thể được xem trên website; README không mặc định khẳng định mọi workshop đã triển khai thành công.
 
 ## Tính năng website
 
