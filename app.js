@@ -4048,10 +4048,6 @@ const BLOG_ARTICLES = {
           url: "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.html"
         },
         {
-          title: "AWS Security Blog – Limiting Scope of Compromised Credentials with VPC Condition Keys",
-          url: "https://aws.amazon.com/blogs/security/how-to-use-aws-condition-keys-to-limit-access-from-specific-vpcs/"
-        },
-        {
           title: "Xem bài viết trên cộng đồng AWS Study Group VN",
           url: "https://www.facebook.com/groups/awsstudygroupfcj/posts/2338656276899331/",
           linkText: "Xem bài viết trên cộng đồng AWS Study Group VN"
@@ -4179,10 +4175,6 @@ const BLOG_ARTICLES = {
         {
           title: "Amazon GuardDuty Finding Types – InstanceCredentialExfiltration.OutsideAWS",
           url: "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.html"
-        },
-        {
-          title: "AWS Security Blog – Limiting Scope of Compromised Credentials with VPC Condition Keys",
-          url: "https://aws.amazon.com/blogs/security/how-to-use-aws-condition-keys-to-limit-access-from-specific-vpcs/"
         },
         {
           title: "View post on AWS Study Group VN community",
@@ -4935,16 +4927,15 @@ function renderIdentityContainmentBlogDetail(container, a, lang) {
         <h2 class="minimal-section-title" style="font-size:18px;">
           ${a.referencesTitle || (lang === 'vi' ? 'Tài liệu tham khảo' : 'Official Documentation & References')}
         </h2>
-        <ul class="minimal-ref-list">
+        <ol class="minimal-ref-list">
           ${a.references.map(ref => `
             <li>
-              ${ref.title && ref.title !== ref.linkText ? `<span>${escapeHtml(ref.title)}:</span> ` : ''}
               <a href="${escapeHtml(ref.url)}" target="_blank" rel="noopener noreferrer" class="minimal-ref-link">
-                ${escapeHtml(ref.linkText || ref.url)}
+                ${escapeHtml(ref.title || ref.linkText || ref.url)}
               </a>
             </li>
           `).join('')}
-        </ul>
+        </ol>
       </section>
 
       <!-- Minimal Footer Navigation -->
