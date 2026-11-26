@@ -653,14 +653,14 @@ const DEFAULT_BILINGUAL_DATA = {
       major: "An toàn thông tin",
       company: "Công ty TNHH Amazon Web Services (AWS) Việt Nam",
       position: "Workforce Bootcamp - First Cloud AI Journey (FCAJ)",
-      duration: "Từ 14/09/2026 đến 30/11/2026"
+      duration: "Từ 14/09/2026 đến 14/12/2026"
     },
     en: {
       university: "FPT University",
       major: "Information Assurance",
       company: "Amazon Web Services (AWS) Vietnam Company Limited",
       position: "Workforce Bootcamp - First Cloud AI Journey (FCAJ)",
-      duration: "From 14/09/2026 to 30/11/2026"
+      duration: "From 14/09/2026 to 14/12/2026"
     }
   },
   currentWeek: 5,
