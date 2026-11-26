@@ -10514,8 +10514,7 @@ function getWorkshopEnHtml() {
       <div class="report-figure-caption" style="font-size:0.9rem; color:#475569; margin-top:0.5rem; font-style:italic;">AWS architecture diagram created in draw.io using AWS Architecture Icons, updated for Multi-AZ and AWS STS on November 25, 2026</div>
     </div>
 
-      <p class="report-p" style="margin-top: 0.5rem;">Download the original draw.io file to view and edit: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/diagrams/aws-architecture.drawio" target="_blank"><strong>aws-architecture.drawio</strong></a>.</p>
-
+     
 
 
       <p class="report-p">Since November 22, 2026 (D33), the development environment has run two ECS tasks, one per Availability Zone, and RDS Multi-AZ with a standby in the second AZ. The November 22 reboot-with-failover exercise moved the primary from ap-southeast-1a to ap-southeast-1b in approximately 20–45 seconds. The API was interrupted for about half a minute and recovered automatically with no data loss.</p>
