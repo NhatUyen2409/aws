@@ -2299,7 +2299,6 @@ function getProposalViHtml() {
       <div class="report-figure-caption">Sơ đồ kiến trúc AWS vẽ trên draw.io bằng bộ AWS Architecture Icons, cập nhật Multi-AZ và AWS STS ngày 25/11/2026</div>
     </div>
 
-      <p class="report-p" style="margin-top: 0.5rem;">Tải file draw.io gốc để xem và chỉnh sửa: <a href="https://github.com/trungnguyen-VNTN/nutrition-ecommerce/blob/master/docs/diagrams/aws-architecture.drawio" target="_blank"><strong>aws-architecture.drawio</strong></a>.</p>
     <p class="report-p">Từ 22/11/2026 (D33), môi trường dev chạy 2 task ECS, mỗi Availability Zone một task, và RDS ở chế độ Multi-AZ với bản dự phòng (Standby) ở AZ thứ hai. Diễn tập Reboot with failover ngày 22/11 chuyển AZ chính từ ap-southeast-1a sang ap-southeast-1b trong khoảng 20–45 giây; API gián đoạn khoảng nửa phút rồi tự phục hồi, không mất dữ liệu.</p>
     <h3 class="report-h3">Các dịch vụ AWS sử dụng</h3>
     <p class="report-p">CloudFront + S3 — React SPA và ảnh qua OAC; Function viết lại đường dẫn; hai bucket riêng tư.</p>
@@ -3216,14 +3215,78 @@ function toggleBlogSnippet(id) {
   }
 }
 
+let blogImageZoomFactor = 1;
+let blogImageFitScale = 1;
+let blogImageNaturalWidth = 0;
+let blogImageNaturalHeight = 0;
+
+function updateBlogImageZoom() {
+  const preview = document.getElementById('blog-image-modal-preview');
+  const stage = document.getElementById('blog-image-stage');
+  const level = document.getElementById('image-zoom-level');
+  const viewer = document.getElementById('blog-image-viewer');
+  if (!preview || !stage || !viewer || !blogImageNaturalWidth || !blogImageNaturalHeight) return;
+
+  const scale = blogImageFitScale * blogImageZoomFactor;
+  const width = Math.max(1, Math.round(blogImageNaturalWidth * scale));
+  const height = Math.max(1, Math.round(blogImageNaturalHeight * scale));
+  preview.style.width = `${width}px`;
+  preview.style.height = `${height}px`;
+  stage.style.width = `${width}px`;
+  stage.style.height = `${height}px`;
+  if (level) level.textContent = `${Math.round(blogImageZoomFactor * 100)}%`;
+}
+
+function fitBlogImageToViewer() {
+  const preview = document.getElementById('blog-image-modal-preview');
+  const viewer = document.getElementById('blog-image-viewer');
+  if (!preview || !viewer || !preview.naturalWidth || !preview.naturalHeight) return;
+
+  blogImageNaturalWidth = preview.naturalWidth;
+  blogImageNaturalHeight = preview.naturalHeight;
+  const availableWidth = Math.max(100, viewer.clientWidth - 24);
+  const availableHeight = Math.max(100, viewer.clientHeight - 24);
+  blogImageFitScale = Math.min(1, availableWidth / blogImageNaturalWidth, availableHeight / blogImageNaturalHeight);
+  blogImageZoomFactor = 1;
+  updateBlogImageZoom();
+  requestAnimationFrame(() => {
+    viewer.scrollLeft = Math.max(0, (viewer.scrollWidth - viewer.clientWidth) / 2);
+    viewer.scrollTop = Math.max(0, (viewer.scrollHeight - viewer.clientHeight) / 2);
+  });
+}
+
+function changeBlogImageZoom(multiplier) {
+  const viewer = document.getElementById('blog-image-viewer');
+  if (!viewer) return;
+  const oldWidth = viewer.scrollWidth;
+  const oldHeight = viewer.scrollHeight;
+  const centerX = viewer.scrollLeft + viewer.clientWidth / 2;
+  const centerY = viewer.scrollTop + viewer.clientHeight / 2;
+
+  blogImageZoomFactor = Math.max(0.25, Math.min(8, blogImageZoomFactor * multiplier));
+  updateBlogImageZoom();
+
+  requestAnimationFrame(() => {
+    const ratioX = oldWidth ? centerX / oldWidth : 0.5;
+    const ratioY = oldHeight ? centerY / oldHeight : 0.5;
+    viewer.scrollLeft = Math.max(0, ratioX * viewer.scrollWidth - viewer.clientWidth / 2);
+    viewer.scrollTop = Math.max(0, ratioY * viewer.scrollHeight - viewer.clientHeight / 2);
+  });
+}
+
 function openBlogImageModal(src, title) {
   const modal = document.getElementById('blog-image-modal');
   const preview = document.getElementById('blog-image-modal-preview');
   const titleEl = document.getElementById('blog-image-modal-title');
   const descEl = document.getElementById('blog-image-modal-desc');
   const openTab = document.getElementById('btn-blog-img-open-tab');
-  if (!modal || !preview) return;
+  if (!modal || !preview || !src) return;
 
+  preview.onload = () => fitBlogImageToViewer();
+  preview.onerror = () => {
+    const level = document.getElementById('image-zoom-level');
+    if (level) level.textContent = 'Không tải được ảnh';
+  };
   preview.src = src;
   if (titleEl) titleEl.textContent = title || t('diagModalTitle');
   if (descEl) descEl.textContent = t('diagModalDesc');
@@ -3232,6 +3295,7 @@ function openBlogImageModal(src, title) {
     openTab.textContent = t('btnOpenTab');
   }
   modal.classList.add('active');
+  if (preview.complete && preview.naturalWidth) requestAnimationFrame(() => fitBlogImageToViewer());
 }
 
 function closeBlogImageModal() {
@@ -3252,7 +3316,84 @@ function setupBlogs() {
       if (e.target === modal) closeBlogImageModal();
     });
   }
+
+  // Inject viewer styles once so report images can be inspected at full resolution.
+  if (!document.getElementById('report-image-zoom-styles')) {
+    const style = document.createElement('style');
+    style.id = 'report-image-zoom-styles';
+    style.textContent = `
+      #blog-image-modal .modal-dialog { width: 96vw; max-width: 1280px; }
+      #blog-image-modal .image-zoom-toolbar { display:flex; align-items:center; justify-content:center; gap:10px; padding:2px 0 10px; color:#E2E8F0; }
+      #blog-image-modal .image-zoom-toolbar button { border:1px solid #475569; border-radius:7px; background:#1E293B; color:#F8FAFC; min-width:38px; height:34px; padding:0 10px; font:600 14px 'Plus Jakarta Sans',sans-serif; cursor:pointer; }
+      #blog-image-modal .image-zoom-toolbar button:hover { background:#334155; }
+      #blog-image-modal #image-zoom-level { min-width:58px; text-align:center; font:600 12px 'Plus Jakarta Sans',sans-serif; }
+      #blog-image-modal .image-zoom-viewport { width:100%; height:min(72vh,780px); min-height:260px; overflow:auto; background:#080B12; border:1px solid #334155; border-radius:8px; cursor:grab; overscroll-behavior:contain; }
+      #blog-image-modal .image-zoom-viewport.is-dragging { cursor:grabbing; user-select:none; }
+      #blog-image-modal .image-zoom-stage { min-width:100%; min-height:100%; display:flex; align-items:flex-start; justify-content:flex-start; }
+      #blog-image-modal #blog-image-modal-preview { display:block; max-width:none; max-height:none; width:auto; height:auto; object-fit:contain; border-radius:3px; background:#fff; box-shadow:0 8px 28px rgba(0,0,0,.45); pointer-events:none; }
+      .content-body img:not(#student-photo-img):not(.user-avatar img) { cursor:zoom-in; }
+      @media (max-width:640px) { #blog-image-modal .image-zoom-viewport { height:65vh; } #blog-image-modal .image-zoom-toolbar { gap:6px; } }
+    `;
+    document.head.appendChild(style);
+  }
+
+  const zoomIn = document.getElementById('image-zoom-in');
+  const zoomOut = document.getElementById('image-zoom-out');
+  const zoomReset = document.getElementById('image-zoom-reset');
+  const viewer = document.getElementById('blog-image-viewer');
+  const preview = document.getElementById('blog-image-modal-preview');
+  if (zoomIn) zoomIn.addEventListener('click', () => changeBlogImageZoom(1.25));
+  if (zoomOut) zoomOut.addEventListener('click', () => changeBlogImageZoom(0.8));
+  if (zoomReset) zoomReset.addEventListener('click', () => fitBlogImageToViewer());
+
+  if (viewer && !viewer.dataset.zoomEventsReady) {
+    viewer.dataset.zoomEventsReady = 'true';
+    viewer.addEventListener('wheel', (e) => {
+      if (!preview || !preview.src) return;
+      e.preventDefault();
+      changeBlogImageZoom(e.deltaY < 0 ? 1.15 : 1 / 1.15);
+    }, { passive: false });
+
+    let dragState = null;
+    viewer.addEventListener('pointerdown', (e) => {
+      if (e.button !== 0) return;
+      dragState = { x: e.clientX, y: e.clientY, left: viewer.scrollLeft, top: viewer.scrollTop };
+      viewer.classList.add('is-dragging');
+      viewer.setPointerCapture(e.pointerId);
+    });
+    viewer.addEventListener('pointermove', (e) => {
+      if (!dragState) return;
+      viewer.scrollLeft = dragState.left - (e.clientX - dragState.x);
+      viewer.scrollTop = dragState.top - (e.clientY - dragState.y);
+    });
+    const stopDrag = () => {
+      dragState = null;
+      viewer.classList.remove('is-dragging');
+    };
+    viewer.addEventListener('pointerup', stopDrag);
+    viewer.addEventListener('pointercancel', stopDrag);
+    viewer.addEventListener('lostpointercapture', stopDrag);
+  }
+
+  // Any report image in the main content can be opened in the same zoomable viewer.
+  if (!document.body.dataset.reportImageZoomReady) {
+    document.body.dataset.reportImageZoomReady = 'true';
+    document.addEventListener('click', (e) => {
+      const image = e.target.closest && e.target.closest('.content-body img');
+      if (!image || image.id === 'student-photo-img' || image.closest('#blog-image-modal')) return;
+      if (!image.currentSrc && !image.src) return;
+      e.preventDefault();
+      e.stopPropagation();
+      openBlogImageModal(image.currentSrc || image.src, image.alt || 'Hình ảnh báo cáo');
+    }, true);
+  }
+
   document.addEventListener('keydown', (e) => {
+    if (modal && modal.classList.contains('active')) {
+      if (e.key === '+' || e.key === '=') changeBlogImageZoom(1.25);
+      if (e.key === '-') changeBlogImageZoom(0.8);
+      if (e.key === '0') fitBlogImageToViewer();
+    }
     if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
       closeBlogImageModal();
     }
@@ -10199,7 +10340,7 @@ ${renderWorkshopEvidence568('logs','Bucket log: thư mục alb/ (access log ALB)
 <p class="report-p">Ước tính USD/tháng, đối chiếu AWS Pricing Calculator ngày 25/11/2026 cho cấu hình Multi-AZ và 2 task (D33), chưa thuế, sai lệch có thể ±10%. Production là phương án tương lai chưa triển khai. Bedrock thực tế gọi tại Tokyo.</p>
 <div class="report-table-wrapper"><table class="report-table"><thead><tr><th>Dịch vụ / Cấu hình</th><th>Demo (~4h/ngày)</th><th>24/7 (Pricing Calculator)</th><th>Production đề xuất</th></tr></thead><tbody><tr><td>RDS PostgreSQL db.t4g.micro, Multi-AZ, 20 GB gp3</td><td>~11,6</td><td>42,75</td><td>~70 (Multi-AZ, db.t4g.small)</td></tr><tr><td>ECS Fargate ARM64, 0,5 vCPU / 1 GB, 2 task</td><td>~5,9</td><td>35,98</td><td>~36–72 (2–4 task, auto scaling)</td></tr><tr><td>Application Load Balancer</td><td>~3,1</td><td>18,63</td><td>~22</td></tr><tr><td>Public IPv4, 4 địa chỉ</td><td>~2,4</td><td>14,60</td><td>~15</td></tr><tr><td>Secrets Manager, 2 secret</td><td>0,85</td><td>0,85</td><td>0,85</td></tr><tr><td>Bedrock (Nova Lite làm giá tham chiếu, Tokyo)</td><td>&lt;0,7</td><td>0,70</td><td>Theo lượng dùng</td></tr><tr><td>CloudFront 1,02 · CloudWatch 1,70 · ECR 0,10 · S3 0,07 · Cognito 0 · CloudTrail 0</td><td>~2,9</td><td>2,89</td><td>~5</td></tr><tr><td>Tổng (không WAF)</td><td>~27</td><td>116,40</td><td>~150–190</td></tr><tr><td>WAF (tùy chọn, nhóm Optional)</td><td>0</td><td>9,60</td><td>~10</td></tr><tr><td>Tổng có WAF</td><td>—</td><td>126,00</td><td>~160–200</td></tr></tbody></table></div>
 <p class="report-p">Cost Explorer ghi nhận <strong>6,44 USD</strong> cho 01–21/11/2026, được credit bù toàn bộ. RDS 2,77; ALB 1,29; ECS 1,21; IPv4 0,74; Bedrock 0,21; Secrets Manager 0,20 USD. Các khoản liệt kê là những khoản lớn, không phải phép cộng chi tiết toàn bộ hóa đơn. App chỉ bật khi demo nên không dùng số thực tế này để suy ra mức chạy 24/7. Số thực tế này ghi nhận trước khi bật Multi-AZ.</p>
-<p class="report-p">Bảng giá AWS Pricing Calculator: <a href="https://calculator.aws/#/estimate" target="_blank" rel="noopener noreferrer">estimate ngày 25/11/2026 (AWS Pricing Calculator)</a>. Cột 24/7 lấy đúng số của Calculator (Singapore, riêng Bedrock ở Tokyo). Cột Demo quy đổi từ đó cho khoảng 120 giờ chạy mỗi tháng: các khoản tính theo giờ (RDS instance, Fargate, ALB, IPv4) nhân 120/730, còn ổ đĩa RDS (5,52 USD) và các khoản theo lượng dùng giữ nguyên. Giả định tải: 50 người dùng/tháng, 5 GB CloudFront, khoảng 3.600 câu hỏi AI/tháng (1 câu/phút trong 2 giờ/ngày, 1.500 token vào, 300 token ra). Calculator chưa có Amazon Nova 2 Lite nên dùng Amazon Nova Lite làm giá tham chiếu. Estimate không tính RDS Proxy và Database Insights Advanced vì dự án không dùng.</p>
+<p class="report-p">Bảng giá AWS Pricing Calculator: <a href="https://calculator.aws/#/estimate?id=5aefaa50b7c0b549b0aef4b49215196ac9c0145d" target="_blank" rel="noopener noreferrer">estimate ngày 25/11/2026 (AWS Pricing Calculator)</a>. Cột 24/7 lấy đúng số của Calculator (Singapore, riêng Bedrock ở Tokyo). Cột Demo quy đổi từ đó cho khoảng 120 giờ chạy mỗi tháng: các khoản tính theo giờ (RDS instance, Fargate, ALB, IPv4) nhân 120/730, còn ổ đĩa RDS (5,52 USD) và các khoản theo lượng dùng giữ nguyên. Giả định tải: 50 người dùng/tháng, 5 GB CloudFront, khoảng 3.600 câu hỏi AI/tháng (1 câu/phút trong 2 giờ/ngày, 1.500 token vào, 300 token ra). Calculator chưa có Amazon Nova 2 Lite nên dùng Amazon Nova Lite làm giá tham chiếu. Estimate không tính RDS Proxy và Database Insights Advanced vì dự án không dùng.</p>
 <p class="report-p">App mặc định tắt. D20 dùng up/down để chỉ giữ RDS storage, S3 và các khoản cố định khi nghỉ. D15 bỏ NAT. Từ D33, RDS Multi-AZ và 2 task chỉ tốn thêm khoảng 0,05 USD/giờ khi app bật, cộng ổ đĩa bản dự phòng khoảng 2,8 USD/tháng; quay về 1 AZ bằng hai biến <strong>rds_multi_az</strong> và <strong>api_desired_count</strong>. Fargate Spot chỉ là phương án cần đánh giá khả năng bị thu hồi, chưa xác nhận được triển khai trong module hiện tại.</p>
 <div class="code-snippet-wrap" style="margin:1.25rem 0"><div class="code-snippet-header"><span class="code-filename">scripts/demo-infra.ps1</span><button type="button" class="btn-copy-code" onclick="copyCodeSnippet(this)" title="Sao chép" aria-label="Sao chép">⧉</button></div><pre class="code-snippet-pre"><code class="language-text">    .\\scripts\\demo-infra.ps1 down   # remove ALB + ECS service, stop RDS (~5-10 min)</code></pre></div>
 ${renderWorkshopEvidence568('cost','Cost Explorer tháng 11/2026, chi phí theo dịch vụ (đã loại credit)','Cost Explorer tháng 11/2026, chi phí theo dịch vụ (đã loại credit)',true)}
@@ -11636,7 +11777,7 @@ ${renderPrevNextBar('ws-5-6', '5.6 Overview', 'ws-5-6-2', '5.6.2 Audit / WAF')}
           <h2 class="report-h2">5.6.3. Cost Estimation and Optimization</h2>
           <p class="report-p">Distinguish demo, 24/7, and proposed production costs.</p>
           <h3 class="report-h3">Source Configuration</h3>
-          <p class="report-p">Estimated <strong>USD/month</strong>, compared with AWS Pricing Calculator results dated Nov 25, 2026, for Multi-AZ and two ECS tasks (D33). Taxes are excluded; estimates may vary by ±10%. Production is a future proposal, not a deployed configuration. Bedrock calls are made in Tokyo.</p><div class="report-table-wrapper"><table class="report-table"><thead><tr><th>Service / configuration</th><th>Demo (~4h/day)</th><th>24/7 (Calculator)</th><th>Production (proposed)</th></tr></thead><tbody><tr><td>RDS PostgreSQL db.t4g.micro, Multi-AZ, 20 GB gp3</td><td>~11.6</td><td>42.75</td><td>~70 (db.t4g.small)</td></tr><tr><td>ECS Fargate ARM64, 0.5 vCPU / 1 GB, 2 tasks</td><td>~5.9</td><td>35.98</td><td>~36–72</td></tr><tr><td>Application Load Balancer</td><td>~3.1</td><td>18.63</td><td>~22</td></tr><tr><td>Public IPv4, 4 addresses</td><td>~2.4</td><td>14.60</td><td>~15</td></tr><tr><td>Secrets Manager, 2 secrets</td><td>0.85</td><td>0.85</td><td>0.85</td></tr><tr><td>Bedrock (Nova Lite reference, Tokyo)</td><td>&lt;0.7</td><td>0.70</td><td>Usage-based</td></tr><tr><td>CloudFront / CloudWatch / ECR / S3 / Cognito / CloudTrail</td><td>~2.9</td><td>2.89</td><td>~5</td></tr><tr><td><strong>Total excluding WAF</strong></td><td><strong>~27</strong></td><td><strong>116.40</strong></td><td><strong>~150–190</strong></td></tr><tr><td>Optional WAF</td><td>0</td><td>9.60</td><td>~10</td></tr><tr><td><strong>Total including WAF</strong></td><td>—</td><td><strong>126.00</strong></td><td><strong>~160–200</strong></td></tr></tbody></table></div><p class="report-p">Cost Explorer recorded <strong>USD 6.44</strong> from Nov 1–21, 2026, fully offset by credits: RDS 2.77, ALB 1.29, ECS 1.21, IPv4 0.74, Bedrock 0.21 and Secrets Manager 0.20. These are major line items, not a full invoice breakdown, and predate Multi-AZ enablement.</p><p class="report-p">AWS Pricing Calculator <a href="https://calculator.aws/#/estimate" target="_blank" rel="noopener noreferrer">estimate dated Nov 25, 2026 (source)</a>. The 24/7 column uses the Calculator values for Singapore, except Bedrock in Tokyo. The Demo column converts these amounts to approximately 120 active hours per month: hourly charges (RDS instance, Fargate, ALB, IPv4) are multiplied by 120/730, while RDS storage (USD 5.52) and usage-based charges remain. Assumed workload: 50 users/month, 5 GB CloudFront and about 3,600 AI questions/month (1 question/minute for 2 hours/day, 1,500 input tokens and 300 output tokens). Amazon Nova Lite is used as a pricing reference because the Calculator does not yet include Amazon Nova 2 Lite. RDS Proxy and Database Insights Advanced are excluded because the project does not use them.</p><p class="report-p">The app is off by default. From D20, <strong>up/down</strong> leaves only RDS storage, S3 and fixed costs when idle. D15 removed NAT. From D33, Multi-AZ RDS and two ECS tasks add approximately USD 0.05/hour while the app is running, plus approximately USD 2.8/month for standby storage; return to one AZ using <strong>rds_multi_az</strong> and <strong>api_desired_count</strong>. Fargate Spot remains an option requiring assessment of interruption risks; deployment in the current module has not been confirmed.</p><div class="code-snippet-wrap"><div class="code-snippet-header"><span>PowerShell · scripts/demo-infra.ps1</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div><pre><code>.\\scripts\\demo-infra.ps1 down   # remove ALB + ECS service, stop RDS (~5-10 min)</code></pre></div>${renderWorkshopEvidence568('cost', 'Cost Explorer: chi phí theo dịch vụ tháng 11/2026', 'Cost Explorer: November 2026 service costs', false)}
+          <p class="report-p">Estimated <strong>USD/month</strong>, compared with AWS Pricing Calculator results dated Nov 25, 2026, for Multi-AZ and two ECS tasks (D33). Taxes are excluded; estimates may vary by ±10%. Production is a future proposal, not a deployed configuration. Bedrock calls are made in Tokyo.</p><div class="report-table-wrapper"><table class="report-table"><thead><tr><th>Service / configuration</th><th>Demo (~4h/day)</th><th>24/7 (Calculator)</th><th>Production (proposed)</th></tr></thead><tbody><tr><td>RDS PostgreSQL db.t4g.micro, Multi-AZ, 20 GB gp3</td><td>~11.6</td><td>42.75</td><td>~70 (db.t4g.small)</td></tr><tr><td>ECS Fargate ARM64, 0.5 vCPU / 1 GB, 2 tasks</td><td>~5.9</td><td>35.98</td><td>~36–72</td></tr><tr><td>Application Load Balancer</td><td>~3.1</td><td>18.63</td><td>~22</td></tr><tr><td>Public IPv4, 4 addresses</td><td>~2.4</td><td>14.60</td><td>~15</td></tr><tr><td>Secrets Manager, 2 secrets</td><td>0.85</td><td>0.85</td><td>0.85</td></tr><tr><td>Bedrock (Nova Lite reference, Tokyo)</td><td>&lt;0.7</td><td>0.70</td><td>Usage-based</td></tr><tr><td>CloudFront / CloudWatch / ECR / S3 / Cognito / CloudTrail</td><td>~2.9</td><td>2.89</td><td>~5</td></tr><tr><td><strong>Total excluding WAF</strong></td><td><strong>~27</strong></td><td><strong>116.40</strong></td><td><strong>~150–190</strong></td></tr><tr><td>Optional WAF</td><td>0</td><td>9.60</td><td>~10</td></tr><tr><td><strong>Total including WAF</strong></td><td>—</td><td><strong>126.00</strong></td><td><strong>~160–200</strong></td></tr></tbody></table></div><p class="report-p">Cost Explorer recorded <strong>USD 6.44</strong> from Nov 1–21, 2026, fully offset by credits: RDS 2.77, ALB 1.29, ECS 1.21, IPv4 0.74, Bedrock 0.21 and Secrets Manager 0.20. These are major line items, not a full invoice breakdown, and predate Multi-AZ enablement.</p><p class="report-p">AWS Pricing Calculator <a href="https://calculator.aws/#/estimate?id=5aefaa50b7c0b549b0aef4b49215196ac9c0145d" target="_blank" rel="noopener noreferrer">estimate dated Nov 25, 2026 (source)</a>. The 24/7 column uses the Calculator values for Singapore, except Bedrock in Tokyo. The Demo column converts these amounts to approximately 120 active hours per month: hourly charges (RDS instance, Fargate, ALB, IPv4) are multiplied by 120/730, while RDS storage (USD 5.52) and usage-based charges remain. Assumed workload: 50 users/month, 5 GB CloudFront and about 3,600 AI questions/month (1 question/minute for 2 hours/day, 1,500 input tokens and 300 output tokens). Amazon Nova Lite is used as a pricing reference because the Calculator does not yet include Amazon Nova 2 Lite. RDS Proxy and Database Insights Advanced are excluded because the project does not use them.</p><p class="report-p">The app is off by default. From D20, <strong>up/down</strong> leaves only RDS storage, S3 and fixed costs when idle. D15 removed NAT. From D33, Multi-AZ RDS and two ECS tasks add approximately USD 0.05/hour while the app is running, plus approximately USD 2.8/month for standby storage; return to one AZ using <strong>rds_multi_az</strong> and <strong>api_desired_count</strong>. Fargate Spot remains an option requiring assessment of interruption risks; deployment in the current module has not been confirmed.</p><div class="code-snippet-wrap"><div class="code-snippet-header"><span>PowerShell · scripts/demo-infra.ps1</span><button type="button" class="code-copy-btn" onclick="copyCodeSnippet(this)">Copy</button></div><pre><code>.\\scripts\\demo-infra.ps1 down   # remove ALB + ECS service, stop RDS (~5-10 min)</code></pre></div>${renderWorkshopEvidence568('cost', 'Cost Explorer: chi phí theo dịch vụ tháng 11/2026', 'Cost Explorer: November 2026 service costs', false)}
           <h3 class="report-h3">Result Verification</h3><p class="report-p">Use the Cost Explorer period of Nov 1–21, 2026, and verify credits separately from usage. Monthly estimates are not guaranteed invoices.</p>
           ${renderWorkshopEvidence568('credits', 'Billing → Credits: total credits USD 199.99, approximately USD 15.07 used', 'Billing → Credits: total credits USD 199.99, approximately USD 15.07 used', false)}
           <h3 class="report-h3">Recorded Issues</h3>
